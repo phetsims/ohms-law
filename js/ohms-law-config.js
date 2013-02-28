@@ -1,31 +1,29 @@
-// Copyright 2002-2013, University of Colorado
+/**
+ * Copyright 2002-2013, University of Colorado
+ * RequireJS configuration file for Ohm's Law simulation.
+ * Author: Vasily Shakhov (Mlearner)
+ */
 
-// RequireJS configuration file for Ohm's Law simulation.
+
 require.config( {
-                    deps:["ohms-law-main"],
+  deps: ["ohms-law-main"],
 
-                    paths:{
-                        underscore:"../../../contrib/underscore-1.4.2",
-                        easel:"../../../contrib/easel-0.5.0",
-                        tpl:"../../../contrib/tpl-0.2",
+  paths: {
+    // contrib
+    easel: "../contrib/easel-0.5.0",
+    i18n: "../contrib/i18n/i18n",
+    image: '../contrib/image-0.2.1',
 
-                        // common
-                        phetcommon:"../../../common/phetcommon/js",
-                        phetcommon_html:"../../../common/phetcommon/html",
-                        'easel-phet':"../../../common/easel-phet/js"
-                    },
+    // common directories, uppercase names to identify them in require imports
+    PHETCOMMON: "../common/phetcommon/js"
+  },
 
-                    shim:{
+  shim: {
+    easel: {
+      exports: "createjs"
+    }
+  },
 
-                        underscore:{
-                            exports:"_"
-                        },
+  urlArgs: new Date().getTime()  // cache buster to make browser refresh load all included scripts
 
-                        easel:{
-                            exports:"createjs"
-                        }
-                    },
-
-                    urlArgs:new Date().getTime()  // cache buster to make browser refresh load all included scripts
-
-                } );
+} );
