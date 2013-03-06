@@ -6,18 +6,21 @@
 
 define( [
   'easel',
-  'view/shapes/StaticElements',
-  'view/shapes/CurrentValueBox',
+  'view/shapes/WireBox',
   'view/shapes/SlidersBox',
-  'view/shapes/FormulaView'
-], function ( Easel, StaticElements, CurrentValueBox, SlidersBox, FormulaView ) {
+  'view/shapes/FormulaView',
+], function ( Easel, WireBox, SlidersBox, FormulaView ) {
 
   return function ( model, view ) {
     var root = new Easel.Container();
 
-    root.addChild( new StaticElements( view ) );
+    //background
+    var background = new Easel.Shape();
+    background.graphics.beginFill( '#ffffdf' ).rect( 0, 0, view.defaultW, view.defaultH );
+    root.addChild( background );
+
     root.addChild( new FormulaView( model ) );
-    root.addChild( new CurrentValueBox( model, view ) );
+    root.addChild( new WireBox( model ) );
     root.addChild( new SlidersBox( model, view ) );
 
     return root;

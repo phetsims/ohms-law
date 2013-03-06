@@ -8,23 +8,23 @@ require(
   [
     "PHETCOMMON/view/CanvasQuirks",
     "model/OhmsLawModel",
-    "view/OhmsLawStage",
+    "view/OhmsLawView",
     "i18n!../nls/ohms-law-strings"
   ],
-  function ( CanvasQuirks, OhmsLawModel, OhmsLawStage, Strings ) {
+  function ( CanvasQuirks, OhmsLawModel, OhmsLawView, Strings ) {
 
     // Title --------------------------------------------------------------------
-    console.log(Strings)
     $( 'title' ).html( Strings.title );
 
     // Model --------------------------------------------------------------------
     var model = new OhmsLawModel();
 
+    var container = $( "#canvasContainer" ).css('position','relative');
     // View --------------------------------------------------------------------
-    var canvas = document.getElementById( 'canvas' );
-    CanvasQuirks.fixTextCursor( canvas );
-    var stage = new OhmsLawStage( canvas, model );
+    var view = new OhmsLawView( container, model );
+
+    CanvasQuirks.fixTextCursor( view.$canvas );
 
     //Touch
-    createjs.Touch.enable( stage, false, false );
+    createjs.Touch.enable( view.$stage, false, false );
   } );

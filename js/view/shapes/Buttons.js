@@ -1,3 +1,4 @@
+
 /**
  * Copyright 2002-2013, University of Colorado
  * Container for sliders and circumjacent text
@@ -64,7 +65,7 @@ define( [
           dx: 20
         },
         {
-          val: "Ω",
+          val: "?",
           dx: 40
         }
       ]
@@ -96,7 +97,6 @@ define( [
     //sliders
     root.addChild( new Slider( view, rectX + xCoords[0], rectY + 90, 240, model.voltage, sliderImage ) );
     root.addChild( new Slider( view, rectX + xCoords[1], rectY + 90, 240, model.resistance, sliderImage ) );
-
     return root;
   };
 } );

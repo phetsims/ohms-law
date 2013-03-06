@@ -1,0 +1,5 @@
+03/01/13 initial commit, first version
+04/03/13 more features
+06/03/13 refactoring
+06/03/13 refresh and sound buttons added
+06/03/13 fixed bug with slider

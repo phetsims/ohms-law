@@ -40,11 +40,11 @@ define(
           oldRS( Math.round( val ) );
         };
 
-        this.setDefault();
+        this.reset();
       };
 
       //initialize default values
-      this.setDefault = function () {
+      this.reset = function () {
         self.voltage.set( 4.5 );
         self.resistance.set( 500 );
         self.sound.set( true );

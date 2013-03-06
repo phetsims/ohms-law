@@ -1,6 +1,6 @@
 /**
  * Copyright 2002-2013, University of Colorado
- * Block shows U = IR formula with letters scaling
+ * Battery block
  * Author: Vasily Shakhov (Mlearner)
  */
 
@@ -17,37 +17,38 @@ define( [
     var texts = [
       {
         val: "V",
-        scale: 6,
+        scale: 5.5,
         x: 200,
         targetProperty: "voltage",
         color: "#0f0ffb"
       },
       {
         val: "I",
-        scale: 1.5,
+        scale: 0.4,
         x: 420,
         targetProperty: "current",
         color: "red"
       },
       {
         val: "R",
-        scale: 0.05,
-        x: 550,
+        scale: 0.04,
+        x: 500,
         targetProperty: "resistance",
         color: "#0f0ffb"
       }
     ];
 
-    var y = 60;
+    var y = 140;
     texts.forEach( function ( entry ) {
       entry.view = new Easel.Text( entry.val, "14px Courier New bold", entry.color ).setTransform( entry.x, y );
+      //entry.view.outline = true;
       entry.view.regX = entry.view.getMeasuredWidth() / 2;
-      entry.view.regY = entry.view.getMeasuredHeight() * 1.125 / 2;
+      entry.view.regY = 14 * 1.15 / 2;
       root.addChild( entry.view );
+      //TODO text outline?
       model[entry.targetProperty].addObserver( function ( val ) {
         entry.view.scaleX = entry.scale * val;
         entry.view.scaleY = entry.scale * val;
-        //TODO scales incorrectly
       } );
     } );
 

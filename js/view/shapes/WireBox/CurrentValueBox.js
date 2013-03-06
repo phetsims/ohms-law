@@ -7,23 +7,23 @@
 
 define( [
   "easel",
-  "i18n!../../../nls/ohms-law-strings",
+  "i18n!../../../../nls/ohms-law-strings",
   "view/shapes/WhiteBox"
 ], function ( Easel, i18n, WhiteBox ) {
 
-  return function ( model, view ) {
+  return function ( model, x, y, w, h ) {
     var root = new Easel.Container();
 
     //rect around text
-    var rectW = 300,
+    var rectW = 350,
       rectH = 70,
-      rectX = view.wire.width / 2 + view.wire.x - rectW / 2,
-      rectY = view.wire.height / 2 + view.wire.y - rectH / 2;
+      rectX = w / 2 + x - rectW / 2,
+      rectY = h / 2 + y - rectH / 2;
 
     root.addChild( new WhiteBox( rectX, rectY, rectW, rectH ) );
 
     //text size and y point of texts
-    var textSize = 30,
+    var textSize = 34,
       midY = rectY + rectH / 2 - 1.25 * textSize / 2,
       midX = rectX + rectW / 2;
 
