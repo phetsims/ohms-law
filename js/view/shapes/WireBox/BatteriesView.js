@@ -9,8 +9,8 @@ define( [
   "easel",
   "image!images/battery.png"
 ], function ( Easel, batImage ) {
-
-  return function ( model, x, y, w, h ) {
+  'use strict';
+  return function ( model, x, y, w) {
     var root = new Easel.Container();
 
     //image template
@@ -19,8 +19,8 @@ define( [
     //max number of batteries
     var maxQ = model.voltage.MAX / 1.5;
 
-    var x = x + (w - maxQ * imgShape.image.width) / 2,
-      y = 400 - imgShape.image.height / 2;
+    x = x + (w - maxQ * imgShape.image.width) / 2;
+    y = y - imgShape.image.height / 2;
 
     //batteries presentation
     var bats = new Array( Math.ceil( maxQ ) );
@@ -41,11 +41,11 @@ define( [
         if ( i <= cCeil ) {
           bats[i].visible = true;
           bats[i].$text.visible = true;
-          if ( i != cCeil ) {
+          if ( i !== cCeil ) {
             bats[i].$text.text = 1.5;
           } else {
-            var newVal = (Math.round( 10 * (val % 1.5) ) / 10).toFixed( 1 )
-            if ( newVal == 0 ) {
+            var newVal = (Math.round( 10 * (val % 1.5) ) / 10).toFixed( 1 );
+            if ( newVal === 0 ) {
               newVal = 1.5;
             }
             bats[i].$text.text = newVal;

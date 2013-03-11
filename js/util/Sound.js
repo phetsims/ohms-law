@@ -7,7 +7,7 @@
 define(
   [],
   function () {
-
+    'use strict';
     function Sound( name ) {
       var sound = document.createElement( 'audio' );
 

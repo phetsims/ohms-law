@@ -8,7 +8,7 @@ define(
     'model/AudioModel'
   ],
   function ( Property, AudioModel ) {
-
+    'use strict';
     function OhmsLawModel() {
       var self = this;
 
@@ -16,7 +16,7 @@ define(
       this.init = function () {
         this.voltage = new Property();
         this.resistance = new Property();
-        this.current = new Property()
+        this.current = new Property();
 
         self.sounds = new AudioModel(self);
 

@@ -7,6 +7,7 @@
 define( [
   "easel"
 ], function ( Easel ) {
+  'use strict';
   function showPointer() {
     document.body.style.cursor = "pointer";
   }

@@ -10,7 +10,7 @@ define(
     'view/HTMLElements'
   ],
   function ( OhmsLawStage, HTMLElements ) {
-
+    'use strict';
     function OhmsLawView( container, model ) {
       var self = this;
       self.model = model;
@@ -18,7 +18,6 @@ define(
       this.$canvas = container.find( "canvas" ).css( 'position', 'relative' );
       this.$stage = new OhmsLawStage( this.$canvas[0], model );
       this.$htmlElements = new HTMLElements( container, model );
-
       this.defaultW = 1000;
       this.defaultH = 640;
 
@@ -44,7 +43,6 @@ define(
           left : (width - canvasW) / 2 + 'px'
         } );
 
-        console.log(scale)
         self.$stage.resize( scale );
 
       };

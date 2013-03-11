@@ -12,7 +12,7 @@ require(
     "i18n!../nls/ohms-law-strings"
   ],
   function ( CanvasQuirks, OhmsLawModel, OhmsLawView, Strings ) {
-
+    'use strict';
     // Title --------------------------------------------------------------------
     $( 'title' ).html( Strings.title );
 

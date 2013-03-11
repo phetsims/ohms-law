@@ -6,8 +6,9 @@
 
 
 define( [
-  "easel",
+  "easel"
 ], function ( Easel ) {
+  'use strict';
   return function (x, y, w, h ) {
     var rect = new Easel.Shape();
     rect.graphics.setStrokeStyle( 3 ).beginStroke( "#000" ).beginFill( "#FFF" );

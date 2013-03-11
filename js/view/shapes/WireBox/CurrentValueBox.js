@@ -10,7 +10,7 @@ define( [
   "i18n!../../../../nls/ohms-law-strings",
   "view/shapes/WhiteBox"
 ], function ( Easel, i18n, WhiteBox ) {
-
+  'use strict';
   return function ( model, x, y, w, h ) {
     var root = new Easel.Container();
 

@@ -10,7 +10,7 @@ define(
     'view/shapes/RootNode'
   ],
   function ( Easel, RootNode ) {
-
+    'use strict';
     function OhmsLawStage( canvas, model ) {
       var self = this;
       self.model = model;

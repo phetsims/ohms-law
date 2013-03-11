@@ -10,7 +10,7 @@ define( [
   'view/shapes/WireBox/BatteriesView',
   'view/shapes/WireBox/ResistorView'
 ], function ( Easel, CurrentValueBox, BatteriesView, ResistorView ) {
-
+  'use strict';
   return function ( model ) {
     var root = new Easel.Container();
 

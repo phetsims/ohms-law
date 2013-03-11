@@ -13,7 +13,7 @@ define( [
   "view/shapes//SliderBox/Slider",
   "image!images/slider.png"
 ], function ( Easel, i18n, WhiteBox, Slider, sliderImage ) {
-
+  'use strict';
   return function ( model, view ) {
 
     var root = new Easel.Container();
