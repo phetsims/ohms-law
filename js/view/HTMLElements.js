@@ -27,15 +27,15 @@ define(
       container.append( sound );
       var soundOn = container.find( '.sound-button > .on' );
       var soundOff = container.find( '.sound-button > .off' );
-      model.sound.addObserver( function ( booleanVal ) {
+      model.sounds.active.addObserver( function ( booleanVal ) {
         soundOn[booleanVal ? 'show' : 'hide']();
         soundOff[booleanVal ? 'hide' : 'show']();
       } );
       soundOn.bind( 'click', function () {
-        model.sound.set( false );
+        model.sounds.active.set( false );
       } );
       soundOff.bind( 'click', function () {
-        model.sound.set( true );
+        model.sounds.active.set( true );
       } );
 
     }

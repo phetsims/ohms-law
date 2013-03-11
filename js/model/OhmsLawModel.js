@@ -5,9 +5,9 @@
 define(
   [
     '../../common/phetcommon/js/model/property/Property',
-    '../../common/phetcommon/js/model/property/BooleanProperty'
+    'model/AudioModel'
   ],
-  function ( Property, BooleanProperty ) {
+  function ( Property, AudioModel ) {
 
     function OhmsLawModel() {
       var self = this;
@@ -17,7 +17,8 @@ define(
         this.voltage = new Property();
         this.resistance = new Property();
         this.current = new Property()
-        self.sound = new BooleanProperty( true );
+
+        self.sounds = new AudioModel(self);
 
         this.voltage.addObserver( updateCurrent );
         this.resistance.addObserver( updateCurrent );
@@ -47,7 +48,7 @@ define(
       this.reset = function () {
         self.voltage.set( 4.5 );
         self.resistance.set( 500 );
-        self.sound.set( true );
+        self.sounds.active.set( true );
         updateCurrent();
       };
 
