@@ -45,7 +45,7 @@ define( [
             bats[i].$text.text = 1.5;
           } else {
             var newVal = (Math.round( 10 * (val % 1.5) ) / 10).toFixed( 1 );
-            if ( newVal === 0 ) {
+            if ( newVal === "0.0" ) {
               newVal = 1.5;
             }
             bats[i].$text.text = newVal;

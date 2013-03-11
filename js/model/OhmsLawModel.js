@@ -18,7 +18,7 @@ define(
         this.resistance = new Property();
         this.current = new Property();
 
-        self.sounds = new AudioModel(self);
+        self.sounds = new AudioModel( self );
 
         this.voltage.addObserver( updateCurrent );
         this.resistance.addObserver( updateCurrent );
