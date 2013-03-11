@@ -19,6 +19,8 @@ define( [
     background.graphics.beginFill( '#ffffdf' ).rect( 0, 0, view.defaultW, view.defaultH );
     root.addChild( background );
 
+
+
     root.addChild( new FormulaView( model ) );
     root.addChild( new WireBox( model ) );
     root.addChild( new SlidersBox( model, view ) );

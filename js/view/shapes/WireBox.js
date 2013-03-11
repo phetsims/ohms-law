@@ -8,8 +8,9 @@ define( [
   'easel',
   'view/shapes/WireBox/CurrentValueBox',
   'view/shapes/WireBox/BatteriesView',
-  'view/shapes/WireBox/ResistorView'
-], function ( Easel, CurrentValueBox, BatteriesView, ResistorView ) {
+  'view/shapes/WireBox/ResistorView',
+  'view/shapes/WireBox/Arrow'
+], function ( Easel, CurrentValueBox, BatteriesView, ResistorView, Arrow ) {
   'use strict';
   return function ( model ) {
     var root = new Easel.Container();
@@ -28,6 +29,16 @@ define( [
     root.addChild( new CurrentValueBox( model, x, y, w, h ) );
     root.addChild( new BatteriesView( model, x, y, w, h ) );
     root.addChild( new ResistorView( model, x, y, w, h ) );
+
+    //arrows
+    [new Arrow( model, x + w, y, -90 ),new Arrow( model, x, y + h, 90 )].forEach(function(entry){
+      model.current.addObserver(function(val){
+        var scale = val/model.current.DEFAULT;
+        entry.scaleX = scale;
+        entry.scaleY = scale;
+      });
+      root.addChild(entry);
+    });
 
     return root;
   };

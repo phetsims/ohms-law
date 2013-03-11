@@ -26,8 +26,10 @@ define(
         //constants
         this.voltage.MAX = 9;
         this.voltage.MIN = 0.1;
+        this.voltage.DEFAULT = 4.5;
         this.resistance.MAX = 1000;
         this.resistance.MIN = 10;
+        this.resistance.DEFAULT = 500;
 
         //@override voltage.set (accuracy 0.1)
         var oldVS = this.voltage.set;
@@ -46,10 +48,11 @@ define(
 
       //initialize default values
       this.reset = function () {
-        self.voltage.set( 4.5 );
-        self.resistance.set( 500 );
+        self.voltage.set( self.voltage.DEFAULT );
+        self.resistance.set( self.resistance.DEFAULT );
         self.sounds.active.set( true );
         updateCurrent();
+        self.current.DEFAULT = self.current.get();
       };
 
       //sets current from V and R;
