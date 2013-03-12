@@ -3,3 +3,6 @@
 06/03/13 refactoring
 06/03/13 refresh and sound buttons added
 06/03/13 fixed bug with slider
+11/03/13 sounds added
+11/03/13 arrows around wire added
+
