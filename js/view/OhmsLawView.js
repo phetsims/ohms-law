@@ -47,6 +47,11 @@ define(
 
       };
 
+      //prevent default scrolling on iPad
+      this.$canvas[0].addEventListener("touchstart",function(e){
+        e.preventDefault();
+      });
+
       $( window ).resize( handleResize );
       handleResize(); // initial size
     }
