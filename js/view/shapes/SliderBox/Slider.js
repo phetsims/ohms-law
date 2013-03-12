@@ -40,7 +40,7 @@ define( [
     h = h - img.height;
 
     imgShape.onPress = function ( e ) {
-      offset = {x: e.stageX / view.stage.scaleX - imgShape.x, y: e.stageY / view.stage.scaleX - imgShape.y};
+      offset = {x: e.stageX / view.stage.scaleX - imgShape.x, y: e.stageY / view.stage.scaleY - imgShape.y};
       e.onMouseMove = drag;
     };
     imgShape.onMouseUp = function ( e ) {

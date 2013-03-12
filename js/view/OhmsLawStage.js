@@ -23,7 +23,7 @@ define(
       this.stage.addChild( new RootNode( self.model, self ) );
 
       // resize handler
-      this.resize = function (scale) {
+      this.resize = function ( scale ) {
         self.stage.scaleX = self.stage.scaleY = scale;
         // force rendering update
         self.stage.update();
@@ -36,13 +36,13 @@ define(
       this.stage.enableMouseOver();
 
       //update when any value changed
-      model.voltage.addObserver( function() {
+      model.voltage.addObserver( function () {
         self.stage.update();
-      });
+      } );
 
-      model.resistance.addObserver( function() {
+      model.resistance.addObserver( function () {
         self.stage.update();
-      });
+      } );
 
     }
 

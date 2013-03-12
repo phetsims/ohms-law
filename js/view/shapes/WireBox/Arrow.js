@@ -3,12 +3,6 @@
  * Author: Vasily Shakhov (Mlearner)
  * View for Arrow around WireBox
  */
-/**
- * Copyright 2002-2013, University of Colorado
- * view for vertical slider control
- * Author: Vasily Shakhov (Mlearner)
- */
-
 
 define( [
   "easel"

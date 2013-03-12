@@ -31,14 +31,14 @@ define( [
     root.addChild( new ResistorView( model, x, y, w, h ) );
 
     //arrows
-    [new Arrow( model, x + w, y, -90 ),new Arrow( model, x, y + h, 90 )].forEach(function(entry){
-      model.current.addObserver(function(val){
-        var scale = val/model.current.DEFAULT;
+    [new Arrow( model, x + w, y, -90 ), new Arrow( model, x, y + h, 90 )].forEach( function ( entry ) {
+      model.current.addObserver( function ( val ) {
+        var scale = val / model.current.DEFAULT;
         entry.scaleX = scale;
         entry.scaleY = scale;
-      });
-      root.addChild(entry);
-    });
+      } );
+      root.addChild( entry );
+    } );
 
     return root;
   };
