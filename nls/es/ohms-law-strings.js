@@ -1,5 +1,5 @@
 define( {
-            "current": "corriente =",
+            "current": "corriente",
             "resistance": "resistencia",
             "simTitle": "Ley de Ohm",
             "sound": "sonido",

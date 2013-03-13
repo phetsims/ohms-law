@@ -1,5 +1,5 @@
 define( {
-            "current": "დენი = ",
+            "current": "დენი",
             "resistance": "წინაღობა",
             "simTitle": "ომის კანონი",
             "sound": "ხმა",

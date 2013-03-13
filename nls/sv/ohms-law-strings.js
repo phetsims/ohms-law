@@ -1,5 +1,5 @@
 define( {
-            "current": "Ström =",
+            "current": "Ström",
             "resistance": "resistans",
             "simTitle": "Ohms lag",
             "sound": "ljud",

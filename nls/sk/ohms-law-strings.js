@@ -1,5 +1,5 @@
 define( {
-            "current": "prúd =",
+            "current": "prúd",
             "resistance": "odpor",
             "sound": "zvuk",
             "voltage": "napätie"

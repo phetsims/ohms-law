@@ -1,5 +1,5 @@
 define( {
-            "current": "prąd =",
+            "current": "prąd",
             "resistance": "rezystancja",
             "simTitle": "Prawo Ohma",
             "sound": "dźwięk",

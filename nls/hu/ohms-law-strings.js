@@ -1,5 +1,5 @@
 define( {
-            "current": "Áramerősség (I)  =",
+            "current": "Áramerősség (I)",
             "resistance": "Ellenállás (R)",
             "simTitle": "Ohm-törvény",
             "sound": " hang",

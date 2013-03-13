@@ -1,5 +1,5 @@
 define( {
-            "current": "strøm = ",
+            "current": "strøm",
             "resistance": "motstand",
             "sound": "lyd",
             "voltage": "spenning",
