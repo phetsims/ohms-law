@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "virta = ",
+            "current": "virta = ",
             "resistance": "resistanssi ",
             "simTitle": "Ohmin laki",
             "sound": "ääni",

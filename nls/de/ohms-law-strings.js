@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "Stromstärke =",
+            "current": "Stromstärke =",
             "resistance": "Widerstand",
             "simTitle": "Ohmsches Gesetz",
             "sound": "Ton",

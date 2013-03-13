@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "сила струму",
+            "current": "сила струму",
             "resistance": "опiр",
             "simTitle": "закон Ома",
             "sound": "звук",

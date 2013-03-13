@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "elektriki tok",
+            "current": "elektriki tok",
             "resistance": "garşylyk",
             "simTitle": "Omuň kanuny",
             "sound": "ses",

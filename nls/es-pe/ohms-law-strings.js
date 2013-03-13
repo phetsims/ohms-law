@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "Corriente=",
+            "current": "Corriente=",
             "resistance": "Resistencia",
             "simTitle": "Ley de Ohm",
             "sound": "Sonido",

@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "Akım=",
+            "current": "Akım=",
             "resistance": "Direnç",
             "simTitle": "Ohm Kanunu",
             "sound": "Ses",

@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "Arus =",
+            "current": "Arus =",
             "resistance": "Rintangan ",
             "simTitle": "Hukum Ohm",
             "sound": "Suara",

@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "זרם = ",
+            "current": "זרם = ",
             "resistance": "התנגדות",
             "simTitle": "חוק אוהם",
             "sound": "קול",

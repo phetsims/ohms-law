@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "proud",
+            "current": "proud",
             "resistance": "odpor",
             "simTitle": "Ohmův zákon",
             "sound": "zvuk",

@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "Цахилгаан гүйдэл",
+            "current": "Цахилгаан гүйдэл",
             "resistance": "Эсэргүүцэл",
             "sound": "дуу",
             "voltage": "хүчдэл"

@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "Arus = ",
+            "current": "Arus = ",
             "resistance": "Resistansi",
             "simTitle": "Hukum Ohm",
             "sound": "Suara",

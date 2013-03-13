@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "جريان هوا",
+            "current": "جريان هوا",
             "resistance": "مقاومت",
             "simTitle": "حرکت پرتابه",
             "sound": "صدا",

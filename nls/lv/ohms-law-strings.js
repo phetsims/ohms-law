@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "pašlaik =",
+            "current": "pašlaik =",
             "resistance": "pretestība",
             "simTitle": "Oma likums",
             "sound": "skaņa",

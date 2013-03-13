@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "Јачина струје",
+            "current": "Јачина струје",
             "resistance": "Отпор",
             "simTitle": "Омов закон",
             "sound": "звук",

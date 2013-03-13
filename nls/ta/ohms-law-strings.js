@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "மின்னோட்டம்",
+            "current": "மின்னோட்டம்",
             "resistance": "தடை",
             "simTitle": "ஓமின் விதி",
             "sound": "ஒலி",

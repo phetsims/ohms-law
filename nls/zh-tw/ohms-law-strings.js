@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "現在的電流=",
+            "current": "現在的電流=",
             "resistance": "電阻",
             "simTitle": "歐姆定律",
             "sound": "聲音",

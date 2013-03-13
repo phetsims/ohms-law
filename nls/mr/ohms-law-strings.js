@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "प्रवाह =",
+            "current": "प्रवाह =",
             "resistance": "विरोध =",
             "simTitle": "ओहमचा नियम",
             "sound": "आवाज",

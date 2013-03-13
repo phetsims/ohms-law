@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "Ρεύμα=",
+            "current": "Ρεύμα=",
             "resistance": "αντίσταση",
             "simTitle": "Νόμος του Ωμ",
             "sound": "ήχος",

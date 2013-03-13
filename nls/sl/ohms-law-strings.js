@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "trenutno=",
+            "current": "trenutno=",
             "resistance": "upornost",
             "simTitle": "Ohmov zakon",
             "sound": "zvok",

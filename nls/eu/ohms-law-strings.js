@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "Intentsitatea =",
+            "current": "Intentsitatea =",
             "resistance": "erresistentzia",
             "simTitle": "Ohm-en legea",
             "sound": "Soinua",

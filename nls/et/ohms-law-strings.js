@@ -1,5 +1,5 @@
 define( {
-            "currentEq": "vool =",
+            "current": "vool =",
             "resistance": "takistus",
             "simTitle": "Ohmi seadus",
             "sound": "heli",
