@@ -13,8 +13,9 @@ require(
   ],
   function ( CanvasQuirks, OhmsLawModel, OhmsLawView, Strings ) {
     'use strict';
+    console.log( "Strings.resistance = " + Strings.resistance );
     // Title --------------------------------------------------------------------
-    $( 'title' ).html( Strings.title );
+    $( 'title' ).html( Strings.simTitle );
 
     // Model --------------------------------------------------------------------
     var model = new OhmsLawModel();
