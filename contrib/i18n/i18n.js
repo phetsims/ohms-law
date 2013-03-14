@@ -140,18 +140,20 @@
                     masterName = name;
                     suffix = match[4];
                     locale = masterConfig.locale;
+//                  console.log("preloacle",locale);
                     if (!locale) {
                         locale = masterConfig.locale =
                             typeof navigator === "undefined" ? "root" :
                             (navigator.language ||
                              navigator.userLanguage || "root").toLowerCase();
 							 
-                        //PhET.CM added this block on 11/28/2012
-                        //Override the browser's language using the optional query parameter.
-                        if ( typeof localeQueryParameter === 'string' ) {
-                            locale = localeQueryParameter;
-                        }
+                        
                     }
+                  //PhET.CM added this block on 11/28/2012
+                  //Override the browser's language using the optional query parameter.
+                  if ( typeof localeQueryParameter === 'string' ) {
+                    locale = localeQueryParameter;
+                  }
                     parts = locale.split("-");
                 }
 
