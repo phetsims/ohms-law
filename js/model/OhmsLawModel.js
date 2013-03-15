@@ -18,8 +18,6 @@ define(
           this.resistance = new Property();
           this.current = new Property();
 
-          self.sounds = new AudioModel( self );
-
           this.voltage.addObserver( updateCurrent );
           this.resistance.addObserver( updateCurrent );
 
@@ -30,6 +28,9 @@ define(
           this.resistance.MAX = 1000;
           this.resistance.MIN = 10;
           this.resistance.DEFAULT = 500;
+
+          //sounds
+          self.sounds = new AudioModel( self );
 
           //@override voltage.set (accuracy 0.1)
           var oldVS = this.voltage.set;
