@@ -15,11 +15,22 @@ define( [
   return function ( model ) {
     var root = new Easel.Container();
 
-    //wire
     var x = 70,
         y = 400,
         w = 550,
         h = 180;
+
+    //arrows
+    [new Arrow( model, x + w + 10, y - 10, -90 ), new Arrow( model, x - 10, y + h + 10, 90 )].forEach( function ( entry ) {
+      model.current.addObserver( function ( val ) {
+        var scale = val / model.current.DEFAULT;
+        entry.scaleX = scale;
+        entry.scaleY = scale;
+      } );
+      root.addChild( entry );
+    } );
+
+    //wire
     var wire = new Easel.Shape().setTransform( x, y );
     wire.width = w;
     wire.height = h;
@@ -30,15 +41,6 @@ define( [
     root.addChild( new BatteriesView( model, x, y, w, h ) );
     root.addChild( new ResistorView( model, x, y, w, h ) );
 
-    //arrows
-    [new Arrow( model, x + w, y, -90 ), new Arrow( model, x, y + h, 90 )].forEach( function ( entry ) {
-      model.current.addObserver( function ( val ) {
-        var scale = val / model.current.DEFAULT;
-        entry.scaleX = scale;
-        entry.scaleY = scale;
-      } );
-      root.addChild( entry );
-    } );
 
     return root;
   };

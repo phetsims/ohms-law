@@ -18,10 +18,10 @@ define( [
         dw = 3,
         dh = 10;
 
-    line.graphics.setStrokeStyle( 1 ).beginStroke( "black" ).beginFill( "#F00" ).mt( w, 0 ).lt( w, h );
+    line.graphics.setStrokeStyle( 0.2 ).beginStroke( "black" ).beginFill( "#F00" ).mt( w, 0 ).lt( w, h );
     line.graphics.lt( dh, h ).lt( dh, h + dw ).lt( 0, h - lw / 2 ).lt( dh, h - lw - dw ).lt( dh, h - lw ).lt( w - lw, h - lw ).lt( w - lw, 0 ).lt( w, 0 );
-    line.regX = w / 2;
-    line.regY = h / 2;
+    line.regX = w-lw;
+    line.regY = h-lw;
     line.rotation = rotation;
     line.x = x;
     line.y = y;
