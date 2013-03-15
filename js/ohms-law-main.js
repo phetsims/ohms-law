@@ -6,14 +6,15 @@
 
 require(
     [
+      'easel',
       "PHETCOMMON/view/CanvasQuirks",
       "model/OhmsLawModel",
       "view/OhmsLawView",
       "i18n!../nls/ohms-law-strings"
     ],
-    function ( CanvasQuirks, OhmsLawModel, OhmsLawView, Strings ) {
+    function (Easel, CanvasQuirks, OhmsLawModel, OhmsLawView, Strings ) {
       'use strict';
-      console.log( "Strings.resistance = " + Strings.resistance );
+
       // Title --------------------------------------------------------------------
       $( 'title' ).html( Strings.simTitle );
 
@@ -27,5 +28,5 @@ require(
       CanvasQuirks.fixTextCursor( view.$canvas );
 
       //Touch
-      createjs.Touch.enable( view.$stage, false, false );
+      Easel.Touch.enable( view.$stage, false, false );
     } );

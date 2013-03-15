@@ -14,7 +14,6 @@ define( [
         ], function ( Easel, Strings, WhiteBox, Slider, sliderImage ) {
   'use strict';
   return function ( model, view ) {
-    console.log( "Strings.resistance = " + Strings.resistance );
 
     var root = new Easel.Container();
 
