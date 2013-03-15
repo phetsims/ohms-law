@@ -6,11 +6,11 @@
 
 
 define( [
-  "easel",
-  "image!images/battery.png"
-], function ( Easel, batImage ) {
+          "easel",
+          "image!images/battery.png"
+        ], function ( Easel, batImage ) {
   'use strict';
-  return function ( model, x, y, w) {
+  return function ( model, x, y, w ) {
     var root = new Easel.Container();
 
     //image template
@@ -43,14 +43,16 @@ define( [
           bats[i].$text.visible = true;
           if ( i !== cCeil ) {
             bats[i].$text.text = 1.5;
-          } else {
+          }
+          else {
             var newVal = (Math.round( 10 * (val % 1.5) ) / 10).toFixed( 1 );
             if ( newVal === "0.0" ) {
               newVal = 1.5;
             }
             bats[i].$text.text = newVal;
           }
-        } else {
+        }
+        else {
           bats[i].visible = false;
           bats[i].$text.visible = false;
         }

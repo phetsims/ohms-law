@@ -3,19 +3,19 @@ body {
 }
 
 .reset-all-button {
-    position: absolute;
-    left: 71.8%;
-    top: 77%;
+  position: absolute;
+  left: 71.8%;
+  top: 77%;
 }
 
 .sound-button {
-    position: absolute;
-    right: 7%;
-    bottom: 10%;
+  position: absolute;
+  right: 7%;
+  bottom: 10%;
 }
 
 .sound-button img {
-    position: absolute;
-    display:none;
-    cursor:pointer;
+  position: absolute;
+  display: none;
+  cursor: pointer;
 }

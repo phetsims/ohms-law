@@ -6,12 +6,12 @@
 
 
 define( [
-  "easel",
-  "i18n!../../../nls/ohms-law-strings",
-  "view/shapes/WhiteBox",
-  "view/shapes//SliderBox/Slider",
-  "image!images/slider.png"
-], function ( Easel, Strings, WhiteBox, Slider, sliderImage ) {
+          "easel",
+          "i18n!../../../nls/ohms-law-strings",
+          "view/shapes/WhiteBox",
+          "view/shapes//SliderBox/Slider",
+          "image!images/slider.png"
+        ], function ( Easel, Strings, WhiteBox, Slider, sliderImage ) {
   'use strict';
   return function ( model, view ) {
     console.log( "Strings.resistance = " + Strings.resistance );

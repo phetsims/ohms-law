@@ -6,8 +6,8 @@
 
 
 define( [
-  "easel"
-], function ( Easel ) {
+          "easel"
+        ], function ( Easel ) {
   'use strict';
   return function ( model ) {
     var root = new Easel.Container();

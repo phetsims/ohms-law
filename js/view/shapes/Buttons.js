@@ -1,4 +1,3 @@
-
 /**
  * Copyright 2002-2013, University of Colorado
  * Container for sliders and circumjacent text
@@ -7,12 +6,12 @@
 
 
 define( [
-  "easel",
-  "i18n!../../../nls/ohms-law-strings",
-  "view/shapes/WhiteBox",
-  "view/shapes//SliderBox/Slider",
-  "image!images/slider.png"
-], function ( Easel, i18n, WhiteBox, Slider, sliderImage ) {
+          "easel",
+          "i18n!../../../nls/ohms-law-strings",
+          "view/shapes/WhiteBox",
+          "view/shapes//SliderBox/Slider",
+          "image!images/slider.png"
+        ], function ( Easel, i18n, WhiteBox, Slider, sliderImage ) {
   'use strict';
   return function ( model, view ) {
 
@@ -20,14 +19,14 @@ define( [
 
     //rect around sliders
     var rectW = 270,
-      rectH = 400,
-      rectX = 720,
-      rectY = 80;
+        rectH = 400,
+        rectX = 720,
+        rectY = 80;
     root.addChild( new WhiteBox( rectX, rectY, rectW, rectH ) );
 
     //texts for slider1, slider2
     var defaultFont = "30px Verdana",
-      defaultColor = "#0f0ffb";
+        defaultColor = "#0f0ffb";
     var texts = [
       [
         {

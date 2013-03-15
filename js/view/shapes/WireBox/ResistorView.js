@@ -6,18 +6,18 @@
 
 
 define( [
-  "easel"
-], function ( Easel ) {
+          "easel"
+        ], function ( Easel ) {
   'use strict';
   return function ( model, x, y, w, h ) {
     var root = new Easel.Container();
 
     var resBox = new Easel.Container();
     var wBox = 260,
-      hBox = 66;
+        hBox = 66;
 
     var x1 = x + (w - wBox) / 2,
-      y1 = y + h - hBox / 2;
+        y1 = y + h - hBox / 2;
 
     //resistor
     var box = new Easel.Shape().setTransform( x1, y1 );
@@ -30,11 +30,11 @@ define( [
 
     //black points in the resistor
     var maxPoints = 250,
-      a = (hBox - 3) * (wBox - 3) / maxPoints,    //area per dot
-      d = Math.pow( a, 0.5 ), //NN dot separation
-      nRows = Math.round( hBox / d ),
-      nCols = Math.round( wBox / d ),
-      c = 0; //counter
+        a = (hBox - 3) * (wBox - 3) / maxPoints,    //area per dot
+        d = Math.pow( a, 0.5 ), //NN dot separation
+        nRows = Math.round( hBox / d ),
+        nCols = Math.round( wBox / d ),
+        c = 0; //counter
 
     var points = [];
 

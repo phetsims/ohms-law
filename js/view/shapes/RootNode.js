@@ -5,11 +5,11 @@
  */
 
 define( [
-  'easel',
-  'view/shapes/WireBox',
-  'view/shapes/SlidersBox',
-  'view/shapes/FormulaView'
-], function ( Easel, WireBox, SlidersBox, FormulaView ) {
+          'easel',
+          'view/shapes/WireBox',
+          'view/shapes/SlidersBox',
+          'view/shapes/FormulaView'
+        ], function ( Easel, WireBox, SlidersBox, FormulaView ) {
   'use strict';
   return function ( model, view ) {
     var root = new Easel.Container();
@@ -18,7 +18,6 @@ define( [
     var background = new Easel.Shape();
     background.graphics.beginFill( '#ffffdf' ).rect( 0, 0, view.defaultW, view.defaultH );
     root.addChild( background );
-
 
 
     root.addChild( new FormulaView( model ) );

@@ -5,21 +5,21 @@
  */
 
 define( [
-  'easel',
-  'view/shapes/WireBox/CurrentValueBox',
-  'view/shapes/WireBox/BatteriesView',
-  'view/shapes/WireBox/ResistorView',
-  'view/shapes/WireBox/Arrow'
-], function ( Easel, CurrentValueBox, BatteriesView, ResistorView, Arrow ) {
+          'easel',
+          'view/shapes/WireBox/CurrentValueBox',
+          'view/shapes/WireBox/BatteriesView',
+          'view/shapes/WireBox/ResistorView',
+          'view/shapes/WireBox/Arrow'
+        ], function ( Easel, CurrentValueBox, BatteriesView, ResistorView, Arrow ) {
   'use strict';
   return function ( model ) {
     var root = new Easel.Container();
 
     //wire
     var x = 70,
-      y = 400,
-      w = 550,
-      h = 180;
+        y = 400,
+        w = 550,
+        h = 180;
     var wire = new Easel.Shape().setTransform( x, y );
     wire.width = w;
     wire.height = h;
