@@ -10,12 +10,10 @@ body {
 
 .sound-button {
   position: absolute;
-  right: 5.8%;
+  right: 6.5%;
   top: 77%;
 }
 
-.sound-button img {
-  position: absolute;
-  display: none;
-  cursor: pointer;
+.sound-button button {
+  width: 50px;
 }
