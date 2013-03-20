@@ -17,12 +17,12 @@ define( [
 
     //sizes of parts of battery
     //default 53px and 25px, totW = 78px
-    totWidth-=4;
+    totWidth -= 4;
     var w = [totWidth * 53 / 78, totWidth * 25 / 78],
         h = 40;
 
     //middle
-    y = y-h/2;
+    y = y - h / 2;
 
 
     self.view = new Easel.Container().setTransform( x, y );
