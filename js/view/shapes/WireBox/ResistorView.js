@@ -23,10 +23,40 @@ define( [
     var box = new Easel.Shape().setTransform( x1, y1 );
     box.width = wBox;
     box.height = hBox;
+
+    root.startX = x1;
+    root.height = box.height;
+
+    //ellipse params
+    var kappa = 0.53;
+    var ox = (hBox / 8) * kappa, // control point offset horizontal
+        oy = (hBox / 2) * kappa, // control point offset vertical
+        ye = hBox,           // y-end
+        ym = hBox / 2,       // y-middle
+        xe = wBox,           // x-end for end
+        xm = wBox - hBox / 8,       // x-middle  for end
+        xe1 = hBox / 4,  // x-end for start
+        xm1 = hBox / 8;  // x-middle for start
+
+    var ctx = box.graphics;
+
+    ctx.clear();
     box.graphics.beginLinearGradientFill( ['#F00', "#FFF", 'rgb(252,252,252)', '#F00'], [0, 0.266, 0.412, 1], 0, 0, 0, hBox );
-    box.graphics.beginStroke( 1 );
-    box.graphics.drawRect( 0, 0, box.width, hBox );
-    resBox.addChild( box );
+
+    ctx.s( 1 ).mt( hBox / 4, 0 ).lt( wBox - hBox / 4, 0 );
+    ctx.bezierCurveTo( xm + ox, 0, xe, ym - oy, xe, ym );
+    ctx.bezierCurveTo( xe, ym + oy, xm + ox, ye, xm, ye );
+    ctx.lt( hBox / 4, hBox );
+    ctx.bezierCurveTo( xm1 - ox, ye, 0, ym + oy, 0, ym );
+    ctx.bezierCurveTo( 0, ym - oy, xm1 - ox, 0, xm1-1, 0 ).endFill().closePath();
+
+
+    ctx.mt( xm1, 0 ).bezierCurveTo( xm1 + ox, 0, xe1, ym - oy, xe1, ym );
+    ctx.bezierCurveTo( xe1, ym + oy, xm1 + ox, ye, xm1+2, ye-1 );
+
+    root.addChild( box );
+    resBox.mask = box;
+
 
     //black points in the resistor
     var maxPoints = 250,

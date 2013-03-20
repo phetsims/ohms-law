@@ -41,7 +41,13 @@ define( [
 
     root.addChild( new CurrentValueBox( model, x, y, w, h ) );
     root.addChild( new BatteriesView( model, x, y, w, h ) );
-    root.addChild( new ResistorView( model, x, y, w, h ) );
+    var resistorView = new ResistorView( model, x, y, w, h );
+    root.addChild( resistorView );
+
+    //part of wire on resistor
+    var wirePart = new Easel.Shape().setTransform( resistorView.startX, y+wire.height );
+    wirePart.graphics.setStrokeStyle( 10 ).beginStroke( "#000" ).mt(0,0).lineTo(resistorView.height/8,0 );
+    root.addChild( wirePart );
 
 
     return root;
