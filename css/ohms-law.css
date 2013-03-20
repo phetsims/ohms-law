@@ -1,5 +1,7 @@
 body {
   background-color: #ffffdf;
+  padding: 0;
+  margin: 0;
 }
 
 .reset-all-button {
@@ -16,4 +18,35 @@ body {
 
 .sound-button button {
   width: 50px;
+}
+
+.tab-bar {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: #000000;
+  bottom: 0;
+}
+
+.tab-name {
+  padding-top: 12px;
+  padding-left: 12px;
+  font-size: 2.5em;
+  color: #ffffff;
+  display: block;
+}
+
+.right-tab-controls {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  display: block;
+}
+
+.phet-logo {
+  position: absolute;
+  bottom: 5px;
+  color: #ffff00;
+  font-size: 2.5em;
+  right: 55px;
 }

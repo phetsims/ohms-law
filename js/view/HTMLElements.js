@@ -8,9 +8,10 @@ define(
     [
       "i18n!../../nls/ohms-law-strings",
       'tpl!../../html/reset.html',
-      'tpl!../../html/sound.html'
+      'tpl!../../html/sound.html',
+      'tpl!../../html/tab.html'
     ],
-    function ( i18n, resetButton, soundButton ) {
+    function ( i18n, resetButton, soundButton, tabPanel ) {
       "use strict";
 
       function ControlPanel( container, model ) {
@@ -37,6 +38,10 @@ define(
         soundOff.bind( 'click', function () {
           model.sounds.active.set( true );
         } );
+
+        //bottom panel
+        $( document.body ).append( tabPanel );
+        $( document.body ).find( ".tab-name" ).html( i18n.simTitle );
 
       }
 
