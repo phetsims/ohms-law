@@ -48,11 +48,11 @@ define( [
     ctx.bezierCurveTo( xe, ym + oy, xm + ox, ye, xm, ye );
     ctx.lt( hBox / 4, hBox );
     ctx.bezierCurveTo( xm1 - ox, ye, 0, ym + oy, 0, ym );
-    ctx.bezierCurveTo( 0, ym - oy, xm1 - ox, 0, xm1-1, 0 ).endFill().closePath();
+    ctx.bezierCurveTo( 0, ym - oy, xm1 - ox, 0, xm1 - 1, 0 ).endFill().closePath();
 
 
     ctx.mt( xm1, 0 ).bezierCurveTo( xm1 + ox, 0, xe1, ym - oy, xe1, ym );
-    ctx.bezierCurveTo( xe1, ym + oy, xm1 + ox, ye, xm1+2, ye-1 );
+    ctx.bezierCurveTo( xe1, ym + oy, xm1 + ox, ye, xm1 + 2, ye - 1 );
 
     root.addChild( box );
     resBox.mask = box;

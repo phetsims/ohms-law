@@ -12,7 +12,7 @@ require(
       "view/OhmsLawView",
       "i18n!../nls/ohms-law-strings"
     ],
-    function (Easel, CanvasQuirks, OhmsLawModel, OhmsLawView, Strings ) {
+    function ( Easel, CanvasQuirks, OhmsLawModel, OhmsLawView, Strings ) {
       'use strict';
 
       // Title --------------------------------------------------------------------

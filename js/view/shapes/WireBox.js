@@ -45,8 +45,8 @@ define( [
     root.addChild( resistorView );
 
     //part of wire on resistor
-    var wirePart = new Easel.Shape().setTransform( resistorView.startX, y+wire.height );
-    wirePart.graphics.setStrokeStyle( 10 ).beginStroke( "#000" ).mt(0,0).lineTo(resistorView.height/8,0 );
+    var wirePart = new Easel.Shape().setTransform( resistorView.startX, y + wire.height );
+    wirePart.graphics.setStrokeStyle( 10 ).beginStroke( "#000" ).mt( 0, 0 ).lineTo( resistorView.height / 8, 0 );
     root.addChild( wirePart );
 
 

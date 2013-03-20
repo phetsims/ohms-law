@@ -20,8 +20,8 @@ define( [
 
     line.graphics.setStrokeStyle( 0.2 ).beginStroke( "black" ).beginFill( "#F00" ).mt( w, 0 ).lt( w, h );
     line.graphics.lt( dh, h ).lt( dh, h + dw ).lt( 0, h - lw / 2 ).lt( dh, h - lw - dw ).lt( dh, h - lw ).lt( w - lw, h - lw ).lt( w - lw, 0 ).lt( w, 0 );
-    line.regX = w-lw;
-    line.regY = h-lw;
+    line.regX = w - lw;
+    line.regY = h - lw;
     line.rotation = rotation;
     line.x = x;
     line.y = y;
