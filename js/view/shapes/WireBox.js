@@ -23,7 +23,9 @@ define( [
     //arrows
     [new Arrow( model, x + w + 10, y - 10, -90 ), new Arrow( model, x - 10, y + h + 10, 90 )].forEach( function ( entry ) {
       model.current.addObserver( function ( val ) {
-        var scale = val / model.current.DEFAULT;
+        // this fantastic values from idea: 9mA (default) => scale=1, 900 mA = maxScale 100/6 (in original)
+        // scale = a * val + b;
+        var scale = 17.78 * val / 1000 + 0.84;
         entry.scaleX = scale;
         entry.scaleY = scale;
       } );

@@ -17,21 +17,24 @@ define( [
     var texts = [
       {
         val: "V",
-        scale: 5.5,
+        scaleA: 5.5,
+        scaleB: 0,
         x: 200,
         targetProperty: "voltage",
         color: "#0f0ffb"
       },
       {
         val: "I",
-        scale: 0.4,
+        scaleA: 0.12,
+        scaleB: 0.84,
         x: 420,
         targetProperty: "current",
         color: "red"
       },
       {
         val: "R",
-        scale: 0.04,
+        scaleA: 0.04,
+        scaleB: 0,
         x: 500,
         targetProperty: "resistance",
         color: "#0f0ffb"
@@ -47,8 +50,9 @@ define( [
       root.addChild( entry.view );
       //TODO text outline?
       model[entry.targetProperty].addObserver( function ( val ) {
-        entry.view.scaleX = entry.scale * val;
-        entry.view.scaleY = entry.scale * val;
+        //scale = scaleA * val*scaleB
+        entry.view.scaleX = entry.scaleA * val + entry.scaleB;
+        entry.view.scaleY = entry.view.scaleX;
       } );
     } );
 
