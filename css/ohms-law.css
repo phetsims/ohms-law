@@ -6,14 +6,19 @@ body {
 
 .reset-all-button {
   position: absolute;
-  left: 71.8%;
-  top: 77%;
+  left: 72.2%;
+  top: 76.5%;
+}
+
+.sound-button-container {
+  position: absolute;
+  right: 1.1%;
+  top: 76.5%;
 }
 
 .sound-button {
   position: absolute;
-  right: 6.5%;
-  top: 77%;
+  right:50px;
 }
 
 .sound-button button {
