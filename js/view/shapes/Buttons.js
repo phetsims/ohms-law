@@ -31,7 +31,7 @@ define( [
       [
         {
           val: "V",
-          font: "60px Courier New bold"
+          font: "bold 60px Courier New"
         },
         {
           val: i18n.voltage,
@@ -51,7 +51,7 @@ define( [
       [
         {
           val: "R",
-          font: "60px Courier New bold"
+          font: "bold 60px Courier New"
         },
         {
           val: i18n.resistance,

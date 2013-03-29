@@ -31,7 +31,7 @@ define( [
       [
         {
           val: "V",
-          font: "60px Times New Roman bold"
+          font: "bold 60px Times New Roman"
         },
         {
           val: Strings.voltage,
@@ -51,7 +51,7 @@ define( [
       [
         {
           val: "R",
-          font: "60px Times New Roman bold"
+          font: "bold 60px Times New Roman"
         },
         {
           val: Strings.resistance,
