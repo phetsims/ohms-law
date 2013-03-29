@@ -43,7 +43,7 @@ define( [
 
     var y = 140;
     texts.forEach( function ( entry ) {
-      entry.view = new Easel.Text( entry.val, "14px Courier New bold", entry.color ).setTransform( entry.x, y );
+      entry.view = new Easel.Text( entry.val, "12px Times New Roman bold", entry.color ).setTransform( entry.x, y );
       //entry.view.outline = true;
       entry.view.regX = entry.view.getMeasuredWidth() / 2;
       entry.view.regY = 14 * 1.15 / 2;
