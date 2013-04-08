@@ -38,7 +38,7 @@ define( [
         color: "black"
       },
       {
-        val: "10.4",
+          val: "1004",
         color: "black"
       },
       {
