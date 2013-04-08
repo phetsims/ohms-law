@@ -40,9 +40,9 @@ module.exports = function ( grunt ) {
       requirejs: {
         compile: {
           options: {
-            mainConfigFile: "js/config.js",
-            out: "deploy/debug/example-sim-debug.js",
-            name: "config",
+            mainConfigFile: "js/ohms-law-config.js",
+            out: "deploy/debug/ohms-law-debug.js",
+            name: "ohms-law-config",
             wrap: true,
             uglify: {
               // turn off name mangling to make debugging easier
@@ -54,7 +54,7 @@ module.exports = function ( grunt ) {
 
       // Concatenate files.
       concat: {
-        "deploy/debug/example-sim-debug.js": [
+        "deploy/debug/ohms-law-debug.js": [
           "almond-0.2.5.js",
           "deploy/debug/example-sim-debug.js"
         ]
@@ -62,8 +62,8 @@ module.exports = function ( grunt ) {
 
       // Minify files with UglifyJS.
       uglify: {
-        "deploy/release/example-sim.min.js": [
-          "deploy/debug/example-sim-debug.js"
+        "deploy/release/ohms-law.min.js": [
+          "deploy/debug/ohms-law-debug.js"
         ]
       }
 
