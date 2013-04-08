@@ -42,17 +42,21 @@ define( [
 
     ctx.clear();
     box.graphics.beginLinearGradientFill( ['#F00', "#FFF", 'rgb(252,252,252)', '#F00'], [0, 0.266, 0.412, 1], 0, 0, 0, hBox );
-
-    ctx.ss( 1 ).s("#000").mt( hBox / 4, 0 ).lt( wBox - hBox / 4, 0 );
+    ctx.ss( 1 ).s( "#000" ).mt( hBox / 8, 0 ).lt( xm, 0 );
     ctx.bezierCurveTo( xm + ox, 0, xe, ym - oy, xe, ym );
     ctx.bezierCurveTo( xe, ym + oy, xm + ox, ye, xm, ye );
-    ctx.lt( hBox / 4, hBox );
-    ctx.bezierCurveTo( xm1 - ox, ye, 0, ym + oy, 0, ym );
-    ctx.bezierCurveTo( 0, ym - oy, xm1 - ox, 0, xm1 - 1, 0 ).endFill().closePath();
+    ctx.lt( xm1, hBox );
+    ctx.bezierCurveTo( xm1 + ox, hBox, xe1, ym + oy, xe1, ym );
+    ctx.bezierCurveTo( xe1, ym - oy, xm1 + ox, 0, xm1, 0 );
+    ctx.endFill().closePath();
 
 
-    ctx.mt( xm1, 0 ).bezierCurveTo( xm1 + ox, 0, xe1, ym - oy, xe1, ym );
-    ctx.bezierCurveTo( xe1, ym + oy, xm1 + ox, ye, xm1 + 2, ye - 1 );
+    ctx.mt( xm1, 0 ).beginFill( "#ff9f9f" ).bezierCurveTo( xm1 - ox, 0, 0, ym - oy, 0, ym );
+    ctx.bezierCurveTo( 0, ym + oy, xm1 - ox, hBox, xm1, hBox );
+    ctx.ss( 1 );
+    ctx.mt( xm1, hBox ).bezierCurveTo( xm1 + ox, hBox, xe1, ym + oy, xe1, ym );
+    ctx.bezierCurveTo( xe1, ym - oy, xm1 + ox, 0, xm1, 0 ).endFill().closePath();
+
 
     root.addChild( box );
     resBox.mask = box;
