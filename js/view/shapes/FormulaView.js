@@ -34,7 +34,7 @@ define( [
       {
         val: "R",
         scaleA: 0.04,
-        scaleB: 0,
+        scaleB: 2,
         x: 500,
         targetProperty: "resistance",
         color: "#0f0ffb"
@@ -48,7 +48,6 @@ define( [
       entry.view.regX = entry.view.getMeasuredWidth() / 2;
       entry.view.regY = 14 * 1.15 / 2;
       root.addChild( entry.view );
-      //TODO text outline?
       model[entry.targetProperty].addObserver( function ( val ) {
         //scale = scaleA * val*scaleB
         entry.view.scaleX = entry.scaleA * val + entry.scaleB;

@@ -43,7 +43,7 @@ define( [
     ctx.clear();
     box.graphics.beginLinearGradientFill( ['#F00', "#FFF", 'rgb(252,252,252)', '#F00'], [0, 0.266, 0.412, 1], 0, 0, 0, hBox );
 
-    ctx.s( 1 ).mt( hBox / 4, 0 ).lt( wBox - hBox / 4, 0 );
+    ctx.ss( 1 ).s("#000").mt( hBox / 4, 0 ).lt( wBox - hBox / 4, 0 );
     ctx.bezierCurveTo( xm + ox, 0, xe, ym - oy, xe, ym );
     ctx.bezierCurveTo( xe, ym + oy, xm + ox, ye, xm, ye );
     ctx.lt( hBox / 4, hBox );
