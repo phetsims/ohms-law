@@ -55,8 +55,8 @@ module.exports = function ( grunt ) {
       // Concatenate files.
       concat: {
         "deploy/debug/ohms-law-debug.js": [
-          "almond-0.2.5.js",
-          "deploy/debug/example-sim-debug.js"
+          "contrib/almond-0.2.5.js",
+          "deploy/debug/ohms-law-debug.js"
         ]
       },
 
@@ -66,7 +66,6 @@ module.exports = function ( grunt ) {
           "deploy/debug/ohms-law-debug.js"
         ]
       }
-
     } );
 
   // Register tasks
