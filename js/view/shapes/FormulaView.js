@@ -58,7 +58,7 @@ define( [
     } );
 
     //static text
-    var text = new Easel.Text( "=", "bold 140px Courier New", "#000" ).setTransform( 300, 140 );
+    var text = new Easel.Text( "=", "bold 140px Georgia", "#000" ).setTransform( 300, 140 );
     text.textBaseline = "middle";
     root.addChild( text );
 
