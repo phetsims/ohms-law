@@ -42,12 +42,7 @@ define(
         //bottom panel
         $( document.body ).append( tabPanel );
         $( document.body ).find( ".tab-name" ).html( i18n.simTitle );
-
       }
 
       return ControlPanel;
     } );
-/**
- * Copyright 2002-2013, University of Colorado
- * Author: Vasily Shakhov (Mlearner)
- */
