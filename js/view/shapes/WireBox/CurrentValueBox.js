@@ -74,7 +74,7 @@ define( [
         midX = rectX + rectW / 2,
         offset = midX - scale * totW / 2;
 
-    root.addChild( new WhiteBox( rectX - 10, rectY, rectW + 20, rectH ) );
+    root.addChild( new WhiteBox( rectX - 30, rectY, rectW + 60, rectH ) );
     root.addChild( textContainer );
     textContainer.setTransform( offset, midY, scale, scale );
     model.current.addObserver( setCurrentText );
