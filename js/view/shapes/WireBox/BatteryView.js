@@ -29,10 +29,10 @@ define( [
 
     //battery view
     var batView = new Easel.Shape();
-    batView.$text1 = new Easel.Text( "1.5", "bold 16px Verdana" ).setTransform( 3, 3 );
-    batView.$text2 = new Easel.Text( "V", "bold 18px Verdana", "blue" ).setTransform( 35, 1 );
-    batView.$text3 = new Easel.Text( "", "bold 16px Verdana" ).setTransform( 3, -20 );
-    batView.$text4 = new Easel.Text( "V", "bold 18px Verdana", "blue" ).setTransform( 34, -23 );
+    batView.$text1 = new Easel.Text( "1.5", "bold 18px Verdana" ).setTransform( 3, 1 );
+    batView.$text2 = new Easel.Text( "V", "bold 18px Verdana", "blue" ).setTransform( 37, 1 );
+    batView.$text3 = new Easel.Text( "", "bold 18px Verdana" ).setTransform( 3, -23 );
+    batView.$text4 = new Easel.Text( "V", "bold 18px Verdana", "blue" ).setTransform( 37, -23 );
 
     //w1 - width of first part(grey) of battery
     var drawBattery = function ( w1 ) {
