@@ -17,8 +17,8 @@ define(
 
         for ( var i = 0; i < model.voltage.MAX / 1.5; i++ ) {
           self.sounds.push( {
-                              'clink': new Sound( 'clink' ),
-                              'clonk': new Sound( 'clonk' )
+                              'clink': new Sound( 'add-battery' ),
+                              'clonk': new Sound( 'remove-battery' )
                             }
           );
         }
