@@ -71,7 +71,7 @@ define( [
     ];
     //xy Grid
     var yCoords = [5, 60, 340 , 340];
-    var xCoords = [60, 200];
+    var xCoords = [70, 190];
 
     //set texts
     for ( var i = 0, l = texts.length; i < l; i++ ) {
