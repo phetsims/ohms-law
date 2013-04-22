@@ -37,7 +37,7 @@ define( [
     //w1 - width of first part(grey) of battery
     var drawBattery = function ( w1 ) {
       batView.graphics.clear().setStrokeStyle( 1 ).beginStroke( "black" );
-      batView.graphics.beginLinearGradientFill( ['#656565', "#afafaf", '#1e1e1e'], [0, 0.3, 1], 0, 0, 0, h );
+      batView.graphics.beginLinearGradientFill( ['#777777', "#bdbdbd", '#2b2b2b'], [0, 0.3, 1], 0, 0, 0, h );
       batView.graphics.drawRect( 0, 0, w1, h );
       batView.graphics.beginLinearGradientFill( ['#cc4e00', "#dddad6", '#cc4e00'], [0, 0.3, 1], 0, 0, 0, h );
       batView.graphics.drawRect( w1, 0, w[1], h );
