@@ -17,8 +17,8 @@ define(
 
         for ( var i = 0; i < model.voltage.MAX / 1.5; i++ ) {
           self.sounds.push( {
-                              'clink': new Sound( 'add-battery' ),
-                              'clonk': new Sound( 'remove-battery' )
+                              'addBattery': new Sound( 'add-battery' ),
+                              'removeBattery': new Sound( 'remove-battery' )
                             }
           );
         }
@@ -27,10 +27,10 @@ define(
           var newVal = Math.floor( (value - 0.1) / 1.5 );
           if ( self.active.get() ) {
             if ( newVal > oldVal ) {
-              self.sounds[newVal].clink.play();
+              self.sounds[newVal].addBattery.play();
             }
             else if ( newVal < oldVal ) {
-              self.sounds[newVal].clonk.play();
+              self.sounds[newVal].removeBattery.play();
             }
           }
           oldVal = newVal;
