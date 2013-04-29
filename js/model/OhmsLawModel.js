@@ -4,7 +4,7 @@
  */
 define(
     [
-      '../../common/phetcommon/js/model/property/Property',
+      'PHETCOMMON/model/property/Property',
       'model/AudioModel'
     ],
     function ( Property, AudioModel ) {

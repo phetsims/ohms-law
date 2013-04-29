@@ -5,7 +5,7 @@
 define(
     [
       'util/Sound',
-      '../../common/phetcommon/js/model/property/BooleanProperty'
+      'PHETCOMMON/model/property/BooleanProperty'
     ],
     function ( Sound, BooleanProperty ) {
       'use strict';
