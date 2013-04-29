@@ -33,7 +33,7 @@ define( [
 //        var scale = Math.pow( ( current * 0.02 ), 0.7 );
         // Exponential with offset.
 //        var scale = Math.pow( ( current * 0.02 ), 0.08 ) + 0.1;
-        console.log( "val = " + current );
+//        console.log( "val = " + current );
         entry.scaleX = scale;
         entry.scaleY = scale;
       } );
