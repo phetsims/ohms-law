@@ -9,7 +9,7 @@ define( [
           "easel",
           "OhmsLawStrings",
           "view/shapes/WhiteBox"
-        ], function ( Easel, Strings, WhiteBox ) {
+        ], function ( Easel, i18n, WhiteBox ) {
   'use strict';
   return function ( model, x, y, w, h ) {
     var root = new Easel.Container();
@@ -22,7 +22,7 @@ define( [
     //texts parts of full string
     var texts = [
       {
-        val: Strings.current,
+        val: i18n.current,
         color: "red"
       },
       {
