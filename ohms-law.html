@@ -20,10 +20,16 @@
   <link rel="stylesheet" href="css/ohms-law.css">
 
   <script src="contrib/jquery-1.8.3.js"></script>
+  <script src="contrib/jquery.imagesloaded.js"></script>
 
 </head>
 
 <body>
+<!--Load images.  Leave them in the DOM (though hidden) so that IE can get image bounds.-->
+<div id="images" style="display: hidden; position: absolute" hidden>
+    <img src="images/slider.png"/>
+</div>
+
 <script data-main="js/ohms-law-config.js"
         src="contrib/require-2.1.2.js"></script>
 

@@ -10,8 +10,8 @@ define( [
           "i18n!../../../nls/ohms-law-strings",
           "view/shapes/WhiteBox",
           "view/shapes//SliderBox/Slider",
-          "image!images/slider.png"
-        ], function ( Easel, Strings, WhiteBox, Slider, sliderImage ) {
+          "imageLoader"
+        ], function ( Easel, Strings, WhiteBox, Slider, imageLoader ) {
   'use strict';
   return function ( model, view ) {
 
@@ -94,8 +94,8 @@ define( [
     } );
 
     //sliders
-    root.addChild( new Slider( view, rectX + xCoords[0], rectY + 90, 240, model.voltage, sliderImage ) );
-    root.addChild( new Slider( view, rectX + xCoords[1], rectY + 90, 240, model.resistance, sliderImage ) );
+    root.addChild( new Slider( view, rectX + xCoords[0], rectY + 90, 240, model.voltage, imageLoader.getImage( 'slider.png' )  ) );
+    root.addChild( new Slider( view, rectX + xCoords[1], rectY + 90, 240, model.resistance, imageLoader.getImage( 'slider.png' )  ) );
 
     return root;
   };

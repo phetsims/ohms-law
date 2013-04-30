@@ -10,9 +10,11 @@ require(
       "PHETCOMMON/view/CanvasQuirks",
       "model/OhmsLawModel",
       "view/OhmsLawView",
-      "i18n!../nls/ohms-law-strings"
+      "i18n!../nls/ohms-law-strings",
+      'PHETCOMMON/util/ImagesLoader',
+      'imageLoader'
     ],
-    function ( Easel, CanvasQuirks, OhmsLawModel, OhmsLawView, Strings ) {
+    function( Easel, CanvasQuirks, OhmsLawModel, OhmsLawView, Strings, ImagesLoader, imageLoader ) {
       'use strict';
 
       // Title --------------------------------------------------------------------
@@ -22,11 +24,18 @@ require(
       var model = new OhmsLawModel();
 
       var container = $( "#canvasContainer" ).css( 'position', 'relative' );
-      // View --------------------------------------------------------------------
-      var view = new OhmsLawView( container, model );
 
-      CanvasQuirks.fixTextCursor( view.$canvas );
+      new ImagesLoader( function( loader ) {
 
-      //Touch
-      Easel.Touch.enable( view.$stage, false, false );
+        //Initialize the image loader
+        imageLoader.getImage = loader.getImage;
+
+        // View --------------------------------------------------------------------
+        var view = new OhmsLawView( container, model );
+
+        CanvasQuirks.fixTextCursor( view.$canvas );
+
+        //Touch
+        Easel.Touch.enable( view.$stage, false, false );
+      } )
     } );
