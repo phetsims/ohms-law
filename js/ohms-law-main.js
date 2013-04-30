@@ -37,5 +37,5 @@ require(
 
         //Touch
         Easel.Touch.enable( view.$stage, false, false );
-      } )
+      } );
     } );
