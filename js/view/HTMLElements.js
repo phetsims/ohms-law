@@ -6,12 +6,12 @@
 
 define(
     [
-      "i18n!../../nls/ohms-law-strings",
+      "OhmsLawStrings",
       'tpl!../../html/reset.html',
       'tpl!../../html/sound.html',
       'tpl!../../html/tab.html'
     ],
-    function ( i18n, resetButton, soundButton, tabPanel ) {
+    function ( Strings, resetButton, soundButton, tabPanel ) {
       "use strict";
 
       function ControlPanel( container, model ) {
@@ -41,7 +41,7 @@ define(
 
         //bottom panel
         $( document.body ).append( tabPanel );
-        $( document.body ).find( ".tab-name" ).html( i18n.simTitle );
+        $( document.body ).find( ".tab-name" ).html( Strings.simTitle );
       }
 
       return ControlPanel;

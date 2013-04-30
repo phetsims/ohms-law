@@ -10,7 +10,7 @@ require(
       "PHETCOMMON/view/CanvasQuirks",
       "model/OhmsLawModel",
       "view/OhmsLawView",
-      "i18n!../nls/ohms-law-strings",
+      "OhmsLawStrings",
       'PHETCOMMON/util/ImagesLoader',
       'imageLoader'
     ],

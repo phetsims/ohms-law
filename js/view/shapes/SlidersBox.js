@@ -7,7 +7,7 @@
 
 define( [
           "easel",
-          "i18n!../../../nls/ohms-law-strings",
+          "OhmsLawStrings",
           "view/shapes/WhiteBox",
           "view/shapes//SliderBox/Slider",
           "imageLoader"
