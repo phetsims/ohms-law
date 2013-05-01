@@ -9,7 +9,7 @@ define( [
           "easel",
           "OhmsLawStrings",
           "view/shapes/WhiteBox",
-          "view/shapes//SliderBox/Slider",
+          "view/shapes/SliderBox/Slider",
           "imageLoader"
         ], function ( Easel, Strings, WhiteBox, Slider, imageLoader ) {
   'use strict';
