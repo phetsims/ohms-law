@@ -27,8 +27,11 @@
 <body>
 <!--Load images.  Leave them in the DOM (though hidden) so that IE can get image bounds.-->
 <div id="images" style="visibility: hidden; position: absolute">
-    <img src="images/slider.png"/>
+  <img src="images/slider.png"/>
 </div>
+
+<!--Load query parameters-->
+<script type="text/javascript" src="../phetcommon/js/util/query-parameters.js"></script>
 
 <!--Launch Development Version-->
 <!--<script data-main="js/ohms-law-config.js" src="contrib/require-2.1.2.js"></script>-->
@@ -38,7 +41,7 @@
 <script type="text/javascript" src="deploy/debug/ohms-law-debug.js"></script>
 
 <!--Load the desired strings-->
-<script type="text/javascript" src="../phetcommon/js/util/query-parameters.js"></script>
+<script type="text/javascript" src="../phetcommon/js/util/update-locale.js"></script>
 
 <div id='canvasContainer'>
   <canvas id='canvas' width='1000' height='640'>Canvas not supported.</canvas>
