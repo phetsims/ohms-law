@@ -25,7 +25,7 @@ define( [
       },
       {
         val: "I",
-        scaleA: 0.12,
+        scaleA: 0.2,
         scaleB: 0.84,
         x: 420,
         targetProperty: "current",
