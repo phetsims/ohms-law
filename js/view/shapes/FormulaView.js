@@ -17,8 +17,8 @@ define( [
     var texts = [
       {
         val: "V",
-        scaleA: 5.5,
-        scaleB: 0,
+        scaleA: 4.5,
+        scaleB: 2,
         x: 200,
         targetProperty: "voltage",
         color: "#0f0ffb"
