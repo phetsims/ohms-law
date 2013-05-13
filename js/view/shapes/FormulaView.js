@@ -35,7 +35,7 @@ define( [
         val: "R",
         scaleA: 0.04,
         scaleB: 2,
-        x: 535,
+        x: 560,
         targetProperty: "resistance",
         color: "#0f0ffb"
       }
