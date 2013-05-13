@@ -21,7 +21,7 @@ define( [
         h = 180;
 
     //arrows
-    [new Arrow( model, x + w + 10, y - 10, -90 ), new Arrow( model, x - 10, y + h + 10, 90 )].forEach( function ( entry ) {
+    [new Arrow( model, x + w + 10, y + h + 10, 0 ), new Arrow( model, x - 10, y + h + 10, 90 )].forEach( function ( entry ) {
       model.current.addObserver( function ( current ) {
         // this fantastic values from idea: 9mA (default) => scale=1, 900 mA = maxScale 100/6 (in original)
         // scale = a * val + b;
