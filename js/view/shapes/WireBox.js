@@ -21,19 +21,11 @@ define( [
         h = 180;
 
     //arrows
-    [new Arrow( model, x + w + 10, y + h + 10, 0 ), new Arrow( model, x - 10, y + h + 10, 90 )].forEach( function ( entry ) {
+    [new Arrow( model, x - 10, y + h + 10, 90 ), new Arrow( model, x + w + 10, y + h + 10, 0 )].forEach( function ( entry ) {
       model.current.addObserver( function ( current ) {
-        // this fantastic values from idea: 9mA (default) => scale=1, 900 mA = maxScale 100/6 (in original)
-        // scale = a * val + b;
-        // Original
-//        var scale = 17.78 * current / 1000;
-        // Linear with offset
-        var scale = 0.02 * current + 1;
-        // Exponential.
-//        var scale = Math.pow( ( current * 0.02 ), 0.7 );
-        // Exponential with offset.
-//        var scale = Math.pow( ( current * 0.02 ), 0.08 ) + 0.1;
-//        console.log( "val = " + current );
+        // Scale the arrows based on the value of the current.
+        // Exponential scaling algorithm.  Linear makes the changes too big.
+        var scale = Math.pow( ( current * 0.1 ), 0.7 );
         entry.scaleX = scale;
         entry.scaleY = scale;
       } );
