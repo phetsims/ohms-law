@@ -23,6 +23,9 @@ require(
       // Model --------------------------------------------------------------------
       var model = new OhmsLawModel();
 
+      //prevent text cursor on dragging
+      document.onselectstart = function() { return false; };
+
       var container = $( "#canvasContainer" ).css( 'position', 'relative' );
 
       new ImagesLoader( function( loader ) {
