@@ -9,7 +9,7 @@ require.config( {
                   deps: ["ohms-law-main"],
 
                   paths: {
-                    // contrib
+                    // libs
                     easel: "../lib/easel-0.5.0",
                     i18n: "../lib/i18n/i18n",
                     tpl: "../lib/tpl-0.2",
