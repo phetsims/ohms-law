@@ -28,7 +28,8 @@ require(
 
       var container = $( "#canvasContainer" ).css( 'position', 'relative' );
 
-      new ImagesLoader( function( loader ) {
+      /* jshint -W064 */ // Disable warning about using constructor for side effects
+      ImagesLoader( function( loader ) {
 
         //Initialize the image loader
         imageLoader.getImage = loader.getImage;
