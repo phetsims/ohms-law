@@ -1,5 +1,3 @@
 node_modules
 ohms-law.iml
-deploy/
-deploy/debug/*
-deploy/release/*
+build/*
