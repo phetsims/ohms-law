@@ -10,10 +10,10 @@ require.config( {
 
                   paths: {
                     // contrib
-                    easel: "../contrib/easel-0.5.0",
-                    i18n: "../contrib/i18n/i18n",
-                    tpl: "../contrib/tpl-0.2",
-                    imagesloaded: '../contrib/jquery.imagesloaded',
+                    easel: "../lib/easel-0.5.0",
+                    i18n: "../lib/i18n/i18n",
+                    tpl: "../lib/tpl-0.2",
+                    imagesloaded: '../lib/jquery.imagesloaded',
 
                     // common directories, uppercase names to identify them in require imports
                     ASSERT: '../../assert/js',

@@ -55,7 +55,7 @@ module.exports = function ( grunt ) {
       // Concatenate files.
       concat: {
         "deploy/debug/ohms-law-debug.js": [
-          "contrib/almond-0.2.5.js",
+          "lib/almond-0.2.5.js",
           "deploy/debug/ohms-law-debug.js"
         ]
       },
