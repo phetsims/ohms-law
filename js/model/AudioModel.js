@@ -5,7 +5,7 @@
 define(
     [
       'util/Sound',
-      'PHETCOMMON/model/property/BooleanProperty'
+      'AXON/BooleanProperty'
     ],
     function ( Sound, BooleanProperty ) {
       'use strict';
@@ -27,10 +27,10 @@ define(
           var newVal = Math.floor( (value - 0.1) / 1.5 );
           if ( self.active.get() ) {
             if ( newVal > oldVal ) {
-              self.sounds[newVal].addBattery.play();
+              if (self.sounds[newVal]) self.sounds[newVal].addBattery.play();
             }
             else if ( newVal < oldVal ) {
-              self.sounds[newVal].removeBattery.play();
+              if (self.sounds[newVal]) self.sounds[newVal].removeBattery.play();
             }
           }
           oldVal = newVal;
