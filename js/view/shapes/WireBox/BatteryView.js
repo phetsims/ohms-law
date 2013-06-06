@@ -7,9 +7,9 @@
 define( [
           "easel",
           'AXON/Property'
-        ], function ( Easel, Property ) {
+        ], function( Easel, Property ) {
   'use strict';
-  return function ( model, x, y, totWidth ) {
+  return function( model, x, y, totWidth ) {
     var self = this;
 
     //current battery's voltage
@@ -19,7 +19,7 @@ define( [
     //default 72px and 6px, totW = 78px
     totWidth -= 4;
     var w = [totWidth * 72 / 78, totWidth * 6 / 78],
-        h = 40;
+      h = 40;
 
     //middle
     y = y - h / 2;
@@ -35,7 +35,7 @@ define( [
     batView.$text4 = new Easel.Text( "V", "bold 18px Verdana", "blue" ).setTransform( 37, -23 );
 
     //w1 - width of first part(grey) of battery
-    var drawBattery = function ( w1 ) {
+    var drawBattery = function( w1 ) {
       batView.graphics.clear().setStrokeStyle( 1 ).beginStroke( "black" );
       batView.graphics.beginLinearGradientFill( ['#777777', "#bdbdbd", '#2b2b2b'], [0, 0.3, 1], 0, 0, 0, h );
       batView.graphics.drawRect( 0, 0, w1, h );
@@ -46,7 +46,7 @@ define( [
     };
 
     //partView when voltage 1.5
-    var setFull = function () {
+    var setFull = function() {
       self.view.removeAllChildren();
       drawBattery( w[0] );
       self.view.addChild( batView );
@@ -55,7 +55,7 @@ define( [
     };
 
     //partView when voltage not 1.5
-    var setPart = function ( pct ) {
+    var setPart = function( pct ) {
       var cWidth = pct * totWidth - 6;
       drawBattery( cWidth );
 
@@ -67,7 +67,7 @@ define( [
       self.view.addChild( batView.$text4 );
     };
 
-    self.voltage.addObserver( function ( val ) {
+    self.voltage.addObserver( function( val ) {
       if ( val === 0 ) {
         self.view.visible = false;
       }

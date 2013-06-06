@@ -10,19 +10,19 @@ define( [
           'view/shapes/WireBox/BatteriesView',
           'view/shapes/WireBox/ResistorView',
           'view/shapes/WireBox/Arrow'
-        ], function ( Easel, CurrentValueBox, BatteriesView, ResistorView, Arrow ) {
+        ], function( Easel, CurrentValueBox, BatteriesView, ResistorView, Arrow ) {
   'use strict';
-  return function ( model ) {
+  return function( model ) {
     var root = new Easel.Container();
 
     var x = 70,
-        y = 400,
-        w = 550,
-        h = 180;
+      y = 400,
+      w = 550,
+      h = 180;
 
     //arrows
-    [new Arrow( model, x - 10, y + h + 10, 90 ), new Arrow( model, x + w + 10, y + h + 10, 0 )].forEach( function ( entry ) {
-      model.current.addObserver( function ( current ) {
+    [new Arrow( model, x - 10, y + h + 10, 90 ), new Arrow( model, x + w + 10, y + h + 10, 0 )].forEach( function( entry ) {
+      model.current.addObserver( function( current ) {
         // Scale the arrows based on the value of the current.
         // Exponential scaling algorithm.  Linear makes the changes too big.
         var scale = Math.pow( ( current * 0.1 ), 0.7 );

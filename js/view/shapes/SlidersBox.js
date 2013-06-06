@@ -11,22 +11,22 @@ define( [
           "view/shapes/WhiteBox",
           "view/shapes/SliderBox/Slider",
           "imageLoader"
-        ], function ( Easel, Strings, WhiteBox, Slider, imageLoader ) {
+        ], function( Easel, Strings, WhiteBox, Slider, imageLoader ) {
   'use strict';
-  return function ( model, view ) {
+  return function( model, view ) {
 
     var root = new Easel.Container();
 
     //rect around sliders
     var rectW = 270,
-        rectH = 400,
-        rectX = 720,
-        rectY = 80;
+      rectH = 400,
+      rectX = 720,
+      rectY = 80;
     root.addChild( new WhiteBox( rectX, rectY, rectW, rectH ) );
 
     //texts for slider1, slider2
     var defaultFont = "30px Verdana",
-        defaultColor = "#0f0ffb";
+      defaultColor = "#0f0ffb";
     var texts = [
       [
         {
@@ -85,17 +85,17 @@ define( [
     }
 
     //observer, changes view when resistance or voltage value changes
-    model.voltage.addObserver( function ( val ) {
+    model.voltage.addObserver( function( val ) {
       texts[0][2].view.text = val;
     } );
 
-    model.resistance.addObserver( function ( val ) {
+    model.resistance.addObserver( function( val ) {
       texts[1][2].view.text = val;
     } );
 
     //sliders
-    root.addChild( new Slider( view, rectX + xCoords[0], rectY + 90, 240, model.voltage, imageLoader.getImage( 'slider.png' )  ) );
-    root.addChild( new Slider( view, rectX + xCoords[1], rectY + 90, 240, model.resistance, imageLoader.getImage( 'slider.png' )  ) );
+    root.addChild( new Slider( view, rectX + xCoords[0], rectY + 90, 240, model.voltage, imageLoader.getImage( 'slider.png' ) ) );
+    root.addChild( new Slider( view, rectX + xCoords[1], rectY + 90, 240, model.resistance, imageLoader.getImage( 'slider.png' ) ) );
 
     return root;
   };

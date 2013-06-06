@@ -6,7 +6,7 @@
 
 define( [
           "easel"
-        ], function ( Easel ) {
+        ], function( Easel ) {
   'use strict';
   function showPointer() {
     document.body.style.cursor = "pointer";
@@ -21,7 +21,7 @@ define( [
     displayObject.onMouseOut = showDefault;
   }
 
-  return function ( view, x, y, h, targetProperty, img ) {
+  return function( view, x, y, h, targetProperty, img ) {
     var root = new Easel.Container();
 
     //background
@@ -39,14 +39,14 @@ define( [
     var offset = {};
     h = h - img.height;
 
-    imgShape.onPress = function ( e ) {
+    imgShape.onPress = function( e ) {
       offset = {x: e.stageX / view.stage.scaleX - imgShape.x, y: e.stageY / view.stage.scaleY - imgShape.y};
       e.onMouseMove = drag;
     };
-    imgShape.onMouseUp = function ( e ) {
+    imgShape.onMouseUp = function( e ) {
       e.onMouseOver = showPointer;
     };
-    var drag = function ( e ) {
+    var drag = function( e ) {
       var ty = e.stageY / view.stage.scaleX - offset.y;
       ty = Math.max( y, Math.min( ty, y + h ) );
       imgShape.y = ty;
@@ -54,7 +54,7 @@ define( [
     };
 
     //observer, set position when changed
-    targetProperty.addObserver( function () {
+    targetProperty.addObserver( function() {
       imgShape.y = y + h - h * (targetProperty.get() - targetProperty.MIN) / (targetProperty.MAX - targetProperty.MIN);
     } );
 

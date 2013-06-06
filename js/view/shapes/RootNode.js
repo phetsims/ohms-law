@@ -9,9 +9,9 @@ define( [
           'view/shapes/WireBox',
           'view/shapes/SlidersBox',
           'view/shapes/FormulaView'
-        ], function ( Easel, WireBox, SlidersBox, FormulaView ) {
+        ], function( Easel, WireBox, SlidersBox, FormulaView ) {
   'use strict';
-  return function ( model, view ) {
+  return function( model, view ) {
     var root = new Easel.Container();
 
     //background

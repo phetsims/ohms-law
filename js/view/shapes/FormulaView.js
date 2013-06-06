@@ -7,9 +7,9 @@
 
 define( [
           "easel"
-        ], function ( Easel ) {
+        ], function( Easel ) {
   'use strict';
-  return function ( model ) {
+  return function( model ) {
     var root = new Easel.Container();
 
     //texts parts of full string
@@ -42,13 +42,13 @@ define( [
     ];
 
     var y = 140;
-    texts.forEach( function ( entry ) {
+    texts.forEach( function( entry ) {
       entry.view = new Easel.Text( entry.val, "bold 12px Times New Roman", entry.color ).setTransform( entry.x, y );
 
       entry.view.regX = entry.view.getMeasuredWidth() / 2;
       entry.view.textBaseline = "middle";
       root.addChild( entry.view );
-      model[entry.targetProperty].addObserver( function ( val ) {
+      model[entry.targetProperty].addObserver( function( val ) {
         entry.view.scaleX = entry.scaleA * val + entry.scaleB;
         entry.view.scaleY = entry.view.scaleX;
       } );

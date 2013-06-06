@@ -8,9 +8,9 @@
 define( [
           "easel",
           'view/shapes/WireBox/BatteryView'
-        ], function ( Easel, BatteryView ) {
+        ], function( Easel, BatteryView ) {
   'use strict';
-  return function ( model, x, y, w ) {
+  return function( model, x, y, w ) {
     var root = new Easel.Container();
 
     //max number of batteries
@@ -33,7 +33,7 @@ define( [
     }
 
 
-    model.voltage.addObserver( function ( val ) {
+    model.voltage.addObserver( function( val ) {
       for ( var i = 0, l = bats.length; i < l; i++ ) {
         var diff = Math.min( 1.5, val );
         if ( diff !== bats[i].voltage.get() ) {

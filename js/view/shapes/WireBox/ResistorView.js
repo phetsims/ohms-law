@@ -7,17 +7,17 @@
 
 define( [
           "easel"
-        ], function ( Easel ) {
+        ], function( Easel ) {
   'use strict';
-  return function ( model, x, y, w, h ) {
+  return function( model, x, y, w, h ) {
     var root = new Easel.Container();
 
     var resBox = new Easel.Container();
     var wBox = 260,
-        hBox = 66;
+      hBox = 66;
 
     var x1 = x + (w - wBox) / 2,
-        y1 = y + h - hBox / 2;
+      y1 = y + h - hBox / 2;
 
     //resistor
     var box = new Easel.Shape().setTransform( x1, y1 );
@@ -30,13 +30,13 @@ define( [
     //ellipse params
     var kappa = 0.53;
     var ox = (hBox / 8) * kappa, // control point offset horizontal
-        oy = (hBox / 2) * kappa, // control point offset vertical
-        ye = hBox,           // y-end
-        ym = hBox / 2,       // y-middle
-        xe = wBox,           // x-end for end
-        xm = wBox - hBox / 8,       // x-middle  for end
-        xe1 = hBox / 4,  // x-end for start
-        xm1 = hBox / 8;  // x-middle for start
+      oy = (hBox / 2) * kappa, // control point offset vertical
+      ye = hBox,           // y-end
+      ym = hBox / 2,       // y-middle
+      xe = wBox,           // x-end for end
+      xm = wBox - hBox / 8,       // x-middle  for end
+      xe1 = hBox / 4,  // x-end for start
+      xm1 = hBox / 8;  // x-middle for start
 
     var ctx = box.graphics;
 
@@ -64,11 +64,11 @@ define( [
 
     //black points in the resistor
     var maxPoints = 250,
-        a = (hBox - 3) * (wBox - 3) / maxPoints,    //area per dot
-        d = Math.pow( a, 0.5 ), //NN dot separation
-        nRows = Math.round( hBox / d ),
-        nCols = Math.round( wBox / d ),
-        c = 0; //counter
+      a = (hBox - 3) * (wBox - 3) / maxPoints,    //area per dot
+      d = Math.pow( a, 0.5 ), //NN dot separation
+      nRows = Math.round( hBox / d ),
+      nCols = Math.round( wBox / d ),
+      c = 0; //counter
 
     var points = [];
 
@@ -93,7 +93,7 @@ define( [
     }
 
     //observer, set position when changed
-    model.resistance.addObserver( function ( val ) {
+    model.resistance.addObserver( function( val ) {
       // val+50 - adjust scaling to look similar to flash original
       var borderNumber = maxPoints * (val + 50) / (model.resistance.MAX);
       for ( var i = 0; i < maxPoints; i++ ) {
