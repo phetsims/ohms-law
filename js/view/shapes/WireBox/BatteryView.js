@@ -6,7 +6,7 @@
 
 define( [
           "easel",
-          'PHETCOMMON/model/property/Property'
+          'AXON/Property'
         ], function ( Easel, Property ) {
   'use strict';
   return function ( model, x, y, totWidth ) {

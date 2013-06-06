@@ -4,7 +4,7 @@
  */
 define(
     [
-      'PHETCOMMON/model/property/Property',
+      'AXON/Property',
       'model/AudioModel'
     ],
     function ( Property, AudioModel ) {
@@ -33,13 +33,13 @@ define(
           self.sounds = new AudioModel( self );
 
           //@override voltage.set (accuracy 0.1)
-          var oldVS = this.voltage.set;
+          var oldVS = this.voltage.set.bind(this.voltage);
           this.voltage.set = function ( val ) {
             oldVS( (Math.round( val * 10 ) / 10).toFixed( 1 ) );
           };
 
           //@override resistance.set (accuracy 0)
-          var oldRS = this.resistance.set;
+          var oldRS = this.resistance.set.bind(this.voltage);
           this.resistance.set = function ( val ) {
             oldRS( Math.round( val ) );
           };

@@ -17,7 +17,10 @@ require.config( {
 
                     // common directories, uppercase names to identify them in require imports
                     ASSERT: '../../assert/js',
-                    PHETCOMMON: "../common/phetcommon/js"
+                    AXON: '../../axon/js',
+                    PHETCOMMON: "../common/phetcommon/js",
+                    DOT: '../../dot/js',
+                    PHET_CORE: '../../phet-core/js'
                   },
 
                   shim: {
