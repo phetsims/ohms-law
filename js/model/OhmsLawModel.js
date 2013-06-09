@@ -39,7 +39,7 @@ define(
         };
 
         //@override resistance.set (accuracy 0)
-        var oldRS = this.resistance.set.bind( this.voltage );
+        var oldRS = this.resistance.set.bind( this.resistance );
         this.resistance.set = function( val ) {
           oldRS( Math.round( val ) );
         };
