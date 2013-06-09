@@ -18,8 +18,8 @@ define(
         this.resistance = new Property();
         this.current = new Property();
 
-        this.voltage.addObserver( updateCurrent );
-        this.resistance.addObserver( updateCurrent );
+        this.voltage.link( updateCurrent );
+        this.resistance.link( updateCurrent );
 
         //constants
         this.voltage.MAX = 9;

@@ -67,7 +67,7 @@ define( [
       self.view.addChild( batView.$text4 );
     };
 
-    self.voltage.addObserver( function( val ) {
+    self.voltage.link( function( val ) {
       if ( val === 0 ) {
         self.view.visible = false;
       }

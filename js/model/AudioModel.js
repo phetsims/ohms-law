@@ -23,7 +23,7 @@ define(
         );
       }
       var oldVal = Math.floor( model.voltage.get() / 1.5 );
-      model.voltage.addObserver( function( value ) {
+      model.voltage.link( function( value ) {
         var newVal = Math.floor( (value - 0.1) / 1.5 );
         if ( self.active.get() ) {
           if ( newVal > oldVal ) {

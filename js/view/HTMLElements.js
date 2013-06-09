@@ -28,7 +28,7 @@ define(
       container.append( sound );
       var soundOn = container.find( '.sound-button > .on' );
       var soundOff = container.find( '.sound-button > .off' );
-      model.sounds.active.addObserver( function( booleanVal ) {
+      model.sounds.active.link( function( booleanVal ) {
         soundOn[booleanVal ? 'show' : 'hide']();
         soundOff[booleanVal ? 'hide' : 'show']();
       } );

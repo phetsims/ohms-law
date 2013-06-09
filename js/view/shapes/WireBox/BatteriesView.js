@@ -33,7 +33,7 @@ define( [
     }
 
 
-    model.voltage.addObserver( function( val ) {
+    model.voltage.link( function( val ) {
       for ( var i = 0, l = bats.length; i < l; i++ ) {
         var diff = Math.min( 1.5, val );
         if ( diff !== bats[i].voltage.get() ) {

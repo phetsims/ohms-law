@@ -77,7 +77,7 @@ define( [
     root.addChild( new WhiteBox( rectX - 30, rectY, rectW + 60, rectH ) );
     root.addChild( textContainer );
     textContainer.setTransform( offset, midY, scale, scale );
-    model.current.addObserver( setCurrentText );
+    model.current.link( setCurrentText );
     return root;
   };
 } );

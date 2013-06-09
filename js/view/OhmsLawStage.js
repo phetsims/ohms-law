@@ -36,11 +36,11 @@ define(
       this.stage.enableMouseOver();
 
       //update when any value changed
-      model.voltage.addObserver( function() {
+      model.voltage.link( function() {
         self.stage.update();
       } );
 
-      model.resistance.addObserver( function() {
+      model.resistance.link( function() {
         self.stage.update();
       } );
 

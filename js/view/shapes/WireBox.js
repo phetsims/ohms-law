@@ -22,7 +22,7 @@ define( [
 
     //arrows
     [new Arrow( model, x - 10, y + h + 10, 90 ), new Arrow( model, x + w + 10, y + h + 10, 0 )].forEach( function( entry ) {
-      model.current.addObserver( function( current ) {
+      model.current.link( function( current ) {
         // Scale the arrows based on the value of the current.
         // Exponential scaling algorithm.  Linear makes the changes too big.
         var scale = Math.pow( ( current * 0.1 ), 0.7 );

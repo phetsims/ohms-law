@@ -85,11 +85,11 @@ define( [
     }
 
     //observer, changes view when resistance or voltage value changes
-    model.voltage.addObserver( function( val ) {
+    model.voltage.link( function( val ) {
       texts[0][2].view.text = val;
     } );
 
-    model.resistance.addObserver( function( val ) {
+    model.resistance.link( function( val ) {
       texts[1][2].view.text = val;
     } );
 

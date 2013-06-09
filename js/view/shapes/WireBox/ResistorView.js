@@ -93,7 +93,7 @@ define( [
     }
 
     //observer, set position when changed
-    model.resistance.addObserver( function( val ) {
+    model.resistance.link( function( val ) {
       // val+50 - adjust scaling to look similar to flash original
       var borderNumber = maxPoints * (val + 50) / (model.resistance.MAX);
       for ( var i = 0; i < maxPoints; i++ ) {

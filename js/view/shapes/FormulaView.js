@@ -48,7 +48,7 @@ define( [
       entry.view.regX = entry.view.getMeasuredWidth() / 2;
       entry.view.textBaseline = "middle";
       root.addChild( entry.view );
-      model[entry.targetProperty].addObserver( function( val ) {
+      model[entry.targetProperty].link( function( val ) {
         entry.view.scaleX = entry.scaleA * val + entry.scaleB;
         entry.view.scaleY = entry.view.scaleX;
       } );

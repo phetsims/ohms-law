@@ -54,7 +54,7 @@ define( [
     };
 
     //observer, set position when changed
-    targetProperty.addObserver( function() {
+    targetProperty.link( function() {
       imgShape.y = y + h - h * (targetProperty.get() - targetProperty.MIN) / (targetProperty.MAX - targetProperty.MIN);
     } );
 
