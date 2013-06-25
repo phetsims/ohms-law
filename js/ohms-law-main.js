@@ -11,10 +11,10 @@ require(
     "model/OhmsLawModel",
     "view/OhmsLawView",
     "OhmsLawStrings",
-    'PHETCOMMON/util/ImagesLoader',
-    'imageLoader'
+    'imageLoader',
+    'JOIST/SimLauncher'
   ],
-  function( Easel, CanvasQuirks, OhmsLawModel, OhmsLawView, Strings, ImagesLoader, imageLoader ) {
+  function( Easel, CanvasQuirks, OhmsLawModel, OhmsLawView, Strings, imageLoader, SimLauncher ) {
     'use strict';
 
     // Title --------------------------------------------------------------------
@@ -28,11 +28,7 @@ require(
 
     var container = $( "#canvasContainer" ).css( 'position', 'relative' );
 
-    /* jshint -W031 */ // Disable warning about using constructor for side effects
-    new ImagesLoader( function( loader ) {
-
-      //Initialize the image loader
-      imageLoader.getImage = loader.getImage;
+    SimLauncher.launch( imageLoader, function() {
 
       // View --------------------------------------------------------------------
       var view = new OhmsLawView( container, model );
