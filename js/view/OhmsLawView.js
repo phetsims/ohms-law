@@ -1,3 +1,5 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
  * Copyright 2002-2013, University of Colorado
  * View for OhmsLaw simulations. Contains 2 elements : canvas + htmlControls

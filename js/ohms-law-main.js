@@ -1,3 +1,5 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
  * Copyright 2002-2013, University of Colorado
  * Main entry point for the "ohms law" sim.

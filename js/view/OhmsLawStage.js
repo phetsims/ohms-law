@@ -1,3 +1,5 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
  * Copyright 2002-2013, University of Colorado
  * Stage for the "OhmsLaw" module, sets up the scene.
