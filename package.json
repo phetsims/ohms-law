@@ -2,7 +2,7 @@
   "name": "ohms-law",
   "version": "0.0.0-6",
   "resourceDirs": "images sounds",
-  "include": "../phetcommon/css/phetcommon.css ../phetcommon/js/util/query-parameters.js",
+  "include": "../phetcommon/js/util/query-parameters.js",
   "phetLibs": "ohms-law phetcommon",
   "license": "GPL",
   "devDependencies": {
