@@ -4,7 +4,7 @@
   "resourceDirs": "images sounds",
   "include": "../phetcommon/js/util/query-parameters.js",
   "phetLibs": "ohms-law phetcommon",
-  "license": "GPL",
+  "license": "GPLv3",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-requirejs": "~0.3.2",
