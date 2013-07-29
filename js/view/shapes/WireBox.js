@@ -2,56 +2,38 @@
 
 /**
  * Copyright 2002-2013, University of Colorado
- * Static permanent background
- * Author: Vasily Shakhov (Mlearner)
+ * view scheme ohms law
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
-define( [
-          'easel',
-          'view/shapes/WireBox/CurrentValueBox',
-          'view/shapes/WireBox/BatteriesView',
-          'view/shapes/WireBox/ResistorView',
-          'view/shapes/WireBox/Arrow'
-        ], function( Easel, CurrentValueBox, BatteriesView, ResistorView, Arrow ) {
+define( function( require ) {
   'use strict';
-  return function( model ) {
-    var root = new Easel.Container();
+  var Node = require( 'SCENERY/nodes/Node' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  var CurrentValueBox = require( 'view/shapes/WireBox/CurrentValueBox' );
+  var BatteriesView = require( 'view/shapes/WireBox/BatteriesView' );
+  var ResistorView = require( 'view/shapes/WireBox/ResistorView' );
+  var Arrow = require( 'view/shapes/WireBox/Arrow' );
 
+  function WireBox( model ) {
+    Node.call( this );
     var x = 70,
       y = 400,
       w = 550,
       h = 180;
 
-    //arrows
-    [new Arrow( model, x - 10, y + h + 10, 90 ), new Arrow( model, x + w + 10, y + h + 10, 0 )].forEach( function( entry ) {
-      model.current.link( function( current ) {
-        // Scale the arrows based on the value of the current.
-        // Exponential scaling algorithm.  Linear makes the changes too big.
-        var scale = Math.pow( ( current * 0.1 ), 0.7 );
-        entry.scaleX = scale;
-        entry.scaleY = scale;
-      } );
-      root.addChild( entry );
-    } );
+    this.addChild( new Arrow( model, x - 10, y + h + 10, 90 ) );
+    this.addChild( new Arrow( model, x + w + 10, y + h + 10, 0 ) );
 
-    //wire
-    var wire = new Easel.Shape().setTransform( x, y );
-    wire.width = w;
-    wire.height = h;
-    wire.graphics.setStrokeStyle( 10 ).beginStroke( "#000" ).drawRoundRect( 0, 0, wire.width, wire.height, 4 );
-    root.addChild( wire );
+    this.addChild( new Rectangle( x, y, w, h, 4, 4, {stroke: "#000", lineWidth: 10} ) );
+    this.addChild( new CurrentValueBox( model, x, y, w, h ) );
+    this.addChild( new BatteriesView( model, x + 30, y ) );
+    this.addChild( new ResistorView( model, x, y, w, h ) );
+  }
 
-    root.addChild( new CurrentValueBox( model, x, y, w, h ) );
-    root.addChild( new BatteriesView( model, x, y, w, h ) );
-    var resistorView = new ResistorView( model, x, y, w, h );
-    root.addChild( resistorView );
+  inherit( Node, WireBox );
 
-    //part of wire on resistor
-    var wirePart = new Easel.Shape().setTransform( resistorView.startX, y + wire.height );
-    wirePart.graphics.setStrokeStyle( 10 ).beginStroke( "#000" ).mt( 0, 0 ).lineTo( resistorView.height / 8, 0 );
-    root.addChild( wirePart );
-
-
-    return root;
-  };
+  return WireBox;
 } );

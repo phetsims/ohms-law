@@ -3,18 +3,21 @@
 /**
  * Copyright 2002-2013, University of Colorado
  * Block shows Current TextBlock inside WireBlock
- * Author: Vasily Shakhov (Mlearner)
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
 
-define( [
-          "easel",
-          "OhmsLawStrings",
-          "view/shapes/WhiteBox"
-        ], function( Easel, i18n, WhiteBox ) {
+define( function( require ) {
   'use strict';
-  return function( model, x, y, w, h ) {
-    var root = new Easel.Container();
+  var Node = require( 'SCENERY/nodes/Node' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var Strings = require( 'OhmsLawStrings' );
+  var Text = require( 'SCENERY/nodes/Text' );
+  var WhiteBox = require( 'view/shapes/WhiteBox' );
+
+  function CurrentValueBox( model, x, y, w, h ) {
+    Node.call( this, {x: 0, y: 0} );
 
     var maxW = 0.9 * w;
 
@@ -24,7 +27,7 @@ define( [
     //texts parts of full string
     var texts = [
       {
-        val: i18n.current,
+        val: Strings.current,
         color: "red"
       },
       {
@@ -32,7 +35,7 @@ define( [
         color: "black"
       },
       {
-        val: "1004",
+        val: "999.9",
         color: "black"
       },
       {
@@ -40,46 +43,38 @@ define( [
         color: "red"
       }
     ];
-
-    //init and transform texts
-    var textContainer = new Easel.Container();
-    var totW = 0;
+    var totW = 0,
+      textContainer = new Node();
     texts.forEach( function( entry ) {
-      entry.view = new Easel.Text( entry.val, textSize + "px Verdana", entry.color ).setTransform( totW, 0 );
+      entry.view = new Text( entry.val, {'fontFamily': "Verdana", 'fontSize': textSize, fill: entry.color, x: totW, y: 0} );//new Easel.Text( entry.val, textSize + "px Verdana", entry.color ).setTransform( totW, 0 );
       textContainer.addChild( entry.view );
-      entry.width = entry.view.getMeasuredWidth();
+      entry.width = entry.view.width;
+      entry.right = entry.view.right;
       totW += entry.width;
     } );
 
-    //scale
     var scale = 1;
     if ( totW > maxW ) {
       scale = maxW / totW;
     }
 
-    texts[2].view.textAlign = "end";
-    texts[2].view.setTransform( texts[2].view.x + texts[2].width, 0 );
-
-    //observer, changes view when current value changes
-    var setCurrentText = function( val ) {
-      texts[2].view.text = val;
-    };
-
-    //rect around text
-
     var rectW = totW * scale,
-      rectH = 70,
-      rectX = w / 2 + x - rectW / 2,
-      rectY = h / 2 + y - rectH / 2;
+      rectH = 70;
 
-    var midY = rectY + rectH / 2 - scale * 1.25 * textSize / 2,
-      midX = rectX + rectW / 2,
-      offset = midX - scale * totW / 2;
+    textContainer.scale( scale );
+    this.addChild( new WhiteBox( -30, -48, rectW + 60, rectH ) );
+    this.addChild( textContainer );
+    this.centerX = x + w / 2;
+    this.centerY = y + h / 2;
 
-    root.addChild( new WhiteBox( rectX - 30, rectY, rectW + 60, rectH ) );
-    root.addChild( textContainer );
-    textContainer.setTransform( offset, midY, scale, scale );
-    model.current.link( setCurrentText );
-    return root;
-  };
+    model.currentProperty.link( function setCurrentText( val ) {
+      texts[2].view.text = val.toFixed( 1 );
+      texts[2].view.right = texts[2].right;
+    } );
+
+  }
+
+  inherit( Node, CurrentValueBox );
+
+  return CurrentValueBox;
 } );

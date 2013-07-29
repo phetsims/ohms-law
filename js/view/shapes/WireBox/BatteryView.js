@@ -3,86 +3,73 @@
 /**
  * Copyright 2002-2013, University of Colorado
  * View of Single Battery
- * Author: Vasily Shakhov (Mlearner)
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
-define( [
-          "easel",
-          'AXON/Property'
-        ], function( Easel, Property ) {
+define( function( require ) {
   'use strict';
-  return function( model, x, y, totWidth ) {
-    var self = this;
+  var Node = require( 'SCENERY/nodes/Node' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  var Text = require( 'SCENERY/nodes/Text' );
+  var LinearGradient = require( 'SCENERY/util/LinearGradient' );
+  var Matrix3 = require( 'DOT/Matrix3' );
+  var LinearFunction = require( 'DOT/LinearFunction' );
 
-    //current battery's voltage
-    self.voltage = new Property( 0 );
-
-    //sizes of parts of battery
-    //default 72px and 6px, totW = 78px
+  function BatteryView( x, y, totWidth ) {
+    Node.call( this, {x: x, y: y} );
     totWidth -= 4;
-    var w = [totWidth * 72 / 78, totWidth * 6 / 78],
-      h = 40;
+    var voltageToScale = new LinearFunction( 0.1, 1.5, 0.0001, 1, true ),
+      w = [totWidth * 72 / 78, totWidth * 6 / 78],
+      h = 40,
+      linearGradient1 = new LinearGradient( 0, 0, 0, h )
+        .addColorStop( 0, "#c3c3c3" )
+        .addColorStop( 0.3, "#f9f9f9" )
+        .addColorStop( 1, "#404040" ),
+      linearGradient2 = new LinearGradient( 0, 0, 0, h )
+        .addColorStop( 0, "#cc4e00" )
+        .addColorStop( 0.3, "#dddad6" )
+        .addColorStop( 1, "#cc4e00" ),
+      linearGradient3 = new LinearGradient( 0, 0, 0, h )
+        .addColorStop( 0, "#777777" )
+        .addColorStop( 0.3, "#bdbdbd" )
+        .addColorStop( 1, "#2b2b2b" ),
+      battery = new Node(),
+      batteryVoltage,
+      batteryVoltage2,
+      batteryVoltage3,
+      batteryText = new Node( {centerY: -7, x: 3} ),
+      batteryTextValue = new Text( "1.5", {'fontFamily': "Verdana", fontSize: 18, fontWeight: "bold"} );
 
-    //middle
-    y = y - h / 2;
-
-
-    self.view = new Easel.Container().setTransform( x, y );
-
-    //battery view
-    var batView = new Easel.Shape();
-    batView.$text1 = new Easel.Text( "1.5", "bold 18px Verdana" ).setTransform( 3, 1 );
-    batView.$text2 = new Easel.Text( "V", "bold 18px Verdana", "blue" ).setTransform( 37, 1 );
-    batView.$text3 = new Easel.Text( "", "bold 18px Verdana" ).setTransform( 3, -23 );
-    batView.$text4 = new Easel.Text( "V", "bold 18px Verdana", "blue" ).setTransform( 37, -23 );
-
-    //w1 - width of first part(grey) of battery
-    var drawBattery = function( w1 ) {
-      batView.graphics.clear().setStrokeStyle( 1 ).beginStroke( "black" );
-      batView.graphics.beginLinearGradientFill( ['#777777', "#bdbdbd", '#2b2b2b'], [0, 0.3, 1], 0, 0, 0, h );
-      batView.graphics.drawRect( 0, 0, w1, h );
-      batView.graphics.beginLinearGradientFill( ['#cc4e00', "#dddad6", '#cc4e00'], [0, 0.3, 1], 0, 0, 0, h );
-      batView.graphics.drawRect( w1, 0, w[1], h );
-      batView.graphics.beginLinearGradientFill( ['#c3c3c3', "#f9f9f9", '#404040'], [0, 0.3, 1], 0, 0, 0, h );
-      batView.graphics.drawRect( w1 + w[1], 14, 4, 12 );
-    };
-
-    //partView when voltage 1.5
-    var setFull = function() {
-      self.view.removeAllChildren();
-      drawBattery( w[0] );
-      self.view.addChild( batView );
-      self.view.addChild( batView.$text1 );
-      self.view.addChild( batView.$text2 );
-    };
-
-    //partView when voltage not 1.5
-    var setPart = function( pct ) {
-      var cWidth = pct * totWidth - 6;
-      drawBattery( cWidth );
-
-      batView.$text3.text = (Math.round( 15 * pct ) / 10).toFixed( 1 );
-
-      self.view.removeAllChildren();
-      self.view.addChild( batView );
-      self.view.addChild( batView.$text3 );
-      self.view.addChild( batView.$text4 );
-    };
-
-    self.voltage.link( function( val ) {
-      if ( val === 0 ) {
-        self.view.visible = false;
+    battery.addChild( batteryVoltage = new Rectangle( 0, 0, w[0], h, {stroke: "#000", lineWidth: 1, fill: linearGradient3, y: -h / 2} ) );
+    battery.addChild( batteryVoltage2 = new Rectangle( 0, 0, w[1], h, {stroke: "#000", lineWidth: 1, fill: linearGradient2, y: -h / 2, x: w[0]} ) );
+    battery.addChild( batteryVoltage3 = new Rectangle( w[1], 0, 4, 12, {stroke: "#000", lineWidth: 1, fill: linearGradient1, y: -6, x: w[0]} ) );
+    this.addChild( battery );
+    this.addChild( batteryText );
+    batteryText.addChild( batteryTextValue );
+    batteryText.addChild( new Text( "V", {'fontFamily': "Verdana", fontSize: 18, fill: "blue", fontWeight: "bold", x: 37 } ) );
+    this.setVoltage = function( voltage ) {
+      if ( voltage >= 1.5 ) {
+        this.setVisible( true );
+        batteryText.centerY = -7;
+      }
+      else if ( voltage <= 0 ) {
+        this.setVisible( false );
       }
       else {
-        self.view.visible = true;
-        if ( val === 1.5 ) {
-          setFull();
-        }
-        else {
-          setPart( val / 1.5 );
-        }
+        this.setVisible( true );
+        batteryText.centerY = -32;
       }
-    } );
-    return self;
-  };
+      batteryTextValue.text = voltage.toFixed( 1 );
+      batteryVoltage.matrix = new Matrix3();
+      batteryVoltage.scale( voltageToScale( voltage ), 1 );
+      batteryVoltage.centerY = 0;
+      batteryVoltage2.x = batteryVoltage.right;
+      batteryVoltage3.x = batteryVoltage.right;
+    };
+  }
+
+  inherit( Node, BatteryView );
+  return BatteryView;
 } );

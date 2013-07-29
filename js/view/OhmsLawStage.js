@@ -3,50 +3,21 @@
 /**
  * Copyright 2002-2013, University of Colorado
  * Stage for the "OhmsLaw" module, sets up the scene.
- * Author: Vasily Shakhov (Mlearner)
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
-define(
-  [
-    'easel',
-    'view/shapes/RootNode'
-  ],
-  function( Easel, RootNode ) {
-    'use strict';
-    function OhmsLawStage( canvas, model ) {
-      var self = this;
-      self.model = model;
+define( function( require ) {
+  'use strict';
+  var Node = require( 'SCENERY/nodes/Node' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var RootNode = require( 'view/shapes/RootNode' );
 
-      this.stage = new Easel.Stage( canvas );
-      this.defaultW = 1000;
-      this.defaultH = 640;
+  function OhmsLawStage( model ) {
+    Node.call( this, {scale: 0.8} );
+    this.addChild( new RootNode( model ) );
+  }
 
-      // rendering order
-      this.stage.addChild( new RootNode( self.model, self ) );
-
-      // resize handler
-      this.resize = function( scale ) {
-        self.stage.scaleX = self.stage.scaleY = scale;
-        // force rendering update
-        self.stage.update();
-      };
-
-      //Enable touch and prevent default
-      Easel.Touch.enable( this.stage, false, true );
-
-      //mouseover events
-      this.stage.enableMouseOver();
-
-      //update when any value changed
-      model.voltage.link( function() {
-        self.stage.update();
-      } );
-
-      model.resistance.link( function() {
-        self.stage.update();
-      } );
-
-    }
-
-    return OhmsLawStage;
-  } );
+  inherit( Node, OhmsLawStage );
+  return OhmsLawStage;
+} );

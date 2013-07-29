@@ -3,63 +3,53 @@
 /**
  * Copyright 2002-2013, University of Colorado
  * view for vertical slider control
- * Author: Vasily Shakhov (Mlearner)
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
-define( [
-          "easel"
-        ], function( Easel ) {
+define( function( require ) {
   'use strict';
-  function showPointer() {
-    document.body.style.cursor = "pointer";
-  }
+  var Node = require( 'SCENERY/nodes/Node' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var Image = require( 'SCENERY/nodes/Image' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  var SimpleDragHandler = require( 'SCENERY/input/SimpleDragHandler' );
+  var LinearFunction = require( 'DOT/LinearFunction' );
 
-  function showDefault() {
-    document.body.style.cursor = "default";
-  }
+  function Slider( x, y, h, targetProperty, img, value ) {
+    var thisNode = this;
+    Node.call( this, {x: x, y: y} );
+    this.addChild( new Rectangle( -3, 0, 6, h, {fill: "black" } ) );
 
-  function setCursorHand( displayObject ) {
-    displayObject.onMouseOver = showPointer;
-    displayObject.onMouseOut = showDefault;
-  }
+    var track = new Node( {children: [new Image( img, {centerX: 0, top: 0} )], cursor: "pointer"} );
 
-  return function( view, x, y, h, targetProperty, img ) {
-    var root = new Easel.Container();
+    var clickYOffset,
+      yMin = 0,
+      yMax = h - track.height;
 
-    //background
-    var back = new Easel.Shape();
-    back.graphics.setStrokeStyle( 6 ).beginStroke( "#000" );
-    back.graphics.moveTo( x, y ).lineTo( x, y + h );
-    root.addChild( back );
-
-    //image
-    var imgShape = new Easel.Bitmap( img ).setTransform( x - img.width / 2, y );
-    setCursorHand( imgShape );
-    root.addChild( imgShape );
-
-    //drag
-    var offset = {};
-    h = h - img.height;
-
-    imgShape.onPress = function( e ) {
-      offset = {x: e.stageX / view.stage.scaleX - imgShape.x, y: e.stageY / view.stage.scaleY - imgShape.y};
-      e.onMouseMove = drag;
-    };
-    imgShape.onMouseUp = function( e ) {
-      e.onMouseOver = showPointer;
-    };
-    var drag = function( e ) {
-      var ty = e.stageY / view.stage.scaleX - offset.y;
-      ty = Math.max( y, Math.min( ty, y + h ) );
-      imgShape.y = ty;
-      targetProperty.set( targetProperty.MIN + (targetProperty.MAX - targetProperty.MIN) * (y - ty + h) / h );
-    };
-
-    //observer, set position when changed
-    targetProperty.link( function() {
-      imgShape.y = y + h - h * (targetProperty.get() - targetProperty.MIN) / (targetProperty.MAX - targetProperty.MIN);
+    var valueToPosition = new LinearFunction( value.min, value.max, yMax, yMin, true ),
+      positionToValue = new LinearFunction( yMax, yMin, value.min, value.max, true );
+    this.addChild( track );
+    track.addInputListener( new SimpleDragHandler(
+      {
+        start: function( event ) {
+          clickYOffset = thisNode.globalToParentPoint( event.pointer.point ).y - event.currentTarget.y;
+        },
+        drag: function( event ) {
+          var y = thisNode.globalToParentPoint( event.pointer.point ).y - clickYOffset;
+          y = Math.max( Math.min( y, yMax ), yMin );
+          targetProperty.set( positionToValue( y ) );
+        },
+        translate: function() {
+          // do nothing, override default behavior
+        }
+      } ) );
+    targetProperty.link( function( value ) {
+      track.y = valueToPosition( value );
     } );
+  }
 
-    return root;
-  };
+  inherit( Node, Slider );
+
+  return Slider;
 } );

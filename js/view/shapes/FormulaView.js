@@ -2,35 +2,36 @@
 
 /**
  * Copyright 2002-2013, University of Colorado
- * Battery block
- * Author: Vasily Shakhov (Mlearner)
+ * view formula ohms law
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
-
-define( [
-          "easel"
-        ], function( Easel ) {
+define( function( require ) {
   'use strict';
-  return function( model ) {
-    var root = new Easel.Container();
+  var Node = require( 'SCENERY/nodes/Node' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var Text = require( 'SCENERY/nodes/Text' );
+  var Matrix3 = require( 'DOT/Matrix3' );
 
-    //texts parts of full string
-    //scale - multiplier
+  function FormulaView( model ) {
+    var thisNode = this;
+    Node.call( this );
     var texts = [
       {
         val: "V",
         scaleA: 4.5,
         scaleB: 2,
-        x: 200,
-        targetProperty: "voltage",
+        x: 150,
+        targetProperty: "voltageProperty",
         color: "#0f0ffb"
       },
       {
         val: "I",
         scaleA: 0.2,
         scaleB: 0.84,
-        x: 420,
-        targetProperty: "current",
+        x: 380,
+        targetProperty: "currentProperty",
         color: "red"
       },
       {
@@ -38,29 +39,28 @@ define( [
         scaleA: 0.04,
         scaleB: 2,
         x: 560,
-        targetProperty: "resistance",
+        targetProperty: "resistanceProperty",
         color: "#0f0ffb"
       }
     ];
-
     var y = 140;
-    texts.forEach( function( entry ) {
-      entry.view = new Easel.Text( entry.val, "bold 12px Times New Roman", entry.color ).setTransform( entry.x, y );
-
-      entry.view.regX = entry.view.getMeasuredWidth() / 2;
-      entry.view.textBaseline = "middle";
-      root.addChild( entry.view );
-      model[entry.targetProperty].link( function( val ) {
-        entry.view.scaleX = entry.scaleA * val + entry.scaleB;
-        entry.view.scaleY = entry.view.scaleX;
+    texts.forEach( function viewTexts( entry ) {
+      entry.view = new Text( entry.val, {'fontFamily': "Times New Roman", 'fontSize': 12, fontWeight: "bold", fill: entry.color, centerX: entry.x, centerY: y} );
+      thisNode.addChild( entry.view );
+      model[entry.targetProperty].link( function updateProperty( val ) {
+        entry.view.matrix = new Matrix3();
+        entry.view.scale( entry.scaleA * val + entry.scaleB );
+        entry.view.centerX = entry.x;
+        entry.view.centerY = y;
       } );
     } );
 
     //static text
-    var text = new Easel.Text( "=", "bold 140px Georgia", "#000" ).setTransform( 300, 140 );
-    text.textBaseline = "middle";
-    root.addChild( text );
+    var text = new Text( "=", {'fontFamily': "Georgia", 'fontSize': 140, fontWeight: "bold", fill: "#000", centerX: 300, centerY: y} );
+    this.addChild( text );
+  }
 
-    return root;
-  };
+  inherit( Node, FormulaView );
+
+  return FormulaView;
 } );

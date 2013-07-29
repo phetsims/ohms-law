@@ -1,48 +1,44 @@
 // Copyright 2002-2013, University of Colorado Boulder
 /**
- * Model container for the "OhmsLaw" module.
+ * Model Audio for the "OhmsLaw".
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
-define(
-  [
-    'util/Sound',
-    'AXON/BooleanProperty'
-  ],
-  function( Sound, BooleanProperty ) {
-    'use strict';
-    function AudioModel( model ) {
-      var self = this;
+define( function( require ) {
+  'use strict';
+  var Sound = require( 'util/Sound' );
 
-      self.active = new BooleanProperty( true );
-      self.sounds = [];
+  function AudioModel( model ) {
+    var thisModel = this;
+    this.sounds = [];
+    for ( var i = 0; i < model.VOLTAGEMAX / 1.5; i++ ) {
+      this.sounds.push( {
+          'addBattery': new Sound( 'add-battery' ),
+          'removeBattery': new Sound( 'remove-battery' )
+        }
+      );
+    }
+    var oldVal = Math.floor( model.voltage / 1.5 );
 
-      for ( var i = 0; i < model.voltage.MAX / 1.5; i++ ) {
-        self.sounds.push( {
-                            'addBattery': new Sound( 'add-battery' ),
-                            'removeBattery': new Sound( 'remove-battery' )
-                          }
-        );
-      }
-      var oldVal = Math.floor( model.voltage.get() / 1.5 );
-      model.voltage.link( function( value ) {
-        var newVal = Math.floor( (value - 0.1) / 1.5 );
-        if ( self.active.get() ) {
-          if ( newVal > oldVal ) {
-            if ( self.sounds[newVal] ) {
-              self.sounds[newVal].addBattery.play();
-            }
-          }
-          else if ( newVal < oldVal ) {
-            if ( self.sounds[newVal] ) {
-              self.sounds[newVal].removeBattery.play();
-            }
+    model.voltageProperty.link( function playSound( value ) {
+      var newVal = Math.floor( (value) / 1.5 );
+      if ( model.soundActive ) {
+        if ( newVal > oldVal ) {
+          if ( thisModel.sounds[newVal] ) {
+            thisModel.sounds[newVal].addBattery.play();
           }
         }
-        oldVal = newVal;
-      } );
+        else if ( newVal < oldVal ) {
+          if ( thisModel.sounds[newVal] ) {
+            thisModel.sounds[newVal].removeBattery.play();
+          }
+        }
+      }
+      oldVal = newVal;
+    } );
 
-      return self;
+    return this.sounds;
+  }
 
-    }
-
-    return AudioModel;
-  } );
+  return AudioModel;
+} );

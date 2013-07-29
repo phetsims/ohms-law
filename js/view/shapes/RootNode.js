@@ -3,29 +3,26 @@
 /**
  * Copyright 2002-2013, University of Colorado
  * Main container for all part of scene
- * Author: Vasily Shakhov (Mlearner)
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
-define( [
-          'easel',
-          'view/shapes/WireBox',
-          'view/shapes/SlidersBox',
-          'view/shapes/FormulaView'
-        ], function( Easel, WireBox, SlidersBox, FormulaView ) {
+define( function( require ) {
   'use strict';
-  return function( model, view ) {
-    var root = new Easel.Container();
+  var Node = require( 'SCENERY/nodes/Node' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var WireBox = require( 'view/shapes/WireBox' );
+  var SlidersBox = require( 'view/shapes/SlidersBox' );
+  var FormulaView = require( 'view/shapes/FormulaView' );
 
-    //background
-    var background = new Easel.Shape();
-    background.graphics.beginFill( '#ffffdf' ).rect( 0, 0, view.defaultW, view.defaultH );
-    root.addChild( background );
+  function RootNode( model ) {
+    Node.call( this );
+    this.addChild( new FormulaView( model ) );
+    this.addChild( new WireBox( model ) );
+    this.addChild( new SlidersBox( model ) );
+  }
 
+  inherit( Node, RootNode );
 
-    root.addChild( new FormulaView( model ) );
-    root.addChild( new WireBox( model ) );
-    root.addChild( new SlidersBox( model, view ) );
-
-    return root;
-  };
+  return RootNode;
 } );

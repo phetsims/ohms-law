@@ -3,18 +3,23 @@
 /**
  * Copyright 2002-2013, University of Colorado
  * White Block with black border container
- * Author: Vasily Shakhov (Mlearner)
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
 
-define( [
-          "easel"
-        ], function( Easel ) {
+define( function( require ) {
   'use strict';
-  return function( x, y, w, h ) {
-    var rect = new Easel.Shape();
-    rect.graphics.setStrokeStyle( 3 ).beginStroke( "#000" ).beginFill( "#FFF" );
-    rect.graphics.drawRoundRect( x, y, w, h, 12 );
-    return rect;
-  };
+  var Node = require( 'SCENERY/nodes/Node' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
+
+  function WhiteBox( x, y, w, h ) {
+    Node.call( this );
+    this.addChild( new Rectangle( x, y, w, h, 12, 12, { fill: '#FFF', stroke: "#000", lineWidth: 3} ) );
+  }
+
+  inherit( Node, WhiteBox );
+
+  return WhiteBox;
 } );

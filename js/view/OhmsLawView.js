@@ -2,64 +2,38 @@
 
 /**
  * Copyright 2002-2013, University of Colorado
- * View for OhmsLaw simulations. Contains 2 elements : canvas + htmlControls
- * Author: Vasily Shakhov (Mlearner)
+ * View for OhmsLaw simulations. main TabView, button, main stage
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
-define(
-  [
-    'view/OhmsLawStage',
-    'view/HTMLElements'
-  ],
-  function( OhmsLawStage, HTMLElements ) {
-    'use strict';
-    function OhmsLawView( container, model ) {
-      var self = this;
-      self.model = model;
+define( function( require ) {
+  'use strict';
+  var OhmsLawStage = require( 'view/OhmsLawStage' );
+  var Node = require( 'SCENERY/nodes/Node' );
+  var ResetAllButton = require( 'SCENERY_PHET/ResetAllButton' );
+  var ToggleButton = require( 'SUN/ToggleButton' );
+  var FontAwesomeNode = require( 'SUN/FontAwesomeNode' );
+  var TabView = require( 'JOIST/TabView' );
+  var inherit = require( 'PHET_CORE/inherit' );
 
-      this.$canvas = container.find( "canvas" ).css( 'position', 'relative' );
-      this.$stage = new OhmsLawStage( this.$canvas[0], model );
-      this.$htmlElements = new HTMLElements( container, model );
-      this.defaultW = 1000;
-      this.defaultH = 640;
+  function OhmsLawView( model ) {
+    TabView.call( this, { renderer: 'svg' } );
+    //main stage
+    this.addChild( new OhmsLawStage( model ) );
+    //reset button
+    this.addChild( new Node( { scale: 0.8, x: 600, y: 400, children: [ new ResetAllButton( function() {model.reset();} )]} ) );
+    //sound on/off toggle
+    this.addChild( new Node( { scale: 1, x: 700, y: 400, children: [
+      new ToggleButton(
+        new FontAwesomeNode( 'volume_up', {fill: "#FFF"} ),
+        new FontAwesomeNode( 'volume_off', {fill: "#FFF"} ),
+        model.soundActiveProperty,
+        {addRectangle: true, label: 'Sound', fill: "#F00"} )] } ) );
+  }
 
-      // resize handler
-      var handleResize = function() {
+  inherit( TabView, OhmsLawView );
+  return OhmsLawView;
 
-        //Gets rid of scroll bars
-        var width = $( window ).width();
-        var height = $( window ).height() - 50;
-        // 50 - height of panelBar
-
-        var scale = Math.min( width / self.defaultW, height / self.defaultH );
-        var canvasW = scale * self.defaultW;
-        var canvasH = scale * self.defaultH;
-
-        //Allow the canvas to fill the screen, but still center the content within the window.
-        self.$canvas[0].setAttribute( 'width', canvasW + 'px' );
-        self.$canvas[0].setAttribute( 'height', canvasH + 'px' );
-
-        //resize main container
-        container.css( {
-                         width: canvasW + 'px',
-                         height: canvasH + 'px',
-                         left: (width - canvasW) / 2 + 'px'
-                       } );
-
-        self.$stage.resize( scale );
-
-      };
-
-      //prevent default scrolling on iPad
-      this.$canvas[0].addEventListener( "touchstart", function( e ) {
-        e.preventDefault();
-      } );
-
-      $( window ).resize( handleResize );
-      handleResize(); // initial size
-    }
-
-    return OhmsLawView;
-
-  } )
+} )
 ;

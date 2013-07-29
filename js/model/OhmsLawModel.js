@@ -1,69 +1,68 @@
 // Copyright 2002-2013, University of Colorado Boulder
 /**
  * Model container for the "OhmsLaw" module.
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
-define(
-  [
-    'AXON/Property',
-    'model/AudioModel'
-  ],
-  function( Property, AudioModel ) {
-    'use strict';
-    function OhmsLawModel() {
-      var self = this;
+define( function( require ) {
+  'use strict';
+  var PropertySet = require( 'AXON/PropertySet' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var AudioModel = require( 'model/AudioModel' );
 
-      //variables voltage, resistance, current
-      this.init = function() {
-        this.voltage = new Property();
-        this.resistance = new Property();
-        this.current = new Property();
 
-        this.voltage.link( updateCurrent );
-        this.resistance.link( updateCurrent );
+  function OhmsLawModel( width, height ) {
+    var thisModel = this;
 
-        //constants
-        this.voltage.MAX = 9;
-        this.voltage.MIN = 0.1;
-        this.voltage.DEFAULT = 4.5;
-        this.resistance.MAX = 1000;
-        this.resistance.MIN = 10;
-        this.resistance.DEFAULT = 500;
+    this.defaultW = width;
+    this.defaultH = height;
+    this.VOLTAGEMAX = 9;
+    this.VOLTAGEMIN = 0.1;
+    this.VOLTAGEDEFAULT = 4.5;
+    this.RESISTANCEMAX = 1000;
+    this.RESISTANCEMIN = 10;
+    this.RESISTANCEDEFAULT = 500;
 
-        //sounds
-        self.sounds = new AudioModel( self );
+    PropertySet.call( this, {
+      voltage: this.VOLTAGEDEFAULT,
+      resistance: this.RESISTANCEDEFAULT,
+      current: 0,
+      soundActive: true
+    } );
 
-        //@override voltage.set (accuracy 0.1)
-        var oldVS = this.voltage.set.bind( this.voltage );
-        this.voltage.set = function( val ) {
-          oldVS( (Math.round( val * 10 ) / 10).toFixed( 1 ) );
-        };
+    this.sounds = new AudioModel( this );
 
-        //@override resistance.set (accuracy 0)
-        var oldRS = this.resistance.set.bind( this.resistance );
-        this.resistance.set = function( val ) {
-          oldRS( Math.round( val ) );
-        };
+    var updateCurrent = function() {
+      thisModel.current = thisModel.calculateCurrent( thisModel.voltage, thisModel.resistance );
+    };
+    this.voltageProperty.link( updateCurrent );
+    this.resistanceProperty.link( updateCurrent );
 
-        this.reset();
-      };
+    //@override voltage.set (accuracy 0.1)
+    var oldVS = this.voltageProperty.set.bind( this.voltageProperty );
+    this.voltageProperty.set = function( val ) {
+      oldVS( Math.round( val * 10 ) / 10 );
+    };
 
-      //initialize default values
-      this.reset = function() {
-        self.voltage.set( self.voltage.DEFAULT );
-        self.resistance.set( self.resistance.DEFAULT );
-        self.sounds.active.set( true );
-        updateCurrent();
-        self.current.DEFAULT = self.current.get();
-      };
+    //@override resistance.set (accuracy 0)
+    var oldRS = this.resistanceProperty.set.bind( this.resistanceProperty );
+    this.resistanceProperty.set = function( val ) {
+      oldRS( Math.round( val ) );
+    };
+    this.reset();
+  }
 
-      //sets current from V and R;
-      var updateCurrent = function() {
-        var val = self.voltage.get() / self.resistance.get() * 1000;
-        self.current.set( (Math.round( val * 10 ) / 10).toFixed( 1 ) );
-      };
-
-      this.init();
+  inherit( PropertySet, OhmsLawModel, {
+    step: function() { },
+    reset: function() {
+      this.voltage = this.VOLTAGEDEFAULT;
+      this.resistance = this.RESISTANCEDEFAULT;
+      this.soundActive = true;
+      this.current = this.calculateCurrent( this.voltage, this.resistance );
+    },
+    calculateCurrent: function( voltage, resistance ) {
+      return Math.round( voltage / resistance * 1000 * 10 ) / 10;
     }
-
-    return OhmsLawModel;
   } );
+  return OhmsLawModel;
+} );

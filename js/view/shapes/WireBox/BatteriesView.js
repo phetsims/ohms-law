@@ -2,49 +2,46 @@
 
 /**
  * Copyright 2002-2013, University of Colorado
- * view for vertical slider control
- * Author: Vasily Shakhov (Mlearner)
+ * View All Batteries
+ * @author Vasily Shakhov (Mlearner)
+ * @author Anton Ulyanov (Mlearner)
  */
 
 
-define( [
-          "easel",
-          'view/shapes/WireBox/BatteryView'
-        ], function( Easel, BatteryView ) {
+define( function( require ) {
   'use strict';
-  return function( model, x, y, w ) {
-    var root = new Easel.Container();
+  var Node = require( 'SCENERY/nodes/Node' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var BatteryView = require( 'view/shapes/WireBox/BatteryView' );
+
+  function BatteriesView( model, x, y ) {
+    Node.call( this, {x: x, y: y} );
 
     //max number of batteries
-    var maxQ = model.voltage.MAX / 1.5;
+    var maxQ = model.VOLTAGEMAX / 1.5;
 
     //1 battery width
     var batWidth = 82;
-
-    //x position of start block
-    x = x + (w - maxQ * batWidth) / 2;
-
 
     //batteries presentation
     var bats = new Array( Math.ceil( maxQ ) );
 
     for ( var i = 0, l = bats.length; i < l; i++ ) {
-      var sx = x + i * batWidth;
-      bats[i] = new BatteryView( model, sx, y, batWidth );
-      root.addChild( bats[i].view );
+      var sx = i * batWidth;
+      bats[i] = new BatteryView( sx, 0, batWidth );
+      this.addChild( bats[i] );
     }
 
-
-    model.voltage.link( function( val ) {
+    model.voltageProperty.link( function setVoltage( voltage ) {
+      var val = voltage;
       for ( var i = 0, l = bats.length; i < l; i++ ) {
         var diff = Math.min( 1.5, val );
-        if ( diff !== bats[i].voltage.get() ) {
-          bats[i].voltage.set( diff );
-        }
+        bats[i].setVoltage( diff );
         val -= diff;
       }
     } );
+  }
 
-    return root;
-  };
+  inherit( Node, BatteriesView );
+  return BatteriesView;
 } );
