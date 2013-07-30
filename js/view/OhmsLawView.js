@@ -11,7 +11,7 @@ define( function( require ) {
   'use strict';
   var OhmsLawStage = require( 'view/OhmsLawStage' );
   var Node = require( 'SCENERY/nodes/Node' );
-  var ResetAllButton = require( 'SCENERY_PHET/ResetAllButton' );
+  var ResetAllButton = require( 'view/ResetAllButton' );
   var ToggleButton = require( 'SUN/ToggleButton' );
   var FontAwesomeNode = require( 'SUN/FontAwesomeNode' );
   var TabView = require( 'JOIST/TabView' );

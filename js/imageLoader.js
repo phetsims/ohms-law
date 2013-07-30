@@ -7,5 +7,11 @@ define( function( require ) {
   //Makes it possible to load through the module system rather than passed as parameter everywhere or used as global. 
 
   return {
-    imageNames: ['slider.png']  };
+    imageNames: [
+      'slider.png',
+      'reset_button_disabled.png',
+      'reset_button_down.png',
+      'reset_button_over.png',
+      'reset_button_up.png'
+    ] };
 } );
