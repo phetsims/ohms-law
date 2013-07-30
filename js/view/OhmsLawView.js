@@ -26,8 +26,8 @@ define( function( require ) {
     //sound on/off toggle
     this.addChild( new Node( { scale: 1, x: 700, y: 400, children: [
       new ToggleButton(
-        new FontAwesomeNode( 'volume_up', {fill: "#FFF"} ),
-        new FontAwesomeNode( 'volume_off', {fill: "#FFF"} ),
+        new FontAwesomeNode( 'volume_up', {fill: "#FFF", pickable: false} ),
+        new FontAwesomeNode( 'volume_off', {fill: "#FFF", pickable: false} ),
         model.soundActiveProperty,
         {addRectangle: true, label: 'Sound', fill: "#F00"} )] } ) );
   }
