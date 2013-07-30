@@ -49,8 +49,7 @@ define( function( require ) {
       // Scale the arrows based on the value of the current.
       // Exponential scaling algorithm.  Linear makes the changes too big.
       var scale = Math.pow( ( current * 0.1 ), 0.7 );
-      arrow.matrix = new Matrix3();
-      arrow.scale( scale );
+      arrow.matrix = Matrix3.scale( scale );
     } );
   }
 
