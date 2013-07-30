@@ -63,11 +63,13 @@ define( function( require ) {
         this.setVisible( true );
         batteryText.centerY = -32;
       }
-      batteryTextValue.text = voltage.toFixed( 1 );
-      batteryVoltage.matrix = Matrix3.scale( voltageToScale( voltage ), 1 )
-                                     .timesMatrix( translationMatrix );
-      batteryVoltage2.x = batteryVoltage.right;
-      batteryVoltage3.x = batteryVoltage.right;
+      if ( this.isVisible() ) {
+        batteryTextValue.text = voltage.toFixed( 1 );
+        batteryVoltage.matrix = Matrix3.scale( voltageToScale( voltage ), 1 )
+                                       .timesMatrix( translationMatrix );
+        batteryVoltage2.x = batteryVoltage.right;
+        batteryVoltage3.x = batteryVoltage.right;
+      }
     };
   }
 
