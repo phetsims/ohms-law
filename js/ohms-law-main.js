@@ -24,7 +24,7 @@ define( function( require ) {
       {
         name: Strings.simTitle,
         icon: new Rectangle( 0, 0, 50, 50, { fill: 'blue' } ),
-        createModel: function() { return new OhmsLawModel( 1000, 750 ); },
+        createModel: function() { return new OhmsLawModel( 768, 504 ); },
         createView: function( model ) { return new OhmsLawView( model ); },
         backgroundColor: "#ffffdf"
       }
