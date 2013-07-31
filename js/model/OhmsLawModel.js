@@ -13,16 +13,11 @@ define( function( require ) {
   function OhmsLawModel() {
     var thisModel = this;
 
-    this.VOLTAGEMAX = 9;
-    this.VOLTAGEMIN = 0.1;
-    this.VOLTAGEDEFAULT = 4.5;
-    this.RESISTANCEMAX = 1000;
-    this.RESISTANCEMIN = 10;
-    this.RESISTANCEDEFAULT = 500;
+
 
     PropertySet.call( this, {
-      voltage: this.VOLTAGEDEFAULT,
-      resistance: this.RESISTANCEDEFAULT,
+      voltage: 4.5,
+      resistance: 500,
       current: 0,
       soundActive: true
     } );
@@ -52,9 +47,9 @@ define( function( require ) {
   inherit( PropertySet, OhmsLawModel, {
     step: function() { },
     reset: function() {
-      this.voltage = this.VOLTAGEDEFAULT;
-      this.resistance = this.RESISTANCEDEFAULT;
-      this.soundActive = true;
+      this.voltageProperty.reset();
+      this.resistanceProperty.reset();
+      this.soundActiveProperty.reset();
       this.current = this.calculateCurrent( this.voltage, this.resistance );
     },
     calculateCurrent: function( voltage, resistance ) {

@@ -95,7 +95,7 @@ define( function( require ) {
     this.addChild( dotGroup );
 
     model.resistanceProperty.link( function updateResistor( val ) {
-      var borderNumber = maxPoints * (val + 50) / (model.RESISTANCEMAX);
+      var borderNumber = maxPoints * (val + 50) / 1000;
       for ( var i = 0; i < maxPoints; i++ ) {
         points[i].setVisible( i < borderNumber );
       }

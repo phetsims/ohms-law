@@ -16,7 +16,7 @@ define( function( require ) {
     Node.call( this, {x: x, y: y} );
 
     //max number of batteries
-    var maxQ = model.VOLTAGEMAX / 1.5;
+    var maxQ = 9 / 1.5;
 
     //1 battery width
     var batWidth = 82;

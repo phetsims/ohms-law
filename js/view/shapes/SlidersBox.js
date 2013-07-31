@@ -16,6 +16,11 @@ define( function( require ) {
   var imageLoader = require( 'imageLoader' );
   var Text = require( 'SCENERY/nodes/Text' );
 
+  var VOLTAGEMAX = 9,
+    VOLTAGEMIN = 0.1,
+    RESISTANCEMAX = 1000,
+    RESISTANCEMIN = 10;
+
   function SlidersBox( model ) {
     Node.call( this );
     var rectW = 270,
@@ -42,8 +47,8 @@ define( function( require ) {
     this.addChild( new Text( "Ω", { 'fontFamily': "Verdana", 'fontSize': 30, textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[1] + 40, top: yCoords[3] } ) );
 
 
-    this.addChild( new Slider( xCoords[0], 90, 240, model.voltageProperty, imageLoader.getImage( 'slider.png' ), {min: model.VOLTAGEMIN, max: model.VOLTAGEMAX} ) );
-    this.addChild( new Slider( xCoords[1], 90, 240, model.resistanceProperty, imageLoader.getImage( 'slider.png' ), {min: model.RESISTANCEMIN, max: model.RESISTANCEMAX} ) );
+    this.addChild( new Slider( xCoords[0], 90, 240, model.voltageProperty, imageLoader.getImage( 'slider.png' ), {min: VOLTAGEMIN, max: VOLTAGEMAX} ) );
+    this.addChild( new Slider( xCoords[1], 90, 240, model.resistanceProperty, imageLoader.getImage( 'slider.png' ), {min: RESISTANCEMIN, max: RESISTANCEMAX} ) );
 
     model.voltageProperty.link( function updateTextVoltage( value ) {
       textVoltage.text = value.toFixed( 1 );

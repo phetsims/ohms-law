@@ -10,7 +10,7 @@ define( function( require ) {
   function AudioModel( model ) {
     var thisModel = this;
     this.sounds = [];
-    for ( var i = 0; i < model.VOLTAGEMAX / 1.5; i++ ) {
+    for ( var i = 0; i < 9 / 1.5; i++ ) {
       this.sounds.push( {
           'addBattery': new Sound( 'add-battery' ),
           'removeBattery': new Sound( 'remove-battery' )

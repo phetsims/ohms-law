@@ -44,7 +44,7 @@ define( function( require ) {
     var totW = 0,
       textContainer = new Node();
     texts.forEach( function( entry ) {
-      entry.view = new Text( entry.val, {'fontFamily': "Verdana", 'fontSize': textSize, fill: entry.color, x: totW, y: 0} );//new Easel.Text( entry.val, textSize + "px Verdana", entry.color ).setTransform( totW, 0 );
+      entry.view = new Text( entry.val, {'fontFamily': "Verdana", 'fontSize': textSize, fill: entry.color, x: totW, y: 0} );
       textContainer.addChild( entry.view );
       entry.width = entry.view.width;
       entry.right = entry.view.right;
