@@ -15,7 +15,14 @@ define( function( require ) {
     OhmsLawView = require( 'view/OhmsLawView' ),
     imageLoader = require( 'imageLoader' );
 
-
+  var simOptions = {
+    credits: 'PhET Development Team -\n' +
+             'Lead Design: Michael Dubson\n' +
+             'Software Development: Michael Dubson\n' +
+             'Interviews: Mindy Gratny\n',
+    thanks: 'Thanks -\n' +
+            'Conversation of this simulation to HTML5 was funded by the Royal Society of Chemistry.'
+  };
   SimLauncher.launch( imageLoader, function() {
     //Create and start the sim
     new Sim( Strings.simTitle, [
@@ -26,6 +33,6 @@ define( function( require ) {
         createView: function( model ) { return new OhmsLawView( model ); },
         backgroundColor: "#ffffdf"
       }
-    ] ).start();
+    ], simOptions ).start();
   } );
 } );
