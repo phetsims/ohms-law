@@ -11,14 +11,18 @@ define( function( require ) {
   'use strict';
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var RootNode = require( 'view/shapes/RootNode' );
   var ResetAllButton = require( 'view/ResetAllButton' );
   var ToggleButton = require( 'SUN/ToggleButton' );
   var FontAwesomeNode = require( 'SUN/FontAwesomeNode' );
+  var WireBox = require( 'view/shapes/WireBox' );
+  var SlidersBox = require( 'view/shapes/SlidersBox' );
+  var FormulaView = require( 'view/shapes/FormulaView' );
 
   function OhmsLawStage( model ) {
     Node.call( this, {scale: 0.75} );
-    this.addChild( new RootNode( model ) );
+    this.addChild( new FormulaView( model ) );
+    this.addChild( new WireBox( model ) );
+    this.addChild( new SlidersBox( model ) );
     //reset button
     this.addChild( new Node( { x: 750, y: 500, children: [ new ResetAllButton( function() {model.reset();} )]} ) );
     //sound on/off toggle
