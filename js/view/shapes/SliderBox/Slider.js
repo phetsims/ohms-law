@@ -1,5 +1,3 @@
-// Copyright 2002-2013, University of Colorado Boulder
-
 /**
  * Copyright 2002-2013, University of Colorado
  * view for vertical slider control

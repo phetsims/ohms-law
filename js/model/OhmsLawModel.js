@@ -1,4 +1,3 @@
-// Copyright 2002-2013, University of Colorado Boulder
 /**
  * Model container for the "OhmsLaw" module.
  * @author Vasily Shakhov (Mlearner)
@@ -11,11 +10,9 @@ define( function( require ) {
   var AudioModel = require( 'model/AudioModel' );
 
 
-  function OhmsLawModel( width, height ) {
+  function OhmsLawModel() {
     var thisModel = this;
 
-    this.defaultW = width;
-    this.defaultH = height;
     this.VOLTAGEMAX = 9;
     this.VOLTAGEMIN = 0.1;
     this.VOLTAGEDEFAULT = 4.5;

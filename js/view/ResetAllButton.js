@@ -1,5 +1,3 @@
-// Copyright 2002-2013, University of Colorado Boulder
-
 //TODO this is a local copy, duplicated in all sims, migrate to sun.ResetAllButton
 /**
  * Reset All button.

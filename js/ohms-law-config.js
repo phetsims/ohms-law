@@ -1,5 +1,3 @@
-// Copyright 2002-2013, University of Colorado Boulder
-
 /**
  * Copyright 2002-2013, University of Colorado
  * RequireJS configuration file for Ohm's Law simulation.

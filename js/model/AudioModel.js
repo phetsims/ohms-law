@@ -1,4 +1,3 @@
-// Copyright 2002-2013, University of Colorado Boulder
 /**
  * Model Audio for the "OhmsLaw".
  * @author Vasily Shakhov (Mlearner)
