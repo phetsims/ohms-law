@@ -10,8 +10,7 @@ define( function( require ) {
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ResetAllButton = require( 'view/ResetAllButton' );
-  var ToggleButton = require( 'SUN/ToggleButton' );
-  var FontAwesomeNode = require( 'SUN/FontAwesomeNode' );
+  var SoundToggleButton = require( 'SCENERY_PHET/SoundToggleButton' );
   var WireBox = require( 'view/shapes/WireBox' );
   var SlidersBox = require( 'view/shapes/SlidersBox' );
   var FormulaView = require( 'view/shapes/FormulaView' );
@@ -24,12 +23,7 @@ define( function( require ) {
     //reset button
     this.addChild( new Node( { x: 750, y: 500, children: [ new ResetAllButton( function() {model.reset();} )]} ) );
     //sound on/off toggle
-    this.addChild( new Node( { scale: 1.3, x: 880, y: 500, children: [
-      new ToggleButton(
-        new FontAwesomeNode( 'volume_up', {fill: "#FFF"} ),
-        new FontAwesomeNode( 'volume_off', {fill: "#FFF"} ),
-        model.soundActiveProperty,
-        {addRectangle: true, label: 'Sound', fill: "#F00"} )] } ) );
+    this.addChild( new SoundToggleButton(model.soundActiveProperty, {x: 880, y: 500, scale:1.3}));
   }
 
   inherit( Node, OhmsLawStage );
