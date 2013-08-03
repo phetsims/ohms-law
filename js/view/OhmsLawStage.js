@@ -17,8 +17,8 @@ define( function( require ) {
 
   function OhmsLawStage( model ) {
     Node.call( this, {scale: 0.75} );
-    this.addChild( new FormulaView( model ) );
-    this.addChild( new WireBox( model ) );
+    this.addChild( new FormulaView( model ).mutate( { pickable: false } ) );
+    this.addChild( new WireBox( model ).mutate( { pickable: false } ) );
     this.addChild( new SlidersBox( model ) );
     //reset button
     this.addChild( new Node( { x: 750, y: 500, children: [ new ResetAllButton( function() {model.reset();} )]} ) );

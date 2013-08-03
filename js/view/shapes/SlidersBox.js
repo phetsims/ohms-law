@@ -46,6 +46,8 @@ define( function( require ) {
     this.addChild( textResistance = new Text( model.resistance.toFixed( 0 ), { 'fontFamily': "Verdana", 'fontSize': 30, textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[1] + 20, top: yCoords[2] } ) );
     this.addChild( new Text( "Ω", { 'fontFamily': "Verdana", 'fontSize': 30, textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[1] + 40, top: yCoords[3] } ) );
 
+    // make all of the text and background unpickable, to speed up mouse/touch hit computation
+    _.each( this.children, function( child ) { child.pickable = false; } );
 
     this.addChild( new Slider( xCoords[0], 90, 240, model.voltageProperty, imageLoader.getImage( 'slider.png' ), {min: VOLTAGEMIN, max: VOLTAGEMAX} ) );
     this.addChild( new Slider( xCoords[1], 90, 240, model.resistanceProperty, imageLoader.getImage( 'slider.png' ), {min: RESISTANCEMIN, max: RESISTANCEMAX} ) );

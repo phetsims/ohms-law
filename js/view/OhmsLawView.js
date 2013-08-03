@@ -15,7 +15,6 @@ define( function( require ) {
     TabView.call( this, { renderer: 'svg' } );
     //main stage
     this.addChild( new OhmsLawStage( model ) );
-
   }
 
   inherit( TabView, OhmsLawView );

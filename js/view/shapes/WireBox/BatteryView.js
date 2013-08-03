@@ -47,6 +47,8 @@ define( function( require ) {
     this.addChild( batteryText );
     batteryText.addChild( batteryTextValue );
     batteryText.addChild( new Text( "V", {'fontFamily': "Verdana", fontSize: 18, fill: "blue", fontWeight: "bold", x: 37 } ) );
+    
+    var translationMatrix = Matrix3.translation( 0, -h / 2 );
     this.setVoltage = function( voltage ) {
       if ( voltage >= 1.5 ) {
         this.setVisible( true );
@@ -59,12 +61,13 @@ define( function( require ) {
         this.setVisible( true );
         batteryText.centerY = -32;
       }
-      batteryTextValue.text = voltage.toFixed( 1 );
-      batteryVoltage.matrix = new Matrix3();
-      batteryVoltage.scale( voltageToScale( voltage ), 1 );
-      batteryVoltage.centerY = 0;
-      batteryVoltage2.x = batteryVoltage.right;
-      batteryVoltage3.x = batteryVoltage.right;
+      if ( this.isVisible() ) {
+        batteryTextValue.text = voltage.toFixed( 1 );
+        batteryVoltage.matrix = Matrix3.scale( voltageToScale( voltage ), 1 )
+                                       .timesMatrix( translationMatrix );
+        batteryVoltage2.x = batteryVoltage.right;
+        batteryVoltage3.x = batteryVoltage.right;
+      }
     };
   }
 

@@ -17,8 +17,8 @@ define( function( require ) {
 
   function RootNode( model ) {
     Node.call( this );
-    this.addChild( new FormulaView( model ) );
-    this.addChild( new WireBox( model ) );
+    this.addChild( new FormulaView( model ).mutate( { pickable: false } ) );
+    this.addChild( new WireBox( model ).mutate( { pickable: false } ) );
     this.addChild( new SlidersBox( model ) );
   }
 

@@ -43,13 +43,15 @@ define( function( require ) {
     ];
     var y = 140;
     texts.forEach( function viewTexts( entry ) {
-      entry.view = new Text( entry.val, {'fontFamily': "Times New Roman", 'fontSize': 12, fontWeight: "bold", fill: entry.color, centerX: entry.x, centerY: y} );
+      // centered text node, so we just have to adjust scale dynamically
+      var textNode = new Text( entry.val, {'fontFamily': "Times New Roman", 'fontSize': 12, fontWeight: "bold", fill: entry.color, centerX: 0, centerY: 0} );
+      entry.view = new Node( { children: [textNode] } );
       thisNode.addChild( entry.view );
       model[entry.targetProperty].link( function updateProperty( val ) {
-        entry.view.matrix = new Matrix3();
-        entry.view.scale( entry.scaleA * val + entry.scaleB );
-        entry.view.centerX = entry.x;
-        entry.view.centerY = y;
+        // performance TODO: consider not updating the matrix if it hasn't changed (if entry.x, entry.scaleA, and entry.scaleB haven't changed)
+        // since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
+        entry.view.matrix = Matrix3.translation( entry.x, y )
+                                   .timesMatrix( Matrix3.scale( entry.scaleA * val + entry.scaleB ) );
       } );
     } );
 
