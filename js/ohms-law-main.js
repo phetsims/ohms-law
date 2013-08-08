@@ -21,7 +21,7 @@ define( function( require ) {
              'Software Development: Michael Dubson\n' +
              'Interviews: Mindy Gratny\n',
     thanks: 'Thanks -\n' +
-            'Conversation of this simulation to HTML5 was funded by the Royal Society of Chemistry.'
+            'Thanks to Mobile Learner Labs for their work in converting this simulation into HTML5.'
   };
   SimLauncher.launch( imageLoader, function() {
     //Create and start the sim
