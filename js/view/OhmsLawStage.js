@@ -19,11 +19,21 @@ define( function( require ) {
     Node.call( this, {scale: 0.75} );
     this.addChild( new FormulaView( model ).mutate( { pickable: false } ) );
     this.addChild( new WireBox( model ).mutate( { pickable: false } ) );
-    this.addChild( new SlidersBox( model ) );
+    var slidersBox = new SlidersBox( model );
+    this.addChild( slidersBox );
+
     //reset button
-    this.addChild( new Node( { x: 750, y: 500, children: [ new ResetAllButton( function() {model.reset();} )]} ) );
-    //sound on/off toggle
-    this.addChild( new SoundToggleButton(model.soundActiveProperty, {x: 880, y: 500, scale:1.3}));
+    var buttonCenterYOffset = 50;
+    this.addChild( new ResetAllButton(
+      function() {model.reset();},
+      { centerX: slidersBox.left + slidersBox.width * 0.27, centerY: slidersBox.bottom + buttonCenterYOffset } )
+    );
+
+    //sound on/off toggle button
+    var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, { scale: 1.3 } );
+    soundToggleButton.centerX = slidersBox.left + slidersBox.width * 0.70;
+    soundToggleButton.centerY = slidersBox.bottom + buttonCenterYOffset;
+    this.addChild( soundToggleButton );
   }
 
   inherit( Node, OhmsLawStage );
