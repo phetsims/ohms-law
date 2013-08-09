@@ -1,3 +1,4 @@
+8/9/2013 - Added MLL to credits.
 8/9/2013 - Fixed some layout issues with the sound and reset buttons.
 # 00.00.00-7
 3/11/13 arrows around wire added
@@ -7,4 +8,3 @@
 3/6/13 refactoring
 3/4/13 more features
 3/1/13 initial commit, first version
-
