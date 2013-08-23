@@ -1,5 +1,5 @@
-ohms-law.iml
 build/
 node_modules/
+*.iml
 .DS_Store
 .DS_Store?
