@@ -11,6 +11,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var Text = require( 'SCENERY/nodes/Text' );
   var Matrix3 = require( 'DOT/Matrix3' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
   function FormulaView( model ) {
     var thisNode = this;
@@ -44,7 +45,7 @@ define( function( require ) {
     var y = 140;
     texts.forEach( function viewTexts( entry ) {
       // centered text node, so we just have to adjust scale dynamically
-      var textNode = new Text( entry.val, {'fontFamily': "Times New Roman", 'fontSize': 12, fontWeight: "bold", fill: entry.color, centerX: 0, centerY: 0} );
+      var textNode = new Text( entry.val, { font: new PhetFont( { family: 'Times New Roman', size: 12, weight: 'bold' } ), fill: entry.color, centerX: 0, centerY: 0} );
       entry.view = new Node( { children: [textNode] } );
       thisNode.addChild( entry.view );
       model[entry.targetProperty].link( function updateProperty( val ) {
@@ -56,7 +57,7 @@ define( function( require ) {
     } );
 
     //static text
-    var text = new Text( "=", {'fontFamily': "Georgia", 'fontSize': 140, fontWeight: "bold", fill: "#000", centerX: 300, centerY: y} );
+    var text = new Text( "=", { font: new PhetFont( { family: 'Georgia', size: 140, weight: 'bold' } ), fill: "#000", centerX: 300, centerY: y} );
     this.addChild( text );
   }
 

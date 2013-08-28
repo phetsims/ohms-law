@@ -14,6 +14,9 @@ define( function( require ) {
   var LinearGradient = require( 'SCENERY/util/LinearGradient' );
   var Matrix3 = require( 'DOT/Matrix3' );
   var LinearFunction = require( 'DOT/LinearFunction' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+
+  var FONT = new PhetFont( { family: 'Verdana', size: 18, weight: 'bold' } );
 
   function BatteryView( x, y, totWidth ) {
     Node.call( this, {x: x, y: y} );
@@ -38,7 +41,7 @@ define( function( require ) {
       batteryVoltage2,
       batteryVoltage3,
       batteryText = new Node( {centerY: -7, x: 3} ),
-      batteryTextValue = new Text( "1.5", {'fontFamily': "Verdana", fontSize: 18, fontWeight: "bold"} );
+      batteryTextValue = new Text( "1.5", { font: FONT } );
 
     battery.addChild( batteryVoltage = new Rectangle( 0, 0, w[0], h, {stroke: "#000", lineWidth: 1, fill: linearGradient3, y: -h / 2} ) );
     battery.addChild( batteryVoltage2 = new Rectangle( 0, 0, w[1], h, {stroke: "#000", lineWidth: 1, fill: linearGradient2, y: -h / 2, x: w[0]} ) );
@@ -46,7 +49,7 @@ define( function( require ) {
     this.addChild( battery );
     this.addChild( batteryText );
     batteryText.addChild( batteryTextValue );
-    batteryText.addChild( new Text( "V", {'fontFamily': "Verdana", fontSize: 18, fill: "blue", fontWeight: "bold", x: 37 } ) );
+    batteryText.addChild( new Text( "V", { font: FONT, fill: "blue", x: 37 } ) );
     
     var translationMatrix = Matrix3.translation( 0, -h / 2 );
     this.setVoltage = function( voltage ) {
