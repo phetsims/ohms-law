@@ -18,10 +18,11 @@ define( function( require ) {
   var simOptions = {
     credits: 'PhET Development Team -\n' +
              'Lead Design: Michael Dubson\n' +
-             'Software Development: Michael Dubson\n' +
+             'Software Development: Michael Dubson, John Blanco\n' +
+             'Design Team: Ariel Paul\n' +
              'Interviews: Mindy Gratny\n',
     thanks: 'Thanks -\n' +
-            'Thanks to Mobile Learner Labs for their work in converting this simulation to HTML5.'
+            'Thanks to Mobile Learner Labs for working with the PhET development team to convert this simulation to HTML5.'
   };
   SimLauncher.launch( imageLoader, function() {
     //Create and start the sim
