@@ -12,13 +12,14 @@ define( function( require ) {
   var Text = require( 'SCENERY/nodes/Text' );
   var Matrix3 = require( 'DOT/Matrix3' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Strings = require( 'OhmsLawStrings' );
 
   function FormulaView( model ) {
     var thisNode = this;
     Node.call( this );
     var texts = [
       {
-        val: "V",
+        val: Strings.voltageSymbol,
         scaleA: 4.5,
         scaleB: 2,
         x: 150,
@@ -26,7 +27,7 @@ define( function( require ) {
         color: "#0f0ffb"
       },
       {
-        val: "I",
+        val: Strings.currentSymbol,
         scaleA: 0.2,
         scaleB: 0.84,
         x: 380,
@@ -34,7 +35,7 @@ define( function( require ) {
         color: "red"
       },
       {
-        val: "R",
+        val: Strings.resistanceSymbol,
         scaleA: 0.04,
         scaleB: 2,
         x: 560,
@@ -52,7 +53,7 @@ define( function( require ) {
         // performance TODO: consider not updating the matrix if it hasn't changed (if entry.x, entry.scaleA, and entry.scaleB haven't changed)
         // since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
         entry.view.matrix = Matrix3.translation( entry.x, y )
-                                   .timesMatrix( Matrix3.scale( entry.scaleA * val + entry.scaleB ) );
+          .timesMatrix( Matrix3.scale( entry.scaleA * val + entry.scaleB ) );
       } );
     } );
 

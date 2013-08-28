@@ -37,12 +37,12 @@ define( function( require ) {
     this.y = rectY;
     this.addChild( new WhiteBox( 0, 0, rectW, rectH ) );
 
-    this.addChild( new Text( "V", { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[0] } ) );
+    this.addChild( new Text( Strings.voltageSymbol, { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[0] } ) );
     this.addChild( new Text( Strings.voltage, { font: new PhetFont( { family: "Verdana", size: 16 } ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[1] } ) );
     this.addChild( textVoltage = new Text( model.voltage.toFixed( 1 ), { font: new PhetFont( { family: "Verdana", size: 30 } ), textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[0] + 15, top: yCoords[2] } ) );
-    this.addChild( new Text( "V", { font: new PhetFont( { family: "Verdana", size: 30 } ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[0] + 30, top: yCoords[3] } ) );
+    this.addChild( new Text( Strings.voltageSymbol, { font: new PhetFont( { family: "Verdana", size: 30 } ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[0] + 30, top: yCoords[3] } ) );
 
-    this.addChild( new Text( "R", { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[0] } ) );
+    this.addChild( new Text( Strings.resistanceSymbol, { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[0] } ) );
     this.addChild( new Text( Strings.resistance, { font: new PhetFont( { family: "Verdana", size: 16 } ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[1] } ) );
     this.addChild( textResistance = new Text( model.resistance.toFixed( 0 ), { font: new PhetFont( { family: "Verdana", size: 30 } ), textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[1] + 20, top: yCoords[2] } ) );
     this.addChild( new Text( "Ω", { font: new PhetFont( { family: "Verdana", size: 30 } ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[1] + 40, top: yCoords[3] } ) );
