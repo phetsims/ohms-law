@@ -15,6 +15,7 @@ define( function( require ) {
   var Slider = require( 'view/shapes/SliderBox/Slider' );
   var imageLoader = require( 'imageLoader' );
   var Text = require( 'SCENERY/nodes/Text' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
   var VOLTAGEMAX = 9,
     VOLTAGEMIN = 0.1,
@@ -36,15 +37,15 @@ define( function( require ) {
     this.y = rectY;
     this.addChild( new WhiteBox( 0, 0, rectW, rectH ) );
 
-    this.addChild( new Text( "V", { 'fontFamily': "Times New Roman", 'fontSize': 60, fontWeight: "bold", fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[0] } ) );
-    this.addChild( new Text( Strings.voltage, { 'fontFamily': "Verdana", 'fontSize': 16, textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[1] } ) );
-    this.addChild( textVoltage = new Text( model.voltage.toFixed( 1 ), { 'fontFamily': "Verdana", 'fontSize': 30, textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[0] + 15, top: yCoords[2] } ) );
-    this.addChild( new Text( "V", { 'fontFamily': "Verdana", 'fontSize': 30, textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[0] + 30, top: yCoords[3] } ) );
+    this.addChild( new Text( "V", { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[0] } ) );
+    this.addChild( new Text( Strings.voltage, { font: new PhetFont( { family: "Verdana", size: 16 } ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[1] } ) );
+    this.addChild( textVoltage = new Text( model.voltage.toFixed( 1 ), { font: new PhetFont( { family: "Verdana", size: 30 } ), textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[0] + 15, top: yCoords[2] } ) );
+    this.addChild( new Text( "V", { font: new PhetFont( { family: "Verdana", size: 30 } ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[0] + 30, top: yCoords[3] } ) );
 
-    this.addChild( new Text( "R", { 'fontFamily': "Times New Roman", 'fontSize': 60, fontWeight: "bold", fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[0] } ) );
-    this.addChild( new Text( Strings.resistance, { 'fontFamily': "Verdana", 'fontSize': 16, textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[1] } ) );
-    this.addChild( textResistance = new Text( model.resistance.toFixed( 0 ), { 'fontFamily': "Verdana", 'fontSize': 30, textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[1] + 20, top: yCoords[2] } ) );
-    this.addChild( new Text( "Ω", { 'fontFamily': "Verdana", 'fontSize': 30, textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[1] + 40, top: yCoords[3] } ) );
+    this.addChild( new Text( "R", { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[0] } ) );
+    this.addChild( new Text( Strings.resistance, { font: new PhetFont( { family: "Verdana", size: 16 } ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[1] } ) );
+    this.addChild( textResistance = new Text( model.resistance.toFixed( 0 ), { font: new PhetFont( { family: "Verdana", size: 30 } ), textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[1] + 20, top: yCoords[2] } ) );
+    this.addChild( new Text( "Ω", { font: new PhetFont( { family: "Verdana", size: 30 } ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[1] + 40, top: yCoords[3] } ) );
 
     // make all of the text and background unpickable, to speed up mouse/touch hit computation
     _.each( this.children, function( child ) { child.pickable = false; } );

@@ -13,6 +13,7 @@ define( function( require ) {
   var Strings = require( 'OhmsLawStrings' );
   var Text = require( 'SCENERY/nodes/Text' );
   var WhiteBox = require( 'view/shapes/WhiteBox' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
   function CurrentValueBox( model, x, y, w, h ) {
     Node.call( this, {x: 0, y: 0} );
@@ -44,7 +45,7 @@ define( function( require ) {
     var totW = 0,
       textContainer = new Node();
     texts.forEach( function( entry ) {
-      entry.view = new Text( entry.val, {'fontFamily': "Verdana", 'fontSize': textSize, fill: entry.color, x: totW, y: 0} );
+      entry.view = new Text( entry.val, { font: new PhetFont( { family: 'Verdana', size: textSize } ), fill: entry.color, x: totW, y: 0} );
       textContainer.addChild( entry.view );
       entry.width = entry.view.width;
       entry.right = entry.view.right;
