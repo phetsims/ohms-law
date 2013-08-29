@@ -6,7 +6,7 @@ define( {
     "sound": "sound",
     "simTitle": "Ohm's Law",
     "voltage": "voltage",
-    "voltageSymbol": "U",
+    "voltageSymbol": "V",
     "resistanceSymbol": "R",
     "currentSymbol": "I"
   },
