@@ -8,7 +8,10 @@ define( {
     "voltage": "voltage",
     "voltageSymbol": "V",
     "resistanceSymbol": "R",
-    "currentSymbol": "I"
+    "currentSymbol": "I",
+    "voltageUnits": "V",
+    "currentUnits": "mA",
+    "resistanceUnits": "Ω"
   },
   "ar": true,
   "ar-sa": true,
