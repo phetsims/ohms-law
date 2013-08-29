@@ -7,6 +7,8 @@
 
 define( function( require ) {
   'use strict';
+
+  // Imports
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
@@ -15,8 +17,10 @@ define( function( require ) {
   var Matrix3 = require( 'DOT/Matrix3' );
   var LinearFunction = require( 'DOT/LinearFunction' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Strings = require( 'OhmsLawStrings' );
 
-  var FONT = new PhetFont( { size: 18, weight: 'bold' } );
+  // Constants
+  var FONT = new PhetFont( { size: 20, weight: 'bold' } );
 
   function BatteryView( x, y, totWidth ) {
     Node.call( this, {x: x, y: y} );
@@ -49,8 +53,9 @@ define( function( require ) {
     this.addChild( battery );
     this.addChild( batteryText );
     batteryText.addChild( batteryTextValue );
-    batteryText.addChild( new Text( "V", { font: FONT, fill: "blue", x: 37 } ) );
-    
+    var voltageStringMaxWidth = new Text( "9.9", { font: FONT } ).width;
+    batteryText.addChild( new Text( Strings.voltageUnits, { font: FONT, fill: "blue", x: voltageStringMaxWidth * 1.1 } ) );
+
     var translationMatrix = Matrix3.translation( 0, -h / 2 );
     this.setVoltage = function( voltage ) {
       if ( voltage >= 1.5 ) {
@@ -67,7 +72,7 @@ define( function( require ) {
       if ( this.isVisible() ) {
         batteryTextValue.text = voltage.toFixed( 1 );
         batteryVoltage.matrix = Matrix3.scale( voltageToScale( voltage ), 1 )
-                                       .timesMatrix( translationMatrix );
+          .timesMatrix( translationMatrix );
         batteryVoltage2.x = batteryVoltage.right;
         batteryVoltage3.x = batteryVoltage.right;
       }
