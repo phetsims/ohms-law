@@ -16,7 +16,7 @@ define( function( require ) {
   var LinearFunction = require( 'DOT/LinearFunction' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
-  var FONT = new PhetFont( { family: 'Verdana', size: 18, weight: 'bold' } );
+  var FONT = new PhetFont( { size: 18, weight: 'bold' } );
 
   function BatteryView( x, y, totWidth ) {
     Node.call( this, {x: x, y: y} );
