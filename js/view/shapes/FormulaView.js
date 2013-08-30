@@ -58,7 +58,7 @@ define( function( require ) {
     } );
 
     //static text
-    var text = new Text( "=", { font: new PhetFont( { family: 'Georgia', size: 140, weight: 'bold' } ), fill: "#000", centerX: 300, centerY: y} );
+    var text = new Text( "=", { font: new PhetFont( { family: 'Times New Roman', size: 140, weight: 'bold' } ), fill: "#000", centerX: 300, centerY: y} );
     this.addChild( text );
   }
 
