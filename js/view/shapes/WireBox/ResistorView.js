@@ -42,20 +42,17 @@ define( function( require ) {
     resistorShape3.moveTo( 5, hBox / 2 );
     resistorShape3.lineTo( -15, hBox / 2 );
 
-    resistor.addChild( new Path( {
-      shape: resistorShape,
+    resistor.addChild( new Path( resistorShape, {
       stroke: "#000",
       fill: linearGradient1,
       lineWidth: 1
     } ) );
-    resistor.addChild( new Path( {
-      shape: resistorShape2,
+    resistor.addChild( new Path( resistorShape2, {
       stroke: "#000",
       fill: "#ff9f9f",
       lineWidth: 1
     } ) );
-    resistor.addChild( new Path( {
-      shape: resistorShape3,
+    resistor.addChild( new Path( resistorShape3, {
       stroke: "#000",
       lineWidth: 10
     } ) );

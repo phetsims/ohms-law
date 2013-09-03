@@ -36,8 +36,7 @@ define( function( require ) {
     _.each( points, function( element ) { arrowShape.lineTo( element[0], element[1] ); } );
     arrowShape.close();
 
-    arrow.addChild( new Path( {
-      shape: arrowShape,
+    arrow.addChild( new Path( arrowShape, {
       stroke: "#000",
       fill: "#F00",
       lineWidth: 0.2
