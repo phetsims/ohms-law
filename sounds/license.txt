@@ -1,0 +1,4 @@
+add-battery.mp3 source=PhET author=John Blanco
+add-battery.ogg source=PhET author=John Blanco
+remove-battery.mp3 source=PhET author=John Blanco
+remove-battery.ogg source=PhET author=John Blanco
