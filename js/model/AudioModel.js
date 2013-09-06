@@ -10,27 +10,18 @@ define( function( require ) {
   function AudioModel( model ) {
     var thisModel = this;
     this.sounds = [];
-    for ( var i = 0; i < 9 / 1.5; i++ ) {
-      this.sounds.push( {
-          'addBattery': new Sound( 'add-battery' ),
-          'removeBattery': new Sound( 'remove-battery' )
-        }
-      );
-    }
+    this.sounds.addBattery = new Sound( 'add-battery' );
+    this.sounds.removeBattery = new Sound( 'remove-battery' );
     var oldVal = Math.floor( model.voltage / 1.5 );
 
     model.voltageProperty.link( function playSound( value ) {
       var newVal = Math.floor( (value) / 1.5 );
       if ( model.soundActive ) {
         if ( newVal > oldVal ) {
-          if ( thisModel.sounds[newVal] ) {
-            thisModel.sounds[newVal].addBattery.play();
-          }
+          thisModel.sounds.addBattery.play();
         }
         else if ( newVal < oldVal ) {
-          if ( thisModel.sounds[newVal] ) {
-            thisModel.sounds[newVal].removeBattery.play();
-          }
+          thisModel.sounds.removeBattery.play();
         }
       }
       oldVal = newVal;

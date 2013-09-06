@@ -1,4 +1,3 @@
-
 define( function( require ) {
   "use strict";
 
@@ -12,5 +11,9 @@ define( function( require ) {
       'reset_button_down.png',
       'reset_button_over.png',
       'reset_button_up.png'
+    ],
+    soundNames: [
+      'add-battery.mp3',
+      'remove-battery.mp3'
     ] };
 } );
