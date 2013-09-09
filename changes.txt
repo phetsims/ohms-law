@@ -1,3 +1,7 @@
+9/9/2013 - Replaced slider knob artwork with a PhET-generated version.
+# 1.1.0-1
+8/29/2013 - Changed all fonts to use PhetFont
+# 1.0.0
 8/9/2013 - Added MLL to credits.
 8/9/2013 - Fixed some layout issues with the sound and reset buttons.
 # 00.00.00-7
