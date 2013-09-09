@@ -7,6 +7,8 @@
 
 define( function( require ) {
   'use strict';
+
+  // Imports
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Image = require( 'SCENERY/nodes/Image' );
@@ -14,12 +16,18 @@ define( function( require ) {
   var SimpleDragHandler = require( 'SCENERY/input/SimpleDragHandler' );
   var LinearFunction = require( 'DOT/LinearFunction' );
 
+  // Constants
+  var KNOB_WIDTH = 32;  // Empirically determined.
+
   function Slider( x, y, h, targetProperty, img, value ) {
     var thisNode = this;
     Node.call( this, {x: x, y: y} );
     this.addChild( new Rectangle( -3, 0, 6, h, {fill: "black" } ) );
 
-    var track = new Node( {children: [new Image( img, {centerX: 0, top: 0} )], cursor: "pointer"} );
+    var knob = new Image( img );
+    knob.scale( KNOB_WIDTH / knob.width );
+    knob.mutate( { centerX: 0, top: 0 } );
+    var track = new Node( {children: [ knob ], cursor: "pointer"} );
 
     var clickYOffset,
       yMin = 0,
