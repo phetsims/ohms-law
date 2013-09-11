@@ -8,6 +8,8 @@
 
 define( function( require ) {
   'use strict';
+
+  // Imports
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Strings = require( 'OhmsLawStrings' );
@@ -17,6 +19,7 @@ define( function( require ) {
   var Text = require( 'SCENERY/nodes/Text' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
+  // Constants
   var VOLTAGEMAX = 9,
     VOLTAGEMIN = 0.1,
     RESISTANCEMAX = 1000,
