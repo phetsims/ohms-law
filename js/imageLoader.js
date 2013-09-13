@@ -14,6 +14,8 @@ define( function( require ) {
     ],
     soundNames: [
       'add-battery.mp3',
-      'remove-battery.mp3'
+      'add-battery.ogg',
+      'remove-battery.mp3',
+      'remove-battery.ogg'
     ] };
 } );
