@@ -7,14 +7,9 @@ define( function( require ) {
   'use strict';
   var PropertySet = require( 'AXON/PropertySet' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var AudioModel = require( 'model/AudioModel' );
-
+  var Sound = require( 'VIBE/Sound' );
 
   function OhmsLawModel() {
-    var thisModel = this;
-
-
-
     PropertySet.call( this, {
       voltage: 4.5,
       resistance: 500,
@@ -22,7 +17,25 @@ define( function( require ) {
       soundActive: true
     } );
 
-    this.sounds = new AudioModel( this );
+    var thisModel = this;
+
+    // Hook up the sounds that are played when batteries are added or removed.
+    var addBatterySound = new Sound( 'sounds/add-battery.mp3' );
+    var removeBatterySound = new Sound( 'sounds/remove-battery.mp3' );
+    var oldVal = Math.floor( thisModel.voltage / 1.5 );
+
+    thisModel.voltageProperty.link( function( voltage ) {
+      var newVal = Math.floor( ( voltage ) / 1.5 );
+      if ( thisModel.soundActive ) {
+        if ( newVal > oldVal ) {
+          addBatterySound.play();
+        }
+        else if ( newVal < oldVal ) {
+          removeBatterySound.play();
+        }
+      }
+      oldVal = newVal;
+    } );
 
     var updateCurrent = function() {
       thisModel.current = thisModel.calculateCurrent( thisModel.voltage, thisModel.resistance );
