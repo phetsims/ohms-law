@@ -20,8 +20,8 @@ define( function( require ) {
     var thisModel = this;
 
     // Hook up the sounds that are played when batteries are added or removed.
-    var addBatterySound = new Sound( 'sounds/add-battery.mp3' );
-    var removeBatterySound = new Sound( 'sounds/remove-battery.mp3' );
+    var addBatterySound = new Sound( 'audio/add-battery.mp3' );
+    var removeBatterySound = new Sound( 'audio/remove-battery.mp3' );
     var oldVal = Math.floor( thisModel.voltage / 1.5 );
 
     thisModel.voltageProperty.link( function( voltage ) {
