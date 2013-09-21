@@ -1,6 +1,6 @@
 {
   "name": "ohms-law",
-  "version": "1.1.0-rc2",
+  "version": "1.2.0-dev.1",
   "resourceDirs": "images sounds",
   "phetLibs": "ohms-law assert axon dot joist kite phet-core phetcommon scenery scenery-phet sun vibe",
   "images": [
