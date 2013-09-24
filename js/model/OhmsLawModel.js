@@ -8,6 +8,8 @@ define( function( require ) {
   var PropertySet = require( 'AXON/PropertySet' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Sound = require( 'VIBE/Sound' );
+  var addBatteryAudio = require( 'audio!OHMS_LAW/../audio/add-battery.mp3' );
+  var removeBatteryAudio = require( 'audio!OHMS_LAW/../audio/remove-battery.mp3' );
 
   function OhmsLawModel() {
     PropertySet.call( this, {
@@ -20,8 +22,8 @@ define( function( require ) {
     var thisModel = this;
 
     // Hook up the sounds that are played when batteries are added or removed.
-    var addBatterySound = new Sound( 'audio/add-battery.mp3' );
-    var removeBatterySound = new Sound( 'audio/remove-battery.mp3' );
+    var addBatterySound = new Sound( addBatteryAudio );
+    var removeBatterySound = new Sound( removeBatteryAudio );
     var oldVal = Math.floor( thisModel.voltage / 1.5 );
 
     thisModel.voltageProperty.link( function( voltage ) {

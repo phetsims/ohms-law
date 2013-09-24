@@ -12,8 +12,7 @@ define( function( require ) {
     Strings = require( 'OhmsLawStrings' ),
     Rectangle = require( 'SCENERY/nodes/Rectangle' ),
     OhmsLawModel = require( 'model/OhmsLawModel' ),
-    OhmsLawView = require( 'view/OhmsLawView' ),
-    imageLoader = require( 'imageLoader' );
+    OhmsLawView = require( 'view/OhmsLawView' );
 
   var simOptions = {
     credits: 'PhET Development Team -\n' +
@@ -24,7 +23,7 @@ define( function( require ) {
     thanks: 'Thanks -\n' +
             'Thanks to Mobile Learner Labs for working with the PhET development team to convert this simulation to HTML5.'
   };
-  SimLauncher.launch( imageLoader, function() {
+  SimLauncher.launch( {imageNames: []}, function() {
     //Create and start the sim
     new Sim( Strings.simTitle, [
       {

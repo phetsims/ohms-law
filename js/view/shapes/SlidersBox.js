@@ -15,9 +15,9 @@ define( function( require ) {
   var Strings = require( 'OhmsLawStrings' );
   var WhiteBox = require( 'view/shapes/WhiteBox' );
   var Slider = require( 'view/shapes/SliderBox/Slider' );
-  var imageLoader = require( 'imageLoader' );
   var Text = require( 'SCENERY/nodes/Text' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var sliderImage = require( 'image!OHMS_LAW/../images/slider.png' );
 
   // Constants
   var VOLTAGEMAX = 9,
@@ -53,8 +53,8 @@ define( function( require ) {
     // make all of the text and background unpickable, to speed up mouse/touch hit computation
     _.each( this.children, function( child ) { child.pickable = false; } );
 
-    this.addChild( new Slider( xCoords[0], 90, 240, model.voltageProperty, imageLoader.getImage( 'slider.png' ), {min: VOLTAGEMIN, max: VOLTAGEMAX} ) );
-    this.addChild( new Slider( xCoords[1], 90, 240, model.resistanceProperty, imageLoader.getImage( 'slider.png' ), {min: RESISTANCEMIN, max: RESISTANCEMAX} ) );
+    this.addChild( new Slider( xCoords[0], 90, 240, model.voltageProperty, sliderImage, {min: VOLTAGEMIN, max: VOLTAGEMAX} ) );
+    this.addChild( new Slider( xCoords[1], 90, 240, model.resistanceProperty, sliderImage, {min: RESISTANCEMIN, max: RESISTANCEMAX} ) );
 
     model.voltageProperty.link( function updateTextVoltage( value ) {
       textVoltage.text = value.toFixed( 1 );
