@@ -12,12 +12,19 @@ define( function( require ) {
   // Imports
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var Strings = require( 'OhmsLawStrings' );
   var WhiteBox = require( 'view/shapes/WhiteBox' );
   var Slider = require( 'view/shapes/SliderBox/Slider' );
   var Text = require( 'SCENERY/nodes/Text' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+
+  // Resources
   var sliderImage = require( 'image!OHMS_LAW/../images/slider.png' );
+  var voltageSymbol = require( 'string!OHMS_LAW/voltageSymbol' );
+  var resistanceSymbol = require( 'string!OHMS_LAW/resistanceSymbol' );
+  var voltage = require( 'string!OHMS_LAW/voltage' );
+  var voltageUnits = require( 'string!OHMS_LAW/voltageUnits' );
+  var resistance = require( 'string!OHMS_LAW/resistance' );
+  var resistanceUnits = require( 'string!OHMS_LAW/resistanceUnits' );
 
   // Constants
   var VOLTAGEMAX = 9,
@@ -40,15 +47,15 @@ define( function( require ) {
     this.y = rectY;
     this.addChild( new WhiteBox( 0, 0, rectW, rectH ) );
 
-    this.addChild( new Text( Strings.voltageSymbol, { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[0] } ) );
-    this.addChild( new Text( Strings.voltage, { font: new PhetFont( 16 ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[1] } ) );
+    this.addChild( new Text( voltageSymbol, { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[0] } ) );
+    this.addChild( new Text( voltage, { font: new PhetFont( 16 ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[1] } ) );
     this.addChild( textVoltage = new Text( model.voltage.toFixed( 1 ), { font: new PhetFont( 30 ), textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[0] + 15, top: yCoords[2] } ) );
-    this.addChild( new Text( Strings.voltageUnits, { font: new PhetFont( 30 ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[0] + 30, top: yCoords[3] } ) );
+    this.addChild( new Text( voltageUnits, { font: new PhetFont( 30 ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[0] + 30, top: yCoords[3] } ) );
 
-    this.addChild( new Text( Strings.resistanceSymbol, { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[0] } ) );
-    this.addChild( new Text( Strings.resistance, { font: new PhetFont( 16 ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[1] } ) );
+    this.addChild( new Text( resistanceSymbol, { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[0] } ) );
+    this.addChild( new Text( resistance, { font: new PhetFont( 16 ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[1] } ) );
     this.addChild( textResistance = new Text( model.resistance.toFixed( 0 ), { font: new PhetFont( 30 ), textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[1] + 20, top: yCoords[2] } ) );
-    this.addChild( new Text( Strings.resistanceUnits, { font: new PhetFont( 30 ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[1] + 40, top: yCoords[3] } ) );
+    this.addChild( new Text( resistanceUnits, { font: new PhetFont( 30 ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[1] + 40, top: yCoords[3] } ) );
 
     // make all of the text and background unpickable, to speed up mouse/touch hit computation
     _.each( this.children, function( child ) { child.pickable = false; } );

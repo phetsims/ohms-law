@@ -9,7 +9,7 @@ define( function( require ) {
   // imports
   var SimLauncher = require( 'JOIST/SimLauncher' ),
     Sim = require( 'JOIST/Sim' ),
-    Strings = require( 'OhmsLawStrings' ),
+    simTitle = require( 'string!OHMS_LAW/simTitle' ),
     Rectangle = require( 'SCENERY/nodes/Rectangle' ),
     OhmsLawModel = require( 'model/OhmsLawModel' ),
     OhmsLawView = require( 'view/OhmsLawView' );
@@ -25,9 +25,9 @@ define( function( require ) {
   };
   SimLauncher.launch( function() {
     //Create and start the sim
-    new Sim( Strings.simTitle, [
+    new Sim( simTitle, [
       {
-        name: Strings.simTitle,
+        name: simTitle,
         icon: new Rectangle( 0, 0, 50, 50, { fill: 'blue' } ),
         createModel: function() { return new OhmsLawModel(); },
         createView: function( model ) { return new OhmsLawView( model ); },

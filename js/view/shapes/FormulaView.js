@@ -7,19 +7,22 @@
 
 define( function( require ) {
   'use strict';
+
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Text = require( 'SCENERY/nodes/Text' );
   var Matrix3 = require( 'DOT/Matrix3' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
-  var Strings = require( 'OhmsLawStrings' );
+  var voltageSymbol = require( 'string!OHMS_LAW/voltageSymbol' );
+  var currentSymbol = require( 'string!OHMS_LAW/currentSymbol' );
+  var resistanceSymbol = require( 'string!OHMS_LAW/resistanceSymbol' );
 
   function FormulaView( model ) {
     var thisNode = this;
     Node.call( this );
     var texts = [
       {
-        val: Strings.voltageSymbol,
+        val: voltageSymbol,
         scaleA: 4.5,
         scaleB: 2,
         x: 150,
@@ -27,7 +30,7 @@ define( function( require ) {
         color: "#0f0ffb"
       },
       {
-        val: Strings.currentSymbol,
+        val: currentSymbol,
         scaleA: 0.2,
         scaleB: 0.84,
         x: 380,
@@ -35,7 +38,7 @@ define( function( require ) {
         color: "red"
       },
       {
-        val: Strings.resistanceSymbol,
+        val: resistanceSymbol,
         scaleA: 0.04,
         scaleB: 2,
         x: 560,

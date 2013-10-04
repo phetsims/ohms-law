@@ -15,7 +15,10 @@ define( function( require ) {
   var Text = require( 'SCENERY/nodes/Text' );
   var WhiteBox = require( 'view/shapes/WhiteBox' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
-  var Strings = require( 'OhmsLawStrings' );
+
+  // Resources
+  var current = require( 'string!OHMS_LAW/current' );
+  var currentUnits = require( 'string!OHMS_LAW/currentUnits' );
 
   // Constants
   var FONT = new PhetFont( 34 );
@@ -35,11 +38,11 @@ define( function( require ) {
 
     // Create the text string.
     var textContainer = new Node();
-    textContainer.addChild( new Text( Strings.current, { font: FONT, fill: 'red' } ) );
+    textContainer.addChild( new Text( current, { font: FONT, fill: 'red' } ) );
     textContainer.addChild( new Text( "=", { font: FONT, fill: 'black', left: textContainer.width + SPACING } ) );
     var currentValue = new Text( "999.9", { font: FONT, fill: 'black', left: textContainer.width + SPACING } );
     textContainer.addChild( currentValue );
-    textContainer.addChild( new Text( Strings.currentUnits, { font: FONT, fill: 'red', left: textContainer.width + SPACING } ) );
+    textContainer.addChild( new Text( currentUnits, { font: FONT, fill: 'red', left: textContainer.width + SPACING } ) );
 
     // Scale the text if greater than max allowed width.
     if ( textContainer.width > maxTextWidth ) {

@@ -17,7 +17,9 @@ define( function( require ) {
   var Matrix3 = require( 'DOT/Matrix3' );
   var LinearFunction = require( 'DOT/LinearFunction' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
-  var Strings = require( 'OhmsLawStrings' );
+
+  // Resources
+  var voltageUnits = require( 'string!OHMS_LAW/voltageUnits' );
 
   // Constants
   var FONT = new PhetFont( { size: 20, weight: 'bold' } );
@@ -54,7 +56,7 @@ define( function( require ) {
     this.addChild( batteryText );
     batteryText.addChild( batteryTextValue );
     var voltageStringMaxWidth = new Text( "9.9", { font: FONT } ).width;
-    batteryText.addChild( new Text( Strings.voltageUnits, { font: FONT, fill: "blue", x: voltageStringMaxWidth * 1.1 } ) );
+    batteryText.addChild( new Text( voltageUnits, { font: FONT, fill: "blue", x: voltageStringMaxWidth * 1.1 } ) );
 
     var translationMatrix = Matrix3.translation( 0, -h / 2 );
     this.setVoltage = function( voltage ) {
