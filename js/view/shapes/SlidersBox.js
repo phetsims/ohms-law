@@ -18,7 +18,7 @@ define( function( require ) {
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
   // Resources
-  var sliderImage = require( 'image!OHMS_LAW/../images/slider.png' );
+  var sliderImage = require( 'image!OHMS_LAW/slider.png' );
   var voltageSymbol = require( 'string!OHMS_LAW/voltageSymbol' );
   var resistanceSymbol = require( 'string!OHMS_LAW/resistanceSymbol' );
   var voltage = require( 'string!OHMS_LAW/voltage' );
