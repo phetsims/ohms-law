@@ -1,4 +1,6 @@
-9/9/2013 - Replaced slider knob artwork with a PhET-generated version.
+# 1.2.0-dev.2
+10/1/2013 Integrated new audio player.
+9/9/2013 Replaced slider knob artwork with a PhET-generated version.
 # 1.1.0-1
 8/29/2013 - Changed all fonts to use PhetFont
 # 1.0.0
