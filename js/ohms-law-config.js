@@ -9,12 +9,6 @@
 require.config( {
   deps: ["ohms-law-main"],
 
-  config: {
-    i18n: {
-      locale: 'en_us'
-    }
-  },
-
   paths: {
 
     // third party libs
