@@ -8,8 +8,8 @@ define( function( require ) {
   var PropertySet = require( 'AXON/PropertySet' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Sound = require( 'VIBE/Sound' );
-  var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery.mp3' );
-  var removeBatteryAudio = require( 'audio!OHMS_LAW/remove-battery.mp3' );
+  var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
+  var removeBatteryAudio = require( 'audio!OHMS_LAW/remove-battery' );
 
   function OhmsLawModel() {
     PropertySet.call( this, {
