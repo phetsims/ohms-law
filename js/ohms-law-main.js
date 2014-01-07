@@ -11,7 +11,6 @@ define( function( require ) {
     Sim = require( 'JOIST/Sim' ),
     Screen = require( 'JOIST/Screen' ),
     simTitle = require( 'string!OHMS_LAW/simTitle' ),
-    Rectangle = require( 'SCENERY/nodes/Rectangle' ),
     OhmsLawModel = require( 'model/OhmsLawModel' ),
     OhmsLawView = require( 'view/OhmsLawView' );
 
