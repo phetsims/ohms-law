@@ -10,7 +10,7 @@ define( function( require ) {
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ResetAllButtonDeprecated = require( 'SCENERY_PHET/ResetAllButtonDeprecated' );
-  var SoundToggleButton = require( 'SCENERY_PHET/SoundToggleButton' );
+  var SoundToggleButtonDeprecated = require( 'SCENERY_PHET/SoundToggleButtonDeprecated' );
   var WireBox = require( 'view/shapes/WireBox' );
   var SlidersBox = require( 'view/shapes/SlidersBox' );
   var FormulaView = require( 'view/shapes/FormulaView' );
@@ -30,7 +30,7 @@ define( function( require ) {
     );
 
     //sound on/off toggle button
-    var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, { scale: 1.3 } );
+    var soundToggleButton = new SoundToggleButtonDeprecated( model.soundActiveProperty, { scale: 1.3 } );
     soundToggleButton.centerX = slidersBox.left + slidersBox.width * 0.70;
     soundToggleButton.centerY = slidersBox.bottom + buttonCenterYOffset;
     this.addChild( soundToggleButton );
