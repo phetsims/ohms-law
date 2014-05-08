@@ -9,7 +9,7 @@ define( function( require ) {
   'use strict';
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var ResetAllButtonDeprecated = require( 'SCENERY_PHET/ResetAllButtonDeprecated' );
+  var ResetAllButton = require( 'SCENERY_PHET/ResetAllButton' );
   var SoundToggleButtonDeprecated = require( 'SCENERY_PHET/SoundToggleButtonDeprecated' );
   var WireBox = require( 'view/shapes/WireBox' );
   var SlidersBox = require( 'view/shapes/SlidersBox' );
@@ -24,10 +24,12 @@ define( function( require ) {
 
     //reset button
     var buttonCenterYOffset = 50;
-    this.addChild( new ResetAllButtonDeprecated(
-        function() {model.reset();},
-        { centerX: slidersBox.left + slidersBox.width * 0.27, centerY: slidersBox.bottom + buttonCenterYOffset } )
-    );
+    this.addChild( new ResetAllButton( {
+      listener: function() { model.reset(); },
+      centerX: slidersBox.left + slidersBox.width * 0.27,
+      centerY: slidersBox.bottom + buttonCenterYOffset,
+      radius: 30
+    } ) );
 
     //sound on/off toggle button
     var soundToggleButton = new SoundToggleButtonDeprecated( model.soundActiveProperty, { scale: 1.3 } );
