@@ -32,7 +32,7 @@ define( function( require ) {
     } ) );
 
     //sound on/off toggle button
-    var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, { scale: 1.15, stroke: 'black' } );
+    var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, { scale: 1.15, stroke: 'gray', lineWidth: 0.5 } );
     soundToggleButton.centerX = slidersBox.left + slidersBox.width * 0.70;
     soundToggleButton.centerY = slidersBox.bottom + buttonCenterYOffset;
     this.addChild( soundToggleButton );
