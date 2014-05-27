@@ -6,7 +6,8 @@
  */
 define( function( require ) {
   'use strict';
-  // imports
+
+  // modules
   var SimLauncher = require( 'JOIST/SimLauncher' ),
     Sim = require( 'JOIST/Sim' ),
     Screen = require( 'JOIST/Screen' ),
