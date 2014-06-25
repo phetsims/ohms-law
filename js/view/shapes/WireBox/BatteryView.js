@@ -26,39 +26,39 @@ define( function( require ) {
 
   function BatteryView( x, y, totWidth ) {
     Node.call( this, {x: x, y: y} );
-    totWidth -= 4;
+    var nubWidth = 4;
+    totWidth -= nubWidth;
     var voltageToScale = new LinearFunction( 0.1, 1.5, 0.0001, 1, true ),
       w = [totWidth * 72 / 78, totWidth * 6 / 78],
-      h = 40,
-      linearGradient1 = new LinearGradient( 0, 0, 0, h )
-        .addColorStop( 0, "#c3c3c3" )
-        .addColorStop( 0.3, "#f9f9f9" )
-        .addColorStop( 1, "#404040" ),
-      linearGradient2 = new LinearGradient( 0, 0, 0, h )
-        .addColorStop( 0, "#cc4e00" )
-        .addColorStop( 0.3, "#dddad6" )
-        .addColorStop( 1, "#cc4e00" ),
-      linearGradient3 = new LinearGradient( 0, 0, 0, h )
+      mainBodyWidth = totWidth * 72 / 78,
+      copperPortionWidth = totWidth * 6 / 78,
+      height = 40,
+      mainBodyFill = new LinearGradient( 0, 0, 0, height )
         .addColorStop( 0, "#777777" )
         .addColorStop( 0.3, "#bdbdbd" )
         .addColorStop( 1, "#2b2b2b" ),
+      copperPortionFill = new LinearGradient( 0, 0, 0, height )
+        .addColorStop( 0, "#cc4e00" )
+        .addColorStop( 0.3, "#dddad6" )
+        .addColorStop( 1, "#cc4e00" ),
+      nubFill = "#dddddd",
       battery = new Node(),
-      batteryVoltage,
-      batteryVoltage2,
-      batteryVoltage3,
+      mainBody,
+      copperPortion,
+      nub,
       batteryText = new Node( {centerY: -7, x: 3} ),
       batteryTextValue = new Text( "1.5", { font: FONT } );
 
-    battery.addChild( batteryVoltage = new Rectangle( 0, 0, w[0], h, {stroke: "#000", lineWidth: 1, fill: linearGradient3, y: -h / 2} ) );
-    battery.addChild( batteryVoltage2 = new Rectangle( 0, 0, w[1], h, {stroke: "#000", lineWidth: 1, fill: linearGradient2, y: -h / 2, x: w[0]} ) );
-    battery.addChild( batteryVoltage3 = new Rectangle( w[1], 0, 4, 12, {stroke: "#000", lineWidth: 1, fill: linearGradient1, y: -6, x: w[0]} ) );
+    battery.addChild( mainBody = new Rectangle( 0, 0, mainBodyWidth, height, {stroke: "#000", lineWidth: 1, fill: mainBodyFill, y: -height / 2} ) );
+    battery.addChild( copperPortion = new Rectangle( 0, 0, copperPortionWidth, height, {stroke: "#000", lineWidth: 1, fill: copperPortionFill, y: -height / 2, x: mainBodyWidth} ) );
+    battery.addChild( nub = new Rectangle( copperPortionWidth, 0, nubWidth, 12, {stroke: "#000", lineWidth: 1, fill: nubFill, y: -6, x: mainBodyWidth} ) );
     this.addChild( battery );
     this.addChild( batteryText );
     batteryText.addChild( batteryTextValue );
     var voltageStringMaxWidth = new Text( "9.9", { font: FONT } ).width;
     batteryText.addChild( new Text( voltageUnits, { font: FONT, fill: "blue", x: voltageStringMaxWidth * 1.1 } ) );
 
-    var translationMatrix = Matrix3.translation( 0, -h / 2 );
+    var translationMatrix = Matrix3.translation( 0, -height / 2 );
     this.setVoltage = function( voltage ) {
       if ( voltage >= 1.5 ) {
         this.setVisible( true );
@@ -73,10 +73,9 @@ define( function( require ) {
       }
       if ( this.isVisible() ) {
         batteryTextValue.text = voltage.toFixed( 1 );
-        batteryVoltage.matrix = Matrix3.scale( voltageToScale( voltage ), 1 )
-          .timesMatrix( translationMatrix );
-        batteryVoltage2.x = batteryVoltage.right;
-        batteryVoltage3.x = batteryVoltage.right;
+        mainBody.setRect( 0, 0, mainBodyWidth * voltageToScale( voltage ), height, 0, 0 );
+        copperPortion.x = mainBody.right;
+        nub.x = mainBody.right;
       }
     };
   }
