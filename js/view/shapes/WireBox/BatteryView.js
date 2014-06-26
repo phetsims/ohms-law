@@ -14,7 +14,6 @@ define( function( require ) {
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var Text = require( 'SCENERY/nodes/Text' );
   var LinearGradient = require( 'SCENERY/util/LinearGradient' );
-  var Matrix3 = require( 'DOT/Matrix3' );
   var LinearFunction = require( 'DOT/LinearFunction' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
@@ -29,7 +28,6 @@ define( function( require ) {
     var nubWidth = 4;
     totWidth -= nubWidth;
     var voltageToScale = new LinearFunction( 0.1, 1.5, 0.0001, 1, true ),
-      w = [totWidth * 72 / 78, totWidth * 6 / 78],
       mainBodyWidth = totWidth * 72 / 78,
       copperPortionWidth = totWidth * 6 / 78,
       height = 40,
@@ -58,7 +56,6 @@ define( function( require ) {
     var voltageStringMaxWidth = new Text( "9.9", { font: FONT } ).width;
     batteryText.addChild( new Text( voltageUnits, { font: FONT, fill: "blue", x: voltageStringMaxWidth * 1.1 } ) );
 
-    var translationMatrix = Matrix3.translation( 0, -height / 2 );
     this.setVoltage = function( voltage ) {
       if ( voltage >= 1.5 ) {
         this.setVisible( true );
