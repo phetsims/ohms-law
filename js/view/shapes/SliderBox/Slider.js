@@ -24,23 +24,27 @@ define( function( require ) {
     Node.call( this, {x: x, y: y} );
     this.addChild( new Rectangle( -3, 0, 6, h, {fill: "black" } ) );
 
-    var knob = new Image( img );
+    var knob = new Image( img, { cursor: "pointer" } );
     knob.scale( KNOB_WIDTH / knob.width );
     knob.mutate( { centerX: 0, top: 0 } );
-    var track = new Node( {children: [ knob ], cursor: "pointer"} );
+    knob.touchArea = knob.localBounds.dilateXY( 60, 40 ); // Expand touch area for easier use on tablets.
 
     var clickYOffset,
       yMin = 0,
-      yMax = h - track.height;
+      yMax = h - knob.height;
 
     var valueToPosition = new LinearFunction( value.min, value.max, yMax, yMin, true ),
       positionToValue = new LinearFunction( yMax, yMin, value.min, value.max, true );
-    this.addChild( track );
-    track.addInputListener( new SimpleDragHandler(
+    this.addChild( knob );
+    knob.addInputListener( new SimpleDragHandler(
       {
+        // Allow moving a finger (touch) across this node to interact with it
+        allowTouchSnag: true,
+
         start: function( event ) {
           clickYOffset = thisNode.globalToParentPoint( event.pointer.point ).y - event.currentTarget.y;
         },
+
         drag: function( event ) {
           var y = thisNode.globalToParentPoint( event.pointer.point ).y - clickYOffset;
           y = Math.max( Math.min( y, yMax ), yMin );
@@ -48,7 +52,7 @@ define( function( require ) {
         }
       } ) );
     targetProperty.link( function( value ) {
-      track.y = valueToPosition( value );
+      knob.y = valueToPosition( value );
     } );
   }
 
