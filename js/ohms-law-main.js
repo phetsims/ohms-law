@@ -19,8 +19,7 @@ define( function( require ) {
     credits: {
       leadDesign: 'Michael Dubson',
       softwareDevelopment: 'Michael Dubson, John Blanco',
-      designTeam: 'Ariel Paul',
-      interviews: 'Mindy Gratny',
+      team: 'Mindy Gratny, Ariel Paul',
       thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team\nto convert this simulation to HTML5.'
     }
   };
