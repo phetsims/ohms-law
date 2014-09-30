@@ -15,6 +15,5 @@
     "uglify-js": "~2.4.0",
     "requirejs": "~2.1.8"
   },
-  "requirejsNamespace": "OHMS_LAW",
   "simTitleStringKey": "OHMS_LAW/simTitle"
 }
