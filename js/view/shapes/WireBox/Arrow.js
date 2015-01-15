@@ -16,24 +16,24 @@ define( function( require ) {
   var Shape = require( 'KITE/Shape' );
 
   function Arrow( model, x, y, rotation ) {
-    Node.call( this, {x: x, y: y, rotation: (rotation / 180 * Math.PI)} );
+    Node.call( this, { x: x, y: y, rotation: (rotation / 180 * Math.PI) } );
 
     var arrow = new Node();
     var arrowShape = new Shape();
     var points = [
-      [5, -30],
-      [13, -30],
-      [13, 13],
-      [-25, 13],
-      [-25, 17],
-      [-40, 8.5],
-      [-25, 0],
-      [-25, 5],
-      [5, 5]
+      [ 5, -30 ],
+      [ 13, -30 ],
+      [ 13, 13 ],
+      [ -25, 13 ],
+      [ -25, 17 ],
+      [ -40, 8.5 ],
+      [ -25, 0 ],
+      [ -25, 5 ],
+      [ 5, 5 ]
     ];
 
-    arrowShape.moveTo( points[0][0], points[0][1] );
-    _.each( points, function( element ) { arrowShape.lineTo( element[0], element[1] ); } );
+    arrowShape.moveTo( points[ 0 ][ 0 ], points[ 0 ][ 1 ] );
+    _.each( points, function( element ) { arrowShape.lineTo( element[ 0 ], element[ 1 ] ); } );
     arrowShape.close();
 
     arrow.addChild( new Path( arrowShape, {

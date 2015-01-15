@@ -14,7 +14,7 @@ define( function( require ) {
 
   function WhiteBox( x, y, w, h ) {
     Node.call( this );
-    this.addChild( new Rectangle( x, y, w, h, 12, 12, { fill: '#FFF', stroke: "#000", lineWidth: 3} ) );
+    this.addChild( new Rectangle( x, y, w, h, 12, 12, { fill: '#FFF', stroke: "#000", lineWidth: 3 } ) );
   }
 
   inherit( Node, WhiteBox );

@@ -16,7 +16,7 @@ define( function( require ) {
   var Shape = require( 'KITE/Shape' );
 
   function ResistorView( model, x, y, w, h ) {
-    Node.call( this, {centerX: (x + w / 2), centerY: (y + h)} );
+    Node.call( this, { centerX: (x + w / 2), centerY: (y + h) } );
     var wBox = 260,
       hBox = 66;
     var linearGradient1 = new LinearGradient( 0, 0, 0, hBox )
@@ -72,7 +72,7 @@ define( function( require ) {
 
     for ( var i = 1; i <= nRows; i++ ) {
       for ( var j = 1; j <= nCols; j++ ) {
-        var p = new Circle( 2, {fill: "#000"} );
+        var p = new Circle( 2, { fill: "#000" } );
         p.y = i * d - d / 2 + Math.random() * d * 0.7 - 3;
         p.x = j * d - d / 2 + Math.random() * d * 0.7;
         points.push( p );
@@ -84,9 +84,9 @@ define( function( require ) {
 
     for ( i = points.length - 1; i > -1; i-- ) {
       var pos = parseInt( Math.random() * i, 10 );
-      var tt = points[i];
-      points[i] = points[pos];
-      points[pos] = tt;
+      var tt = points[ i ];
+      points[ i ] = points[ pos ];
+      points[ pos ] = tt;
     }
 
     this.addChild( dotGroup );
@@ -94,7 +94,7 @@ define( function( require ) {
     model.resistanceProperty.link( function updateResistor( val ) {
       var borderNumber = maxPoints * (val + 50) / 1000;
       for ( var i = 0; i < maxPoints; i++ ) {
-        points[i].setVisible( i < borderNumber );
+        points[ i ].setVisible( i < borderNumber );
       }
     } );
   }

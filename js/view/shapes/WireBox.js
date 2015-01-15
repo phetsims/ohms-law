@@ -25,7 +25,7 @@ define( function( require ) {
     this.addChild( new Arrow( model, x - 10, y + h + 10, 90 ) );
     this.addChild( new Arrow( model, x + w + 10, y + h + 10, 0 ) );
 
-    this.addChild( new Rectangle( x, y, w, h, 4, 4, {stroke: "#000", lineWidth: 10} ) );
+    this.addChild( new Rectangle( x, y, w, h, 4, 4, { stroke: "#000", lineWidth: 10 } ) );
     this.addChild( new CurrentValueBox( model, w * 0.7, h * 0.3 ).mutate( { centerX: x + w / 2, centerY: y + h / 2 } ) );
     this.addChild( new BatteriesView( model, x + 30, y ) );
     this.addChild( new ResistorView( model, x, y, w, h ) );

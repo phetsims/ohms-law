@@ -24,7 +24,7 @@ define( function( require ) {
   var FONT = new PhetFont( { size: 20, weight: 'bold' } );
 
   function BatteryView( x, y, totWidth ) {
-    Node.call( this, {x: x, y: y} );
+    Node.call( this, { x: x, y: y } );
     var nubWidth = 4;
     totWidth -= nubWidth;
     var voltageToScale = new LinearFunction( 0.1, 1.5, 0.0001, 1, true ),
@@ -44,12 +44,24 @@ define( function( require ) {
       mainBody,
       copperPortion,
       nub,
-      batteryText = new Node( {centerY: -7, x: 3} ),
+      batteryText = new Node( { centerY: -7, x: 3 } ),
       batteryTextValue = new Text( "1.5", { font: FONT } );
 
-    battery.addChild( mainBody = new Rectangle( 0, 0, mainBodyWidth, height, {stroke: "#000", lineWidth: 1, fill: mainBodyFill, y: -height / 2} ) );
-    battery.addChild( copperPortion = new Rectangle( 0, 0, copperPortionWidth, height, {stroke: "#000", lineWidth: 1, fill: copperPortionFill, y: -height / 2, x: mainBodyWidth} ) );
-    battery.addChild( nub = new Rectangle( copperPortionWidth, 0, nubWidth, 12, {stroke: "#000", lineWidth: 1, fill: nubFill, y: -6, x: mainBodyWidth} ) );
+    battery.addChild( mainBody = new Rectangle( 0, 0, mainBodyWidth, height, { stroke: "#000", lineWidth: 1, fill: mainBodyFill, y: -height / 2 } ) );
+    battery.addChild( copperPortion = new Rectangle( 0, 0, copperPortionWidth, height, {
+      stroke: "#000",
+      lineWidth: 1,
+      fill: copperPortionFill,
+      y: -height / 2,
+      x: mainBodyWidth
+    } ) );
+    battery.addChild( nub = new Rectangle( copperPortionWidth, 0, nubWidth, 12, {
+      stroke: "#000",
+      lineWidth: 1,
+      fill: nubFill,
+      y: -6,
+      x: mainBodyWidth
+    } ) );
     this.addChild( battery );
     this.addChild( batteryText );
     batteryText.addChild( batteryTextValue );

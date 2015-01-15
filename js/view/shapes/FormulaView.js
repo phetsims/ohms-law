@@ -49,10 +49,15 @@ define( function( require ) {
     var y = 140;
     texts.forEach( function viewTexts( entry ) {
       // centered text node, so we just have to adjust scale dynamically
-      var textNode = new Text( entry.val, { font: new PhetFont( { family: 'Times New Roman', size: 12, weight: 'bold' } ), fill: entry.color, centerX: 0, centerY: 0} );
-      entry.view = new Node( { children: [textNode] } );
+      var textNode = new Text( entry.val, {
+        font: new PhetFont( { family: 'Times New Roman', size: 12, weight: 'bold' } ),
+        fill: entry.color,
+        centerX: 0,
+        centerY: 0
+      } );
+      entry.view = new Node( { children: [ textNode ] } );
       thisNode.addChild( entry.view );
-      model[entry.targetProperty].link( function updateProperty( val ) {
+      model[ entry.targetProperty ].link( function updateProperty( val ) {
         // performance TODO: consider not updating the matrix if it hasn't changed (if entry.x, entry.scaleA, and entry.scaleB haven't changed)
         // since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
         entry.view.matrix = Matrix3.translation( entry.x, y )
@@ -61,7 +66,12 @@ define( function( require ) {
     } );
 
     //static text
-    var text = new Text( "=", { font: new PhetFont( { family: 'Times New Roman', size: 140, weight: 'bold' } ), fill: "#000", centerX: 300, centerY: y} );
+    var text = new Text( "=", {
+      font: new PhetFont( { family: 'Times New Roman', size: 140, weight: 'bold' } ),
+      fill: "#000",
+      centerX: 300,
+      centerY: y
+    } );
     this.addChild( text );
   }
 

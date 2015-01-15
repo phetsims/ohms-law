@@ -13,7 +13,7 @@ define( function( require ) {
   var BatteryView = require( 'view/shapes/WireBox/BatteryView' );
 
   function BatteriesView( model, x, y ) {
-    Node.call( this, {x: x, y: y} );
+    Node.call( this, { x: x, y: y } );
 
     //max number of batteries
     var maxQ = 9 / 1.5;
@@ -26,15 +26,15 @@ define( function( require ) {
 
     for ( var i = 0, l = bats.length; i < l; i++ ) {
       var sx = i * batWidth;
-      bats[i] = new BatteryView( sx, 0, batWidth );
-      this.addChild( bats[i] );
+      bats[ i ] = new BatteryView( sx, 0, batWidth );
+      this.addChild( bats[ i ] );
     }
 
     model.voltageProperty.link( function setVoltage( voltage ) {
       var val = voltage;
       for ( var i = 0, l = bats.length; i < l; i++ ) {
         var diff = Math.min( 1.5, val );
-        bats[i].setVoltage( diff );
+        bats[ i ].setVoltage( diff );
         val -= diff;
       }
     } );

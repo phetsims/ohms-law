@@ -21,8 +21,8 @@ define( function( require ) {
 
   function Slider( x, y, h, targetProperty, img, value ) {
     var thisNode = this;
-    Node.call( this, {x: x, y: y} );
-    this.addChild( new Rectangle( -3, 0, 6, h, {fill: "black" } ) );
+    Node.call( this, { x: x, y: y } );
+    this.addChild( new Rectangle( -3, 0, 6, h, { fill: "black" } ) );
 
     var knob = new Image( img, { cursor: "pointer" } );
     knob.scale( KNOB_WIDTH / knob.width );

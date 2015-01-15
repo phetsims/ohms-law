@@ -7,7 +7,7 @@
 
 
 require.config( {
-  deps: ["ohms-law-main"],
+  deps: [ "ohms-law-main" ],
 
   paths: {
 

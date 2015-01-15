@@ -41,35 +41,87 @@ define( function( require ) {
       textVoltage, textResistance;
 
     //xy Grid
-    var yCoords = [5, 60, 340 , 340],
-      xCoords = [70, 190];
+    var yCoords = [ 5, 60, 340, 340 ],
+      xCoords = [ 70, 190 ];
     this.x = rectX;
     this.y = rectY;
     this.addChild( new WhiteBox( 0, 0, rectW, rectH ) );
 
-    this.addChild( new Text( voltageSymbol, { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[0] } ) );
-    this.addChild( new Text( voltage, { font: new PhetFont( 16 ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[0], top: yCoords[1] } ) );
-    this.addChild( textVoltage = new Text( model.voltage.toFixed( 1 ), { font: new PhetFont( 30 ), textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[0] + 15, top: yCoords[2] } ) );
-    this.addChild( new Text( voltageUnits, { font: new PhetFont( 30 ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[0] + 30, top: yCoords[3] } ) );
+    this.addChild( new Text( voltageSymbol, {
+      font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ),
+      fill: "#0f0ffb",
+      centerX: xCoords[ 0 ],
+      top: yCoords[ 0 ]
+    } ) );
+    this.addChild( new Text( voltage, {
+      font: new PhetFont( 16 ),
+      textAlign: "center",
+      textAnchor: "middle",
+      fill: "#0f0ffb",
+      centerX: xCoords[ 0 ],
+      top: yCoords[ 1 ]
+    } ) );
+    this.addChild( textVoltage = new Text( model.voltage.toFixed( 1 ), {
+      font: new PhetFont( 30 ),
+      textAlign: "end",
+      textAnchor: "end",
+      fill: "#000",
+      right: xCoords[ 0 ] + 15,
+      top: yCoords[ 2 ]
+    } ) );
+    this.addChild( new Text( voltageUnits, {
+      font: new PhetFont( 30 ),
+      textAlign: "start",
+      textAnchor: "start",
+      fill: "#0f0ffb",
+      centerX: xCoords[ 0 ] + 30,
+      top: yCoords[ 3 ]
+    } ) );
 
-    this.addChild( new Text( resistanceSymbol, { font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ), fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[0] } ) );
-    this.addChild( new Text( resistance, { font: new PhetFont( 16 ), textAlign: "center", textAnchor: "middle", fill: "#0f0ffb", centerX: xCoords[1], top: yCoords[1] } ) );
-    this.addChild( textResistance = new Text( model.resistance.toFixed( 0 ), { font: new PhetFont( 30 ), textAlign: "end", textAnchor: "end", fill: "#000", right: xCoords[1] + 20, top: yCoords[2] } ) );
-    this.addChild( new Text( resistanceUnits, { font: new PhetFont( 30 ), textAlign: "start", textAnchor: "start", fill: "#0f0ffb", centerX: xCoords[1] + 40, top: yCoords[3] } ) );
+    this.addChild( new Text( resistanceSymbol, {
+      font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ),
+      fill: "#0f0ffb",
+      centerX: xCoords[ 1 ],
+      top: yCoords[ 0 ]
+    } ) );
+    this.addChild( new Text( resistance, {
+      font: new PhetFont( 16 ),
+      textAlign: "center",
+      textAnchor: "middle",
+      fill: "#0f0ffb",
+      centerX: xCoords[ 1 ],
+      top: yCoords[ 1 ]
+    } ) );
+    this.addChild( textResistance = new Text( model.resistance.toFixed( 0 ), {
+      font: new PhetFont( 30 ),
+      textAlign: "end",
+      textAnchor: "end",
+      fill: "#000",
+      right: xCoords[ 1 ] + 20,
+      top: yCoords[ 2 ]
+    } ) );
+    this.addChild( new Text( resistanceUnits, {
+      font: new PhetFont( 30 ),
+      textAlign: "start",
+      textAnchor: "start",
+      fill: "#0f0ffb",
+      centerX: xCoords[ 1 ] + 40,
+      top: yCoords[ 3 ]
+    } ) );
 
     // make all of the text and background unpickable, to speed up mouse/touch hit computation
     _.each( this.children, function( child ) { child.pickable = false; } );
 
-    this.addChild( new Slider( xCoords[0], 90, 240, model.voltageProperty, sliderImage, {min: VOLTAGEMIN, max: VOLTAGEMAX} ) );
-    this.addChild( new Slider( xCoords[1], 90, 240, model.resistanceProperty, sliderImage, {min: RESISTANCEMIN, max: RESISTANCEMAX} ) );
+    this.addChild( new Slider( xCoords[ 0 ], 90, 240, model.voltageProperty, sliderImage, { min: VOLTAGEMIN, max: VOLTAGEMAX } ) );
+    this.addChild( new Slider( xCoords[ 1 ], 90, 240, model.resistanceProperty, sliderImage, { min: RESISTANCEMIN, max: RESISTANCEMAX } ) );
 
     model.voltageProperty.link( function updateTextVoltage( value ) {
       textVoltage.text = value.toFixed( 1 );
-      textVoltage.right = xCoords[0] + 15;
+      textVoltage.right = xCoords[ 0 ] + 15;
     } );
     model.resistanceProperty.link( function updateTextResistance( value ) {
       textResistance.text = value.toFixed( 0 );
-      textResistance.right = xCoords[1] + 15;
+      textResistance.right = xCoords[ 1 ] + 15;
     } );
   }
 

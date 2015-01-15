@@ -16,7 +16,7 @@ define( function( require ) {
   var FormulaView = require( 'view/shapes/FormulaView' );
 
   function OhmsLawStage( model ) {
-    Node.call( this, {scale: 0.75} );
+    Node.call( this, { scale: 0.75 } );
     this.addChild( new FormulaView( model ).mutate( { pickable: false } ) );
     this.addChild( new WireBox( model ).mutate( { pickable: false } ) );
     var slidersBox = new SlidersBox( model );
