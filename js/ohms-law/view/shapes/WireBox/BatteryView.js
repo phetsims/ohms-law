@@ -1,14 +1,14 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
- * Copyright 2002-2013, University of Colorado
  * View of Single Battery
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-
 define( function( require ) {
   'use strict';
 
-  // Imports
+  // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
@@ -17,10 +17,10 @@ define( function( require ) {
   var LinearFunction = require( 'DOT/LinearFunction' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
-  // Resources
+  // strings
   var voltageUnits = require( 'string!OHMS_LAW/voltageUnits' );
 
-  // Constants
+  // constants
   var FONT = new PhetFont( { size: 20, weight: 'bold' } );
 
   function BatteryView( x, y, totWidth ) {

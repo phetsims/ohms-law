@@ -1,19 +1,19 @@
 // Copyright 2002-2013, University of Colorado Boulder
 
 /**
- * Copyright 2002-2013, University of Colorado
  * Main container for all part of scene
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-
 define( function( require ) {
   'use strict';
+
+  // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var WireBox = require( 'view/shapes/WireBox' );
-  var SlidersBox = require( 'view/shapes/SlidersBox' );
-  var FormulaView = require( 'view/shapes/FormulaView' );
+  var WireBox = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox' );
+  var SlidersBox = require( 'OHMS_LAW/ohms-law/view/shapes/SlidersBox' );
+  var FormulaView = require( 'OHMS_LAW/ohms-law/view/shapes/FormulaView' );
 
   function RootNode( model ) {
     Node.call( this );

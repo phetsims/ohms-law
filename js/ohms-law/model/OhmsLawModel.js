@@ -5,9 +5,13 @@
  */
 define( function( require ) {
   'use strict';
+
+  // modules
   var PropertySet = require( 'AXON/PropertySet' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Sound = require( 'VIBE/Sound' );
+
+  // audio
   var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
   var removeBatteryAudio = require( 'audio!OHMS_LAW/remove-battery' );
 

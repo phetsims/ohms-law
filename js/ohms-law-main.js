@@ -1,5 +1,6 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
- * Copyright 2002-2013, University of Colorado
  * Main entry point for the "ohms law" sim.
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
@@ -11,9 +12,11 @@ define( function( require ) {
   var SimLauncher = require( 'JOIST/SimLauncher' ),
     Sim = require( 'JOIST/Sim' ),
     Screen = require( 'JOIST/Screen' ),
-    simTitle = require( 'string!OHMS_LAW/simTitle' ),
-    OhmsLawModel = require( 'model/OhmsLawModel' ),
-    OhmsLawView = require( 'view/OhmsLawView' );
+    OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' ),
+    OhmsLawView = require( 'OHMS_LAW/ohms-law/view/OhmsLawView' );
+
+  // strings
+  var simTitle = require( 'string!OHMS_LAW/simTitle' );
 
   var simOptions = {
     credits: {

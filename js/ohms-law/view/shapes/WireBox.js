@@ -1,19 +1,21 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
- * Copyright 2002-2013, University of Colorado
  * view scheme ohms law
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-
 define( function( require ) {
   'use strict';
+
+  // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var CurrentValueBox = require( 'view/shapes/WireBox/CurrentValueBox' );
-  var BatteriesView = require( 'view/shapes/WireBox/BatteriesView' );
-  var ResistorView = require( 'view/shapes/WireBox/ResistorView' );
-  var Arrow = require( 'view/shapes/WireBox/Arrow' );
+  var CurrentValueBox = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/CurrentValueBox' );
+  var BatteriesView = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/BatteriesView' );
+  var ResistorView = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/ResistorView' );
+  var Arrow = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/Arrow' );
 
   function WireBox( model ) {
     Node.call( this );

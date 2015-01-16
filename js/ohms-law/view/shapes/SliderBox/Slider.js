@@ -1,14 +1,14 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
- * Copyright 2002-2013, University of Colorado
  * view for vertical slider control
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-
 define( function( require ) {
   'use strict';
 
-  // Imports
+  // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Image = require( 'SCENERY/nodes/Image' );
@@ -16,7 +16,7 @@ define( function( require ) {
   var SimpleDragHandler = require( 'SCENERY/input/SimpleDragHandler' );
   var LinearFunction = require( 'DOT/LinearFunction' );
 
-  // Constants
+  // constants
   var KNOB_WIDTH = 32;  // Empirically determined.
 
   function Slider( x, y, h, targetProperty, img, value ) {

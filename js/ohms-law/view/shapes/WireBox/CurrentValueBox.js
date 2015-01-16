@@ -1,26 +1,25 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
- * Copyright 2002-2013, University of Colorado
  * Block shows Current TextBlock inside WireBlock
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-
-
 define( function( require ) {
   'use strict';
 
-  // Imports
+  // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Text = require( 'SCENERY/nodes/Text' );
-  var WhiteBox = require( 'view/shapes/WhiteBox' );
+  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/shapes/WhiteBox' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
-  // Resources
+  // strings
   var current = require( 'string!OHMS_LAW/current' );
   var currentUnits = require( 'string!OHMS_LAW/currentUnits' );
 
-  // Constants
+  // constants
   var FONT = new PhetFont( 34 );
   var SPACING = new Text( '-', { font: FONT } ).width;
 

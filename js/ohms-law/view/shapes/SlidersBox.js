@@ -1,24 +1,25 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
- * Copyright 2002-2013, University of Colorado
  * Container for sliders and circumjacent text
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-
-
 define( function( require ) {
   'use strict';
 
-  // Imports
+  // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var WhiteBox = require( 'view/shapes/WhiteBox' );
-  var Slider = require( 'view/shapes/SliderBox/Slider' );
+  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/shapes/WhiteBox' );
+  var Slider = require( 'OHMS_LAW/ohms-law/view/shapes/SliderBox/Slider' );
   var Text = require( 'SCENERY/nodes/Text' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
-  // Resources
+  // images
   var sliderImage = require( 'image!OHMS_LAW/slider.png' );
+
+  // strings
   var voltageSymbol = require( 'string!OHMS_LAW/voltageSymbol' );
   var resistanceSymbol = require( 'string!OHMS_LAW/resistanceSymbol' );
   var voltage = require( 'string!OHMS_LAW/voltage' );
@@ -26,7 +27,7 @@ define( function( require ) {
   var resistance = require( 'string!OHMS_LAW/resistance' );
   var resistanceUnits = require( 'string!OHMS_LAW/resistanceUnits' );
 
-  // Constants
+  // constants
   var VOLTAGEMAX = 9,
     VOLTAGEMIN = 0.1,
     RESISTANCEMAX = 1000,

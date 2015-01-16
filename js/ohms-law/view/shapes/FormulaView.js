@@ -1,18 +1,21 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
- * Copyright 2002-2013, University of Colorado
  * view formula ohms law
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-
 define( function( require ) {
   'use strict';
 
+  // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Text = require( 'SCENERY/nodes/Text' );
   var Matrix3 = require( 'DOT/Matrix3' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+
+  // strings
   var voltageSymbol = require( 'string!OHMS_LAW/voltageSymbol' );
   var currentSymbol = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbol = require( 'string!OHMS_LAW/resistanceSymbol' );

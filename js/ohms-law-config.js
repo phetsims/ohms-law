@@ -1,11 +1,10 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
- * Copyright 2002-2013, University of Colorado
  * RequireJS configuration file for Ohm's Law simulation.
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-
-
 require.config( {
   deps: [ "ohms-law-main" ],
 

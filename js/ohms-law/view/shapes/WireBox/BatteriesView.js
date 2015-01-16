@@ -1,16 +1,17 @@
+// Copyright 2002-2013, University of Colorado Boulder
+
 /**
- * Copyright 2002-2013, University of Colorado
  * View All Batteries
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-
-
 define( function( require ) {
   'use strict';
+
+  // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var BatteryView = require( 'view/shapes/WireBox/BatteryView' );
+  var BatteryView = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/BatteryView' );
 
   function BatteriesView( model, x, y ) {
     Node.call( this, { x: x, y: y } );
