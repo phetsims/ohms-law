@@ -1,0 +1,35 @@
+{
+  "current": {
+    "value": "current"
+  },
+  "resistance": {
+    "value": "resistance"
+  },
+  "sound": {
+    "value": "sound"
+  },
+  "simTitle": {
+    "value": "Ohm's Law"
+  },
+  "voltage": {
+    "value": "voltage"
+  },
+  "voltageSymbol": {
+    "value": "V"
+  },
+  "resistanceSymbol": {
+    "value": "R"
+  },
+  "currentSymbol": {
+    "value": "I"
+  },
+  "voltageUnits": {
+    "value": "V"
+  },
+  "currentUnits": {
+    "value": "mA"
+  },
+  "resistanceUnits": {
+    "value": "Ω"
+  }
+}
