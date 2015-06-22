@@ -10,6 +10,7 @@ define( function( require ) {
   var PropertySet = require( 'AXON/PropertySet' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Sound = require( 'VIBE/Sound' );
+  var Util = require( 'DOT/Util' );
 
   // audio
   var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
@@ -52,13 +53,13 @@ define( function( require ) {
     //@override voltage.set (accuracy 0.1)
     var oldVS = this.voltageProperty.set.bind( this.voltageProperty );
     this.voltageProperty.set = function( val ) {
-      oldVS( Math.round( val * 10 ) / 10 );
+      oldVS( Util.roundSymmetric( val * 10 ) / 10 );
     };
 
     //@override resistance.set (accuracy 0)
     var oldRS = this.resistanceProperty.set.bind( this.resistanceProperty );
     this.resistanceProperty.set = function( val ) {
-      oldRS( Math.round( val ) );
+      oldRS( Util.roundSymmetric( val ) );
     };
     this.reset();
   }
