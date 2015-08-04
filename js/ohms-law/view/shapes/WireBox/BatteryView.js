@@ -16,6 +16,7 @@ define( function( require ) {
   var LinearGradient = require( 'SCENERY/util/LinearGradient' );
   var LinearFunction = require( 'DOT/LinearFunction' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Util = require( 'DOT/Util' );
 
   // strings
   var voltageUnits = require( 'string!OHMS_LAW/voltageUnits' );
@@ -81,7 +82,7 @@ define( function( require ) {
         batteryText.centerY = -32;
       }
       if ( this.isVisible() ) {
-        batteryTextValue.text = voltage.toFixed( 1 );
+        batteryTextValue.text = Util.toFixed( voltage, 1 );
         mainBody.setRect( 0, 0, mainBodyWidth * voltageToScale( voltage ), height, 0, 0 );
         copperPortion.x = mainBody.right;
         nub.x = mainBody.right;

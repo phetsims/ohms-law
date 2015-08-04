@@ -14,6 +14,7 @@ define( function( require ) {
   var Text = require( 'SCENERY/nodes/Text' );
   var WhiteBox = require( 'OHMS_LAW/ohms-law/view/shapes/WhiteBox' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Util = require( 'DOT/Util' );
 
   // strings
   var current = require( 'string!OHMS_LAW/current' );
@@ -57,7 +58,7 @@ define( function( require ) {
 
     model.currentProperty.link( function setCurrentText( val ) {
       var rightEdgePos = currentValue.right;
-      currentValue.text = val.toFixed( 1 );
+      currentValue.text = Util.toFixed( val, 1 );
       currentValue.right = rightEdgePos;
     } );
   }

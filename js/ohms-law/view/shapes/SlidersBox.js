@@ -15,6 +15,7 @@ define( function( require ) {
   var Slider = require( 'OHMS_LAW/ohms-law/view/shapes/SliderBox/Slider' );
   var Text = require( 'SCENERY/nodes/Text' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Util = require( 'DOT/Util' );
 
   // images
   var sliderImage = require( 'image!OHMS_LAW/slider.png' );
@@ -62,7 +63,7 @@ define( function( require ) {
       centerX: xCoords[ 0 ],
       top: yCoords[ 1 ]
     } ) );
-    this.addChild( textVoltage = new Text( model.voltage.toFixed( 1 ), {
+    this.addChild( textVoltage = new Text( Util.toFixed( model.voltage, 1 ), {
       font: new PhetFont( 30 ),
       textAlign: "end",
       textAnchor: "end",
@@ -93,7 +94,7 @@ define( function( require ) {
       centerX: xCoords[ 1 ],
       top: yCoords[ 1 ]
     } ) );
-    this.addChild( textResistance = new Text( model.resistance.toFixed( 0 ), {
+    this.addChild( textResistance = new Text( Util.toFixed( model.resistance, 0 ), {
       font: new PhetFont( 30 ),
       textAlign: "end",
       textAnchor: "end",
@@ -117,11 +118,11 @@ define( function( require ) {
     this.addChild( new Slider( xCoords[ 1 ], 90, 240, model.resistanceProperty, sliderImage, { min: RESISTANCEMIN, max: RESISTANCEMAX } ) );
 
     model.voltageProperty.link( function updateTextVoltage( value ) {
-      textVoltage.text = value.toFixed( 1 );
+      textVoltage.text = Util.toFixed( value, 1 );
       textVoltage.right = xCoords[ 0 ] + 15;
     } );
     model.resistanceProperty.link( function updateTextResistance( value ) {
-      textResistance.text = value.toFixed( 0 );
+      textResistance.text = Util.toFixed( value, 0 );
       textResistance.right = xCoords[ 1 ] + 15;
     } );
   }
