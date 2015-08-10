@@ -2,6 +2,7 @@
   "name": "ohms-law",
   "version": "1.2.0-dev.2",
   "license": "GPLv3",
+  "requirejsNamespace": "OHMS_LAW",
   "simTitleStringKey": "OHMS_LAW/simTitle",
   "phetLibs": [
     "ohms-law",
