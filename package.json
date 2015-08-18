@@ -17,7 +17,6 @@
     "requirejsNamespace": "OHMS_LAW",
     "simTitleStringKey": "OHMS_LAW/simTitle",
     "phetLibs": [
-      "ohms-law",
       "vibe"
     ]
   }
