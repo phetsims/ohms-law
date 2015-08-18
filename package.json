@@ -2,12 +2,6 @@
   "name": "ohms-law",
   "version": "1.2.0-dev.2",
   "license": "GPLv3",
-  "requirejsNamespace": "OHMS_LAW",
-  "simTitleStringKey": "OHMS_LAW/simTitle",
-  "phetLibs": [
-    "ohms-law",
-    "vibe"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/phetsims/ohms-law.git"
@@ -18,5 +12,13 @@
     "grunt-contrib-jshint": "~0.6.4",
     "uglify-js": "~2.4.0",
     "requirejs": "~2.1.8"
+  },
+  "phet": {
+    "requirejsNamespace": "OHMS_LAW",
+    "simTitleStringKey": "OHMS_LAW/simTitle",
+    "phetLibs": [
+      "ohms-law",
+      "vibe"
+    ]
   }
 }
