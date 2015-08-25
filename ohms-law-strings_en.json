@@ -1,4 +1,7 @@
 {
+  "ohms-law.name": {
+    "value": "Ohm's Law"
+  },
   "current": {
     "value": "current"
   },
@@ -7,9 +10,6 @@
   },
   "sound": {
     "value": "sound"
-  },
-  "simTitle": {
-    "value": "Ohm's Law"
   },
   "voltage": {
     "value": "voltage"
