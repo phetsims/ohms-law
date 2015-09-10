@@ -16,7 +16,7 @@ define( function( require ) {
     OhmsLawView = require( 'OHMS_LAW/ohms-law/view/OhmsLawView' );
 
   // strings
-  var simTitle = require( 'string!OHMS_LAW/ohms-law.name' );
+  var simTitle = require( 'string!OHMS_LAW/ohms-law.title' );
 
   var simOptions = {
     credits: {
