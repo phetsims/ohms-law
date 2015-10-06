@@ -29,24 +29,24 @@ define( function( require ) {
         scaleA: 4.5,
         scaleB: 2,
         x: 150,
-        targetProperty: "voltageProperty",
-        color: "#0f0ffb"
+        targetProperty: 'voltageProperty',
+        color: '#0f0ffb'
       },
       {
         val: currentSymbol,
         scaleA: 0.2,
         scaleB: 0.84,
         x: 380,
-        targetProperty: "currentProperty",
-        color: "red"
+        targetProperty: 'currentProperty',
+        color: 'red'
       },
       {
         val: resistanceSymbol,
         scaleA: 0.04,
         scaleB: 2,
         x: 560,
-        targetProperty: "resistanceProperty",
-        color: "#0f0ffb"
+        targetProperty: 'resistanceProperty',
+        color: '#0f0ffb'
       }
     ];
     var y = 140;
@@ -69,9 +69,9 @@ define( function( require ) {
     } );
 
     //static text
-    var text = new Text( "=", {
+    var text = new Text( '=', {
       font: new PhetFont( { family: 'Times New Roman', size: 140, weight: 'bold' } ),
-      fill: "#000",
+      fill: '#000',
       centerX: 300,
       centerY: y
     } );

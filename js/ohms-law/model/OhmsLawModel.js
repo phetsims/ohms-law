@@ -1,3 +1,5 @@
+// Copyright 2002-2015, University of Colorado Boulder
+
 /**
  * Model container for the "OhmsLaw" module.
  * @author Vasily Shakhov (Mlearner)

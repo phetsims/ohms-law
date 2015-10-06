@@ -50,63 +50,63 @@ define( function( require ) {
     this.addChild( new WhiteBox( 0, 0, rectW, rectH ) );
 
     this.addChild( new Text( voltageSymbol, {
-      font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ),
-      fill: "#0f0ffb",
+      font: new PhetFont( { family: 'Times New Roman', size: 60, weight: 'bold' } ),
+      fill: '#0f0ffb',
       centerX: xCoords[ 0 ],
       top: yCoords[ 0 ]
     } ) );
     this.addChild( new Text( voltage, {
       font: new PhetFont( 16 ),
-      textAlign: "center",
-      textAnchor: "middle",
-      fill: "#0f0ffb",
+      textAlign: 'center',
+      textAnchor: 'middle',
+      fill: '#0f0ffb',
       centerX: xCoords[ 0 ],
       top: yCoords[ 1 ]
     } ) );
     this.addChild( textVoltage = new Text( Util.toFixed( model.voltage, 1 ), {
       font: new PhetFont( 30 ),
-      textAlign: "end",
-      textAnchor: "end",
-      fill: "#000",
+      textAlign: 'end',
+      textAnchor: 'end',
+      fill: '#000',
       right: xCoords[ 0 ] + 15,
       top: yCoords[ 2 ]
     } ) );
     this.addChild( new Text( voltageUnits, {
       font: new PhetFont( 30 ),
-      textAlign: "start",
-      textAnchor: "start",
-      fill: "#0f0ffb",
+      textAlign: 'start',
+      textAnchor: 'start',
+      fill: '#0f0ffb',
       centerX: xCoords[ 0 ] + 30,
       top: yCoords[ 3 ]
     } ) );
 
     this.addChild( new Text( resistanceSymbol, {
-      font: new PhetFont( { family: "Times New Roman", size: 60, weight: "bold" } ),
-      fill: "#0f0ffb",
+      font: new PhetFont( { family: 'Times New Roman', size: 60, weight: 'bold' } ),
+      fill: '#0f0ffb',
       centerX: xCoords[ 1 ],
       top: yCoords[ 0 ]
     } ) );
     this.addChild( new Text( resistance, {
       font: new PhetFont( 16 ),
-      textAlign: "center",
-      textAnchor: "middle",
-      fill: "#0f0ffb",
+      textAlign: 'center',
+      textAnchor: 'middle',
+      fill: '#0f0ffb',
       centerX: xCoords[ 1 ],
       top: yCoords[ 1 ]
     } ) );
     this.addChild( textResistance = new Text( Util.toFixed( model.resistance, 0 ), {
       font: new PhetFont( 30 ),
-      textAlign: "end",
-      textAnchor: "end",
-      fill: "#000",
+      textAlign: 'end',
+      textAnchor: 'end',
+      fill: '#000',
       right: xCoords[ 1 ] + 20,
       top: yCoords[ 2 ]
     } ) );
     this.addChild( new Text( resistanceUnits, {
       font: new PhetFont( 30 ),
-      textAlign: "start",
-      textAnchor: "start",
-      fill: "#0f0ffb",
+      textAlign: 'start',
+      textAnchor: 'start',
+      fill: '#0f0ffb',
       centerX: xCoords[ 1 ] + 40,
       top: yCoords[ 3 ]
     } ) );

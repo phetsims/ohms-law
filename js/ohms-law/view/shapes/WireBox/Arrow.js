@@ -38,8 +38,8 @@ define( function( require ) {
     arrowShape.close();
 
     arrow.addChild( new Path( arrowShape, {
-      stroke: "#000",
-      fill: "#F00",
+      stroke: '#000',
+      fill: '#F00',
       lineWidth: 0.2
     } ) );
     this.addChild( arrow );
