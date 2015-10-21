@@ -1,7 +1,7 @@
 {
   "name": "ohms-law",
   "version": "1.2.0-dev.2",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/phetsims/ohms-law.git"
