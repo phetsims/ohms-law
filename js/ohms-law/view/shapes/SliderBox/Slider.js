@@ -33,8 +33,8 @@ define( function( require ) {
     var yMin = 0;
     var yMax = h - knob.height;
 
-    var valueToPosition = new LinearFunction( value.min, value.max, yMax, yMin, true ),
-      positionToValue = new LinearFunction( yMax, yMin, value.min, value.max, true );
+    var valueToPosition = new LinearFunction( value.min, value.max, yMax, yMin, true );
+    var positionToValue = new LinearFunction( yMax, yMin, value.min, value.max, true );
     this.addChild( knob );
     knob.addInputListener( new SimpleDragHandler(
       {
