@@ -29,9 +29,9 @@ define( function( require ) {
     knob.mutate( { centerX: 0, top: 0 } );
     knob.touchArea = knob.localBounds.dilateXY( 60, 40 ); // Expand touch area for easier use on tablets.
 
-    var clickYOffset,
-      yMin = 0,
-      yMax = h - knob.height;
+    var clickYOffset;
+    var yMin = 0;
+    var yMax = h - knob.height;
 
     var valueToPosition = new LinearFunction( value.min, value.max, yMax, yMin, true ),
       positionToValue = new LinearFunction( yMax, yMin, value.min, value.max, true );

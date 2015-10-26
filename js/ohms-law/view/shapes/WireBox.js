@@ -19,10 +19,10 @@ define( function( require ) {
 
   function WireBox( model ) {
     Node.call( this );
-    var x = 70,
-      y = 400,
-      w = 550,
-      h = 180;
+    var x = 70;
+    var y = 400;
+    var w = 550;
+    var h = 180;
 
     this.addChild( new Arrow( model, x - 10, y + h + 10, 90 ) );
     this.addChild( new Arrow( model, x + w + 10, y + h + 10, 0 ) );

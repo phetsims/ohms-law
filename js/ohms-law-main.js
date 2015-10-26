@@ -9,11 +9,11 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var SimLauncher = require( 'JOIST/SimLauncher' ),
-    Sim = require( 'JOIST/Sim' ),
-    Screen = require( 'JOIST/Screen' ),
-    OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' ),
-    OhmsLawView = require( 'OHMS_LAW/ohms-law/view/OhmsLawView' );
+  var SimLauncher = require( 'JOIST/SimLauncher' );
+  var Sim = require( 'JOIST/Sim' );
+  var Screen = require( 'JOIST/Screen' );
+  var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
+  var OhmsLawView = require( 'OHMS_LAW/ohms-law/view/OhmsLawView' );
 
   // strings
   var simTitle = require( 'string!OHMS_LAW/ohms-law.title' );

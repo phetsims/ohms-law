@@ -29,10 +29,10 @@ define( function( require ) {
   var resistanceUnits = require( 'string!OHMS_LAW/resistanceUnits' );
 
   // constants
-  var VOLTAGEMAX = 9,
-    VOLTAGEMIN = 0.1,
-    RESISTANCEMAX = 1000,
-    RESISTANCEMIN = 10;
+  var VOLTAGEMAX = 9;
+  var VOLTAGEMIN = 0.1;
+  var RESISTANCEMAX = 1000;
+  var RESISTANCEMIN = 10;
 
   function SlidersBox( model ) {
     Node.call( this );

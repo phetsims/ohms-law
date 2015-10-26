@@ -28,25 +28,25 @@ define( function( require ) {
     Node.call( this, { x: x, y: y } );
     var nubWidth = 4;
     totWidth -= nubWidth;
-    var voltageToScale = new LinearFunction( 0.1, 1.5, 0.0001, 1, true ),
-      mainBodyWidth = totWidth * 72 / 78,
-      copperPortionWidth = totWidth * 6 / 78,
-      height = 40,
-      mainBodyFill = new LinearGradient( 0, 0, 0, height )
-        .addColorStop( 0, '#777777' )
-        .addColorStop( 0.3, '#bdbdbd' )
-        .addColorStop( 1, '#2b2b2b' ),
-      copperPortionFill = new LinearGradient( 0, 0, 0, height )
-        .addColorStop( 0, '#cc4e00' )
-        .addColorStop( 0.3, '#dddad6' )
-        .addColorStop( 1, '#cc4e00' ),
-      nubFill = '#dddddd',
-      battery = new Node(),
-      mainBody,
-      copperPortion,
-      nub,
-      batteryText = new Node( { centerY: -7, x: 3 } ),
-      batteryTextValue = new Text( '1.5', { font: FONT } );
+    var voltageToScale = new LinearFunction( 0.1, 1.5, 0.0001, 1, true );
+    var mainBodyWidth = totWidth * 72 / 78;
+    var copperPortionWidth = totWidth * 6 / 78;
+    var height = 40;
+    var mainBodyFill = new LinearGradient( 0, 0, 0, height )
+      .addColorStop( 0, '#777777' )
+      .addColorStop( 0.3, '#bdbdbd' )
+      .addColorStop( 1, '#2b2b2b' );
+    var copperPortionFill = new LinearGradient( 0, 0, 0, height )
+      .addColorStop( 0, '#cc4e00' )
+      .addColorStop( 0.3, '#dddad6' )
+      .addColorStop( 1, '#cc4e00' );
+    var nubFill = '#dddddd';
+    var battery = new Node();
+    var mainBody;
+    var copperPortion;
+    var nub;
+    var batteryText = new Node( { centerY: -7, x: 3 } );
+    var batteryTextValue = new Text( '1.5', { font: FONT } );
 
     battery.addChild( mainBody = new Rectangle( 0, 0, mainBodyWidth, height, {
       stroke: '#000',

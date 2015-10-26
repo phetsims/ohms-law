@@ -18,8 +18,8 @@ define( function( require ) {
 
   function ResistorView( model, x, y, w, h ) {
     Node.call( this, { centerX: (x + w / 2), centerY: (y + h) } );
-    var wBox = 260,
-      hBox = 66;
+    var wBox = 260;
+    var hBox = 66;
     var linearGradient1 = new LinearGradient( 0, 0, 0, hBox )
       .addColorStop( 0, '#F00' )
       .addColorStop( 0.266, '#FFF' )
@@ -62,12 +62,12 @@ define( function( require ) {
     this.centerY = (y + h);
 
     var dotGroup = new Node();
-    var maxPoints = 250,
-      a = (hBox - 3 ) * (wBox - 3 ) / maxPoints,    //area per dot
-      d = Math.pow( a, 0.5 ), //NN dot separation
-      nRows = Math.round( hBox / d ),
-      nCols = Math.round( wBox / d ),
-      c = 0; //counter
+    var maxPoints = 250;
+    var a = (hBox - 3 ) * (wBox - 3 ) / maxPoints;    //area per dot
+    var d = Math.pow( a, 0.5 ); //NN dot separation
+    var nRows = Math.round( hBox / d );
+    var nCols = Math.round( wBox / d );
+    var c = 0; //counter
 
     var points = [];
 
