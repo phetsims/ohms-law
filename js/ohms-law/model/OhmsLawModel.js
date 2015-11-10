@@ -83,7 +83,7 @@ define( function( require ) {
       this.current = this.calculateCurrent( this.voltage, this.resistance );
     },
 
-    // @public
+    // @private
     calculateCurrent: function( voltage, resistance ) {
       return Math.round( voltage / resistance * 1000 * 10 ) / 10;
     }
