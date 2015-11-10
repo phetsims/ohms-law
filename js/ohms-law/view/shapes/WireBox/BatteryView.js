@@ -24,8 +24,16 @@ define( function( require ) {
   // constants
   var FONT = new PhetFont( { size: 20, weight: 'bold' } );
 
+  /**
+   * @param x
+   * @param y
+   * @param totWidth
+   * @constructor
+   */
   function BatteryView( x, y, totWidth ) {
+
     Node.call( this, { x: x, y: y } );
+
     var nubWidth = 4;
     totWidth -= nubWidth;
     var voltageToScale = new LinearFunction( 0.1, 1.5, 0.0001, 1, true );
@@ -95,6 +103,5 @@ define( function( require ) {
     };
   }
 
-  inherit( Node, BatteryView );
-  return BatteryView;
+  return inherit( Node, BatteryView );
 } );

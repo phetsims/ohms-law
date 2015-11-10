@@ -19,7 +19,17 @@ define( function( require ) {
   // constants
   var KNOB_WIDTH = 32;  // Empirically determined.
 
+  /**
+   * @param x
+   * @param y
+   * @param h
+   * @param targetProperty
+   * @param img
+   * @param value
+   * @constructor
+   */
   function Slider( x, y, h, targetProperty, img, value ) {
+
     var thisNode = this;
     Node.call( this, { x: x, y: y } );
     this.addChild( new Rectangle( -3, 0, 6, h, { fill: 'black' } ) );
@@ -56,7 +66,5 @@ define( function( require ) {
     } );
   }
 
-  inherit( Node, Slider );
-
-  return Slider;
+  return inherit( Node, Slider );
 } );

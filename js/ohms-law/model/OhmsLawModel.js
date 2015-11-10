@@ -18,7 +18,11 @@ define( function( require ) {
   var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
   var removeBatteryAudio = require( 'audio!OHMS_LAW/remove-battery' );
 
+  /**
+   * @constructor
+   */
   function OhmsLawModel() {
+
     PropertySet.call( this, {
       voltage: 4.5,
       resistance: 500,
@@ -67,13 +71,19 @@ define( function( require ) {
   }
 
   inherit( PropertySet, OhmsLawModel, {
+
+    // @public
     step: function() { },
+
+    // @public
     reset: function() {
       this.voltageProperty.reset();
       this.resistanceProperty.reset();
       this.soundActiveProperty.reset();
       this.current = this.calculateCurrent( this.voltage, this.resistance );
     },
+
+    // @public
     calculateCurrent: function( voltage, resistance ) {
       return Math.round( voltage / resistance * 1000 * 10 ) / 10;
     }

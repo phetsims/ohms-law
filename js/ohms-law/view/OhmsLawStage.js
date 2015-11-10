@@ -17,8 +17,14 @@ define( function( require ) {
   var SlidersBox = require( 'OHMS_LAW/ohms-law/view/shapes/SlidersBox' );
   var FormulaView = require( 'OHMS_LAW/ohms-law/view/shapes/FormulaView' );
 
+  /**
+   * @param {OhmsLawModel} model
+   * @constructor
+   */
   function OhmsLawStage( model ) {
+
     Node.call( this, { scale: 0.75 } );
+
     this.addChild( new FormulaView( model ).mutate( { pickable: false } ) );
     this.addChild( new WireBox( model ).mutate( { pickable: false } ) );
     var slidersBox = new SlidersBox( model );
@@ -40,6 +46,5 @@ define( function( require ) {
     this.addChild( soundToggleButton );
   }
 
-  inherit( Node, OhmsLawStage );
-  return OhmsLawStage;
+  return inherit( Node, OhmsLawStage );
 } );

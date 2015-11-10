@@ -14,14 +14,14 @@ define( function( require ) {
   var ScreenView = require( 'JOIST/ScreenView' );
   var inherit = require( 'PHET_CORE/inherit' );
 
+  /**
+   * @param {OhmsLawModel} model
+   * @constructor
+   */
   function OhmsLawView( model ) {
     ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 504 ) } );
-    //main stage
     this.addChild( new OhmsLawStage( model ) );
   }
 
-  inherit( ScreenView, OhmsLawView );
-  return OhmsLawView;
-
-} )
-;
+  return inherit( ScreenView, OhmsLawView );
+} );

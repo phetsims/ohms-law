@@ -13,12 +13,17 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
 
+  /**
+   * @param x
+   * @param y
+   * @param w
+   * @param h
+   * @constructor
+   */
   function WhiteBox( x, y, w, h ) {
     Node.call( this );
     this.addChild( new Rectangle( x, y, w, h, 12, 12, { fill: '#FFF', stroke: '#000', lineWidth: 3 } ) );
   }
 
-  inherit( Node, WhiteBox );
-
-  return WhiteBox;
+  return inherit( Node, WhiteBox );
 } );

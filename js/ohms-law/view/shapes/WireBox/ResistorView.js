@@ -16,8 +16,18 @@ define( function( require ) {
   var Path = require( 'SCENERY/nodes/Path' );
   var Shape = require( 'KITE/Shape' );
 
+  /**
+   * @param {OhmsLawModel} model
+   * @param x
+   * @param y
+   * @param w
+   * @param h
+   * @constructor
+   */
   function ResistorView( model, x, y, w, h ) {
+
     Node.call( this, { centerX: (x + w / 2), centerY: (y + h) } );
+
     var wBox = 260;
     var hBox = 66;
     var linearGradient1 = new LinearGradient( 0, 0, 0, hBox )
@@ -100,6 +110,5 @@ define( function( require ) {
     } );
   }
 
-  inherit( Node, ResistorView );
-  return ResistorView;
+  return inherit( Node, ResistorView );
 } );

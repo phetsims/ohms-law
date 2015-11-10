@@ -13,6 +13,12 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var BatteryView = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/BatteryView' );
 
+  /**
+   * @param {OhmsLawModel} model
+   * @param x
+   * @param y
+   * @constructor
+   */
   function BatteriesView( model, x, y ) {
     Node.call( this, { x: x, y: y } );
 
@@ -41,6 +47,5 @@ define( function( require ) {
     } );
   }
 
-  inherit( Node, BatteriesView );
-  return BatteriesView;
+  return inherit( Node, BatteriesView );
 } );

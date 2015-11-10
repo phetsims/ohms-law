@@ -16,6 +16,13 @@ define( function( require ) {
   var Path = require( 'SCENERY/nodes/Path' );
   var Shape = require( 'KITE/Shape' );
 
+  /**
+   * @param {OhmsLawModel} model
+   * @param x
+   * @param y
+   * @param rotation
+   * @constructor
+   */
   function Arrow( model, x, y, rotation ) {
     Node.call( this, { x: x, y: y, rotation: (rotation / 180 * Math.PI) } );
 
@@ -51,7 +58,5 @@ define( function( require ) {
     } );
   }
 
-  inherit( Node, Arrow );
-
-  return Arrow;
+  return inherit( Node, Arrow );
 } );

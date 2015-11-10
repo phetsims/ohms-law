@@ -15,6 +15,10 @@ define( function( require ) {
   var SlidersBox = require( 'OHMS_LAW/ohms-law/view/shapes/SlidersBox' );
   var FormulaView = require( 'OHMS_LAW/ohms-law/view/shapes/FormulaView' );
 
+  /**
+   * @param {OhmsLawModel} model
+   * @constructor
+   */
   function RootNode( model ) {
     Node.call( this );
     this.addChild( new FormulaView( model ).mutate( { pickable: false } ) );
@@ -22,7 +26,5 @@ define( function( require ) {
     this.addChild( new SlidersBox( model ) );
   }
 
-  inherit( Node, RootNode );
-
-  return RootNode;
+  return inherit( Node, RootNode );
 } );

@@ -20,9 +20,15 @@ define( function( require ) {
   var currentSymbol = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbol = require( 'string!OHMS_LAW/resistanceSymbol' );
 
+  /**
+   * @param {OhmsLawModel} model
+   * @constructor
+   */
   function FormulaView( model ) {
+
     var thisNode = this;
     Node.call( this );
+
     var texts = [
       {
         val: voltageSymbol,
@@ -78,7 +84,5 @@ define( function( require ) {
     this.addChild( text );
   }
 
-  inherit( Node, FormulaView );
-
-  return FormulaView;
+  return inherit( Node, FormulaView );
 } );

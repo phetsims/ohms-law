@@ -34,8 +34,14 @@ define( function( require ) {
   var RESISTANCEMAX = 1000;
   var RESISTANCEMIN = 10;
 
+  /**
+   * @param {OhmsLawModel} model
+   * @constructor
+   */
   function SlidersBox( model ) {
+
     Node.call( this );
+
     var rectW = 270;
     var rectH = 400;
     var rectX = 720;
@@ -128,7 +134,5 @@ define( function( require ) {
     } );
   }
 
-  inherit( Node, SlidersBox );
-
-  return SlidersBox;
+  return inherit( Node, SlidersBox );
 } );

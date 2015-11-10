@@ -17,8 +17,14 @@ define( function( require ) {
   var ResistorView = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/ResistorView' );
   var Arrow = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/Arrow' );
 
+  /**
+   * @param {OhmsLawModel} model
+   * @constructor
+   */
   function WireBox( model ) {
+
     Node.call( this );
+
     var x = 70;
     var y = 400;
     var w = 550;
@@ -33,7 +39,5 @@ define( function( require ) {
     this.addChild( new ResistorView( model, x, y, w, h ) );
   }
 
-  inherit( Node, WireBox );
-
-  return WireBox;
+  return inherit( Node, WireBox );
 } );

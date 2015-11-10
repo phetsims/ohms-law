@@ -25,7 +25,7 @@ define( function( require ) {
   var SPACING = new Text( '-', { font: FONT } ).width;
 
   /**
-   * @param model
+   * @param {OhmsLawModel} model
    * @param width
    * @param height
    * @constructor
@@ -63,7 +63,5 @@ define( function( require ) {
     } );
   }
 
-  inherit( Node, CurrentValueBox );
-
-  return CurrentValueBox;
+  return inherit( Node, CurrentValueBox );
 } );
