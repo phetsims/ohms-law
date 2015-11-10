@@ -16,9 +16,9 @@ define( function( require ) {
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
   // strings
-  var voltageSymbol = require( 'string!OHMS_LAW/voltageSymbol' );
-  var currentSymbol = require( 'string!OHMS_LAW/currentSymbol' );
-  var resistanceSymbol = require( 'string!OHMS_LAW/resistanceSymbol' );
+  var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
+  var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );
+  var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
 
   /**
    * @param {OhmsLawModel} model
@@ -31,7 +31,7 @@ define( function( require ) {
 
     var texts = [
       {
-        val: voltageSymbol,
+        val: voltageSymbolString,
         scaleA: 4.5,
         scaleB: 2,
         x: 150,
@@ -39,7 +39,7 @@ define( function( require ) {
         color: '#0f0ffb'
       },
       {
-        val: currentSymbol,
+        val: currentSymbolString,
         scaleA: 0.2,
         scaleB: 0.84,
         x: 380,
@@ -47,7 +47,7 @@ define( function( require ) {
         color: 'red'
       },
       {
-        val: resistanceSymbol,
+        val: resistanceSymbolString,
         scaleA: 0.04,
         scaleB: 2,
         x: 560,

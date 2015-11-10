@@ -19,7 +19,7 @@ define( function( require ) {
   var Util = require( 'DOT/Util' );
 
   // strings
-  var voltageUnits = require( 'string!OHMS_LAW/voltageUnits' );
+  var voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
 
   // constants
   var FONT = new PhetFont( { size: 20, weight: 'bold' } );
@@ -80,7 +80,7 @@ define( function( require ) {
     this.addChild( batteryText );
     batteryText.addChild( batteryTextValue );
     var voltageStringMaxWidth = new Text( '9.9', { font: FONT } ).width;
-    batteryText.addChild( new Text( voltageUnits, { font: FONT, fill: 'blue', x: voltageStringMaxWidth * 1.1 } ) );
+    batteryText.addChild( new Text( voltageUnitsString, { font: FONT, fill: 'blue', x: voltageStringMaxWidth * 1.1 } ) );
 
     this.setVoltage = function( voltage ) {
       if ( voltage >= 1.5 ) {

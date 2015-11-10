@@ -21,12 +21,12 @@ define( function( require ) {
   var sliderImage = require( 'image!OHMS_LAW/slider.png' );
 
   // strings
-  var voltageSymbol = require( 'string!OHMS_LAW/voltageSymbol' );
-  var resistanceSymbol = require( 'string!OHMS_LAW/resistanceSymbol' );
-  var voltage = require( 'string!OHMS_LAW/voltage' );
-  var voltageUnits = require( 'string!OHMS_LAW/voltageUnits' );
-  var resistance = require( 'string!OHMS_LAW/resistance' );
-  var resistanceUnits = require( 'string!OHMS_LAW/resistanceUnits' );
+  var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
+  var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
+  var voltageString = require( 'string!OHMS_LAW/voltage' );
+  var voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
+  var resistanceString = require( 'string!OHMS_LAW/resistance' );
+  var resistanceUnitsString = require( 'string!OHMS_LAW/resistanceUnits' );
 
   // constants
   var VOLTAGEMAX = 9;
@@ -56,13 +56,13 @@ define( function( require ) {
     this.y = rectY;
     this.addChild( new WhiteBox( 0, 0, rectW, rectH ) );
 
-    this.addChild( new Text( voltageSymbol, {
+    this.addChild( new Text( voltageSymbolString, {
       font: new PhetFont( { family: 'Times New Roman', size: 60, weight: 'bold' } ),
       fill: '#0f0ffb',
       centerX: xCoords[ 0 ],
       top: yCoords[ 0 ]
     } ) );
-    this.addChild( new Text( voltage, {
+    this.addChild( new Text( voltageString, {
       font: new PhetFont( 16 ),
       textAlign: 'center',
       textAnchor: 'middle',
@@ -78,7 +78,7 @@ define( function( require ) {
       right: xCoords[ 0 ] + 15,
       top: yCoords[ 2 ]
     } ) );
-    this.addChild( new Text( voltageUnits, {
+    this.addChild( new Text( voltageUnitsString, {
       font: new PhetFont( 30 ),
       textAlign: 'start',
       textAnchor: 'start',
@@ -87,13 +87,13 @@ define( function( require ) {
       top: yCoords[ 3 ]
     } ) );
 
-    this.addChild( new Text( resistanceSymbol, {
+    this.addChild( new Text( resistanceSymbolString, {
       font: new PhetFont( { family: 'Times New Roman', size: 60, weight: 'bold' } ),
       fill: '#0f0ffb',
       centerX: xCoords[ 1 ],
       top: yCoords[ 0 ]
     } ) );
-    this.addChild( new Text( resistance, {
+    this.addChild( new Text( resistanceString, {
       font: new PhetFont( 16 ),
       textAlign: 'center',
       textAnchor: 'middle',
@@ -109,7 +109,7 @@ define( function( require ) {
       right: xCoords[ 1 ] + 20,
       top: yCoords[ 2 ]
     } ) );
-    this.addChild( new Text( resistanceUnits, {
+    this.addChild( new Text( resistanceUnitsString, {
       font: new PhetFont( 30 ),
       textAlign: 'start',
       textAnchor: 'start',

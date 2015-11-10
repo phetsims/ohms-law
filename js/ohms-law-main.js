@@ -16,7 +16,7 @@ define( function( require ) {
   var OhmsLawView = require( 'OHMS_LAW/ohms-law/view/OhmsLawView' );
 
   // strings
-  var simTitle = require( 'string!OHMS_LAW/ohms-law.title' );
+  var ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
 
   var simOptions = {
     credits: {
@@ -29,8 +29,8 @@ define( function( require ) {
 
   SimLauncher.launch( function() {
     //Create and start the sim
-    new Sim( simTitle, [
-      new Screen( simTitle, null /* single-screen sim, no icon */,
+    new Sim( ohmsLawTitleString, [
+      new Screen( ohmsLawTitleString, null /* single-screen sim, no icon */,
         function() { return new OhmsLawModel(); },
         function( model ) { return new OhmsLawView( model ); },
         { backgroundColor: '#ffffdf' }
