@@ -1,4 +1,4 @@
-// Copyright 2013-2015, University of Colorado Boulder
+// Copyright 2016, University of Colorado Boulder
 
 /**
  * View of Single Battery
@@ -80,7 +80,12 @@ define( function( require ) {
     this.addChild( batteryText );
     batteryText.addChild( batteryTextValue );
     var voltageStringMaxWidth = new Text( '9.9', { font: FONT } ).width;
-    batteryText.addChild( new Text( voltageUnitsString, { font: FONT, fill: 'blue', x: voltageStringMaxWidth * 1.1 } ) );
+    batteryText.addChild( new Text( voltageUnitsString, {
+      font: FONT,
+      fill: 'blue',
+      x: voltageStringMaxWidth * 1.1,
+      maxWidth: ( totWidth - voltageStringMaxWidth - copperPortionWidth ) * 0.9 // limit to 90% of remaining space
+    } ) );
 
     this.setVoltage = function( voltage ) {
       if ( voltage >= 1.5 ) {
