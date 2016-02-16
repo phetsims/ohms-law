@@ -1,4 +1,4 @@
-// Copyright 2013-2015, University of Colorado Boulder
+// Copyright 2016, University of Colorado Boulder
 
 /**
  * View All Batteries
@@ -11,7 +11,7 @@ define( function( require ) {
   // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var BatteryView = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/BatteryView' );
+  var BatteryView = require( 'OHMS_LAW/ohms-law/view/BatteryView' );
 
   /**
    * @param {OhmsLawModel} model

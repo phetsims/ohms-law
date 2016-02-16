@@ -1,4 +1,4 @@
-// Copyright 2013-2015, University of Colorado Boulder
+// Copyright 2016, University of Colorado Boulder
 
 /**
  * view scheme ohms law
@@ -12,10 +12,10 @@ define( function( require ) {
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var CurrentValueBox = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/CurrentValueBox' );
-  var BatteriesView = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/BatteriesView' );
-  var ResistorView = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/ResistorView' );
-  var Arrow = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox/Arrow' );
+  var CurrentValueBox = require( 'OHMS_LAW/ohms-law/view/CurrentValueBox' );
+  var BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
+  var ResistorView = require( 'OHMS_LAW/ohms-law/view/ResistorView' );
+  var Arrow = require( 'OHMS_LAW/ohms-law/view/Arrow' );
 
   /**
    * @param {OhmsLawModel} model

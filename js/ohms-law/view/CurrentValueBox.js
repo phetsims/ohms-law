@@ -1,4 +1,4 @@
-// Copyright 2013-2015, University of Colorado Boulder
+// Copyright 2016, University of Colorado Boulder
 
 /**
  * Block shows Current TextBlock inside WireBlock
@@ -12,7 +12,7 @@ define( function( require ) {
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Text = require( 'SCENERY/nodes/Text' );
-  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/shapes/WhiteBox' );
+  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/WhiteBox' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Util = require( 'DOT/Util' );
 

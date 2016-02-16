@@ -13,9 +13,9 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
-  var WireBox = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox' );
-  var SlidersBox = require( 'OHMS_LAW/ohms-law/view/shapes/SlidersBox' );
-  var FormulaView = require( 'OHMS_LAW/ohms-law/view/shapes/FormulaView' );
+  var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
+  var SlidersBox = require( 'OHMS_LAW/ohms-law/view/SlidersBox' );
+  var FormulaView = require( 'OHMS_LAW/ohms-law/view/FormulaView' );
 
   /**
    * @param {OhmsLawModel} model

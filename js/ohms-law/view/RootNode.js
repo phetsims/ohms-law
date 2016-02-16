@@ -1,4 +1,4 @@
-// Copyright 2013-2015, University of Colorado Boulder
+// Copyright 2016, University of Colorado Boulder
 
 /**
  * Main container for all part of scene
@@ -11,9 +11,9 @@ define( function( require ) {
   // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var WireBox = require( 'OHMS_LAW/ohms-law/view/shapes/WireBox' );
-  var SlidersBox = require( 'OHMS_LAW/ohms-law/view/shapes/SlidersBox' );
-  var FormulaView = require( 'OHMS_LAW/ohms-law/view/shapes/FormulaView' );
+  var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
+  var SlidersBox = require( 'OHMS_LAW/ohms-law/view/SlidersBox' );
+  var FormulaView = require( 'OHMS_LAW/ohms-law/view/FormulaView' );
 
   /**
    * @param {OhmsLawModel} model

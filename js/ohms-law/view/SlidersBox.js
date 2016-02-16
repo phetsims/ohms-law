@@ -1,4 +1,4 @@
-// Copyright 2013-2015, University of Colorado Boulder
+// Copyright 2016, University of Colorado Boulder
 
 /**
  * Container for sliders and circumjacent text
@@ -11,8 +11,8 @@ define( function( require ) {
   // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/shapes/WhiteBox' );
-  var Slider = require( 'OHMS_LAW/ohms-law/view/shapes/SliderBox/Slider' );
+  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/WhiteBox' );
+  var Slider = require( 'OHMS_LAW/ohms-law/view/Slider' );
   var Text = require( 'SCENERY/nodes/Text' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Util = require( 'DOT/Util' );
