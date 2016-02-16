@@ -10,10 +10,11 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Matrix3 = require( 'DOT/Matrix3' );
+  var Node = require( 'SCENERY/nodes/Node' );
   var Path = require( 'SCENERY/nodes/Path' );
+  var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var Shape = require( 'KITE/Shape' );
 
   /**
@@ -46,7 +47,7 @@ define( function( require ) {
 
     arrow.addChild( new Path( arrowShape, {
       stroke: '#000',
-      fill: '#F00',
+      fill: PhetColorScheme.RED_COLORBLIND,
       lineWidth: 0.2
     } ) );
     this.addChild( arrow );

@@ -77,9 +77,7 @@ define( function( require ) {
 
     // @public
     reset: function() {
-      this.voltageProperty.reset();
-      this.resistanceProperty.reset();
-      this.soundActiveProperty.reset();
+      PropertySet.prototype.reset.call( this );
       this.current = this.calculateCurrent( this.voltage, this.resistance );
     },
 

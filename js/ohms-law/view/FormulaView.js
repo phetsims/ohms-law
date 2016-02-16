@@ -9,11 +9,12 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var Text = require( 'SCENERY/nodes/Text' );
   var Matrix3 = require( 'DOT/Matrix3' );
+  var Node = require( 'SCENERY/nodes/Node' );
+  var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Text = require( 'SCENERY/nodes/Text' );
 
   // strings
   var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
@@ -48,7 +49,7 @@ define( function( require ) {
         scaleB: 0.84,
         x: 380,
         targetProperty: model.currentProperty,
-        color: 'red',
+        color: PhetColorScheme.RED_COLORBLIND,
         maxInitialWidth: 20
       },
       {

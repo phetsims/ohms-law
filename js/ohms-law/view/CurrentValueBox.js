@@ -9,12 +9,13 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var Text = require( 'SCENERY/nodes/Text' );
-  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/WhiteBox' );
+  var Node = require( 'SCENERY/nodes/Node' );
+  var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Text = require( 'SCENERY/nodes/Text' );
   var Util = require( 'DOT/Util' );
+  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/WhiteBox' );
 
   // strings
   var currentString = require( 'string!OHMS_LAW/current' );
@@ -38,11 +39,15 @@ define( function( require ) {
 
     // Create the text string.
     var textContainer = new Node();
-    textContainer.addChild( new Text( currentString, { font: FONT, fill: 'red' } ) );
+    textContainer.addChild( new Text( currentString, { font: FONT, fill: PhetColorScheme.RED_COLORBLIND } ) );
     textContainer.addChild( new Text( '=', { font: FONT, fill: 'black', left: textContainer.width + SPACING } ) );
     var currentValue = new Text( '999.9', { font: FONT, fill: 'black', left: textContainer.width + SPACING } );
     textContainer.addChild( currentValue );
-    textContainer.addChild( new Text( currentUnitsString, { font: FONT, fill: 'red', left: textContainer.width + SPACING } ) );
+    textContainer.addChild( new Text( currentUnitsString, {
+      font: FONT,
+      fill: PhetColorScheme.RED_COLORBLIND,
+      left: textContainer.width + SPACING
+    } ) );
 
     // Scale the text if greater than max allowed width.
     if ( textContainer.width > maxTextWidth ) {
