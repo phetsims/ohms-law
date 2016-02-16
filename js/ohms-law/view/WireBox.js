@@ -17,6 +17,10 @@ define( function( require ) {
   var ResistorView = require( 'OHMS_LAW/ohms-law/view/ResistorView' );
   var RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
 
+  // constants
+  var WIDTH = 550;
+  var HEIGHT = 180;
+
   /**
    * @param {OhmsLawModel} model
    * @constructor
@@ -25,18 +29,16 @@ define( function( require ) {
 
     Node.call( this );
 
+    // empirically determined position
     var x = 70;
-    var y = 400;
-    var w = 550;
-    var h = 180;
+    var y = 380;
 
-    this.addChild( new RightAngleArrow( model, x - 10, y + h + 10, 90 ) );
-    this.addChild( new RightAngleArrow( model, x + w + 10, y + h + 10, 0 ) );
-
-    this.addChild( new Rectangle( x, y, w, h, 4, 4, { stroke: '#000', lineWidth: 10 } ) );
-    this.addChild( new CurrentValueBox( model, w * 0.7, h * 0.3 ).mutate( { centerX: x + w / 2, centerY: y + h / 2 } ) );
+    this.addChild( new RightAngleArrow( model, x - 10, y + HEIGHT + 10, 90 ) );
+    this.addChild( new RightAngleArrow( model, x + WIDTH + 10, y + HEIGHT + 10, 0 ) );
+    this.addChild( new Rectangle( x, y, WIDTH, HEIGHT, 4, 4, { stroke: '#000', lineWidth: 10 } ) );
+    this.addChild( new CurrentValueBox( model, WIDTH * 0.7, HEIGHT * 0.3 ).mutate( { centerX: x + WIDTH / 2, centerY: y + HEIGHT / 2 } ) );
     this.addChild( new BatteriesView( model, x + 30, y ) );
-    this.addChild( new ResistorView( model, x, y, w, h ) );
+    this.addChild( new ResistorView( model, x, y, WIDTH, HEIGHT ) );
   }
 
   return inherit( Node, WireBox );

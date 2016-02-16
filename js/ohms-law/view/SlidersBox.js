@@ -49,16 +49,22 @@ define( function( require ) {
     var textVoltage;
     var textResistance;
 
-    //xy Grid
-    var yCoords = [ 5, 60, 340, 340 ];
+    // xy Grid
+    var yCoords = [ 5, 60, 340 ];
     var xCoords = [ 70, 190 ];
     this.addChild( new WhiteBox( 0, 0, PANEL_WIDTH, PANEL_HEIGHT ) );
+
+    // limit max width of labels and units in support of translation
+    var maxLabelWidth = PANEL_WIDTH * 0.25;
+    var maxUnitsWidth = PANEL_WIDTH * 0.1;
+
 
     this.addChild( new Text( voltageSymbolString, {
       font: new PhetFont( { family: 'Times New Roman', size: 60, weight: 'bold' } ),
       fill: '#0f0ffb',
       centerX: xCoords[ 0 ],
-      top: yCoords[ 0 ]
+      top: yCoords[ 0 ],
+      maxWidth: maxLabelWidth
     } ) );
     this.addChild( new Text( voltageString, {
       font: new PhetFont( 16 ),
@@ -66,7 +72,8 @@ define( function( require ) {
       textAnchor: 'middle',
       fill: '#0f0ffb',
       centerX: xCoords[ 0 ],
-      top: yCoords[ 1 ]
+      top: yCoords[ 1 ],
+      maxWidth: maxLabelWidth
     } ) );
     this.addChild( textVoltage = new Text( Util.toFixed( model.voltage, 1 ), {
       font: new PhetFont( 30 ),
@@ -74,22 +81,25 @@ define( function( require ) {
       textAnchor: 'end',
       fill: '#000',
       right: xCoords[ 0 ] + 15,
-      top: yCoords[ 2 ]
+      top: yCoords[ 2 ],
+      maxWidth: maxLabelWidth
     } ) );
     this.addChild( new Text( voltageUnitsString, {
       font: new PhetFont( 30 ),
       textAlign: 'start',
       textAnchor: 'start',
       fill: '#0f0ffb',
-      centerX: xCoords[ 0 ] + 30,
-      top: yCoords[ 3 ]
+      left: xCoords[ 0 ] + 20,
+      centerY: textVoltage.centerY,
+      maxWidth: maxUnitsWidth
     } ) );
 
     this.addChild( new Text( resistanceSymbolString, {
       font: new PhetFont( { family: 'Times New Roman', size: 60, weight: 'bold' } ),
       fill: '#0f0ffb',
       centerX: xCoords[ 1 ],
-      top: yCoords[ 0 ]
+      top: yCoords[ 0 ],
+      maxWidth: maxLabelWidth
     } ) );
     this.addChild( new Text( resistanceString, {
       font: new PhetFont( 16 ),
@@ -97,7 +107,8 @@ define( function( require ) {
       textAnchor: 'middle',
       fill: '#0f0ffb',
       centerX: xCoords[ 1 ],
-      top: yCoords[ 1 ]
+      top: yCoords[ 1 ],
+      maxWidth: maxLabelWidth
     } ) );
     this.addChild( textResistance = new Text( Util.toFixed( model.resistance, 0 ), {
       font: new PhetFont( 30 ),
@@ -105,15 +116,17 @@ define( function( require ) {
       textAnchor: 'end',
       fill: '#000',
       right: xCoords[ 1 ] + 20,
-      top: yCoords[ 2 ]
+      top: yCoords[ 2 ],
+      maxWidth: maxLabelWidth
     } ) );
     this.addChild( new Text( resistanceUnitsString, {
       font: new PhetFont( 30 ),
       textAlign: 'start',
       textAnchor: 'start',
       fill: '#0f0ffb',
-      centerX: xCoords[ 1 ] + 40,
-      top: yCoords[ 3 ]
+      left: xCoords[ 1 ] + 20,
+      centerY: textResistance.centerY,
+      maxWidth: maxUnitsWidth
     } ) );
 
     // make all of the text and background unpickable in order to speed up mouse/touch hit computation
