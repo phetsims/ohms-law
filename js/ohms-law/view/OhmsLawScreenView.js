@@ -1,7 +1,8 @@
 // Copyright 2013-2015, University of Colorado Boulder
 
 /**
- * Stage for the "OhmsLaw" module, sets up the scene.
+ * screen view for the Ohm's Law simulation
+ *
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
@@ -9,7 +10,6 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Bounds2 = require( 'DOT/Bounds2' );
   var FormulaView = require( 'OHMS_LAW/ohms-law/view/FormulaView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
@@ -25,7 +25,7 @@ define( function( require ) {
    * @param {OhmsLawModel} model
    * @constructor
    */
-  function OhmsLawStage( model ) {
+  function OhmsLawScreenView( model ) {
 
     ScreenView.call( this );
 
@@ -53,5 +53,5 @@ define( function( require ) {
     this.addChild( soundToggleButton );
   }
 
-  return inherit( ScreenView, OhmsLawStage );
+  return inherit( ScreenView, OhmsLawScreenView );
 } );
