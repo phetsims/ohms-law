@@ -1,4 +1,4 @@
-// Copyright 2013-2015, University of Colorado Boulder
+// Copyright 2016, University of Colorado Boulder
 
 /**
  * View for Arrow around WireBox
@@ -23,7 +23,7 @@ define( function( require ) {
    * @param rotation
    * @constructor
    */
-  function Arrow( model, x, y, rotation ) {
+  function RightAngleArrow( model, x, y, rotation ) {
     Node.call( this, { x: x, y: y, rotation: (rotation / 180 * Math.PI) } );
 
     var arrow = new Node();
@@ -58,5 +58,5 @@ define( function( require ) {
     } );
   }
 
-  return inherit( Node, Arrow );
+  return inherit( Node, RightAngleArrow );
 } );

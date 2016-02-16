@@ -15,7 +15,7 @@ define( function( require ) {
   var CurrentValueBox = require( 'OHMS_LAW/ohms-law/view/CurrentValueBox' );
   var BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
   var ResistorView = require( 'OHMS_LAW/ohms-law/view/ResistorView' );
-  var Arrow = require( 'OHMS_LAW/ohms-law/view/Arrow' );
+  var RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
 
   /**
    * @param {OhmsLawModel} model
@@ -30,8 +30,8 @@ define( function( require ) {
     var w = 550;
     var h = 180;
 
-    this.addChild( new Arrow( model, x - 10, y + h + 10, 90 ) );
-    this.addChild( new Arrow( model, x + w + 10, y + h + 10, 0 ) );
+    this.addChild( new RightAngleArrow( model, x - 10, y + h + 10, 90 ) );
+    this.addChild( new RightAngleArrow( model, x + w + 10, y + h + 10, 0 ) );
 
     this.addChild( new Rectangle( x, y, w, h, 4, 4, { stroke: '#000', lineWidth: 10 } ) );
     this.addChild( new CurrentValueBox( model, w * 0.7, h * 0.3 ).mutate( { centerX: x + w / 2, centerY: y + h / 2 } ) );

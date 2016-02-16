@@ -9,13 +9,17 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Node = require( 'SCENERY/nodes/Node' );
+  var Bounds2 = require( 'DOT/Bounds2' );
+  var FormulaView = require( 'OHMS_LAW/ohms-law/view/FormulaView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
+  var ScreenView = require( 'JOIST/ScreenView' );
+  var SlidersBox = require( 'OHMS_LAW/ohms-law/view/SlidersBox' );
   var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
-  var SlidersBox = require( 'OHMS_LAW/ohms-law/view/SlidersBox' );
-  var FormulaView = require( 'OHMS_LAW/ohms-law/view/FormulaView' );
+
+  // constants
+  var INSET = 25;
 
   /**
    * @param {OhmsLawModel} model
@@ -23,14 +27,17 @@ define( function( require ) {
    */
   function OhmsLawStage( model ) {
 
-    Node.call( this, { scale: 0.75 } );
+    ScreenView.call( this );
 
     this.addChild( new FormulaView( model ).mutate( { pickable: false } ) );
     this.addChild( new WireBox( model ).mutate( { pickable: false } ) );
-    var slidersBox = new SlidersBox( model );
+    var slidersBox = new SlidersBox( model, {
+      right: this.layoutBounds.width - INSET,
+      top: 60 // empirically determined
+    } );
     this.addChild( slidersBox );
 
-    //reset button
+    // reset button
     var buttonCenterYOffset = 50;
     this.addChild( new ResetAllButton( {
       listener: function() { model.reset(); },
@@ -39,12 +46,12 @@ define( function( require ) {
       radius: 30
     } ) );
 
-    //sound on/off toggle button
+    // sound on/off toggle button
     var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, { scale: 1.15, stroke: 'gray', lineWidth: 0.5 } );
     soundToggleButton.centerX = slidersBox.left + slidersBox.width * 0.70;
     soundToggleButton.centerY = slidersBox.bottom + buttonCenterYOffset;
     this.addChild( soundToggleButton );
   }
 
-  return inherit( Node, OhmsLawStage );
+  return inherit( ScreenView, OhmsLawStage );
 } );

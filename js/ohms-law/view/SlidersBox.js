@@ -9,13 +9,14 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/WhiteBox' );
+  var Node = require( 'SCENERY/nodes/Node' );
+  var Panel = require( 'SUN/Panel' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Slider = require( 'OHMS_LAW/ohms-law/view/Slider' );
   var Text = require( 'SCENERY/nodes/Text' );
-  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Util = require( 'DOT/Util' );
+  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/WhiteBox' );
 
   // images
   var sliderImage = require( 'image!OHMS_LAW/slider.png' );
@@ -29,32 +30,29 @@ define( function( require ) {
   var resistanceUnitsString = require( 'string!OHMS_LAW/resistanceUnits' );
 
   // constants
-  var VOLTAGEMAX = 9;
-  var VOLTAGEMIN = 0.1;
-  var RESISTANCEMAX = 1000;
-  var RESISTANCEMIN = 10;
+  var VOLTAGE_MAX = 9;
+  var VOLTAGE_MIN = 0.1;
+  var RESISTANCE_MAX = 1000;
+  var RESISTANCE_MIN = 10;
+  var PANEL_WIDTH = 270;
+  var PANEL_HEIGHT = 400;
 
   /**
    * @param {OhmsLawModel} model
+   * @param {object} options
    * @constructor
    */
-  function SlidersBox( model ) {
+  function SlidersBox( model, options ) {
 
     Node.call( this );
 
-    var rectW = 270;
-    var rectH = 400;
-    var rectX = 720;
-    var rectY = 80;
     var textVoltage;
     var textResistance;
 
     //xy Grid
     var yCoords = [ 5, 60, 340, 340 ];
     var xCoords = [ 70, 190 ];
-    this.x = rectX;
-    this.y = rectY;
-    this.addChild( new WhiteBox( 0, 0, rectW, rectH ) );
+    this.addChild( new WhiteBox( 0, 0, PANEL_WIDTH, PANEL_HEIGHT ) );
 
     this.addChild( new Text( voltageSymbolString, {
       font: new PhetFont( { family: 'Times New Roman', size: 60, weight: 'bold' } ),
@@ -118,11 +116,17 @@ define( function( require ) {
       top: yCoords[ 3 ]
     } ) );
 
-    // make all of the text and background unpickable, to speed up mouse/touch hit computation
+    // make all of the text and background unpickable in order to speed up mouse/touch hit computation
     _.each( this.children, function( child ) { child.pickable = false; } );
 
-    this.addChild( new Slider( xCoords[ 0 ], 90, 240, model.voltageProperty, sliderImage, { min: VOLTAGEMIN, max: VOLTAGEMAX } ) );
-    this.addChild( new Slider( xCoords[ 1 ], 90, 240, model.resistanceProperty, sliderImage, { min: RESISTANCEMIN, max: RESISTANCEMAX } ) );
+    this.addChild( new Slider( xCoords[ 0 ], 90, 240, model.voltageProperty, sliderImage, {
+      min: VOLTAGE_MIN,
+      max: VOLTAGE_MAX
+    } ) );
+    this.addChild( new Slider( xCoords[ 1 ], 90, 240, model.resistanceProperty, sliderImage, {
+      min: RESISTANCE_MIN,
+      max: RESISTANCE_MAX
+    } ) );
 
     model.voltageProperty.link( function updateTextVoltage( value ) {
       textVoltage.text = Util.toFixed( value, 1 );
@@ -132,6 +136,8 @@ define( function( require ) {
       textResistance.text = Util.toFixed( value, 0 );
       textResistance.right = xCoords[ 1 ] + 15;
     } );
+
+    this.mutate( options );
   }
 
   return inherit( Node, SlidersBox );

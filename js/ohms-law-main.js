@@ -13,7 +13,7 @@ define( function( require ) {
   var Sim = require( 'JOIST/Sim' );
   var Screen = require( 'JOIST/Screen' );
   var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
-  var OhmsLawView = require( 'OHMS_LAW/ohms-law/view/OhmsLawView' );
+  var OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
 
   // strings
   var ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
@@ -32,7 +32,7 @@ define( function( require ) {
     new Sim( ohmsLawTitleString, [
       new Screen( ohmsLawTitleString, null /* single-screen sim, no icon */,
         function() { return new OhmsLawModel(); },
-        function( model ) { return new OhmsLawView( model ); },
+        function( model ) { return new OhmsLawScreenView( model ); },
         { backgroundColor: '#ffffdf' }
       )
     ], simOptions ).start();
