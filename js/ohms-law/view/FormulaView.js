@@ -20,6 +20,9 @@ define( function( require ) {
   var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
 
+  // constants
+  var MAX_INITIAL_SYMBOL_WIDTH = 20; // this supports translation by making sure symbols aren't initially too large
+
   /**
    * @param {OhmsLawModel} model
    * @constructor
@@ -35,28 +38,44 @@ define( function( require ) {
         scaleA: 4.5,
         scaleB: 2,
         x: 150,
-        targetProperty: 'voltageProperty',
-        color: '#0f0ffb'
+        targetProperty: model.voltageProperty,
+        color: '#0f0ffb',
+        maxInitialWidth: 180
       },
       {
         val: currentSymbolString,
         scaleA: 0.2,
         scaleB: 0.84,
         x: 380,
-        targetProperty: 'currentProperty',
-        color: 'red'
+        targetProperty: model.currentProperty,
+        color: 'red',
+        maxInitialWidth: 20
       },
       {
         val: resistanceSymbolString,
         scaleA: 0.04,
         scaleB: 2,
         x: 560,
-        targetProperty: 'resistanceProperty',
-        color: '#0f0ffb'
+        targetProperty: model.resistanceProperty,
+        color: '#0f0ffb',
+        maxInitialWidth: 175
       }
     ];
-    var centerY = 160; // empirically determined
-    texts.forEach( function viewTexts( entry ) {
+
+    // center Y position of all text in the node, empirically determined
+    var centerY = 160;
+
+    // add the equals sign, which does not change size
+    var equalsSign = new Text( '=', {
+      font: new PhetFont( { family: 'Times New Roman', size: 140, weight: 'bold' } ),
+      fill: '#000',
+      centerX: 300,
+      centerY: centerY
+    } );
+    this.addChild( equalsSign );
+
+    texts.forEach( function( entry ) {
+
       // centered text node, so we just have to adjust scale dynamically
       var textNode = new Text( entry.val, {
         font: new PhetFont( { family: 'Times New Roman', size: 12, weight: 'bold' } ),
@@ -64,9 +83,23 @@ define( function( require ) {
         centerX: 0,
         centerY: 0
       } );
+
+      // Make sure that the text isn't initially too large and, if so, change the scaling factors.  This is done in
+      // support of translation, in case some symbols are much larger than the V, I, and R symbols used in the English
+      // version.
+      var initialWidth = textNode.width * entry.scaleA * entry.targetProperty.value + entry.scaleB;
+      if ( initialWidth > entry.maxInitialWidth ){
+        var scaleFactor = entry.maxInitialWidth / initialWidth;
+        entry.scaleA = entry.scaleA * scaleFactor;
+        entry.scaleB = entry.scaleB * scaleFactor;
+      }
+
+      // create the node that contains the text
       entry.view = new Node( { children: [ textNode ] } );
       thisNode.addChild( entry.view );
-      model[ entry.targetProperty ].link( function updateProperty( val ) {
+
+      // scale the text as the associated value changes
+      entry.targetProperty.link( function updateProperty( val ) {
         // performance TODO: consider not updating the matrix if it hasn't changed (if entry.x, entry.scaleA, and entry.scaleB haven't changed)
         // since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
         entry.view.matrix = Matrix3.translation( entry.x, centerY )
@@ -74,14 +107,6 @@ define( function( require ) {
       } );
     } );
 
-    //static text
-    var text = new Text( '=', {
-      font: new PhetFont( { family: 'Times New Roman', size: 140, weight: 'bold' } ),
-      fill: '#000',
-      centerX: 300,
-      centerY: centerY
-    } );
-    this.addChild( text );
   }
 
   return inherit( Node, FormulaView );
