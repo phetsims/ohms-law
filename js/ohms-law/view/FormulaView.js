@@ -21,9 +21,6 @@ define( function( require ) {
   var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
 
-  // constants
-  var MAX_INITIAL_SYMBOL_WIDTH = 20; // this supports translation by making sure symbols aren't initially too large
-
   /**
    * @param {OhmsLawModel} model
    * @constructor
