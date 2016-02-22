@@ -14,6 +14,7 @@ define( function( require ) {
   var Node = require( 'SCENERY/nodes/Node' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var Text = require( 'SCENERY/nodes/Text' );
 
   // strings
@@ -76,7 +77,7 @@ define( function( require ) {
 
       // centered text node, so we just have to adjust scale dynamically
       var textNode = new Text( entry.val, {
-        font: new PhetFont( { family: 'Times New Roman', size: 12, weight: 'bold' } ),
+        font: new PhetFont( { family: 'Times New Roman', size: 20, weight: 'bold' } ),
         fill: entry.color,
         centerX: 0,
         centerY: 0
@@ -92,8 +93,12 @@ define( function( require ) {
         entry.scaleB = entry.scaleB * scaleFactor;
       }
 
+      // add an invisible rectangle with bounds slightly larger than the text so that artifacts aren't left on the
+      // screen, see https://github.com/phetsims/ohms-law/issues/26.
+      var antiArtifactRectangle = Rectangle.bounds( textNode.bounds.dilatedX( 1 ), { fill: 'rgba( 0, 0, 0, 0 )' } );
+
       // create the node that contains the text
-      entry.view = new Node( { children: [ textNode ] } );
+      entry.view = new Node( { children: [ antiArtifactRectangle, textNode ] } );
       thisNode.addChild( entry.view );
 
       // scale the text as the associated value changes
