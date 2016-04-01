@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.3.1 Fri Apr 01 2016 13:07:29 GMT-0600 (MDT)",
+  "comment": "# ohms-law 1.3.1 Fri Apr 01 2016 14:32:33 GMT-0600 (MDT)",
   "assert": {
     "sha": "7d27130a4d27da15aa7f8a21bbfb9245288c1b44",
     "branch": "HEAD"
@@ -9,8 +9,8 @@
     "branch": "HEAD"
   },
   "brand": {
-    "sha": "ac9ccaa74427844b170dcd1582f3e9bb931edef4",
-    "branch": "HEAD"
+    "sha": "d9e64f424ae3ca05f3d10964f5845460a6ccbce6",
+    "branch": "ohms-law-1.3"
   },
   "chipper": {
     "sha": "b296e642826c46be547806dd3e55cc9b0b7e86b5",
@@ -21,15 +21,15 @@
     "branch": "HEAD"
   },
   "joist": {
-    "sha": "28f510089c0f5312ca58526b10ff063466ebbc5a",
-    "branch": "HEAD"
+    "sha": "c2998c16b418aebaae8da09278ecd2ea35863dc9",
+    "branch": "ohms-law-1.3"
   },
   "kite": {
     "sha": "10ca8bf2b2712307ff528352de8451c0c8afe093",
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "250808dd800cb4af3a7293a99333756e03479c26",
+    "sha": "7ef17a9f5f7d199ba9160a6ca1d499dc80dd3c6a",
     "branch": "1.3"
   },
   "phet-core": {
@@ -38,7 +38,7 @@
   },
   "phetcommon": {
     "sha": "c1d016e74269e7f7482fb39d18421bbb84b34927",
-    "branch": "ohms-law-1.3"
+    "branch": "HEAD"
   },
   "scenery": {
     "sha": "6bd54e23257cbb6d2557e332bd2cbf1e0a5b6f27",
