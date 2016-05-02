@@ -13,6 +13,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var Sound = require( 'VIBE/Sound' );
   var Util = require( 'DOT/Util' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // audio
   var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
@@ -69,6 +70,8 @@ define( function( require ) {
     };
     this.reset();
   }
+
+  ohmsLaw.register( 'OhmsLawModel', OhmsLawModel );
 
   inherit( PropertySet, OhmsLawModel, {
 

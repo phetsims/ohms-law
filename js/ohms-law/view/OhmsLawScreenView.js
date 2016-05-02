@@ -17,6 +17,7 @@ define( function( require ) {
   var SlidersBox = require( 'OHMS_LAW/ohms-law/view/SlidersBox' );
   var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // constants
   var INSET = 25;
@@ -52,6 +53,8 @@ define( function( require ) {
     soundToggleButton.centerY = slidersBox.bottom + buttonCenterYOffset;
     this.addChild( soundToggleButton );
   }
+
+  ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );
 
   return inherit( ScreenView, OhmsLawScreenView );
 } );

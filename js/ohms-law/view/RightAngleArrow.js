@@ -16,6 +16,7 @@ define( function( require ) {
   var Path = require( 'SCENERY/nodes/Path' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var Shape = require( 'KITE/Shape' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   /**
    * @param {OhmsLawModel} model
@@ -58,6 +59,8 @@ define( function( require ) {
       arrow.matrix = Matrix3.scale( scale );
     } );
   }
+
+  ohmsLaw.register( 'RightAngleArrow', RightAngleArrow );
 
   return inherit( Node, RightAngleArrow );
 } );

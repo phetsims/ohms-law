@@ -15,6 +15,7 @@ define( function( require ) {
   var LinearGradient = require( 'SCENERY/util/LinearGradient' );
   var Path = require( 'SCENERY/nodes/Path' );
   var Shape = require( 'KITE/Shape' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   /**
    * @param {OhmsLawModel} model
@@ -109,6 +110,8 @@ define( function( require ) {
       }
     } );
   }
+
+  ohmsLaw.register( 'ResistorView', ResistorView );
 
   return inherit( Node, ResistorView );
 } );

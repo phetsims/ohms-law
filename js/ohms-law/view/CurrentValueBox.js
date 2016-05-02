@@ -16,6 +16,7 @@ define( function( require ) {
   var Text = require( 'SCENERY/nodes/Text' );
   var Util = require( 'DOT/Util' );
   var WhiteBox = require( 'OHMS_LAW/ohms-law/view/WhiteBox' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // strings
   var currentString = require( 'string!OHMS_LAW/current' );
@@ -67,6 +68,8 @@ define( function( require ) {
       currentValue.right = rightEdgePos;
     } );
   }
+
+  ohmsLaw.register( 'CurrentValueBox', CurrentValueBox );
 
   return inherit( Node, CurrentValueBox );
 } );

@@ -17,6 +17,7 @@ define( function( require ) {
   var LinearFunction = require( 'DOT/LinearFunction' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Util = require( 'DOT/Util' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // strings
   var voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
@@ -107,6 +108,8 @@ define( function( require ) {
       }
     };
   }
+
+  ohmsLaw.register( 'BatteryView', BatteryView );
 
   return inherit( Node, BatteryView );
 } );

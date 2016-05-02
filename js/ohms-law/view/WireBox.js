@@ -16,6 +16,7 @@ define( function( require ) {
   var BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
   var ResistorView = require( 'OHMS_LAW/ohms-law/view/ResistorView' );
   var RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // constants
   var WIDTH = 550;
@@ -40,6 +41,8 @@ define( function( require ) {
     this.addChild( new BatteriesView( model, x + 30, y ) );
     this.addChild( new ResistorView( model, x, y, WIDTH, HEIGHT ) );
   }
+
+  ohmsLaw.register( 'WireBox', WireBox );
 
   return inherit( Node, WireBox );
 } );

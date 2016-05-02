@@ -12,6 +12,7 @@ define( function( require ) {
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var BatteryView = require( 'OHMS_LAW/ohms-law/view/BatteryView' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   /**
    * @param {OhmsLawModel} model
@@ -46,6 +47,8 @@ define( function( require ) {
       }
     } );
   }
+
+  ohmsLaw.register( 'BatteriesView', BatteriesView );
 
   return inherit( Node, BatteriesView );
 } );

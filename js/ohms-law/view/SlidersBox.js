@@ -16,6 +16,7 @@ define( function( require ) {
   var Text = require( 'SCENERY/nodes/Text' );
   var Util = require( 'DOT/Util' );
   var WhiteBox = require( 'OHMS_LAW/ohms-law/view/WhiteBox' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // images
   var sliderImage = require( 'image!OHMS_LAW/slider.png' );
@@ -151,6 +152,8 @@ define( function( require ) {
 
     this.mutate( options );
   }
+
+  ohmsLaw.register( 'SlidersBox', SlidersBox );
 
   return inherit( Node, SlidersBox );
 } );

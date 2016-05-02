@@ -14,6 +14,7 @@ define( function( require ) {
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
   var SlidersBox = require( 'OHMS_LAW/ohms-law/view/SlidersBox' );
   var FormulaView = require( 'OHMS_LAW/ohms-law/view/FormulaView' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   /**
    * @param {OhmsLawModel} model
@@ -25,6 +26,8 @@ define( function( require ) {
     this.addChild( new WireBox( model ).mutate( { pickable: false } ) );
     this.addChild( new SlidersBox( model ) );
   }
+
+  ohmsLaw.register( 'RootNode', RootNode );
 
   return inherit( Node, RootNode );
 } );

@@ -16,6 +16,7 @@ define( function( require ) {
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var Text = require( 'SCENERY/nodes/Text' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // strings
   var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
@@ -111,6 +112,8 @@ define( function( require ) {
     } );
 
   }
+
+  ohmsLaw.register( 'FormulaView', FormulaView );
 
   return inherit( Node, FormulaView );
 } );
