@@ -30,7 +30,7 @@ define( function( require ) {
   SimLauncher.launch( function() {
     //Create and start the sim
     new Sim( ohmsLawTitleString, [
-      new Screen( ohmsLawTitleString, null /* single-screen sim, no icon */,
+      new Screen(
         function() { return new OhmsLawModel(); },
         function( model ) { return new OhmsLawScreenView( model ); },
         { backgroundColor: '#ffffdf' }
