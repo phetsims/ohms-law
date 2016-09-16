@@ -31,7 +31,7 @@ define( function( require ) {
    */
   function Slider( x, y, h, targetProperty, img, value ) {
 
-    var thisNode = this;
+    var self = this;
     Node.call( this, { x: x, y: y } );
     this.addChild( new Rectangle( -3, 0, 6, h, { fill: 'black' } ) );
 
@@ -53,11 +53,11 @@ define( function( require ) {
         allowTouchSnag: true,
 
         start: function( event ) {
-          clickYOffset = thisNode.globalToParentPoint( event.pointer.point ).y - event.currentTarget.y;
+          clickYOffset = self.globalToParentPoint( event.pointer.point ).y - event.currentTarget.y;
         },
 
         drag: function( event ) {
-          var y = thisNode.globalToParentPoint( event.pointer.point ).y - clickYOffset;
+          var y = self.globalToParentPoint( event.pointer.point ).y - clickYOffset;
           y = Math.max( Math.min( y, yMax ), yMin );
           targetProperty.set( positionToValue( y ) );
         }

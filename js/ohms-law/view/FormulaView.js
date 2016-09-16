@@ -29,7 +29,7 @@ define( function( require ) {
    */
   function FormulaView( model ) {
 
-    var thisNode = this;
+    var self = this;
     Node.call( this );
 
     var texts = [
@@ -100,7 +100,7 @@ define( function( require ) {
 
       // create the node that contains the text
       entry.view = new Node( { children: [ antiArtifactRectangle, textNode ] } );
-      thisNode.addChild( entry.view );
+      self.addChild( entry.view );
 
       // scale the text as the associated value changes
       entry.targetProperty.link( function updateProperty( val ) {

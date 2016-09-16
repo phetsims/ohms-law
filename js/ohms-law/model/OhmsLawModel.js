@@ -31,16 +31,16 @@ define( function( require ) {
       soundActive: true
     } );
 
-    var thisModel = this;
+    var self = this;
 
     // Hook up the sounds that are played when batteries are added or removed.
     var addBatterySound = new Sound( addBatteryAudio );
     var removeBatterySound = new Sound( removeBatteryAudio );
-    var oldVal = Math.floor( thisModel.voltage / 1.5 );
+    var oldVal = Math.floor( self.voltage / 1.5 );
 
-    thisModel.voltageProperty.link( function( voltage ) {
+    self.voltageProperty.link( function( voltage ) {
       var newVal = Math.floor( ( voltage ) / 1.5 );
-      if ( thisModel.soundActive ) {
+      if ( self.soundActive ) {
         if ( newVal > oldVal ) {
           addBatterySound.play();
         }
@@ -52,7 +52,7 @@ define( function( require ) {
     } );
 
     var updateCurrent = function() {
-      thisModel.current = thisModel.calculateCurrent( thisModel.voltage, thisModel.resistance );
+      self.current = self.calculateCurrent( self.voltage, self.resistance );
     };
     this.voltageProperty.link( updateCurrent );
     this.resistanceProperty.link( updateCurrent );
