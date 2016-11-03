@@ -39,7 +39,7 @@ define( function( require ) {
 
   /**
    * @param {OhmsLawModel} model
-   * @param {object} options
+   * @param {Object} options
    * @constructor
    */
   function SlidersBox( model, options ) {
