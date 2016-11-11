@@ -102,7 +102,7 @@ define( function( require ) {
       }
       if ( this.isVisible() ) {
         batteryTextValue.text = Util.toFixed( voltage, 1 );
-        mainBody.setRect( 0, 0, mainBodyWidth * voltageToScale( voltage ), height, 0, 0 );
+        mainBody.setRect( 0, 0, mainBodyWidth * voltageToScale( voltage ), height );
         copperPortion.x = mainBody.right;
         nub.x = mainBody.right;
       }
