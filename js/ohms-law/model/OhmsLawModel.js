@@ -19,15 +19,18 @@ define( function( require ) {
   var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
   var removeBatteryAudio = require( 'audio!OHMS_LAW/remove-battery' );
 
+  var INITIAL_VOLTAGE = 4.5;
+  var INITIAL_RESISTANCE = 500;
+
   /**
    * @constructor
    */
   function OhmsLawModel() {
 
     PropertySet.call( this, {
-      voltage: 4.5,
-      resistance: 500,
-      current: 0,
+      voltage: INITIAL_VOLTAGE,
+      resistance: INITIAL_RESISTANCE,
+      current: this.calculateCurrent( INITIAL_VOLTAGE, INITIAL_RESISTANCE ),
       soundActive: true
     } );
 
