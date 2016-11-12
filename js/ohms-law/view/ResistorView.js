@@ -27,7 +27,7 @@ define( function( require ) {
    */
   function ResistorView( model, x, y, w, h ) {
 
-    Node.call( this, { centerX: (x + w / 2), centerY: (y + h) } );
+    Node.call( this );
 
     var wBox = 260;
     var hBox = 66;

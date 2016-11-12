@@ -54,7 +54,7 @@ define( function( require ) {
     var mainBody;
     var copperPortion;
     var nub;
-    var batteryText = new Node( { centerY: -7, x: 3 } );
+    var batteryText = new Node( { x: 3 } );
     var batteryTextValue = new Text( '1.5', { font: FONT } );
 
     battery.addChild( mainBody = new Rectangle( 0, 0, mainBodyWidth, height, {
