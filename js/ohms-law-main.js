@@ -15,7 +15,6 @@ define( function( require ) {
   var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
   var OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
   var Property = require( 'AXON/Property' );
-  var Color = require( 'SCENERY/util/Color' );
 
   // strings
   var ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
@@ -35,7 +34,7 @@ define( function( require ) {
       new Screen(
         function() { return new OhmsLawModel(); },
         function( model ) { return new OhmsLawScreenView( model ); },
-        { backgroundColorProperty: new Property( Color.toColor( '#ffffdf' ) ) }
+        { backgroundColorProperty: new Property( '#ffffdf' ) }
       )
     ], simOptions ).start();
   } );
