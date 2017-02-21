@@ -1,15 +1,15 @@
 Ohm's Law
 =============
-"Ohm's Law" is an educational simulation in HTML5, by <a href="http://phet.colorado.edu/" target="_blank">PhET Interactive Simulations</a>
+"Ohm's Law" is an educational simulation in HTML5, by <a href="https://phet.colorado.edu/" target="_blank">PhET Interactive Simulations</a>
 at the University of Colorado Boulder.
 For a description of this simulation, associated resources, and a link to the published version,
-<a href="http://phet.colorado.edu/en/simulation/ohms-law" target="_blank">visit the simulation's web page</a>.
+<a href="https://phet.colorado.edu/en/simulation/ohms-law" target="_blank">visit the simulation's web page</a>.
 
 ### Try it!
 
-<a href="http://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_en.html" target="_blank">Click here to run "Ohm's Law".</a>
+<a href="https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_en.html" target="_blank">Click here to run "Ohm's Law".</a>
 
-<a href="http://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_en.html" target="_blank">
+<a href="https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_en.html" target="_blank">
 <img src="https://raw.githubusercontent.com/phetsims/ohms-law/master/assets/ohms-law-screenshot.png" alt="Screenshot" style="width: 400px;"/>
 </a>
 
@@ -32,6 +32,7 @@ git clone https://github.com/phetsims/kite.git
 git clone https://github.com/phetsims/ohms-law.git
 git clone https://github.com/phetsims/phet-core.git
 git clone https://github.com/phetsims/phetcommon.git
+git clone https://github.com/phetsims/query-string-machine.git
 git clone https://github.com/phetsims/scenery.git
 git clone https://github.com/phetsims/scenery-phet.git
 git clone https://github.com/phetsims/sherpa.git
