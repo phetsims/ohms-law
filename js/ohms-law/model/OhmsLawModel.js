@@ -81,13 +81,22 @@ define( function( require ) {
     // @public
     step: function() { },
 
-    // @public
+    /**
+     * resets the properties of the model
+     * @public
+     */
     reset: function() {
       PropertySet.prototype.reset.call( this );
       this.current = this.calculateCurrent( this.voltage, this.resistance );
     },
 
-    // @private
+    /**
+     *
+     * @param {number} voltage
+     * @param {number} resistance
+     * @returns {number}
+     * @private
+     */
     calculateCurrent: function( voltage, resistance ) {
       return Math.round( voltage / resistance * 1000 * 10 ) / 10;
     }

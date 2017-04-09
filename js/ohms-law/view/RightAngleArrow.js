@@ -20,9 +20,9 @@ define( function( require ) {
 
   /**
    * @param {OhmsLawModel} model
-   * @param x
-   * @param y
-   * @param rotation
+   * @param {number} x
+   * @param {number} y
+   * @param {number} rotation - in degrees
    * @constructor
    */
   function RightAngleArrow( model, x, y, rotation ) {

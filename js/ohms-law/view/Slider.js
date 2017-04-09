@@ -21,12 +21,12 @@ define( function( require ) {
   var KNOB_WIDTH = 32;  // Empirically determined.
 
   /**
-   * @param x
-   * @param y
-   * @param h
-   * @param targetProperty
-   * @param img
-   * @param value
+   * @param {number} x
+   * @param {number} y
+   * @param {number} h
+   * @param {Property.<number>} targetProperty
+   * @param {HTMLImageElement} image
+   * @param {number} value
    * @constructor
    */
   function Slider( x, y, h, targetProperty, img, value ) {

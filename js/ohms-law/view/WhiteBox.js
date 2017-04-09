@@ -15,10 +15,10 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   /**
-   * @param x
-   * @param y
-   * @param w
-   * @param h
+   * @param {number} x
+   * @param {number} y
+   * @param {number} w
+   * @param {number} h
    * @constructor
    */
   function WhiteBox( x, y, w, h ) {

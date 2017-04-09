@@ -28,8 +28,8 @@ define( function( require ) {
 
   /**
    * @param {OhmsLawModel} model
-   * @param width
-   * @param height
+   * @param {number} width
+   * @param {number} height
    * @constructor
    */
   function CurrentValueBox( model, width, height ) {

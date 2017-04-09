@@ -26,9 +26,9 @@ define( function( require ) {
   var FONT = new PhetFont( { size: 20, weight: 'bold' } );
 
   /**
-   * @param x
-   * @param y
-   * @param totWidth
+   * @param {number} x
+   * @param {number} y
+   * @param {number} totWidth
    * @constructor
    */
   function BatteryView( x, y, totWidth ) {
