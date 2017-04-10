@@ -27,12 +27,12 @@ define( function( require ) {
   var SPACING = new Text( '-', { font: FONT } ).width;
 
   /**
-   * @param {OhmsLawModel} model
+   * @param {Property.<number>} currentProperty
    * @param {number} width
    * @param {number} height
    * @constructor
    */
-  function CurrentValueBox( model, width, height ) {
+  function CurrentValueBox( currentProperty, width, height ) {
 
     Node.call( this );
 
@@ -62,7 +62,7 @@ define( function( require ) {
     textContainer.centerY = height / 2;
     box.addChild( textContainer );
 
-    model.currentProperty.link( function setCurrentText( val ) {
+    currentProperty.link( function setCurrentText( val ) {
       var rightEdgePos = currentValue.right;
       currentValue.text = Util.toFixed( val, 1 );
       currentValue.right = rightEdgePos;

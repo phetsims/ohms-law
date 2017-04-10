@@ -34,12 +34,15 @@ define( function( require ) {
     var x = 70;
     var y = 380;
 
-    this.addChild( new RightAngleArrow( model, x - 10, y + HEIGHT + 10, 90 ) );
-    this.addChild( new RightAngleArrow( model, x + WIDTH + 10, y + HEIGHT + 10, 0 ) );
+    this.addChild( new RightAngleArrow( model.currentProperty, x - 10, y + HEIGHT + 10, 90 ) );
+    this.addChild( new RightAngleArrow( model.currentProperty, x + WIDTH + 10, y + HEIGHT + 10, 0 ) );
     this.addChild( new Rectangle( x, y, WIDTH, HEIGHT, 4, 4, { stroke: '#000', lineWidth: 10 } ) );
-    this.addChild( new CurrentValueBox( model, WIDTH * 0.7, HEIGHT * 0.3 ).mutate( { centerX: x + WIDTH / 2, centerY: y + HEIGHT / 2 } ) );
-    this.addChild( new BatteriesView( model, x + 30, y ) );
-    this.addChild( new ResistorView( model, x, y, WIDTH, HEIGHT ) );
+    this.addChild( new CurrentValueBox( model.currentProperty, WIDTH * 0.7, HEIGHT * 0.3 ).mutate( {
+      centerX: x + WIDTH / 2,
+      centerY: y + HEIGHT / 2
+    } ) );
+    this.addChild( new BatteriesView( model.voltageProperty, x + 30, y ) );
+    this.addChild( new ResistorView( model.resistanceProperty, x, y, WIDTH, HEIGHT ) );
   }
 
   ohmsLaw.register( 'WireBox', WireBox );

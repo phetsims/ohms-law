@@ -18,14 +18,14 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   /**
-   * @param {OhmsLawModel} model
+   * @param {Property.<number>} resistanceProperty
    * @param {number} x
    * @param {number} y
    * @param {number} w
    * @param {number} h
    * @constructor
    */
-  function ResistorView( model, x, y, w, h ) {
+  function ResistorView( resistanceProperty, x, y, w, h ) {
 
     Node.call( this );
 
@@ -103,7 +103,7 @@ define( function( require ) {
 
     this.addChild( dotGroup );
 
-    model.resistanceProperty.link( function updateResistor( val ) {
+    resistanceProperty.link( function updateResistor( val ) {
       var borderNumber = maxPoints * (val + 50) / 1000;
       for ( var i = 0; i < maxPoints; i++ ) {
         points[ i ].setVisible( i < borderNumber );

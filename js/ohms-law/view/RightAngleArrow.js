@@ -19,13 +19,13 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   /**
-   * @param {OhmsLawModel} model
+   * @param {Property.<number>} currentProperty
    * @param {number} x
    * @param {number} y
    * @param {number} rotation - in degrees
    * @constructor
    */
-  function RightAngleArrow( model, x, y, rotation ) {
+  function RightAngleArrow( currentProperty, x, y, rotation ) {
     Node.call( this, { x: x, y: y, rotation: (rotation / 180 * Math.PI) } );
 
     var arrow = new Node();
@@ -52,7 +52,7 @@ define( function( require ) {
       lineWidth: 0.2
     } ) );
     this.addChild( arrow );
-    model.currentProperty.link( function( current ) {
+    currentProperty.link( function( current ) {
       // Scale the arrows based on the value of the current.
       // Exponential scaling algorithm.  Linear makes the changes too big.
       var scale = Math.pow( ( current * 0.1 ), 0.7 );

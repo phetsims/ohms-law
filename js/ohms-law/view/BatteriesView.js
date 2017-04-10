@@ -15,12 +15,12 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   /**
-   * @param {OhmsLawModel} model
+   * @param {Property.<number>} voltageProperty
    * @param {number} x
    * @param {number} y
    * @constructor
    */
-  function BatteriesView( model, x, y ) {
+  function BatteriesView( voltageProperty, x, y ) {
     Node.call( this, { x: x, y: y } );
 
     //max number of batteries
@@ -38,7 +38,7 @@ define( function( require ) {
       this.addChild( bats[ i ] );
     }
 
-    model.voltageProperty.link( function setVoltage( voltage ) {
+    voltageProperty.link( function setVoltage( voltage ) {
       var val = voltage;
       for ( var i = 0, l = bats.length; i < l; i++ ) {
         var diff = Math.min( 1.5, val );
