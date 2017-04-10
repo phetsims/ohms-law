@@ -75,7 +75,7 @@ define( function( require ) {
       top: yCoords[ 1 ],
       maxWidth: maxLabelWidth
     } ) );
-    this.addChild( textVoltage = new Text( Util.toFixed( model.voltage, 1 ), {
+    this.addChild( textVoltage = new Text( Util.toFixed( model.voltageProperty.value, 1 ), {
       font: new PhetFont( 30 ),
       textAlign: 'end',
       textAnchor: 'end',
@@ -110,7 +110,7 @@ define( function( require ) {
       top: yCoords[ 1 ],
       maxWidth: maxLabelWidth
     } ) );
-    this.addChild( textResistance = new Text( Util.toFixed( model.resistance, 0 ), {
+    this.addChild( textResistance = new Text( Util.toFixed( model.resistanceProperty.value, 0 ), {
       font: new PhetFont( 30 ),
       textAlign: 'end',
       textAnchor: 'end',

@@ -29,13 +29,13 @@ define( function( require ) {
    * @param {number} value
    * @constructor
    */
-  function Slider( x, y, h, targetProperty, img, value ) {
+  function Slider( x, y, h, targetProperty, image, value ) {
 
     var self = this;
     Node.call( this, { x: x, y: y } );
     this.addChild( new Rectangle( -3, 0, 6, h, { fill: 'black' } ) );
 
-    var knob = new Image( img, { cursor: 'pointer' } );
+    var knob = new Image( image, { cursor: 'pointer' } );
     knob.scale( KNOB_WIDTH / knob.width );
     knob.mutate( { centerX: 0, top: 0 } );
     knob.touchArea = knob.localBounds.dilateXY( 60, 40 ); // Expand touch area for easier use on tablets.

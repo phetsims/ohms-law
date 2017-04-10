@@ -9,7 +9,8 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var PropertySet = require( 'AXON/PropertySet' );
+  var BooleanProperty = require( 'AXON/BooleanProperty' );
+  var NumberProperty = require( 'AXON/NumberProperty' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Sound = require( 'VIBE/Sound' );
   var Util = require( 'DOT/Util' );
@@ -19,31 +20,30 @@ define( function( require ) {
   var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
   var removeBatteryAudio = require( 'audio!OHMS_LAW/remove-battery' );
 
-  var INITIAL_VOLTAGE = 4.5;
-  var INITIAL_RESISTANCE = 500;
+  var INITIAL_VOLTAGE = 4.5;  // in Volts
+  var INITIAL_RESISTANCE = 500; // in Ohms
 
   /**
    * @constructor
    */
   function OhmsLawModel() {
 
-    PropertySet.call( this, {
-      voltage: INITIAL_VOLTAGE,
-      resistance: INITIAL_RESISTANCE,
-      current: this.calculateCurrent( INITIAL_VOLTAGE, INITIAL_RESISTANCE ),
-      soundActive: true
-    } );
-
     var self = this;
+
+    this.voltageProperty = new NumberProperty( INITIAL_VOLTAGE );
+    this.resistanceProperty = new NumberProperty( INITIAL_RESISTANCE );
+    this.soundActiveProperty = new BooleanProperty( true );
+    // TODO: a derivedProperty would seem more appropriate
+    this.currentProperty = new NumberProperty( this.calculateCurrent( INITIAL_VOLTAGE, INITIAL_RESISTANCE ) );
 
     // Hook up the sounds that are played when batteries are added or removed.
     var addBatterySound = new Sound( addBatteryAudio );
     var removeBatterySound = new Sound( removeBatteryAudio );
-    var oldVal = Math.floor( self.voltage / 1.5 );
+    var oldVal = Math.floor( this.voltageProperty.value / 1.5 );
 
-    self.voltageProperty.link( function( voltage ) {
+    this.voltageProperty.link( function( voltage ) {
       var newVal = Math.floor( ( voltage ) / 1.5 );
-      if ( self.soundActive ) {
+      if ( self.soundActiveProperty.value ) {
         if ( newVal > oldVal ) {
           addBatterySound.play();
         }
@@ -55,7 +55,7 @@ define( function( require ) {
     } );
 
     var updateCurrent = function() {
-      self.current = self.calculateCurrent( self.voltage, self.resistance );
+      self.currentProperty.value = self.calculateCurrent( self.voltageProperty.value, self.resistanceProperty.value );
     };
     this.voltageProperty.link( updateCurrent );
     this.resistanceProperty.link( updateCurrent );
@@ -76,7 +76,7 @@ define( function( require ) {
 
   ohmsLaw.register( 'OhmsLawModel', OhmsLawModel );
 
-  inherit( PropertySet, OhmsLawModel, {
+  inherit( Object, OhmsLawModel, {
 
     // @public
     step: function() { },
@@ -86,12 +86,14 @@ define( function( require ) {
      * @public
      */
     reset: function() {
-      PropertySet.prototype.reset.call( this );
-      this.current = this.calculateCurrent( this.voltage, this.resistance );
+      this.voltageProperty.reset();
+      this.resistanceProperty.reset();
+      this.soundActiveProperty.reset();
+      this.currentProperty.reset();
     },
 
     /**
-     *
+     * calculate the current in milli amps
      * @param {number} voltage
      * @param {number} resistance
      * @returns {number}
