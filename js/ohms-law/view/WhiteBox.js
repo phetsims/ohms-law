@@ -17,13 +17,13 @@ define( function( require ) {
   /**
    * @param {number} x
    * @param {number} y
-   * @param {number} w
-   * @param {number} h
+   * @param {number} width
+   * @param {number} height
    * @constructor
    */
-  function WhiteBox( x, y, w, h ) {
+  function WhiteBox( x, y, width, height ) {
     Node.call( this );
-    this.addChild( new Rectangle( x, y, w, h, 12, 12, { fill: '#FFF', stroke: '#000', lineWidth: 3 } ) );
+    this.addChild( new Rectangle( x, y, width, height, 12, 12, { fill: '#FFF', stroke: '#000', lineWidth: 3 } ) );
   }
 
   ohmsLaw.register( 'WhiteBox', WhiteBox );

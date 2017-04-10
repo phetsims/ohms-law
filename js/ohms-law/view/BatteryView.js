@@ -9,15 +9,15 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var Text = require( 'SCENERY/nodes/Text' );
   var LinearGradient = require( 'SCENERY/util/LinearGradient' );
   var LinearFunction = require( 'DOT/LinearFunction' );
-  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
-  var Util = require( 'DOT/Util' );
+  var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  var Text = require( 'SCENERY/nodes/Text' );
+  var Util = require( 'DOT/Util' );
 
   // strings
   var voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );

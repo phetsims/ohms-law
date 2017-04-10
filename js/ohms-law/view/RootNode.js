@@ -9,12 +9,12 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
-  var SlidersBox = require( 'OHMS_LAW/ohms-law/view/SlidersBox' );
   var FormulaView = require( 'OHMS_LAW/ohms-law/view/FormulaView' );
+  var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var SlidersBox = require( 'OHMS_LAW/ohms-law/view/SlidersBox' );
+  var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
 
   /**
    * @param {OhmsLawModel} model
