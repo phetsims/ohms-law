@@ -12,6 +12,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var Matrix3 = require( 'DOT/Matrix3' );
   var Node = require( 'SCENERY/nodes/Node' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
@@ -39,7 +40,7 @@ define( function( require ) {
         scaleB: 2,
         x: 150,
         targetProperty: model.voltageProperty,
-        color: '#0f0ffb',
+        color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 180
       },
       {
@@ -57,7 +58,7 @@ define( function( require ) {
         scaleB: 2,
         x: 560,
         targetProperty: model.resistanceProperty,
-        color: '#0f0ffb',
+        color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 175
       }
     ];

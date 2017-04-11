@@ -14,6 +14,7 @@ define( function( require ) {
   var LinearFunction = require( 'DOT/LinearFunction' );
   var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var Text = require( 'SCENERY/nodes/Text' );
@@ -37,7 +38,7 @@ define( function( require ) {
 
     var nubWidth = 4;
     totWidth -= nubWidth;
-    var voltageToScale = new LinearFunction( 0.1, 1.5, 0.0001, 1, true );
+    var voltageToScale = new LinearFunction( 0.1, OhmsLawConstants.AA_VOLTAGE, 0.0001, 1, true );
     var mainBodyWidth = totWidth * 72 / 78;
     var copperPortionWidth = totWidth * 6 / 78;
     var height = 40;
@@ -55,7 +56,7 @@ define( function( require ) {
     var copperPortion;
     var nub;
     var batteryText = new Node( { x: 3 } );
-    var batteryTextValue = new Text( '1.5', { font: FONT } );
+    var batteryTextValue = new Text( OhmsLawConstants.AA_VOLTAGE, { font: FONT } );
 
     battery.addChild( mainBody = new Rectangle( 0, 0, mainBodyWidth, height, {
       stroke: '#000',
@@ -89,7 +90,7 @@ define( function( require ) {
     } ) );
 
     this.setVoltage = function( voltage ) {
-      if ( voltage >= 1.5 ) {
+      if ( voltage >= OhmsLawConstants.AA_VOLTAGE ) {
         this.setVisible( true );
         batteryText.centerY = -7;
       }

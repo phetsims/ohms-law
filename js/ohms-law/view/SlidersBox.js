@@ -1,7 +1,7 @@
 // Copyright 2016, University of Colorado Boulder
 
 /**
- * Container for sliders and circumjacent text
+ * Container for sliders and adjacent text
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
@@ -11,6 +11,7 @@ define( function( require ) {
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Slider = require( 'OHMS_LAW/ohms-law/view/Slider' );
   var Text = require( 'SCENERY/nodes/Text' );
@@ -29,11 +30,7 @@ define( function( require ) {
   var resistanceString = require( 'string!OHMS_LAW/resistance' );
   var resistanceUnitsString = require( 'string!OHMS_LAW/resistanceUnits' );
 
-  // constants
-  var VOLTAGE_MAX = 9;
-  var VOLTAGE_MIN = 0.1;
-  var RESISTANCE_MAX = 1000;
-  var RESISTANCE_MIN = 10;
+
   var PANEL_WIDTH = 270;
   var PANEL_HEIGHT = 400;
 
@@ -132,14 +129,8 @@ define( function( require ) {
     // make all of the text and background unpickable in order to speed up mouse/touch hit computation
     _.each( this.children, function( child ) { child.pickable = false; } );
 
-    this.addChild( new Slider( xCoords[ 0 ], 90, 240, model.voltageProperty, sliderImage, {
-      min: VOLTAGE_MIN,
-      max: VOLTAGE_MAX
-    } ) );
-    this.addChild( new Slider( xCoords[ 1 ], 90, 240, model.resistanceProperty, sliderImage, {
-      min: RESISTANCE_MIN,
-      max: RESISTANCE_MAX
-    } ) );
+    this.addChild( new Slider( xCoords[ 0 ], 90, 240, model.voltageProperty, sliderImage, OhmsLawConstants.VOLTAGE_RANGE ) );
+    this.addChild( new Slider( xCoords[ 1 ], 90, 240, model.resistanceProperty, sliderImage, OhmsLawConstants.RESISTANCE_RANGE ) );
 
     model.voltageProperty.link( function updateTextVoltage( value ) {
       textVoltage.text = Util.toFixed( value, 1 );

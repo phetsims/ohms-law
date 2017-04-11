@@ -12,6 +12,7 @@ define( function( require ) {
   var BatteryView = require( 'OHMS_LAW/ohms-law/view/BatteryView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   /**
@@ -24,7 +25,7 @@ define( function( require ) {
     Node.call( this, { x: x, y: y } );
 
     //max number of batteries
-    var maxQ = 9 / 1.5;
+    var maxQ = 9 / OhmsLawConstants.AA_VOLTAGE;
 
     //1 battery width
     var batWidth = 82;
@@ -41,7 +42,7 @@ define( function( require ) {
     voltageProperty.link( function setVoltage( voltage ) {
       var val = voltage;
       for ( var i = 0, l = bats.length; i < l; i++ ) {
-        var diff = Math.min( 1.5, val );
+        var diff = Math.min( OhmsLawConstants.AA_VOLTAGE, val );
         bats[ i ].setVoltage( diff );
         val -= diff;
       }

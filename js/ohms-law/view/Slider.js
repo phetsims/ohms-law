@@ -26,10 +26,10 @@ define( function( require ) {
    * @param {number} h
    * @param {Property.<number>} targetProperty
    * @param {HTMLImageElement} image
-   * @param {number} value
+   * @param {RangeWithValue} range
    * @constructor
    */
-  function Slider( x, y, h, targetProperty, image, value ) {
+  function Slider( x, y, h, targetProperty, image, range ) {
 
     var self = this;
     Node.call( this, { x: x, y: y } );
@@ -44,8 +44,8 @@ define( function( require ) {
     var yMin = 0;
     var yMax = h - knob.height;
 
-    var valueToPosition = new LinearFunction( value.min, value.max, yMax, yMin, true );
-    var positionToValue = new LinearFunction( yMax, yMin, value.min, value.max, true );
+    var valueToPosition = new LinearFunction( range.min, range.max, yMax, yMin, true );
+    var positionToValue = new LinearFunction( yMax, yMin, range.min, range.max, true );
     this.addChild( knob );
     knob.addInputListener( new SimpleDragHandler(
       {

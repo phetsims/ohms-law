@@ -13,6 +13,7 @@ define( function( require ) {
   var DerivedProperty = require( 'AXON/DerivedProperty' );
   var inherit = require( 'PHET_CORE/inherit' );
   var NumberProperty = require( 'AXON/NumberProperty' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var Sound = require( 'VIBE/Sound' );
   var Util = require( 'DOT/Util' );
@@ -21,9 +22,6 @@ define( function( require ) {
   var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
   var removeBatteryAudio = require( 'audio!OHMS_LAW/remove-battery' );
 
-  var INITIAL_VOLTAGE = 4.5;  // in Volts
-  var INITIAL_RESISTANCE = 500; // in Ohms
-
   /**
    * @constructor
    */
@@ -31,16 +29,16 @@ define( function( require ) {
 
     var self = this;
 
-    // @public {Property.<number>}
-    this.voltageProperty = new NumberProperty( INITIAL_VOLTAGE );
+    // @public {Property.<number>} in volts
+    this.voltageProperty = new NumberProperty( OhmsLawConstants.VOLTAGE_RANGE.getDefaultValue() );
 
-    // @public {Property.<number>}
-    this.resistanceProperty = new NumberProperty( INITIAL_RESISTANCE );
+    // @public {Property.<number>} in Ohms
+    this.resistanceProperty = new NumberProperty( OhmsLawConstants.RESISTANCE_RANGE.getDefaultValue() );
 
     // @public {Property.<boolean>}
     this.soundActiveProperty = new BooleanProperty( true );
 
-    // @public {Property.<number>} create a derived property that tracks the current
+    // @public {Property.<number>} create a derived property that tracks the current in milli amps
     this.currentProperty = new DerivedProperty( [ this.voltageProperty, this.resistanceProperty ],
       function( voltage, resistance ) {
         return Util.roundSymmetric( voltage / resistance * 1000 * 10 ) / 10;
@@ -49,10 +47,10 @@ define( function( require ) {
     // Hook up the sounds that are played when batteries are added or removed.
     var addBatterySound = new Sound( addBatteryAudio );
     var removeBatterySound = new Sound( removeBatteryAudio );
-    var oldVal = Math.floor( this.voltageProperty.value / 1.5 );
+    var oldVal = Math.floor( this.voltageProperty.value / OhmsLawConstants.AA_VOLTAGE );
 
     this.voltageProperty.link( function( voltage ) {
-      var newVal = Math.floor( ( voltage ) / 1.5 );
+      var newVal = Math.floor( ( voltage ) / OhmsLawConstants.AA_VOLTAGE );
       if ( self.soundActiveProperty.value ) {
         if ( newVal > oldVal ) {
           addBatterySound.play();
