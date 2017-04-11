@@ -10,11 +10,12 @@ define( function( require ) {
 
   // modules
   var BooleanProperty = require( 'AXON/BooleanProperty' );
-  var NumberProperty = require( 'AXON/NumberProperty' );
+  var DerivedProperty = require( 'AXON/DerivedProperty' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var NumberProperty = require( 'AXON/NumberProperty' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var Sound = require( 'VIBE/Sound' );
   var Util = require( 'DOT/Util' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // audio
   var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
@@ -30,11 +31,20 @@ define( function( require ) {
 
     var self = this;
 
+    // @public {Property.<number>}
     this.voltageProperty = new NumberProperty( INITIAL_VOLTAGE );
+
+    // @public {Property.<number>}
     this.resistanceProperty = new NumberProperty( INITIAL_RESISTANCE );
+
+    // @public {Property.<boolean>}
     this.soundActiveProperty = new BooleanProperty( true );
-    // TODO: a derivedProperty would seem more appropriate
-    this.currentProperty = new NumberProperty( this.calculateCurrent( INITIAL_VOLTAGE, INITIAL_RESISTANCE ) );
+
+    // @public {Property.<number>} create a derived property that tracks the current
+    this.currentProperty = new DerivedProperty( [ this.voltageProperty, this.resistanceProperty ],
+      function( voltage, resistance ) {
+        return Util.roundSymmetric( voltage / resistance * 1000 * 10 ) / 10;
+      } );
 
     // Hook up the sounds that are played when batteries are added or removed.
     var addBatterySound = new Sound( addBatteryAudio );
@@ -54,12 +64,6 @@ define( function( require ) {
       oldVal = newVal;
     } );
 
-    var updateCurrent = function() {
-      self.currentProperty.value = self.calculateCurrent( self.voltageProperty.value, self.resistanceProperty.value );
-    };
-    this.voltageProperty.link( updateCurrent );
-    this.resistanceProperty.link( updateCurrent );
-
     //@override voltage.set (accuracy 0.1)
     var oldVS = this.voltageProperty.set.bind( this.voltageProperty );
     this.voltageProperty.set = function( val ) {
@@ -71,15 +75,11 @@ define( function( require ) {
     this.resistanceProperty.set = function( val ) {
       oldRS( Util.roundSymmetric( val ) );
     };
-    this.reset();
   }
 
   ohmsLaw.register( 'OhmsLawModel', OhmsLawModel );
 
-  inherit( Object, OhmsLawModel, {
-
-    // @public
-    step: function() { },
+  return inherit( Object, OhmsLawModel, {
 
     /**
      * resets the properties of the model
@@ -89,19 +89,6 @@ define( function( require ) {
       this.voltageProperty.reset();
       this.resistanceProperty.reset();
       this.soundActiveProperty.reset();
-      this.currentProperty.reset();
-    },
-
-    /**
-     * calculate the current in milli amps
-     * @param {number} voltage
-     * @param {number} resistance
-     * @returns {number}
-     * @private
-     */
-    calculateCurrent: function( voltage, resistance ) {
-      return Math.round( voltage / resistance * 1000 * 10 ) / 10;
     }
   } );
-  return OhmsLawModel;
 } );
