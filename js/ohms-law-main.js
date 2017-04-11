@@ -11,10 +11,7 @@ define( function( require ) {
   // modules
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Sim = require( 'JOIST/Sim' );
-  var Screen = require( 'JOIST/Screen' );
-  var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
-  var OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
-  var Property = require( 'AXON/Property' );
+  var OhmsLawScreen = require( 'OHMS_LAW/ohms-law/OhmsLawScreen' );
 
   // strings
   var ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
@@ -30,12 +27,8 @@ define( function( require ) {
 
   SimLauncher.launch( function() {
     //Create and start the sim
-    new Sim( ohmsLawTitleString, [
-      new Screen(
-        function() { return new OhmsLawModel(); },
-        function( model ) { return new OhmsLawScreenView( model ); },
-        { backgroundColorProperty: new Property( '#ffffdf' ) }
-      )
-    ], simOptions ).start();
+    var sim = new Sim( ohmsLawTitleString, [ new OhmsLawScreen ], simOptions );
+    sim.start();
   } );
+
 } );
