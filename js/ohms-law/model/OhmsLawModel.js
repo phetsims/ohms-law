@@ -47,19 +47,19 @@ define( function( require ) {
     // Hook up the sounds that are played when batteries are added or removed.
     var addBatterySound = new Sound( addBatteryAudio );
     var removeBatterySound = new Sound( removeBatteryAudio );
-    var oldVal = Math.floor( this.voltageProperty.value / OhmsLawConstants.AA_VOLTAGE );
 
-    this.voltageProperty.link( function( voltage ) {
-      var newVal = Math.floor( ( voltage ) / OhmsLawConstants.AA_VOLTAGE );
+    // play sounds when adding or removing a battery
+    this.voltageProperty.lazyLink( function( voltage, oldVoltage ) {
+      var newNumberBatteries = Math.floor( voltage / OhmsLawConstants.AA_VOLTAGE );
+      var oldNumberBatteries = Math.floor( oldVoltage / OhmsLawConstants.AA_VOLTAGE );
       if ( self.soundActiveProperty.value ) {
-        if ( newVal > oldVal ) {
+        if ( newNumberBatteries > oldNumberBatteries ) {
           addBatterySound.play();
         }
-        else if ( newVal < oldVal ) {
+        else if ( newNumberBatteries < oldNumberBatteries ) {
           removeBatterySound.play();
         }
       }
-      oldVal = newVal;
     } );
 
     //@override voltage.set (accuracy 0.1)
