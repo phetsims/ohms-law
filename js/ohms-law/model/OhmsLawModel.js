@@ -62,6 +62,8 @@ define( function( require ) {
       }
     } );
 
+    // TODO: one can let the view do the rounding for display purposes
+    // or the voltage slider can snap to 0.1 values.
     //@override voltage.set (accuracy 0.1)
     var oldVS = this.voltageProperty.set.bind( this.voltageProperty );
     this.voltageProperty.set = function( val ) {
