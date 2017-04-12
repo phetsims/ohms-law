@@ -41,7 +41,7 @@ define( function( require ) {
     // @public {Property.<number>} create a derived property that tracks the current in milli amps
     this.currentProperty = new DerivedProperty( [ this.voltageProperty, this.resistanceProperty ],
       function( voltage, resistance ) {
-        return Util.roundSymmetric( voltage / resistance * 1000 * 10 ) / 10;
+        return 1000 * voltage / resistance;
       } );
 
     // Hook up the sounds that are played when batteries are added or removed.
@@ -61,20 +61,6 @@ define( function( require ) {
         }
       }
     } );
-
-    // TODO: one can let the view do the rounding for display purposes
-    // or the voltage slider can snap to 0.1 values.
-    //@override voltage.set (accuracy 0.1)
-    var oldVS = this.voltageProperty.set.bind( this.voltageProperty );
-    this.voltageProperty.set = function( val ) {
-      oldVS( Util.roundSymmetric( val * 10 ) / 10 );
-    };
-
-    //@override resistance.set (accuracy 0)
-    var oldRS = this.resistanceProperty.set.bind( this.resistanceProperty );
-    this.resistanceProperty.set = function( val ) {
-      oldRS( Util.roundSymmetric( val ) );
-    };
   }
 
   ohmsLaw.register( 'OhmsLawModel', OhmsLawModel );
