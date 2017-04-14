@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.3.6 Thu Apr 13 2017 17:48:06 GMT-0600 (MDT)",
+  "comment": "# ohms-law 1.3.6 Thu Apr 13 2017 21:23:12 GMT-0600 (MDT)",
   "assert": {
     "sha": "7d27130a4d27da15aa7f8a21bbfb9245288c1b44",
     "branch": "HEAD"
@@ -22,14 +22,14 @@
   },
   "joist": {
     "sha": "5b412238d13cc9fba88c0f9609c70a1cb8dacea4",
-    "branch": "ohms-law-1.3"
+    "branch": "HEAD"
   },
   "kite": {
     "sha": "10ca8bf2b2712307ff528352de8451c0c8afe093",
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "60e7e1235afc78bdbe146138569cbe286c42694d",
+    "sha": "6a9673489a7f7b30fad14bd924016e1efe048c7c",
     "branch": "1.3"
   },
   "phet-core": {
@@ -37,8 +37,8 @@
     "branch": "HEAD"
   },
   "phetcommon": {
-    "sha": "06380ca0f355fa1d013952776f2c0bc969addb39",
-    "branch": "HEAD"
+    "sha": "ef01d0a7b26508285e60e8dd8eb365a0269c0121",
+    "branch": "ohms-law-1.3"
   },
   "scenery": {
     "sha": "2c13f9101befca596de2571fd6ced8d8ff05e9e1",
