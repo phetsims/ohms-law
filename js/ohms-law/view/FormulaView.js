@@ -39,7 +39,7 @@ define( function( require ) {
         scaleA: 4.5,
         scaleB: 2,
         x: 150,
-        targetProperty: model.voltageProperty,
+        property: model.voltageProperty,
         color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 180
       },
@@ -48,7 +48,7 @@ define( function( require ) {
         scaleA: 0.2,
         scaleB: 0.84,
         x: 380,
-        targetProperty: model.currentProperty,
+        property: model.currentProperty,
         color: PhetColorScheme.RED_COLORBLIND,
         maxInitialWidth: 20
       },
@@ -57,7 +57,7 @@ define( function( require ) {
         scaleA: 0.04,
         scaleB: 2,
         x: 560,
-        targetProperty: model.resistanceProperty,
+        property: model.resistanceProperty,
         color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 175
       }
@@ -88,7 +88,7 @@ define( function( require ) {
       // Make sure that the text isn't initially too large and, if so, change the scaling factors.  This is done in
       // support of translation, in case some symbols are much larger than the V, I, and R symbols used in the English
       // version.
-      var initialWidth = textNode.width * entry.scaleA * entry.targetProperty.value + entry.scaleB;
+      var initialWidth = textNode.width * entry.scaleA * entry.property.value + entry.scaleB;
       if ( initialWidth > entry.maxInitialWidth ){
         var scaleFactor = entry.maxInitialWidth / initialWidth;
         entry.scaleA = entry.scaleA * scaleFactor;
@@ -104,7 +104,7 @@ define( function( require ) {
       self.addChild( entry.view );
 
       // scale the text as the associated value changes
-      entry.targetProperty.link( function updateProperty( val ) {
+      entry.property.link( function updateProperty( val ) {
         // performance TODO: consider not updating the matrix if it hasn't changed (if entry.x, entry.scaleA, and entry.scaleB haven't changed)
         // since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
         entry.view.matrix = Matrix3.translation( entry.x, centerY )
