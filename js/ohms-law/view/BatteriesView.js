@@ -28,22 +28,22 @@ define( function( require ) {
     var maxQ = 9 / OhmsLawConstants.AA_VOLTAGE;
 
     //1 battery width
-    var batWidth = 82;
+    var batteryWidth = 82;
 
     //batteries presentation
-    var bats = new Array( Math.ceil( maxQ ) );
+    var batteries = new Array( Math.ceil( maxQ ) );
 
-    for ( var i = 0, l = bats.length; i < l; i++ ) {
-      var sx = i * batWidth;
-      bats[ i ] = new BatteryView( sx, 0, batWidth );
-      this.addChild( bats[ i ] );
+    for ( var i = 0, l = batteries.length; i < l; i++ ) {
+      var sx = i * batteryWidth;
+      batteries[ i ] = new BatteryView( sx, 0, batteryWidth );
+      this.addChild( batteries[ i ] );
     }
 
     voltageProperty.link( function setVoltage( voltage ) {
       var val = voltage;
-      for ( var i = 0, l = bats.length; i < l; i++ ) {
+      for ( var i = 0, l = batteries.length; i < l; i++ ) {
         var diff = Math.min( OhmsLawConstants.AA_VOLTAGE, val );
-        bats[ i ].setVoltage( diff );
+        batteries[ i ].setVoltage( diff );
         val -= diff;
       }
     } );
