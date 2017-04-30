@@ -14,7 +14,7 @@ define( function( require ) {
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var CurrentValueBox = require( 'OHMS_LAW/ohms-law/view/CurrentValueBox' );
   var BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
-  var ResistorView = require( 'OHMS_LAW/ohms-law/view/ResistorView' );
+  var ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
   var RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
@@ -42,7 +42,11 @@ define( function( require ) {
       centerY: y + HEIGHT / 2
     } ) );
     this.addChild( new BatteriesView( model.voltageProperty, x + 30, y ) );
-    this.addChild( new ResistorView( model.resistanceProperty, x, y, WIDTH, HEIGHT ) );
+
+    var resistorNode = new ResistorNode( model.resistanceProperty );
+    this.addChild( resistorNode );
+    resistorNode.centerX = x + WIDTH / 2;
+    resistorNode.centerY = y + HEIGHT;
   }
 
   ohmsLaw.register( 'WireBox', WireBox );
