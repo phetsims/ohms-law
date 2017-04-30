@@ -35,7 +35,7 @@ define( function( require ) {
 
     var texts = [
       {
-        val: voltageSymbolString,
+        symbolString: voltageSymbolString,
         scaleA: 4.5,
         scaleB: 2,
         x: 150,
@@ -44,7 +44,7 @@ define( function( require ) {
         maxInitialWidth: 180
       },
       {
-        val: currentSymbolString,
+        symbolString: currentSymbolString,
         scaleA: 0.2,
         scaleB: 0.84,
         x: 380,
@@ -53,7 +53,7 @@ define( function( require ) {
         maxInitialWidth: 20
       },
       {
-        val: resistanceSymbolString,
+        symbolString: resistanceSymbolString,
         scaleA: 0.04,
         scaleB: 2,
         x: 560,
@@ -78,7 +78,7 @@ define( function( require ) {
     texts.forEach( function( entry ) {
 
       // centered text node, so we just have to adjust scale dynamically
-      var textNode = new Text( entry.val, {
+      var textNode = new Text( entry.symbolString, {
         font: new PhetFont( { family: 'Times New Roman', size: 20, weight: 'bold' } ),
         fill: entry.color,
         centerX: 0,
@@ -100,15 +100,15 @@ define( function( require ) {
       var antiArtifactRectangle = Rectangle.bounds( textNode.bounds.dilatedX( 1 ), { fill: 'rgba( 0, 0, 0, 0 )' } );
 
       // create the node that contains the text
-      entry.view = new Node( { children: [ antiArtifactRectangle, textNode ] } );
-      self.addChild( entry.view );
+      var letterNode = new Node( { children: [ antiArtifactRectangle, textNode ] } );
+      self.addChild( letterNode );
 
       // scale the text as the associated value changes
-      entry.property.link( function updateProperty( val ) {
+      entry.property.link( function updateProperty( value ) {
         // performance TODO: consider not updating the matrix if it hasn't changed (if entry.x, entry.scaleA, and entry.scaleB haven't changed)
         // since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
-        entry.view.matrix = Matrix3.translation( entry.x, centerY )
-          .timesMatrix( Matrix3.scale( entry.scaleA * val + entry.scaleB ) );
+        letterNode.matrix = Matrix3.translation( entry.x, centerY )
+          .timesMatrix( Matrix3.scale( entry.scaleA * value + entry.scaleB ) );
       } );
     } );
 
