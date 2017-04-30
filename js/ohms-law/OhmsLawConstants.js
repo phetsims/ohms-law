@@ -39,8 +39,12 @@ define( function( require ) {
     SYMBOL_FONT: new PhetFont( { family: 'Times New Roman', size: 60 } ),
     NAME_FONT: new PhetFont( 16 ),
     READOUT_FONT: new PhetFont( 28 ),
-    UNIT_FONT: new PhetFont( 28 )
+    UNIT_FONT: new PhetFont( 28 ),
 
+    // wire circuit
+    WIRE_WIDTH: 550,
+    WIRE_HEIGHT: 180,
+    WIRE_THICKNESS: 4
   };
 
   ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );

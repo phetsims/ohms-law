@@ -11,12 +11,13 @@ define( function( require ) {
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var Panel = require( 'SUN/Panel' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Text = require( 'SCENERY/nodes/Text' );
   var Util = require( 'DOT/Util' );
-  var WhiteBox = require( 'OHMS_LAW/ohms-law/view/WhiteBox' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // strings
   var currentString = require( 'string!OHMS_LAW/current' );
@@ -25,18 +26,13 @@ define( function( require ) {
   // constants
   var FONT = new PhetFont( 34 );
   var SPACING = new Text( '-', { font: FONT } ).width;
+  var MAX_TEXT_WIDTH = 0.63 * OhmsLawConstants.WIRE_WIDTH;
 
   /**
    * @param {Property.<number>} currentProperty
-   * @param {number} width
-   * @param {number} height
    * @constructor
    */
-  function CurrentValueBox( currentProperty, width, height ) {
-
-    Node.call( this );
-
-    var maxTextWidth = 0.9 * width;
+  function ReadoutPanel( currentProperty ) {
 
     // Create the text string.
     var textContainer = new Node();
@@ -51,25 +47,26 @@ define( function( require ) {
     } ) );
 
     // Scale the text if greater than max allowed width.
-    if ( textContainer.width > maxTextWidth ) {
-      textContainer.scale( maxTextWidth / textContainer.width );
+    if ( textContainer.width > MAX_TEXT_WIDTH ) {
+      textContainer.scale( MAX_TEXT_WIDTH / textContainer.width );
     }
 
-    // Create the enclosing box and add the text.
-    var box = new WhiteBox( 0, 0, width, height );
-    this.addChild( box );
-    textContainer.centerX = width / 2;
-    textContainer.centerY = height / 2;
-    box.addChild( textContainer );
+    Panel.call( this, textContainer, {
+      xMargin: 30,
+      yMargin: 15,
+      lineWidth: 3,
+      resize: false
+    } );
 
-    currentProperty.link( function setCurrentText( val ) {
+    // present for the lifetime of the simulation
+    currentProperty.link( function setCurrentText( value ) {
       var rightEdgePos = currentValue.right;
-      currentValue.text = Util.toFixed( val, 1 );
+      currentValue.text = Util.toFixed( value, 1 );
       currentValue.right = rightEdgePos;
     } );
   }
 
-  ohmsLaw.register( 'CurrentValueBox', CurrentValueBox );
+  ohmsLaw.register( 'ReadoutPanel', ReadoutPanel );
 
-  return inherit( Node, CurrentValueBox );
+  return inherit( Panel, ReadoutPanel );
 } );

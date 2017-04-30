@@ -31,7 +31,7 @@ define( function( require ) {
     ScreenView.call( this );
 
     this.addChild( new FormulaView( model ).mutate( { pickable: false } ) );
-    this.addChild( new WireBox( model ).mutate( { pickable: false } ) );
+    this.addChild( new WireBox( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } ) );
 
     // create and add control panel with sliders.
     var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty );

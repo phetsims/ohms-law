@@ -11,22 +11,26 @@ define( function( require ) {
   // modules
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var CurrentValueBox = require( 'OHMS_LAW/ohms-law/view/CurrentValueBox' );
+  var ReadoutPanel = require( 'OHMS_LAW/ohms-law/view/ReadoutPanel' );
   var BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
   var ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
   var RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // constants
-  var WIDTH = 550;
-  var HEIGHT = 180;
+  var WIDTH = OhmsLawConstants.WIRE_WIDTH;
+  var HEIGHT = OhmsLawConstants.WIRE_HEIGHT;
+  var THICKNESS = OhmsLawConstants.WIRE_THICKNESS;
 
   /**
-   * @param {OhmsLawModel} model
+   * @param {Property.<number>} voltageProperty
+   * @param {Property.<number>} resistanceProperty
+   * @param {Property.<number>} currentProperty
    * @constructor
    */
-  function WireBox( model ) {
+  function WireBox( voltageProperty, resistanceProperty, currentProperty ) {
 
     Node.call( this );
 
@@ -34,16 +38,16 @@ define( function( require ) {
     var x = 70;
     var y = 380;
 
-    this.addChild( new RightAngleArrow( model.currentProperty, x - 10, y + HEIGHT + 10, 90 ) );
-    this.addChild( new RightAngleArrow( model.currentProperty, x + WIDTH + 10, y + HEIGHT + 10, 0 ) );
-    this.addChild( new Rectangle( x, y, WIDTH, HEIGHT, 4, 4, { stroke: '#000', lineWidth: 10 } ) );
-    this.addChild( new CurrentValueBox( model.currentProperty, WIDTH * 0.7, HEIGHT * 0.3 ).mutate( {
+    this.addChild( new RightAngleArrow( currentProperty, x - 10, y + HEIGHT + 10, 90 ) );
+    this.addChild( new RightAngleArrow( currentProperty, x + WIDTH + 10, y + HEIGHT + 10, 0 ) );
+    this.addChild( new Rectangle( x, y, WIDTH, HEIGHT, THICKNESS, THICKNESS, { stroke: '#000', lineWidth: 10 } ) );
+    this.addChild( new ReadoutPanel( currentProperty ).mutate( {
       centerX: x + WIDTH / 2,
       centerY: y + HEIGHT / 2
     } ) );
-    this.addChild( new BatteriesView( model.voltageProperty, x + 30, y ) );
+    this.addChild( new BatteriesView( voltageProperty, x + 30, y ) );
 
-    var resistorNode = new ResistorNode( model.resistanceProperty );
+    var resistorNode = new ResistorNode( resistanceProperty );
     this.addChild( resistorNode );
     resistorNode.centerX = x + WIDTH / 2;
     resistorNode.centerY = y + HEIGHT;
