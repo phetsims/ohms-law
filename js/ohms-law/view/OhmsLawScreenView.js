@@ -10,7 +10,7 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var FormulaView = require( 'OHMS_LAW/ohms-law/view/FormulaView' );
+  var FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ScreenView = require( 'JOIST/ScreenView' );
@@ -30,7 +30,7 @@ define( function( require ) {
 
     ScreenView.call( this );
 
-    this.addChild( new FormulaView( model ).mutate( { pickable: false } ) );
+    this.addChild( new FormulaNode( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } ) );
     this.addChild( new WireBox( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } ) );
 
     // create and add control panel with sliders.

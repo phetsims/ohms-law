@@ -25,10 +25,12 @@ define( function( require ) {
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
 
   /**
-   * @param {OhmsLawModel} model
+   * @param {Property.<number>} voltageProperty
+   * @param {Property.<number>} resistanceProperty
+   * @param {Property.<number>} currentProperty
    * @constructor
    */
-  function FormulaView( model ) {
+  function FormulaNode( voltageProperty, resistanceProperty, currentProperty ) {
 
     var self = this;
     Node.call( this );
@@ -39,7 +41,7 @@ define( function( require ) {
         scaleA: 4.5,
         scaleB: 2,
         x: 150,
-        property: model.voltageProperty,
+        property: voltageProperty,
         color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 180
       },
@@ -48,7 +50,7 @@ define( function( require ) {
         scaleA: 0.2,
         scaleB: 0.84,
         x: 380,
-        property: model.currentProperty,
+        property: currentProperty,
         color: PhetColorScheme.RED_COLORBLIND,
         maxInitialWidth: 20
       },
@@ -57,7 +59,7 @@ define( function( require ) {
         scaleA: 0.04,
         scaleB: 2,
         x: 560,
-        property: model.resistanceProperty,
+        property: resistanceProperty,
         color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 175
       }
@@ -114,7 +116,7 @@ define( function( require ) {
 
   }
 
-  ohmsLaw.register( 'FormulaView', FormulaView );
+  ohmsLaw.register( 'FormulaNode', FormulaNode );
 
-  return inherit( Node, FormulaView );
+  return inherit( Node, FormulaNode );
 } );
