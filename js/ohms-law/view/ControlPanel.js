@@ -15,7 +15,6 @@ define( function( require ) {
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var Panel = require( 'SUN/Panel' );
   var SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
-  var Util = require( 'DOT/Util' );
 
   // strings
   var resistanceUnitsString = require( 'string!OHMS_LAW/resistanceUnits' );

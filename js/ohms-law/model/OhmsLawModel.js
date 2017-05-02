@@ -16,7 +16,6 @@ define( function( require ) {
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var Sound = require( 'VIBE/Sound' );
-  var Util = require( 'DOT/Util' );
 
   // audio
   var addBatteryAudio = require( 'audio!OHMS_LAW/add-battery' );
