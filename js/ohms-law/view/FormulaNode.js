@@ -70,7 +70,7 @@ define( function( require ) {
 
     // add the equals sign, which does not change size
     var equalsSign = new Text( '=', {
-      font: new PhetFont( { family: 'Times New Roman', size: 140, weight: 'bold' } ),
+      font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
       fill: '#000',
       centerX: 300,
       centerY: centerY
@@ -81,7 +81,7 @@ define( function( require ) {
 
       // centered text node, so we just have to adjust scale dynamically
       var textNode = new Text( entry.symbolString, {
-        font: new PhetFont( { family: 'Times New Roman', size: 20, weight: 'bold' } ),
+        font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } ),
         fill: entry.color,
         centerX: 0,
         centerY: 0
@@ -91,7 +91,7 @@ define( function( require ) {
       // support of translation, in case some symbols are much larger than the V, I, and R symbols used in the English
       // version.
       var initialWidth = textNode.width * entry.scaleA * entry.property.value + entry.scaleB;
-      if ( initialWidth > entry.maxInitialWidth ){
+      if ( initialWidth > entry.maxInitialWidth ) {
         var scaleFactor = entry.maxInitialWidth / initialWidth;
         entry.scaleA = entry.scaleA * scaleFactor;
         entry.scaleB = entry.scaleB * scaleFactor;
