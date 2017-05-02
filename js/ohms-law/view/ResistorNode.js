@@ -102,7 +102,7 @@ define( function( require ) {
     );
 
     // randomize the array of dots so that we can show/hide them in a random way as the resistance changes
-    dotGroup.children = _.shuffle( dotGroup.children );
+    dotGroup.children = phet.joist.random.shuffle( dotGroup.children );
 
     this.addChild( dotGroup );
 
