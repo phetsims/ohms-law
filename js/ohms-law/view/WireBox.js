@@ -23,7 +23,7 @@ define( function( require ) {
   var WIDTH = OhmsLawConstants.WIRE_WIDTH;
   var HEIGHT = OhmsLawConstants.WIRE_HEIGHT;
   var THICKNESS = OhmsLawConstants.WIRE_THICKNESS;
-
+  var OFFSET = 10;  // position offset for the RightAngleArrow
   /**
    * @param {Property.<number>} voltageProperty
    * @param {Property.<number>} resistanceProperty
@@ -36,8 +36,8 @@ define( function( require ) {
 
     // for positioning, the top left corner of the wireFrame is defined as 0,0
     var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, { stroke: '#000', lineWidth: THICKNESS } );
-    var bottomLeftArrow = new RightAngleArrow( currentProperty, { x: -10, y: HEIGHT + 10, rotation: Math.PI / 2 } );
-    var bottomRightArrow = new RightAngleArrow( currentProperty, { x: WIDTH + 10, y: HEIGHT + 10, rotation: 0 } );
+    var bottomLeftArrow = new RightAngleArrow( currentProperty, { x: -OFFSET, y: HEIGHT + OFFSET, rotation: Math.PI / 2 } );
+    var bottomRightArrow = new RightAngleArrow( currentProperty, { x: WIDTH + OFFSET, y: HEIGHT + OFFSET, rotation: 0 } );
     var currentReadoutPanel = new ReadoutPanel( currentProperty );
     var resistorNode = new ResistorNode( resistanceProperty );
     var batteriesView = new BatteriesView( voltageProperty );
@@ -49,7 +49,7 @@ define( function( require ) {
     this.addChild( bottomRightArrow );
     this.addChild( currentReadoutPanel );
 
-    batteriesView.left = 30;
+    batteriesView.left = 30; // slightly to the right of the wire
     batteriesView.centerY = 0;
     currentReadoutPanel.centerY = HEIGHT / 2;
     currentReadoutPanel.centerX = WIDTH / 2;
