@@ -1,7 +1,8 @@
 // Copyright 2016, University of Colorado Boulder
 
 /**
- * View for Arrow around WireBox
+ * View for a right angled arrow around WireBox
+ * The arrow points down and then to the left.
  *
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
@@ -17,47 +18,55 @@ define( function( require ) {
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var Shape = require( 'KITE/Shape' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var Vector2 = require( 'DOT/Vector2' );
+
+  // constants
+  // points for the arrow
+  var POINTS = [
+    new Vector2( 5, -30 ),  // inner tail of arrow
+    new Vector2( 13, -30 ), // outer tail of arrow
+    new Vector2( 13, 13 ),  // outer corner
+    new Vector2( -25, 13 ),
+    new Vector2( -25, 17 ),
+    new Vector2( -40, 8.5 ), // tip of the arrow head
+    new Vector2( -25, 0 ),
+    new Vector2( -25, 5 ),
+    new Vector2( 5, 5 ) // inner corner
+  ];
 
   /**
    * @param {Property.<number>} currentProperty
-   * @param {number} x
-   * @param {number} y
-   * @param {number} rotation - in degrees
+   * @param {Object} options
    * @constructor
    */
-  function RightAngleArrow( currentProperty, x, y, rotation ) {
-    Node.call( this, { x: x, y: y, rotation: (rotation / 180 * Math.PI) } );
+  function RightAngleArrow( currentProperty, options ) {
 
-    var arrow = new Node();
-    var arrowShape = new Shape();
-    var points = [
-      [ 5, -30 ],
-      [ 13, -30 ],
-      [ 13, 13 ],
-      [ -25, 13 ],
-      [ -25, 17 ],
-      [ -40, 8.5 ],
-      [ -25, 0 ],
-      [ -25, 5 ],
-      [ 5, 5 ]
-    ];
+    Node.call( this );
 
-    arrowShape.moveTo( points[ 0 ][ 0 ], points[ 0 ][ 1 ] );
-    _.each( points, function( element ) { arrowShape.lineTo( element[ 0 ], element[ 1 ] ); } );
+    // create the shape of the arrow
+    var arrowShape = new Shape().moveToPoint( POINTS[ 0 ] );
+    POINTS.forEach( function( point ) { arrowShape.lineToPoint( point ); } );
     arrowShape.close();
 
-    arrow.addChild( new Path( arrowShape, {
+    // decorate the arrow
+    var arrowPath = new Path( arrowShape, {
       stroke: '#000',
       fill: PhetColorScheme.RED_COLORBLIND,
       lineWidth: 0.2
-    } ) );
-    this.addChild( arrow );
+    } );
+
+    // add the arrow
+    this.addChild( arrowPath );
+
+    // present for the lifetime of the simulation
     currentProperty.link( function( current ) {
       // Scale the arrows based on the value of the current.
       // Exponential scaling algorithm.  Linear makes the changes too big.
       var scale = Math.pow( ( current * 0.1 ), 0.7 );
-      arrow.matrix = Matrix3.scale( scale );
+      arrowPath.matrix = Matrix3.scale( scale );
     } );
+
+    this.mutate( options );
   }
 
   ohmsLaw.register( 'RightAngleArrow', RightAngleArrow );

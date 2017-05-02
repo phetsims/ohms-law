@@ -34,23 +34,27 @@ define( function( require ) {
 
     Node.call( this );
 
-    // empirically determined position
-    var x = 70;
-    var y = 380;
-
-    this.addChild( new RightAngleArrow( currentProperty, x - 10, y + HEIGHT + 10, 90 ) );
-    this.addChild( new RightAngleArrow( currentProperty, x + WIDTH + 10, y + HEIGHT + 10, 0 ) );
-    this.addChild( new Rectangle( x, y, WIDTH, HEIGHT, THICKNESS, THICKNESS, { stroke: '#000', lineWidth: 10 } ) );
-    this.addChild( new ReadoutPanel( currentProperty ).mutate( {
-      centerX: x + WIDTH / 2,
-      centerY: y + HEIGHT / 2
-    } ) );
-    this.addChild( new BatteriesView( voltageProperty, x + 30, y ) );
-
+    // for positioning, the top left corner of the wireFrame is defined as 0,0
+    var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, { stroke: '#000', lineWidth: THICKNESS } );
+    var bottomLeftArrow = new RightAngleArrow( currentProperty, { x: -10, y: HEIGHT + 10, rotation: Math.PI / 2 } );
+    var bottomRightArrow = new RightAngleArrow( currentProperty, { x: WIDTH + 10, y: HEIGHT + 10, rotation: 0 } );
+    var currentReadoutPanel = new ReadoutPanel( currentProperty );
     var resistorNode = new ResistorNode( resistanceProperty );
+    var batteriesView = new BatteriesView( voltageProperty );
+
+    this.addChild( wireFrame );
+    this.addChild( batteriesView );
     this.addChild( resistorNode );
-    resistorNode.centerX = x + WIDTH / 2;
-    resistorNode.centerY = y + HEIGHT;
+    this.addChild( bottomLeftArrow );
+    this.addChild( bottomRightArrow );
+    this.addChild( currentReadoutPanel );
+
+    batteriesView.left = 30;
+    batteriesView.centerY = 0;
+    currentReadoutPanel.centerY = HEIGHT / 2;
+    currentReadoutPanel.centerX = WIDTH / 2;
+    resistorNode.centerX = WIDTH / 2;
+    resistorNode.centerY = HEIGHT;
   }
 
   ohmsLaw.register( 'WireBox', WireBox );

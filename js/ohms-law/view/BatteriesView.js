@@ -1,7 +1,7 @@
 // Copyright 2016, University of Colorado Boulder
 
 /**
- * View All Batteries
+ * View of the battery pack at the top of the wire
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
@@ -17,35 +17,39 @@ define( function( require ) {
 
   /**
    * @param {Property.<number>} voltageProperty
-   * @param {number} x
-   * @param {number} y
    * @constructor
    */
-  function BatteriesView( voltageProperty, x, y ) {
-    Node.call( this, { x: x, y: y } );
+  function BatteriesView( voltageProperty ) {
+    Node.call( this );
 
-    //max number of batteries
-    var maxQ = 9 / OhmsLawConstants.AA_VOLTAGE;
+    // max number of batteries
+    var maxNumberBatteries = Math.ceil( OhmsLawConstants.VOLTAGE_RANGE.max / OhmsLawConstants.AA_VOLTAGE );
 
-    //1 battery width
-    var batteryWidth = 82;
+    // store battery nodes in an array
+    var batteries = [];
 
-    //batteries presentation
-    var batteries = new Array( Math.ceil( maxQ ) );
-
-    for ( var i = 0, l = batteries.length; i < l; i++ ) {
-      var sx = i * batteryWidth;
-      batteries[ i ] = new BatteryView( sx, 0, batteryWidth );
-      this.addChild( batteries[ i ] );
+    // create an array of batteries
+    for ( var i = 0; i < maxNumberBatteries; i++ ) {
+      var leftPosition = i * OhmsLawConstants.BATTERY_WIDTH;
+      var battery = new BatteryView( { x: leftPosition, y: 0 } );
+      this.addChild( battery );
+      batteries.push( battery );
     }
 
-    voltageProperty.link( function setVoltage( voltage ) {
-      var val = voltage;
-      for ( var i = 0, l = batteries.length; i < l; i++ ) {
-        var diff = Math.min( OhmsLawConstants.AA_VOLTAGE, val );
-        batteries[ i ].setVoltage( diff );
-        val -= diff;
-      }
+    // present for the lifetime of the simulation
+    voltageProperty.link( function( voltage ) {
+
+      batteries.forEach( function( battery, index ) {
+        // determine associated with a particular battery
+        var voltageBattery = Math.min( OhmsLawConstants.AA_VOLTAGE, voltage - index * OhmsLawConstants.AA_VOLTAGE );
+
+        // set the visibility of the battery
+        battery.visible = ( voltageBattery > 0 );
+
+        if ( battery.visible ) {
+          battery.setVoltage( voltageBattery );
+        }
+      } );
     } );
   }
 

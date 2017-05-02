@@ -59,9 +59,9 @@ define( function( require ) {
     } );
 
     // present for the lifetime of the simulation
-    currentProperty.link( function setCurrentText( value ) {
+    currentProperty.link( function( current ) {
       var rightEdgePos = currentValue.right;
-      currentValue.text = Util.toFixed( value, 1 );
+      currentValue.text = Util.toFixed( current, 1 );
       currentValue.right = rightEdgePos;
     } );
   }
