@@ -63,7 +63,6 @@ define( function( require ) {
       lineWidth: 3,
       resize: false
     } );
-
   }
 
   ohmsLaw.register( 'ControlPanel', ControlPanel );

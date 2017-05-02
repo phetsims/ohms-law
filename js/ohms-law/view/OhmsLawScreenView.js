@@ -10,17 +10,15 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
   var FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ScreenView = require( 'JOIST/ScreenView' );
-  var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
   var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
-  // constants
-  var INSET = 25;
 
   /**
    * @param {OhmsLawModel} model
@@ -30,27 +28,38 @@ define( function( require ) {
 
     ScreenView.call( this );
 
-    this.addChild( new FormulaNode( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } ) );
-    this.addChild( new WireBox( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } ) );
+    // circuit node with readout node
+    var wireBox = new WireBox( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } );
+
+    // node of ohm's law equation
+    var formulaNode = new FormulaNode( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } );
+
+    this.addChild( wireBox );
+    this.addChild( formulaNode );
+
+    // layout of the wirebox
+    wireBox.x = 70;
+    wireBox.y = 380;
+    // formulaNode layout is hardwired, see FormulaNode
 
     // create and add control panel with sliders.
     var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty );
-    controlPanel.right = this.layoutBounds.width - INSET;
-    controlPanel.top = 60; // empirically determined
+    controlPanel.right = this.layoutBounds.width - 25; // empirically determined
+    controlPanel.top = 60;   // empirically determined
     this.addChild( controlPanel );
 
     // reset button
-    var buttonCenterYOffset = 50;
+    var buttonCenterYOffset = 50;     // empirically determined
     this.addChild( new ResetAllButton( {
       listener: function() { model.reset(); },
-      centerX: controlPanel.left + controlPanel.width * 0.27,
+      centerX: controlPanel.left + controlPanel.width * 0.27,  // empirically determined
       centerY: controlPanel.bottom + buttonCenterYOffset,
       radius: 30
     } ) );
 
     // sound on/off toggle button
     var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, { scale: 1.15, stroke: 'gray', lineWidth: 0.5 } );
-    soundToggleButton.centerX = controlPanel.left + controlPanel.width * 0.70;
+    soundToggleButton.centerX = controlPanel.left + controlPanel.width * 0.70;  // empirically determined
     soundToggleButton.centerY = controlPanel.bottom + buttonCenterYOffset;
     this.addChild( soundToggleButton );
   }
