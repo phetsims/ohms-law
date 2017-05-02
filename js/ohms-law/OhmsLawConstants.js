@@ -44,7 +44,11 @@ define( function( require ) {
     // wire circuit
     WIRE_WIDTH: 550,
     WIRE_HEIGHT: 180,
-    WIRE_THICKNESS: 4
+    WIRE_THICKNESS: 10,
+
+    // battery
+    BATTERY_WIDTH: 82,
+    BATTERY_HEIGHT: 40
   };
 
   ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );
