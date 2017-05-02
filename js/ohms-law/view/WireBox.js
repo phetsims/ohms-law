@@ -1,7 +1,7 @@
 // Copyright 2016, University of Colorado Boulder
 
 /**
- * view scheme ohms law
+ * view circuit with a resistor, a battery pack, two current arrows and a current readout panel
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
