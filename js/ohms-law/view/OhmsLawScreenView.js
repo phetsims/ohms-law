@@ -34,8 +34,8 @@ define( function( require ) {
     // node of ohm's law equation
     var formulaNode = new FormulaNode( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } );
 
-    this.addChild( wireBox );
     this.addChild( formulaNode );
+    this.addChild( wireBox );
 
     // layout of the wirebox
     wireBox.x = 70;

@@ -32,19 +32,9 @@ define( function( require ) {
    */
   function FormulaNode( voltageProperty, resistanceProperty, currentProperty ) {
 
-    var self = this;
     Node.call( this );
 
     var texts = [
-      {
-        symbolString: voltageSymbolString,
-        scaleA: 4.5,
-        scaleB: 2,
-        x: 150,
-        property: voltageProperty,
-        color: OhmsLawConstants.BLUE_COLOR,
-        maxInitialWidth: 180
-      },
       {
         symbolString: currentSymbolString,
         scaleA: 0.2,
@@ -53,6 +43,15 @@ define( function( require ) {
         property: currentProperty,
         color: PhetColorScheme.RED_COLORBLIND,
         maxInitialWidth: 20
+      },
+      {
+        symbolString: voltageSymbolString,
+        scaleA: 4.5,
+        scaleB: 2,
+        x: 150,
+        property: voltageProperty,
+        color: OhmsLawConstants.BLUE_COLOR,
+        maxInitialWidth: 180
       },
       {
         symbolString: resistanceSymbolString,
@@ -65,6 +64,10 @@ define( function( require ) {
       }
     ];
 
+    // create a node to hold all the symbols
+    var lettersNode = new Node();
+    this.addChild( lettersNode );
+
     // center Y position of all text in the node, empirically determined
     var centerY = 160;
 
@@ -75,8 +78,9 @@ define( function( require ) {
       centerX: 300,
       centerY: centerY
     } );
-    this.addChild( equalsSign );
+    this.addChild( equalsSign ); // must come after lettersNode
 
+    // add the symbol letters to the formula and scale them appropriately
     texts.forEach( function( entry ) {
 
       // centered text node, so we just have to adjust scale dynamically
@@ -103,7 +107,7 @@ define( function( require ) {
 
       // create the node that contains the text
       var letterNode = new Node( { children: [ antiArtifactRectangle, textNode ] } );
-      self.addChild( letterNode );
+      lettersNode.addChild( letterNode );
 
       // scale the text as the associated value changes
       entry.property.link( function updateProperty( value ) {
