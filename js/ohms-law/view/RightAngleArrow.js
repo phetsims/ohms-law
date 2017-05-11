@@ -44,9 +44,7 @@ define( function( require ) {
     Node.call( this );
 
     // create the shape of the arrow
-    var arrowShape = new Shape().moveToPoint( POINTS[ 0 ] );
-    POINTS.forEach( function( point ) { arrowShape.lineToPoint( point ); } );
-    arrowShape.close();
+    var arrowShape = new Shape().polygon( POINTS );
 
     // decorate the arrow
     var arrowPath = new Path( arrowShape, {
