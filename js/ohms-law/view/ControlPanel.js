@@ -45,8 +45,10 @@ define( function( require ) {
       OhmsLawConstants.RESISTANCE_RANGE,
       resistanceSymbolString,
       resistanceString,
-      resistanceUnitsString,
-      { numberDecimalPlaces: 0 } );
+      resistanceUnitsString, {
+        numberDecimalPlaces: 0,
+        keyboardStep: 5
+       } );
 
     var content = new Node();
     content.addChild( voltageSlider );

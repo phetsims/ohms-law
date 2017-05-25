@@ -38,7 +38,8 @@ define( function( require ) {
     Node.call( this );
 
     options = _.extend( {
-      numberDecimalPlaces: 1
+      numberDecimalPlaces: 1,
+      keyboardStep: 1
     }, options );
 
     // positions for vertical alignment
@@ -58,7 +59,25 @@ define( function( require ) {
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT - 2 * thumb.height, 4 ),
       thumbNode: thumb,
       x: 0,
-      centerY: sliderCenterY
+      centerY: sliderCenterY,
+
+      // a11y
+      tagName: 'input',
+      inputType: 'range'
+    } );
+
+    slider.addAccessibleInputListener( {
+      input: function( event ) {
+        property.set( Util.toFixedNumber( slider.inputValue, options.numberDecimalPlaces ) );
+      }
+    } );
+
+    slider.setAccessibleAttribute( 'min', range.min );
+    slider.setAccessibleAttribute( 'max', range.max );
+    slider.setAccessibleAttribute( 'step', options.keyboardStep );
+
+    property.link( function( value ) {
+      slider.inputValue = value;
     } );
 
     var symbolText = new Text( symbolString, {
