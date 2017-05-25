@@ -37,7 +37,9 @@ define( function( require ) {
       OhmsLawConstants.VOLTAGE_RANGE,
       voltageSymbolString,
       voltageString,
-      voltageUnitsString );
+      voltageUnitsString, {
+        keyboardStep: 0.1
+      } );
 
     // create the resistance slider with readout and labels
     var resistanceSlider = new SliderUnit(
