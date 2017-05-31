@@ -47,21 +47,22 @@ define( function( require ) {
     controlPanel.right = this.layoutBounds.width - 25; // empirically determined
     controlPanel.top = 60;   // empirically determined
     this.addChild( controlPanel );
-
-    // reset button
+    
     var buttonCenterYOffset = 50;     // empirically determined
-    this.addChild( new ResetAllButton( {
-      listener: function() { model.reset(); },
-      centerX: controlPanel.left + controlPanel.width * 0.27,  // empirically determined
-      centerY: controlPanel.bottom + buttonCenterYOffset,
-      radius: 30
-    } ) );
 
     // sound on/off toggle button
     var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, { scale: 1.15, stroke: 'gray', lineWidth: 0.5 } );
     soundToggleButton.centerX = controlPanel.left + controlPanel.width * 0.70;  // empirically determined
     soundToggleButton.centerY = controlPanel.bottom + buttonCenterYOffset;
     this.addChild( soundToggleButton );
+
+    // reset button
+    this.addChild( new ResetAllButton( {
+      listener: function() { model.reset(); },
+      centerX: controlPanel.left + controlPanel.width * 0.27,  // empirically determined
+      centerY: controlPanel.bottom + buttonCenterYOffset,
+      radius: 30
+    } ) );
   }
 
   ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );
