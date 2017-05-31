@@ -60,24 +60,8 @@ define( function( require ) {
       thumbNode: thumb,
       x: 0,
       centerY: sliderCenterY,
-
-      // a11y
-      tagName: 'input',
-      inputType: 'range'
-    } );
-
-    slider.addAccessibleInputListener( {
-      input: function( event ) {
-        property.set( Util.toFixedNumber( slider.inputValue, options.numberDecimalPlaces ) );
-      }
-    } );
-
-    slider.setAccessibleAttribute( 'min', range.min );
-    slider.setAccessibleAttribute( 'max', range.max );
-    slider.setAccessibleAttribute( 'step', options.keyboardStep );
-
-    property.link( function( value ) {
-      slider.inputValue = value;
+      keyboardStep: options.keyboardStep,
+      numberDecimalPlaces: options.numberDecimalPlaces
     } );
 
     var symbolText = new Text( symbolString, {
