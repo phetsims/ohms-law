@@ -1,11 +1,11 @@
 {
-  "comment": "# ohms-law 1.3.8-dev.1 Thu May 25 2017 14:47:46 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# ohms-law 1.3.8-dev.2 Wed Jun 14 2017 10:22:13 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
     "branch": "master"
   },
   "axon": {
-    "sha": "045bd1b0b51cbad35ba5fb80b2eb78908194094c",
+    "sha": "b8ccb7992abe0551d12ea092bfac4afb8b984c65",
     "branch": "master"
   },
   "brand": {
@@ -13,7 +13,7 @@
     "branch": "master"
   },
   "chipper": {
-    "sha": "83292e7cba3af8a801fe81bfdeed1035e7442a16",
+    "sha": "80ae1f148ad0339588633f85033d1d6a4bb4000d",
     "branch": "master"
   },
   "dot": {
@@ -21,7 +21,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "ba42b77c2c6a6ee84203420019b3a4ed1c97f2ea",
+    "sha": "b35547e9747cd53d5b3f702ac3caa95a907961d3",
     "branch": "master"
   },
   "kite": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "96d852671f8c2ee84ba53da61f2e94ca2b721468",
+    "sha": "de6923770f5cb1ce1cc38230c19b3e5999bb6786",
     "branch": "master"
   },
   "phet-core": {
@@ -37,7 +37,7 @@
     "branch": "master"
   },
   "phetcommon": {
-    "sha": "29164892095a5d8f47687c3ed57dab5c3fe2d82b",
+    "sha": "ca2f62cd80bb47b43e7b0d825c637e39161b9ebd",
     "branch": "master"
   },
   "query-string-machine": {
@@ -45,19 +45,19 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "c6c382013c145c6058e51ca451ac4d0f70802d39",
+    "sha": "c2248424f0a27f1ae13694addc2622a3686c077e",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "b2a919e918968417db57b08690b6cc943a754bc6",
+    "sha": "830fd50295ae14c94771f4eaf2b817ebda6550e8",
     "branch": "master"
   },
   "sherpa": {
-    "sha": "0e326d542b93f5cf3eea2b175d195c18b9bdfb6e",
+    "sha": "812fdf9e8222a204c371347f2a0615ef02d0f72e",
     "branch": "master"
   },
   "sun": {
-    "sha": "0f484f66993e75ff598b8d8b3a091f43857b4b6f",
+    "sha": "ef071713d504c0e13ac740b3eb15d7bd4f2b439b",
     "branch": "master"
   },
   "tandem": {
