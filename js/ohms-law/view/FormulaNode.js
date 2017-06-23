@@ -117,7 +117,6 @@ define( function( require ) {
           .timesMatrix( Matrix3.scale( entry.scaleA * value + entry.scaleB ) );
       } );
     } );
-
   }
 
   ohmsLaw.register( 'FormulaNode', FormulaNode );
