@@ -1,7 +1,7 @@
 // Copyright 2013-2017, University of Colorado Boulder
 
 /**
- * view for the resistor with scatterers that depict the level of resistivity
+ * View for the resistor with scatterers that depict the level of resistivity
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
@@ -29,93 +29,105 @@ define( function( require ) {
   var AREA_PER_DOT = 40; // adjust this to control the density of the dots
   var MAX_WIDTH_INCLUDING_ROUNDED_ENDS = WIRE_WIDTH + 2 * WIRE_HEIGHT * PERSPECTIVE_FACTOR;
 
+  var BODY_FILL_GRADIENT = new LinearGradient( 0, -WIRE_HEIGHT / 2, 0, WIRE_HEIGHT / 2 ) // For 3D effect on the wire.
+    .addColorStop( 0, '#F00' )
+    .addColorStop( 0.266, '#FFF' )
+    .addColorStop( 0.412, '#FCFCFC' )
+    .addColorStop( 1, '#F00' );
+
+  var DOT_GRID_ROWS = Util.roundSymmetric( WIRE_HEIGHT / Math.sqrt( AREA_PER_DOT ) );
+  var DOT_GRID_COLUMNS = Util.roundSymmetric( WIRE_WIDTH / Math.sqrt( AREA_PER_DOT ) );
+  var MAX_DOTS = DOT_GRID_COLUMNS * DOT_GRID_ROWS;
+
+  // Function to map resistance to number of dots
+  var RESISTANCE_TO_NUM_DOTS = new LinearFunction(
+    OhmsLawConstants.RESISTANCE_RANGE.min,
+    OhmsLawConstants.RESISTANCE_RANGE.max,
+    MAX_DOTS * 0.05,
+    MAX_DOTS,
+    true
+  );
+
   /**
    * @param {Property.<number>} resistanceProperty
+   * @param {Object} options
    * @constructor
    */
-  function ResistorNode( resistanceProperty ) {
+  function ResistorNode( resistanceProperty, options ) {
 
     Node.call( this );
 
-    // set the gradient on the wire to make it look more 3D
-    var bodyFillGradient = new LinearGradient( 0, -WIRE_HEIGHT / 2, 0, WIRE_HEIGHT / 2 )
-      .addColorStop( 0, '#F00' )
-      .addColorStop( 0.266, '#FFF' )
-      .addColorStop( 0.412, '#FCFCFC' )
-      .addColorStop( 1, '#F00' );
-
-    // body of the wire
+    // Body of the wire
     var bodyPath = new Path( new Shape().moveTo( -WIRE_WIDTH / 2, WIRE_HEIGHT / 2 )
       .horizontalLineToRelative( WIRE_WIDTH )
       .ellipticalArc( WIRE_WIDTH / 2, 0, PERSPECTIVE_FACTOR * WIRE_HEIGHT / 2, WIRE_HEIGHT / 2, 0, Math.PI / 2, 3 * Math.PI / 2, true )
       .horizontalLineToRelative( -WIRE_WIDTH ), {
       stroke: 'black',
       lineWidth: 1,
-      fill: bodyFillGradient
+      fill: BODY_FILL_GRADIENT
     } );
+    this.addChild( bodyPath );
 
-    // cap/end of the wire
+    // Cap/end of the wire
     var endPath = new Path( Shape.ellipse( -WIRE_WIDTH / 2, 0, WIRE_HEIGHT * PERSPECTIVE_FACTOR / 2, WIRE_HEIGHT / 2 ), {
       stroke: 'black',
       fill: '#ff9f9f',
       lineWidth: 1
     } );
+    this.addChild( endPath );
 
-    // short stub of wire near the cap of wire
+    // Short stub of wire near the cap of wire
     var stubWirePath = new Path( new Shape().moveTo( 5 - WIRE_WIDTH / 2, 0 ).horizontalLineToRelative( -15 ), {
       stroke: '#000',
       lineWidth: 10
     } );
-
-    this.addChild( bodyPath );
-    this.addChild( endPath );
     this.addChild( stubWirePath );
 
-    // dots representing charge scatterers.
+    // Dots representing charge scatterers.
     var dotGroup = new Node();
-    var dotGridColumns = Util.roundSymmetric( WIRE_WIDTH / Math.sqrt( AREA_PER_DOT ) );
-    var dotGridRows = Util.roundSymmetric( WIRE_HEIGHT / Math.sqrt( AREA_PER_DOT ) );
 
-    // create the dots by placing them on a grid, but move each one randomly a bit to make them look irregular
-    for ( var i = 1; i < dotGridColumns; i++ ) {
-      for ( var j = 1; j < dotGridRows; j++ ) {
+    // Create the dots by placing them on a grid, but move each one randomly a bit to make them look irregular
+    for ( var i = 1; i < DOT_GRID_COLUMNS; i++ ) {
+      for ( var j = 1; j < DOT_GRID_ROWS; j++ ) {
+
+        var centerX = i * ( MAX_WIDTH_INCLUDING_ROUNDED_ENDS / DOT_GRID_COLUMNS ) -
+                      MAX_WIDTH_INCLUDING_ROUNDED_ENDS / 2 +
+                      (phet.joist.random.nextDouble() - 0.5 ) * DOT_POSITION_RANDOMIZATION_FACTOR;
+        var centerY = j * ( WIRE_HEIGHT / DOT_GRID_ROWS ) - WIRE_HEIGHT / 2 +
+                      ( phet.joist.random.nextDouble() - 0.5 ) * DOT_POSITION_RANDOMIZATION_FACTOR;
         var dot = new Circle( DOT_RADIUS, {
           fill: 'black',
-          centerX: i * ( MAX_WIDTH_INCLUDING_ROUNDED_ENDS / dotGridColumns ) -
-                   MAX_WIDTH_INCLUDING_ROUNDED_ENDS / 2 +
-                   (phet.joist.random.nextDouble() - 0.5 ) * DOT_POSITION_RANDOMIZATION_FACTOR,
-          centerY: j * ( WIRE_HEIGHT / dotGridRows ) - WIRE_HEIGHT / 2 +
-                   ( phet.joist.random.nextDouble() - 0.5 ) * DOT_POSITION_RANDOMIZATION_FACTOR
+          centerX: centerX,
+          centerY: centerY
         } );
         dotGroup.addChild( dot );
       }
     }
 
-    // function to map resistance to number of dots
-    var maxDots = dotGridColumns * dotGridRows;
-    var resistanceToNumDots = new LinearFunction(
-      OhmsLawConstants.RESISTANCE_RANGE.min,
-      OhmsLawConstants.RESISTANCE_RANGE.max,
-      maxDots * 0.05,
-      maxDots,
-      true
-    );
-
-    // randomize the array of dots so that we can show/hide them in a random way as the resistance changes
+    // Randomize the array of dots so that we can show/hide them in a random way as the resistance changes
     dotGroup.children = phet.joist.random.shuffle( dotGroup.children );
-
     this.addChild( dotGroup );
 
-    // clip the dots that are shown to only include those inside the wire (including the wireEnd)
-    dotGroup.clipArea = bodyPath.shape.ellipticalArc( -WIRE_WIDTH / 2, 0, PERSPECTIVE_FACTOR * WIRE_HEIGHT / 2, WIRE_HEIGHT / 2, 0, 3 * Math.PI / 2, Math.PI / 2, true );
+    // Clip the dots that are shown to only include those inside the wire (including the wireEnd)
+    dotGroup.clipArea = bodyPath.shape.ellipticalArc(
+      -WIRE_WIDTH / 2,
+      0,
+      PERSPECTIVE_FACTOR * WIRE_HEIGHT / 2,
+      WIRE_HEIGHT / 2,
+      0,
+      3 * Math.PI / 2,
+      Math.PI / 2,
+      true );
 
-    // set the number of visible dots based on the resistivity
+    // Set the number of visible dots based on the resistivity
     resistanceProperty.link( function( resistance ) {
-      var numDotsToShow = resistanceToNumDots( resistance );
+      var numDotsToShow = RESISTANCE_TO_NUM_DOTS( resistance );
       dotGroup.children.forEach( function( dot, index ) {
         dot.visible = index < numDotsToShow;
       } );
     } );
+
+    this.mutate( options );
   }
 
   ohmsLaw.register( 'ResistorNode', ResistorNode );

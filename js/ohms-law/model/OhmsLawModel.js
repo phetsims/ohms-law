@@ -1,7 +1,7 @@
-// Copyright 2013-2015, University of Colorado Boulder
+// Copyright 2013-2017, University of Colorado Boulder
 
 /**
- * Primary model for the Ohm's Law simulation
+ * Primary model for the Ohm's Law simulation, see doc/model.md for more information.
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */

@@ -1,7 +1,7 @@
-// Copyright 2013-2015, University of Colorado Boulder
+// Copyright 2013-2017, University of Colorado Boulder
 
 /**
- * screen view for the Ohm's Law simulation
+ * Screen view for the Ohm's Law simulation
  *
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
@@ -28,40 +28,43 @@ define( function( require ) {
 
     ScreenView.call( this );
 
-    // circuit node with readout node
+    // Circuit node with readout node
     var wireBox = new WireBox( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } );
 
-    // node of ohm's law equation
-    var formulaNode = new FormulaNode( model.voltageProperty, model.resistanceProperty, model.currentProperty ).mutate( { pickable: false } );
+    // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
+    var formulaNode = new FormulaNode( model.currentProperty, model.voltageProperty, model.resistanceProperty ).mutate( { pickable: false } );
 
     this.addChild( formulaNode );
     this.addChild( wireBox );
 
-    // layout of the wirebox
+    // Layout of the wirebox
     wireBox.x = 70;
     wireBox.y = 380;
-    // formulaNode layout is hardwired, see FormulaNode
 
-    // create and add control panel with sliders.
+    // Create and add control panel with sliders.
     var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty );
     controlPanel.right = this.layoutBounds.width - 25; // empirically determined
-    controlPanel.top = 60;   // empirically determined
+    controlPanel.top = 60; // empirically determined
     this.addChild( controlPanel );
     
-    var buttonCenterYOffset = 50;     // empirically determined
+    var buttonCenterYOffset = 50; // empirically determined
 
-    // sound on/off toggle button
-    var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, { scale: 1.15, stroke: 'gray', lineWidth: 0.5 } );
-    soundToggleButton.centerX = controlPanel.left + controlPanel.width * 0.70;  // empirically determined
-    soundToggleButton.centerY = controlPanel.bottom + buttonCenterYOffset;
+    // Sound on/off toggle button
+    var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, {
+      scale: 1.15,
+      stroke: 'gray',
+      lineWidth: 0.5,
+      centerX: controlPanel.left + controlPanel.width * 0.70,  // empirically determined
+      centerY: controlPanel.bottom + buttonCenterYOffset
+  } );
     this.addChild( soundToggleButton );
 
-    // reset button
+    // Reset button
     this.addChild( new ResetAllButton( {
-      listener: function() { model.reset(); },
+      radius: 30,
       centerX: controlPanel.left + controlPanel.width * 0.27,  // empirically determined
       centerY: controlPanel.bottom + buttonCenterYOffset,
-      radius: 30
+      listener: function() { model.reset(); }
     } ) );
   }
 

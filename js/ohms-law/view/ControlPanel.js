@@ -31,17 +31,18 @@ define( function( require ) {
    */
   function ControlPanel( voltageProperty, resistanceProperty ) {
 
-    // create the voltage slider with readout and labels
+    // Create the voltage slider with readout and labels
     var voltageSlider = new SliderUnit(
       voltageProperty,
       OhmsLawConstants.VOLTAGE_RANGE,
       voltageSymbolString,
       voltageString,
       voltageUnitsString, {
-        keyboardStep: 0.1
+        keyboardStep: 0.1,
+        centerX: -OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION / 2
       } );
 
-    // create the resistance slider with readout and labels
+    // Create the resistance slider with readout and labels
     var resistanceSlider = new SliderUnit(
       resistanceProperty,
       OhmsLawConstants.RESISTANCE_RANGE,
@@ -49,16 +50,14 @@ define( function( require ) {
       resistanceString,
       resistanceUnitsString, {
         numberDecimalPlaces: 0,
-        keyboardStep: 5
+        keyboardStep: 5,
+        centerX: voltageSlider.centerX + OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION
        } );
 
+    // Use a content node so that the Panel can surround it fully
     var content = new Node();
     content.addChild( voltageSlider );
     content.addChild( resistanceSlider );
-
-    // set the horizontal position of the sliders, defining the middle slider as zero
-    voltageSlider.centerX = -OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION / 2;
-    resistanceSlider.centerX = voltageSlider.centerX + OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION;
 
     Panel.call( this, content, {
       xMargin: 30,

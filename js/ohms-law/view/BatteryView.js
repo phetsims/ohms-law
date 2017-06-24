@@ -31,6 +31,19 @@ define( function( require ) {
   var COPPER_PORTION_WIDTH = OhmsLawConstants.BATTERY_WIDTH - MAIN_BODY_WIDTH - NUB_WIDTH;
   var BATTERY_HEIGHT = OhmsLawConstants.BATTERY_HEIGHT;
   var NUB_HEIGHT = OhmsLawConstants.BATTERY_HEIGHT * 0.30;
+  var VOLTAGE_TO_SCALE = new LinearFunction( 0.1, OhmsLawConstants.AA_VOLTAGE, 0.0001, 1, true );  // convert voltage to percentage (0 to 1)
+  var VOLTAGE_STRING_MAX_WIDTH = new Text( '9.9', { font: FONT } ).width;
+
+  // Fills for the battery
+  var MAIN_BODY_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
+    .addColorStop( 0, '#777777' )
+    .addColorStop( 0.3, '#bdbdbd' )
+    .addColorStop( 1, '#2b2b2b' );
+  var COPPER_PORTION_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
+    .addColorStop( 0, '#cc4e00' )
+    .addColorStop( 0.3, '#dddad6' )
+    .addColorStop( 1, '#cc4e00' );
+  var NUB_FILL = '#dddddd';
 
   /**
    * @param {Object} [options]
@@ -40,90 +53,86 @@ define( function( require ) {
 
     Node.call( this );
 
-    // convert voltage to percentage (0 to 1)
-    var voltageToScale = new LinearFunction( 0.1, OhmsLawConstants.AA_VOLTAGE, 0.0001, 1, true );
-
-    // fill for the battery
-    var mainBodyFill = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
-      .addColorStop( 0, '#777777' )
-      .addColorStop( 0.3, '#bdbdbd' )
-      .addColorStop( 1, '#2b2b2b' );
-    var copperPortionFill = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
-      .addColorStop( 0, '#cc4e00' )
-      .addColorStop( 0.3, '#dddad6' )
-      .addColorStop( 1, '#cc4e00' );
-    var nubFill = '#dddddd';
-
-    // the origin (0,0) is defined as the leftmost and vertically centered position of the battery
+    // The origin (0,0) is defined as the leftmost and vertically centered position of the battery
     var batteryNode = new Node();
-    var mainBody = new Rectangle( 0, 0, MAIN_BODY_WIDTH, BATTERY_HEIGHT, {
+
+    // @private
+    this.mainBody = new Rectangle( 0, 0, MAIN_BODY_WIDTH, BATTERY_HEIGHT, {
       stroke: '#000',
       lineWidth: 1,
-      fill: mainBodyFill,
+      fill: MAIN_BODY_FILL,
       y: -BATTERY_HEIGHT / 2
     } );
-    var copperPortion = new Rectangle( 0, 0, COPPER_PORTION_WIDTH, BATTERY_HEIGHT, {
+    batteryNode.addChild( this.mainBody );
+
+    // @private
+    this.copperPortion = new Rectangle( 0, 0, COPPER_PORTION_WIDTH, BATTERY_HEIGHT, {
       stroke: '#000',
       lineWidth: 1,
-      fill: copperPortionFill,
+      fill: COPPER_PORTION_FILL,
       y: -BATTERY_HEIGHT / 2,
       x: MAIN_BODY_WIDTH
     } );
-    var nub = new Rectangle( COPPER_PORTION_WIDTH, 0, NUB_WIDTH, NUB_HEIGHT, {
+    batteryNode.addChild( this.copperPortion );
+
+    // @private
+    this.nub = new Rectangle( COPPER_PORTION_WIDTH, 0, NUB_WIDTH, NUB_HEIGHT, {
       stroke: '#000',
       lineWidth: 1,
-      fill: nubFill,
+      fill: NUB_FILL,
       y: -NUB_HEIGHT / 2,
       x: MAIN_BODY_WIDTH
     } );
-    // add battery to the scene graph
-    batteryNode.addChild( mainBody );
-    batteryNode.addChild( copperPortion );
-    batteryNode.addChild( nub );
+    batteryNode.addChild( this.nub );
+
     this.addChild( batteryNode );
 
-    // voltage label associated with the battery
-    var batteryText = new Node( { x: 3 } );
-    var voltageStringMaxWidth = new Text( '9.9', { font: FONT } ).width;
-    var voltageValueText = new Text( OhmsLawConstants.AA_VOLTAGE, { font: FONT } );
+    // @private - Voltage label associated with the battery
+    this.batteryText = new Node( { x: 3 } );
+
+    // @private
+    this.voltageValueText = new Text( OhmsLawConstants.AA_VOLTAGE, { font: FONT } );
+    this.batteryText.addChild( this.voltageValueText );
+
     var voltageUnitsText = new Text( voltageUnitsString, {
       font: FONT,
       fill: 'blue',
-      x: voltageStringMaxWidth * 1.1,
-      maxWidth: ( MAIN_BODY_WIDTH - voltageStringMaxWidth ) * 0.9 // limit to 90% of remaining space
+      x: VOLTAGE_STRING_MAX_WIDTH * 1.1,
+      maxWidth: ( MAIN_BODY_WIDTH - VOLTAGE_STRING_MAX_WIDTH ) * 0.9 // limit to 90% of remaining space
     } );
-    this.addChild( batteryText );
-    batteryText.addChild( voltageValueText );
-    batteryText.addChild( voltageUnitsText );
+    this.batteryText.addChild( voltageUnitsText );
+
+    this.addChild( this.batteryText );
 
     this.mutate( options );
-
-    /**
-     * set the length of the battery as well as voltage text and position of the text associated with the battery
-     * @param {number} voltage
-     */
-    this.setVoltage = function( voltage ) {
-      // update the text of the
-      voltageValueText.text = Util.toFixed( voltage, 1 );
-
-      // adjust length of the battery
-      mainBody.setRect( 0, 0, MAIN_BODY_WIDTH * voltageToScale( voltage ), BATTERY_HEIGHT );
-      copperPortion.x = mainBody.right;
-      nub.x = mainBody.right;
-
-      // set vertical position of the voltage label
-      if ( voltage >= OhmsLawConstants.AA_VOLTAGE ) {
-        batteryText.centerY = -7; // move slightly up from centered position
-      }
-      // move up if the voltage is greater than 0.1 but less than OhmsLawConstants.AA_VOLTAGE
-      else if ( voltage >= 0.1 ) {
-        batteryText.centerY = -BATTERY_HEIGHT / 2 - 12; // place it above the battery
-      }
-
-    };
   }
 
   ohmsLaw.register( 'BatteryView', BatteryView );
 
-  return inherit( Node, BatteryView );
+  return inherit( Node, BatteryView,{
+
+    /**
+     * Set the length of the battery as well as voltage text and position of the text associated with the battery
+     * @param {number} voltage
+     * @public
+     */
+    setVoltage: function( voltage ) {
+      // update the text of the
+      this.voltageValueText.text = Util.toFixed( voltage, 1 );
+
+      // adjust length of the battery
+      this.mainBody.setRect( 0, 0, MAIN_BODY_WIDTH * VOLTAGE_TO_SCALE( voltage ), BATTERY_HEIGHT );
+      this.copperPortion.x = this.mainBody.right;
+      this.nub.x = this.mainBody.right;
+
+      // set vertical position of the voltage label
+      if ( voltage >= OhmsLawConstants.AA_VOLTAGE ) {
+        this.batteryText.centerY = -7; // move slightly up from centered position
+      }
+      // move up if the voltage is greater than 0.1 but less than OhmsLawConstants.AA_VOLTAGE
+      else if ( voltage >= 0.1 ) {
+        this.batteryText.centerY = -BATTERY_HEIGHT / 2 - 12; // place it above the battery
+      }
+    }
+  } );
 } );

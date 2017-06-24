@@ -1,4 +1,4 @@
-// Copyright 2016, University of Colorado Boulder
+// Copyright 2016-2017, University of Colorado Boulder
 
 /**
  * Block shows Current TextBlock inside WireBlock
@@ -30,27 +30,47 @@ define( function( require ) {
 
   /**
    * @param {Property.<number>} currentProperty
+   * @param {Object} options
    * @constructor
    */
-  function ReadoutPanel( currentProperty ) {
+  function ReadoutPanel( currentProperty, options ) {
 
-    // Create the text string.
+    // Create the text string
     var textContainer = new Node();
-    textContainer.addChild( new Text( currentString, { font: FONT, fill: PhetColorScheme.RED_COLORBLIND } ) );
-    textContainer.addChild( new Text( '=', { font: FONT, fill: 'black', left: textContainer.width + SPACING } ) );
-    var currentValue = new Text( '999.9', { font: FONT, fill: 'black', left: textContainer.width + SPACING } );
+
+    var currentStringText = new Text( currentString, {
+      font: FONT,
+      fill: PhetColorScheme.RED_COLORBLIND
+    } );
+    textContainer.addChild( currentStringText );
+
+    var equalsSign = new Text( '=', {
+      font: FONT,
+      fill: 'black',
+      left: textContainer.width + SPACING
+    } );
+    textContainer.addChild( equalsSign );
+
+    var currentValue = new Text( '999.9', {
+      font: FONT,
+      fill: 'black',
+      left: textContainer.width + SPACING
+    } );
     textContainer.addChild( currentValue );
-    textContainer.addChild( new Text( currentUnitsString, {
+
+    var currentUnit = new Text( currentUnitsString, {
       font: FONT,
       fill: PhetColorScheme.RED_COLORBLIND,
       left: textContainer.width + SPACING
-    } ) );
+    } );
+    textContainer.addChild( currentUnit );
 
     // Scale the text if greater than max allowed width.
     if ( textContainer.width > MAX_TEXT_WIDTH ) {
       textContainer.scale( MAX_TEXT_WIDTH / textContainer.width );
     }
 
+    // Create the panel to surround the text node.
     Panel.call( this, textContainer, {
       xMargin: 30,
       yMargin: 15,
@@ -58,12 +78,14 @@ define( function( require ) {
       resize: false
     } );
 
-    // present for the lifetime of the simulation
+    // Present for the lifetime of the simulation, no need to unlink
     currentProperty.link( function( current ) {
-      var rightEdgePos = currentValue.right;
+      var rightEdgePosition = currentValue.right;
       currentValue.text = Util.toFixed( current, 1 );
-      currentValue.right = rightEdgePos;
+      currentValue.right = rightEdgePosition;
     } );
+
+    this.mutate( options );
   }
 
   ohmsLaw.register( 'ReadoutPanel', ReadoutPanel );

@@ -15,9 +15,6 @@ define( function( require ) {
 
   var OhmsLawConstants = {
 
-    // constants
-    AA_VOLTAGE: 1.5, // in volts
-
     // colors
     BLUE_COLOR: '#0f0ffb',
     BLACK_COLOR: '#000',
@@ -48,7 +45,8 @@ define( function( require ) {
 
     // battery
     BATTERY_WIDTH: 82,
-    BATTERY_HEIGHT: 40
+    BATTERY_HEIGHT: 40,
+    AA_VOLTAGE: 1.5 // in volts
   };
 
   ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );

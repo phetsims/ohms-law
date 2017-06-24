@@ -1,4 +1,4 @@
-// Copyright 2016, University of Colorado Boulder
+// Copyright 2016-2017, University of Colorado Boulder
 
 /**
  * View for a right angled arrow around WireBox
@@ -45,19 +45,16 @@ define( function( require ) {
 
     // create the shape of the arrow
     var arrowShape = new Shape().polygon( POINTS );
-
-    // decorate the arrow
     var arrowPath = new Path( arrowShape, {
       stroke: '#000',
       fill: PhetColorScheme.RED_COLORBLIND,
       lineWidth: 0.2
     } );
-
-    // add the arrow
     this.addChild( arrowPath );
 
-    // present for the lifetime of the simulation
+    // Present for the lifetime of the simulation
     currentProperty.link( function( current ) {
+
       // Scale the arrows based on the value of the current.
       // Exponential scaling algorithm.  Linear makes the changes too big.
       var scale = Math.pow( ( current * 0.1 ), 0.7 );

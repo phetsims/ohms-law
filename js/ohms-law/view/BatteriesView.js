@@ -17,33 +17,37 @@ define( function( require ) {
 
   /**
    * @param {Property.<number>} voltageProperty
+   * @param {Object} options
    * @constructor
    */
-  function BatteriesView( voltageProperty ) {
+  function BatteriesView( voltageProperty, options ) {
     Node.call( this );
 
-    // max number of batteries
+    // Max number of batteries
     var maxNumberBatteries = Math.ceil( OhmsLawConstants.VOLTAGE_RANGE.max / OhmsLawConstants.AA_VOLTAGE );
 
-    // store battery nodes in an array
+    // Store battery nodes in an array
     var batteries = [];
 
-    // create an array of batteries
+    // Create an array of batteries; enough to fill the entire wire.
     for ( var i = 0; i < maxNumberBatteries; i++ ) {
       var leftPosition = i * OhmsLawConstants.BATTERY_WIDTH;
       var battery = new BatteryView( { x: leftPosition, y: 0 } );
+
+      // Add them as children to this node, and to the array for manipulation
       this.addChild( battery );
       batteries.push( battery );
     }
 
-    // present for the lifetime of the simulation
+    // Present for the lifetime of the simulation
     voltageProperty.link( function( voltage ) {
 
       batteries.forEach( function( battery, index ) {
-        // determine associated with a particular battery
+
+        // Determine associated with a particular battery
         var voltageBattery = Math.min( OhmsLawConstants.AA_VOLTAGE, voltage - index * OhmsLawConstants.AA_VOLTAGE );
 
-        // set the visibility of the battery
+        // Battery is only visible if it has a voltage.
         battery.visible = ( voltageBattery > 0 );
 
         if ( battery.visible ) {
@@ -51,6 +55,8 @@ define( function( require ) {
         }
       } );
     } );
+
+    this.mutate( options );
   }
 
   ohmsLaw.register( 'BatteriesView', BatteriesView );

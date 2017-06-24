@@ -1,7 +1,7 @@
-// Copyright 2016, University of Colorado Boulder
+// Copyright 2016-2017, University of Colorado Boulder
 
 /**
- * view circuit with a resistor, a battery pack, two current arrows and a current readout panel
+ * View circuit with a resistor, a battery pack, two current arrows and a current readout panel
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
@@ -24,6 +24,7 @@ define( function( require ) {
   var HEIGHT = OhmsLawConstants.WIRE_HEIGHT;
   var THICKNESS = OhmsLawConstants.WIRE_THICKNESS;
   var OFFSET = 10;  // position offset for the RightAngleArrow
+
   /**
    * @param {Property.<number>} voltageProperty
    * @param {Property.<number>} resistanceProperty
@@ -34,27 +35,41 @@ define( function( require ) {
 
     Node.call( this );
 
-    // for positioning, the top left corner of the wireFrame is defined as 0,0
+    // For positioning, the top left corner of the wireFrame is defined as 0,0
     var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, { stroke: '#000', lineWidth: THICKNESS } );
-    var bottomLeftArrow = new RightAngleArrow( currentProperty, { x: -OFFSET, y: HEIGHT + OFFSET, rotation: Math.PI / 2 } );
-    var bottomRightArrow = new RightAngleArrow( currentProperty, { x: WIDTH + OFFSET, y: HEIGHT + OFFSET, rotation: 0 } );
-    var currentReadoutPanel = new ReadoutPanel( currentProperty );
-    var resistorNode = new ResistorNode( resistanceProperty );
-    var batteriesView = new BatteriesView( voltageProperty );
-
     this.addChild( wireFrame );
-    this.addChild( batteriesView );
-    this.addChild( resistorNode );
-    this.addChild( bottomLeftArrow );
-    this.addChild( bottomRightArrow );
-    this.addChild( currentReadoutPanel );
 
-    batteriesView.left = 30; // slightly to the right of the wire
-    batteriesView.centerY = 0;
-    currentReadoutPanel.centerY = HEIGHT / 2;
-    currentReadoutPanel.centerX = WIDTH / 2;
-    resistorNode.centerX = WIDTH / 2;
-    resistorNode.centerY = HEIGHT;
+    var batteriesView = new BatteriesView( voltageProperty, {
+      left: 30, // Slightly to the right of the wire
+      centerY: 0
+    } );
+    this.addChild( batteriesView );
+
+    var resistorNode = new ResistorNode( resistanceProperty, {
+      centerX: WIDTH / 2,
+      centerY: HEIGHT
+    } );
+    this.addChild( resistorNode );
+
+    var bottomLeftArrow = new RightAngleArrow( currentProperty, {
+      x: -OFFSET,
+      y: HEIGHT + OFFSET,
+      rotation: Math.PI / 2
+    } );
+    this.addChild( bottomLeftArrow );
+
+    var bottomRightArrow = new RightAngleArrow( currentProperty, {
+      x: WIDTH + OFFSET,
+      y: HEIGHT + OFFSET,
+      rotation: 0
+    } );
+    this.addChild( bottomRightArrow );
+
+    var currentReadoutPanel = new ReadoutPanel( currentProperty, {
+      centerY: HEIGHT / 2,
+      centerX: WIDTH / 2
+    } );
+    this.addChild( currentReadoutPanel );
   }
 
   ohmsLaw.register( 'WireBox', WireBox );

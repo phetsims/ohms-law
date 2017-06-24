@@ -22,7 +22,7 @@ define( function( require ) {
   var thumbImage = require( 'image!OHMS_LAW/thumb.png' );
 
   // constants
-  var MAX_TEXT_WIDTH = OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION * 0.90; // max text width for labels
+  var MAX_TEXT_WIDTH = OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION * 0.90; // Max text width for labels
 
   /**
    * @param {Property.<number>} property
@@ -42,13 +42,13 @@ define( function( require ) {
       keyboardStep: 1
     }, options );
 
-    // positions for vertical alignment
+    // Positions for vertical alignment
     var symbolStringCenterY = OhmsLawConstants.SLIDER_UNIT_VERTICAL_OFFSET;
     var nameTop = symbolStringCenterY + 30;
     var readoutTop = nameTop + OhmsLawConstants.SLIDER_HEIGHT + 40;
     var sliderCenterY = (readoutTop + nameTop) / 2;
 
-    // thumb for the slider
+    // Thumb for the slider
     var thumb = new Image( thumbImage, { rotation: Math.PI / 2 } );
     thumb.scale( OhmsLawConstants.THUMB_HEIGHT / thumb.height );
     thumb.touchArea = thumb.localBounds.dilated( 30 );
@@ -95,19 +95,21 @@ define( function( require ) {
       top: readoutTop
     } );
 
+    // Children stack from top to bottom in the layout.
     this.addChild( symbolText );
     this.addChild( nameText );
     this.addChild( slider );
     this.addChild( readout );
     this.addChild( unitText );
 
-    // no need to unlink, present for the lifetime of the simulation
+    // No need to unlink, present for the lifetime of the simulation
     // update value of the readout
     property.link( function( value ) {
       readout.text = Util.toFixed( value, options.numberDecimalPlaces );
       readout.right = unitText.left - 10;
     } );
 
+    this.mutate( options);
   }
 
   ohmsLaw.register( 'SliderUnit', SliderUnit );

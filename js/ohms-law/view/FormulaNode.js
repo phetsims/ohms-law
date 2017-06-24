@@ -1,4 +1,4 @@
-// Copyright 2016, University of Colorado Boulder
+// Copyright 2016-2017, University of Colorado Boulder
 
 /**
  * view formula ohms law
@@ -24,17 +24,23 @@ define( function( require ) {
   var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
 
+  // constants
+  // Center Y position of all text in the node, empirically determined
+  var CENTER_Y = 160;
+
+
   /**
+   * @param {Property.<number>} currentProperty
    * @param {Property.<number>} voltageProperty
    * @param {Property.<number>} resistanceProperty
-   * @param {Property.<number>} currentProperty
    * @constructor
    */
-  function FormulaNode( voltageProperty, resistanceProperty, currentProperty ) {
+  function FormulaNode( currentProperty, voltageProperty, resistanceProperty ) {
 
     Node.call( this );
 
-    var texts = [
+    // Hold the metaData for each text to be created
+    var textsDataArray = [
       {
         symbolString: currentSymbolString,
         scaleA: 0.2,
@@ -64,29 +70,26 @@ define( function( require ) {
       }
     ];
 
-    // create a node to hold all the symbols
+    // Create a node to hold all the symbols
     var lettersNode = new Node();
     this.addChild( lettersNode );
 
-    // center Y position of all text in the node, empirically determined
-    var centerY = 160;
-
-    // add the equals sign, which does not change size
-    var equalsSign = new Text( '=', {
+    // Add the equals sign, which does not change size
+    var equalsSign = new Text( '=', { // We never internationalize the '=' sign
       font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
       fill: '#000',
       centerX: 300,
-      centerY: centerY
+      centerY: CENTER_Y
     } );
     this.addChild( equalsSign ); // must come after lettersNode
 
-    // add the symbol letters to the formula and scale them appropriately
-    texts.forEach( function( entry ) {
+    // Add the symbol letters to the formula and scale them appropriately
+    textsDataArray.forEach( function( textData ) {
 
-      // centered text node, so we just have to adjust scale dynamically
-      var textNode = new Text( entry.symbolString, {
+      // Centered text node, so we just have to adjust scale dynamically
+      var textNode = new Text( textData.symbolString, {
         font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } ),
-        fill: entry.color,
+        fill: textData.color,
         centerX: 0,
         centerY: 0
       } );
@@ -94,27 +97,29 @@ define( function( require ) {
       // Make sure that the text isn't initially too large and, if so, change the scaling factors.  This is done in
       // support of translation, in case some symbols are much larger than the V, I, and R symbols used in the English
       // version.
-      var initialWidth = textNode.width * entry.scaleA * entry.property.value + entry.scaleB;
-      if ( initialWidth > entry.maxInitialWidth ) {
-        var scaleFactor = entry.maxInitialWidth / initialWidth;
-        entry.scaleA = entry.scaleA * scaleFactor;
-        entry.scaleB = entry.scaleB * scaleFactor;
+      var initialWidth = textNode.width * textData.scaleA * textData.property.value + textData.scaleB;
+      if ( initialWidth > textData.maxInitialWidth ) {
+        var scaleFactor = textData.maxInitialWidth / initialWidth;
+        textData.scaleA = textData.scaleA * scaleFactor;
+        textData.scaleB = textData.scaleB * scaleFactor;
       }
 
-      // add an invisible rectangle with bounds slightly larger than the text so that artifacts aren't left on the
+      // Add an invisible rectangle with bounds slightly larger than the text so that artifacts aren't left on the
       // screen, see https://github.com/phetsims/ohms-law/issues/26.
       var antiArtifactRectangle = Rectangle.bounds( textNode.bounds.dilatedX( 1 ), { fill: 'rgba( 0, 0, 0, 0 )' } );
 
-      // create the node that contains the text
+      // Create the node that contains the text
       var letterNode = new Node( { children: [ antiArtifactRectangle, textNode ] } );
       lettersNode.addChild( letterNode );
 
-      // scale the text as the associated value changes
-      entry.property.link( function updateProperty( value ) {
-        // performance TODO: consider not updating the matrix if it hasn't changed (if entry.x, entry.scaleA, and entry.scaleB haven't changed)
-        // since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
-        letterNode.matrix = Matrix3.translation( entry.x, centerY )
-          .timesMatrix( Matrix3.scale( entry.scaleA * value + entry.scaleB ) );
+      // Scale the text as the associated value changes
+      textData.property.link( function updateProperty( value ) {
+
+        // Since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
+        letterNode.matrix = Matrix3.translation( textData.x, CENTER_Y )
+          .timesMatrix( Matrix3.scale( textData.scaleA * value + textData.scaleB ) );
+
+        // TODO: Performance: consider not updating the matrix if it hasn't changed (if textData.x, textData.scaleA, and textData.scaleB haven't changed)
       } );
     } );
   }
