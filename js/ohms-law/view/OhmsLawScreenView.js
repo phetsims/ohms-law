@@ -47,7 +47,7 @@ define( function( require ) {
     controlPanel.right = this.layoutBounds.width - 25; // empirically determined
     controlPanel.top = 60; // empirically determined
     this.addChild( controlPanel );
-    
+
     var buttonCenterYOffset = 50; // empirically determined
 
     // Sound on/off toggle button
@@ -57,7 +57,7 @@ define( function( require ) {
       lineWidth: 0.5,
       centerX: controlPanel.left + controlPanel.width * 0.70,  // empirically determined
       centerY: controlPanel.bottom + buttonCenterYOffset
-  } );
+    } );
     this.addChild( soundToggleButton );
 
     // Reset button

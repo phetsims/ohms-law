@@ -124,7 +124,7 @@ define( function( require ) {
       } );
     } );
 
-    this.mutate(options);
+    this.mutate( options );
   }
 
   ohmsLaw.register( 'FormulaNode', FormulaNode );

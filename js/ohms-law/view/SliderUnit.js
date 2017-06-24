@@ -109,7 +109,7 @@ define( function( require ) {
       readout.right = unitText.left - 10;
     } );
 
-    this.mutate( options);
+    this.mutate( options );
   }
 
   ohmsLaw.register( 'SliderUnit', SliderUnit );

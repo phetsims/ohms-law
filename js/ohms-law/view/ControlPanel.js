@@ -52,7 +52,7 @@ define( function( require ) {
         numberDecimalPlaces: 0,
         keyboardStep: 5,
         centerX: voltageSlider.centerX + OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION
-       } );
+      } );
 
     // Use a content node so that the Panel can surround it fully
     var content = new Node();

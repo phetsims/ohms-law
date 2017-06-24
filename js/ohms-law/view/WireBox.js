@@ -72,7 +72,7 @@ define( function( require ) {
     } );
     this.addChild( currentReadoutPanel );
 
-    this.mutate(options);
+    this.mutate( options );
   }
 
   ohmsLaw.register( 'WireBox', WireBox );

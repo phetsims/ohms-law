@@ -109,7 +109,7 @@ define( function( require ) {
 
   ohmsLaw.register( 'BatteryView', BatteryView );
 
-  return inherit( Node, BatteryView,{
+  return inherit( Node, BatteryView, {
 
     /**
      * Set the length of the battery as well as voltage text and position of the text associated with the battery
