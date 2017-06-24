@@ -18,13 +18,23 @@ define( function( require ) {
   var ScreenView = require( 'JOIST/ScreenView' );
   var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
+  var Sound = require( 'VIBE/Sound' );
+  var BooleanProperty = require( 'AXON/BooleanProperty' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
 
+  // audio
+  // The sounds themselves can be constants because there is only every one instance of OhmsLawScreenView.
+  var ADD_BATTERY_SOUND = new Sound( require( 'audio!OHMS_LAW/add-battery' ) );
+  var REMOVE_BATTERY_SOUND = new Sound( require( 'audio!OHMS_LAW/remove-battery' ) );
 
   /**
    * @param {OhmsLawModel} model
    * @constructor
    */
   function OhmsLawScreenView( model ) {
+
+    // {Property.<boolean>}
+    var soundActiveProperty = new BooleanProperty( true );
 
     ScreenView.call( this );
 
@@ -51,7 +61,7 @@ define( function( require ) {
     var buttonCenterYOffset = 50; // empirically determined
 
     // Sound on/off toggle button
-    var soundToggleButton = new SoundToggleButton( model.soundActiveProperty, {
+    var soundToggleButton = new SoundToggleButton( soundActiveProperty, {
       scale: 1.15,
       stroke: 'gray',
       lineWidth: 0.5,
@@ -65,8 +75,24 @@ define( function( require ) {
       radius: 30,
       centerX: controlPanel.left + controlPanel.width * 0.27,  // empirically determined
       centerY: controlPanel.bottom + buttonCenterYOffset,
-      listener: function() { model.reset(); }
+      listener: function() {
+        model.reset();
+      }
     } ) );
+
+    // Play sounds when adding or removing a battery
+    model.voltageProperty.lazyLink( function( voltage, oldVoltage ) {
+      var newNumberBatteries = Math.floor( voltage / OhmsLawConstants.AA_VOLTAGE );
+      var oldNumberBatteries = Math.floor( oldVoltage / OhmsLawConstants.AA_VOLTAGE );
+      if ( soundActiveProperty.value ) {
+        if ( newNumberBatteries > oldNumberBatteries ) {
+          ADD_BATTERY_SOUND.play();
+        }
+        else if ( newNumberBatteries < oldNumberBatteries ) {
+          REMOVE_BATTERY_SOUND.play();
+        }
+      }
+    } );
   }
 
   ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );
