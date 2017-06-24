@@ -33,9 +33,10 @@ define( function( require ) {
    * @param {Property.<number>} currentProperty
    * @param {Property.<number>} voltageProperty
    * @param {Property.<number>} resistanceProperty
+   * @param {Object} options
    * @constructor
    */
-  function FormulaNode( currentProperty, voltageProperty, resistanceProperty ) {
+  function FormulaNode( currentProperty, voltageProperty, resistanceProperty, options ) {
 
     Node.call( this );
 
@@ -122,6 +123,8 @@ define( function( require ) {
         // TODO: Performance: consider not updating the matrix if it hasn't changed (if textData.x, textData.scaleA, and textData.scaleB haven't changed)
       } );
     } );
+
+    this.mutate(options);
   }
 
   ohmsLaw.register( 'FormulaNode', FormulaNode );

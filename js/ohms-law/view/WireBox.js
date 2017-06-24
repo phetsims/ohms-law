@@ -29,9 +29,10 @@ define( function( require ) {
    * @param {Property.<number>} voltageProperty
    * @param {Property.<number>} resistanceProperty
    * @param {Property.<number>} currentProperty
+   * @param {Object} options
    * @constructor
    */
-  function WireBox( voltageProperty, resistanceProperty, currentProperty ) {
+  function WireBox( voltageProperty, resistanceProperty, currentProperty, options ) {
 
     Node.call( this );
 
@@ -70,6 +71,8 @@ define( function( require ) {
       centerX: WIDTH / 2
     } );
     this.addChild( currentReadoutPanel );
+
+    this.mutate(options);
   }
 
   ohmsLaw.register( 'WireBox', WireBox );
