@@ -119,7 +119,7 @@ define( function( require ) {
       Math.PI / 2,
       true );
 
-    // Set the number of visible dots based on the resistivity
+    // Set the number of visible dots based on the resistivity. Present for the lifetime of the simulation; no need to unlink.
     resistanceProperty.link( function( resistance ) {
       var numDotsToShow = RESISTANCE_TO_NUM_DOTS( resistance );
       dotGroup.children.forEach( function( dot, index ) {

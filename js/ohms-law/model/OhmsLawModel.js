@@ -44,7 +44,6 @@ define( function( require ) {
     reset: function() {
       this.voltageProperty.reset();
       this.resistanceProperty.reset();
-      this.soundActiveProperty.reset();
     }
   } );
 } );

@@ -26,13 +26,11 @@ define( function( require ) {
   var OFFSET = 10;  // position offset for the RightAngleArrow
 
   /**
-   * @param {Property.<number>} voltageProperty
-   * @param {Property.<number>} resistanceProperty
-   * @param {Property.<number>} currentProperty
+   * @param {OhmsLawModel} model
    * @param {Object} options
    * @constructor
    */
-  function WireBox( voltageProperty, resistanceProperty, currentProperty, options ) {
+  function WireBox( model, options ) {
 
     Node.call( this );
 
@@ -40,33 +38,33 @@ define( function( require ) {
     var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, { stroke: '#000', lineWidth: THICKNESS } );
     this.addChild( wireFrame );
 
-    var batteriesView = new BatteriesView( voltageProperty, {
+    var batteriesView = new BatteriesView( model.voltageProperty, {
       left: 30, // Slightly to the right of the wire
       centerY: 0
     } );
     this.addChild( batteriesView );
 
-    var resistorNode = new ResistorNode( resistanceProperty, {
+    var resistorNode = new ResistorNode( model.resistanceProperty, {
       centerX: WIDTH / 2,
       centerY: HEIGHT
     } );
     this.addChild( resistorNode );
 
-    var bottomLeftArrow = new RightAngleArrow( currentProperty, {
+    var bottomLeftArrow = new RightAngleArrow( model.currentProperty, {
       x: -OFFSET,
       y: HEIGHT + OFFSET,
       rotation: Math.PI / 2
     } );
     this.addChild( bottomLeftArrow );
 
-    var bottomRightArrow = new RightAngleArrow( currentProperty, {
+    var bottomRightArrow = new RightAngleArrow( model.currentProperty, {
       x: WIDTH + OFFSET,
       y: HEIGHT + OFFSET,
       rotation: 0
     } );
     this.addChild( bottomRightArrow );
 
-    var currentReadoutPanel = new ReadoutPanel( currentProperty, {
+    var currentReadoutPanel = new ReadoutPanel( model.currentProperty, {
       centerY: HEIGHT / 2,
       centerX: WIDTH / 2
     } );

@@ -98,8 +98,7 @@ define( function( require ) {
     this.addChild( readout );
     this.addChild( unitText );
 
-    // No need to unlink, present for the lifetime of the simulation
-    // update value of the readout
+    // Update value of the readout. Present for the lifetime of the simulation; no need to unlink.
     property.link( function( value ) {
       readout.text = Util.toFixed( value, options.numberDecimalPlaces );
       readout.right = unitText.left - 10;

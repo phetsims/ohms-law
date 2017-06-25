@@ -30,13 +30,11 @@ define( function( require ) {
 
 
   /**
-   * @param {Property.<number>} currentProperty
-   * @param {Property.<number>} voltageProperty
-   * @param {Property.<number>} resistanceProperty
+   * @param {OhmsLawModel} model
    * @param {Object} options
    * @constructor
    */
-  function FormulaNode( currentProperty, voltageProperty, resistanceProperty, options ) {
+  function FormulaNode( model, options ) {
 
     Node.call( this );
 
@@ -47,7 +45,7 @@ define( function( require ) {
         scaleA: 0.2,
         scaleB: 0.84,
         x: 380,
-        property: currentProperty,
+        property: model.currentProperty,
         color: PhetColorScheme.RED_COLORBLIND,
         maxInitialWidth: 20
       },
@@ -56,7 +54,7 @@ define( function( require ) {
         scaleA: 4.5,
         scaleB: 2,
         x: 150,
-        property: voltageProperty,
+        property: model.voltageProperty,
         color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 180
       },
@@ -65,7 +63,7 @@ define( function( require ) {
         scaleA: 0.04,
         scaleB: 2,
         x: 560,
-        property: resistanceProperty,
+        property: model.resistanceProperty,
         color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 175
       }
@@ -113,14 +111,12 @@ define( function( require ) {
       var letterNode = new Node( { children: [ antiArtifactRectangle, textNode ] } );
       lettersNode.addChild( letterNode );
 
-      // Scale the text as the associated value changes
+      // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
       textData.property.link( function updateProperty( value ) {
 
         // Since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
         letterNode.matrix = Matrix3.translation( textData.x, CENTER_Y )
           .timesMatrix( Matrix3.scale( textData.scaleA * value + textData.scaleB ) );
-
-        // TODO: Performance: consider not updating the matrix if it hasn't changed (if textData.x, textData.scaleA, and textData.scaleB haven't changed)
       } );
     } );
 

@@ -78,7 +78,7 @@ define( function( require ) {
       resize: false
     } );
 
-    // Present for the lifetime of the simulation, no need to unlink
+    // Present for the lifetime of the simulation, no need to unlink.
     currentProperty.link( function( current ) {
       var rightEdgePosition = currentValue.right;
       currentValue.text = Util.toFixed( current, 1 );

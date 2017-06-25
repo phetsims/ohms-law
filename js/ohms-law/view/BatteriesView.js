@@ -39,7 +39,7 @@ define( function( require ) {
       batteries.push( battery );
     }
 
-    // Present for the lifetime of the simulation
+    // Present for the lifetime of the simulation; no need to unlink.
     voltageProperty.link( function( voltage ) {
 
       batteries.forEach( function( battery, index ) {
