@@ -19,8 +19,8 @@ define( function( require ) {
 
   // constants
   var MAX_TEXT_WIDTH = OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION * 0.90; // Max text width for labels
-  var THUMB_FILL_ENABLED =  '#81aac2'; // dark grey
-  var THUMB_FILL_HIGHLIGHTED =   '#a5becd'; // light steel blue
+  var THUMB_FILL_ENABLED = '#81aac2'; // dark grey
+  var THUMB_FILL_HIGHLIGHTED = '#a5becd'; // light steel blue
 
   /**
    * @param {Property.<number>} property
@@ -28,10 +28,11 @@ define( function( require ) {
    * @param {string} symbolString
    * @param {string} nameString
    * @param {string} unitString
+   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function SliderUnit( property, range, symbolString, nameString, unitString, options ) {
+  function SliderUnit( property, range, symbolString, nameString, unitString, tandem, options ) {
 
     Node.call( this );
 
@@ -57,7 +58,8 @@ define( function( require ) {
       x: 0,
       centerY: sliderCenterY,
       keyboardStep: options.keyboardStep,
-      numberDecimalPlaces: options.numberDecimalPlaces
+      numberDecimalPlaces: options.numberDecimalPlaces,
+      tandem: tandem.createTandem( 'slider' )
     } );
 
     var symbolText = new Text( symbolString, {
@@ -65,7 +67,8 @@ define( function( require ) {
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
       centerY: symbolStringCenterY,
-      maxWidth: MAX_TEXT_WIDTH
+      maxWidth: MAX_TEXT_WIDTH,
+      tandem: tandem.createTandem( 'symbolText' )
     } );
 
     var nameText = new Text( nameString, {
@@ -73,7 +76,8 @@ define( function( require ) {
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
       top: nameTop,
-      maxWidth: MAX_TEXT_WIDTH
+      maxWidth: MAX_TEXT_WIDTH,
+      tandem: tandem.createTandem( 'nameText' )
     } );
 
     var unitText = new Text( unitString, {
@@ -81,28 +85,32 @@ define( function( require ) {
       fill: OhmsLawConstants.BLUE_COLOR,
       left: 20,
       top: readoutTop,
-      maxWidth: MAX_TEXT_WIDTH
+      maxWidth: MAX_TEXT_WIDTH,
+      tandem: tandem.createTandem( 'unitText' )
     } );
 
-    var readout = new Text( Util.toFixed( property.value, options.numberDecimalPlaces ), {
+    var valueText = new Text( Util.toFixed( property.value, options.numberDecimalPlaces ), {
       font: OhmsLawConstants.READOUT_FONT,
       fill: OhmsLawConstants.BLACK_COLOR,
       right: unitText.left - 10,
-      top: readoutTop
+      top: readoutTop,
+      tandem: tandem.createTandem( 'valueText' )
     } );
 
     // Children stack from top to bottom in the layout.
     this.addChild( symbolText );
     this.addChild( nameText );
     this.addChild( slider );
-    this.addChild( readout );
+    this.addChild( valueText );
     this.addChild( unitText );
 
     // Update value of the readout. Present for the lifetime of the simulation; no need to unlink.
     property.link( function( value ) {
-      readout.text = Util.toFixed( value, options.numberDecimalPlaces );
-      readout.right = unitText.left - 10;
+      valueText.text = Util.toFixed( value, options.numberDecimalPlaces );
+      valueText.right = unitText.left - 10;
     } );
+
+    options.tandem = tandem;
 
     this.mutate( options );
   }

@@ -30,38 +30,54 @@ define( function( require ) {
 
   /**
    * @param {Property.<number>} currentProperty
+   * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
    */
-  function ReadoutPanel( currentProperty, options ) {
+  function ReadoutPanel( currentProperty, tandem, options ) {
+
+    options = _.extend( {
+        xMargin: 30,
+        yMargin: 15,
+        lineWidth: 3,
+        resize: false
+      }, options);
+
+    // Not included in the extend call because we don't want the possibility of overwriting the parametric tandem given.
+    options.tandem = tandem;
+
 
     // Create the text string
     var textContainer = new Node();
 
     var currentStringText = new Text( currentString, {
       font: FONT,
-      fill: PhetColorScheme.RED_COLORBLIND
+      fill: PhetColorScheme.RED_COLORBLIND,
+      tandem: tandem.createTandem( 'currentStringText' )
     } );
     textContainer.addChild( currentStringText );
 
     var equalsSign = new Text( '=', {
       font: FONT,
       fill: 'black',
-      left: textContainer.width + SPACING
+      left: textContainer.width + SPACING,
+      tandem: tandem.createTandem( 'equalsSign' )
     } );
     textContainer.addChild( equalsSign );
 
     var currentValue = new Text( '999.9', {
       font: FONT,
       fill: 'black',
-      left: textContainer.width + SPACING
+      left: textContainer.width + SPACING,
+      tandem: tandem.createTandem( 'currentValue' )
     } );
     textContainer.addChild( currentValue );
 
     var currentUnit = new Text( currentUnitsString, {
       font: FONT,
       fill: PhetColorScheme.RED_COLORBLIND,
-      left: textContainer.width + SPACING
+      left: textContainer.width + SPACING,
+      tandem: tandem.createTandem( 'currentUnit' )
     } );
     textContainer.addChild( currentUnit );
 
@@ -70,13 +86,6 @@ define( function( require ) {
       textContainer.scale( MAX_TEXT_WIDTH / textContainer.width );
     }
 
-    // Create the panel to surround the text node.
-    Panel.call( this, textContainer, {
-      xMargin: 30,
-      yMargin: 15,
-      lineWidth: 3,
-      resize: false
-    } );
 
     // Present for the lifetime of the simulation, no need to unlink.
     currentProperty.link( function( current ) {
@@ -85,7 +94,8 @@ define( function( require ) {
       currentValue.right = rightEdgePosition;
     } );
 
-    this.mutate( options );
+    // Create the panel to surround the text node.
+    Panel.call( this, textContainer, options );
   }
 
   ohmsLaw.register( 'ReadoutPanel', ReadoutPanel );

@@ -17,10 +17,11 @@ define( function( require ) {
 
   /**
    * @param {Property.<number>} voltageProperty
+   * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
    */
-  function BatteriesView( voltageProperty, options ) {
+  function BatteriesView( voltageProperty, tandem, options ) {
     Node.call( this );
 
     // Max number of batteries
@@ -29,10 +30,11 @@ define( function( require ) {
     // Store battery nodes in an array
     var batteries = [];
 
+    var batteriesGroupTandem = tandem.createGroupTandem( 'battery' );
     // Create an array of batteries; enough to fill the entire wire.
     for ( var i = 0; i < maxNumberBatteries; i++ ) {
       var leftPosition = i * OhmsLawConstants.BATTERY_WIDTH;
-      var battery = new BatteryView( { x: leftPosition, y: 0 } );
+      var battery = new BatteryView( batteriesGroupTandem.createNextTandem(), { x: leftPosition, y: 0 } );
 
       // Add them as children to this node, and to the array for manipulation
       this.addChild( battery );

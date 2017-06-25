@@ -50,10 +50,11 @@ define( function( require ) {
 
   /**
    * @param {Property.<number>} resistanceProperty
+   * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
    */
-  function ResistorNode( resistanceProperty, options ) {
+  function ResistorNode( resistanceProperty, tandem, options ) {
 
     Node.call( this );
 
@@ -64,7 +65,8 @@ define( function( require ) {
       .horizontalLineToRelative( -WIRE_WIDTH ), {
       stroke: 'black',
       lineWidth: 1,
-      fill: BODY_FILL_GRADIENT
+      fill: BODY_FILL_GRADIENT,
+      tandem: tandem.createTandem( 'bodyPath' )
     } );
     this.addChild( bodyPath );
 
@@ -72,19 +74,25 @@ define( function( require ) {
     var endPath = new Path( Shape.ellipse( -WIRE_WIDTH / 2, 0, WIRE_HEIGHT * PERSPECTIVE_FACTOR / 2, WIRE_HEIGHT / 2 ), {
       stroke: 'black',
       fill: '#ff9f9f',
-      lineWidth: 1
+      lineWidth: 1,
+      tandem: tandem.createTandem( 'endPath' )
     } );
     this.addChild( endPath );
 
     // Short stub of wire near the cap of wire
     var stubWirePath = new Path( new Shape().moveTo( 5 - WIRE_WIDTH / 2, 0 ).horizontalLineToRelative( -15 ), {
       stroke: '#000',
-      lineWidth: 10
+      lineWidth: 10,
+      tandem: tandem.createTandem( 'stubWirePath' )
     } );
     this.addChild( stubWirePath );
 
+
     // Dots representing charge scatterers.
-    var dotGroup = new Node();
+    var dotsNodeTandem = tandem.createTandem( 'dotsNode' );
+    var dotsNode = new Node( { tandem: dotsNodeTandem } );
+    var dotsGroupTandem = dotsNodeTandem.createGroupTandem( 'dot' );
+
 
     // Create the dots by placing them on a grid, but move each one randomly a bit to make them look irregular
     for ( var i = 1; i < DOT_GRID_COLUMNS; i++ ) {
@@ -98,18 +106,19 @@ define( function( require ) {
         var dot = new Circle( DOT_RADIUS, {
           fill: 'black',
           centerX: centerX,
-          centerY: centerY
+          centerY: centerY,
+          tandem: dotsGroupTandem.createNextTandem()
         } );
-        dotGroup.addChild( dot );
+        dotsNode.addChild( dot );
       }
     }
 
     // Randomize the array of dots so that we can show/hide them in a random way as the resistance changes
-    dotGroup.children = phet.joist.random.shuffle( dotGroup.children );
-    this.addChild( dotGroup );
+    dotsNode.children = phet.joist.random.shuffle( dotsNode.children );
+    this.addChild( dotsNode );
 
     // Clip the dots that are shown to only include those inside the wire (including the wireEnd)
-    dotGroup.clipArea = bodyPath.shape.ellipticalArc(
+    dotsNode.clipArea = bodyPath.shape.ellipticalArc(
       -WIRE_WIDTH / 2,
       0,
       PERSPECTIVE_FACTOR * WIRE_HEIGHT / 2,
@@ -122,7 +131,7 @@ define( function( require ) {
     // Set the number of visible dots based on the resistivity. Present for the lifetime of the simulation; no need to unlink.
     resistanceProperty.link( function( resistance ) {
       var numDotsToShow = RESISTANCE_TO_NUM_DOTS( resistance );
-      dotGroup.children.forEach( function( dot, index ) {
+      dotsNode.children.forEach( function( dot, index ) {
         dot.visible = index < numDotsToShow;
       } );
     } );

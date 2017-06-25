@@ -35,10 +35,11 @@ define( function( require ) {
 
   /**
    * @param {Property.<number>} currentProperty
+   * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
    */
-  function RightAngleArrow( currentProperty, options ) {
+  function RightAngleArrow( currentProperty, tandem, options ) {
     var self = this;
 
     // create the shape of the arrow
@@ -61,6 +62,7 @@ define( function( require ) {
       self.mutate( options );
     } );
 
+    options.tandem = tandem;
     this.mutate( options );
   }
 

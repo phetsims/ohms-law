@@ -38,7 +38,9 @@ define( function( require ) {
       OhmsLawConstants.VOLTAGE_RANGE,
       voltageSymbolString,
       voltageString,
-      voltageUnitsString, {
+      voltageUnitsString,
+      tandem.createTandem( 'voltageSlider' ),
+      {
         keyboardStep: 0.1,
         centerX: -OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION / 2
       } );
@@ -49,7 +51,9 @@ define( function( require ) {
       OhmsLawConstants.RESISTANCE_RANGE,
       resistanceSymbolString,
       resistanceString,
-      resistanceUnitsString, {
+      resistanceUnitsString,
+      tandem.createTandem( 'resistanceSlider' ),
+      {
         numberDecimalPlaces: 0,
         keyboardStep: 5,
         centerX: voltageSlider.centerX + OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION
@@ -64,7 +68,8 @@ define( function( require ) {
       xMargin: 30,
       yMargin: 20,
       lineWidth: 3,
-      resize: false
+      resize: false,
+      tandem: tandem
     } );
   }
 

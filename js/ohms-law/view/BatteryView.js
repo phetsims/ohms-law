@@ -46,10 +46,11 @@ define( function( require ) {
   var NUB_FILL = '#dddddd';
 
   /**
+   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function BatteryView( options ) {
+  function BatteryView( tandem, options ) {
 
     Node.call( this );
 
@@ -61,7 +62,8 @@ define( function( require ) {
       stroke: '#000',
       lineWidth: 1,
       fill: MAIN_BODY_FILL,
-      y: -BATTERY_HEIGHT / 2
+      y: -BATTERY_HEIGHT / 2,
+      tandem: tandem.createTandem( 'mainBody' )
     } );
     batteryNode.addChild( this.mainBody );
 
@@ -71,7 +73,8 @@ define( function( require ) {
       lineWidth: 1,
       fill: COPPER_PORTION_FILL,
       y: -BATTERY_HEIGHT / 2,
-      x: MAIN_BODY_WIDTH
+      x: MAIN_BODY_WIDTH,
+      tandem: tandem.createTandem( 'copperPortion' )
     } );
     batteryNode.addChild( this.copperPortion );
 
@@ -81,24 +84,29 @@ define( function( require ) {
       lineWidth: 1,
       fill: NUB_FILL,
       y: -NUB_HEIGHT / 2,
-      x: MAIN_BODY_WIDTH
+      x: MAIN_BODY_WIDTH,
+      tandem: tandem.createTandem( 'nub' )
     } );
     batteryNode.addChild( this.nub );
 
     this.addChild( batteryNode );
 
     // @private - Voltage label associated with the battery
-    this.batteryText = new Node( { x: 3 } );
+    this.batteryText = new Node( { x: 3, tandem: tandem.createTandem( 'batterText' ) } );
 
     // @private
-    this.voltageValueText = new Text( OhmsLawConstants.AA_VOLTAGE, { font: FONT } );
+    this.voltageValueText = new Text( OhmsLawConstants.AA_VOLTAGE, {
+      font: FONT,
+      tandem: tandem.createTandem( 'voltageValueText' )
+    } );
     this.batteryText.addChild( this.voltageValueText );
 
     var voltageUnitsText = new Text( voltageUnitsString, {
       font: FONT,
       fill: 'blue',
       x: VOLTAGE_STRING_MAX_WIDTH * 1.1,
-      maxWidth: ( MAIN_BODY_WIDTH - VOLTAGE_STRING_MAX_WIDTH ) * 0.9 // limit to 90% of remaining space
+      maxWidth: ( MAIN_BODY_WIDTH - VOLTAGE_STRING_MAX_WIDTH ) * 0.9, // limit to 90% of remaining space
+      tandem: tandem.createTandem( 'voltageUnitsText' )
     } );
     this.batteryText.addChild( voltageUnitsText );
 

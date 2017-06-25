@@ -16,6 +16,7 @@ define( function( require ) {
   var OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
   var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
+  var Color = require( 'SCENERY/util/Color' );
   var TColor = require( 'SCENERY/util/TColor' );
 
   /**
@@ -23,10 +24,10 @@ define( function( require ) {
    */
   function OhmsLawScreen( tandem ) {
     Screen.call( this,
-      function() { return new OhmsLawModel( tandem.createTandem( 'ohmsLawModel' ) ); },
-      function( model ) { return new OhmsLawScreenView( model, tandem.createTandem( 'ohmsLawScreenView' ) ); },
+      function() { return new OhmsLawModel( tandem.createTandem( 'model' ) ); },
+      function( model ) { return new OhmsLawScreenView( model, tandem.createTandem( 'view' ) ); },
       {
-        backgroundColorProperty: new Property( '#ffffdf', {
+        backgroundColorProperty: new Property( new Color( '#ffffdf' ), {
           tandem: tandem.createTandem( 'backgroundColorProperty' ),
           phetioValueType: TColor
         } ),

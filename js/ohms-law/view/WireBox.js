@@ -36,41 +36,46 @@ define( function( require ) {
     Node.call( this );
 
     // For positioning, the top left corner of the wireFrame is defined as 0,0
-    var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, { stroke: '#000', lineWidth: THICKNESS } );
+    var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, {
+      stroke: '#000',
+      lineWidth: THICKNESS,
+      tandem: tandem.createTandem( 'wireFrame' )
+    } );
     this.addChild( wireFrame );
 
-    var batteriesView = new BatteriesView( model.voltageProperty, {
+    var batteriesView = new BatteriesView( model.voltageProperty, tandem.createTandem( 'batteriesView' ), {
       left: 30, // Slightly to the right of the wire
       centerY: 0
     } );
     this.addChild( batteriesView );
 
-    var resistorNode = new ResistorNode( model.resistanceProperty, {
+    var resistorNode = new ResistorNode( model.resistanceProperty, tandem.createTandem( 'resistorNode' ), {
       centerX: WIDTH / 2,
       centerY: HEIGHT
     } );
     this.addChild( resistorNode );
 
-    var bottomLeftArrow = new RightAngleArrow( model.currentProperty, {
+    var bottomLeftArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomLeftArrow' ), {
       x: -OFFSET,
       y: HEIGHT + OFFSET,
       rotation: Math.PI / 2
     } );
     this.addChild( bottomLeftArrow );
 
-    var bottomRightArrow = new RightAngleArrow( model.currentProperty, {
+    var bottomRightArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomRightArrow' ), {
       x: WIDTH + OFFSET,
       y: HEIGHT + OFFSET,
       rotation: 0
     } );
     this.addChild( bottomRightArrow );
 
-    var currentReadoutPanel = new ReadoutPanel( model.currentProperty, {
+    var currentReadoutPanel = new ReadoutPanel( model.currentProperty, tandem.createTandem( 'currentReadoutPanel' ), {
       centerY: HEIGHT / 2,
       centerX: WIDTH / 2
     } );
     this.addChild( currentReadoutPanel );
 
+    options.tandem = tandem;
     this.mutate( options );
   }
 

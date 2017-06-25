@@ -48,7 +48,8 @@ define( function( require ) {
         x: 380,
         property: model.currentProperty,
         color: PhetColorScheme.RED_COLORBLIND,
-        maxInitialWidth: 20
+        maxInitialWidth: 20,
+        tandem: tandem.createTandem( 'currentLetter' )
       },
       {
         symbolString: voltageSymbolString,
@@ -57,7 +58,8 @@ define( function( require ) {
         x: 150,
         property: model.voltageProperty,
         color: OhmsLawConstants.BLUE_COLOR,
-        maxInitialWidth: 180
+        maxInitialWidth: 180,
+        tandem: tandem.createTandem( 'voltageLetter' )
       },
       {
         symbolString: resistanceSymbolString,
@@ -66,12 +68,13 @@ define( function( require ) {
         x: 560,
         property: model.resistanceProperty,
         color: OhmsLawConstants.BLUE_COLOR,
-        maxInitialWidth: 175
+        maxInitialWidth: 175,
+        tandem: tandem.createTandem( 'resistanceLetter' )
       }
     ];
 
     // Create a node to hold all the symbols
-    var lettersNode = new Node();
+    var lettersNode = new Node( { tandem: tandem.createTandem( 'lettersNode' ) } );
     this.addChild( lettersNode );
 
     // Add the equals sign, which does not change size
@@ -79,7 +82,8 @@ define( function( require ) {
       font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
       fill: '#000',
       centerX: 300,
-      centerY: CENTER_Y
+      centerY: CENTER_Y,
+      tandem: tandem.createTandem( 'equalsSign' )
     } );
     this.addChild( equalsSign ); // must come after lettersNode
 
@@ -91,7 +95,8 @@ define( function( require ) {
         font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } ),
         fill: textData.color,
         centerX: 0,
-        centerY: 0
+        centerY: 0,
+        tandem: textData.tandem
       } );
 
       // Make sure that the text isn't initially too large and, if so, change the scaling factors.  This is done in
@@ -121,7 +126,7 @@ define( function( require ) {
       } );
     } );
 
-    options.tandem = tandem.createTandem( 'formulaNode' );
+    options.tandem = tandem;
     this.mutate( options );
   }
 
