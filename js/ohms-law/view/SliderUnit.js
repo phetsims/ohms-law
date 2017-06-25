@@ -11,18 +11,16 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var Dimension2 = require( 'DOT/Dimension2' );
   var HSlider = require( 'SUN/HSlider' );
-  var Image = require( 'SCENERY/nodes/Image' );
   var Node = require( 'SCENERY/nodes/Node' );
   var Text = require( 'SCENERY/nodes/Text' );
   var Util = require( 'DOT/Util' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
 
-  // images
-  var thumbImage = require( 'image!OHMS_LAW/thumb.png' );
-
   // constants
   var MAX_TEXT_WIDTH = OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION * 0.90; // Max text width for labels
+  var THUMB_FILL_ENABLED =  '#81aac2'; // dark grey
+  var THUMB_FILL_HIGHLIGHTED =   '#a5becd'; // light steel blue
 
   /**
    * @param {Property.<number>} property
@@ -45,19 +43,17 @@ define( function( require ) {
     // Positions for vertical alignment
     var symbolStringCenterY = OhmsLawConstants.SLIDER_UNIT_VERTICAL_OFFSET;
     var nameTop = symbolStringCenterY + 30;
-    var readoutTop = nameTop + OhmsLawConstants.SLIDER_HEIGHT + 40;
+    var readoutTop = nameTop + OhmsLawConstants.SLIDER_HEIGHT + 60;
     var sliderCenterY = (readoutTop + nameTop) / 2;
-
-    // Thumb for the slider
-    var thumb = new Image( thumbImage, { rotation: Math.PI / 2 } );
-    thumb.scale( OhmsLawConstants.THUMB_HEIGHT / thumb.height );
-    thumb.touchArea = thumb.localBounds.dilated( 30 );
 
     var slider = new HSlider( property, range, {
       trackFillEnabled: 'black',
+      thumbFillEnabled: THUMB_FILL_ENABLED,
+      thumbFillHighlighted: THUMB_FILL_HIGHLIGHTED,
       rotation: -Math.PI / 2,
-      trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT - 2 * thumb.height, 4 ),
-      thumbNode: thumb,
+
+      // -10 accounts for a bug fix in HSlider, see https://github.com/phetsims/sun/issues/293
+      trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT - 10, 4 ),
       x: 0,
       centerY: sliderCenterY,
       keyboardStep: options.keyboardStep,

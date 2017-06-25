@@ -57,7 +57,6 @@ define( function( require ) {
       // Exponential scaling algorithm.  Linear makes the changes too big.
       var scale = Math.pow( ( current * 0.1 ), 0.7 );
 
-      // TODO: use scale instead of overwriting the matrix each time the current changes
       self.matrix = Matrix3.scale( scale );
       self.mutate( options );
     } );

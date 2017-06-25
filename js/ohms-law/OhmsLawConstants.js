@@ -31,8 +31,7 @@ define( function( require ) {
     SLIDER_UNIT_VERTICAL_OFFSET: 78, // vertical offset measured from top of panel
 
     // slider unit
-    THUMB_HEIGHT: 32,  // Empirically determined.
-    SLIDER_HEIGHT: 230,
+    SLIDER_HEIGHT: 210,
     SYMBOL_FONT: new PhetFont( { family: 'Times New Roman', size: 60 } ),
     NAME_FONT: new PhetFont( 16 ),
     READOUT_FONT: new PhetFont( 28 ),
