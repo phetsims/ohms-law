@@ -13,7 +13,6 @@ define( function( require ) {
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
   var Matrix3 = require( 'DOT/Matrix3' );
-  var Node = require( 'SCENERY/nodes/Node' );
   var Path = require( 'SCENERY/nodes/Path' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var Shape = require( 'KITE/Shape' );
@@ -40,25 +39,27 @@ define( function( require ) {
    * @constructor
    */
   function RightAngleArrow( currentProperty, options ) {
-
-    Node.call( this );
+    var self = this;
 
     // create the shape of the arrow
     var arrowShape = new Shape().polygon( POINTS );
-    var arrowPath = new Path( arrowShape, {
+
+    Path.call( this, arrowShape, {
       stroke: '#000',
       fill: PhetColorScheme.RED_COLORBLIND,
       lineWidth: 0.2
     } );
-    this.addChild( arrowPath );
 
     // Present for the lifetime of the simulation
-    currentProperty.link( function( current ) {
+    currentProperty.lazyLink( function( current) {
 
       // Scale the arrows based on the value of the current.
       // Exponential scaling algorithm.  Linear makes the changes too big.
       var scale = Math.pow( ( current * 0.1 ), 0.7 );
-      arrowPath.matrix = Matrix3.scale( scale );
+
+      // TODO: use scale instead of overwriting the matrix each time the current changes
+      self.matrix = Matrix3.scale( scale );
+      self.mutate( options );
     } );
 
     this.mutate( options );
@@ -66,5 +67,5 @@ define( function( require ) {
 
   ohmsLaw.register( 'RightAngleArrow', RightAngleArrow );
 
-  return inherit( Node, RightAngleArrow );
+  return inherit( Path, RightAngleArrow );
 } );

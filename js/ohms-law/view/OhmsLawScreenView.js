@@ -38,6 +38,15 @@ define( function( require ) {
 
     ScreenView.call( this );
 
+    // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
+    var formulaNode = new FormulaNode( model.currentProperty, model.voltageProperty, model.resistanceProperty, {
+      pickable: false
+    } );
+
+    // Add the formula first
+    this.addChild( formulaNode );
+
+
     // Circuit node with readout node
     var wireBox = new WireBox( model.voltageProperty, model.resistanceProperty, model.currentProperty, {
       pickable: false,
@@ -45,12 +54,6 @@ define( function( require ) {
       y: 380
     } );
     this.addChild( wireBox );
-
-    // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
-    var formulaNode = new FormulaNode( model.currentProperty, model.voltageProperty, model.resistanceProperty, {
-      pickable: false
-    } );
-    this.addChild( formulaNode );
 
     // Create and add control panel with sliders.
     var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty );
