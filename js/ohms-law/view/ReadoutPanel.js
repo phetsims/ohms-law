@@ -46,7 +46,6 @@ define( function( require ) {
     // Not included in the extend call because we don't want the possibility of overwriting the parametric tandem given.
     options.tandem = tandem;
 
-
     // Create the text string
     var textContainer = new Node();
 
