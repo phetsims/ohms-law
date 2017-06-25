@@ -16,15 +16,22 @@ define( function( require ) {
   var OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
   var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
+  var TColor = require( 'SCENERY/util/TColor' );
 
   /**
    * @constructor
    */
-  function OhmsLawScreen() {
+  function OhmsLawScreen( tandem ) {
     Screen.call( this,
-      function() { return new OhmsLawModel(); },
-      function( model ) { return new OhmsLawScreenView( model ); },
-      { backgroundColorProperty: new Property( '#ffffdf' ) }
+      function() { return new OhmsLawModel( tandem.createTandem( 'ohmsLawModel' ) ); },
+      function( model ) { return new OhmsLawScreenView( model, tandem.createTandem( 'ohmsLawScreenView' ) ); },
+      {
+        backgroundColorProperty: new Property( '#ffffdf', {
+          tandem: tandem.createTandem( 'backgroundColorProperty' ),
+          phetioValueType: TColor
+        } ),
+        tandem: tandem
+      }
     );
   }
 

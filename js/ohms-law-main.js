@@ -12,6 +12,7 @@ define( function( require ) {
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Sim = require( 'JOIST/Sim' );
   var OhmsLawScreen = require( 'OHMS_LAW/ohms-law/OhmsLawScreen' );
+  var Tandem = require( 'TANDEM/Tandem' );
 
   // strings
   var ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
@@ -25,9 +26,13 @@ define( function( require ) {
     }
   };
 
+  // constants
+  var tandem = Tandem.createRootTandem();
+
   SimLauncher.launch( function() {
-    //Create and start the sim
-    var sim = new Sim( ohmsLawTitleString, [ new OhmsLawScreen ], simOptions );
+
+    // Create and start the sim
+    var sim = new Sim( ohmsLawTitleString, [ new OhmsLawScreen( tandem.createTandem( 'ohmsLawScreen' ) ) ], simOptions );
     sim.start();
   } );
 

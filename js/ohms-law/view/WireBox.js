@@ -27,10 +27,11 @@ define( function( require ) {
 
   /**
    * @param {OhmsLawModel} model
+   * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
    */
-  function WireBox( model, options ) {
+  function WireBox( model, tandem, options ) {
 
     Node.call( this );
 

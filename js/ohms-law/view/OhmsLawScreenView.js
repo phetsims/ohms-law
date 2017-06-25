@@ -29,17 +29,20 @@ define( function( require ) {
 
   /**
    * @param {OhmsLawModel} model
+   * @param {Tandem} tandem
    * @constructor
    */
-  function OhmsLawScreenView( model ) {
+  function OhmsLawScreenView( model, tandem ) {
 
     // {Property.<boolean>}
-    var soundActiveProperty = new BooleanProperty( true );
+    var soundActiveProperty = new BooleanProperty( true, {
+      tandem: tandem.createTandem( 'soundActiveProperty' )
+    } );
 
     ScreenView.call( this );
 
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
-    var formulaNode = new FormulaNode( model, {
+    var formulaNode = new FormulaNode( model, tandem.createTandem( 'formulaNode' ), {
       pickable: false
     } );
 
@@ -48,7 +51,7 @@ define( function( require ) {
 
 
     // Circuit node with readout node
-    var wireBox = new WireBox( model, {
+    var wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
       pickable: false,
       x: 70, // Layout of the WireBox
       y: 380
@@ -56,7 +59,7 @@ define( function( require ) {
     this.addChild( wireBox );
 
     // Create and add control panel with sliders.
-    var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty );
+    var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty, tandem.createTandem( 'controlPanel' ) );
     controlPanel.right = this.layoutBounds.width - 25; // empirically determined
     controlPanel.top = 60; // empirically determined
     this.addChild( controlPanel );
@@ -69,7 +72,8 @@ define( function( require ) {
       stroke: 'gray',
       lineWidth: 0.5,
       centerX: controlPanel.left + controlPanel.width * 0.70,  // empirically determined
-      centerY: controlPanel.bottom + buttonCenterYOffset
+      centerY: controlPanel.bottom + buttonCenterYOffset,
+      tandem: tandem.createTandem( 'soundToggleButton' )
     } );
     this.addChild( soundToggleButton );
 
@@ -81,7 +85,8 @@ define( function( require ) {
       listener: function() {
         model.reset();
         soundActiveProperty.reset();
-      }
+      },
+      tandem: tandem.createTandem( 'resetAllButton' )
     } ) );
 
     // Play sounds when adding or removing a battery
@@ -96,6 +101,10 @@ define( function( require ) {
           REMOVE_BATTERY_SOUND.play();
         }
       }
+    } );
+
+    this.mutate( {
+      tandem: tandem
     } );
   }
 

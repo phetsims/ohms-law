@@ -27,9 +27,10 @@ define( function( require ) {
   /**
    * @param {Property.<number>} voltageProperty
    * @param {Property.<number>} resistanceProperty
+   * @param {Tandem} tandem
    * @constructor
    */
-  function ControlPanel( voltageProperty, resistanceProperty ) {
+  function ControlPanel( voltageProperty, resistanceProperty, tandem ) {
 
     // Create the voltage slider with readout and labels
     var voltageSlider = new SliderUnit(

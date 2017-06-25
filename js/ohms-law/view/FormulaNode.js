@@ -31,10 +31,11 @@ define( function( require ) {
 
   /**
    * @param {OhmsLawModel} model
+   * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
    */
-  function FormulaNode( model, options ) {
+  function FormulaNode( model, tandem, options ) {
 
     Node.call( this );
 
@@ -94,7 +95,7 @@ define( function( require ) {
       } );
 
       // Make sure that the text isn't initially too large and, if so, change the scaling factors.  This is done in
-      // support of translation, in case some symbols are much larger than the V, I, and R symbols used in the English
+      // support of translation, nin case some symbols are much larger than the V, I, and R symbols used in the English
       // version.
       var initialWidth = textNode.width * textData.scaleA * textData.property.value + textData.scaleB;
       if ( initialWidth > textData.maxInitialWidth ) {
@@ -120,6 +121,7 @@ define( function( require ) {
       } );
     } );
 
+    options.tandem = tandem.createTandem( 'formulaNode' );
     this.mutate( options );
   }
 
