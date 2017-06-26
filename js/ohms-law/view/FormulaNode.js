@@ -10,7 +10,6 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
-  var Matrix3 = require( 'DOT/Matrix3' );
   var Node = require( 'SCENERY/nodes/Node' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
@@ -119,10 +118,8 @@ define( function( require ) {
 
       // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
       textData.property.link( function updateProperty( value ) {
-
-        // Since it would potentially reduce the area of SVG that gets repainted (may be browser-specific)
-        letterNode.matrix = Matrix3.translation( textData.x, CENTER_Y )
-          .timesMatrix( Matrix3.scale( textData.scaleA * value + textData.scaleB ) );
+        letterNode.setTranslation( textData.x, CENTER_Y );
+        letterNode.setScaleMagnitude( textData.scaleA * value + textData.scaleB );
       } );
     } );
 

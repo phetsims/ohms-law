@@ -12,7 +12,6 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
-  var Matrix3 = require( 'DOT/Matrix3' );
   var Path = require( 'SCENERY/nodes/Path' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var Shape = require( 'KITE/Shape' );
@@ -52,13 +51,13 @@ define( function( require ) {
     } );
 
     // Present for the lifetime of the simulation
-    currentProperty.lazyLink( function( current) {
+    currentProperty.lazyLink( function( current ) {
 
       // Scale the arrows based on the value of the current.
       // Exponential scaling algorithm.  Linear makes the changes too big.
       var scale = Math.pow( ( current * 0.1 ), 0.7 );
 
-      self.setScaleMagnitude( scale);
+      self.setScaleMagnitude( scale );
     } );
 
     options.tandem = tandem;
