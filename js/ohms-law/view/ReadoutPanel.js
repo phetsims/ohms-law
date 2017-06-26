@@ -25,7 +25,7 @@ define( function( require ) {
 
   // constants
   var FONT = new PhetFont( 34 );
-  var SPACING = new Text( '-', { font: FONT } ).width;
+  var SPACING = 11.3; // empirically determined
   var MAX_TEXT_WIDTH = 0.63 * OhmsLawConstants.WIRE_WIDTH;
 
   /**
