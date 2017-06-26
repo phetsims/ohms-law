@@ -58,6 +58,7 @@ define( function( require ) {
       x: 0,
       centerY: sliderCenterY,
       keyboardStep: options.keyboardStep,
+      modifiedKeyboardStep: options.modifiedKeyboardStep,
       numberDecimalPlaces: options.numberDecimalPlaces,
       tandem: tandem.createTandem( 'slider' )
     } );

@@ -56,6 +56,7 @@ define( function( require ) {
       {
         numberDecimalPlaces: 0,
         keyboardStep: 5,
+        modifiedKeyboardStep: 1,
         centerX: voltageSlider.centerX + OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION
       } );
 
