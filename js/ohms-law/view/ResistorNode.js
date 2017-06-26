@@ -64,7 +64,6 @@ define( function( require ) {
       .ellipticalArc( WIRE_WIDTH / 2, 0, PERSPECTIVE_FACTOR * WIRE_HEIGHT / 2, WIRE_HEIGHT / 2, 0, Math.PI / 2, 3 * Math.PI / 2, true )
       .horizontalLineToRelative( -WIRE_WIDTH ), {
       stroke: 'black',
-      lineWidth: 1,
       fill: BODY_FILL_GRADIENT,
       tandem: tandem.createTandem( 'bodyPath' )
     } );
@@ -74,7 +73,6 @@ define( function( require ) {
     var endPath = new Path( Shape.ellipse( -WIRE_WIDTH / 2, 0, WIRE_HEIGHT * PERSPECTIVE_FACTOR / 2, WIRE_HEIGHT / 2 ), {
       stroke: 'black',
       fill: '#ff9f9f',
-      lineWidth: 1,
       tandem: tandem.createTandem( 'endPath' )
     } );
     this.addChild( endPath );

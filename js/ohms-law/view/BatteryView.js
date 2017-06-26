@@ -60,7 +60,6 @@ define( function( require ) {
     // @private
     this.mainBody = new Rectangle( 0, 0, MAIN_BODY_WIDTH, BATTERY_HEIGHT, {
       stroke: '#000',
-      lineWidth: 1,
       fill: MAIN_BODY_FILL,
       y: -BATTERY_HEIGHT / 2,
       tandem: tandem.createTandem( 'mainBody' )
@@ -70,7 +69,6 @@ define( function( require ) {
     // @private
     this.copperPortion = new Rectangle( 0, 0, COPPER_PORTION_WIDTH, BATTERY_HEIGHT, {
       stroke: '#000',
-      lineWidth: 1,
       fill: COPPER_PORTION_FILL,
       y: -BATTERY_HEIGHT / 2,
       x: MAIN_BODY_WIDTH,
@@ -81,7 +79,6 @@ define( function( require ) {
     // @private
     this.nub = new Rectangle( COPPER_PORTION_WIDTH, 0, NUB_WIDTH, NUB_HEIGHT, {
       stroke: '#000',
-      lineWidth: 1,
       fill: NUB_FILL,
       y: -NUB_HEIGHT / 2,
       x: MAIN_BODY_WIDTH,
