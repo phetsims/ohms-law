@@ -19,8 +19,6 @@ define( function( require ) {
 
   // constants
   var MAX_TEXT_WIDTH = OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION * 0.90; // Max text width for labels
-  var THUMB_FILL_ENABLED = '#81aac2'; // dark grey
-  var THUMB_FILL_HIGHLIGHTED = '#a5becd'; // light steel blue
 
   /**
    * @param {Property.<number>} property
@@ -49,8 +47,8 @@ define( function( require ) {
 
     var slider = new HSlider( property, range, {
       trackFillEnabled: 'black',
-      thumbFillEnabled: THUMB_FILL_ENABLED,
-      thumbFillHighlighted: THUMB_FILL_HIGHLIGHTED,
+      thumbFillEnabled: '#c3c4c5',
+      thumbFillHighlighted: '#dedede',
       rotation: -Math.PI / 2,
 
       // -10 accounts for a bug fix in HSlider, see https://github.com/phetsims/sun/issues/293
