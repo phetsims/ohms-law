@@ -36,7 +36,8 @@ define( function( require ) {
 
     options = _.extend( {
       numberDecimalPlaces: 1,
-      keyboardStep: 1
+      keyboardStep: 1,
+      shiftKeyboardStep: 0.1
     }, options );
 
     // Positions for vertical alignment
@@ -56,7 +57,7 @@ define( function( require ) {
       x: 0,
       centerY: sliderCenterY,
       keyboardStep: options.keyboardStep,
-      modifiedKeyboardStep: options.modifiedKeyboardStep,
+      shiftKeyboardStep: options.shiftKeyboardStep,
       numberDecimalPlaces: options.numberDecimalPlaces,
       tandem: tandem.createTandem( 'slider' )
     } );

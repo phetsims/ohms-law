@@ -41,7 +41,8 @@ define( function( require ) {
       voltageUnitsString,
       tandem.createTandem( 'voltageSlider' ),
       {
-        keyboardStep: 0.1,
+        keyboardStep: 0.5, // volts
+        shiftKeyboardStep: 0.1, // volts
         centerX: -OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION / 2
       } );
 
@@ -55,8 +56,8 @@ define( function( require ) {
       tandem.createTandem( 'resistanceSlider' ),
       {
         numberDecimalPlaces: 0,
-        keyboardStep: 5,
-        modifiedKeyboardStep: 1,
+        keyboardStep: 20, // ohms
+        shiftKeyboardStep: 1, // ohms
         centerX: voltageSlider.centerX + OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION
       } );
 
