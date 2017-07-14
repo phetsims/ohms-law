@@ -89,7 +89,7 @@ define( function( require ) {
     this.addChild( batteryNode );
 
     // @private - Voltage label associated with the battery
-    this.batteryText = new Node( { x: 3, tandem: tandem.createTandem( 'batterText' ) } );
+    this.batteryText = new Node( { x: 3, tandem: tandem.createTandem( 'batteryText' ) } );
 
     // @private
     this.voltageValueText = new Text( OhmsLawConstants.AA_VOLTAGE, {
