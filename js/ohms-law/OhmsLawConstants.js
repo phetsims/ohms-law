@@ -28,7 +28,6 @@ define( function( require ) {
 
     // control panel
     SLIDERS_HORIZONTAL_SEPARATION: 35,
-    SLIDER_UNIT_VERTICAL_OFFSET: 78, // vertical offset measured from top of panel
 
     // slider unit
     SLIDER_HEIGHT: 210,
