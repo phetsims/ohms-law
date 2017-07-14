@@ -53,8 +53,9 @@ define( function( require ) {
     // Circuit node with readout node
     var wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
       pickable: false,
-      x: 70, // Layout of the WireBox
-      y: 380
+      centerX: formulaNode.centerX, // Layout of the WireBox
+      y: 370,
+      scale: .9
     } );
     this.addChild( wireBox );
 

@@ -67,7 +67,7 @@ define( function( require ) {
       },
       {
         symbolString: resistanceSymbolString,
-        scaleM: .015,
+        scaleM: .0165,
         scaleB: 2,
         x: 560,
         property: model.resistanceProperty,
