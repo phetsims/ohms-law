@@ -25,7 +25,7 @@ define( function( require ) {
 
   // constants
   // Center Y position of all text in the node, empirically determined
-  var CENTER_Y = 160;
+  var CENTER_Y = 130;
 
 
   /**
@@ -38,11 +38,16 @@ define( function( require ) {
 
     Node.call( this );
 
-    // Hold the metaData for each text to be created
+    /*
+     Hold the metaData for each text to be created
+     Scales are used to apply the linear scaling to each letter.
+     y = mx + b, scaleM is the coefficient, and B is the y-intercept.
+     */
     var textsDataArray = [
       {
+        // First so it can be added in back of the formula.
         symbolString: currentSymbolString,
-        scaleA: 0.2,
+        scaleM: 0.2,
         scaleB: 0.84,
         x: 380,
         property: model.currentProperty,
@@ -52,7 +57,7 @@ define( function( require ) {
       },
       {
         symbolString: voltageSymbolString,
-        scaleA: 4.5,
+        scaleM: 2,
         scaleB: 2,
         x: 150,
         property: model.voltageProperty,
@@ -62,7 +67,7 @@ define( function( require ) {
       },
       {
         symbolString: resistanceSymbolString,
-        scaleA: 0.04,
+        scaleM: .015,
         scaleB: 2,
         x: 560,
         property: model.resistanceProperty,
@@ -101,16 +106,16 @@ define( function( require ) {
       // Make sure that the text isn't initially too large and, if so, change the scaling factors.  This is done in
       // support of translation, nin case some symbols are much larger than the V, I, and R symbols used in the English
       // version.
-      var initialWidth = textNode.width * textData.scaleA * textData.property.value + textData.scaleB;
+      var initialWidth = textNode.width * textData.scaleM * textData.property.value + textData.scaleB;
       if ( initialWidth > textData.maxInitialWidth ) {
         var scaleFactor = textData.maxInitialWidth / initialWidth;
-        textData.scaleA = textData.scaleA * scaleFactor;
+        textData.scaleM = textData.scaleM * scaleFactor;
         textData.scaleB = textData.scaleB * scaleFactor;
       }
 
       // Add an invisible rectangle with bounds slightly larger than the text so that artifacts aren't left on the
       // screen, see https://github.com/phetsims/ohms-law/issues/26.
-      var antiArtifactRectangle = Rectangle.bounds( textNode.bounds.dilatedX( 1 ), { fill: 'rgba( 0, 0, 0, 0 )' } );
+      var antiArtifactRectangle = Rectangle.bounds( textNode.bounds.dilatedX( 1 ) );
 
       // Create the node that contains the text
       var letterNode = new Node( { children: [ antiArtifactRectangle, textNode ] } );
@@ -119,7 +124,7 @@ define( function( require ) {
       // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
       textData.property.link( function updateProperty( value ) {
         letterNode.setTranslation( textData.x, CENTER_Y );
-        letterNode.setScaleMagnitude( textData.scaleA * value + textData.scaleB );
+        letterNode.setScaleMagnitude( textData.scaleM * value + textData.scaleB );
       } );
     } );
 

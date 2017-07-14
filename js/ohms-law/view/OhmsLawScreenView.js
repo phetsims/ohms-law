@@ -61,7 +61,7 @@ define( function( require ) {
     // Create and add control panel with sliders.
     var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty,
       tandem.createTandem( 'controlPanel' ), {
-        right: this.layoutBounds.width - 25, // empirically determined
+        right: this.layoutBounds.width - 75, // empirically determined
         top: 60 // empirically determined
       } );
     this.addChild( controlPanel );
