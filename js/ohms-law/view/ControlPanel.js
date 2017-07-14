@@ -10,7 +10,7 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
-  var Node = require( 'SCENERY/nodes/Node' );
+  var HBox = require( 'SCENERY/nodes/HBox' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var Panel = require( 'SUN/Panel' );
@@ -28,9 +28,18 @@ define( function( require ) {
    * @param {Property.<number>} voltageProperty
    * @param {Property.<number>} resistanceProperty
    * @param {Tandem} tandem
+   * @param options
    * @constructor
    */
-  function ControlPanel( voltageProperty, resistanceProperty, tandem ) {
+  function ControlPanel( voltageProperty, resistanceProperty, tandem, options ) {
+
+    options = _.extend( {
+      xMargin: 30,
+      yMargin: 10,
+      lineWidth: 3,
+      resize: false,
+      tandem: tandem
+    }, options );
 
     // Create the voltage slider with readout and labels
     var voltageSlider = new SliderUnit(
@@ -42,8 +51,7 @@ define( function( require ) {
       tandem.createTandem( 'voltageSlider' ),
       {
         keyboardStep: 0.5, // volts
-        shiftKeyboardStep: 0.1, // volts
-        centerX: -OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION / 2
+        shiftKeyboardStep: 0.1 // volts
       } );
 
     // Create the resistance slider with readout and labels
@@ -57,22 +65,17 @@ define( function( require ) {
       {
         numberDecimalPlaces: 0,
         keyboardStep: 20, // ohms
-        shiftKeyboardStep: 1, // ohms
-        centerX: voltageSlider.centerX + OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION
+        shiftKeyboardStep: 1 // ohms
       } );
 
     // Use a content node so that the Panel can surround it fully
-    var content = new Node();
-    content.addChild( voltageSlider );
-    content.addChild( resistanceSlider );
+    var content = new HBox( {
+        spacing: OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION,
+        children: [ voltageSlider, resistanceSlider ]
+      }
+    );
 
-    Panel.call( this, content, {
-      xMargin: 30,
-      yMargin: 20,
-      lineWidth: 3,
-      resize: false,
-      tandem: tandem
-    } );
+    Panel.call( this, content, options );
   }
 
   ohmsLaw.register( 'ControlPanel', ControlPanel );

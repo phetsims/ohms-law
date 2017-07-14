@@ -27,7 +27,7 @@ define( function( require ) {
     FONT_FAMILY: 'Times New Roman',
 
     // control panel
-    SLIDERS_HORIZONTAL_SEPARATION: 115,
+    SLIDERS_HORIZONTAL_SEPARATION: 35,
     SLIDER_UNIT_VERTICAL_OFFSET: 78, // vertical offset measured from top of panel
 
     // slider unit

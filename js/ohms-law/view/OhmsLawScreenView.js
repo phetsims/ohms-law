@@ -59,9 +59,11 @@ define( function( require ) {
     this.addChild( wireBox );
 
     // Create and add control panel with sliders.
-    var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty, tandem.createTandem( 'controlPanel' ) );
-    controlPanel.right = this.layoutBounds.width - 25; // empirically determined
-    controlPanel.top = 60; // empirically determined
+    var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty,
+      tandem.createTandem( 'controlPanel' ), {
+        right: this.layoutBounds.width - 25, // empirically determined
+        top: 60 // empirically determined
+      } );
     this.addChild( controlPanel );
 
     var buttonCenterYOffset = 50; // empirically determined

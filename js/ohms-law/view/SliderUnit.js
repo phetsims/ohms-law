@@ -12,13 +12,16 @@ define( function( require ) {
   var Dimension2 = require( 'DOT/Dimension2' );
   var HSlider = require( 'SUN/HSlider' );
   var Node = require( 'SCENERY/nodes/Node' );
+  var VBox = require( 'SCENERY/nodes/VBox' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  var HBox = require( 'SCENERY/nodes/HBox' );
   var Text = require( 'SCENERY/nodes/Text' );
   var Util = require( 'DOT/Util' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
 
-  // constants
-  var MAX_TEXT_WIDTH = OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION * 0.90; // Max text width for labels
+  // TODO: make dynamic;
+  var MAX_TEXT_WIDTH = 104; // empirically determined
 
   /**
    * @param {Property.<number>} property
@@ -32,41 +35,18 @@ define( function( require ) {
    */
   function SliderUnit( property, range, symbolString, nameString, unitString, tandem, options ) {
 
-    Node.call( this );
-
     options = _.extend( {
       numberDecimalPlaces: 1,
       keyboardStep: 1,
       shiftKeyboardStep: 0.1
     }, options );
 
-    // Positions for vertical alignment
-    var symbolStringCenterY = OhmsLawConstants.SLIDER_UNIT_VERTICAL_OFFSET;
-    var nameTop = symbolStringCenterY + 30;
-    var readoutTop = nameTop + OhmsLawConstants.SLIDER_HEIGHT + 60;
-    var sliderCenterY = (readoutTop + nameTop) / 2;
-
-    var slider = new HSlider( property, range, {
-      trackFillEnabled: 'black',
-      thumbFillEnabled: '#c3c4c5',
-      thumbFillHighlighted: '#dedede',
-      rotation: -Math.PI / 2,
-
-      // -10 accounts for a bug fix in HSlider, see https://github.com/phetsims/sun/issues/293
-      trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT - 10, 4 ),
-      x: 0,
-      centerY: sliderCenterY,
-      keyboardStep: options.keyboardStep,
-      shiftKeyboardStep: options.shiftKeyboardStep,
-      numberDecimalPlaces: options.numberDecimalPlaces,
-      tandem: tandem.createTandem( 'slider' )
-    } );
+    Node.call( this );
 
     var symbolText = new Text( symbolString, {
       font: OhmsLawConstants.SYMBOL_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
-      centerY: symbolStringCenterY,
       maxWidth: MAX_TEXT_WIDTH,
       tandem: tandem.createTandem( 'symbolText' )
     } );
@@ -75,39 +55,66 @@ define( function( require ) {
       font: OhmsLawConstants.NAME_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
-      top: nameTop,
       maxWidth: MAX_TEXT_WIDTH,
       tandem: tandem.createTandem( 'nameText' )
+    } );
+
+    // We want these two close together, like one head unit
+    var headerNode = new VBox( {
+      spacing: -10, // empirically determined
+      children: [ symbolText, nameText ]
+    } );
+
+    var slider = new HSlider( property, range, {
+      trackFillEnabled: 'black',
+      thumbFillEnabled: '#c3c4c5',
+      thumbFillHighlighted: '#dedede',
+      rotation: -Math.PI / 2,
+
+      trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
+      x: 0,
+      keyboardStep: options.keyboardStep,
+      shiftKeyboardStep: options.shiftKeyboardStep,
+      numberDecimalPlaces: options.numberDecimalPlaces,
+      tandem: tandem.createTandem( 'slider' )
+    } );
+
+    var valueText = new Text( Util.toFixed( range.max, options.numberDecimalPlaces ), {
+      font: OhmsLawConstants.READOUT_FONT,
+      fill: OhmsLawConstants.BLACK_COLOR,
+      right: 20, // empirically determined
+      tandem: tandem.createTandem( 'valueText' )
     } );
 
     var unitText = new Text( unitString, {
       font: OhmsLawConstants.UNIT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
-      left: 20,
-      top: readoutTop,
+      left: valueText.right / 2,
       maxWidth: MAX_TEXT_WIDTH,
       tandem: tandem.createTandem( 'unitText' )
     } );
 
-    var valueText = new Text( Util.toFixed( property.value, options.numberDecimalPlaces ), {
-      font: OhmsLawConstants.READOUT_FONT,
-      fill: OhmsLawConstants.BLACK_COLOR,
-      right: unitText.left - 10,
-      top: readoutTop,
-      tandem: tandem.createTandem( 'valueText' )
+    // The readout should be horizontally aligned
+    var readout = new HBox( {
+      spacing: 6,
+      children: [ valueText, unitText ]
     } );
 
-    // Children stack from top to bottom in the layout.
-    this.addChild( symbolText );
-    this.addChild( nameText );
-    this.addChild( slider );
-    this.addChild( valueText );
-    this.addChild( unitText );
+    // Background for centering
+    var readoutBackground = Rectangle.bounds( readout.bounds, {
+      children: [ readout ]
+    } );
+
+    // Add components in a vertically spaced stack
+    this.addChild( new VBox( {
+      spacing: 10,
+      children: [ headerNode, slider, readoutBackground ]
+    } ) );
 
     // Update value of the readout. Present for the lifetime of the simulation; no need to unlink.
     property.link( function( value ) {
       valueText.text = Util.toFixed( value, options.numberDecimalPlaces );
-      valueText.right = unitText.left - 10;
+      readout.centerX = readoutBackground.selfBounds.centerX;
     } );
 
     options.tandem = tandem;
