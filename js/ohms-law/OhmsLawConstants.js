@@ -37,9 +37,8 @@ define( function( require ) {
     UNIT_FONT: new PhetFont( 28 ),
 
     // wire circuit
-    WIRE_WIDTH: 550,
-    WIRE_HEIGHT: 180,
-    WIRE_THICKNESS: 10,
+    WIRE_WIDTH: 505,
+    WIRE_HEIGHT: 165,
 
     // battery
     BATTERY_WIDTH: 82,

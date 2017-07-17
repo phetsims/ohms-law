@@ -17,6 +17,16 @@ define( function( require ) {
   var TNumber = require( 'ifphetio!PHET_IO/types/TNumber' );
 
   /**
+   * The main model function, used to compute the current of the model
+   * @param voltage
+   * @param resistance
+   * @returns {number} - current in milliamps
+   */
+  function computeCurrent( voltage, resistance ) {
+    return 1000 * voltage / resistance;
+  }
+
+  /**
    * @constructor
    */
   function OhmsLawModel( tandem ) {
@@ -41,9 +51,7 @@ define( function( require ) {
 
     // @public {Property.<number>} create a derived property that tracks the current in milli amps
     this.currentProperty = new DerivedProperty( [ this.voltageProperty, this.resistanceProperty ],
-      function( voltage, resistance ) {
-        return 1000 * voltage / resistance;
-      }, {
+      computeCurrent, {
         tandem: tandem.createTandem( 'currentProperty' ),
         phetioValueType: TNumber( {
           units: 'milliamperes'
@@ -62,6 +70,15 @@ define( function( require ) {
     reset: function() {
       this.voltageProperty.reset();
       this.resistanceProperty.reset();
+    },
+
+    /**
+     * Get the maximum current that can be computed by the model
+     * @returns {number} - the max current.
+     * @public
+     */
+    getMaxCurrent: function() {
+      return computeCurrent( OhmsLawConstants.VOLTAGE_RANGE.max, OhmsLawConstants.RESISTANCE_RANGE.min );
     }
   } );
 } );

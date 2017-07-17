@@ -22,7 +22,7 @@ define( function( require ) {
   // constants
   var WIDTH = OhmsLawConstants.WIRE_WIDTH;
   var HEIGHT = OhmsLawConstants.WIRE_HEIGHT;
-  var THICKNESS = OhmsLawConstants.WIRE_THICKNESS;
+  var WIRE_THICKNESS = 10;
   var OFFSET = 10;  // position offset for the RightAngleArrow
 
   /**
@@ -38,7 +38,7 @@ define( function( require ) {
     // For positioning, the top left corner of the wireFrame is defined as 0,0
     var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, {
       stroke: '#000',
-      lineWidth: THICKNESS,
+      lineWidth: WIRE_THICKNESS,
       tandem: tandem.createTandem( 'wireFrame' )
     } );
     this.addChild( wireFrame );
@@ -69,7 +69,7 @@ define( function( require ) {
     } );
     this.addChild( bottomRightArrow );
 
-    var currentReadoutPanel = new ReadoutPanel( model.currentProperty, tandem.createTandem( 'currentReadoutPanel' ), {
+    var currentReadoutPanel = new ReadoutPanel( model, tandem.createTandem( 'currentReadoutPanel' ), {
       centerY: HEIGHT / 2,
       centerX: WIDTH / 2
     } );

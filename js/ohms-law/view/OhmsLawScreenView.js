@@ -54,8 +54,7 @@ define( function( require ) {
     var wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
       pickable: false,
       centerX: formulaNode.centerX, // Layout of the WireBox
-      y: 370,
-      scale: .9
+      y: 370
     } );
     this.addChild( wireBox );
 
