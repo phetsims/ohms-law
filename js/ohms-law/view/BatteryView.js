@@ -1,4 +1,4 @@
-// Copyright 2016, University of Colorado Boulder
+// Copyright 2016-2017, University of Colorado Boulder
 
 /**
  * View of Single Battery
@@ -31,8 +31,10 @@ define( function( require ) {
   var COPPER_PORTION_WIDTH = OhmsLawConstants.BATTERY_WIDTH - MAIN_BODY_WIDTH - NUB_WIDTH;
   var BATTERY_HEIGHT = OhmsLawConstants.BATTERY_HEIGHT;
   var NUB_HEIGHT = OhmsLawConstants.BATTERY_HEIGHT * 0.30;
-  var VOLTAGE_TO_SCALE = new LinearFunction( 0.1, OhmsLawConstants.AA_VOLTAGE, 0.0001, 1, true );  // convert voltage to percentage (0 to 1)
-  var VOLTAGE_STRING_MAX_WIDTH = new Text( '9.9', { font: FONT } ).width;
+
+  // convert voltage to percentage (0 to 1)
+  var VOLTAGE_TO_SCALE = new LinearFunction( 0.1, OhmsLawConstants.AA_VOLTAGE, 0.0001, 1, true );
+  var VOLTAGE_STRING_MAX_WIDTH = new Text( Util.toFixed( OhmsLawConstants.VOLTAGE_RANGE.max, 1 ), { font: FONT } ).width;
 
   // Fills for the battery
   var MAIN_BODY_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )

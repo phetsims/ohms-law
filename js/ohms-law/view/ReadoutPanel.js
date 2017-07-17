@@ -74,7 +74,6 @@ define( function( require ) {
       tandem: tandem.createTandem( 'currentUnit' )
     } );
 
-
     var textContainer = new HBox( {
       spacing: 11.3, // empirically determined
       children: [ currentStringText, equalsSign, currentValueBackground, currentUnit ]
