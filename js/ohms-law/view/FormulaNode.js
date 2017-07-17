@@ -38,10 +38,22 @@ define( function( require ) {
 
     Node.call( this );
 
+    // Add the equals sign, which does not change size
+    var equalsSign = new Text( '=', { // We never internationalize the '=' sign
+      font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
+      fill: '#000',
+      centerX: 300,
+      centerY: CENTER_Y,
+      tandem: tandem.createTandem( 'equalsSign' )
+    } );
+
+
     /*
      Hold the metaData for each text to be created
      Scales are used to apply the linear scaling to each letter.
      y = mx + b, scaleM is the coefficient, and B is the y-intercept.
+
+     Base all values off of the position of the equals sign, because it is relatively centrally located
      */
     var textsDataArray = [
       {
@@ -49,7 +61,7 @@ define( function( require ) {
         symbolString: currentSymbolString,
         scaleM: 0.2,
         scaleB: 0.84,
-        x: 380,
+        x: equalsSign.centerX + 80,
         property: model.currentProperty,
         color: PhetColorScheme.RED_COLORBLIND,
         maxInitialWidth: 20,
@@ -59,7 +71,7 @@ define( function( require ) {
         symbolString: voltageSymbolString,
         scaleM: 2,
         scaleB: 2,
-        x: 150,
+        x: equalsSign.centerX - 150,
         property: model.voltageProperty,
         color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 180,
@@ -67,9 +79,9 @@ define( function( require ) {
       },
       {
         symbolString: resistanceSymbolString,
-        scaleM: .0165,
-        scaleB: 2,
-        x: 560,
+        scaleM: .015,
+        scaleB: 5,
+        x: equalsSign.centerX + 240,
         property: model.resistanceProperty,
         color: OhmsLawConstants.BLUE_COLOR,
         maxInitialWidth: 175,
@@ -81,14 +93,6 @@ define( function( require ) {
     var lettersNode = new Node( { tandem: tandem.createTandem( 'lettersNode' ) } );
     this.addChild( lettersNode );
 
-    // Add the equals sign, which does not change size
-    var equalsSign = new Text( '=', { // We never internationalize the '=' sign
-      font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
-      fill: '#000',
-      centerX: 300,
-      centerY: CENTER_Y,
-      tandem: tandem.createTandem( 'equalsSign' )
-    } );
     this.addChild( equalsSign ); // must come after lettersNode
 
     // Add the symbol letters to the formula and scale them appropriately
