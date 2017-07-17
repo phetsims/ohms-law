@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-dev.1 Fri Jul 14 2017 14:45:07 GMT-0800 (Alaskan Daylight Time)",
+  "comment": "# ohms-law 1.4.0-dev.2 Mon Jul 17 2017 13:13:28 GMT-0800 (Alaskan Daylight Time)",
   "assert": {
     "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
     "branch": "master"
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "df86c2be8671b5626ef726e6e03eb7258c1cc1dd",
+    "sha": "1c9cfa7c034ad750e8e73b629645b3289420f6e4",
     "branch": "layout"
   },
   "phet-core": {
@@ -45,11 +45,11 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "a3198c0756e5824df63b5c2a6bc38ffd8b3c8f1f",
+    "sha": "dcc89e2fd137b6756df89022d38e86e10988e1cf",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "effed588437936f4ffa088339776df18db4c65e8",
+    "sha": "0ded32d68f819d0dcf8c75b9b935b1e706762229",
     "branch": "master"
   },
   "sherpa": {
@@ -57,7 +57,7 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "38cd9dddb69c5776a8d395a640a5ec2ed3bd41eb",
+    "sha": "e1d62999cacb686393a8338d5dda4e19f5160ba4",
     "branch": "master"
   },
   "tandem": {
