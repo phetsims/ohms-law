@@ -21,6 +21,8 @@ define( function( require ) {
   var Sound = require( 'VIBE/Sound' );
   var BooleanProperty = require( 'AXON/BooleanProperty' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var HBox = require( 'SCENERY/nodes/HBox' );
+  var VBox = require( 'SCENERY/nodes/VBox' );
 
   // audio
   // The sounds themselves can be constants because there is only every one instance of OhmsLawScreenView.
@@ -49,7 +51,6 @@ define( function( require ) {
     // Add the formula first
     this.addChild( formulaNode );
 
-
     // Circuit node with readout node
     var wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
       pickable: false,
@@ -58,38 +59,38 @@ define( function( require ) {
     } );
     this.addChild( wireBox );
 
-    // Create and add control panel with sliders.
-    var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty,
-      tandem.createTandem( 'controlPanel' ), {
-        right: this.layoutBounds.width - 75, // empirically determined
-        top: 60 // empirically determined
-      } );
-    this.addChild( controlPanel );
-
-    var buttonCenterYOffset = 50; // empirically determined
+    // Create the control panel with sliders.
+    var controlPanel =
+      new ControlPanel( model.voltageProperty, model.resistanceProperty, tandem.createTandem( 'controlPanel' ) );
 
     // Sound on/off toggle button
     var soundToggleButton = new SoundToggleButton( soundActiveProperty, {
-      scale: 1.15,
       stroke: 'gray',
       lineWidth: 0.5,
-      centerX: controlPanel.left + controlPanel.width * 0.70,  // empirically determined
-      centerY: controlPanel.bottom + buttonCenterYOffset,
       tandem: tandem.createTandem( 'soundToggleButton' )
     } );
-    this.addChild( soundToggleButton );
 
-    // Reset button
-    this.addChild( new ResetAllButton( {
-      radius: 30,
-      centerX: controlPanel.left + controlPanel.width * 0.27,  // empirically determined
-      centerY: controlPanel.bottom + buttonCenterYOffset,
+    var resetAllButton = new ResetAllButton( {
+      radius: 28,
       listener: function() {
         model.reset();
         soundActiveProperty.reset();
       },
       tandem: tandem.createTandem( 'resetAllButton' )
-    } ) );
+    } );
+
+    var buttons = new HBox( {
+      spacing: 60, // empirically determined
+      children: [ resetAllButton, soundToggleButton ]
+    } );
+
+    var rightSideLayout = new VBox( {
+      spacing: 15,
+      children: [ controlPanel, buttons ],
+      right: this.layoutBounds.width - 75, // empirically determined
+      centerY: this.layoutBounds.centerY
+    } );
+    this.addChild( rightSideLayout );
 
     // Play sounds when adding or removing a battery
     model.voltageProperty.lazyLink( function( voltage, oldVoltage ) {

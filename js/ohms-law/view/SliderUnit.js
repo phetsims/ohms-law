@@ -107,7 +107,7 @@ define( function( require ) {
 
     // Add components in a vertically spaced stack
     this.addChild( new VBox( {
-      spacing: 10,
+      spacing: 5,
       children: [ headerNode, slider, readoutBackground ]
     } ) );
 

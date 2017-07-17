@@ -1,7 +1,8 @@
 // Copyright 2016-2017, University of Colorado Boulder
 
 /**
- * view formula ohms law
+ * View formula ohms law. This was developed to be statically placed in the view. All components are laid
+ * out based on the equals sign.
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
