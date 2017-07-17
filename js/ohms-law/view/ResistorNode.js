@@ -21,8 +21,8 @@ define( function( require ) {
   var Util = require( 'DOT/Util' );
 
   // constants
-  var WIRE_WIDTH = 260;
-  var WIRE_HEIGHT = 66;
+  var WIRE_WIDTH = OhmsLawConstants.WIRE_WIDTH / 2.123; // empirically determined
+  var WIRE_HEIGHT = OhmsLawConstants.WIRE_HEIGHT / 2.75; // empirically determined
   var PERSPECTIVE_FACTOR = 0.3; // multiplier that controls the width of the ellipses on the ends of the wire
   var DOT_RADIUS = 2;
   var DOT_POSITION_RANDOMIZATION_FACTOR = 12; // empirically determined
