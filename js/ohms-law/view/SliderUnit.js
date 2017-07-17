@@ -20,9 +20,6 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
 
-  // TODO: make dynamic;
-  var MAX_TEXT_WIDTH = 104; // empirically determined
-
   /**
    * @param {Property.<number>} property
    * @param {RangeWithValue} range
@@ -43,28 +40,6 @@ define( function( require ) {
 
     Node.call( this );
 
-    var symbolText = new Text( symbolString, {
-      font: OhmsLawConstants.SYMBOL_FONT,
-      fill: OhmsLawConstants.BLUE_COLOR,
-      centerX: 0,
-      maxWidth: MAX_TEXT_WIDTH,
-      tandem: tandem.createTandem( 'symbolText' )
-    } );
-
-    var nameText = new Text( nameString, {
-      font: OhmsLawConstants.NAME_FONT,
-      fill: OhmsLawConstants.BLUE_COLOR,
-      centerX: 0,
-      maxWidth: MAX_TEXT_WIDTH,
-      tandem: tandem.createTandem( 'nameText' )
-    } );
-
-    // We want these two close together, like one head unit
-    var headerNode = new VBox( {
-      spacing: -10, // empirically determined
-      children: [ symbolText, nameText ]
-    } );
-
     var slider = new HSlider( property, range, {
       trackFillEnabled: 'black',
       thumbFillEnabled: '#c3c4c5',
@@ -79,6 +54,31 @@ define( function( require ) {
       tandem: tandem.createTandem( 'slider' )
     } );
 
+    // Set the maximum width that text can be in the slider unit based on the width of the HSlider.
+    var maxTextWidth = slider.width * 2;
+
+    var symbolText = new Text( symbolString, {
+      font: OhmsLawConstants.SYMBOL_FONT,
+      fill: OhmsLawConstants.BLUE_COLOR,
+      centerX: 0,
+      maxWidth: maxTextWidth,
+      tandem: tandem.createTandem( 'symbolText' )
+    } );
+
+    var nameText = new Text( nameString, {
+      font: OhmsLawConstants.NAME_FONT,
+      fill: OhmsLawConstants.BLUE_COLOR,
+      centerX: 0,
+      maxWidth: maxTextWidth,
+      tandem: tandem.createTandem( 'nameText' )
+    } );
+
+    // We want these two close together, like one head unit
+    var headerNode = new VBox( {
+      spacing: -10, // empirically determined
+      children: [ symbolText, nameText ]
+    } );
+
     var valueText = new Text( Util.toFixed( range.max, options.numberDecimalPlaces ), {
       font: OhmsLawConstants.READOUT_FONT,
       fill: OhmsLawConstants.BLACK_COLOR,
@@ -90,7 +90,7 @@ define( function( require ) {
       font: OhmsLawConstants.UNIT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       left: valueText.right / 2,
-      maxWidth: MAX_TEXT_WIDTH,
+      maxWidth: maxTextWidth / 2,
       tandem: tandem.createTandem( 'unitText' )
     } );
 
