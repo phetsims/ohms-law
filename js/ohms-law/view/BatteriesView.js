@@ -26,6 +26,7 @@ define( function( require ) {
 
     // Max number of batteries
     var maxNumberBatteries = Math.ceil( OhmsLawConstants.VOLTAGE_RANGE.max / OhmsLawConstants.AA_VOLTAGE );
+    var batteryWidth = ( OhmsLawConstants.WIRE_WIDTH - OhmsLawConstants.BATTERIES_OFFSET * 2 ) / maxNumberBatteries;
 
     // Store battery nodes in an array
     var batteries = [];
@@ -33,8 +34,8 @@ define( function( require ) {
     var batteriesGroupTandem = tandem.createGroupTandem( 'battery' );
     // Create an array of batteries; enough to fill the entire wire.
     for ( var i = 0; i < maxNumberBatteries; i++ ) {
-      var leftPosition = i * OhmsLawConstants.BATTERY_WIDTH;
-      var battery = new BatteryView( batteriesGroupTandem.createNextTandem(), { x: leftPosition, y: 0 } );
+      var leftPosition = i * batteryWidth;
+      var battery = new BatteryView( batteryWidth, batteriesGroupTandem.createNextTandem(), { x: leftPosition, y: 0 } );
 
       // Add them as children to this node, and to the array for manipulation
       this.addChild( battery );

@@ -44,7 +44,7 @@ define( function( require ) {
     this.addChild( wireFrame );
 
     var batteriesView = new BatteriesView( model.voltageProperty, tandem.createTandem( 'batteriesView' ), {
-      left: 30, // Slightly to the right of the wire
+      left: OhmsLawConstants.BATTERIES_OFFSET, // Slightly to the right of the wire
       centerY: 0
     } );
     this.addChild( batteriesView );

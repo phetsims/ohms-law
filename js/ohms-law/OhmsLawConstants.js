@@ -41,8 +41,8 @@ define( function( require ) {
     WIRE_HEIGHT: 165,
 
     // battery
-    BATTERY_WIDTH: 82,
-    BATTERY_HEIGHT: 40,
+    BATTERIES_OFFSET: 30,
+    BATTERY_HEIGHT: 38,
     AA_VOLTAGE: 1.5 // in volts
   };
 
