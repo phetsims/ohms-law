@@ -24,11 +24,6 @@ define( function( require ) {
   var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
 
-  // constants
-  // Center Y position of all text in the node, empirically determined
-  var CENTER_Y = 130;
-
-
   /**
    * @param {OhmsLawModel} model
    * @param {Tandem} tandem
@@ -44,7 +39,7 @@ define( function( require ) {
       font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
       fill: '#000',
       centerX: 300,
-      centerY: CENTER_Y,
+      centerY: 0,
       tandem: tandem.createTandem( 'equalsSign' )
     } );
 
@@ -128,7 +123,7 @@ define( function( require ) {
 
       // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
       textData.property.link( function updateProperty( value ) {
-        letterNode.setTranslation( textData.x, CENTER_Y );
+        letterNode.setTranslation( textData.x, 0 );
         letterNode.setScaleMagnitude( textData.scaleM * value + textData.scaleB );
       } );
     } );

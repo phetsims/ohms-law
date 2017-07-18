@@ -45,7 +45,8 @@ define( function( require ) {
 
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
     var formulaNode = new FormulaNode( model, tandem.createTandem( 'formulaNode' ), {
-      pickable: false
+      pickable: false,
+      centerY: this.layoutBounds.bottom/ 4.75
     } );
 
     // Add the formula first
@@ -55,7 +56,7 @@ define( function( require ) {
     var wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
       pickable: false,
       centerX: formulaNode.centerX, // Layout of the WireBox
-      y: 370
+      y: this.layoutBounds.bottom * .6
     } );
     this.addChild( wireBox );
 
