@@ -59,6 +59,7 @@ define( function( require ) {
       } );
     } );
 
+    options.tandem = tandem;
     this.mutate( options );
   }
 

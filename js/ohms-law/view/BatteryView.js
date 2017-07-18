@@ -114,6 +114,7 @@ define( function( require ) {
 
     this.addChild( this.batteryText );
 
+    options.tandem= tandem;
     this.mutate( options );
   }
 
