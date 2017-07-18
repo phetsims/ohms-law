@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-dev.2 Mon Jul 17 2017 13:13:28 GMT-0800 (Alaskan Daylight Time)",
+  "comment": "# ohms-law 1.4.0-phetiodev.2 Tue Jul 18 2017 10:10:50 GMT-0800 (Alaskan Daylight Time)",
   "assert": {
     "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
     "branch": "master"
@@ -21,7 +21,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "d4e70ec736d20cc04c072c6b84e47d651eb70977",
+    "sha": "5c716ddc5080dc840bd42a225a0f3fe012cecfaa",
     "branch": "master"
   },
   "kite": {
@@ -29,11 +29,35 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "1c9cfa7c034ad750e8e73b629645b3289420f6e4",
-    "branch": "layout"
+    "sha": "d19ef3b8e882b62a3143c2b2fa04ee2537897d74",
+    "branch": "master"
   },
   "phet-core": {
     "sha": "d8bec6c12614029cc8635c60f23d20db1904fee6",
+    "branch": "master"
+  },
+  "phet-io": {
+    "sha": "e2bb25ecd3d7ea6bd970e10e6f82c12fc3eba59b",
+    "branch": "master"
+  },
+  "phet-io-website": {
+    "sha": "dffe3a91cce9e7fcb55aa40539a25553a49ca793",
+    "branch": "master"
+  },
+  "phet-io-wrapper-classroom-activity": {
+    "sha": "0fb36ca5df9a11786e91d3de886861d8342ea401",
+    "branch": "master"
+  },
+  "phet-io-wrapper-lab-book": {
+    "sha": "c651eed15eee38247f3b216ca0ee9e0c00b79356",
+    "branch": "master"
+  },
+  "phet-io-wrapper-sonification": {
+    "sha": "0c9ea7921547563ddb3850e321028cfdad84510b",
+    "branch": "master"
+  },
+  "phet-io-wrappers": {
+    "sha": "e3026d476203b1db498a8dcb45a68768c605e37a",
     "branch": "master"
   },
   "phetcommon": {
@@ -45,7 +69,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "dcc89e2fd137b6756df89022d38e86e10988e1cf",
+    "sha": "edf6700db35ecb6dbbe42299f8bbaea8a42a6a89",
     "branch": "master"
   },
   "scenery-phet": {
@@ -57,7 +81,7 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "e1d62999cacb686393a8338d5dda4e19f5160ba4",
+    "sha": "147aa62c4d38fc42ec756ab4be4798c4159eb396",
     "branch": "master"
   },
   "tandem": {
