@@ -87,7 +87,7 @@ define( function( require ) {
     var rightSideLayout = new VBox( {
       spacing: 15,
       children: [ controlPanel, buttons ],
-      right: this.layoutBounds.width - 75, // empirically determined
+      right: this.layoutBounds.width - 50, // empirically determined
       centerY: this.layoutBounds.centerY
     } );
     this.addChild( rightSideLayout );

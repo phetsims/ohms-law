@@ -20,6 +20,9 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
 
+  // constants
+  var READOUT_SPACING = 6;
+
   /**
    * @param {Property.<number>} property
    * @param {RangeWithValue} range
@@ -47,42 +50,35 @@ define( function( require ) {
       rotation: -Math.PI / 2,
 
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
-      x: 0,
       keyboardStep: options.keyboardStep,
       shiftKeyboardStep: options.shiftKeyboardStep,
       numberDecimalPlaces: options.numberDecimalPlaces,
       tandem: tandem.createTandem( 'slider' )
     } );
 
-    // Set the maximum width that text can be in the slider unit based on the width of the HSlider.
-    var maxTextWidth = slider.width * 2;
-
     var symbolText = new Text( symbolString, {
       font: OhmsLawConstants.SYMBOL_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
-      centerX: 0,
-      maxWidth: maxTextWidth,
+      maxWidth: OhmsLawConstants.SLIDER_WIDTH,
       tandem: tandem.createTandem( 'symbolText' )
     } );
 
     var nameText = new Text( nameString, {
       font: OhmsLawConstants.NAME_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
-      centerX: 0,
-      maxWidth: maxTextWidth,
+      maxWidth: OhmsLawConstants.SLIDER_WIDTH,
       tandem: tandem.createTandem( 'nameText' )
     } );
 
     // We want these two close together, like one head unit
     var headerNode = new VBox( {
-      spacing: -10, // empirically determined
+      spacing: -5, // empirically determined
       children: [ symbolText, nameText ]
     } );
 
     var valueText = new Text( Util.toFixed( range.max, options.numberDecimalPlaces ), {
       font: OhmsLawConstants.READOUT_FONT,
       fill: OhmsLawConstants.BLACK_COLOR,
-      right: 20, // empirically determined
       tandem: tandem.createTandem( 'valueText' )
     } );
 
@@ -90,19 +86,20 @@ define( function( require ) {
       font: OhmsLawConstants.UNIT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       left: valueText.right / 2,
-      maxWidth: maxTextWidth / 2,
+      maxWidth: OhmsLawConstants.SLIDER_WIDTH - valueText.width - READOUT_SPACING, // Size unit with the max value next to.
       tandem: tandem.createTandem( 'unitText' )
     } );
 
     // The readout should be horizontally aligned
     var readout = new HBox( {
-      spacing: 6,
+      spacing: READOUT_SPACING,
       children: [ valueText, unitText ]
     } );
 
     // Background for centering
     var readoutBackground = Rectangle.bounds( readout.bounds, {
-      children: [ readout ]
+      children: [ readout ],
+      maxWidth: OhmsLawConstants.SLIDER_WIDTH
     } );
 
     // Add components in a vertically spaced stack
@@ -118,7 +115,6 @@ define( function( require ) {
     } );
 
     options.tandem = tandem;
-
     this.mutate( options );
   }
 

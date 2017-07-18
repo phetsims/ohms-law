@@ -27,7 +27,7 @@ define( function( require ) {
     FONT_FAMILY: 'Times New Roman',
 
     // control panel
-    SLIDERS_HORIZONTAL_SEPARATION: 35,
+    SLIDER_WIDTH: 89,
 
     // slider unit
     SLIDER_HEIGHT: 210,

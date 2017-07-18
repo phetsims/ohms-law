@@ -70,7 +70,7 @@ define( function( require ) {
 
     // Use a content node so that the Panel can surround it fully
     var content = new HBox( {
-        spacing: OhmsLawConstants.SLIDERS_HORIZONTAL_SEPARATION,
+        spacing: 30, // empirically determined
         children: [ voltageSlider, resistanceSlider ]
       }
     );
