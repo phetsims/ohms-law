@@ -86,7 +86,9 @@ define( function( require ) {
       font: OhmsLawConstants.UNIT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       left: valueText.right / 2,
-      maxWidth: OhmsLawConstants.SLIDER_WIDTH - valueText.width - READOUT_SPACING, // Size unit with the max value next to.
+
+      // Size the unit to be as big as possible next to the value with spacing.
+      maxWidth: OhmsLawConstants.SLIDER_WIDTH - valueText.width - READOUT_SPACING,
       tandem: tandem.createTandem( 'unitText' )
     } );
 
