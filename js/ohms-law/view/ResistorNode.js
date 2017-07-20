@@ -25,6 +25,7 @@ define( function( require ) {
   var RESISTOR_HEIGHT = OhmsLawConstants.WIRE_HEIGHT / 2.75; // empirically determined
   var PERSPECTIVE_FACTOR = 0.3; // multiplier that controls the width of the ellipses on the ends of the wire
   var DOT_RADIUS = 2;
+  var DOT_POSITION_RANDOMIZATION_FACTOR = 12;
   var AREA_PER_DOT = 40; // adjust this to control the density of the dots
   var MAX_WIDTH_INCLUDING_ROUNDED_ENDS = RESISTOR_WIDTH + RESISTOR_HEIGHT * PERSPECTIVE_FACTOR;
 
@@ -89,23 +90,34 @@ define( function( require ) {
     var dotsNodeTandem = tandem.createTandem( 'dotsNode' );
     var dotsNode = new Node( { tandem: dotsNodeTandem } );
     var dotsGroupTandem = dotsNodeTandem.createGroupTandem( 'dot' );
-
+    var dotPositions = []; // keep track of all of the positions of the dots and then make them;
 
     // Create the dots by placing them on a grid, but move each one randomly a bit to make them look irregular
     for ( var i = 1; i < DOT_GRID_COLUMNS; i++ ) {
       for ( var j = 1; j < DOT_GRID_ROWS; j++ ) {
 
-        var centerX = ( phet.joist.random.nextDouble() - .5 ) * MAX_WIDTH_INCLUDING_ROUNDED_ENDS;
-        var centerY = ( phet.joist.random.nextDouble() - .5 ) * RESISTOR_HEIGHT;
-        var dot = new Circle( DOT_RADIUS, {
-          fill: 'black',
-          centerX: centerX,
-          centerY: centerY,
-          tandem: dotsGroupTandem.createNextTandem()
-        } );
-        dotsNode.addChild( dot );
+        var centerX = i * ( MAX_WIDTH_INCLUDING_ROUNDED_ENDS / DOT_GRID_COLUMNS ) -
+                      MAX_WIDTH_INCLUDING_ROUNDED_ENDS / 2 +
+                      (phet.joist.random.nextDouble() - 0.5 ) * DOT_POSITION_RANDOMIZATION_FACTOR;
+        var centerY = j * ( RESISTOR_HEIGHT / DOT_GRID_ROWS ) - RESISTOR_HEIGHT / 2 +
+                      ( phet.joist.random.nextDouble() - 0.5 ) * DOT_POSITION_RANDOMIZATION_FACTOR;
+
+        dotPositions.push( [ centerX, centerY ] );
       }
     }
+
+    // Shuffle the positions and then create the dots. This way the tandemIDs will match the children index.
+    // See https://github.com/phetsims/ohms-law/issues/66 for more info.
+    dotPositions = phet.joist.random.shuffle( dotPositions );
+    dotPositions.forEach( function( positionPair ) {
+      var dot = new Circle( DOT_RADIUS, {
+        fill: 'black',
+        centerX: positionPair[ 0 ],
+        centerY: positionPair[ 1 ],
+        tandem: dotsGroupTandem.createNextTandem()
+      } );
+      dotsNode.addChild( dot );
+    } );
     this.addChild( dotsNode );
 
     // Clip the dots that are shown to only include those inside the wire (including the wireEnd)
