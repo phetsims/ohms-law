@@ -17,16 +17,6 @@ define( function( require ) {
   var TNumber = require( 'ifphetio!PHET_IO/types/TNumber' );
 
   /**
-   * The main model function, used to compute the current of the model
-   * @param voltage
-   * @param resistance
-   * @returns {number} - current in milliamps
-   */
-  function computeCurrent( voltage, resistance ) {
-    return 1000 * voltage / resistance;
-  }
-
-  /**
    * @constructor
    */
   function OhmsLawModel( tandem ) {
@@ -59,6 +49,16 @@ define( function( require ) {
       } );
   }
 
+  /**
+   * The main model function, used to compute the current of the model
+   * @param voltage
+   * @param resistance
+   * @returns {number} - current in milliamps
+   */
+  function computeCurrent( voltage, resistance ) {
+    return 1000 * voltage / resistance;
+  }
+
   ohmsLaw.register( 'OhmsLawModel', OhmsLawModel );
 
   return inherit( Object, OhmsLawModel, {
@@ -70,7 +70,8 @@ define( function( require ) {
     reset: function() {
       this.voltageProperty.reset();
       this.resistanceProperty.reset();
-    },
+    }
+  }, {
 
     /**
      * Get the maximum current that can be computed by the model

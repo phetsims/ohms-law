@@ -14,6 +14,7 @@ define( function( require ) {
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
   var Panel = require( 'SUN/Panel' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
@@ -57,7 +58,7 @@ define( function( require ) {
       tandem: tandem.createTandem( 'equalsSign' )
     } );
 
-    var currentValue = new Text( Util.toFixed( model.getMaxCurrent(), 1 ), {
+    var currentValue = new Text( Util.toFixed( OhmsLawModel.getMaxCurrent(), 1 ), {
       font: FONT,
       fill: 'black',
       tandem: tandem.createTandem( 'currentValue' )
