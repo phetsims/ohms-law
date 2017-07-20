@@ -25,7 +25,6 @@ define( function( require ) {
   var RESISTOR_HEIGHT = OhmsLawConstants.WIRE_HEIGHT / 2.75; // empirically determined
   var PERSPECTIVE_FACTOR = 0.3; // multiplier that controls the width of the ellipses on the ends of the wire
   var DOT_RADIUS = 2;
-  var DOT_POSITION_RANDOMIZATION_FACTOR = 12; // empirically determined
   var AREA_PER_DOT = 40; // adjust this to control the density of the dots
   var MAX_WIDTH_INCLUDING_ROUNDED_ENDS = RESISTOR_WIDTH + RESISTOR_HEIGHT * PERSPECTIVE_FACTOR;
 
@@ -96,11 +95,8 @@ define( function( require ) {
     for ( var i = 1; i < DOT_GRID_COLUMNS; i++ ) {
       for ( var j = 1; j < DOT_GRID_ROWS; j++ ) {
 
-        var centerX = i * ( MAX_WIDTH_INCLUDING_ROUNDED_ENDS / DOT_GRID_COLUMNS ) -
-                      MAX_WIDTH_INCLUDING_ROUNDED_ENDS / 2 +
-                      (phet.joist.random.nextDouble() - 0.5 ) * DOT_POSITION_RANDOMIZATION_FACTOR;
-        var centerY = j * ( RESISTOR_HEIGHT / DOT_GRID_ROWS ) - RESISTOR_HEIGHT / 2 +
-                      ( phet.joist.random.nextDouble() - 0.5 ) * DOT_POSITION_RANDOMIZATION_FACTOR;
+        var centerX = ( phet.joist.random.nextDouble() - .5 ) * MAX_WIDTH_INCLUDING_ROUNDED_ENDS;
+        var centerY = ( phet.joist.random.nextDouble() - .5 ) * RESISTOR_HEIGHT;
         var dot = new Circle( DOT_RADIUS, {
           fill: 'black',
           centerX: centerX,
@@ -110,9 +106,6 @@ define( function( require ) {
         dotsNode.addChild( dot );
       }
     }
-
-    // Randomize the array of dots so that we can show/hide them in a random way as the resistance changes
-    dotsNode.children = phet.joist.random.shuffle( dotsNode.children );
     this.addChild( dotsNode );
 
     // Clip the dots that are shown to only include those inside the wire (including the wireEnd)
@@ -130,7 +123,7 @@ define( function( require ) {
     resistanceProperty.link( function( resistance ) {
       var numDotsToShow = RESISTANCE_TO_NUM_DOTS( resistance );
       dotsNode.children.forEach( function( dot, index ) {
-        dot.setVisible( index < numDotsToShow);
+        dot.setVisible( index < numDotsToShow );
       } );
     } );
 
