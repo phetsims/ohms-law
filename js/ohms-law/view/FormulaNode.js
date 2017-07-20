@@ -44,12 +44,13 @@ define( function( require ) {
     } );
 
 
-    /*
-     Hold the metaData for each text to be created
-     Scales are used to apply the linear scaling to each letter.
-     y = mx + b, scaleM is the coefficient, and B is the y-intercept.
-
-     Base all values off of the position of the equals sign, because it is relatively centrally located
+    /**
+     * Hold the metaData for each text to be created
+     * Scales are used to apply the linear scaling to each letter.
+     * y = mx + b, scaleM is the coefficient, and B is the y-intercept.
+     *
+     * Base all values off of the position of the equals sign, because it it is relatively centrally
+     * located
      */
     var textsDataArray = [
       {
