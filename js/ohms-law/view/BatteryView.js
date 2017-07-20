@@ -45,19 +45,18 @@ define( function( require ) {
   var NUB_FILL = '#dddddd';
 
   /**
-   * @param {Number} batteryWidth
    * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function BatteryView( batteryWidth, tandem, options ) {
+  function BatteryView( tandem, options ) {
 
     Node.call( this );
 
     // @private - Determine the width of the batter pieces.
-    this.mainBodyWidth = batteryWidth * 0.87; // empirically determined
-    var nubWidth = batteryWidth * 0.05; // empirically determined
-    var copperPortionWidth = batteryWidth - this.mainBodyWidth - nubWidth;
+    this.mainBodyWidth = OhmsLawConstants.BATTERY_WIDTH * 0.87; // empirically determined
+    var nubWidth = OhmsLawConstants.BATTERY_WIDTH * 0.05; // empirically determined
+    var copperPortionWidth = OhmsLawConstants.BATTERY_WIDTH - this.mainBodyWidth - nubWidth;
 
     // The origin (0,0) is defined as the leftmost and vertically centered position of the battery
     var batteryNode = new Node();

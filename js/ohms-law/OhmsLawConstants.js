@@ -13,6 +13,15 @@ define( function( require ) {
   var RangeWithValue = require( 'DOT/RangeWithValue' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
+  // constants used by other constants
+  var RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms
+  var VOLTAGE_RANGE = new RangeWithValue( 0.1, 9, 4.5 ); // in volts
+
+  var WIRE_WIDTH = 505;
+  var BATTERIES_OFFSET = 30;
+  var AA_VOLTAGE = 1.5; // in volts
+  var MAX_NUMBER_OF_BATTERIES = Math.ceil( VOLTAGE_RANGE.max / AA_VOLTAGE );
+
   var OhmsLawConstants = {
 
     // colors
@@ -20,8 +29,8 @@ define( function( require ) {
     BLACK_COLOR: '#000',
 
     // range for sliders with default values
-    RESISTANCE_RANGE: new RangeWithValue( 10, 1000, 500 ), // in ohms
-    VOLTAGE_RANGE: new RangeWithValue( 0.1, 9, 4.5 ), // in volts
+    RESISTANCE_RANGE: RESISTANCE_RANGE,
+    VOLTAGE_RANGE: VOLTAGE_RANGE,
 
     // formula
     FONT_FAMILY: 'Times New Roman',
@@ -37,13 +46,15 @@ define( function( require ) {
     UNIT_FONT: new PhetFont( 28 ),
 
     // wire circuit
-    WIRE_WIDTH: 505,
+    WIRE_WIDTH: WIRE_WIDTH,
     WIRE_HEIGHT: 165,
 
     // battery
-    BATTERIES_OFFSET: 30,
+    MAX_NUMBER_OF_BATTERIES: MAX_NUMBER_OF_BATTERIES,
+    BATTERIES_OFFSET: BATTERIES_OFFSET,
     BATTERY_HEIGHT: 38,
-    AA_VOLTAGE: 1.5 // in volts
+    AA_VOLTAGE: AA_VOLTAGE,
+    BATTERY_WIDTH: ( WIRE_WIDTH - BATTERIES_OFFSET * 2 ) / MAX_NUMBER_OF_BATTERIES
   };
 
   ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );
