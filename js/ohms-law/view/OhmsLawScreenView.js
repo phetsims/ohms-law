@@ -45,20 +45,13 @@ define( function( require ) {
 
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
     var formulaNode = new FormulaNode( model, tandem.createTandem( 'formulaNode' ), {
-      pickable: false,
-      centerY: this.layoutBounds.bottom/ 4.75
+      pickable: false
     } );
-
-    // Add the formula first
-    this.addChild( formulaNode );
 
     // Circuit node with readout node
     var wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
-      pickable: false,
-      centerX: formulaNode.centerX, // Layout of the WireBox
-      y: this.layoutBounds.bottom * .6
+      pickable: false
     } );
-    this.addChild( wireBox );
 
     // Create the control panel with sliders.
     var controlPanel =
@@ -87,11 +80,22 @@ define( function( require ) {
 
     var rightSideLayout = new VBox( {
       spacing: 15,
-      children: [ controlPanel, buttons ],
-      right: this.layoutBounds.width - 50, // empirically determined
-      centerY: this.layoutBounds.centerY
+      children: [ controlPanel, buttons ]
     } );
+
+    // children
+    this.addChild( formulaNode );
+    this.addChild( wireBox );
     this.addChild( rightSideLayout );
+
+    // layout for the screen
+    formulaNode.centerY = this.layoutBounds.bottom / 4.75;
+
+    wireBox.centerX = formulaNode.centerX;
+    wireBox.centerY = this.layoutBounds.bottom * .74; // empirically determined
+
+    rightSideLayout.right = this.layoutBounds.width - 50; // empirically determined
+    rightSideLayout.centerY = this.layoutBounds.centerY;
 
     // Play sounds when adding or removing a battery
     model.voltageProperty.lazyLink( function( voltage, oldVoltage ) {
