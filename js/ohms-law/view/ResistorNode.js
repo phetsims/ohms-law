@@ -24,9 +24,12 @@ define( function( require ) {
   var RESISTOR_WIDTH = OhmsLawConstants.WIRE_WIDTH / 2.123; // empirically determined
   var RESISTOR_HEIGHT = OhmsLawConstants.WIRE_HEIGHT / 2.75; // empirically determined
   var PERSPECTIVE_FACTOR = 0.3; // multiplier that controls the width of the ellipses on the ends of the wire
+  var MAX_WIDTH_INCLUDING_ROUNDED_ENDS = RESISTOR_WIDTH + RESISTOR_HEIGHT * PERSPECTIVE_FACTOR;
+
+  // dots
   var DOT_RADIUS = 2;
   var AREA_PER_DOT = 40; // adjust this to control the density of the dots
-  var MAX_WIDTH_INCLUDING_ROUNDED_ENDS = RESISTOR_WIDTH + RESISTOR_HEIGHT * PERSPECTIVE_FACTOR;
+  var NUMBER_OF_DOTS = MAX_WIDTH_INCLUDING_ROUNDED_ENDS * RESISTOR_HEIGHT / AREA_PER_DOT;
 
   var BODY_FILL_GRADIENT = new LinearGradient( 0, -RESISTOR_HEIGHT / 2, 0, RESISTOR_HEIGHT / 2 ) // For 3D effect on the wire.
     .addColorStop( 0, '#F00' )
@@ -84,28 +87,24 @@ define( function( require ) {
     } );
     this.addChild( stubWirePath );
 
-
     // Dots representing charge scatterers.
     var dotsNodeTandem = tandem.createTandem( 'dotsNode' );
     var dotsNode = new Node( { tandem: dotsNodeTandem } );
     var dotsGroupTandem = dotsNodeTandem.createGroupTandem( 'dot' );
 
+    // Create the dots randomly on the resistor. Density is based on AREA_PER_DOT.
+    for ( var i = 0; i < NUMBER_OF_DOTS; i++ ) {
 
-    // Create the dots by placing them on a grid, but move each one randomly a bit to make them look irregular
-    for ( var i = 1; i < DOT_GRID_COLUMNS; i++ ) {
-      for ( var j = 1; j < DOT_GRID_ROWS; j++ ) {
-
-        var centerX = ( phet.joist.random.nextDouble() - .5 ) * MAX_WIDTH_INCLUDING_ROUNDED_ENDS;
-        var centerY = ( phet.joist.random.nextDouble() - .5 ) * RESISTOR_HEIGHT;
-        var dot = new Circle( DOT_RADIUS, {
-          fill: 'black',
-          centerX: centerX,
-          centerY: centerY,
-          tandem: dotsGroupTandem.createNextTandem()
-        } );
-        dotsNode.addChild( dot );
-      }
-    }
+      var centerX = ( phet.joist.random.nextDouble() - .5 ) * MAX_WIDTH_INCLUDING_ROUNDED_ENDS;
+      var centerY = ( phet.joist.random.nextDouble() - .5 ) * RESISTOR_HEIGHT;
+      var dot = new Circle( DOT_RADIUS, {
+        fill: 'black',
+        centerX: centerX,
+        centerY: centerY,
+        tandem: dotsGroupTandem.createNextTandem()
+      } );
+      dotsNode.addChild( dot );
+     }
     this.addChild( dotsNode );
 
     // Clip the dots that are shown to only include those inside the wire (including the wireEnd)
