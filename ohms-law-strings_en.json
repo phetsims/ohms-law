@@ -28,5 +28,47 @@
   },
   "resistanceUnits": {
     "value": "Ω"
+  },
+  "or": {
+    "value": "or"
+  },
+  "shiftKey": {
+    "value": "Shift"
+  },
+  "escKey": {
+    "value": "Esc"
+  },
+  "tabKey": {
+    "value": "Tab"
+  },
+  "hotKeysAndHelp": {
+    "value": "Keyboard Shortcuts"
+  },
+  "sliderControls": {
+    "value": "Slider Controls"
+  },
+  "generalNavigation": {
+    "value": "General Navigation"
+  },
+  "arrowKeysMoveSlider": {
+    "value": "Arrow keys <strong>adjust</strong> the sliders."
+  },
+  "functionKeyDescription": {
+    "value": "Hold down Function and press an arrow key to <strong>move in larger steps</strong>."
+  },
+  "homeEndKeysDescription": {
+    "value": "Use the Home and End keys to move to the beginning or end."
+  },
+  "tabKeyDescription": {
+    "value": "Tab key moves to the <strong>next item</strong>."
+  },
+  "shiftKeyDescription": {
+    "value": "Hold down Shift and press an arrow key to <string>move in smaller steps</strong>."
+  },
+  "shiftTabKeyDescription": {
+    "value": "Shift plus Tab moves to the previous item."
+  },
+  "escapeKeyDescription": {
+    "value": "Escape key <strong>exits a dialog</strong>, like this one."
   }
 }

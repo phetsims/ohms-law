@@ -12,10 +12,17 @@ define( function( require ) {
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Sim = require( 'JOIST/Sim' );
   var OhmsLawScreen = require( 'OHMS_LAW/ohms-law/OhmsLawScreen' );
+  var OhmsLawKeyboardHelpContent = require( 'OHMS_LAW/ohms-law/view/OhmsLawKeyboardHelpContent');
   var Tandem = require( 'TANDEM/Tandem' );
 
   // strings
   var ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
+
+  // constants
+  var tandem = Tandem.createRootTandem();
+
+  // help content to describe keyboard interactions
+  var keyboardHelpContent = new OhmsLawKeyboardHelpContent( Tandem.createStaticTandem( 'keyboardHelpContet' ) );
 
   var simOptions = {
     credits: {
@@ -23,11 +30,9 @@ define( function( require ) {
       softwareDevelopment: 'Michael Dubson, John Blanco',
       team: 'Mindy Gratny, Ariel Paul',
       thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team\nto convert this simulation to HTML5.'
-    }
+    },
+    keyboardHelpNode: keyboardHelpContent
   };
-
-  // constants
-  var tandem = Tandem.createRootTandem();
 
   SimLauncher.launch( function() {
 
