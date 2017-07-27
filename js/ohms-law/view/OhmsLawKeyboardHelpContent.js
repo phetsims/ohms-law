@@ -11,7 +11,7 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
-  var Text = require( 'SCENERY/nodes/Text' );
+  // var Text = require( 'SCENERY/nodes/Text' );
   var RichText = require( 'SCENERY_PHET/RichText' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var Panel = require( 'SUN/Panel' );
@@ -20,10 +20,10 @@ define( function( require ) {
   var ShiftKeyNode = require( 'SCENERY_PHET/keyboard/ShiftKeyNode' );
   var EscapeKeyNode = require( 'SCENERY_PHET/keyboard/EscapeKeyNode' );
   var FunctionKeyNode = require( 'SCENERY_PHET/keyboard/FunctionKeyNode' );
-  var PageUpKeyNode = require( 'SCENERY_PHET/keyboard/PageUpKeyNode' );
-  var PageDownKeyNode = require( 'SCENERY_PHET/keyboard/PageDownKeyNode' );
-  var HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
-  var EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
+  // var PageUpKeyNode = require( 'SCENERY_PHET/keyboard/PageUpKeyNode' );
+  // var PageDownKeyNode = require( 'SCENERY_PHET/keyboard/PageDownKeyNode' );
+  // var HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
+  // var EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Dimension2 = require( 'DOT/Dimension2' );
   var PlusNode = require( 'SCENERY_PHET/PlusNode' );
@@ -41,14 +41,14 @@ define( function( require ) {
   var TEXT_MAX_WIDTH = 300;
 
   // strings
-  var orString = require( 'string!OHMS_LAW/or' );
+  // var orString = require( 'string!OHMS_LAW/or' );
   var sliderControlsString = require( 'string!OHMS_LAW/sliderControls' );
   var generalNavigationString = require( 'string!OHMS_LAW/generalNavigation' );
   var arrowKeysMoveSliderString = require( 'string!OHMS_LAW/arrowKeysMoveSlider' );
   var tabKeyDescriptionString = require( 'string!OHMS_LAW/tabKeyDescription' );
   var functionKeyDescriptionString = require( 'string!OHMS_LAW/functionKeyDescription' );
-  var shiftKeyDescriptionString = require( 'string!OHMS_LAW/shiftKeyDescription' );
-  var homeEndKeysDescriptionString = require( 'string!OHMS_LAW/homeEndKeysDescription' );
+  // var shiftKeyDescriptionString = require( 'string!OHMS_LAW/shiftKeyDescription' );
+  // var homeEndKeysDescriptionString = require( 'string!OHMS_LAW/homeEndKeysDescription' );
   var shiftTabKeyDescriptionString = require( 'string!OHMS_LAW/shiftTabKeyDescription' );
   var escapeKeyDescriptionString = require( 'string!OHMS_LAW/escapeKeyDescription' );
 
@@ -90,11 +90,11 @@ define( function( require ) {
       spacing: LAYOUT_SPACING / 2
     } );
 
-    var orText = new Text( orString, {
-      font: new PhetFont( 12 ),
-      tandem: tandem.createTandem( 'orText' ),
-      maxWidth: TEXT_MAX_WIDTH / 4
-    } );
+    // var orText = new Text( orString, {
+    //   font: new PhetFont( 12 ),
+    //   tandem: tandem.createTandem( 'orText' ),
+    //   maxWidth: TEXT_MAX_WIDTH / 4
+    // } );
     var arrowKeysIconHBox = new HBox( {
       children: [ leftArrowKeyNode, upDownArrowVBox, rightArrowKeyNode ],
       spacing: LAYOUT_SPACING / 2,
@@ -110,20 +110,20 @@ define( function( require ) {
     } );
 
     // page up/page down keys
-    var pageUpKeyIcon = new PageUpKeyNode( {
-      tandem: tandem.createTandem( 'pageUpKeyNode' )
-    } );
-    var pageDownKeyIcon = new PageDownKeyNode( {
-      tandem: tandem.createTandem( 'pageDownKeyNode' )
-    } );
+    // var pageUpKeyIcon = new PageUpKeyNode( {
+    //   tandem: tandem.createTandem( 'pageUpKeyNode' )
+    // } );
+    // var pageDownKeyIcon = new PageDownKeyNode( {
+    //   tandem: tandem.createTandem( 'pageDownKeyNode' )
+    // } );
 
     // home/end keys
-    var homeKeyIcon = new HomeKeyNode( {
-      tandem: tandem.createTandem( 'homeKeyNode' )
-    } );
-    var endKeyIcon = new EndKeyNode( {
-      tandem: tandem.createTandem( 'endKeyNode' )
-    } );
+    // var homeKeyIcon = new HomeKeyNode( {
+    //   tandem: tandem.createTandem( 'homeKeyNode' )
+    // } );
+    // var endKeyIcon = new EndKeyNode( {
+    //   tandem: tandem.createTandem( 'endKeyNode' )
+    // } );
 
     // single tab key
     var singleTabKeyIcon = new TabKeyNode( {
