@@ -11,7 +11,7 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
-  // var Text = require( 'SCENERY/nodes/Text' );
+  var Text = require( 'SCENERY/nodes/Text' );
   var RichText = require( 'SCENERY_PHET/RichText' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var Panel = require( 'SUN/Panel' );
@@ -19,36 +19,33 @@ define( function( require ) {
   var TabKeyNode = require( 'SCENERY_PHET/keyboard/TabKeyNode' );
   var ShiftKeyNode = require( 'SCENERY_PHET/keyboard/ShiftKeyNode' );
   var EscapeKeyNode = require( 'SCENERY_PHET/keyboard/EscapeKeyNode' );
-  var FunctionKeyNode = require( 'SCENERY_PHET/keyboard/FunctionKeyNode' );
-  // var PageUpKeyNode = require( 'SCENERY_PHET/keyboard/PageUpKeyNode' );
-  // var PageDownKeyNode = require( 'SCENERY_PHET/keyboard/PageDownKeyNode' );
-  // var HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
-  // var EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
+  var PageUpKeyNode = require( 'SCENERY_PHET/keyboard/PageUpKeyNode' );
+  var PageDownKeyNode = require( 'SCENERY_PHET/keyboard/PageDownKeyNode' );
+  var HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
+  var EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Dimension2 = require( 'DOT/Dimension2' );
   var PlusNode = require( 'SCENERY_PHET/PlusNode' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var VBox = require( 'SCENERY/nodes/VBox' );
-  var Spacer = require( 'SCENERY/nodes/Spacer' );
   var AlignGroup = require( 'SCENERY/nodes/AlignGroup' );
 
   // constants
   var LAYOUT_SPACING = 10;
-  var DIALOG_MARGIN = 25;
   var ICON_VERTICAL_SPACING = 8;
   var TEXT_KEY_WIDTH = 42;
   var DESCRIPTION_FONT = new PhetFont( 14 );
   var TEXT_MAX_WIDTH = 300;
 
   // strings
-  // var orString = require( 'string!OHMS_LAW/or' );
+  var orString = require( 'string!OHMS_LAW/or' );
   var sliderControlsString = require( 'string!OHMS_LAW/sliderControls' );
   var generalNavigationString = require( 'string!OHMS_LAW/generalNavigation' );
   var arrowKeysMoveSliderString = require( 'string!OHMS_LAW/arrowKeysMoveSlider' );
   var tabKeyDescriptionString = require( 'string!OHMS_LAW/tabKeyDescription' );
-  var functionKeyDescriptionString = require( 'string!OHMS_LAW/functionKeyDescription' );
-  // var shiftKeyDescriptionString = require( 'string!OHMS_LAW/shiftKeyDescription' );
-  // var homeEndKeysDescriptionString = require( 'string!OHMS_LAW/homeEndKeysDescription' );
+  var shiftKeyDescriptionString = require( 'string!OHMS_LAW/shiftKeyDescription' );
+  var pageUpDownKeysDescriptionString = require( 'string!OHMS_LAW/pageUpDownKeysDescription' );
+  var homeEndKeysDescriptionString = require( 'string!OHMS_LAW/homeEndKeysDescription' );
   var shiftTabKeyDescriptionString = require( 'string!OHMS_LAW/shiftTabKeyDescription' );
   var escapeKeyDescriptionString = require( 'string!OHMS_LAW/escapeKeyDescription' );
 
@@ -62,12 +59,14 @@ define( function( require ) {
     // section labels
     var sliderControlsHeading = new RichText( sliderControlsString, {
       tandem: tandem.createTandem( 'sliderControlsHeading' ),
-      maxWidth: TEXT_MAX_WIDTH
+      maxWidth: TEXT_MAX_WIDTH,
+      align: 'left'
     } );
 
     var generalNavigationHeading = new RichText( generalNavigationString, {
       tandem: tandem.createTandem( 'generalNavigationHeading' ),
-      maxWidth: TEXT_MAX_WIDTH
+      maxWidth: TEXT_MAX_WIDTH,
+      align: 'left'
     } );
 
     // icons
@@ -90,11 +89,11 @@ define( function( require ) {
       spacing: LAYOUT_SPACING / 2
     } );
 
-    // var orText = new Text( orString, {
-    //   font: new PhetFont( 12 ),
-    //   tandem: tandem.createTandem( 'orText' ),
-    //   maxWidth: TEXT_MAX_WIDTH / 4
-    // } );
+    var orText = new Text( orString, {
+      font: new PhetFont( 12 ),
+      tandem: tandem.createTandem( 'orText' ),
+      maxWidth: TEXT_MAX_WIDTH / 4
+    } );
     var arrowKeysIconHBox = new HBox( {
       children: [ leftArrowKeyNode, upDownArrowVBox, rightArrowKeyNode ],
       spacing: LAYOUT_SPACING / 2,
@@ -102,28 +101,31 @@ define( function( require ) {
       align: 'bottom'
     } );
 
-    // fn key
-    var functionKeyIcon = new FunctionKeyNode( {
-      minKeyWidth: TEXT_KEY_WIDTH,
-      maxKeyWidth: TEXT_KEY_WIDTH,
-      tandem: tandem.createTandem( 'functionKeyIcon' )
+    // page up/page down keys
+    var pageUpKeyIcon = new PageUpKeyNode( {
+      tandem: tandem.createTandem( 'pageUpKeyNode' )
+    } );
+    var pageDownKeyIcon = new PageDownKeyNode( {
+      tandem: tandem.createTandem( 'pageDownKeyNode' )
+    } );
+    var pageUpDownKeysHBox = new HBox( {
+      children: [ pageUpKeyIcon, orText, pageDownKeyIcon ],
+      tandem: tandem.createTandem( 'pageUpDownKeysHBox' ),
+      spacing: LAYOUT_SPACING
     } );
 
-    // page up/page down keys
-    // var pageUpKeyIcon = new PageUpKeyNode( {
-    //   tandem: tandem.createTandem( 'pageUpKeyNode' )
-    // } );
-    // var pageDownKeyIcon = new PageDownKeyNode( {
-    //   tandem: tandem.createTandem( 'pageDownKeyNode' )
-    // } );
-
     // home/end keys
-    // var homeKeyIcon = new HomeKeyNode( {
-    //   tandem: tandem.createTandem( 'homeKeyNode' )
-    // } );
-    // var endKeyIcon = new EndKeyNode( {
-    //   tandem: tandem.createTandem( 'endKeyNode' )
-    // } );
+    var homeKeyIcon = new HomeKeyNode( {
+      tandem: tandem.createTandem( 'homeKeyNode' )
+    } );
+    var endKeyIcon = new EndKeyNode( {
+      tandem: tandem.createTandem( 'endKeyNode' )
+    } );
+    var homeEndKeysHBox = new HBox( {
+      children: [ homeKeyIcon, orText, endKeyIcon ],
+      tandem: tandem.createTandem( 'homeEndKeysHBox' ),
+      spacing: LAYOUT_SPACING
+    } );
 
     // single tab key
     var singleTabKeyIcon = new TabKeyNode( {
@@ -179,14 +181,24 @@ define( function( require ) {
       accessibleLabel: shiftTabKeyDescriptionString,
       maxWidth: TEXT_MAX_WIDTH
     }, descriptionOptions ) );
+    var shiftKeyDescription = new RichText( shiftKeyDescriptionString, _.extend( {
+      tandem: tandem.createTandem( 'shiftKeyDescription' ),
+      accessibleLabel: shiftKeyDescriptionString,
+      maxWidth: TEXT_MAX_WIDTH
+    } ) );
     var escapeKeyDescription = new RichText( escapeKeyDescriptionString, _.extend( {
       tandem: tandem.createTandem( 'escapeKeyDescription' ),
       accessibleLabel: escapeKeyDescriptionString,
       maxWidth: TEXT_MAX_WIDTH
     }, descriptionOptions ) );
-    var functionKeyDescription = new RichText( functionKeyDescriptionString, _.extend( {
-      tandem: tandem.createTandem( 'functionKeyDescription' ),
-      accessibleLabel: functionKeyDescriptionString,
+    var pageUpDownKeysDescription = new RichText( pageUpDownKeysDescriptionString, _.extend( {
+      tandem: tandem.createTandem( 'pageUpDownKeysDescription' ),
+      accessibleLabel: pageUpDownKeysDescriptionString,
+      maxWidth: TEXT_MAX_WIDTH
+    } ) );
+    var homeEndKeysDescription = new RichText( homeEndKeysDescriptionString, _.extend( {
+      tandem: tandem.createTandem( 'homeEndKeysDescription' ),
+      accessibleLabel: homeEndKeysDescriptionString,
       maxWidth: TEXT_MAX_WIDTH
     } ) );
 
@@ -208,17 +220,24 @@ define( function( require ) {
     };
 
     // align the icons with their content
+    // slider controls
     var arrowKeyContentRow = createContentRow( arrowKeysIconHBox, arrowKeyDescription );
+    var shiftKeyContentRow = createContentRow( shiftKeyIcon, shiftKeyDescription );
+    var pageUpDownKeysContentRow = createContentRow( pageUpDownKeysHBox, pageUpDownKeysDescription );
+    var homeEndKeysContentRow = createContentRow ( homeEndKeysHBox, homeEndKeysDescription );
+
+    // general navigation
     var tabKeyContentRow = createContentRow( singleTabKeyIcon, tabKeyDescription );
     var shiftPlusTabContentRow = createContentRow( shiftPlusTabIconHBox, shiftPlusTabDescription );
     var escapeKeyContentRow = createContentRow( escapeKeyIconNode, escapeKeyDescription );
-    var functionKeyContentRow = createContentRow( functionKeyIcon, functionKeyDescription );
 
     // place icons in a right aligned vbox
     var sliderControlsIconVBox = new VBox( {
       children: [ 
         arrowKeyContentRow.icon,
-        functionKeyContentRow.icon ],
+        shiftKeyContentRow.icon,
+        pageUpDownKeysContentRow.icon,
+        homeEndKeysContentRow.icon ],
       align: 'right',
       spacing: ICON_VERTICAL_SPACING,
       tandem: tandem.createTandem( 'sliderControlsIconVBox' )
@@ -239,7 +258,9 @@ define( function( require ) {
     var sliderControlsDescriptionVBox = new VBox( {
       children: [
         arrowKeyContentRow.description,
-        functionKeyContentRow.description ],
+        shiftKeyContentRow.description,
+        pageUpDownKeysContentRow.description,
+        homeEndKeysContentRow.description ],
       align: 'left',
       spacing: ICON_VERTICAL_SPACING,
       tandem: tandem.createTandem( 'sliderControlsDescriptionVBox' ),
@@ -266,12 +287,13 @@ define( function( require ) {
     var sliderControlsContentHBox = new HBox( {
       children: [ sliderControlsIconVBox, sliderControlsDescriptionVBox ],
       spacing: 15,
-      tandem: tandem.createTandem( 'contentHBox' ),
+      tandem: tandem.createTandem( 'contentHBox' )
     } );
 
     var sliderControlsContentAndHeadingVbox = new VBox( {
       children: [ sliderControlsHeading, sliderControlsContentHBox ],
-      spacing: 15
+      spacing: 15,
+      align: 'left'
     } );
 
     var generalNavigationContentHBox = new HBox( {
@@ -281,15 +303,17 @@ define( function( require ) {
 
     var generalNavigationContentAndHeadingVBox = new VBox( {
       children: [ generalNavigationHeading, generalNavigationContentHBox ],
-      spacing: 15
+      spacing: 15,
+      align: 'left'
     } );
 
-    var contentHBox = new HBox( {
+    var fullContentVBox = new VBox( {
       children: [ sliderControlsContentAndHeadingVbox, generalNavigationContentAndHeadingVBox ],
-      spacing: 15
+      spacing: 15,
+      align: 'left'
     } );
 
-    Panel.call( this, contentHBox, {
+    Panel.call( this, fullContentVBox, {
       stroke: null,
       fill: 'rgb( 214, 237, 249 )',
       tandem: tandem,
@@ -297,14 +321,6 @@ define( function( require ) {
       // a11y
       tagName: 'div'
     } );
-
-    // the content should be centered in the dialog relative to the description text
-    var oldCenter = contentHBox.centerX;
-    var newCenter = sliderControlsDescriptionVBox.centerX;
-    var spacerWidth = newCenter - oldCenter + 2 * DIALOG_MARGIN;
-    contentHBox.addChild( new Spacer( spacerWidth, 0, {
-      tandem: tandem.createTandem( 'spacer' )
-    } ) );
   }
 
   ohmsLaw.register( 'OhmsLawKeyboardHelpContent', OhmsLawKeyboardHelpContent );

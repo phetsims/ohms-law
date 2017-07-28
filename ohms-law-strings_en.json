@@ -32,18 +32,6 @@
   "or": {
     "value": "or"
   },
-  "shiftKey": {
-    "value": "Shift"
-  },
-  "escKey": {
-    "value": "Esc"
-  },
-  "tabKey": {
-    "value": "Tab"
-  },
-  "hotKeysAndHelp": {
-    "value": "Keyboard Shortcuts"
-  },
   "sliderControls": {
     "value": "Slider Controls"
   },
@@ -53,8 +41,8 @@
   "arrowKeysMoveSlider": {
     "value": "Arrow keys <strong>adjust</strong> the sliders."
   },
-  "functionKeyDescription": {
-    "value": "Hold down Function and press an arrow key to <strong>move in larger steps</strong>."
+  "pageUpDownKeysDescription": {
+    "value": "Use the Page Up and Page Down keys to <strong>move in larger steps</strong>."
   },
   "homeEndKeysDescription": {
     "value": "Use the Home and End keys to move to the beginning or end."
