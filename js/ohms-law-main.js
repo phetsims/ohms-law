@@ -12,7 +12,7 @@ define( function( require ) {
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Sim = require( 'JOIST/Sim' );
   var OhmsLawScreen = require( 'OHMS_LAW/ohms-law/OhmsLawScreen' );
-  var OhmsLawKeyboardHelpContent = require( 'OHMS_LAW/ohms-law/view/OhmsLawKeyboardHelpContent');
+  var OhmsLawKeyboardHelpContent = require( 'OHMS_LAW/ohms-law/view/OhmsLawKeyboardHelpContent' );
   var Tandem = require( 'TANDEM/Tandem' );
 
   // strings
@@ -29,6 +29,7 @@ define( function( require ) {
       leadDesign: 'Michael Dubson',
       softwareDevelopment: 'Michael Dubson, John Blanco',
       team: 'Mindy Gratny, Ariel Paul',
+      qualityAssurance: 'Steele Dalton, Bryce Griebenow, Elise Morgan, Oliver Orejola, Benjamin Roberts, Bryan Yoelin',
       thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team\nto convert this simulation to HTML5.'
     },
     keyboardHelpNode: keyboardHelpContent
