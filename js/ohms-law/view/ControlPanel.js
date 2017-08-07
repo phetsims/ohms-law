@@ -15,6 +15,7 @@ define( function( require ) {
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var Panel = require( 'SUN/Panel' );
   var SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
 
   // strings
   var resistanceUnitsString = require( 'string!OHMS_LAW/resistanceUnits' );
@@ -23,6 +24,11 @@ define( function( require ) {
   var voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
   var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
   var voltageString = require( 'string!OHMS_LAW/voltage' );
+
+  // a11y strings - these strings are not meant to be translatable until the translation utility
+  // can provide translators with context
+  var resistanceUnitsPatternString = OhmsLawA11yStrings.resistanceUnitsPatternString;
+  var voltageUnitsPatternString = OhmsLawA11yStrings.voltageUnitsPatternString;
 
   /**
    * @param {Property.<number>} voltageProperty
@@ -51,7 +57,9 @@ define( function( require ) {
       tandem.createTandem( 'voltageSlider' ),
       {
         keyboardStep: 0.5, // volts
-        shiftKeyboardStep: 0.1 // volts
+        shiftKeyboardStep: 0.1, // volts
+        accessibleDecimalPlaces: 1,
+        accessibleValuePattern: voltageUnitsPatternString
       } );
 
     // Create the resistance slider with readout and labels
@@ -63,9 +71,9 @@ define( function( require ) {
       resistanceUnitsString,
       tandem.createTandem( 'resistanceSlider' ),
       {
-        numberDecimalPlaces: 0,
         keyboardStep: 20, // ohms
-        shiftKeyboardStep: 1 // ohms
+        shiftKeyboardStep: 1, // ohms
+        accessibleValuePattern: resistanceUnitsPatternString
       } );
 
     // Use a content node so that the Panel can surround it fully

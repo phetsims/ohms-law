@@ -36,9 +36,10 @@ define( function( require ) {
   function SliderUnit( property, range, symbolString, nameString, unitString, tandem, options ) {
 
     options = _.extend( {
-      numberDecimalPlaces: 1,
+      accessibleDecimalPlaces: 0,
       keyboardStep: 1,
-      shiftKeyboardStep: 0.1
+      shiftKeyboardStep: 0.1,
+      accessibleValuePattern: '{{value}}' // string pattern used for formating the value read by the screen reader
     }, options );
 
     Node.call( this );
@@ -52,7 +53,8 @@ define( function( require ) {
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
       keyboardStep: options.keyboardStep,
       shiftKeyboardStep: options.shiftKeyboardStep,
-      numberDecimalPlaces: options.numberDecimalPlaces,
+      accessibleDecimalPlaces: options.accessibleDecimalPlaces,
+      accessibleValuePattern: options.accessibleValuePattern, 
       tandem: tandem.createTandem( 'slider' )
     } );
 
@@ -76,7 +78,7 @@ define( function( require ) {
       children: [ symbolText, nameText ]
     } );
 
-    var valueText = new Text( Util.toFixed( range.max, options.numberDecimalPlaces ), {
+    var valueText = new Text( Util.toFixed( range.max, options.accessibleDecimalPlaces ), {
       font: OhmsLawConstants.READOUT_FONT,
       fill: OhmsLawConstants.BLACK_COLOR,
       tandem: tandem.createTandem( 'valueText' )
@@ -112,7 +114,7 @@ define( function( require ) {
 
     // Update value of the readout. Present for the lifetime of the simulation; no need to unlink.
     property.link( function( value ) {
-      valueText.text = Util.toFixed( value, options.numberDecimalPlaces );
+      valueText.text = Util.toFixed( value, options.accessibleDecimalPlaces );
       readout.centerX = readoutBackground.selfBounds.centerX;
     } );
 
