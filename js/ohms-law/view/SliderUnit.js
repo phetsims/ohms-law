@@ -29,11 +29,12 @@ define( function( require ) {
    * @param {string} symbolString
    * @param {string} nameString
    * @param {string} unitString
+   * @param {string} accessibleLabel - label read by a screen reader on focus
    * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function SliderUnit( property, range, symbolString, nameString, unitString, tandem, options ) {
+  function SliderUnit( property, range, symbolString, nameString, unitString, accessibleLabel, tandem, options ) {
 
     options = _.extend( {
       accessibleDecimalPlaces: 0,
@@ -51,11 +52,17 @@ define( function( require ) {
       rotation: -Math.PI / 2,
 
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
+      tandem: tandem.createTandem( 'slider' ),
+
+      // a11y
       keyboardStep: options.keyboardStep,
       shiftKeyboardStep: options.shiftKeyboardStep,
       accessibleDecimalPlaces: options.accessibleDecimalPlaces,
       accessibleValuePattern: options.accessibleValuePattern, 
-      tandem: tandem.createTandem( 'slider' )
+      parentContainerTagName: 'ul',
+      labelTagName: 'label',
+      accessibleLabel: accessibleLabel,
+      prependLabels: true
     } );
 
     var symbolText = new Text( symbolString, {

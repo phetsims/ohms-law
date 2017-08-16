@@ -29,6 +29,8 @@ define( function( require ) {
   // can provide translators with context
   var resistanceUnitsPatternString = OhmsLawA11yStrings.resistanceUnitsPatternString;
   var voltageUnitsPatternString = OhmsLawA11yStrings.voltageUnitsPatternString;
+  var resistanceSliderLabelString = OhmsLawA11yStrings.resistanceSliderLabelString;
+  var voltageSliderLabelString = OhmsLawA11yStrings.voltageSliderLabelString;
 
   /**
    * @param {Property.<number>} voltageProperty
@@ -54,6 +56,7 @@ define( function( require ) {
       voltageSymbolString,
       voltageString,
       voltageUnitsString,
+      voltageSliderLabelString,
       tandem.createTandem( 'voltageSlider' ),
       {
         keyboardStep: 0.5, // volts
@@ -69,6 +72,7 @@ define( function( require ) {
       resistanceSymbolString,
       resistanceString,
       resistanceUnitsString,
+      resistanceSliderLabelString,
       tandem.createTandem( 'resistanceSlider' ),
       {
         keyboardStep: 20, // ohms
@@ -79,7 +83,10 @@ define( function( require ) {
     // Use a content node so that the Panel can surround it fully
     var content = new HBox( {
         spacing: 30, // empirically determined
-        children: [ voltageSlider, resistanceSlider ]
+        children: [ voltageSlider, resistanceSlider ],
+
+        // a11y - contain the sliders in a list
+        tagName: 'ul'
       }
     );
 

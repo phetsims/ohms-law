@@ -14,8 +14,9 @@ define( function( require ) {
 
   var OhmsLawA11yStrings = {
     resistanceUnitsPatternString: '{{value}} Ohms',
-    voltageUnitsPatternString: '{{value}} Volts'
-
+    voltageUnitsPatternString: '{{value}} Volts',
+    resistanceSliderLabelString: 'Resistance',
+    voltageSliderLabelString: 'Voltage'
   };
 
   if ( phet.chipper.queryParameters.stringTest === 'xss' ) {
