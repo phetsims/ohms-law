@@ -30,7 +30,8 @@ define( function( require ) {
       softwareDevelopment: 'Michael Dubson, John Blanco',
       team: 'Mindy Gratny, Ariel Paul',
       qualityAssurance: 'Steele Dalton, Bryce Griebenow, Elise Morgan, Oliver Orejola, Benjamin Roberts, Bryan Yoelin',
-      thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team\nto convert this simulation to HTML5.'
+      thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team to convert this ' +
+              'simulation to HTML5.'
     },
     keyboardHelpNode: keyboardHelpContent
   };
