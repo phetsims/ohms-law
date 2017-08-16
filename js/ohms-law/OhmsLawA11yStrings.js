@@ -16,7 +16,10 @@ define( function( require ) {
     resistanceUnitsPatternString: '{{value}} Ohms',
     voltageUnitsPatternString: '{{value}} Volts',
     resistanceSliderLabelString: 'Resistance',
-    voltageSliderLabelString: 'Voltage'
+    voltageSliderLabelString: 'Voltage',
+
+    // accessible title for Ohms Law
+    ohmsLawTitleString: 'Ohms Law',
   };
 
   if ( phet.chipper.queryParameters.stringTest === 'xss' ) {

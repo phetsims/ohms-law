@@ -23,11 +23,15 @@ define( function( require ) {
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var VBox = require( 'SCENERY/nodes/VBox' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
 
   // audio
   // The sounds themselves can be constants because there is only every one instance of OhmsLawScreenView.
   var ADD_BATTERY_SOUND = new Sound( require( 'audio!OHMS_LAW/add-battery' ) );
   var REMOVE_BATTERY_SOUND = new Sound( require( 'audio!OHMS_LAW/remove-battery' ) );
+
+  // a11y strings
+  var ohmsLawTitleString = OhmsLawA11yStrings.ohmsLawTitleString;
 
   /**
    * @param {OhmsLawModel} model
@@ -41,7 +45,9 @@ define( function( require ) {
       tandem: tandem.createTandem( 'soundActiveProperty' )
     } );
 
-    ScreenView.call( this );
+    ScreenView.call( this, {
+      accessibleLabel: ohmsLawTitleString
+    } );
 
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
     var formulaNode = new FormulaNode( model, tandem.createTandem( 'formulaNode' ), {
