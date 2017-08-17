@@ -10,19 +10,20 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var Property = require( 'AXON/Property' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
-  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var Text = require( 'SCENERY/nodes/Text' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
   // strings
-  var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
   var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
+  var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
 
   // constants
   var TEXT_FONT = new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } );
@@ -39,7 +40,13 @@ define( function( require ) {
    */
   function FormulaNode( model, tandem, options ) {
 
+    var self = this;
     Node.call( this );
+
+    // @private (a11y)
+    this.currentRelativeDescription = this.getRelativeSizeDescription( model.getNormalizedCurrent(), 'current' );
+    this.voltageRelativeDescription = this.getRelativeSizeDescription( model.getNormalizedVoltage(), 'voltage' );
+    this.resistanceRelativeDescription = this.getRelativeSizeDescription( model.getNormalizedResistance(), 'resistance' );
 
     // Add the equals sign, which does not change size
     var equalsSign = new Text( '=', { // We never internationalize the '=' sign
@@ -65,10 +72,11 @@ define( function( require ) {
     var currentXPosition = equalsSign.centerX + 80;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
-    model.currentProperty.link( function updateProperty() {
+    model.currentProperty.link( function() {
 
       currentLetterNode.setTranslation( currentXPosition, 0 );
       currentLetterNode.setScaleMagnitude( CURRENT_SCALE_M * model.getNormalizedCurrent() + CURRENT_SCALE_B );
+      self.currentRelativeDescription = self.getRelativeSizeDescription( model.getNormalizedCurrent(), 'current' );
     } );
 
     // Create the Voltage Letter
@@ -85,10 +93,12 @@ define( function( require ) {
     var voltageXPosition = equalsSign.centerX - 150;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
-    model.voltageProperty.link( function updateProperty() {
+    model.voltageProperty.link( function() {
 
       voltageLetterNode.setTranslation( voltageXPosition, 0 );
       voltageLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedVoltage() + OTHERS_SCALE_B );
+
+      self.voltageRelativeDescription = self.getRelativeSizeDescription( model.getNormalizedVoltage(), 'voltage' );
     } );
 
     // Create the Resistance Letter
@@ -105,10 +115,12 @@ define( function( require ) {
     var resistanceXPosition = equalsSign.centerX + 240;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
-    model.resistanceProperty.link( function updateProperty() {
+    model.resistanceProperty.link( function() {
 
       resistanceLetterNode.setTranslation( resistanceXPosition, 0 );
       resistanceLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedResistance() + OTHERS_SCALE_B );
+
+      self.resistanceRelativeDescription = self.getRelativeSizeDescription( model.getNormalizedResistance(), 'resistance' );
     } );
 
     // Current letter is added first so that when it gets huge, it doesn't cover anything up.
@@ -119,6 +131,15 @@ define( function( require ) {
     this.addChild( voltageLetterNode );
 
     this.addChild( equalsSign ); // must come after letters to be on top
+
+    Property.multilink( [ model.resistanceProperty, model.currentProperty, model.voltageProperty ],
+      function() {
+
+        var vToI = self.getComparisonDescription( self.voltageRelativeDescription, self.currentRelativeDescription );
+        var vToR = self.getComparisonDescription( self.voltageRelativeDescription, self.resistanceRelativeDescription );
+
+        console.log( 'V is ' + vToI + ' I and ' + vToR + ' R.' );
+      } );
 
     options.tandem = tandem;
     this.mutate( options );
@@ -140,10 +161,37 @@ define( function( require ) {
 
     /**
      * Get a description of the relative sizes of the letters.
-     * @return {}
+     * @param {number} normalizedValue - normalized between 0 and 1, could be any of the letters
+     * TODO: remove the property arg, it is just for debugging.
      */
-    getRelativeSizeDescription: function( value ) {
+    getRelativeSizeDescription: function( normalizedValue, property ) {
 
+      var index = Math.floor( normalizedValue * OhmsLawConstants.RELATIVE_SIZE_STRINGS.length );
+
+      if ( index === OhmsLawConstants.RELATIVE_SIZE_STRINGS.length ) {
+        index = index - 1;
+      }
+
+      // This is nice to dubug
+      // console.log( property + ': ' + OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ] );
+      return OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ];
+    },
+
+    getComparisonDescription: function( value1, compareTo ) {
+
+      // TODO: this is circular and not very efficient;
+      var index1 = OhmsLawConstants.RELATIVE_SIZE_STRINGS.indexOf( value1 );
+      var index2 = OhmsLawConstants.RELATIVE_SIZE_STRINGS.indexOf( compareTo );
+
+      var difference = index2 - index1;
+
+      // divide by two because there are only 3 values on either side of 'comparible to', but there are 7 possible descriptions
+      difference = Math.floor( difference / 2 );
+
+      // get the middle index of the comparisons
+      var middleComparisonIndex = Math.ceil( OhmsLawConstants.COMPARISON_SIZE_STRINGS.length / 2 );
+
+      return OhmsLawConstants.COMPARISON_SIZE_STRINGS[ middleComparisonIndex - difference ];
     }
 
   } );
