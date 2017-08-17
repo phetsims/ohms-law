@@ -24,6 +24,7 @@ define( function( require ) {
   var HBox = require( 'SCENERY/nodes/HBox' );
   var VBox = require( 'SCENERY/nodes/VBox' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  var OhmsLawSceneSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawSceneSummaryNode' );
 
   // audio
   // The sounds themselves can be constants because there is only every one instance of OhmsLawScreenView.
@@ -53,6 +54,9 @@ define( function( require ) {
     var formulaNode = new FormulaNode( model, tandem.createTandem( 'formulaNode' ), {
       pickable: false
     } );
+
+    // a11y - the scene summary to be read by assistive technology
+    this.addChild( new OhmsLawSceneSummaryNode( model, formulaNode ) );
 
     // Circuit node with readout node
     var wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {

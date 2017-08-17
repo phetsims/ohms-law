@@ -14,6 +14,7 @@ define( function( require ) {
   var NumberProperty = require( 'AXON/NumberProperty' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var Range = require( 'DOT/Range' );
   var TNumber = require( 'ifphetio!PHET_IO/types/TNumber' );
 
   /**
@@ -70,6 +71,35 @@ define( function( require ) {
     reset: function() {
       this.voltageProperty.reset();
       this.resistanceProperty.reset();
+    },
+
+    /**
+     * Get the normalized voltage over the range of allowed voltages in this sim.
+     * 
+     * @return {number}
+     */
+    getNormalizedVoltage: function() {
+      var range = OhmsLawConstants.VOLTAGE_RANGE;
+      return ( this.voltageProperty.get()  - range.min ) / range.getLength();
+    },
+
+    /**
+     * Get the normalized current, based on the allowable values for current in this sim.
+     * @return {number}
+     */
+    getNormalizedCurrent: function() {
+      var currentRange = new Range( OhmsLawModel.getMinCurrent(), OhmsLawModel.getMaxCurrent() );
+      return ( this.currentProperty.get()  - currentRange.min ) / currentRange.getLength();
+    },
+
+    /**
+     * Get the normalized resistance, based on the allowable values for resistance in this
+     * sim.
+     * @return {number}
+     */
+    getNormalizedResistance: function() {
+      var range = OhmsLawConstants.RESISTANCE_RANGE;
+      return ( this.voltageProperty.get()  - range.min ) / range.getLength();
     }
   }, {
 
@@ -80,6 +110,14 @@ define( function( require ) {
      */
     getMaxCurrent: function() {
       return computeCurrent( OhmsLawConstants.VOLTAGE_RANGE.max, OhmsLawConstants.RESISTANCE_RANGE.min );
+    },
+
+    /**
+     * Get the minimum current that can be computed by the model.
+     * @return {number} [description]
+     */
+    getMinCurrent: function() {
+      return computeCurrent( OhmsLawConstants.VOLTAGE_RANGE.min, OhmsLawConstants.RESISTANCE_RANGE.max );
     }
   } );
 } );

@@ -13,6 +13,15 @@ define( function( require ) {
   var RangeWithValue = require( 'DOT/RangeWithValue' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
+  // strings
+  var tinyString = 'tiny';
+  var verySmallString = 'very small';
+  var smallString = 'small';
+  var mediumSizeString = 'medium size';
+  var largeString = 'large';
+  var veryLargeString = 'very large';
+  var hugeString = 'huge';
+
   // constants used by other constants
   var RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms
   var VOLTAGE_RANGE = new RangeWithValue( 0.1, 9, 4.5 ); // in volts
@@ -45,6 +54,11 @@ define( function( require ) {
     READOUT_FONT: new PhetFont( 28 ),
     UNIT_FONT: new PhetFont( 28 ),
 
+    // precision for each of the physical quantities in this sim
+    VOLTAGE_SIG_FIGS: 1,
+    RESISTANCE_SIG_FIGS: 0,
+    CURRENT_SIG_FIGS: 1,
+
     // wire circuit
     WIRE_WIDTH: WIRE_WIDTH,
     WIRE_HEIGHT: 165,
@@ -54,7 +68,10 @@ define( function( require ) {
     BATTERIES_OFFSET: BATTERIES_OFFSET,
     BATTERY_HEIGHT: 38,
     AA_VOLTAGE: AA_VOLTAGE,
-    BATTERY_WIDTH: ( WIRE_WIDTH - BATTERIES_OFFSET * 2 ) / MAX_NUMBER_OF_BATTERIES
+    BATTERY_WIDTH: ( WIRE_WIDTH - BATTERIES_OFFSET * 2 ) / MAX_NUMBER_OF_BATTERIES,
+
+    // a11y strings
+    RELATIVE_SIZE_STRINGS: [ tinyString, verySmallString, smallString, mediumSizeString, largeString, veryLargeString, hugeString ]
   };
 
   ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );

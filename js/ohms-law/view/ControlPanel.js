@@ -61,7 +61,7 @@ define( function( require ) {
       {
         keyboardStep: 0.5, // volts
         shiftKeyboardStep: 0.1, // volts
-        accessibleDecimalPlaces: 1,
+        accessibleDecimalPlaces: OhmsLawConstants.VOLTAGE_SIG_FIGS,
         accessibleValuePattern: voltageUnitsPatternString
       } );
 
@@ -77,7 +77,8 @@ define( function( require ) {
       {
         keyboardStep: 20, // ohms
         shiftKeyboardStep: 1, // ohms
-        accessibleValuePattern: resistanceUnitsPatternString
+        accessibleValuePattern: resistanceUnitsPatternString,
+        accessibleDecimalPlaces: OhmsLawConstants.RESISTANCE_SIG_FIGS
       } );
 
     // Use a content node so that the Panel can surround it fully

@@ -24,6 +24,10 @@ define( function( require ) {
   var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
 
+  // var CURRENT_INDEX = 0;
+  // var VOLTAGE_INDEX = 1;
+  // var RESISTANCE_INDEX = 2;
+
   /**
    * @param {OhmsLawModel} model
    * @param {Tandem} tandem
@@ -42,6 +46,7 @@ define( function( require ) {
       centerY: 0,
       tandem: tandem.createTandem( 'equalsSign' )
     } );
+
 
 
     /**
@@ -76,7 +81,7 @@ define( function( require ) {
       },
       {
         symbolString: resistanceSymbolString,
-        scaleM: .015,
+        scaleM: 0.015,
         scaleB: 5,
         x: equalsSign.centerX + 240,
         property: model.resistanceProperty,
@@ -90,9 +95,14 @@ define( function( require ) {
     var lettersNode = new Node( { tandem: tandem.createTandem( 'lettersNode' ) } );
     this.addChild( lettersNode );
 
+    // @private - collection of the text nodes, used for a11y to compare relative sizes
+    // of the letters
+    this.letters = [];
+
     this.addChild( equalsSign ); // must come after lettersNode
 
     // Add the symbol letters to the formula and scale them appropriately
+    var self = this;
     textsDataArray.forEach( function( textData ) {
 
       // Centered text node, so we just have to adjust scale dynamically
@@ -121,12 +131,15 @@ define( function( require ) {
       // Create the node that contains the text
       var letterNode = new Node( { children: [ antiArtifactRectangle, textNode ] } );
       lettersNode.addChild( letterNode );
+      self.letters.push( letterNode );
 
       // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
       textData.property.link( function updateProperty( value ) {
         letterNode.setTranslation( textData.x, 0 );
         letterNode.setScaleMagnitude( textData.scaleM * value + textData.scaleB );
       } );
+
+      textData.property.lazyLink( self.getRelativeSizeDescription.bind( self ) );
     } );
 
     options.tandem = tandem;
@@ -135,5 +148,15 @@ define( function( require ) {
 
   ohmsLaw.register( 'FormulaNode', FormulaNode );
 
-  return inherit( Node, FormulaNode );
+  return inherit( Node, FormulaNode, {
+
+    /**
+     * Get a description of the relative sizes of the letters.
+     * @return {}
+     */
+    getRelativeSizeDescription: function() {
+
+    }
+
+  } );
 } );
