@@ -17,6 +17,8 @@ define( function( require ) {
   var Node = require( 'SCENERY/nodes/Node' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var Text = require( 'SCENERY/nodes/Text' );
+  var Range = require( 'DOT/Range' );
+  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
@@ -43,12 +45,7 @@ define( function( require ) {
     var self = this;
     Node.call( this );
 
-    // @private (a11y)
-    this.currentRelativeDescription = this.getRelativeSizeDescription( model.getNormalizedCurrent(), 'current' );
-    this.voltageRelativeDescription = this.getRelativeSizeDescription( model.getNormalizedVoltage(), 'voltage' );
-    this.resistanceRelativeDescription = this.getRelativeSizeDescription( model.getNormalizedResistance(), 'resistance' );
-
-    // Add the equals sign, which does not change size
+    // Create the equals sign, which does not change size
     var equalsSign = new Text( '=', { // We never internationalize the '=' sign
       font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
       fill: '#000',
@@ -56,7 +53,6 @@ define( function( require ) {
       centerY: 0,
       tandem: tandem.createTandem( 'equalsSign' )
     } );
-
 
     // Create the Current Letter
     var currentText = new Text( currentSymbolString, {
@@ -68,16 +64,31 @@ define( function( require ) {
     } );
 
     // Create the node that contains the text
-    var currentLetterNode = new Node( { children: [ getAntiArtifactRectangle( currentText ), currentText ] } );
+    this.currentLetterNode = new Node( { children: [ getAntiArtifactRectangle( currentText ), currentText ] } );
     var currentXPosition = equalsSign.centerX + 80;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
     model.currentProperty.link( function() {
-
-      currentLetterNode.setTranslation( currentXPosition, 0 );
-      currentLetterNode.setScaleMagnitude( CURRENT_SCALE_M * model.getNormalizedCurrent() + CURRENT_SCALE_B );
-      self.currentRelativeDescription = self.getRelativeSizeDescription( model.getNormalizedCurrent(), 'current' );
+      self.currentLetterNode.setTranslation( currentXPosition, 0 );
+      self.currentLetterNode.setScaleMagnitude( CURRENT_SCALE_M * model.getNormalizedCurrent() + CURRENT_SCALE_B );
     } );
+
+    // get the maximum hight for I in this sim
+    model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.max );
+    model.resistanceProperty.set( OhmsLawConstants.RESISTANCE_RANGE.min );
+    var iHeightMax = self.currentLetterNode.height;
+
+    // get thhe minimum height for I in this sim
+    model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.min );
+    model.resistanceProperty.set( OhmsLawConstants.VOLTAGE_RANGE.max );
+    var iHeightMin = self.currentLetterNode.height;
+
+    // this is the range of heights for this sim (thought we would likely want to do a comprehensive
+    // check against extrema for all leters for maintainability)
+    this.letterHeightRange = new Range( iHeightMin, iHeightMax );
+
+    // reset the model after using to get heights of letters
+    model.reset();
 
     // Create the Voltage Letter
     var voltageText = new Text( voltageSymbolString, {
@@ -89,16 +100,13 @@ define( function( require ) {
     } );
 
     // Create the node that contains the text
-    var voltageLetterNode = new Node( { children: [ getAntiArtifactRectangle( voltageText ), voltageText ] } );
+    this.voltageLetterNode = new Node( { children: [ getAntiArtifactRectangle( voltageText ), voltageText ] } );
     var voltageXPosition = equalsSign.centerX - 150;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
     model.voltageProperty.link( function() {
-
-      voltageLetterNode.setTranslation( voltageXPosition, 0 );
-      voltageLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedVoltage() + OTHERS_SCALE_B );
-
-      self.voltageRelativeDescription = self.getRelativeSizeDescription( model.getNormalizedVoltage(), 'voltage' );
+      self.voltageLetterNode.setTranslation( voltageXPosition, 0 );
+      self.voltageLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedVoltage() + OTHERS_SCALE_B );
     } );
 
     // Create the Resistance Letter
@@ -111,35 +119,26 @@ define( function( require ) {
     } );
 
     // Create the node that contains the text
-    var resistanceLetterNode = new Node( { children: [ getAntiArtifactRectangle( resistanceText ), resistanceText ] } );
+    this.resistanceLetterNode = new Node( { children: [ getAntiArtifactRectangle( resistanceText ), resistanceText ] } );
     var resistanceXPosition = equalsSign.centerX + 240;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
     model.resistanceProperty.link( function() {
-
-      resistanceLetterNode.setTranslation( resistanceXPosition, 0 );
-      resistanceLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedResistance() + OTHERS_SCALE_B );
-
-      self.resistanceRelativeDescription = self.getRelativeSizeDescription( model.getNormalizedResistance(), 'resistance' );
+      self.resistanceLetterNode.setTranslation( resistanceXPosition, 0 );
+      self.resistanceLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedResistance() + OTHERS_SCALE_B );
     } );
 
     // Current letter is added first so that when it gets huge, it doesn't cover anything up.
-    this.addChild( currentLetterNode );
+    this.addChild( self.currentLetterNode );
+    this.addChild( self.resistanceLetterNode );
+    this.addChild( self.voltageLetterNode );
 
-    this.addChild( resistanceLetterNode );
+    // must come after letters to be on top
+    this.addChild( equalsSign );
 
-    this.addChild( voltageLetterNode );
-
-    this.addChild( equalsSign ); // must come after letters to be on top
-
-    Property.multilink( [ model.resistanceProperty, model.currentProperty, model.voltageProperty ],
-      function() {
-
-        var vToI = self.getComparisonDescription( self.voltageRelativeDescription, self.currentRelativeDescription );
-        var vToR = self.getComparisonDescription( self.voltageRelativeDescription, self.resistanceRelativeDescription );
-
-        console.log( 'V is ' + vToI + ' I and ' + vToR + ' R.' );
-      } );
+    Property.multilink( [ model.currentProperty, model.resistanceProperty, model.voltageProperty ], function( current, resistance, voltage ) {
+      self.getComparativeSizeDescription();
+    } );
 
     options.tandem = tandem;
     this.mutate( options );
@@ -160,39 +159,58 @@ define( function( require ) {
   return inherit( Node, FormulaNode, {
 
     /**
-     * Get a description of the relative sizes of the letters.
-     * @param {number} normalizedValue - normalized between 0 and 1, could be any of the letters
-     * TODO: remove the property arg, it is just for debugging.
+     * Get the comparative size description for the letters, something like
+     * "Letter V is much larger than letter I and comparable to letter R."
+     * 
+     * @public
+     * @return {string} 
      */
-    getRelativeSizeDescription: function( normalizedValue, property ) {
+    getComparativeSizeDescription: function() {
 
-      var index = Math.floor( normalizedValue * OhmsLawConstants.RELATIVE_SIZE_STRINGS.length );
+      var rHeight = this.resistanceLetterNode.height;
+      var iHeight = this.currentLetterNode.height;
+      var vHeight = this.voltageLetterNode.height;
 
-      if ( index === OhmsLawConstants.RELATIVE_SIZE_STRINGS.length ) {
-        index = index - 1;
+      var vToI = vHeight / iHeight;
+      var vToR = vHeight / rHeight;
+
+      // for iteration
+      var i;
+      var describedRange;
+
+      // map the relations to the comparative descriptions
+      // loop through array of keys to avoid closures every time this is called
+      var ranges = OhmsLawConstants.COMPARATIVE_DESCRIPTION_RANGES;
+      var keys = Object.keys( ranges );
+
+      // get the relative size description comparing V to I
+      var vToIDescription;
+      for ( i = 0; i < keys.length; i++ ) {
+        describedRange = ranges[ keys[ i ] ];
+        if ( describedRange.range.contains( vToI ) ) {
+          vToIDescription = describedRange.description;
+          break;
+        } 
       }
 
-      // This is nice to dubug
-      // console.log( property + ': ' + OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ] );
-      return OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ];
-    },
+      // get the relative size description comparing V to R
+      var vToRDescription;
+      for ( i = 0; i < keys.length; i++ ) {
+        describedRange = ranges[ keys[ i ] ];
+        if ( describedRange.range.contains( vToR ) ) {
+          vToRDescription = describedRange.description;
+          break;
+        } 
+      }
 
-    getComparisonDescription: function( value1, compareTo ) {
+      var patternString = 'Letter V is {{iComparison}} than letter I and {{rComparison}} than letter R.';
+      var description = StringUtils.fillIn( patternString, {
+        iComparison: vToIDescription,
+        rComparison: vToRDescription
+      } );
+      console.log( description );
 
-      // TODO: this is circular and not very efficient;
-      var index1 = OhmsLawConstants.RELATIVE_SIZE_STRINGS.indexOf( value1 );
-      var index2 = OhmsLawConstants.RELATIVE_SIZE_STRINGS.indexOf( compareTo );
-
-      var difference = index2 - index1;
-
-      // divide by two because there are only 3 values on either side of 'comparible to', but there are 7 possible descriptions
-      difference = Math.floor( difference / 2 );
-
-      // get the middle index of the comparisons
-      var middleComparisonIndex = Math.ceil( OhmsLawConstants.COMPARISON_SIZE_STRINGS.length / 2 );
-
-      return OhmsLawConstants.COMPARISON_SIZE_STRINGS[ middleComparisonIndex - difference ];
+      return description;
     }
-
   } );
 } );

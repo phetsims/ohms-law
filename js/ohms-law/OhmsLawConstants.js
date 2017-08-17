@@ -12,6 +12,7 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var RangeWithValue = require( 'DOT/RangeWithValue' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Range = require( 'DOT/Range' );
 
   // strings
   var tinyString = 'tiny';
@@ -28,7 +29,7 @@ define( function( require ) {
   var comparableToString = 'comparable to';
   var someWhatLargerThanString = 'somewhat larger than';
   var muchLargerThanString = 'much larger than';
-  var muchMuchLargerThanString = 'much much larger than"';
+  var muchMuchLargerThanString = 'much much larger than';
 
   // constants used by other constants
   var RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms
@@ -38,6 +39,37 @@ define( function( require ) {
   var BATTERIES_OFFSET = 30;
   var AA_VOLTAGE = 1.5; // in volts
   var MAX_NUMBER_OF_BATTERIES = Math.ceil( VOLTAGE_RANGE.max / AA_VOLTAGE );
+
+  var COMPARATIVE_DESCRIPTION_RANGES = {
+    MUCH_MUCH_SMALLER: {
+      range: new Range( 0, 0.25 ),
+      description: muchMuchSmallerThanString
+    },
+    MUCH_SMALLER: {
+      range: new Range( 0.25, 0.50 ), 
+      description: muchSmallerThanString
+    },
+    SOMEWHAT_SMALLER: {
+      range: new Range( 0.50, 0.9),
+      description: somewhatSmallerThanString
+    },
+    COMPARABLE: {
+      range: new Range( 0.9, 1.10 ),
+      description: comparableToString
+    },
+    SOMEWHAT_LARGER: {
+      range: new Range( 1.10, 2.0 ),
+      description: someWhatLargerThanString
+    },
+    MUCH_LARGER: {
+      range: new Range( 2.0, 4.0 ),
+      description: muchLargerThanString
+    },
+    MUCH_MUCH_LARGER:{
+      range: new Range( 4.0, Number.MAX_VALUE ),
+      description: muchMuchLargerThanString
+    }
+  };
 
   var OhmsLawConstants = {
 
@@ -83,7 +115,9 @@ define( function( require ) {
       largeString, veryLargeString, hugeString ],
 
     COMPARISON_SIZE_STRINGS: [ muchMuchSmallerThanString, muchSmallerThanString, somewhatSmallerThanString,
-      comparableToString, someWhatLargerThanString, muchLargerThanString, muchMuchLargerThanString ]
+      comparableToString, someWhatLargerThanString, muchLargerThanString, muchMuchLargerThanString ],
+
+    COMPARATIVE_DESCRIPTION_RANGES: COMPARATIVE_DESCRIPTION_RANGES
   };
 
   ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );
