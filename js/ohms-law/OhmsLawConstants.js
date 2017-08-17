@@ -22,6 +22,14 @@ define( function( require ) {
   var veryLargeString = 'very large';
   var hugeString = 'huge';
 
+  var muchMuchSmallerThanString = 'much much smaller than';
+  var muchSmallerThanString = 'much smaller than';
+  var somewhatSmallerThanString = 'somewhat smaller than';
+  var comparableToString = 'comparable to';
+  var someWhatLargerThanString = 'somewhat larger than';
+  var muchLargerThanString = 'much larger than';
+  var muchMuchLargerThanString = 'much much larger than"';
+
   // constants used by other constants
   var RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms
   var VOLTAGE_RANGE = new RangeWithValue( 0.1, 9, 4.5 ); // in volts
@@ -71,7 +79,11 @@ define( function( require ) {
     BATTERY_WIDTH: ( WIRE_WIDTH - BATTERIES_OFFSET * 2 ) / MAX_NUMBER_OF_BATTERIES,
 
     // a11y strings
-    RELATIVE_SIZE_STRINGS: [ tinyString, verySmallString, smallString, mediumSizeString, largeString, veryLargeString, hugeString ]
+    RELATIVE_SIZE_STRINGS: [ tinyString, verySmallString, smallString, mediumSizeString,
+      largeString, veryLargeString, hugeString ],
+
+    COMPARISON_SIZE_STRINGS: [ muchMuchSmallerThanString, muchSmallerThanString, somewhatSmallerThanString,
+      comparableToString, someWhatLargerThanString, muchLargerThanString, muchMuchLargerThanString ]
   };
 
   ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );
