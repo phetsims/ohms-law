@@ -62,11 +62,11 @@ define( function( require ) {
       description: someWhatLargerThanString
     },
     MUCH_LARGER: {
-      range: new Range( 2.0, 3.0 ),
+      range: new Range( 2.0, 4.0 ),
       description: muchLargerThanString
     },
     MUCH_MUCH_LARGER:{
-      range: new Range( 3.0, Number.MAX_VALUE ),
+      range: new Range( 4.0, Number.MAX_VALUE ),
       description: muchMuchLargerThanString
     }
   };
