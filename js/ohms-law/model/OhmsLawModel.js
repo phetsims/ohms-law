@@ -75,12 +75,12 @@ define( function( require ) {
 
     /**
      * Get the normalized voltage over the range of allowed voltages in this sim.
-     * 
+     *
      * @return {number}
      */
     getNormalizedVoltage: function() {
       var range = OhmsLawConstants.VOLTAGE_RANGE;
-      return ( this.voltageProperty.get()  - range.min ) / range.getLength();
+      return ( this.voltageProperty.get() - range.min ) / range.getLength();
     },
 
     /**
@@ -88,8 +88,8 @@ define( function( require ) {
      * @return {number}
      */
     getNormalizedCurrent: function() {
-      var currentRange = new Range( OhmsLawModel.getMinCurrent(), OhmsLawModel.getMaxCurrent() );
-      return ( this.currentProperty.get()  - currentRange.min ) / currentRange.getLength();
+      var range = OhmsLawModel.getCurrentRange();
+      return ( this.currentProperty.get() - range.min ) / range.getLength();
     },
 
     /**
@@ -99,7 +99,7 @@ define( function( require ) {
      */
     getNormalizedResistance: function() {
       var range = OhmsLawConstants.RESISTANCE_RANGE;
-      return ( this.voltageProperty.get()  - range.min ) / range.getLength();
+      return ( this.resistanceProperty.get() - range.min ) / range.getLength();
     }
   }, {
 
@@ -118,6 +118,20 @@ define( function( require ) {
      */
     getMinCurrent: function() {
       return computeCurrent( OhmsLawConstants.VOLTAGE_RANGE.min, OhmsLawConstants.RESISTANCE_RANGE.max );
+    },
+
+    /**
+     * Get the Range of the current, will construct a new range if not yet set
+     * @returns {Range}
+     */
+    getCurrentRange: function() {
+
+      if ( !this.currentRange ) {
+
+        // @private, use the getter
+        this.currentRange =  new Range( OhmsLawModel.getMinCurrent(), OhmsLawModel.getMaxCurrent() );
+      }
+      return this.currentRange;
     }
   } );
 } );

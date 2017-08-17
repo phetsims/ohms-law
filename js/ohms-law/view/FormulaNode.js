@@ -24,9 +24,12 @@ define( function( require ) {
   var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
 
-  // var CURRENT_INDEX = 0;
-  // var VOLTAGE_INDEX = 1;
-  // var RESISTANCE_INDEX = 2;
+  // constants
+  var TEXT_FONT = new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } );
+  var CURRENT_SCALE_M = 150; // empirically determined
+  var CURRENT_SCALE_B = 1; // empirically determined
+  var OTHERS_SCALE_M = 16; // empirically determined
+  var OTHERS_SCALE_B = 4; // empirically determined
 
   /**
    * @param {OhmsLawModel} model
@@ -48,102 +51,87 @@ define( function( require ) {
     } );
 
 
-
-    /**
-     * Hold the metaData for each text to be created
-     * Scales are used to apply the linear scaling to each letter.
-     * y = mx + b, scaleM is the coefficient, and B is the y-intercept.
-     *
-     * Base all values off of the position of the equals sign, because it it is relatively centrally
-     * located
-     */
-    var textsDataArray = [
-      {
-        // First so it can be added in back of the formula.
-        symbolString: currentSymbolString,
-        scaleM: 0.2,
-        scaleB: 0.84,
-        x: equalsSign.centerX + 80,
-        property: model.currentProperty,
-        color: PhetColorScheme.RED_COLORBLIND,
-        maxInitialWidth: 20,
-        tandem: tandem.createTandem( 'currentLetter' )
-      },
-      {
-        symbolString: voltageSymbolString,
-        scaleM: 2,
-        scaleB: 2,
-        x: equalsSign.centerX - 150,
-        property: model.voltageProperty,
-        color: OhmsLawConstants.BLUE_COLOR,
-        maxInitialWidth: 180,
-        tandem: tandem.createTandem( 'voltageLetter' )
-      },
-      {
-        symbolString: resistanceSymbolString,
-        scaleM: 0.015,
-        scaleB: 5,
-        x: equalsSign.centerX + 240,
-        property: model.resistanceProperty,
-        color: OhmsLawConstants.BLUE_COLOR,
-        maxInitialWidth: 175,
-        tandem: tandem.createTandem( 'resistanceLetter' )
-      }
-    ];
-
-    // Create a node to hold all the symbols
-    var lettersNode = new Node( { tandem: tandem.createTandem( 'lettersNode' ) } );
-    this.addChild( lettersNode );
-
-    // @private - collection of the text nodes, used for a11y to compare relative sizes
-    // of the letters
-    this.letters = [];
-
-    this.addChild( equalsSign ); // must come after lettersNode
-
-    // Add the symbol letters to the formula and scale them appropriately
-    var self = this;
-    textsDataArray.forEach( function( textData ) {
-
-      // Centered text node, so we just have to adjust scale dynamically
-      var textNode = new Text( textData.symbolString, {
-        font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } ),
-        fill: textData.color,
-        centerX: 0,
-        centerY: 0,
-        tandem: textData.tandem
-      } );
-
-      // Make sure that the text isn't initially too large and, if so, change the scaling factors.  This is done in
-      // support of translation, nin case some symbols are much larger than the V, I, and R symbols used in the English
-      // version.
-      var initialWidth = textNode.width * textData.scaleM * textData.property.value + textData.scaleB;
-      if ( initialWidth > textData.maxInitialWidth ) {
-        var scaleFactor = textData.maxInitialWidth / initialWidth;
-        textData.scaleM = textData.scaleM * scaleFactor;
-        textData.scaleB = textData.scaleB * scaleFactor;
-      }
-
-      // Add an invisible rectangle with bounds slightly larger than the text so that artifacts aren't left on the
-      // screen, see https://github.com/phetsims/ohms-law/issues/26.
-      var antiArtifactRectangle = Rectangle.bounds( textNode.bounds.dilatedX( 1 ) );
-
-      // Create the node that contains the text
-      var letterNode = new Node( { children: [ antiArtifactRectangle, textNode ] } );
-      lettersNode.addChild( letterNode );
-      self.letters.push( letterNode );
-
-      // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
-      textData.property.link( function updateProperty( value ) {
-        letterNode.setTranslation( textData.x, 0 );
-        letterNode.setScaleMagnitude( textData.scaleM * value + textData.scaleB );
-      } );
-
-      textData.property.lazyLink( self.getRelativeSizeDescription.bind( self ) );
+    // Create the Current Letter
+    var currentText = new Text( currentSymbolString, {
+      font: TEXT_FONT,
+      fill: PhetColorScheme.RED_COLORBLIND,
+      centerX: 0,
+      centerY: 0,
+      tandem: tandem.createTandem( 'currentLetter' )
     } );
+
+    // Create the node that contains the text
+    var currentLetterNode = new Node( { children: [ getAntiArtifactRectangle( currentText ), currentText ] } );
+    var currentXPosition = equalsSign.centerX + 80;
+
+    // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
+    model.currentProperty.link( function updateProperty() {
+
+      currentLetterNode.setTranslation( currentXPosition, 0 );
+      currentLetterNode.setScaleMagnitude( CURRENT_SCALE_M * model.getNormalizedCurrent() + CURRENT_SCALE_B );
+    } );
+
+    // Create the Voltage Letter
+    var voltageText = new Text( voltageSymbolString, {
+      font: TEXT_FONT,
+      fill: OhmsLawConstants.BLUE_COLOR,
+      centerX: 0,
+      centerY: 0,
+      tandem: tandem.createTandem( 'voltageLetter' )
+    } );
+
+    // Create the node that contains the text
+    var voltageLetterNode = new Node( { children: [ getAntiArtifactRectangle( voltageText ), voltageText ] } );
+    var voltageXPosition = equalsSign.centerX - 150;
+
+    // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
+    model.voltageProperty.link( function updateProperty() {
+
+      voltageLetterNode.setTranslation( voltageXPosition, 0 );
+      voltageLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedVoltage() + OTHERS_SCALE_B );
+    } );
+
+    // Create the Resistance Letter
+    var resistanceText = new Text( resistanceSymbolString, {
+      font: TEXT_FONT,
+      fill: OhmsLawConstants.BLUE_COLOR,
+      centerX: 0,
+      centerY: 0,
+      tandem: tandem.createTandem( 'resistanceLetter' )
+    } );
+
+    // Create the node that contains the text
+    var resistanceLetterNode = new Node( { children: [ getAntiArtifactRectangle( resistanceText ), resistanceText ] } );
+    var resistanceXPosition = equalsSign.centerX + 240;
+
+    // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
+    model.resistanceProperty.link( function updateProperty() {
+
+      resistanceLetterNode.setTranslation( resistanceXPosition, 0 );
+      resistanceLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedResistance() + OTHERS_SCALE_B );
+    } );
+
+    // Current letter is added first so that when it gets huge, it doesn't cover anything up.
+    this.addChild( currentLetterNode );
+
+    this.addChild( resistanceLetterNode );
+
+    this.addChild( voltageLetterNode );
+
+    this.addChild( equalsSign ); // must come after letters to be on top
 
     options.tandem = tandem;
     this.mutate( options );
+  }
+
+  /**
+   * Add an invisible rectangle with bounds slightly larger than the text so that artifacts aren't left on the
+   * screen, see https://github.com/phetsims/ohms-law/issues/26.
+   * @param {Node} node
+   * @returns {Rectangle}
+   */
+  function getAntiArtifactRectangle( node ) {
+    return Rectangle.bounds( node.bounds.dilatedX( 1 ) );
   }
 
   ohmsLaw.register( 'FormulaNode', FormulaNode );
@@ -154,7 +142,7 @@ define( function( require ) {
      * Get a description of the relative sizes of the letters.
      * @return {}
      */
-    getRelativeSizeDescription: function() {
+    getRelativeSizeDescription: function( value ) {
 
     }
 
