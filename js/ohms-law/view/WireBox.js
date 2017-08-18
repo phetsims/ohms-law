@@ -12,6 +12,7 @@ define( function( require ) {
   var Node = require( 'SCENERY/nodes/Node' );
   var inherit = require( 'PHET_CORE/inherit' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var ReadoutPanel = require( 'OHMS_LAW/ohms-law/view/ReadoutPanel' );
   var BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
@@ -20,6 +21,10 @@ define( function( require ) {
   var Range = require( 'DOT/Range' );
   var Util = require( 'DOT/Util' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+
+  // a11y strings
+  var circuitLabelString = OhmsLawA11yStrings.circuitLabelString;
+  var circuitDescriptionString = OhmsLawA11yStrings.circuitDescriptionString;
 
   // constants
   var WIDTH = OhmsLawConstants.WIRE_WIDTH;
@@ -35,7 +40,14 @@ define( function( require ) {
    */
   function WireBox( model, tandem, options ) {
 
-    Node.call( this );
+    Node.call( this, {
+
+      // a11y
+      tagName: 'div',
+      labelTagName: 'h3',
+      accessibleLabel: circuitLabelString,
+      accessibleDescription: circuitDescriptionString
+    } );
 
     // For positioning, the top left corner of the wireFrame is defined as 0,0
     var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, {

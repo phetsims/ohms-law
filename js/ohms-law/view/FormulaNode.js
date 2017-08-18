@@ -29,6 +29,8 @@ define( function( require ) {
 
   // a11y strings
   var relativeSizePatternString = OhmsLawA11yStrings.relativeSizePatternString;
+  var ohmsLawEquationString = OhmsLawA11yStrings.ohmsLawEquationString;
+  var ohmsLawDefinitionString = OhmsLawA11yStrings.ohmsLawDefinitionString;
 
   // constants
   var TEXT_FONT = new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } );
@@ -44,6 +46,16 @@ define( function( require ) {
    * @constructor
    */
   function FormulaNode( model, tandem, options ) {
+
+    options = _.extend( {
+
+      // a11y
+      accessibleLabelAsHTML: ohmsLawEquationString,
+      accessibleDescriptionAsHTML: ohmsLawDefinitionString,
+      tagName: 'div',
+      labelTagName: 'h3',
+      prependLabels: true // labels should come before other child content
+    }, options );
 
     var self = this;
     Node.call( this );
@@ -75,7 +87,7 @@ define( function( require ) {
       self.currentLetterNode.setTranslation( currentXPosition, 0 );
       self.currentLetterNode.setScaleMagnitude( CURRENT_SCALE_M * model.getNormalizedCurrent() + CURRENT_SCALE_B );
     } );
-    
+
     // Create the Voltage Letter
     var voltageText = new Text( voltageSymbolString, {
       font: TEXT_FONT,
@@ -122,8 +134,13 @@ define( function( require ) {
     // must come after letters to be on top
     this.addChild( equalsSign );
 
+    // add a node for accessibility that describes the relative sizes of the letters
+    var descriptionNode = new Node( { tagName: 'p' } );
+    this.addChild( descriptionNode );
+
+    // when any of the model Properties change, update the accessible description
     Property.multilink( [ model.currentProperty, model.resistanceProperty, model.voltageProperty ], function( current, resistance, voltage ) {
-      self.getComparativeSizeDescription();
+      descriptionNode.accessibleDescriptionAsHTML = self.getComparativeSizeDescription();
     } );
 
     options.tandem = tandem;

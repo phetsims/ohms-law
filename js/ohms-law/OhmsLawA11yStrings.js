@@ -44,7 +44,30 @@ define( function( require ) {
     muchMuchLargerThanString: 'much much larger than',
 
     // pattern for the description of relative letter size
-    relativeSizePatternString: '<strong>Letter V</strong> is <em>{{iComparison}}</em> <strong>letter I</strong> and <em>{{rComparison}}</em> <strong>letter R</strong>',
+    relativeSizePatternString: '<strong>Letter V</strong> is <em>{{iComparison}}</em> <strong>letter I</strong> and <em>{{rComparison}}</em> <strong>letter R</strong>.',
+
+    //--------------------------------------------------------------------------
+    // Equation strings
+    //--------------------------------------------------------------------------
+    ohmsLawEquationString: 'Ohm\'s Law Equation',
+    ohmsLawDefinitionString: 'Voltage, <strong>V</strong>, is equal to Current, <strong>I</strong>, times Resistance, <strong>R</strong>.',
+
+    //--------------------------------------------------------------------------
+    // Circuit strings
+    //--------------------------------------------------------------------------
+    circuitLabelString: 'The Circuit',
+    circuitDescriptionString: 'Conects a resistor to a series of batteries with a pair of wires.',
+
+    //--------------------------------------------------------------------------
+    // Battery strings
+    //--------------------------------------------------------------------------
+    lessThanOneBatteryString: 'Less than 1 battery',
+    exactlyBatteryString: 'Exactly 1 battery',
+    exactlyBatteriesPatternString: 'Exactly {{number}} batteries',
+    moreThanBatteriesPatternString: 'More than {{number}} batteries',
+    batteriesVisiblePatternString: '{{visible}} {{show}} {{voltage}} volts.',
+    showString: 'show',
+    showsString: 'shows',
 
     //--------------------------------------------------------------------------
     // Scene summary strings
