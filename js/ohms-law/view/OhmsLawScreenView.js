@@ -24,7 +24,6 @@ define( function( require ) {
   var BooleanProperty = require( 'AXON/BooleanProperty' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var HBox = require( 'SCENERY/nodes/HBox' );
-  var VBox = require( 'SCENERY/nodes/VBox' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var OhmsLawSceneSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawSceneSummaryNode' );
 
@@ -36,6 +35,7 @@ define( function( require ) {
   // a11y strings
   var ohmsLawTitleString = OhmsLawA11yStrings.ohmsLawTitleString;
   var playAreaString = JoistA11yStrings.playAreaString;
+  var controlPanelString = JoistA11yStrings.controlPanelString;
 
   /**
    * @param {OhmsLawModel} model
@@ -86,24 +86,25 @@ define( function( require ) {
       tandem: tandem.createTandem( 'resetAllButton' )
     } );
 
-    var buttons = new HBox( {
-      spacing: 60, // empirically determined
-      children: [ resetAllButton, soundToggleButton ]
-    } );
-
-    var rightSideLayout = new VBox( {
-      spacing: 15,
-      children: [ controlPanel, buttons ]
-    } );
-
     // formula and circuit are contained in a "Play Area", structure available to assistive technology
     var playAreaNode = new AccessibleSectionNode( playAreaString );
     this.addChild( playAreaNode );
 
+    // sound and reset all buttons contained in a "Control Panel", structure available to assistive technology
+    var controlPanelSectionNode = new AccessibleSectionNode( controlPanelString );
+    this.addChild( controlPanelSectionNode );
+
+    var buttons = new HBox( {
+      spacing: 60, // empirically determined
+      children: [ resetAllButton, soundToggleButton ],
+      accessibleOrder: [ soundToggleButton, resetAllButton ]
+    } );
+
     // children
     playAreaNode.addChild( formulaNode );
     playAreaNode.addChild( wireBox );
-    this.addChild( rightSideLayout );
+    playAreaNode.addChild( controlPanel );
+    controlPanelSectionNode.addChild( buttons );
 
     // layout for the screen
     formulaNode.centerY = this.layoutBounds.bottom / 4.75;
@@ -111,8 +112,9 @@ define( function( require ) {
     wireBox.centerX = formulaNode.centerX;
     wireBox.centerY = this.layoutBounds.bottom * .74; // empirically determined
 
-    rightSideLayout.right = this.layoutBounds.width - 50; // empirically determined
-    rightSideLayout.centerY = this.layoutBounds.centerY;
+    controlPanel.right = this.layoutBounds.width - 50; // empirically determined
+    controlPanel.centerY = this.layoutBounds.centerY - buttons.height / 2;
+    buttons.centerTop = controlPanel.centerBottom.plusXY( 0, 15 );
 
     // Play sounds when adding or removing a battery
     model.voltageProperty.lazyLink( function( voltage, oldVoltage ) {

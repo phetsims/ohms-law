@@ -17,6 +17,8 @@ define( function( require ) {
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var Util = require( 'DOT/Util' );
+  var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
+  var AccessibleSectionNode = require( 'SCENERY_PHET/accessibility/AccessibleSectionNode' );
 
   // constants
   
@@ -24,13 +26,13 @@ define( function( require ) {
   var summaryCurrentPatternString = OhmsLawA11yStrings.summaryCurrentPatternString;
   var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSlidersString;
   var summaryShortcutHintsString = OhmsLawA11yStrings.summaryShortcutHintsString;
+  var sceneSummaryString = JoistA11yStrings.sceneSummaryString;
 
   function OhmsLawSceneSummaryNode( model, formulaNode, wireBox ) {
 
-    Node.call( this );
+    AccessibleSectionNode.call( this, sceneSummaryString );
 
     // h2 and main summary for this sim
-    var headingNode = new Node( { tagName: 'h2', accessibleLabel: 'Scene Summary' } );
     var summaryNode = new Node( {
       tagName: 'p',
       accessibleLabel: 'In this sim, the Play Area contains the Ohm\'s Law equation, V equals I times R, a physical circuit, and sliders to play with voltage and resistance. The circuit connects a resistor to a series of batteries. Batteries show amount of voltage. Dots in the resistor represent the level of resistance in the resistor. In the Control Panel, buttons mute sound or reset sim.'
@@ -60,7 +62,6 @@ define( function( require ) {
     var shortcutParagraphNode = new Node( { tagName: 'p', accessibleLabel: summaryShortcutHintsString } );
 
     // add all children to this node, ordering the accessible content
-    this.addChild( headingNode );
     this.addChild( summaryNode );
     this.addChild( stateOfSimHeadingNode );
     this.addChild( rightNowParagraphNode );
@@ -120,5 +121,5 @@ define( function( require ) {
 
   ohmsLaw.register( 'OhmsLawSceneSummaryNode', OhmsLawSceneSummaryNode );
 
-  return inherit( Node, OhmsLawSceneSummaryNode );
+  return inherit( AccessibleSectionNode, OhmsLawSceneSummaryNode );
 } );

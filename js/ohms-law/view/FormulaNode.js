@@ -140,7 +140,7 @@ define( function( require ) {
 
     // when any of the model Properties change, update the accessible description
     Property.multilink( [ model.currentProperty, model.resistanceProperty, model.voltageProperty ], function( current, resistance, voltage ) {
-      descriptionNode.accessibleDescriptionAsHTML = self.getComparativeSizeDescription();
+      descriptionNode.accessibleLabelAsHTML = self.getComparativeSizeDescription();
     } );
 
     options.tandem = tandem;
