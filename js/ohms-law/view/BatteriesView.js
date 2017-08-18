@@ -22,7 +22,7 @@ define( function( require ) {
   var lessThanOneBatteryString = OhmsLawA11yStrings.lessThanOneBatteryString;
   var exactlyBatteryString = OhmsLawA11yStrings.exactlyBatteryString;
   var exactlyBatteriesPatternString = OhmsLawA11yStrings.exactlyBatteriesPatternString;
-  var moreThanBatteriesPatternString = OhmsLawA11yStrings.moreThanBatteriesPatternString;
+  var betweenBatteriesPatternString = OhmsLawA11yStrings.betweenBatteriesPatternString;
   var batteriesVisiblePatternString = OhmsLawA11yStrings.batteriesVisiblePatternString;
   var showString = OhmsLawA11yStrings.showString;
   var showsString = OhmsLawA11yStrings.showsString;
@@ -112,24 +112,24 @@ define( function( require ) {
       else {
 
         // generate a custom description
-        var patternString;
         if ( remainder === 0 ) {
-          patternString = exactlyBatteriesPatternString;
+          batteryVisibleDescription = StringUtils.fillIn( exactlyBatteriesPatternString, {
+            number: numVisible
+          } );
         }
         else {
-          patternString = moreThanBatteriesPatternString;
+          batteryVisibleDescription =StringUtils.fillIn( betweenBatteriesPatternString, {
+            min: numVisible,
+            max: numVisible + 1
+          } );
         }
-
-        batteryVisibleDescription = StringUtils.fillIn( patternString, {
-          number: numVisible
-        } );
 
         show = showString;
       }
       assert && assert( batteryVisibleDescription, 'no description generated for ' + numVisible + '+' + remainder + ' batteries' );
 
       var roundedVoltage = Util.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS );
-      
+
       return StringUtils.fillIn( batteriesVisiblePatternString, {
         visible: batteryVisibleDescription,
         voltage: roundedVoltage,

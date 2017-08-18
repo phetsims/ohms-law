@@ -64,7 +64,7 @@ define( function( require ) {
     lessThanOneBatteryString: 'Less than 1 battery',
     exactlyBatteryString: 'Exactly 1 battery',
     exactlyBatteriesPatternString: 'Exactly {{number}} batteries',
-    moreThanBatteriesPatternString: 'More than {{number}} batteries',
+    betweenBatteriesPatternString: 'Between {{min}} and {{max}} batteries',
     batteriesVisiblePatternString: '{{visible}} {{show}} {{voltage}} volts.',
     showString: 'show',
     showsString: 'shows',
@@ -101,8 +101,19 @@ define( function( require ) {
     // slider strings
     //--------------------------------------------------------------------------
     sliderControlsString: 'Slider Controls',
-    slidersDescriptionString: 'Change sliders to explore changes in equation and circuit'
+    slidersDescriptionString: 'Change sliders to explore changes in equation and circuit',
 
+    sliderChangeAlertPatternString: 'As letter {{initLetter}} {{initSizeChange}}, letter I {{iSizeChange}}.  Current now {{currentVal}} milliamps with {{initProperty}} at {{initVal}} {{initUnits}}.',
+    letterRString: 'R',
+    letterIString: 'I',
+    letterVString: 'V',
+    shrinksString: 'shrinks',
+    growsString: 'grows',
+    resistanceString: 'resistance',
+    voltageString: 'voltage',
+    voltsString: 'volts',
+    milliampsString: 'milliamps',
+    ohmsString: 'ohms'
   };
 
   if ( phet.chipper.queryParameters.stringTest === 'xss' ) {
