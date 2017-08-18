@@ -13,7 +13,19 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  var Util = require( 'DOT/Util' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+
+  // a11y strings
+  var lessThanOneBatteryString = OhmsLawA11yStrings.lessThanOneBatteryString;
+  var exactlyBatteryString = OhmsLawA11yStrings.exactlyBatteryString;
+  var exactlyBatteriesPatternString = OhmsLawA11yStrings.exactlyBatteriesPatternString;
+  var moreThanBatteriesPatternString = OhmsLawA11yStrings.moreThanBatteriesPatternString;
+  var batteriesVisiblePatternString = OhmsLawA11yStrings.batteriesVisiblePatternString;
+  var showString = OhmsLawA11yStrings.showString;
+  var showsString = OhmsLawA11yStrings.showsString;
 
   /**
    * @param {Property.<number>} voltageProperty
@@ -22,12 +34,18 @@ define( function( require ) {
    * @constructor
    */
   function BatteriesView( voltageProperty, tandem, options ) {
-    Node.call( this );
+    Node.call( this, {
+
+      // a11y
+      tagName: 'li'
+    } );
+    var self = this;
 
     // Store battery nodes in an array
     var batteries = [];
 
     var batteriesGroupTandem = tandem.createGroupTandem( 'battery' );
+
     // Create an array of batteries; enough to fill the entire wire.
     for ( var i = 0; i < OhmsLawConstants.MAX_NUMBER_OF_BATTERIES; i++ ) {
       var leftPosition = i * OhmsLawConstants.BATTERY_WIDTH;
@@ -53,6 +71,9 @@ define( function( require ) {
           battery.setVoltage( voltageBattery );
         }
       } );
+
+      // update the description for the number of batteries
+      self.accessibleLabel = self.getBatteryDescription( voltage );
     } );
 
     options.tandem = tandem;
@@ -61,5 +82,59 @@ define( function( require ) {
 
   ohmsLaw.register( 'BatteriesView', BatteriesView );
 
-  return inherit( Node, BatteriesView );
+  return inherit( Node, BatteriesView, {
+
+    /**
+     * From the voltage, get a description of the number of batteries visible in the circuit.
+     * 
+     * @param  {number} voltage
+     * @return {string}
+     */
+    getBatteryDescription: function( voltage ) {
+      var batteryVisibleDescription;
+      var show;
+
+      var numVisible = Math.floor( voltage / OhmsLawConstants.AA_VOLTAGE );
+      var remainder = voltage % OhmsLawConstants.AA_VOLTAGE;
+
+      if ( numVisible < 1 && remainder > 0 ) {
+
+        // there are less than one batteries visilbe
+        batteryVisibleDescription = lessThanOneBatteryString;
+        show = showsString;
+      }
+      else if ( numVisible === 1 && remainder === 0 ) {
+
+        // exactly one batteries
+        batteryVisibleDescription = exactlyBatteryString;
+        show = showsString;
+      }
+      else {
+
+        // generate a custom description
+        var patternString;
+        if ( remainder === 0 ) {
+          patternString = exactlyBatteriesPatternString;
+        }
+        else {
+          patternString = moreThanBatteriesPatternString;
+        }
+
+        batteryVisibleDescription = StringUtils.fillIn( patternString, {
+          number: numVisible
+        } );
+
+        show = showString;
+      }
+      assert && assert( batteryVisibleDescription, 'no description generated for ' + numVisible + '+' + remainder + ' batteries' );
+
+      var roundedVoltage = Util.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS );
+      
+      return StringUtils.fillIn( batteriesVisiblePatternString, {
+        visible: batteryVisibleDescription,
+        voltage: roundedVoltage,
+        show: show
+      } );
+    }
+  } );
 } );
