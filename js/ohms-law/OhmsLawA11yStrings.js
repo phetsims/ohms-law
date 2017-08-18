@@ -95,7 +95,13 @@ define( function( require ) {
     summaryCurrentPatternString: '<em>{{size}}</em> arrows represent amount of current flowing clockwise through circuit.',
 
     summaryLookForSlidersString: 'Look for voltage and resistance sliders to play.',
-    summaryShortcutHintsString: 'If you need to, check out keyboard shortcuts for this sim.'
+    summaryShortcutHintsString: 'If you need to, check out keyboard shortcuts for this sim.',
+
+    //--------------------------------------------------------------------------
+    // slider strings
+    //--------------------------------------------------------------------------
+    sliderControlsString: 'Slider Controls',
+    slidersDescriptionString: 'Change sliders to explore changes in equation and circuit'
 
   };
 

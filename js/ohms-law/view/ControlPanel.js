@@ -31,6 +31,8 @@ define( function( require ) {
   var voltageUnitsPatternString = OhmsLawA11yStrings.voltageUnitsPatternString;
   var resistanceSliderLabelString = OhmsLawA11yStrings.resistanceSliderLabelString;
   var voltageSliderLabelString = OhmsLawA11yStrings.voltageSliderLabelString;
+  var sliderControlsString = OhmsLawA11yStrings.sliderControlsString;
+  var slidersDescriptionString = OhmsLawA11yStrings.slidersDescriptionString;
 
   /**
    * @param {Property.<number>} voltageProperty
@@ -83,13 +85,17 @@ define( function( require ) {
 
     // Use a content node so that the Panel can surround it fully
     var content = new HBox( {
-        spacing: 30, // empirically determined
-        children: [ voltageSlider, resistanceSlider ],
+      spacing: 30, // empirically determined
+      children: [ voltageSlider, resistanceSlider ],
 
-        // a11y - contain the sliders in a list
-        tagName: 'ul'
-      }
-    );
+      // a11y - contain the sliders in a list
+      parentContainerTagName: 'fieldset',
+      labelTagName: 'legend',
+      prependLabels: true,
+      tagName: 'ul',
+      accessibleLabel: sliderControlsString,
+      accessibleDescription: slidersDescriptionString
+    } );
 
     Panel.call( this, content, options );
   }
