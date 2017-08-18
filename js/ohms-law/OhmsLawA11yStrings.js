@@ -15,8 +15,8 @@ define( function( require ) {
   var OhmsLawA11yStrings = {
     resistanceUnitsPatternString: '{{value}} Ohms',
     voltageUnitsPatternString: '{{value}} Volts',
-    resistanceSliderLabelString: 'Resistance',
-    voltageSliderLabelString: 'Voltage',
+    resistanceSliderLabelString: 'R, Resistance',
+    voltageSliderLabelString: 'V, Voltage',
 
     // accessible title for Ohms Law
     ohmsLawTitleString: 'Ohms Law',
