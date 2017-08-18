@@ -20,11 +20,13 @@ define( function( require ) {
   var RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
   var Range = require( 'DOT/Range' );
   var Util = require( 'DOT/Util' );
+  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // a11y strings
   var circuitLabelString = OhmsLawA11yStrings.circuitLabelString;
   var circuitDescriptionString = OhmsLawA11yStrings.circuitDescriptionString;
+  var currentDescriptionPatternString = OhmsLawA11yStrings.currentDescriptionPatternString;
 
   // constants
   var WIDTH = OhmsLawConstants.WIRE_WIDTH;
@@ -48,6 +50,7 @@ define( function( require ) {
       accessibleLabel: circuitLabelString,
       accessibleDescription: circuitDescriptionString
     } );
+    var self = this;
 
     // For positioning, the top left corner of the wireFrame is defined as 0,0
     var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, {
@@ -83,6 +86,10 @@ define( function( require ) {
     } );
     this.addChild( this.bottomRightArrow );
 
+    // a11y - accessible description for the current
+    var accessibleCurrentNode = new Node( { tagName: 'li' } );
+    this.addChild( accessibleCurrentNode );
+
     var currentReadoutPanel = new ReadoutPanel( model, tandem.createTandem( 'currentReadoutPanel' ), {
       centerY: HEIGHT / 2,
       centerX: WIDTH / 2
@@ -103,6 +110,19 @@ define( function( require ) {
 
     // reset the model after using to get heights of arrows
     model.reset();
+
+    // a11y - when the current changes, update the accessible description
+    model.currentProperty.link( function( current ) {
+      var formattedCurrent = Util.toFixed( current, OhmsLawConstants.CURRENT_SIG_FIGS );
+
+      accessibleCurrentNode.accessibleLabel = StringUtils.fillIn( currentDescriptionPatternString ,{
+        arrowSize: self.getArrowSizeDescription(),
+        value: formattedCurrent
+      } );
+    } );
+
+    // a11y - the order of descriptions should be current, batteries, then resistance
+    this.accessibleOrder = [ accessibleCurrentNode, batteriesView, resistorNode ];
 
     options.tandem = tandem;
     this.mutate( options );

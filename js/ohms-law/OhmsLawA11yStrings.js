@@ -26,13 +26,13 @@ define( function( require ) {
     //--------------------------------------------------------------------------
 
     // descriptions for the size of the current arrows
-    tinyString: 'tiny',
-    verySmallString: 'very small',
-    smallString: 'small',
-    mediumSizeString: 'medium size',
-    largeString: 'large',
-    veryLargeString: 'very large',
-    hugeString: 'huge',
+    tinyString: 'Tiny',
+    verySmallString: 'Very small',
+    smallString: 'Small',
+    mediumSizeString: 'Medium size',
+    largeString: 'Large',
+    veryLargeString: 'Very large',
+    hugeString: 'Huge',
 
     // relative descriptions that compare size of equation variables
     muchMuchSmallerThanString: 'much much smaller than',
@@ -68,6 +68,11 @@ define( function( require ) {
     batteriesVisiblePatternString: '{{visible}} {{show}} {{voltage}} volts.',
     showString: 'show',
     showsString: 'shows',
+
+    //--------------------------------------------------------------------------
+    // Current strings
+    //--------------------------------------------------------------------------
+    currentDescriptionPatternString: '{{arrowSize}} arrows pointing clockwise represent a current of {{value}} milliamps.',
 
     //--------------------------------------------------------------------------
     // Scene summary strings
