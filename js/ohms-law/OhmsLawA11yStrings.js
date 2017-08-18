@@ -21,6 +21,10 @@ define( function( require ) {
     // accessible title for Ohms Law
     ohmsLawTitleString: 'Ohms Law',
 
+    //--------------------------------------------------------------------------
+    // Relative size strings
+    //--------------------------------------------------------------------------
+
     // descriptions for the size of the current arrows
     tinyString: 'tiny',
     verySmallString: 'very small',
@@ -42,8 +46,15 @@ define( function( require ) {
     // pattern for the description of relative letter size
     relativeSizePatternString: '<strong>Letter V</strong> is <em>{{iComparison}}</em> <strong>letter I</strong> and <em>{{rComparison}}</em> <strong>letter R</strong>',
 
+    //--------------------------------------------------------------------------
+    // Scene summary strings
+    //--------------------------------------------------------------------------
+
     // pattern for the current arrow description in the scene summary
-    summaryCurrentPatternString: '<em>{{size}}</em> arrows represent amount of current flowing clockwise through circuit.'
+    summaryCurrentPatternString: '<em>{{size}}</em> arrows represent amount of current flowing clockwise through circuit.',
+
+    summaryLookForSlidersString: 'Look for voltage and resistance sliders to play.',
+    summaryShortcutHintsString: 'If you need to, check out keyboard shortcuts for this sim.'
 
   };
 

@@ -46,6 +46,8 @@ define( function( require ) {
   
   // strings
   var summaryCurrentPatternString = OhmsLawA11yStrings.summaryCurrentPatternString;
+  var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSlidersString;
+  var summaryShortcutHintsString = OhmsLawA11yStrings.summaryShortcutHintsString;
 
   function OhmsLawSceneSummaryNode( model, formulaNode, wireBox ) {
 
@@ -77,6 +79,10 @@ define( function( require ) {
     sizeListNode.addChild( comparativeSizeItemNode );
     sizeListNode.addChild( currentSizeItemNode );
 
+    // TODO: add a link to the keyboard help button in the shortcut paragraph
+    var sliderParagraphNode = new Node( { tagName: 'p', accessibleLabel: summaryLookForSlidersString } );
+    var shortcutParagraphNode = new Node( { tagName: 'p', accessibleLabel: summaryShortcutHintsString } );
+
     // add all children to this node, ordering the accessible content
     this.addChild( headingNode );
     this.addChild( summaryNode );
@@ -85,6 +91,8 @@ define( function( require ) {
     this.addChild( valueListNode );
     this.addChild( withValuesParagraphNode );
     this.addChild( sizeListNode );
+    this.addChild( sliderParagraphNode );
+    this.addChild( shortcutParagraphNode );
 
     // add all values to a list so we can easily iterate and add listeners to update descriptions
     // with each property
