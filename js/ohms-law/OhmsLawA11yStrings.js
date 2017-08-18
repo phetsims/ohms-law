@@ -56,7 +56,7 @@ define( function( require ) {
     // Circuit strings
     //--------------------------------------------------------------------------
     circuitLabelString: 'The Circuit',
-    circuitDescriptionString: 'Conects a resistor to a series of batteries with a pair of wires.',
+    circuitDescriptionString: 'Connects a resistor to a series of batteries with a pair of wires.',
 
     //--------------------------------------------------------------------------
     // Battery strings
