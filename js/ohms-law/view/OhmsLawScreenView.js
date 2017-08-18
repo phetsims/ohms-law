@@ -16,6 +16,8 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ScreenView = require( 'JOIST/ScreenView' );
+  var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
+  var AccessibleSectionNode = require( 'SCENERY_PHET/accessibility/AccessibleSectionNode' );
   var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
   var Sound = require( 'VIBE/Sound' );
@@ -33,6 +35,7 @@ define( function( require ) {
 
   // a11y strings
   var ohmsLawTitleString = OhmsLawA11yStrings.ohmsLawTitleString;
+  var playAreaString = JoistA11yStrings.playAreaString;
 
   /**
    * @param {OhmsLawModel} model
@@ -93,9 +96,13 @@ define( function( require ) {
       children: [ controlPanel, buttons ]
     } );
 
+    // formula and circuit are contained in a "Play Area", structure available to assistive technology
+    var playAreaNode = new AccessibleSectionNode( playAreaString );
+    this.addChild( playAreaNode );
+
     // children
-    this.addChild( formulaNode );
-    this.addChild( wireBox );
+    playAreaNode.addChild( formulaNode );
+    playAreaNode.addChild( wireBox );
     this.addChild( rightSideLayout );
 
     // layout for the screen

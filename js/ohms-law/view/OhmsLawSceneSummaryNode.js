@@ -1,35 +1,11 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
- * The scene accessible summary content for Ohms Law.  This manages the strings read by a
- * screen reader, and generates the parallel DOM structure.
+ * The scene accessible summary content for Ohms Law.  This manages the strings available
+ * to a screen reader, and generates the parallel DOM structure.
  * 
  * @author Jesse Greenberg
  */
-
-
-
-// <section id="scene-summary" aria-labelledby="scene-label">
-//   <h2 id="scene-label">Scene Summary</h2>
-//   <p>In this sim, the Play Area contains the Ohm's Law equation, <strong>V</strong> equals <strong>I</strong> times <strong>R</strong>, a physical circuit, and sliders to play with voltage and resistance. The circuit connects a resistor to a series of batteries. Batteries show amount of voltage. Dots in the resistor represent the level of resistance in the resistor. In the Control Panel, buttons mute sound or reset sim.</p>
-//   <!-- Dynamic List for necessary sim state information. -->
-//   <h3>State of Sim (optional h3)</h3>
-//   <p>Right now,</p>
-//   <ul>
-//     <li>voltage, <strong>V</strong> is <em class="string-parameter">[[4.5]] volts</em></li>
-//   <li>resistance, <strong>R</strong> is <em class="string-parameter">[[500]] ohms</em></li>
-//   <li>current, <strong>I</strong> is <em class="string-parameter">[[9.0]] milliamps</em>.</li>
-//   </ul>
-//   <p>With these values,</p> 
-//   <ul>
-//     <li><strong>Letter V</strong> is <em class="string-parameter">[[much larger]]</em> than <strong>letter I</strong> and <em class="string-parameter">[[comparable to]]</em> <strong>letter R</strong>.</li>
-//   <li><em class="string-parameter">[[Small]]</em> arrows represent amount of current flowing clockwise through circuit.</li>
-// </ul>
-//     <!-- Static interaction hints. Seperate paragrpah or part of list??? -->
-//     <p>Look for voltage and resistance sliders to play.</p> 
-//   <p>If you need to, check out <a href="#keyboard-shortcuts">keyboard shortcuts</a> for this sim.</p>
-
-// </section>
 define( function( require ) {
   'use strict';
 
@@ -128,7 +104,8 @@ define( function( require ) {
       } );
     };
 
-    // register listeners that update the labels in the scene summary
+    // register listeners that update the labels in the scene summary - this summary exists for life of sim,
+    // no need to dispose
     valueItemList.forEach( function( item ) {
       item.property.link( function( value ) {
         item.node.accessibleLabelAsHTML = StringUtils.fillIn( item.patternString, {
