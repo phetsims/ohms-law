@@ -68,7 +68,10 @@ define( function( require ) {
 
     var resistorNode = new ResistorNode( model.resistanceProperty, tandem.createTandem( 'resistorNode' ), {
       centerX: WIDTH / 2,
-      centerY: HEIGHT
+      centerY: HEIGHT,
+
+      // a11y
+      tagName: 'li'
     } );
     this.addChild( resistorNode );
 

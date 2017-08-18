@@ -75,6 +75,19 @@ define( function( require ) {
     currentDescriptionPatternString: '{{arrowSize}} arrows pointing clockwise represent a current of {{value}} milliamps.',
 
     //--------------------------------------------------------------------------
+    // Resistance strings
+    //--------------------------------------------------------------------------
+    tinyNumberOfDotsString: 'Tiny number of dots',
+    verySmallNumberOfDotsString: 'Very small number of',
+    smallNumberOfDotsString: 'A small number of',
+    goodManyNumberOfDotsString: 'A good many',
+    largeNumberOfDotsString: 'Large number of',
+    veryLargeNumberOfDotsString: 'Very large numbr of',
+    hugeNumberOfDotsString: 'Huge number of',
+
+    resistanceDotsPatternString: '{{dots}} dots in resistor represent resistance.',
+
+    //--------------------------------------------------------------------------
     // Scene summary strings
     //--------------------------------------------------------------------------
 

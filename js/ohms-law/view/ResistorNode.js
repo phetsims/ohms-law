@@ -15,10 +15,22 @@ define( function( require ) {
   var LinearGradient = require( 'SCENERY/util/LinearGradient' );
   var Node = require( 'SCENERY/nodes/Node' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var Path = require( 'SCENERY/nodes/Path' );
   var Shape = require( 'KITE/Shape' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var Util = require( 'DOT/Util' );
+  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+
+  // a11y strings
+  var tinyNumberOfDotsString = OhmsLawA11yStrings.tinyNumberOfDotsString;
+  var verySmallNumberOfDotsString = OhmsLawA11yStrings.verySmallNumberOfDotsString;
+  var smallNumberOfDotsString = OhmsLawA11yStrings.smallNumberOfDotsString;
+  var goodManyNumberOfDotsString = OhmsLawA11yStrings.goodManyNumberOfDotsString;
+  var largeNumberOfDotsString = OhmsLawA11yStrings.largeNumberOfDotsString;
+  var veryLargeNumberOfDotsString = OhmsLawA11yStrings.veryLargeNumberOfDotsString;
+  var hugeNumberOfDotsString = OhmsLawA11yStrings.hugeNumberOfDotsString;
+  var resistanceDotsPatternString = OhmsLawA11yStrings.resistanceDotsPatternString;
 
   // constants
   var RESISTOR_WIDTH = OhmsLawConstants.WIRE_WIDTH / 2.123; // empirically determined
@@ -30,6 +42,9 @@ define( function( require ) {
   var DOT_RADIUS = 2;
   var AREA_PER_DOT = 40; // adjust this to control the density of the dots
   var NUMBER_OF_DOTS = MAX_WIDTH_INCLUDING_ROUNDED_ENDS * RESISTOR_HEIGHT / AREA_PER_DOT;
+  var DOT_STRINGS = [ tinyNumberOfDotsString, verySmallNumberOfDotsString, smallNumberOfDotsString,
+                      goodManyNumberOfDotsString, largeNumberOfDotsString, veryLargeNumberOfDotsString,
+                      hugeNumberOfDotsString ];
 
   var BODY_FILL_GRADIENT = new LinearGradient( 0, -RESISTOR_HEIGHT / 2, 0, RESISTOR_HEIGHT / 2 ) // For 3D effect on the wire.
     .addColorStop( 0, '#F00' )
@@ -59,6 +74,7 @@ define( function( require ) {
   function ResistorNode( resistanceProperty, tandem, options ) {
 
     Node.call( this );
+    var self = this;
 
     // Body of the wire
     var bodyPath = new Path( new Shape().moveTo( -RESISTOR_WIDTH / 2, RESISTOR_HEIGHT / 2 )
@@ -124,6 +140,8 @@ define( function( require ) {
       dotsNode.children.forEach( function( dot, index ) {
         dot.setVisible( index < numDotsToShow );
       } );
+
+      self.accessibleLabel = self.getResistanceDescription( resistance );
     } );
 
     this.mutate( options );
@@ -131,5 +149,22 @@ define( function( require ) {
 
   ohmsLaw.register( 'ResistorNode', ResistorNode );
 
-  return inherit( Node, ResistorNode );
+  return inherit( Node, ResistorNode, {
+
+    /**
+     * Get a description of the resistance based on the value of the resistance.
+     * @return {string} 
+     */
+    getResistanceDescription: function( resistance ) {
+      var range = OhmsLawConstants.RESISTANCE_RANGE;
+
+      // map the normalied value to one of the resistance descriptions
+      var index = Util.roundSymmetric( Util.linear( range.min, range.max, 0, DOT_STRINGS.length - 1, resistance ) );
+      var numDotsDescription = DOT_STRINGS[ index ];
+
+      return StringUtils.fillIn( resistanceDotsPatternString, {
+        dots: numDotsDescription
+      } );
+    }
+  } );
 } );
