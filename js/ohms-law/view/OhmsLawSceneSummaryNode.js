@@ -39,11 +39,15 @@ define( function( require ) {
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Node = require( 'SCENERY/nodes/Node' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var Util = require( 'DOT/Util' );
 
   // constants
+  
+  // strings
+  var summaryCurrentPatternString = OhmsLawA11yStrings.summaryCurrentPatternString;
 
-  function OhmsLawSceneSummaryNode( model, formulaNode ) {
+  function OhmsLawSceneSummaryNode( model, formulaNode, wireBox ) {
 
     Node.call( this );
 
@@ -68,8 +72,10 @@ define( function( require ) {
     var withValuesParagraphNode = new Node( { tagName: 'p', accessibleLabel: 'With these values,' } );
 
     var sizeListNode = new Node( { tagName: 'ul' } );
-    var relativeSizeItemNode = new Node( { tagName: 'li' } );
-    sizeListNode.addChild( relativeSizeItemNode );
+    var comparativeSizeItemNode = new Node( { tagName: 'li' } );
+    var currentSizeItemNode = new Node( { tagName: 'li' } );
+    sizeListNode.addChild( comparativeSizeItemNode );
+    sizeListNode.addChild( currentSizeItemNode );
 
     // add all children to this node, ordering the accessible content
     this.addChild( headingNode );
@@ -105,8 +111,13 @@ define( function( require ) {
 
     // whenever any of the model values change, update the description items that descripe
     // the relative size of letters in the equation
-    var updateRelativeSizeDescriptions = function() {
+    var updateComparativeSizeDescriptions = function() {
+      comparativeSizeItemNode.accessibleLabelAsHTML = formulaNode.getComparativeSizeDescription();
 
+      // generate the scene summary description for the arrow sizes
+      currentSizeItemNode.accessibleLabelAsHTML = StringUtils.fillIn( summaryCurrentPatternString, {
+        size: wireBox.getArrowSizeDescription()
+      } );
     };
 
     // register listeners that update the labels in the scene summary
@@ -116,7 +127,8 @@ define( function( require ) {
           value: Util.toFixed( value, item.precision )
         } );
 
-        updateRelativeSizeDescriptions();
+        // if any of the Properties change, update relative size description and current item descriptions
+        updateComparativeSizeDescriptions();
       } );
     } );
   }

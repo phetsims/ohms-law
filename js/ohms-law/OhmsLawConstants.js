@@ -12,24 +12,24 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var RangeWithValue = require( 'DOT/RangeWithValue' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var Range = require( 'DOT/Range' );
 
-  // strings
-  var tinyString = 'tiny';
-  var verySmallString = 'very small';
-  var smallString = 'small';
-  var mediumSizeString = 'medium size';
-  var largeString = 'large';
-  var veryLargeString = 'very large';
-  var hugeString = 'huge';
-
-  var muchMuchSmallerThanString = 'much much smaller than';
-  var muchSmallerThanString = 'much smaller than';
-  var somewhatSmallerThanString = 'somewhat smaller than';
-  var comparableToString = 'comparable to';
-  var someWhatLargerThanString = 'somewhat larger than';
-  var muchLargerThanString = 'much larger than';
-  var muchMuchLargerThanString = 'much much larger than';
+  // a11y strings
+  var tinyString = OhmsLawA11yStrings.tinyString;
+  var verySmallString = OhmsLawA11yStrings.verySmallString;
+  var smallString = OhmsLawA11yStrings.smallString;
+  var mediumSizeString = OhmsLawA11yStrings.mediumSizeString;
+  var largeString = OhmsLawA11yStrings.largeString;
+  var veryLargeString = OhmsLawA11yStrings.veryLargeString;
+  var hugeString = OhmsLawA11yStrings.hugeString;
+  var muchMuchSmallerThanString = OhmsLawA11yStrings.muchMuchSmallerThanString;
+  var muchSmallerThanString = OhmsLawA11yStrings.muchSmallerThanString;
+  var somewhatSmallerThanString = OhmsLawA11yStrings.somewhatSmallerThanString;
+  var comparableToString = OhmsLawA11yStrings.comparableToString;
+  var someWhatLargerThanString = OhmsLawA11yStrings.someWhatLargerThanString;
+  var muchLargerThanString = OhmsLawA11yStrings.muchLargerThanString;
+  var muchMuchLargerThanString = OhmsLawA11yStrings.muchMuchLargerThanString;
 
   // constants used by other constants
   var RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms
@@ -40,6 +40,8 @@ define( function( require ) {
   var AA_VOLTAGE = 1.5; // in volts
   var MAX_NUMBER_OF_BATTERIES = Math.ceil( VOLTAGE_RANGE.max / AA_VOLTAGE );
 
+  // map for relative size of variables to their accessible description - ranges values are the ratio of sizes
+  // for instance, a value 0.25 means that the letter is 1/4 the size of the other
   var COMPARATIVE_DESCRIPTION_RANGES = {
     MUCH_MUCH_SMALLER: {
       range: new Range( 0, 0.25 ),

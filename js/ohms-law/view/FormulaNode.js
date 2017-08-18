@@ -12,12 +12,12 @@ define( function( require ) {
   // modules
   var Property = require( 'AXON/Property' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var Text = require( 'SCENERY/nodes/Text' );
-  var Range = require( 'DOT/Range' );
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
@@ -26,6 +26,9 @@ define( function( require ) {
   var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
   var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
+
+  // a11y strings
+  var relativeSizePatternString = OhmsLawA11yStrings.relativeSizePatternString;
 
   // constants
   var TEXT_FONT = new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } );
@@ -72,24 +75,7 @@ define( function( require ) {
       self.currentLetterNode.setTranslation( currentXPosition, 0 );
       self.currentLetterNode.setScaleMagnitude( CURRENT_SCALE_M * model.getNormalizedCurrent() + CURRENT_SCALE_B );
     } );
-
-    // get the maximum hight for I in this sim
-    model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.max );
-    model.resistanceProperty.set( OhmsLawConstants.RESISTANCE_RANGE.min );
-    var iHeightMax = self.currentLetterNode.height;
-
-    // get thhe minimum height for I in this sim
-    model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.min );
-    model.resistanceProperty.set( OhmsLawConstants.VOLTAGE_RANGE.max );
-    var iHeightMin = self.currentLetterNode.height;
-
-    // this is the range of heights for this sim (thought we would likely want to do a comprehensive
-    // check against extrema for all leters for maintainability)
-    this.letterHeightRange = new Range( iHeightMin, iHeightMax );
-
-    // reset the model after using to get heights of letters
-    model.reset();
-
+    
     // Create the Voltage Letter
     var voltageText = new Text( voltageSymbolString, {
       font: TEXT_FONT,
@@ -203,13 +189,10 @@ define( function( require ) {
         } 
       }
 
-      var patternString = 'Letter V is {{iComparison}} than letter I and {{rComparison}} than letter R.';
-      var description = StringUtils.fillIn( patternString, {
+      var description = StringUtils.fillIn( relativeSizePatternString, {
         iComparison: vToIDescription,
         rComparison: vToRDescription
       } );
-      console.log( description );
-
       return description;
     }
   } );

@@ -17,6 +17,8 @@ define( function( require ) {
   var BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
   var ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
   var RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
+  var Range = require( 'DOT/Range' );
+  var Util = require( 'DOT/Util' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // constants
@@ -55,19 +57,19 @@ define( function( require ) {
     } );
     this.addChild( resistorNode );
 
-    var bottomLeftArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomLeftArrow' ), {
+    this.bottomLeftArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomLeftArrow' ), {
       x: -OFFSET,
       y: HEIGHT + OFFSET,
       rotation: Math.PI / 2
     } );
-    this.addChild( bottomLeftArrow );
+    this.addChild( this.bottomLeftArrow );
 
-    var bottomRightArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomRightArrow' ), {
+    this.bottomRightArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomRightArrow' ), {
       x: WIDTH + OFFSET,
       y: HEIGHT + OFFSET,
       rotation: 0
     } );
-    this.addChild( bottomRightArrow );
+    this.addChild( this.bottomRightArrow );
 
     var currentReadoutPanel = new ReadoutPanel( model, tandem.createTandem( 'currentReadoutPanel' ), {
       centerY: HEIGHT / 2,
@@ -75,11 +77,45 @@ define( function( require ) {
     } );
     this.addChild( currentReadoutPanel );
 
+    // a11y - create a map that goes from arrow size to size description by scaling by setting model to extrema
+    model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.max );
+    model.resistanceProperty.set( OhmsLawConstants.RESISTANCE_RANGE.min );
+    var arrowHeightMax = this.bottomLeftArrow.height;
+
+    model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.min );
+    model.resistanceProperty.set( OhmsLawConstants.RESISTANCE_RANGE.max );
+    var arrowHeightMin = this.bottomLeftArrow.height;
+
+    // @private - this is the range of heights for this sim (thought we would likely want to do a comprehensive
+    this.arrowHeightRange = new Range( arrowHeightMin, arrowHeightMax );
+
+    // reset the model after using to get heights of arrows
+    model.reset();
+
     options.tandem = tandem;
     this.mutate( options );
   }
 
   ohmsLaw.register( 'WireBox', WireBox );
 
-  return inherit( Node, WireBox );
+  return inherit( Node, WireBox, {
+
+    /**
+     * Get a description of the arrow size.  Returns omething like "small" or "huge" or "medium size".
+     * @public
+     * 
+     * @return {string}
+     */
+    getArrowSizeDescription: function() {
+
+      var range = this.arrowHeightRange;
+      var height = this.bottomLeftArrow.height;
+
+      // map the normalized height to one of the size descriptions
+      var index = Util.roundSymmetric( Util.linear( range.min, range.max, 0, OhmsLawConstants.RELATIVE_SIZE_STRINGS.length - 1, height ) );
+
+      assert && assert( index >= 0, 'mapping to relative size string incorrect' );
+      return OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ]; 
+    }
+  } );
 } );

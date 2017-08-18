@@ -55,13 +55,13 @@ define( function( require ) {
       pickable: false
     } );
 
-    // a11y - the scene summary to be read by assistive technology
-    this.addChild( new OhmsLawSceneSummaryNode( model, formulaNode ) );
-
     // Circuit node with readout node
     var wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
       pickable: false
     } );
+
+    // a11y - the scene summary to be read by assistive technology
+    this.addChild( new OhmsLawSceneSummaryNode( model, formulaNode, wireBox ) );
 
     // Create the control panel with sliders.
     var controlPanel =

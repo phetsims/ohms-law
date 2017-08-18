@@ -20,6 +20,31 @@ define( function( require ) {
 
     // accessible title for Ohms Law
     ohmsLawTitleString: 'Ohms Law',
+
+    // descriptions for the size of the current arrows
+    tinyString: 'tiny',
+    verySmallString: 'very small',
+    smallString: 'small',
+    mediumSizeString: 'medium size',
+    largeString: 'large',
+    veryLargeString: 'very large',
+    hugeString: 'huge',
+
+    // relative descriptions that compare size of equation variables
+    muchMuchSmallerThanString: 'much much smaller than',
+    muchSmallerThanString: 'much smaller than',
+    somewhatSmallerThanString: 'somewhat smaller than',
+    comparableToString: 'comparable to',
+    someWhatLargerThanString: 'somewhat larger than',
+    muchLargerThanString: 'much larger than',
+    muchMuchLargerThanString: 'much much larger than',
+
+    // pattern for the description of relative letter size
+    relativeSizePatternString: '<strong>Letter V</strong> is <em>{{iComparison}}</em> <strong>letter I</strong> and <em>{{rComparison}}</em> <strong>letter R</strong>',
+
+    // pattern for the current arrow description in the scene summary
+    summaryCurrentPatternString: '<em>{{size}}</em> arrows represent amount of current flowing clockwise through circuit.'
+
   };
 
   if ( phet.chipper.queryParameters.stringTest === 'xss' ) {
