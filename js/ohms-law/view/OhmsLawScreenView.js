@@ -18,6 +18,7 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var UtteranceQueue = require( 'SCENERY_PHET/accessibility/UtteranceQueue' );
+  var Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
   var AccessibleSectionNode = require( 'SCENERY_PHET/accessibility/AccessibleSectionNode' );
@@ -148,7 +149,9 @@ define( function( require ) {
       var fixedVoltage = Util.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS );
 
       var alert = self.getValueChangeAlert( letterVString, sizeChange, sizeChange, fixedCurrent, voltageString, fixedVoltage, voltsString );
-      UtteranceQueue.addToBack( alert );
+      UtteranceQueue.addToBack( new Utterance( alert, {
+        typeId: 'voltageAlert'
+      } ) );
     } );
 
     // when resistance changes, generate an alert that describes this
@@ -162,7 +165,9 @@ define( function( require ) {
       var iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
 
       var alert = self.getValueChangeAlert( letterRString, rSizeChange, iSizeChange, fixedCurrent, resistanceString, fixedResistance, ohmsString );
-      UtteranceQueue.addToBack( alert );
+      UtteranceQueue.addToBack( new Utterance( alert, {
+        typeId: 'resistanceAlert'
+      } ) );
     } );
 
     this.mutate( {
