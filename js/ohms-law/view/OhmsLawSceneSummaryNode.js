@@ -27,6 +27,13 @@ define( function( require ) {
   var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSlidersString;
   var summaryShortcutHintsString = OhmsLawA11yStrings.summaryShortcutHintsString;
   var sceneSummaryString = JoistA11yStrings.sceneSummaryString;
+  var summarySimString = OhmsLawA11yStrings.summarySimString;
+  var stateOfSimString = OhmsLawA11yStrings.stateOfSimString;
+  var rightNowString = OhmsLawA11yStrings.rightNowString;
+  var withTheseValuesString = OhmsLawA11yStrings.withTheseValuesString;
+  var summaryVoltagePatternString = OhmsLawA11yStrings.summaryVoltagePatternString;
+  var resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPatternString;
+  var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPatternString;
 
   function OhmsLawSceneSummaryNode( model, formulaNode, wireBox ) {
 
@@ -35,12 +42,12 @@ define( function( require ) {
     // h2 and main summary for this sim
     var summaryNode = new Node( {
       tagName: 'p',
-      accessibleLabel: 'In this sim, the Play Area contains the Ohm\'s Law equation, V equals I times R, a physical circuit, and sliders to play with voltage and resistance. The circuit connects a resistor to a series of batteries. Batteries show amount of voltage. Dots in the resistor represent the level of resistance in the resistor. In the Control Panel, buttons mute sound or reset sim.'
+      accessibleLabel: summarySimString
     } );
 
     // heading marking the current state of this sim
-    var stateOfSimHeadingNode = new Node( { tagName: 'h3', accessibleLabel: 'State of Sim' } );
-    var rightNowParagraphNode = new Node( { tagName: 'p', accessibleLabel: 'Right now,' } );
+    var stateOfSimHeadingNode = new Node( { tagName: 'h3', accessibleLabel: stateOfSimString } );
+    var rightNowParagraphNode = new Node( { tagName: 'p', accessibleLabel: rightNowString } );
 
     // list outlining the values for this sim
     var valueListNode = new Node( { tagName: 'ul' } );
@@ -49,7 +56,7 @@ define( function( require ) {
     var valueCurrentItemNode = new Node( { tagName: 'li' } );
     valueListNode.children = [ valueVoltageItemNode, valueResistanceItemNode, valueCurrentItemNode ];
 
-    var withValuesParagraphNode = new Node( { tagName: 'p', accessibleLabel: 'With these values,' } );
+    var withValuesParagraphNode = new Node( { tagName: 'p', accessibleLabel: withTheseValuesString } );
 
     var sizeListNode = new Node( { tagName: 'ul' } );
     var comparativeSizeItemNode = new Node( { tagName: 'li' } );
@@ -76,19 +83,19 @@ define( function( require ) {
     var valueItemList = [
       {
         property: model.voltageProperty,
-        patternString: 'Voltage, <strong>V</strong> is <em>{{value}} volts</em>',
+        patternString: summaryVoltagePatternString,
         node: valueVoltageItemNode,
         precision: OhmsLawConstants.VOLTAGE_SIG_FIGS
       },
       {
         property: model.resistanceProperty,
-        patternString: 'Resistance, <strong>R</strong> is <em>{{value}} ohms</em>',
+        patternString: resistanceSummaryPatternString,
         node: valueResistanceItemNode,
         precision: OhmsLawConstants.RESISTANCE_SIG_FIGS
       },
       {
         property: model.currentProperty,
-        patternString: 'Current, <strong>I</strong> is <em>{{value}} milliamps</em>',
+        patternString: currentSummaryPatternString,
         node: valueCurrentItemNode,
         precision: OhmsLawConstants.CURRENT_SIG_FIGS
       }
