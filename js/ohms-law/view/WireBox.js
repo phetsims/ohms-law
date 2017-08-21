@@ -48,7 +48,8 @@ define( function( require ) {
       tagName: 'div',
       labelTagName: 'h3',
       accessibleLabel: circuitLabelString,
-      accessibleDescription: circuitDescriptionString
+      accessibleDescription: circuitDescriptionString,
+      prependLabels: true
     } );
     var self = this;
 
