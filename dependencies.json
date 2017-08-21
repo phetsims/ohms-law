@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-dev.8 Fri Aug 18 2017 18:02:40 GMT-0600 (MDT)",
+  "comment": "# ohms-law 1.4.0-dev.9 Mon Aug 21 2017 10:44:39 GMT-0600 (MDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,7 +13,7 @@
     "branch": "master"
   },
   "chipper": {
-    "sha": "98e84f7b0a0e4a0d09e59e7e521d77c4b9cd064f",
+    "sha": "157b6f57f3ce706a3a842e7240dfb9fa2eb3f7b9",
     "branch": "master"
   },
   "dot": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "41c8f8be0558143b329f10e3fc4f13d5308d11c6",
+    "sha": "3a0bed636147b96268d2bf827fd202e480b2f440",
     "branch": "master"
   },
   "phet-core": {
