@@ -82,7 +82,7 @@ define( function( require ) {
     smallNumberOfDotsString: 'A small number of',
     goodManyNumberOfDotsString: 'A good many',
     largeNumberOfDotsString: 'Large number of',
-    veryLargeNumberOfDotsString: 'Very large numbr of',
+    veryLargeNumberOfDotsString: 'Very large number of',
     hugeNumberOfDotsString: 'Huge number of',
 
     resistanceDotsPatternString: '{{dots}} dots in resistor represent resistance.',
