@@ -19,7 +19,7 @@ define( function( require ) {
     voltageSliderLabelString: 'V, Voltage',
 
     // accessible title for Ohms Law
-    ohmsLawTitleString: 'Ohm\' Law',
+    ohmsLawTitleString: 'Ohm\'s Law',
 
     //--------------------------------------------------------------------------
     // Relative size strings
