@@ -45,7 +45,7 @@ define( function( require ) {
     Node.call( this, {
 
       // a11y
-      tagName: 'div',
+      tagName: 'ul',
       labelTagName: 'h3',
       accessibleLabel: circuitLabelString,
       accessibleDescription: circuitDescriptionString,
