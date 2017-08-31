@@ -65,14 +65,14 @@ define( function( require ) {
     exactlyBatteryString: 'Exactly 1 battery',
     exactlyBatteriesPatternString: 'Exactly {{number}} batteries',
     betweenBatteriesPatternString: 'Between {{min}} and {{max}} batteries',
-    batteriesVisiblePatternString: '{{visible}} {{show}} {{voltage}} volts.',
+    batteriesVisiblePatternString: '<em>{{visible}}</em> {{show}} <em>{{voltage}} volts.</em>',
     showString: 'show',
     showsString: 'shows',
 
     //--------------------------------------------------------------------------
     // Current strings
     //--------------------------------------------------------------------------
-    currentDescriptionPatternString: '{{arrowSize}} arrows pointing clockwise represent a current of {{value}} milliamps.',
+    currentDescriptionPatternString: '<em>{{arrowSize}} arrows</em> pointing clockwise represent a current of <em>{{value}} milliamps.</em>',
 
     //--------------------------------------------------------------------------
     // Resistance strings
@@ -85,7 +85,7 @@ define( function( require ) {
     veryLargeNumberOfDotsString: 'Very large number of',
     hugeNumberOfDotsString: 'Huge number of',
 
-    resistanceDotsPatternString: '{{dots}} dots in resistor represent resistance.',
+    resistanceDotsPatternString: '<em>{{dots}} dots</em> in resistor represent resistance.',
 
     //--------------------------------------------------------------------------
     // Scene summary strings

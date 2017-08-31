@@ -141,7 +141,7 @@ define( function( require ) {
         dot.setVisible( index < numDotsToShow );
       } );
 
-      self.accessibleLabel = self.getResistanceDescription( resistance );
+      self.accessibleLabelAsHTML = self.getResistanceDescription( resistance );
     } );
 
     this.mutate( options );

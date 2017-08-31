@@ -73,7 +73,7 @@ define( function( require ) {
       } );
 
       // update the description for the number of batteries
-      self.accessibleLabel = self.getBatteryDescription( voltage );
+      self.accessibleLabelAsHTML = self.getBatteryDescription( voltage );
     } );
 
     options.tandem = tandem;

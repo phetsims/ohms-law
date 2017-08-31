@@ -119,7 +119,7 @@ define( function( require ) {
     model.currentProperty.link( function( current ) {
       var formattedCurrent = Util.toFixed( current, OhmsLawConstants.CURRENT_SIG_FIGS );
 
-      accessibleCurrentNode.accessibleLabel = StringUtils.fillIn( currentDescriptionPatternString ,{
+      accessibleCurrentNode.accessibleLabelAsHTML = StringUtils.fillIn( currentDescriptionPatternString ,{
         arrowSize: self.getArrowSizeDescription(),
         value: formattedCurrent
       } );
