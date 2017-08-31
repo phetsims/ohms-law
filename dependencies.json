@@ -1,11 +1,11 @@
 {
-  "comment": "# ohms-law 1.4.0-dev.9 Mon Aug 21 2017 10:44:39 GMT-0600 (MDT)",
+  "comment": "# ohms-law 1.4.0-dev.10 Wed Aug 30 2017 17:18:16 GMT-0800 (Alaskan Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
   },
   "axon": {
-    "sha": "62935a11739c6b82860668019e37fa3e3d5f77ce",
+    "sha": "7083c475844ba587a845350bb427539744a597da",
     "branch": "master"
   },
   "brand": {
@@ -13,15 +13,15 @@
     "branch": "master"
   },
   "chipper": {
-    "sha": "157b6f57f3ce706a3a842e7240dfb9fa2eb3f7b9",
+    "sha": "638c804bfd15c1f05a620fe69f80fd3a86dcbc70",
     "branch": "master"
   },
   "dot": {
-    "sha": "f7d9de8b5650a10126d3f8755a98cf64a0acc93c",
+    "sha": "db33a2c7fca14980bccd7d9517839c5b8ae7a9ee",
     "branch": "master"
   },
   "joist": {
-    "sha": "e920b2eedcc4a655ecd4d9049d80cd60a8ddf9c2",
+    "sha": "18d08df17954b3b9d455a716089bb09f2f63e9f4",
     "branch": "master"
   },
   "kite": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "3a0bed636147b96268d2bf827fd202e480b2f440",
+    "sha": "0bcbb591a05a2b54792762323bf99c5ab2777e60",
     "branch": "master"
   },
   "phet-core": {
@@ -45,23 +45,23 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "6369c3ff3e1434149f209d8ee8fe1e149f805f3e",
+    "sha": "d539ecd71d78236090201a5a4215f22651741c70",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "548e9cabde4202515c1dffae0be14b617b90f2e3",
+    "sha": "dce2eab871cde69a80f42148032593c8e1f59c79",
     "branch": "master"
   },
   "sherpa": {
-    "sha": "dba01386dd884865c2111c0b5c63f31a4cdfbefb",
+    "sha": "e29820c9401f11cc292bec57f36c7c559c980b00",
     "branch": "master"
   },
   "sun": {
-    "sha": "50f640e713ff6c764ec1484fb546370c18abe1ad",
+    "sha": "9820ea3048d1b97debc53fff442040e189d229fd",
     "branch": "master"
   },
   "tandem": {
-    "sha": "74233a040a2985dbb75cfbc7e927674aca1abfed",
+    "sha": "37243b99c58d4195f7f9302b72bda8456dff307a",
     "branch": "master"
   },
   "vibe": {
