@@ -110,7 +110,7 @@ define( function( require ) {
     // slider strings
     //--------------------------------------------------------------------------
     sliderControlsString: 'Slider Controls',
-    slidersDescriptionString: 'Change sliders to explore changes in equation and circuit',
+    slidersDescriptionString: 'Voltage and resistance sliders allow changes to equation and circuit.',
 
     sliderChangeAlertPatternString: 'As letter {{initLetter}} {{initSizeChange}}, letter I {{iSizeChange}}.  Current now {{currentVal}} milliamps with {{initProperty}} at {{initVal}} {{initUnits}}.',
     letterRString: 'R',
