@@ -37,9 +37,9 @@ define( function( require ) {
     // relative descriptions that compare size of equation variables
     muchMuchSmallerThanString: 'much much smaller than',
     muchSmallerThanString: 'much smaller than',
-    somewhatSmallerThanString: 'somewhat smaller than',
+    slightlySmallerThanString: 'slightly smaller than',
     comparableToString: 'comparable to',
-    someWhatLargerThanString: 'somewhat larger than',
+    slightlyLargerThanString: 'slightly larger than',
     muchLargerThanString: 'much larger than',
     muchMuchLargerThanString: 'much much larger than',
 

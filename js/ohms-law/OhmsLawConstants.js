@@ -25,9 +25,9 @@ define( function( require ) {
   var hugeString = OhmsLawA11yStrings.hugeString;
   var muchMuchSmallerThanString = OhmsLawA11yStrings.muchMuchSmallerThanString;
   var muchSmallerThanString = OhmsLawA11yStrings.muchSmallerThanString;
-  var somewhatSmallerThanString = OhmsLawA11yStrings.somewhatSmallerThanString;
+  var slightlySmallerThanString = OhmsLawA11yStrings.slightlySmallerThanString;
   var comparableToString = OhmsLawA11yStrings.comparableToString;
-  var someWhatLargerThanString = OhmsLawA11yStrings.someWhatLargerThanString;
+  var slightlyLargerThanString = OhmsLawA11yStrings.slightlyLargerThanString;
   var muchLargerThanString = OhmsLawA11yStrings.muchLargerThanString;
   var muchMuchLargerThanString = OhmsLawA11yStrings.muchMuchLargerThanString;
 
@@ -51,17 +51,17 @@ define( function( require ) {
       range: new Range( 0.25, 0.50 ), 
       description: muchSmallerThanString
     },
-    SOMEWHAT_SMALLER: {
+    SLIGHTLY_SMALLER: {
       range: new Range( 0.50, 0.9),
-      description: somewhatSmallerThanString
+      description: slightlySmallerThanString
     },
     COMPARABLE: {
       range: new Range( 0.9, 1.10 ),
       description: comparableToString
     },
-    SOMEWHAT_LARGER: {
+    SLIGHTLY_LARGER: {
       range: new Range( 1.10, 2.0 ),
-      description: someWhatLargerThanString
+      description: slightlyLargerThanString
     },
     MUCH_LARGER: {
       range: new Range( 2.0, 4.0 ),
@@ -116,8 +116,8 @@ define( function( require ) {
     RELATIVE_SIZE_STRINGS: [ tinyString, verySmallString, smallString, mediumSizeString,
       largeString, veryLargeString, hugeString ],
 
-    COMPARISON_SIZE_STRINGS: [ muchMuchSmallerThanString, muchSmallerThanString, somewhatSmallerThanString,
-      comparableToString, someWhatLargerThanString, muchLargerThanString, muchMuchLargerThanString ],
+    COMPARISON_SIZE_STRINGS: [ muchMuchSmallerThanString, muchSmallerThanString, slightlySmallerThanString,
+      comparableToString, slightlyLargerThanString, muchLargerThanString, muchMuchLargerThanString ],
 
     COMPARATIVE_DESCRIPTION_RANGES: COMPARATIVE_DESCRIPTION_RANGES
   };
