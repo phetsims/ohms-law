@@ -81,8 +81,7 @@ define( function( require ) {
     this.addChild( new OhmsLawSceneSummaryNode( model, formulaNode, wireBox ) );
 
     // Create the control panel with sliders.
-    var controlPanel =
-      new ControlPanel( model.voltageProperty, model.resistanceProperty, tandem.createTandem( 'controlPanel' ) );
+    var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty, tandem.createTandem( 'controlPanel' ) );
 
     // Sound on/off toggle button
     var soundToggleButton = new SoundToggleButton( soundActiveProperty, {

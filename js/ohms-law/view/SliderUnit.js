@@ -59,7 +59,6 @@ define( function( require ) {
       shiftKeyboardStep: options.shiftKeyboardStep,
       accessibleDecimalPlaces: options.accessibleDecimalPlaces,
       accessibleValuePattern: options.accessibleValuePattern, 
-      parentContainerTagName: 'ul',
       labelTagName: 'label',
       accessibleLabel: accessibleLabel,
       prependLabels: true

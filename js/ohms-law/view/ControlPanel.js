@@ -16,6 +16,7 @@ define( function( require ) {
   var Panel = require( 'SUN/Panel' );
   var SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  var AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
 
   // strings
   var resistanceUnitsString = require( 'string!OHMS_LAW/resistanceUnits' );
@@ -89,13 +90,19 @@ define( function( require ) {
       children: [ voltageSlider, resistanceSlider ],
 
       // a11y - contain the sliders in a list
-      parentContainerTagName: 'fieldset',
-      labelTagName: 'legend',
+      parentContainerTagName: 'div',
+      labelTagName: 'h3',
       prependLabels: true,
       tagName: 'ul',
       accessibleLabel: sliderControlsString,
       accessibleDescription: slidersDescriptionString
     } );
+
+    // a11y - explicitly define that the parent container of the content is labelledby the content's own
+    // label through association with the aria-labelledby attribute
+    content.ariaLabelContent = AccessiblePeer.LABEL;
+    content.ariaLabelledContent = AccessiblePeer.PARENT_CONTAINER;
+    content.setAriaLabelledByNode( content );
 
     Panel.call( this, content, options );
   }
