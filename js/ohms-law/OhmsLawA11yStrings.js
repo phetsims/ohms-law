@@ -85,14 +85,14 @@ define( function( require ) {
     veryLargeNumberOfDotsString: 'Very large number of',
     hugeNumberOfDotsString: 'Huge number of',
 
-    resistanceDotsPatternString: '<em>{{dots}} dots</em> in resistor represent resistance.',
+    resistanceDotsPatternString: '<em>{{dots}} dots</em> in resistor indicate resistance.',
 
     //--------------------------------------------------------------------------
     // Scene summary strings
     //--------------------------------------------------------------------------
 
     // pattern for the current arrow description in the scene summary
-    summaryCurrentPatternString: '<em>{{size}}</em> arrows represent amount of current flowing clockwise through circuit.',
+    summaryCurrentPatternString: '<em>{{size}}</em> arrows indicate amount of current flowing clockwise through circuit.',
     summaryLookForSlidersString: 'Look for voltage and resistance sliders to play.',
     summaryShortcutHintsString: 'If you need to, check out keyboard shortcuts for this sim.',
     summarySimString: 'In this sim, the Play Area contains the Ohm\'s Law equation, V equals I times R, and a circuit. There are also sliders to play with voltage and resistance. The circuit connects a resistor to a series of batteries. Batteries show amount of voltage. Dots in the resistor indicate the level of resistance in the resistor. In the Control Panel, buttons mute sound or reset sim.',
