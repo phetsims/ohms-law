@@ -101,9 +101,9 @@ define( function( require ) {
     rightNowString: 'Right now,',
     withTheseValuesString: 'With these values,',
 
-    summaryVoltagePatternString: 'Voltage, <strong>V</strong> is <em>{{value}} volts</em>.',
-    resistanceSummaryPatternString: 'Resistance, <strong>R</strong> is <em>{{value}} ohms</em>.',
-    currentSummaryPatternString: 'Current, <strong>I</strong> is <em>{{value}} milliamps</em>.',
+    summaryVoltagePatternString: 'Voltage, <strong>V</strong>, is <em>{{value}} volts</em>',
+    resistanceSummaryPatternString: 'Resistance, <strong>R</strong>, is <em>{{value}} ohms</em>',
+    currentSummaryPatternString: 'Current, <strong>I</strong>, is <em>{{value}} milliamps</em>',
 
 
     //--------------------------------------------------------------------------
