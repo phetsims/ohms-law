@@ -49,7 +49,7 @@ define( function( require ) {
     //--------------------------------------------------------------------------
     // Equation strings
     //--------------------------------------------------------------------------
-    ohmsLawEquationString: 'Ohm\'s Law Equation',
+    ohmsLawEquationString: 'The Equation',
     ohmsLawDefinitionString: 'Voltage, <strong>V</strong>, is equal to Current, <strong>I</strong>, times Resistance, <strong>R</strong>.',
 
     //--------------------------------------------------------------------------
