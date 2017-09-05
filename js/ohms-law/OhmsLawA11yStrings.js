@@ -72,7 +72,7 @@ define( function( require ) {
     //--------------------------------------------------------------------------
     // Current strings
     //--------------------------------------------------------------------------
-    currentDescriptionPatternString: '<em>{{arrowSize}} arrows</em> pointing clockwise represent a current of <em>{{value}} milliamps.</em>',
+    currentDescriptionPatternString: '<em>{{arrowSize}} arrows</em> pointing clockwise indicate a flowing current of <em>{{value}} milliamps.</em>',
 
     //--------------------------------------------------------------------------
     // Resistance strings
@@ -80,7 +80,7 @@ define( function( require ) {
     tinyNumberOfDotsString: 'Tiny number of dots',
     verySmallNumberOfDotsString: 'Very small number of',
     smallNumberOfDotsString: 'A small number of',
-    goodManyNumberOfDotsString: 'A good many',
+    goodManyNumberOfDotsString: 'Several',
     largeNumberOfDotsString: 'Large number of',
     veryLargeNumberOfDotsString: 'Very large number of',
     hugeNumberOfDotsString: 'Huge number of',
