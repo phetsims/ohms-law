@@ -9,22 +9,22 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var inherit = require( 'PHET_CORE/inherit' );
+  var AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
   var HBox = require( 'SCENERY/nodes/HBox' );
+  var inherit = require( 'PHET_CORE/inherit' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var Panel = require( 'SUN/Panel' );
   var SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
-  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
-  var AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
 
   // strings
-  var resistanceUnitsString = require( 'string!OHMS_LAW/resistanceUnits' );
-  var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
   var resistanceString = require( 'string!OHMS_LAW/resistance' );
-  var voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
-  var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
+  var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
+  var resistanceUnitsString = require( 'string!OHMS_LAW/resistanceUnits' );
   var voltageString = require( 'string!OHMS_LAW/voltage' );
+  var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
+  var voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
 
   // a11y strings - these strings are not meant to be translatable until the translation utility
   // can provide translators with context

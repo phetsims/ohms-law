@@ -10,26 +10,26 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var AccessibleSectionNode = require( 'SCENERY_PHET/accessibility/AccessibleSectionNode' );
+  var BooleanProperty = require( 'AXON/BooleanProperty' );
   var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
   var FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
-  var Util = require( 'DOT/Util' );
-  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
-  var UtteranceQueue = require( 'SCENERY_PHET/accessibility/UtteranceQueue' );
-  var Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
-  var ScreenView = require( 'JOIST/ScreenView' );
-  var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
-  var AccessibleSectionNode = require( 'SCENERY_PHET/accessibility/AccessibleSectionNode' );
-  var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
-  var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
-  var Sound = require( 'VIBE/Sound' );
-  var BooleanProperty = require( 'AXON/BooleanProperty' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var HBox = require( 'SCENERY/nodes/HBox' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var OhmsLawSceneSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawSceneSummaryNode' );
+  var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
+  var ScreenView = require( 'JOIST/ScreenView' );
+  var Sound = require( 'VIBE/Sound' );
+  var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
+  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  var Util = require( 'DOT/Util' );
+  var Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
+  var UtteranceQueue = require( 'SCENERY_PHET/accessibility/UtteranceQueue' );
+  var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
 
   // audio
   // The sounds themselves can be constants because there is only every one instance of OhmsLawScreenView.

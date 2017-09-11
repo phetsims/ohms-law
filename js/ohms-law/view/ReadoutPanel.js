@@ -9,15 +9,15 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var inherit = require( 'PHET_CORE/inherit' );
   var HBox = require( 'SCENERY/nodes/HBox' );
-  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  var inherit = require( 'PHET_CORE/inherit' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
   var Panel = require( 'SUN/Panel' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var Text = require( 'SCENERY/nodes/Text' );
   var Util = require( 'DOT/Util' );
 

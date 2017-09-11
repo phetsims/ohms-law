@@ -10,15 +10,15 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  var Node = require( 'SCENERY/nodes/Node' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
-  var Util = require( 'DOT/Util' );
-  var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
   var AccessibleSectionNode = require( 'SCENERY_PHET/accessibility/AccessibleSectionNode' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
+  var Node = require( 'SCENERY/nodes/Node' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  var Util = require( 'DOT/Util' );
 
   // constants
   

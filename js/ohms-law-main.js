@@ -9,10 +9,10 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var SimLauncher = require( 'JOIST/SimLauncher' );
-  var Sim = require( 'JOIST/Sim' );
-  var OhmsLawScreen = require( 'OHMS_LAW/ohms-law/OhmsLawScreen' );
   var OhmsLawKeyboardHelpContent = require( 'OHMS_LAW/ohms-law/view/OhmsLawKeyboardHelpContent' );
+  var OhmsLawScreen = require( 'OHMS_LAW/ohms-law/OhmsLawScreen' );
+  var Sim = require( 'JOIST/Sim' );
+  var SimLauncher = require( 'JOIST/SimLauncher' );
   var Tandem = require( 'TANDEM/Tandem' );
 
   // strings

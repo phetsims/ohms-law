@@ -10,17 +10,17 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Property = require( 'AXON/Property' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
-  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var Text = require( 'SCENERY/nodes/Text' );
-  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var Property = require( 'AXON/Property' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  var Text = require( 'SCENERY/nodes/Text' );
 
   // strings
   var currentSymbolString = require( 'string!OHMS_LAW/currentSymbol' );

@@ -12,10 +12,10 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var Path = require( 'SCENERY/nodes/Path' );
   var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   var Shape = require( 'KITE/Shape' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var Vector2 = require( 'DOT/Vector2' );
 
   // constants

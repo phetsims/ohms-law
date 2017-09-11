@@ -12,11 +12,11 @@ define( function( require ) {
   var BatteryView = require( 'OHMS_LAW/ohms-law/view/BatteryView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Util = require( 'DOT/Util' );
-  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   // a11y strings
   var lessThanOneBatteryString = OhmsLawA11yStrings.lessThanOneBatteryString;

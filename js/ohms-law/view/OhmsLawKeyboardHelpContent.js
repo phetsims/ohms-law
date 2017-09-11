@@ -10,25 +10,25 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var inherit = require( 'PHET_CORE/inherit' );
-  var Text = require( 'SCENERY/nodes/Text' );
-  var RichText = require( 'SCENERY/nodes/RichText' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var Panel = require( 'SUN/Panel' );
-  var ArrowKeyNode = require( 'SCENERY_PHET/keyboard/ArrowKeyNode' );
-  var TabKeyNode = require( 'SCENERY_PHET/keyboard/TabKeyNode' );
-  var ShiftKeyNode = require( 'SCENERY_PHET/keyboard/ShiftKeyNode' );
-  var EscapeKeyNode = require( 'SCENERY_PHET/keyboard/EscapeKeyNode' );
-  var PageUpKeyNode = require( 'SCENERY_PHET/keyboard/PageUpKeyNode' );
-  var PageDownKeyNode = require( 'SCENERY_PHET/keyboard/PageDownKeyNode' );
-  var HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
-  var EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
-  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
-  var Dimension2 = require( 'DOT/Dimension2' );
-  var PlusNode = require( 'SCENERY_PHET/PlusNode' );
-  var HBox = require( 'SCENERY/nodes/HBox' );
-  var VBox = require( 'SCENERY/nodes/VBox' );
   var AlignGroup = require( 'SCENERY/nodes/AlignGroup' );
+  var ArrowKeyNode = require( 'SCENERY_PHET/keyboard/ArrowKeyNode' );
+  var Dimension2 = require( 'DOT/Dimension2' );
+  var EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
+  var EscapeKeyNode = require( 'SCENERY_PHET/keyboard/EscapeKeyNode' );
+  var HBox = require( 'SCENERY/nodes/HBox' );
+  var HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var PageDownKeyNode = require( 'SCENERY_PHET/keyboard/PageDownKeyNode' );
+  var PageUpKeyNode = require( 'SCENERY_PHET/keyboard/PageUpKeyNode' );
+  var Panel = require( 'SUN/Panel' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  var PlusNode = require( 'SCENERY_PHET/PlusNode' );
+  var RichText = require( 'SCENERY/nodes/RichText' );
+  var ShiftKeyNode = require( 'SCENERY_PHET/keyboard/ShiftKeyNode' );
+  var TabKeyNode = require( 'SCENERY_PHET/keyboard/TabKeyNode' );
+  var Text = require( 'SCENERY/nodes/Text' );
+  var VBox = require( 'SCENERY/nodes/VBox' );
 
   // constants
   var LAYOUT_SPACING = 10;
@@ -38,16 +38,16 @@ define( function( require ) {
   var TEXT_MAX_WIDTH = 300;
 
   // strings
-  var orString = require( 'string!OHMS_LAW/or' );
-  var sliderControlsString = require( 'string!OHMS_LAW/sliderControls' );
-  var generalNavigationString = require( 'string!OHMS_LAW/generalNavigation' );
   var arrowKeysMoveSliderString = require( 'string!OHMS_LAW/arrowKeysMoveSlider' );
-  var tabKeyDescriptionString = require( 'string!OHMS_LAW/tabKeyDescription' );
-  var shiftKeyDescriptionString = require( 'string!OHMS_LAW/shiftKeyDescription' );
-  var pageUpDownKeysDescriptionString = require( 'string!OHMS_LAW/pageUpDownKeysDescription' );
-  var homeEndKeysDescriptionString = require( 'string!OHMS_LAW/homeEndKeysDescription' );
-  var shiftTabKeyDescriptionString = require( 'string!OHMS_LAW/shiftTabKeyDescription' );
   var escapeKeyDescriptionString = require( 'string!OHMS_LAW/escapeKeyDescription' );
+  var generalNavigationString = require( 'string!OHMS_LAW/generalNavigation' );
+  var homeEndKeysDescriptionString = require( 'string!OHMS_LAW/homeEndKeysDescription' );
+  var orString = require( 'string!OHMS_LAW/or' );
+  var pageUpDownKeysDescriptionString = require( 'string!OHMS_LAW/pageUpDownKeysDescription' );
+  var shiftKeyDescriptionString = require( 'string!OHMS_LAW/shiftKeyDescription' );
+  var shiftTabKeyDescriptionString = require( 'string!OHMS_LAW/shiftTabKeyDescription' );
+  var sliderControlsString = require( 'string!OHMS_LAW/sliderControls' );
+  var tabKeyDescriptionString = require( 'string!OHMS_LAW/tabKeyDescription' );
 
   /**
    * Constructor.

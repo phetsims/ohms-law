@@ -14,13 +14,13 @@ define( function( require ) {
   var LinearFunction = require( 'DOT/LinearFunction' );
   var LinearGradient = require( 'SCENERY/util/LinearGradient' );
   var Node = require( 'SCENERY/nodes/Node' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var Path = require( 'SCENERY/nodes/Path' );
   var Shape = require( 'KITE/Shape' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var Util = require( 'DOT/Util' );
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  var Util = require( 'DOT/Util' );
 
   // a11y strings
   var tinyNumberOfDotsString = OhmsLawA11yStrings.tinyNumberOfDotsString;

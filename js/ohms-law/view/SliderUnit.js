@@ -8,17 +8,17 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var inherit = require( 'PHET_CORE/inherit' );
   var Dimension2 = require( 'DOT/Dimension2' );
-  var HSlider = require( 'SUN/HSlider' );
-  var Node = require( 'SCENERY/nodes/Node' );
-  var VBox = require( 'SCENERY/nodes/VBox' );
-  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var HBox = require( 'SCENERY/nodes/HBox' );
-  var Text = require( 'SCENERY/nodes/Text' );
-  var Util = require( 'DOT/Util' );
+  var HSlider = require( 'SUN/HSlider' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  var Text = require( 'SCENERY/nodes/Text' );
+  var Util = require( 'DOT/Util' );
+  var VBox = require( 'SCENERY/nodes/VBox' );
 
   // constants
   var READOUT_SPACING = 6;

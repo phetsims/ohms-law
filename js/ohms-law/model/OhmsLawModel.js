@@ -12,8 +12,8 @@ define( function( require ) {
   var DerivedProperty = require( 'AXON/DerivedProperty' );
   var inherit = require( 'PHET_CORE/inherit' );
   var NumberProperty = require( 'AXON/NumberProperty' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var Range = require( 'DOT/Range' );
   var TNumber = require( 'ifphetio!PHET_IO/types/TNumber' );
 

@@ -10,10 +10,10 @@ define( function( require ) {
 
   // modules
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var RangeWithValue = require( 'DOT/RangeWithValue' );
-  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Range = require( 'DOT/Range' );
+  var RangeWithValue = require( 'DOT/RangeWithValue' );
 
   // a11y strings
   var tinyString = OhmsLawA11yStrings.tinyString;

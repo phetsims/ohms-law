@@ -9,19 +9,19 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var Node = require( 'SCENERY/nodes/Node' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
-  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var ReadoutPanel = require( 'OHMS_LAW/ohms-law/view/ReadoutPanel' );
   var BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var Node = require( 'SCENERY/nodes/Node' );
+  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var Range = require( 'DOT/Range' );
+  var ReadoutPanel = require( 'OHMS_LAW/ohms-law/view/ReadoutPanel' );
+  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
   var RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
-  var Range = require( 'DOT/Range' );
-  var Util = require( 'DOT/Util' );
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var Util = require( 'DOT/Util' );
 
   // a11y strings
   var circuitLabelString = OhmsLawA11yStrings.circuitLabelString;

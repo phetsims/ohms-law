@@ -11,8 +11,8 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
-  var LinearGradient = require( 'SCENERY/util/LinearGradient' );
   var LinearFunction = require( 'DOT/LinearFunction' );
+  var LinearGradient = require( 'SCENERY/util/LinearGradient' );
   var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );

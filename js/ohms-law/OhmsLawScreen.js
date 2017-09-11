@@ -10,13 +10,13 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var Color = require( 'SCENERY/util/Color' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
   var OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
   var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
-  var Color = require( 'SCENERY/util/Color' );
   var TColor = require( 'SCENERY/util/TColor' );
 
   /**
