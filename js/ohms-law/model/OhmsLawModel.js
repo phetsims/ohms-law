@@ -25,28 +25,23 @@ define( function( require ) {
     // @public {Property.<number>} in volts
     this.voltageProperty = new NumberProperty( OhmsLawConstants.VOLTAGE_RANGE.getDefaultValue(), {
       tandem: tandem.createTandem( 'voltageProperty' ),
-      phetioValueType: TNumber( {
-        units: 'volts',
-        range: OhmsLawConstants.VOLTAGE_RANGE
-      } )
+      units: 'volts',
+      range: OhmsLawConstants.VOLTAGE_RANGE
     } );
 
     // @public {Property.<number>} in Ohms
     this.resistanceProperty = new NumberProperty( OhmsLawConstants.RESISTANCE_RANGE.getDefaultValue(), {
       tandem: tandem.createTandem( 'resistanceProperty' ),
-      phetioValueType: TNumber( {
-        units: 'ohms',
-        range: OhmsLawConstants.RESISTANCE_RANGE
-      } )
+      units: 'ohms',
+      range: OhmsLawConstants.RESISTANCE_RANGE
     } );
 
     // @public {Property.<number>} create a derived property that tracks the current in milli amps
     this.currentProperty = new DerivedProperty( [ this.voltageProperty, this.resistanceProperty ],
       computeCurrent, {
         tandem: tandem.createTandem( 'currentProperty' ),
-        phetioValueType: TNumber( {
-          units: 'milliamperes'
-        } )
+        units: 'milliamperes',
+        phetioValueType: TNumber
       } );
   }
 
@@ -129,7 +124,7 @@ define( function( require ) {
       if ( !this.currentRange ) {
 
         // @private, use the getter
-        this.currentRange =  new Range( OhmsLawModel.getMinCurrent(), OhmsLawModel.getMaxCurrent() );
+        this.currentRange = new Range( OhmsLawModel.getMinCurrent(), OhmsLawModel.getMaxCurrent() );
       }
       return this.currentRange;
     }
