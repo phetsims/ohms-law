@@ -1,4 +1,4 @@
-// Copyright 2016-2017, University of Colorado Boulder
+// Copyright 2013-2017, University of Colorado Boulder
 
 /**
  * View circuit with a resistor, a battery pack, two current arrows and a current readout panel

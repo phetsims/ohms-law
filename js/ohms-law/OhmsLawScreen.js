@@ -1,4 +1,4 @@
-// Copyright 2016-2017, University of Colorado Boulder
+// Copyright 2017, University of Colorado Boulder
 
 /**
  * The main screen class for the 'Ohms Law' simulation.  This is where the main model and view instances are
