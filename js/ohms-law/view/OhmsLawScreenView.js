@@ -25,10 +25,6 @@ define( function( require ) {
   var ScreenView = require( 'JOIST/ScreenView' );
   var Sound = require( 'VIBE/Sound' );
   var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
-  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  var Util = require( 'DOT/Util' );
-  var Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
-  var UtteranceQueue = require( 'SCENERY_PHET/accessibility/UtteranceQueue' );
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
 
   // audio
@@ -40,15 +36,6 @@ define( function( require ) {
   var ohmsLawTitleString = OhmsLawA11yStrings.ohmsLawTitleString;
   var playAreaString = JoistA11yStrings.playAreaString;
   var controlPanelString = JoistA11yStrings.controlPanelString;
-  var sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPatternString;
-  var letterRString = OhmsLawA11yStrings.letterRString;
-  var letterVString = OhmsLawA11yStrings.letterVString;
-  var shrinksString = OhmsLawA11yStrings.shrinksString;
-  var growsString = OhmsLawA11yStrings.growsString;
-  var resistanceString = OhmsLawA11yStrings.resistanceString;
-  var voltageString = OhmsLawA11yStrings.voltageString;
-  var voltsString = OhmsLawA11yStrings.voltsString;
-  var ohmsString = OhmsLawA11yStrings.ohmsString;
 
   /**
    * @param {OhmsLawModel} model
@@ -66,7 +53,6 @@ define( function( require ) {
       accessibleLabel: ohmsLawTitleString,
       tandem: tandem
     } );
-    var self = this;
 
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
     var formulaNode = new FormulaNode( model, tandem.createTandem( 'formulaNode' ), {
@@ -82,7 +68,7 @@ define( function( require ) {
     this.addChild( new OhmsLawSceneSummaryNode( model, formulaNode, wireBox ) );
 
     // Create the control panel with sliders.
-    var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty, tandem.createTandem( 'controlPanel' ) );
+    var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty, model.currentProperty, tandem.createTandem( 'controlPanel' ) );
 
     // Sound on/off toggle button
     var soundToggleButton = new SoundToggleButton( soundActiveProperty, {
@@ -142,32 +128,6 @@ define( function( require ) {
           REMOVE_BATTERY_SOUND.play();
         }
       }
-
-      // a11y - when V changes, announce an alert that describes the change
-      var sizeChange = voltage - oldVoltage > 0 ? growsString : shrinksString;
-      var fixedCurrent = Util.toFixed( model.currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
-      var fixedVoltage = Util.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS );
-
-      var alert = self.getValueChangeAlert( letterVString, sizeChange, sizeChange, fixedCurrent, voltageString, fixedVoltage, voltsString );
-      UtteranceQueue.addToBack( new Utterance( alert, {
-        typeId: 'voltageAlert'
-      } ) );
-    } );
-
-    // when resistance changes, generate an alert that describes this
-    model.resistanceProperty.lazyLink( function( resistance, oldResistance ) {
-
-      var resistanceChange = resistance - oldResistance;
-      var fixedResistance = Util.toFixed( resistance, OhmsLawConstants.RESISTANCE_SIG_FIGS );
-      var fixedCurrent = Util.toFixed( model.currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
-
-      var rSizeChange = resistanceChange > 0 ? growsString : shrinksString;
-      var iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
-
-      var alert = self.getValueChangeAlert( letterRString, rSizeChange, iSizeChange, fixedCurrent, resistanceString, fixedResistance, ohmsString );
-      UtteranceQueue.addToBack( new Utterance( alert, {
-        typeId: 'resistanceAlert'
-      } ) );
     } );
 
     this.mutate( {
@@ -177,31 +137,5 @@ define( function( require ) {
 
   ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );
 
-  return inherit( ScreenView, OhmsLawScreenView, {
-
-    /**
-     * Generate an alert from strings and values that describes a change in the model. Something like
-     * "As letter V grows, letter I grows. Current now 10.0 milliamps with voltage at 5.0 volts."
-     * 
-     * @param  {string} initLetter - letter representing the model property that was changed
-     * @param  {string} initSizeChange - string describing change in size of letter representing changed model Property
-     * @param  {[type]} iSizeChange - string describing size change of letter I
-     * @param  {[type]} currentVal - value of model current Property
-     * @param  {[type]} initPropertyString - string describing the model property that changed (like "voltage")
-     * @param  {[type]} initVal - new value of Property that changed
-     * @param  {[type]} initUnits - units of Property that changed
-     * @return {[type]} string
-     */
-    getValueChangeAlert: function( initLetter, initSizeChange, iSizeChange, currentVal, initPropertyString, initVal, initUnits ) {
-      return StringUtils.fillIn( sliderChangeAlertPatternString, {
-        initLetter: initLetter,
-        initSizeChange: initSizeChange,
-        iSizeChange: iSizeChange,
-        currentVal: currentVal,
-        initProperty: initPropertyString,
-        initVal: initVal,
-        initUnits: initUnits
-      } );
-    }
-  } );
+  return inherit( ScreenView, OhmsLawScreenView );
 } );

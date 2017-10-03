@@ -118,8 +118,8 @@ define( function( require ) {
     letterVString: 'V',
     shrinksString: 'shrinks',
     growsString: 'grows',
-    resistanceString: 'resistance',
-    voltageString: 'voltage',
+    resistanceAlertString: 'resistance',
+    voltageAlertString: 'voltage',
     voltsString: 'volts',
     milliampsString: 'milliamps',
     ohmsString: 'ohms'

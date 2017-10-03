@@ -40,7 +40,9 @@ define( function( require ) {
       accessibleDecimalPlaces: 0,
       keyboardStep: 1,
       shiftKeyboardStep: 0.1,
-      accessibleValuePattern: '{{value}}' // string pattern used for formating the value read by the screen reader
+      accessibleValuePattern: '{{value}}', // string pattern used for formating the value read by the screen reader
+      endDrag: function() {}, // called at end of drag by HSlider
+      startDrag: function() {}
     }, options );
 
     Node.call( this );
@@ -62,7 +64,9 @@ define( function( require ) {
       labelTagName: 'label',
       parentContainerTagName: 'li',
       accessibleLabel: accessibleLabel,
-      prependLabels: true
+      prependLabels: true,
+      startDrag: options.startDrag,
+      endDrag: options.endDrag
     } );
 
     var symbolText = new Text( symbolString, {
