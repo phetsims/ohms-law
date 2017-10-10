@@ -95,11 +95,10 @@ define( function( require ) {
 
     stateOfSimString: 'State of Sim',
     rightNowString: 'Right now,',
-    withTheseValuesString: 'With these values,',
 
-    summaryVoltagePatternString: 'Voltage, <strong>V</strong>, is <em>{{value}} volts</em>',
-    resistanceSummaryPatternString: 'Resistance, <strong>R</strong>, is <em>{{value}} ohms</em>',
-    currentSummaryPatternString: 'Current, <strong>I</strong>, is <em>{{value}} milliamps</em>',
+    voltageSummaryPatternString: 'voltage, <strong>V</strong>, is <em>{{value}} volts</em>',
+    resistanceSummaryPatternString: 'resistance, <strong>R</strong>, is <em>{{value}} ohms</em>',
+    currentSummaryPatternString: 'current, <strong>I</strong>, is <em>{{value}} milliamps</em>',
 
 
     //--------------------------------------------------------------------------

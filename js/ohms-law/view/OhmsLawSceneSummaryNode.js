@@ -26,7 +26,7 @@ define( function( require ) {
   var sceneSummaryString = JoistA11yStrings.sceneSummaryString;
   var summarySimString = OhmsLawA11yStrings.summarySimString;
   var rightNowString = OhmsLawA11yStrings.rightNowString;
-  var summaryVoltagePatternString = OhmsLawA11yStrings.summaryVoltagePatternString;
+  var voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPatternString;
   var resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPatternString;
   var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPatternString;
 
@@ -65,7 +65,7 @@ define( function( require ) {
     var valueItemList = [
       {
         property: model.voltageProperty,
-        patternString: summaryVoltagePatternString,
+        patternString: voltageSummaryPatternString,
         node: valueVoltageItemNode,
         precision: OhmsLawConstants.VOLTAGE_SIG_FIGS
       },

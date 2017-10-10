@@ -206,11 +206,10 @@ define( function( require ) {
         } 
       }
 
-      var description = StringUtils.fillIn( relativeSizePatternString, {
+      return StringUtils.fillIn( relativeSizePatternString, {
         iComparison: vToIDescription,
         rComparison: vToRDescription
       } );
-      return description;
     }
   } );
 } );
