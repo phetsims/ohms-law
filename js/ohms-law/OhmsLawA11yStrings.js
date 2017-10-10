@@ -26,6 +26,8 @@ define( function( require ) {
     //--------------------------------------------------------------------------
 
     // descriptions for the size of the current arrows
+    // Note: Don't change number of sizes without changing the number of sizes value
+    numberOfSizes: 6,
     tinyString: 'Tiny',
     verySmallString: 'Very small',
     smallString: 'Small',
@@ -113,6 +115,7 @@ define( function( require ) {
     letterVString: 'V',
     shrinksString: 'shrinks',
     growsString: 'grows',
+    aLotString: 'a lot',
     resistanceAlertString: 'resistance',
     voltageAlertString: 'voltage',
     voltsString: 'volts',
