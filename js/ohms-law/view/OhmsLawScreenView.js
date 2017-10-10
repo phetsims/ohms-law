@@ -65,7 +65,7 @@ define( function( require ) {
     } );
 
     // a11y - the scene summary to be read by assistive technology
-    this.addChild( new OhmsLawSceneSummaryNode( model, formulaNode, wireBox ) );
+    this.addChild( new OhmsLawSceneSummaryNode( model ) );
 
     // Create the control panel with sliders.
     var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty, model.currentProperty, tandem.createTandem( 'controlPanel' ) );

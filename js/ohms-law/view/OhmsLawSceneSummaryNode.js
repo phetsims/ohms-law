@@ -20,8 +20,6 @@ define( function( require ) {
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Util = require( 'DOT/Util' );
 
-  // constants
-  
   // strings
   var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSlidersString;
   var summaryShortcutHintsString = OhmsLawA11yStrings.summaryShortcutHintsString;
@@ -32,7 +30,7 @@ define( function( require ) {
   var resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPatternString;
   var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPatternString;
 
-  function OhmsLawSceneSummaryNode( model, formulaNode, wireBox ) {
+  function OhmsLawSceneSummaryNode( model ) {
 
     AccessibleSectionNode.call( this, sceneSummaryString );
 
