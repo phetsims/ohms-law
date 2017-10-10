@@ -44,58 +44,54 @@ define( function( require ) {
     muchMuchLargerThanString: 'much much larger than',
 
     // pattern for the description of relative letter size
-    relativeSizePatternString: '<strong>Letter V</strong> is <em>{{iComparison}}</em> <strong>letter I</strong> and <em>{{rComparison}}</em> <strong>letter R</strong>.',
+    relativeSizePatternString: 'In equation, <strong>letter V</strong> is <em>{{iComparison}}</em> <strong>letter I</strong> and <em>{{rComparison}}</em> <strong>letter R</strong>.',
 
     //--------------------------------------------------------------------------
     // Equation strings
     //--------------------------------------------------------------------------
-    ohmsLawEquationString: 'The Equation',
+    ohmsLawEquationString: 'Ohm\'s Law Equation',
     ohmsLawDefinitionString: 'Voltage, <strong>V</strong>, is equal to Current, <strong>I</strong>, times Resistance, <strong>R</strong>.',
 
     //--------------------------------------------------------------------------
     // Circuit strings
     //--------------------------------------------------------------------------
     circuitLabelString: 'The Circuit',
-    circuitDescriptionString: 'Connects a resistor to a series of batteries with a pair of wires.',
+    circuitDescriptionString: 'A pair of wires connect a resistor to a series of batteries. In circuit, ',
 
     //--------------------------------------------------------------------------
     // Battery strings
     //--------------------------------------------------------------------------
-    lessThanOneBatteryString: 'Less than 1 battery',
-    exactlyBatteryString: 'Exactly 1 battery',
-    exactlyBatteriesPatternString: 'Exactly {{number}} batteries',
-    betweenBatteriesPatternString: 'Between {{min}} and {{max}} batteries',
-    batteriesVisiblePatternString: '<em>{{visible}}</em> {{show}} <em>{{voltage}} volts.</em>',
-    showString: 'show',
-    showsString: 'shows',
+
+    batteriesSupplyPatternString: 'batteries supply <em>{{voltage}} volts</em>',
 
     //--------------------------------------------------------------------------
     // Current strings
     //--------------------------------------------------------------------------
-    currentDescriptionPatternString: '<em>{{arrowSize}} arrows</em> pointing clockwise indicate a flowing current of <em>{{value}} milliamps.</em>',
+    currentDescriptionPatternString: '<em>{{arrowSize}} arrows</em> indicate a current flowing clockwise at <em>{{value}} milliamps</em>',
 
     //--------------------------------------------------------------------------
     // Resistance strings
     //--------------------------------------------------------------------------
-    tinyNumberOfDotsString: 'Tiny number of dots',
-    verySmallNumberOfDotsString: 'Very small number of',
-    smallNumberOfDotsString: 'A small number of',
-    goodManyNumberOfDotsString: 'Several',
-    largeNumberOfDotsString: 'Large number of',
-    veryLargeNumberOfDotsString: 'Very large number of',
-    hugeNumberOfDotsString: 'Huge number of',
 
-    resistanceDotsPatternString: '<em>{{dots}} dots</em> in resistor indicate resistance.',
+    tinyAmountOfImpuritiesString: 'a tiny amount of impurities',
+    verySmallAmountOfImpuritiesString: 'a very small amount of impurities',
+    smallAmountOfImpuritiesString: 'a small amount of impurities',
+    mediumAmountOfImpuritiesString: 'a medium amount of impurities',
+    largeAmountOfImpuritiesString: 'a large amount of impurities',
+    veryLargeAmountOfImpuritiesString: 'a very large amount of impurities',
+    hugeAmountOfImpuritiesString: 'a huge amount of impurities"',
+
+    resistanceDotsPatternString: 'resistor shows <em>{{impurities}}</em>',
 
     //--------------------------------------------------------------------------
     // Scene summary strings
     //--------------------------------------------------------------------------
 
     // pattern for the current arrow description in the scene summary
-    summaryCurrentPatternString: '<em>{{size}}</em> arrows indicate amount of current flowing clockwise through circuit.',
-    summaryLookForSlidersString: 'Look for voltage and resistance sliders to play.',
+    summaryCurrentPatternString: '<em>{{size}}</em> arrows indicate amount of current flowing clockwise at {{current}} milliamps.',
+    summaryLookForSlidersString: 'Look for voltage and resistance sliders to play, or read on for details about equation and circuit.',
     summaryShortcutHintsString: 'If you need to, check out keyboard shortcuts for this sim.',
-    summarySimString: 'In this sim, the Play Area contains the Ohm\'s Law equation, V equals I times R, and a circuit. There are also sliders to play with voltage and resistance. The circuit connects a resistor to a series of batteries. Batteries show amount of voltage. Dots in the resistor indicate the level of resistance in the resistor. In the Control Panel, buttons mute sound or reset sim.',
+    summarySimString: 'This sim has a Play Area and Control Panel. In the Play Area you find the equation for Ohm\'s Law, V equals I times R, and a circuit. Voltage and resistance sliders allow changes to the equation and circuit. In the Control Panel, buttons mute sound or reset the sim.',
 
     stateOfSimString: 'State of Sim',
     rightNowString: 'Right now,',

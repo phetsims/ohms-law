@@ -48,7 +48,7 @@ define( function( require ) {
       tagName: 'ul',
       labelTagName: 'h3',
       accessibleLabel: circuitLabelString,
-      accessibleDescription: circuitDescriptionString,
+      accessibleDescriptionAsHTML: circuitDescriptionString,
       prependLabels: true
     } );
     var self = this;
@@ -119,14 +119,14 @@ define( function( require ) {
     model.currentProperty.link( function( current ) {
       var formattedCurrent = Util.toFixed( current, OhmsLawConstants.CURRENT_SIG_FIGS );
 
-      accessibleCurrentNode.accessibleLabelAsHTML = StringUtils.fillIn( currentDescriptionPatternString ,{
+      accessibleCurrentNode.accessibleLabelAsHTML = StringUtils.fillIn( currentDescriptionPatternString, {
         arrowSize: self.getArrowSizeDescription(),
         value: formattedCurrent
       } );
     } );
 
-    // a11y - the order of descriptions should be current, batteries, then resistance
-    this.accessibleOrder = [ accessibleCurrentNode, batteriesView, resistorNode ];
+    // a11y - the order of descriptions should be batteries, resistance, then current
+    this.accessibleOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
 
     options.tandem = tandem;
     this.mutate( options );
@@ -139,7 +139,7 @@ define( function( require ) {
     /**
      * Get a description of the arrow size.  Returns omething like "small" or "huge" or "medium size".
      * @public
-     * 
+     *
      * @return {string}
      */
     getArrowSizeDescription: function() {
@@ -151,7 +151,7 @@ define( function( require ) {
       var index = Util.roundSymmetric( Util.linear( range.min, range.max, 0, OhmsLawConstants.RELATIVE_SIZE_STRINGS.length - 1, height ) );
 
       assert && assert( index >= 0, 'mapping to relative size string incorrect' );
-      return OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ]; 
+      return OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ].toLowerCase();
     }
   } );
 } );

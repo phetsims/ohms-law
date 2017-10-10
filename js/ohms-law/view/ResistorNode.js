@@ -23,13 +23,13 @@ define( function( require ) {
   var Util = require( 'DOT/Util' );
 
   // a11y strings
-  var tinyNumberOfDotsString = OhmsLawA11yStrings.tinyNumberOfDotsString;
-  var verySmallNumberOfDotsString = OhmsLawA11yStrings.verySmallNumberOfDotsString;
-  var smallNumberOfDotsString = OhmsLawA11yStrings.smallNumberOfDotsString;
-  var goodManyNumberOfDotsString = OhmsLawA11yStrings.goodManyNumberOfDotsString;
-  var largeNumberOfDotsString = OhmsLawA11yStrings.largeNumberOfDotsString;
-  var veryLargeNumberOfDotsString = OhmsLawA11yStrings.veryLargeNumberOfDotsString;
-  var hugeNumberOfDotsString = OhmsLawA11yStrings.hugeNumberOfDotsString;
+  var tinyAmountOfImpuritiesString = OhmsLawA11yStrings.tinyAmountOfImpuritiesString;
+  var verySmallAmountOfImpuritiesString = OhmsLawA11yStrings.verySmallAmountOfImpuritiesString;
+  var smallAmountOfImpuritiesString = OhmsLawA11yStrings.smallAmountOfImpuritiesString;
+  var mediumAmountOfImpuritiesString = OhmsLawA11yStrings.mediumAmountOfImpuritiesString;
+  var largeAmountOfImpuritiesString = OhmsLawA11yStrings.largeAmountOfImpuritiesString;
+  var veryLargeAmountOfImpuritiesString = OhmsLawA11yStrings.veryLargeAmountOfImpuritiesString;
+  var hugeAmountOfImpuritiesString = OhmsLawA11yStrings.hugeAmountOfImpuritiesString;
   var resistanceDotsPatternString = OhmsLawA11yStrings.resistanceDotsPatternString;
 
   // constants
@@ -42,9 +42,9 @@ define( function( require ) {
   var DOT_RADIUS = 2;
   var AREA_PER_DOT = 40; // adjust this to control the density of the dots
   var NUMBER_OF_DOTS = MAX_WIDTH_INCLUDING_ROUNDED_ENDS * RESISTOR_HEIGHT / AREA_PER_DOT;
-  var DOT_STRINGS = [ tinyNumberOfDotsString, verySmallNumberOfDotsString, smallNumberOfDotsString,
-                      goodManyNumberOfDotsString, largeNumberOfDotsString, veryLargeNumberOfDotsString,
-                      hugeNumberOfDotsString ];
+  var IMPURITIES_STRINGS = [ tinyAmountOfImpuritiesString, verySmallAmountOfImpuritiesString, smallAmountOfImpuritiesString,
+    mediumAmountOfImpuritiesString, largeAmountOfImpuritiesString, veryLargeAmountOfImpuritiesString,
+    hugeAmountOfImpuritiesString ];
 
   var BODY_FILL_GRADIENT = new LinearGradient( 0, -RESISTOR_HEIGHT / 2, 0, RESISTOR_HEIGHT / 2 ) // For 3D effect on the wire.
     .addColorStop( 0, '#F00' )
@@ -120,7 +120,7 @@ define( function( require ) {
         tandem: dotsGroupTandem.createNextTandem()
       } );
       dotsNode.addChild( dot );
-     }
+    }
     this.addChild( dotsNode );
 
     // Clip the dots that are shown to only include those inside the wire (including the wireEnd)
@@ -153,17 +153,17 @@ define( function( require ) {
 
     /**
      * Get a description of the resistance based on the value of the resistance.
-     * @return {string} 
+     * @return {string} resistance
      */
     getResistanceDescription: function( resistance ) {
       var range = OhmsLawConstants.RESISTANCE_RANGE;
 
       // map the normalied value to one of the resistance descriptions
-      var index = Util.roundSymmetric( Util.linear( range.min, range.max, 0, DOT_STRINGS.length - 1, resistance ) );
-      var numDotsDescription = DOT_STRINGS[ index ];
+      var index = Util.roundSymmetric( Util.linear( range.min, range.max, 0, IMPURITIES_STRINGS.length - 1, resistance ) );
+      var numDotsDescription = IMPURITIES_STRINGS[ index ];
 
       return StringUtils.fillIn( resistanceDotsPatternString, {
-        dots: numDotsDescription
+        impurities: numDotsDescription
       } );
     }
   } );
