@@ -96,8 +96,7 @@ define( function( require ) {
 
     var buttons = new HBox( {
       spacing: 60, // empirically determined
-      children: [ resetAllButton, soundToggleButton ],
-      accessibleOrder: [ soundToggleButton, resetAllButton ]
+      children: [ soundToggleButton, resetAllButton ]
     } );
 
     // children
