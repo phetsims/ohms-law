@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-phetiodev.14 Wed Oct 11 2017 15:16:00 GMT-0800 (Alaskan Daylight Time)",
+  "comment": "# ohms-law 1.4.0-dev.14 Wed Oct 11 2017 15:46:20 GMT-0800 (Alaskan Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -29,35 +29,11 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "53f4ba906d281f6fd04f72eeaba90a3e5c1b727f",
+    "sha": "66f3bfb08b978ba88e22269ce8a1040d2be2fdc8",
     "branch": "master"
   },
   "phet-core": {
     "sha": "054b2d6db39f0ce2b76a9ba26a12ec51bce17f98",
-    "branch": "master"
-  },
-  "phet-io": {
-    "sha": "6360f1a6852b6e22609a310a951ae83e533d18da",
-    "branch": "master"
-  },
-  "phet-io-website": {
-    "sha": "63117eda96337a98e9ea55d4d297497d1086e4dd",
-    "branch": "master"
-  },
-  "phet-io-wrapper-classroom-activity": {
-    "sha": "1cb7bdccecd2c3493e4eb22d57d5bd31c3b87e24",
-    "branch": "master"
-  },
-  "phet-io-wrapper-lab-book": {
-    "sha": "a2f2739d764e1069870e2892f6aa73dcc2a1385f",
-    "branch": "master"
-  },
-  "phet-io-wrapper-sonification": {
-    "sha": "46e7ec51b824ceb06814acf5ac0aaefdaaefeae5",
-    "branch": "master"
-  },
-  "phet-io-wrappers": {
-    "sha": "5e0124fb82e81c5fe53b5e4bb9baf7e6c1806f8b",
     "branch": "master"
   },
   "phetcommon": {
@@ -73,7 +49,7 @@
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "4f2733591bc8d9f494f466a08a561cb4db3b6f13",
+    "sha": "a90363b5f2629cefc880f205cc738a4277f3dc93",
     "branch": "master"
   },
   "sherpa": {
