@@ -9,7 +9,6 @@ define( function( require ) {
 
   // modules
   var Dimension2 = require( 'DOT/Dimension2' );
-  var HBox = require( 'SCENERY/nodes/HBox' );
   var HSlider = require( 'SUN/HSlider' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
@@ -60,7 +59,7 @@ define( function( require ) {
       keyboardStep: options.keyboardStep,
       shiftKeyboardStep: options.shiftKeyboardStep,
       accessibleDecimalPlaces: options.accessibleDecimalPlaces,
-      accessibleValuePattern: options.accessibleValuePattern, 
+      accessibleValuePattern: options.accessibleValuePattern,
       labelTagName: 'label',
       parentContainerTagName: 'li',
       accessibleLabel: accessibleLabel,
@@ -106,10 +105,13 @@ define( function( require ) {
     } );
 
     // The readout should be horizontally aligned
-    var readout = new HBox( {
-      spacing: READOUT_SPACING,
+    var readout = new Node( {
       children: [ valueText, unitText ]
     } );
+    valueText.right = unitText.left - READOUT_SPACING;
+
+    // This ensures that both the value and the unit are on the same line, even if unit has a letter that dips "below" a writing line.
+    valueText.y = unitText.y;
 
     // Background for centering
     var readoutBackground = Rectangle.bounds( readout.bounds, {
@@ -126,6 +128,7 @@ define( function( require ) {
     // Update value of the readout. Present for the lifetime of the simulation; no need to unlink.
     property.link( function( value ) {
       valueText.text = Util.toFixed( value, options.accessibleDecimalPlaces );
+      valueText.right = unitText.left - READOUT_SPACING;
       readout.centerX = readoutBackground.selfBounds.centerX;
     } );
 
