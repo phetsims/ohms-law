@@ -55,6 +55,9 @@ define( function( require ) {
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
       tandem: tandem.createTandem( 'slider' ),
 
+      startDrag: options.startDrag,
+      endDrag: options.endDrag,
+
       // a11y
       keyboardStep: options.keyboardStep,
       shiftKeyboardStep: options.shiftKeyboardStep,
@@ -63,9 +66,7 @@ define( function( require ) {
       labelTagName: 'label',
       parentContainerTagName: 'li',
       accessibleLabel: accessibleLabel,
-      prependLabels: true,
-      startDrag: options.startDrag,
-      endDrag: options.endDrag
+      prependLabels: true
     } );
 
     var symbolText = new Text( symbolString, {
