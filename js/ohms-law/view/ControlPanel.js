@@ -9,6 +9,7 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
@@ -176,6 +177,9 @@ define( function( require ) {
       accessibleLabel: sliderControlsString,
       accessibleDescription: slidersDescriptionString
     } );
+
+    content.setAriaLabelledByNode( content );
+    content.ariaLabelContent = AccessiblePeer.LABEL;
 
     Panel.call( this, content, options );
   }
