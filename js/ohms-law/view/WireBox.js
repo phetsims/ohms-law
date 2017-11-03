@@ -15,7 +15,6 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var Range = require( 'DOT/Range' );
   var ReadoutPanel = require( 'OHMS_LAW/ohms-law/view/ReadoutPanel' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
@@ -76,6 +75,7 @@ define( function( require ) {
     } );
     this.addChild( resistorNode );
 
+    // @private
     this.bottomLeftArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomLeftArrow' ), {
       x: -OFFSET,
       y: HEIGHT + OFFSET,
@@ -83,12 +83,12 @@ define( function( require ) {
     } );
     this.addChild( this.bottomLeftArrow );
 
-    this.bottomRightArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomRightArrow' ), {
+    var bottomRightArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomRightArrow' ), {
       x: WIDTH + OFFSET,
       y: HEIGHT + OFFSET,
       rotation: 0
     } );
-    this.addChild( this.bottomRightArrow );
+    this.addChild( bottomRightArrow );
 
     // a11y - accessible description for the current
     var accessibleCurrentNode = new Node( { tagName: 'li' } );
@@ -100,19 +100,13 @@ define( function( require ) {
     } );
     this.addChild( currentReadoutPanel );
 
-    // a11y - create a map that goes from arrow size to size description by scaling by setting model to extrema
-    model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.max );
-    model.resistanceProperty.set( OhmsLawConstants.RESISTANCE_RANGE.min );
-    var arrowHeightMax = this.bottomLeftArrow.height;
-
     model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.min );
     model.resistanceProperty.set( OhmsLawConstants.RESISTANCE_RANGE.max );
-    var arrowHeightMin = this.bottomLeftArrow.height;
 
-    // @private - this is the range of heights for this sim (thought we would likely want to do a comprehensive
-    this.arrowHeightRange = new Range( arrowHeightMin, arrowHeightMax );
+    // @private - this is the min height of the arrows for this sim
+    this.minArrowHeight = this.bottomLeftArrow.height;
 
-    // reset the model after using to get heights of arrows
+    // reset the model after using to get height of arrows
     model.reset();
 
     // a11y - when the current changes, update the accessible description
@@ -144,13 +138,24 @@ define( function( require ) {
      */
     getArrowSizeDescription: function() {
 
-      var range = this.arrowHeightRange;
       var height = this.bottomLeftArrow.height;
 
-      // map the normalized height to one of the size descriptions
-      var index = Util.roundSymmetric( Util.linear( range.min, range.max, 0, OhmsLawConstants.RELATIVE_SIZE_STRINGS.length - 1, height ) );
+      // The max in the linear function, instead of the max height of the arrow, everything bigger will just be the
+      // largest relative size.
+      var maxArrowHeightThreshold = HEIGHT * 1.7; // Empirically determined
 
-      assert && assert( index >= 0, 'mapping to relative size string incorrect' );
+      // map the normalized height to one of the size descriptions
+      var index = Util.roundSymmetric( Util.linear(
+        this.minArrowHeight, maxArrowHeightThreshold, // a1 b1
+        0, OhmsLawConstants.RELATIVE_SIZE_STRINGS.length - 1, // a2 b2
+        height ) ); // a3
+
+      // if beyond the threshold, clamp it back to the highest index
+      if ( height > maxArrowHeightThreshold ) {
+        index = OhmsLawConstants.RELATIVE_SIZE_STRINGS.length - 1;
+      }
+      assert && assert( index >= 0 && index < OhmsLawConstants.RELATIVE_SIZE_STRINGS.length,
+        'mapping to relative size string incorrect' );
       return OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ].toLowerCase();
     }
   } );
