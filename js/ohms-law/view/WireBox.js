@@ -140,9 +140,13 @@ define( function( require ) {
 
       var height = this.bottomLeftArrow.height;
 
+      // Empirically determined, the idea is for the largest relative size string to map to when the 'I' in the formula
+      // goes off the screen (or at least close to that), see https://github.com/phetsims/ohms-law/issues/97.
+      var maxArrowHeightThresholdCoefficient = 2;
+
       // The max in the linear function, instead of the max height of the arrow, everything bigger will just be the
       // largest relative size.
-      var maxArrowHeightThreshold = HEIGHT * 1.7; // Empirically determined
+      var maxArrowHeightThreshold = HEIGHT * maxArrowHeightThresholdCoefficient;
 
       // map the normalized height to one of the size descriptions
       var index = Util.roundSymmetric( Util.linear(
