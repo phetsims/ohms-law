@@ -16,6 +16,7 @@ define( function( require ) {
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var Range = require( 'DOT/Range' );
   var TNumber = require( 'ifphetio!PHET_IO/types/TNumber' );
+  var TDerivedProperty = require( 'AXON/TDerivedProperty' );
 
   /**
    * @constructor
@@ -41,7 +42,7 @@ define( function( require ) {
       computeCurrent, {
         tandem: tandem.createTandem( 'currentProperty' ),
         units: 'milliamperes',
-        phetioValueType: TNumber
+        phetioType: TDerivedProperty( TNumber )
       } );
   }
 

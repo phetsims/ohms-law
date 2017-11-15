@@ -18,6 +18,7 @@ define( function( require ) {
   var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
   var TColor = require( 'SCENERY/util/TColor' );
+  var TProperty = require( 'AXON/TProperty' );
 
   /**
    * @constructor
@@ -29,7 +30,7 @@ define( function( require ) {
       {
         backgroundColorProperty: new Property( new Color( '#ffffdf' ), {
           tandem: tandem.createTandem( 'backgroundColorProperty' ),
-          phetioValueType: TColor
+          phetioType: TProperty( TColor )
         } ),
         tandem: tandem
       }
