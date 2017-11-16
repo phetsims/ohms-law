@@ -10,13 +10,13 @@ define( function( require ) {
 
   // modules
   var DerivedProperty = require( 'AXON/DerivedProperty' );
+  var DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var NumberIO = require( 'ifphetio!PHET_IO/types/NumberIO' );
   var NumberProperty = require( 'AXON/NumberProperty' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var Range = require( 'DOT/Range' );
-  var NumberIO = require( 'ifphetio!PHET_IO/types/NumberIO' );
-  var DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
 
   /**
    * @constructor

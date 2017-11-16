@@ -11,14 +11,14 @@ define( function( require ) {
 
   // modules
   var Color = require( 'SCENERY/util/Color' );
+  var ColorIO = require( 'SCENERY/util/ColorIO' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
   var OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
   var Property = require( 'AXON/Property' );
-  var Screen = require( 'JOIST/Screen' );
-  var ColorIO = require( 'SCENERY/util/ColorIO' );
   var PropertyIO = require( 'AXON/PropertyIO' );
+  var Screen = require( 'JOIST/Screen' );
 
   /**
    * @constructor
