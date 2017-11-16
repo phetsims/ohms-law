@@ -17,7 +17,7 @@ define( function( require ) {
   var OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
   var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
-  var TColor = require( 'SCENERY/util/TColor' );
+  var ColorIO = require( 'SCENERY/util/ColorIO' );
   var PropertyIO = require( 'AXON/PropertyIO' );
 
   /**
@@ -30,7 +30,7 @@ define( function( require ) {
       {
         backgroundColorProperty: new Property( new Color( '#ffffdf' ), {
           tandem: tandem.createTandem( 'backgroundColorProperty' ),
-          phetioType: PropertyIO( TColor )
+          phetioType: PropertyIO( ColorIO )
         } ),
         tandem: tandem
       }
