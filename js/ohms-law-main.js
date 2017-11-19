@@ -19,10 +19,10 @@ define( function( require ) {
   var ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
 
   // constants
-  var tandem = Tandem.createRootTandem();
+  var tandem = Tandem.rootTandem;
 
   // help content to describe keyboard interactions
-  var keyboardHelpContent = new OhmsLawKeyboardHelpContent( Tandem.createStaticTandem( 'keyboardHelpContet' ) );
+  var keyboardHelpContent = new OhmsLawKeyboardHelpContent( Tandem.rootTandem.createTandem( 'keyboardHelpContet' ) );
 
   var simOptions = {
     credits: {
