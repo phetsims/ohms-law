@@ -112,18 +112,12 @@ define( function( require ) {
     sliderControlsString: 'Slider Controls',
     slidersDescriptionString: 'Voltage and resistance sliders allow changes to equation and circuit.',
 
-    sliderChangeAlertPatternString: 'As letter {{initLetter}} {{initSizeChange}}, letter I {{iSizeChange}}.  Current now {{currentVal}} milliamps with {{initProperty}} at {{initVal}} {{initUnits}}.',
+    sliderChangeAlertPatternString: 'As letter {{initLetter}} {{initSizeChange}}, letter I {{iSizeChange}}.  Current now {{currentVal}} milliamps.',
     letterRString: 'R',
-    letterIString: 'I',
     letterVString: 'V',
     shrinksString: 'shrinks',
     growsString: 'grows',
-    aLotString: 'a lot',
-    resistanceAlertString: 'resistance',
-    voltageAlertString: 'voltage',
-    voltsString: 'volts',
-    milliampsString: 'milliamps',
-    ohmsString: 'ohms'
+    aLotString: 'a lot'
   };
 
   if ( phet.chipper.queryParameters.stringTest === 'xss' ) {

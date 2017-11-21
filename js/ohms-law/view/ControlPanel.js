@@ -47,10 +47,6 @@ define( function( require ) {
   var shrinksString = OhmsLawA11yStrings.shrinksString;
   var growsString = OhmsLawA11yStrings.growsString;
   var aLotString = OhmsLawA11yStrings.aLotString;
-  var resistanceAlertString = OhmsLawA11yStrings.resistanceAlertString;
-  var voltageAlertString = OhmsLawA11yStrings.voltageAlertString;
-  var voltsString = OhmsLawA11yStrings.voltsString;
-  var ohmsString = OhmsLawA11yStrings.ohmsString;
 
   // constants
   var NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes; // a11y - the number of sizes that letters can be described as.
@@ -102,9 +98,8 @@ define( function( require ) {
             // a11y - when V changes, announce an alert that describes the change
             var sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
             var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
-            var fixedVoltage = Util.toFixed( newVoltage, OhmsLawConstants.VOLTAGE_SIG_FIGS );
 
-            var alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent, voltageAlertString, fixedVoltage, voltsString );
+            var alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
             UtteranceQueue.addToBack( new Utterance( alert, { typeId: 'voltageAlert' } ) );
           }
         }
@@ -129,14 +124,13 @@ define( function( require ) {
         var currentChange = newCurrent - oldCurrent;
 
         // Get display values for the alert
-        var fixedResistance = Util.toFixed( newResistance, OhmsLawConstants.RESISTANCE_SIG_FIGS );
         var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
         var rSizeChange = resistanceChange > 0 ? growsString : shrinksString;
         var iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
         iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ' ' + aLotString : '';
 
-        var alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent, resistanceAlertString, fixedResistance, ohmsString );
+        var alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
         UtteranceQueue.addToBack( new Utterance( alert, {
           typeId: 'resistanceAlert'
         } ) );
@@ -196,20 +190,14 @@ define( function( require ) {
      * @param  {string} initSizeChange - string describing change in size of letter representing changed model Property
      * @param  {string} iSizeChange - string describing size change of letter I
      * @param  {number} currentVal - value of model current Property
-     * @param  {string} initPropertyString - string describing the model property that changed (like "voltage")
-     * @param  {number} initVal - new value of Property that changed
-     * @param  {string} initUnits - units of Property that changed
      * @return {string} string
      */
-    getValueChangeAlertString: function( initLetter, initSizeChange, iSizeChange, currentVal, initPropertyString, initVal, initUnits ) {
+    getValueChangeAlertString: function( initLetter, initSizeChange, iSizeChange, currentVal ) {
       return StringUtils.fillIn( sliderChangeAlertPatternString, {
         initLetter: initLetter,
         initSizeChange: initSizeChange,
         iSizeChange: iSizeChange,
-        currentVal: currentVal,
-        initProperty: initPropertyString,
-        initVal: initVal,
-        initUnits: initUnits
+        currentVal: currentVal
       } );
     }
   } );
