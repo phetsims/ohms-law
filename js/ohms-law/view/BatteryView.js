@@ -11,6 +11,7 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
+  var IOObject = require( 'TANDEM/IOObject' );
   var LinearFunction = require( 'DOT/LinearFunction' );
   var LinearGradient = require( 'SCENERY/util/LinearGradient' );
   var Node = require( 'SCENERY/nodes/Node' );
@@ -51,7 +52,7 @@ define( function( require ) {
    */
   function BatteryView( tandem, options ) {
 
-    Node.call( this );
+    Node.call( this, IOObject.getOptions( options ) );
 
     // @private - Determine the width of the batter pieces.
     this.mainBodyWidth = OhmsLawConstants.BATTERY_WIDTH * 0.87; // empirically determined
@@ -112,8 +113,6 @@ define( function( require ) {
     this.batteryText.addChild( voltageUnitsText );
 
     this.addChild( this.batteryText );
-
-    options.tandem= tandem;
     this.mutate( options );
   }
 

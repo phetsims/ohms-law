@@ -11,6 +11,7 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
+  var IOObject = require( 'TANDEM/IOObject' );
   var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
@@ -54,11 +55,12 @@ define( function( require ) {
       accessibleDescriptionAsHTML: ohmsLawDefinitionString,
       tagName: 'div',
       labelTagName: 'h3',
-      prependLabels: true // labels should come before other child content
+      prependLabels: true, // labels should come before other child content
+      tandem: tandem
     }, options );
 
     var self = this;
-    Node.call( this );
+    Node.call( this, IOObject.getOptions( options ) );
 
     // Create the equals sign, which does not change size
     var equalsSign = new Text( '=', { // We never internationalize the '=' sign
@@ -143,7 +145,6 @@ define( function( require ) {
       descriptionNode.accessibleLabelAsHTML = self.getComparativeSizeDescription();
     } );
 
-    options.tandem = tandem;
     this.mutate( options );
   }
 
@@ -164,9 +165,9 @@ define( function( require ) {
     /**
      * Get the comparative size description for the letters, something like
      * "Letter V is much larger than letter I and comparable to letter R."
-     * 
+     *
      * @public
-     * @return {string} 
+     * @return {string}
      */
     getComparativeSizeDescription: function() {
 
@@ -193,7 +194,7 @@ define( function( require ) {
         if ( describedRange.range.contains( vToI ) ) {
           vToIDescription = describedRange.description;
           break;
-        } 
+        }
       }
 
       // get the relative size description comparing V to R
@@ -203,7 +204,7 @@ define( function( require ) {
         if ( describedRange.range.contains( vToR ) ) {
           vToRDescription = describedRange.description;
           break;
-        } 
+        }
       }
 
       return StringUtils.fillIn( relativeSizePatternString, {

@@ -11,6 +11,7 @@ define( function( require ) {
   var Dimension2 = require( 'DOT/Dimension2' );
   var HSlider = require( 'SUN/HSlider' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var IOObject = require( 'TANDEM/IOObject' );
   var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
@@ -36,6 +37,7 @@ define( function( require ) {
   function SliderUnit( property, range, symbolString, nameString, unitString, accessibleLabel, tandem, options ) {
 
     options = _.extend( {
+      tandem: tandem,
       accessibleDecimalPlaces: 0,
       keyboardStep: 1,
       shiftKeyboardStep: 0.1,
@@ -44,7 +46,7 @@ define( function( require ) {
       startDrag: function() {}
     }, options );
 
-    Node.call( this );
+    Node.call( this, IOObject.getOptions( options ) );
 
     var slider = new HSlider( property, range, {
       trackFillEnabled: 'black',
@@ -133,7 +135,6 @@ define( function( require ) {
       readout.centerX = readoutBackground.selfBounds.centerX;
     } );
 
-    options.tandem = tandem;
     this.mutate( options );
   }
 

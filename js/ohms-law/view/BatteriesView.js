@@ -29,6 +29,7 @@ define( function( require ) {
    */
   function BatteriesView( voltageProperty, tandem, options ) {
     Node.call( this, {
+      tandem: tandem,
 
       // a11y
       tagName: 'li'
@@ -71,8 +72,6 @@ define( function( require ) {
         voltage: Util.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS )
       } );
     } );
-
-    options.tandem = tandem;
     this.mutate( options );
   }
 

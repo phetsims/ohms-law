@@ -43,6 +43,8 @@ define( function( require ) {
 
     Node.call( this, {
 
+      tandem: tandem,
+
       // a11y
       tagName: 'ul',
       labelTagName: 'h3',
@@ -122,7 +124,6 @@ define( function( require ) {
     // a11y - the order of descriptions should be batteries, resistance, then current
     this.accessibleOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
 
-    options.tandem = tandem;
     this.mutate( options );
   }
 

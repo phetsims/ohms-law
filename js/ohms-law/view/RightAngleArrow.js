@@ -51,7 +51,8 @@ define( function( require ) {
 
       // The arrow increased in size when the layout bounds were increased. Rather than drawing a new shape, just
       // scale it back. Part of https://github.com/phetsims/ohms-law/issues/62.
-      scale: .85
+      scale: .85,
+      tandem: tandem
     } );
 
     // Present for the lifetime of the simulation
@@ -64,7 +65,6 @@ define( function( require ) {
       self.setScaleMagnitude( scale );
     } );
 
-    options.tandem = tandem;
     this.mutate( options );
   }
 
