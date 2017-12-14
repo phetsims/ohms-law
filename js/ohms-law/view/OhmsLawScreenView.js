@@ -128,10 +128,6 @@ define( function( require ) {
         }
       }
     } );
-
-    this.mutate( {
-      tandem: tandem
-    } );
   }
 
   ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );

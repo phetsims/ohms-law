@@ -11,7 +11,6 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
-  var IOObject = require( 'TANDEM/IOObject' );
   var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
@@ -60,7 +59,7 @@ define( function( require ) {
     }, options );
 
     var self = this;
-    Node.call( this, IOObject.getOptions( options ) );
+    Node.call( this );
 
     // Create the equals sign, which does not change size
     var equalsSign = new Text( '=', { // We never internationalize the '=' sign
