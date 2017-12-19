@@ -21,7 +21,7 @@ define( function( require ) {
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Util = require( 'DOT/Util' );
   var Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
-  var UtteranceQueue = require( 'SCENERY_PHET/accessibility/UtteranceQueue' );
+  var utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
 
   // strings
   var resistanceString = require( 'string!OHMS_LAW/resistance' );
@@ -100,7 +100,7 @@ define( function( require ) {
             var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
             var alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
-            UtteranceQueue.addToBack( new Utterance( alert, { typeId: 'voltageAlert' } ) );
+            utteranceQueue.addToBack( new Utterance( alert, { typeId: 'voltageAlert' } ) );
           }
         }
       } );
@@ -131,7 +131,7 @@ define( function( require ) {
         iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ' ' + aLotString : '';
 
         var alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
-        UtteranceQueue.addToBack( new Utterance( alert, {
+        utteranceQueue.addToBack( new Utterance( alert, {
           typeId: 'resistanceAlert'
         } ) );
       }
