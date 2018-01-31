@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-dev.18 Tue Jan 30 2018 12:41:43 GMT-0700 (Mountain Standard Time)",
+  "comment": "# ohms-law 1.4.0-dev.19 Wed Jan 31 2018 13:45:45 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,7 +13,7 @@
     "branch": "master"
   },
   "chipper": {
-    "sha": "f616a059d415c0efaff83897ff937f1649c0235c",
+    "sha": "2af518527986cc95ce0b34fb5a02622912048469",
     "branch": "master"
   },
   "dot": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "524a65f82f202ca2f50588434bed9a62fbe5dbc9",
+    "sha": "9e571ab8cd8ed3f1023aac4ff1c38a616566c6b7",
     "branch": "master"
   },
   "phet-core": {
@@ -73,11 +73,11 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "ee81913a0c1babe00a8b58ec1651d0d9f71270fc",
+    "sha": "2602da303f9246852a3e23bfe268368899a011bb",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "aba46ca7796077bcc4760fdcdfde088acec0a6e3",
+    "sha": "700124797822663ab78f716988cecb413234083c",
     "branch": "master"
   },
   "sherpa": {
