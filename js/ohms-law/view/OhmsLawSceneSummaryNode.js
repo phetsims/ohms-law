@@ -37,7 +37,7 @@ define( function( require ) {
     // h2 and main summary for this sim
     var summaryNode = new Node( {
       tagName: 'p',
-      accessibleLabel: summarySimString
+      accessibleLabelAsHTML: summarySimString
     } );
 
     var rightNowParagraphNode = new Node( { tagName: 'p', accessibleLabel: rightNowString } );

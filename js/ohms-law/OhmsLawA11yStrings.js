@@ -94,9 +94,9 @@ define( function( require ) {
     summaryLookForSlidersString: 'Look for voltage and resistance sliders to play, or read on for details about equation and circuit.',
     summaryShortcutHintsString: 'If you need to, check out keyboard shortcuts for this sim.',
     summarySimString: 'This is an interactive sim. Descriptions change as you play with it. It has a Play Area and ' +
-                      'Control Panel. In the Play Area you find the equation for Ohm\'s Law, V equals I times R, and a ' +
-                      'circuit. Voltage and resistance sliders allow changes to the equation and circuit. In the Control ' +
-                      'Panel, buttons mute sound or reset the sim.',
+                      'Control Panel. In the Play Area you find the equation for Ohm\'s Law, <strong>V</strong> equals ' + 
+                      '<strong>I</strong> times <strong>R</strong>, and a ' + 'circuit. Voltage and resistance sliders ' +
+                      'allow changes to the equaltion and circuit. In the Control Panel, buttons mute sound or reset the sim.',
 
     stateOfSimString: 'State of Sim',
     rightNowString: 'Right now,',
