@@ -81,7 +81,7 @@ define( function( require ) {
     mediumAmountOfImpuritiesString: 'a medium amount of impurities',
     largeAmountOfImpuritiesString: 'a large amount of impurities',
     veryLargeAmountOfImpuritiesString: 'a very large amount of impurities',
-    hugeAmountOfImpuritiesString: 'a huge amount of impurities"',
+    hugeAmountOfImpuritiesString: 'a huge amount of impurities',
 
     resistanceDotsPatternString: 'resistor shows <em>{{impurities}}</em>',
 
