@@ -22,13 +22,13 @@ define( function( require ) {
 
   // strings
   var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSlidersString;
-  var summaryShortcutHintsString = OhmsLawA11yStrings.summaryShortcutHintsString;
   var sceneSummaryString = JoistA11yStrings.sceneSummaryString;
   var summarySimString = OhmsLawA11yStrings.summarySimString;
   var rightNowString = OhmsLawA11yStrings.rightNowString;
   var voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPatternString;
   var resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPatternString;
   var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPatternString;
+  var checkOutShortcutsString = JoistA11yStrings.checkOutShortcutsString;
 
   function OhmsLawSceneSummaryNode( model ) {
 
@@ -50,7 +50,7 @@ define( function( require ) {
     valueListNode.children = [ valueVoltageItemNode, valueResistanceItemNode, valueCurrentItemNode ];
 
     var sliderParagraphNode = new Node( { tagName: 'p', accessibleLabel: summaryLookForSlidersString } );
-    var shortcutParagraphNode = new Node( { tagName: 'p', accessibleLabel: summaryShortcutHintsString } );
+    var shortcutParagraphNode = new Node( { tagName: 'p', accessibleLabel: checkOutShortcutsString } );
 
     // add all children to this node, ordering the accessible content
     this.addChild( summaryNode );

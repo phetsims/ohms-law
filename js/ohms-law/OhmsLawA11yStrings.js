@@ -92,7 +92,6 @@ define( function( require ) {
     // pattern for the current arrow description in the scene summary
     summaryCurrentPatternString: '<em>{{size}}</em> arrows indicate amount of current flowing clockwise at {{current}} milliamps.',
     summaryLookForSlidersString: 'Look for voltage and resistance sliders to play, or read on for details about equation and circuit.',
-    summaryShortcutHintsString: 'If you need to, check out keyboard shortcuts for this sim.',
     summarySimString: 'This is an interactive sim. Descriptions change as you play with it. It has a Play Area and ' +
                       'Control Panel. In the Play Area you find the equation for Ohm\'s Law, <strong>V</strong> equals ' + 
                       '<strong>I</strong> times <strong>R</strong>, and a ' + 'circuit. Voltage and resistance sliders ' +
