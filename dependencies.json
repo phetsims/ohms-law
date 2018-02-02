@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-dev.21 Fri Feb 02 2018 14:43:54 GMT-0700 (Mountain Standard Time)",
+  "comment": "# ohms-law 1.4.0-dev.22 Fri Feb 02 2018 16:03:33 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -21,7 +21,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "2d67a94313f7d8313773d95765221142a6a41425",
+    "sha": "f8641b81d92e2d0f71c59c70116f7125febb7040",
     "branch": "master"
   },
   "kite": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "0d0d1fe417e2861206f569185901b86fee6162fc",
+    "sha": "cd8d778cc34ca9214a565b9d6eb22e8553f5f258",
     "branch": "master"
   },
   "phet-core": {
@@ -73,7 +73,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "ee7d7d6ef0a30530b1b64c7726f484c98ec58117",
+    "sha": "6c8d9feaff540f3c508b4dce200be8459f529d0d",
     "branch": "master"
   },
   "scenery-phet": {
