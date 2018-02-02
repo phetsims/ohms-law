@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-dev.20 Wed Jan 31 2018 13:50:55 GMT-0700 (Mountain Standard Time)",
+  "comment": "# ohms-law 1.4.0-dev.21 Fri Feb 02 2018 14:43:54 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,7 +13,7 @@
     "branch": "master"
   },
   "chipper": {
-    "sha": "2af518527986cc95ce0b34fb5a02622912048469",
+    "sha": "10125b6e274c1f89873a890218dbee0ad96e6dcd",
     "branch": "master"
   },
   "dot": {
@@ -21,7 +21,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "caefa8e28d0922a31d7bf5807f54d9ff550186ca",
+    "sha": "2d67a94313f7d8313773d95765221142a6a41425",
     "branch": "master"
   },
   "kite": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "fff1251a3ab1c6fecbc302e6da7784a31c556d86",
+    "sha": "0d0d1fe417e2861206f569185901b86fee6162fc",
     "branch": "master"
   },
   "phet-core": {
@@ -53,15 +53,15 @@
     "branch": "master"
   },
   "phet-io-wrapper-sonification": {
-    "sha": "47ce756980f38e2620050164c5dbbdd3029f14e2",
+    "sha": "475dfa747e7906d336ff777f89c6f75d45595249",
     "branch": "master"
   },
   "phet-io-wrapper-visualizing-engagement": {
-    "sha": "14150f43c23232984af555edd3d4a07c73a84886",
+    "sha": "c6b1e0c63146a2357033dfde361c3de49ad55a82",
     "branch": "master"
   },
   "phet-io-wrappers": {
-    "sha": "d11aebf69543136a4bc26bc9993f2cec586b7998",
+    "sha": "095cf528aa8b9fde47d77cd3aab5b2000cc63cea",
     "branch": "master"
   },
   "phetcommon": {
@@ -73,7 +73,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "2602da303f9246852a3e23bfe268368899a011bb",
+    "sha": "ee7d7d6ef0a30530b1b64c7726f484c98ec58117",
     "branch": "master"
   },
   "scenery-phet": {
@@ -85,7 +85,7 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "56f146b17331e9bbef9105d4c65616f59f69c78e",
+    "sha": "de39c347facfe4575a45bb8aec8493f6ce77ed2d",
     "branch": "master"
   },
   "tandem": {
