@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-testOggFileRemoval.0 Tue Mar 06 2018 12:57:47 GMT-0700 (Mountain Standard Time)",
+  "comment": "# ohms-law 1.4.0-testOggFileRemoval.1 Tue Mar 06 2018 13:05:52 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "998b290f057826f4a3e94b18a2cd8aa2c5c0e9ba",
+    "sha": "bced9f3ba6baa5815d34dc771a8e326feba49270",
     "branch": "testOggFileRemoval"
   },
   "phet-core": {
