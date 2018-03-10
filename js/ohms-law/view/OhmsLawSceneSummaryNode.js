@@ -22,13 +22,13 @@ define( function( require ) {
 
   // strings
   var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSlidersString;
-  var sceneSummaryString = JoistA11yStrings.sceneSummaryString;
+  var sceneSummaryString = JoistA11yStrings.sceneSummaryString.value;
   var summarySimString = OhmsLawA11yStrings.summarySimString;
   var rightNowString = OhmsLawA11yStrings.rightNowString;
   var voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPatternString;
   var resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPatternString;
   var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPatternString;
-  var checkOutShortcutsString = JoistA11yStrings.checkOutShortcutsString;
+  var checkOutShortcutsString = JoistA11yStrings.checkOutShortcutsString.value;
 
   function OhmsLawSceneSummaryNode( model ) {
 
