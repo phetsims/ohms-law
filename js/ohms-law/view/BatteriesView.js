@@ -19,7 +19,7 @@ define( function( require ) {
   var Util = require( 'DOT/Util' );
 
   // a11y strings
-  var batteriesSupplyPatternString = OhmsLawA11yStrings.batteriesSupplyPatternString;
+  var batteriesSupplyPatternString = OhmsLawA11yStrings.batteriesSupplyPattern.value;
 
   /**
    * @param {Property.<number>} voltageProperty

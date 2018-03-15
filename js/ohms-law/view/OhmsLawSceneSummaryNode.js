@@ -21,14 +21,14 @@ define( function( require ) {
   var Util = require( 'DOT/Util' );
 
   // strings
-  var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSlidersString;
-  var sceneSummaryString = JoistA11yStrings.sceneSummaryString.value;
-  var summarySimString = OhmsLawA11yStrings.summarySimString;
-  var rightNowString = OhmsLawA11yStrings.rightNowString;
-  var voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPatternString;
-  var resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPatternString;
-  var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPatternString;
-  var checkOutShortcutsString = JoistA11yStrings.checkOutShortcutsString.value;
+  var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSliders.value;
+  var sceneSummaryString = JoistA11yStrings.sceneSummary.value;
+  var summarySimString = OhmsLawA11yStrings.summarySim.value;
+  var rightNowString = OhmsLawA11yStrings.rightNow.value;
+  var voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPattern.value;
+  var resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPattern.value;
+  var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPattern.value;
+  var checkOutShortcutsString = JoistA11yStrings.checkOutShortcuts.value;
 
   function OhmsLawSceneSummaryNode( model ) {
 

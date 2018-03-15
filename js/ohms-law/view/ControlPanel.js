@@ -33,20 +33,20 @@ define( function( require ) {
 
   // a11y strings - these strings are not meant to be translatable until the translation utility
   // can provide translators with context
-  var resistanceUnitsPatternString = OhmsLawA11yStrings.resistanceUnitsPatternString;
-  var voltageUnitsPatternString = OhmsLawA11yStrings.voltageUnitsPatternString;
-  var resistanceSliderLabelString = OhmsLawA11yStrings.resistanceSliderLabelString;
-  var voltageSliderLabelString = OhmsLawA11yStrings.voltageSliderLabelString;
-  var sliderControlsString = OhmsLawA11yStrings.sliderControlsString;
-  var slidersDescriptionString = OhmsLawA11yStrings.slidersDescriptionString;
+  var resistanceUnitsPatternString = OhmsLawA11yStrings.resistanceUnitsPattern.value;
+  var voltageUnitsPatternString = OhmsLawA11yStrings.voltageUnitsPattern.value;
+  var resistanceSliderLabelString = OhmsLawA11yStrings.resistanceSliderLabel.value;
+  var voltageSliderLabelString = OhmsLawA11yStrings.voltageSliderLabel.value;
+  var sliderControlsString = OhmsLawA11yStrings.sliderControls.value;
+  var slidersDescriptionString = OhmsLawA11yStrings.slidersDescription.value;
 
   // a11y strings
-  var sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPatternString;
-  var letterRString = OhmsLawA11yStrings.letterRString;
-  var letterVString = OhmsLawA11yStrings.letterVString;
-  var shrinksString = OhmsLawA11yStrings.shrinksString;
-  var growsString = OhmsLawA11yStrings.growsString;
-  var aLotString = OhmsLawA11yStrings.aLotString;
+  var sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPattern.value;
+  var letterRString = OhmsLawA11yStrings.letterR.value;
+  var letterVString = OhmsLawA11yStrings.letterV.value;
+  var shrinksString = OhmsLawA11yStrings.shrinks.value;
+  var growsString = OhmsLawA11yStrings.grows.value;
+  var aLotString = OhmsLawA11yStrings.aLot.value;
 
   // constants
   var NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes; // a11y - the number of sizes that letters can be described as.

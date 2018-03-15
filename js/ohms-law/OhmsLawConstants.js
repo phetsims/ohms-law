@@ -16,20 +16,20 @@ define( function( require ) {
   var RangeWithValue = require( 'DOT/RangeWithValue' );
 
   // a11y strings
-  var tinyString = OhmsLawA11yStrings.tinyString;
-  var verySmallString = OhmsLawA11yStrings.verySmallString;
-  var smallString = OhmsLawA11yStrings.smallString;
-  var mediumSizeString = OhmsLawA11yStrings.mediumSizeString;
-  var largeString = OhmsLawA11yStrings.largeString;
-  var veryLargeString = OhmsLawA11yStrings.veryLargeString;
-  var hugeString = OhmsLawA11yStrings.hugeString;
-  var muchMuchSmallerThanString = OhmsLawA11yStrings.muchMuchSmallerThanString;
-  var muchSmallerThanString = OhmsLawA11yStrings.muchSmallerThanString;
-  var slightlySmallerThanString = OhmsLawA11yStrings.slightlySmallerThanString;
-  var comparableToString = OhmsLawA11yStrings.comparableToString;
-  var slightlyLargerThanString = OhmsLawA11yStrings.slightlyLargerThanString;
-  var muchLargerThanString = OhmsLawA11yStrings.muchLargerThanString;
-  var muchMuchLargerThanString = OhmsLawA11yStrings.muchMuchLargerThanString;
+  var tinyString = OhmsLawA11yStrings.tiny.value;
+  var verySmallString = OhmsLawA11yStrings.verySmall.value;
+  var smallString = OhmsLawA11yStrings.small.value;
+  var mediumSizeString = OhmsLawA11yStrings.mediumSize.value;
+  var largeString = OhmsLawA11yStrings.large.value;
+  var veryLargeString = OhmsLawA11yStrings.veryLarge.value;
+  var hugeString = OhmsLawA11yStrings.huge.value;
+  var muchMuchSmallerThanString = OhmsLawA11yStrings.muchMuchSmallerThan.value;
+  var muchSmallerThanString = OhmsLawA11yStrings.muchSmallerThan.value;
+  var slightlySmallerThanString = OhmsLawA11yStrings.slightlySmallerThan.value;
+  var comparableToString = OhmsLawA11yStrings.comparableTo.value;
+  var slightlyLargerThanString = OhmsLawA11yStrings.slightlyLargerThan.value;
+  var muchLargerThanString = OhmsLawA11yStrings.muchLargerThan.value;
+  var muchMuchLargerThanString = OhmsLawA11yStrings.muchMuchLargerThan.value;
 
   // constants used by other constants
   var RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms

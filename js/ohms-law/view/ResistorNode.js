@@ -23,14 +23,14 @@ define( function( require ) {
   var Util = require( 'DOT/Util' );
 
   // a11y strings
-  var tinyAmountOfImpuritiesString = OhmsLawA11yStrings.tinyAmountOfImpuritiesString;
-  var verySmallAmountOfImpuritiesString = OhmsLawA11yStrings.verySmallAmountOfImpuritiesString;
-  var smallAmountOfImpuritiesString = OhmsLawA11yStrings.smallAmountOfImpuritiesString;
-  var mediumAmountOfImpuritiesString = OhmsLawA11yStrings.mediumAmountOfImpuritiesString;
-  var largeAmountOfImpuritiesString = OhmsLawA11yStrings.largeAmountOfImpuritiesString;
-  var veryLargeAmountOfImpuritiesString = OhmsLawA11yStrings.veryLargeAmountOfImpuritiesString;
-  var hugeAmountOfImpuritiesString = OhmsLawA11yStrings.hugeAmountOfImpuritiesString;
-  var resistanceDotsPatternString = OhmsLawA11yStrings.resistanceDotsPatternString;
+  var tinyAmountOfImpuritiesString = OhmsLawA11yStrings.tinyAmountOfImpurities.value;
+  var verySmallAmountOfImpuritiesString = OhmsLawA11yStrings.verySmallAmountOfImpurities.value;
+  var smallAmountOfImpuritiesString = OhmsLawA11yStrings.smallAmountOfImpurities.value;
+  var mediumAmountOfImpuritiesString = OhmsLawA11yStrings.mediumAmountOfImpurities.value;
+  var largeAmountOfImpuritiesString = OhmsLawA11yStrings.largeAmountOfImpurities.value;
+  var veryLargeAmountOfImpuritiesString = OhmsLawA11yStrings.veryLargeAmountOfImpurities.value;
+  var hugeAmountOfImpuritiesString = OhmsLawA11yStrings.hugeAmountOfImpurities.value;
+  var resistanceDotsPatternString = OhmsLawA11yStrings.resistanceDotsPattern.value;
 
   // constants
   var RESISTOR_WIDTH = OhmsLawConstants.WIRE_WIDTH / 2.123; // empirically determined

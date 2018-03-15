@@ -28,9 +28,9 @@ define( function( require ) {
   var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
 
   // a11y strings
-  var relativeSizePatternString = OhmsLawA11yStrings.relativeSizePatternString;
-  var ohmsLawEquationString = OhmsLawA11yStrings.ohmsLawEquationString;
-  var ohmsLawDefinitionString = OhmsLawA11yStrings.ohmsLawDefinitionString;
+  var relativeSizePatternString = OhmsLawA11yStrings.relativeSizePattern.value;
+  var ohmsLawEquationString = OhmsLawA11yStrings.ohmsLawEquation.value;
+  var ohmsLawDefinitionString = OhmsLawA11yStrings.ohmsLawDefinition.value;
 
   // constants
   var TEXT_FONT = new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } );

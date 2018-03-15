@@ -23,9 +23,9 @@ define( function( require ) {
   var Util = require( 'DOT/Util' );
 
   // a11y strings
-  var circuitLabelString = OhmsLawA11yStrings.circuitLabelString;
-  var circuitDescriptionString = OhmsLawA11yStrings.circuitDescriptionString;
-  var currentDescriptionPatternString = OhmsLawA11yStrings.currentDescriptionPatternString;
+  var circuitLabelString = OhmsLawA11yStrings.circuitLabel.value;
+  var circuitDescriptionString = OhmsLawA11yStrings.circuitDescription.value;
+  var currentDescriptionPatternString = OhmsLawA11yStrings.currentDescriptionPattern.value;
 
   // constants
   var WIDTH = OhmsLawConstants.WIRE_WIDTH;

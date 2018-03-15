@@ -33,7 +33,7 @@ define( function( require ) {
   var REMOVE_BATTERY_SOUND = new Sound( require( 'audio!OHMS_LAW/remove-battery' ) );
 
   // a11y strings
-  var ohmsLawTitleString = OhmsLawA11yStrings.ohmsLawTitleString;
+  var ohmsLawTitleString = OhmsLawA11yStrings.ohmsLawTitle.value;
   var playAreaString = JoistA11yStrings.playAreaString.value;
   var controlPanelString = JoistA11yStrings.controlPanelString.value;
 

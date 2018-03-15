@@ -13,13 +13,23 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   var OhmsLawA11yStrings = {
-    resistanceUnitsPatternString: '{{value}} Ohms',
-    voltageUnitsPatternString: '{{value}} Volts',
-    resistanceSliderLabelString: 'R, Resistance',
-    voltageSliderLabelString: 'V, Voltage',
+    resistanceUnitsPattern: {
+      value: '{{value}} Ohms'
+    },
+    voltageUnitsPattern: {
+      value: '{{value}} Volts'
+    },
+    resistanceSliderLabel: {
+      value: 'R, Resistance'
+    },
+    voltageSliderLabel: {
+      value: 'V, Voltage'
+    },
 
     // accessible title for Ohms Law
-    ohmsLawTitleString: 'Ohm\'s Law',
+    ohmsLawTitle: {
+      value: 'Ohm\'s Law'
+    },
 
     //--------------------------------------------------------------------------
     // Relative size strings
@@ -28,95 +38,185 @@ define( function( require ) {
     // descriptions for the size of the current arrows
     // Note: Don't change number of sizes without changing the number of sizes value
     numberOfSizes: 6,
-    tinyString: 'Tiny',
-    verySmallString: 'Very small',
-    smallString: 'Small',
-    mediumSizeString: 'Medium size',
-    largeString: 'Large',
-    veryLargeString: 'Very large',
-    hugeString: 'Huge',
+    tiny: {
+      value: 'Tiny'
+    },
+    verySmall: {
+      value: 'Very small'
+    },
+    small: {
+      value: 'Small'
+    },
+    mediumSize: {
+      value: 'Medium size'
+    },
+    large: {
+      value: 'Large'
+    },
+    veryLarge: {
+      value: 'Very large'
+    },
+    huge: {
+      value: 'Huge'
+    },
 
     // relative descriptions that compare size of equation variables
-    muchMuchSmallerThanString: 'much much smaller than',
-    muchSmallerThanString: 'much smaller than',
-    slightlySmallerThanString: 'slightly smaller than',
-    comparableToString: 'comparable to',
-    slightlyLargerThanString: 'slightly larger than',
-    muchLargerThanString: 'much larger than',
-    muchMuchLargerThanString: 'much much larger than',
+    muchMuchSmallerThan: {
+      value: 'much much smaller than'
+    },
+    muchSmallerThan: {
+      value: 'much smaller than'
+    },
+    slightlySmallerThan: {
+      value: 'slightly smaller than'
+    },
+    comparableTo: {
+      value: 'comparable to'
+    },
+    slightlyLargerThan: {
+      value: 'slightly larger than'
+    },
+    muchLargerThan: {
+      value: 'much larger than'
+    },
+    muchMuchLargerThan: {
+      value: 'much much larger than'
+    },
 
     // pattern for the description of relative letter size
-    relativeSizePatternString: 'In equation, <strong>letter V</strong> is <em>{{iComparison}}</em> <strong>letter I</strong> and <em>{{rComparison}}</em> <strong>letter R</strong>.',
+    relativeSizePattern: {
+      value: 'In equation, <strong>letter V</strong> is <em>{{iComparison}}</em> <strong>letter I</strong> and <em>{{rComparison}}</em> <strong>letter R</strong>.'
+    },
 
     //--------------------------------------------------------------------------
     // Equation strings
     //--------------------------------------------------------------------------
-    ohmsLawEquationString: 'Ohm\'s Law Equation',
-    ohmsLawDefinitionString: 'Voltage, <strong>V</strong>, is equal to Current, <strong>I</strong>, times Resistance, <strong>R</strong>.',
+    ohmsLawEquation: {
+      value: 'Ohm\'s Law Equation'
+    },
+    ohmsLawDefinition: {
+      value: 'Voltage, <strong>V</strong>, is equal to Current, <strong>I</strong>, times Resistance, <strong>R</strong>.'
+    },
 
     //--------------------------------------------------------------------------
     // Circuit strings
     //--------------------------------------------------------------------------
-    circuitLabelString: 'The Circuit',
-    circuitDescriptionString: 'A pair of wires connect a resistor to a series of batteries. In circuit, ',
+    circuitLabel: {
+      value: 'The Circuit'
+    },
+    circuitDescription: {
+      value: 'A pair of wires connect a resistor to a series of batteries. In circuit, '
+    },
 
     //--------------------------------------------------------------------------
     // Battery strings
     //--------------------------------------------------------------------------
 
-    batteriesSupplyPatternString: 'batteries supply <em>{{voltage}} volts</em>',
+    batteriesSupplyPattern: {
+      value: 'batteries supply <em>{{voltage}} volts</em>'
+    },
 
     //--------------------------------------------------------------------------
     // Current strings
     //--------------------------------------------------------------------------
-    currentDescriptionPatternString: '<em>{{arrowSize}} arrows</em> indicate a current flowing clockwise at <em>{{value}} milliamps</em>',
+    currentDescriptionPattern: {
+      value: '<em>{{arrowSize}} arrows</em> indicate a current flowing clockwise at <em>{{value}} milliamps</em>'
+    },
 
     //--------------------------------------------------------------------------
     // Resistance strings
     //--------------------------------------------------------------------------
 
-    tinyAmountOfImpuritiesString: 'a tiny amount of impurities',
-    verySmallAmountOfImpuritiesString: 'a very small amount of impurities',
-    smallAmountOfImpuritiesString: 'a small amount of impurities',
-    mediumAmountOfImpuritiesString: 'a medium amount of impurities',
-    largeAmountOfImpuritiesString: 'a large amount of impurities',
-    veryLargeAmountOfImpuritiesString: 'a very large amount of impurities',
-    hugeAmountOfImpuritiesString: 'a huge amount of impurities',
+    tinyAmountOfImpurities: {
+      value: 'a tiny amount of impurities'
+    },
+    verySmallAmountOfImpurities: {
+      value: 'a very small amount of impurities'
+    },
+    smallAmountOfImpurities: {
+      value: 'a small amount of impurities'
+    },
+    mediumAmountOfImpurities: {
+      value: 'a medium amount of impurities'
+    },
+    largeAmountOfImpurities: {
+      value: 'a large amount of impurities'
+    },
+    veryLargeAmountOfImpurities: {
+      value: 'a very large amount of impurities'
+    },
+    hugeAmountOfImpurities: {
+      value: 'a huge amount of impurities'
+    },
 
-    resistanceDotsPatternString: 'resistor shows <em>{{impurities}}</em>',
+    resistanceDotsPattern: {
+      value: 'resistor shows <em>{{impurities}}</em>'
+    },
 
     //--------------------------------------------------------------------------
     // Scene summary strings
     //--------------------------------------------------------------------------
 
     // pattern for the current arrow description in the scene summary
-    summaryCurrentPatternString: '<em>{{size}}</em> arrows indicate amount of current flowing clockwise at {{current}} milliamps.',
-    summaryLookForSlidersString: 'Look for voltage and resistance sliders to play, or read on for details about equation and circuit.',
-    summarySimString: 'This is an interactive sim. Descriptions change as you play with it. It has a Play Area and ' +
-                      'Control Panel. In the Play Area you find the equation for Ohm\'s Law, <strong>V</strong> equals ' + 
-                      '<strong>I</strong> times <strong>R</strong>, and a ' + 'circuit. Voltage and resistance sliders ' +
-                      'allow changes to the equaltion and circuit. In the Control Panel, buttons mute sound or reset the sim.',
+    summaryCurrentPattern: {
+      value: '<em>{{size}}</em> arrows indicate amount of current flowing clockwise at {{current}} milliamps.'
+    },
+    summaryLookForSliders: {
+      value: 'Look for voltage and resistance sliders to play, or read on for details about equation and circuit.'
+    },
+    summarySim: {
+      value: 'This is an interactive sim. Descriptions change as you play with it. It has a Play Area and ' +
+             'Control Panel. In the Play Area you find the equation for Ohm\'s Law, <strong>V</strong> equals ' +
+             '<strong>I</strong> times <strong>R</strong>, and a ' + 'circuit. Voltage and resistance sliders ' +
+             'allow changes to the equaltion and circuit. In the Control Panel, buttons mute sound or reset the sim.'
+    },
 
-    stateOfSimString: 'State of Sim',
-    rightNowString: 'Right now,',
+    stateOfSim: {
+      value: 'State of Sim'
+    },
+    rightNow: {
+      value: 'Right now,'
+    },
 
-    voltageSummaryPatternString: 'voltage, <strong>V</strong>, is <em>{{value}} volts</em>',
-    resistanceSummaryPatternString: 'resistance, <strong>R</strong>, is <em>{{value}} ohms</em>',
-    currentSummaryPatternString: 'current, <strong>I</strong>, is <em>{{value}} milliamps</em>',
+    voltageSummaryPattern: {
+      value: 'voltage, <strong>V</strong>, is <em>{{value}} volts</em>'
+    },
+    resistanceSummaryPattern: {
+      value: 'resistance, <strong>R</strong>, is <em>{{value}} ohms</em>'
+    },
+    currentSummaryPattern: {
+      value: 'current, <strong>I</strong>, is <em>{{value}} milliamps</em>'
+    },
 
 
     //--------------------------------------------------------------------------
     // slider strings
     //--------------------------------------------------------------------------
-    sliderControlsString: 'Slider Controls',
-    slidersDescriptionString: 'Voltage and resistance sliders allow changes to equation and circuit.',
+    sliderControls: {
+      value: 'Slider Controls'
+    },
+    slidersDescription: {
+      value: 'Voltage and resistance sliders allow changes to equation and circuit.'
+    },
 
-    sliderChangeAlertPatternString: 'As letter {{initLetter}} {{initSizeChange}}, letter I {{iSizeChange}}.  Current now {{currentVal}} milliamps.',
-    letterRString: 'R',
-    letterVString: 'V',
-    shrinksString: 'shrinks',
-    growsString: 'grows',
-    aLotString: 'a lot'
+    sliderChangeAlertPattern: {
+      value: 'As letter {{initLetter}} {{initSizeChange}}, letter I {{iSizeChange}}.  Current now {{currentVal}} milliamps.'
+    },
+    letterR: {
+      value: 'R'
+    },
+    letterV: {
+      value: 'V'
+    },
+    shrinks: {
+      value: 'shrinks'
+    },
+    grows: {
+      value: 'grows'
+    },
+    aLot: {
+      value: 'a lot'
+    }
   };
 
   if ( phet.chipper.queryParameters.stringTest === 'xss' ) {
