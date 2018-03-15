@@ -34,8 +34,8 @@ define( function( require ) {
 
   // a11y strings
   var ohmsLawTitleString = OhmsLawA11yStrings.ohmsLawTitle.value;
-  var playAreaString = JoistA11yStrings.playAreaString.value;
-  var controlPanelString = JoistA11yStrings.controlPanelString.value;
+  var playAreaString = JoistA11yStrings.playArea.value;
+  var controlPanelString = JoistA11yStrings.controlPanel.value;
 
   /**
    * @param {OhmsLawModel} model
