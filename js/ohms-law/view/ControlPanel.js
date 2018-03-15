@@ -49,7 +49,7 @@ define( function( require ) {
   var aLotString = OhmsLawA11yStrings.aLot.value;
 
   // constants
-  var NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes; // a11y - the number of sizes that letters can be described as.
+  var NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes.value; // a11y - the number of sizes that letters can be described as.
 
   /**
    * @param {Property.<number>} voltageProperty

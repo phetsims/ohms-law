@@ -37,7 +37,9 @@ define( function( require ) {
 
     // descriptions for the size of the current arrows
     // Note: Don't change number of sizes without changing the number of sizes value
-    numberOfSizes: 6,
+    numberOfSizes: {
+      value: 6
+    },
     tiny: {
       value: 'Tiny'
     },
@@ -221,7 +223,7 @@ define( function( require ) {
 
   if ( phet.chipper.queryParameters.stringTest === 'xss' ) {
     for ( var key in OhmsLawA11yStrings ) {
-      OhmsLawA11yStrings[ key ] += '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGD4DwABCQEBtxmN7wAAAABJRU5ErkJggg==" onload="window.location.href=atob(\'aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==\')" />';
+      OhmsLawA11yStrings[ key ].value += '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGD4DwABCQEBtxmN7wAAAABJRU5ErkJggg==" onload="window.location.href=atob(\'aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==\')" />';
     }
   }
 
