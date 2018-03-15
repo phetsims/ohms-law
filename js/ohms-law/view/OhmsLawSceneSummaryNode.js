@@ -20,7 +20,7 @@ define( function( require ) {
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Util = require( 'DOT/Util' );
 
-  // strings
+  // a11y strings
   var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSliders.value;
   var sceneSummaryString = JoistA11yStrings.sceneSummary.value;
   var summarySimString = OhmsLawA11yStrings.summarySim.value;
