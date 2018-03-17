@@ -12,6 +12,7 @@ define( function( require ) {
   var AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var MathSymbols = require( 'SCENERY_PHET/MathSymbols' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
@@ -26,7 +27,6 @@ define( function( require ) {
   // strings
   var resistanceString = require( 'string!OHMS_LAW/resistance' );
   var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
-  var resistanceUnitsString = require( 'string!OHMS_LAW/resistanceUnits' );
   var voltageString = require( 'string!OHMS_LAW/voltage' );
   var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
   var voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
@@ -144,7 +144,7 @@ define( function( require ) {
       OhmsLawConstants.RESISTANCE_RANGE,
       resistanceSymbolString,
       resistanceString,
-      resistanceUnitsString,
+      MathSymbols.OHMS,
       resistanceSliderLabelString,
       tandem.createTandem( 'resistanceSlider' ),
       {
