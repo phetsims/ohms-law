@@ -50,7 +50,7 @@ define( function( require ) {
     } );
 
     ScreenView.call( this, {
-      accessibleLabel: ohmsLawTitleString,
+      labelContent: ohmsLawTitleString,
       tandem: tandem
     } );
 

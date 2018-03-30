@@ -65,7 +65,7 @@ define( function( require ) {
       accessibleDecimalPlaces: options.accessibleDecimalPlaces,
       accessibleValuePattern: options.accessibleValuePattern,
       containerTagName: 'li',
-      accessibleLabel: accessibleLabel,
+      labelContent: accessibleLabel,
       prependLabels: true
     } );
 

@@ -48,7 +48,7 @@ define( function( require ) {
       // a11y
       tagName: 'ul',
       labelTagName: 'h3',
-      accessibleLabel: circuitLabelString,
+      labelContent: circuitLabelString,
       accessibleDescriptionAsHTML: circuitDescriptionString,
       prependLabels: true
     } );

@@ -50,7 +50,7 @@ define( function( require ) {
     options = _.extend( {
 
       // a11y
-      accessibleLabel: ohmsLawEquationString,
+      labelContent: ohmsLawEquationString,
       accessibleDescriptionAsHTML: ohmsLawDefinitionString,
       tagName: 'div',
       labelTagName: 'h3',

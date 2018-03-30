@@ -168,7 +168,7 @@ define( function( require ) {
       labelTagName: 'h3',
       prependLabels: true,
       tagName: 'ul',
-      accessibleLabel: sliderControlsString,
+      labelContent: sliderControlsString,
       accessibleDescription: slidersDescriptionString
     } );
 
