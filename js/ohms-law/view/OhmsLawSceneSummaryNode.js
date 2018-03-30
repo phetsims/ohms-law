@@ -37,10 +37,10 @@ define( function( require ) {
     // h2 and main summary for this sim
     var summaryNode = new Node( {
       tagName: 'p',
-      accessibleLabelAsHTML: summarySimString
+      innerContent: summarySimString
     } );
 
-    var rightNowParagraphNode = new Node( { tagName: 'p', accessibleLabel: rightNowString } );
+    var rightNowParagraphNode = new Node( { tagName: 'p', innerContent: rightNowString } );
 
     // list outlining the values for this sim
     var valueListNode = new Node( { tagName: 'ul' } );
@@ -49,8 +49,8 @@ define( function( require ) {
     var valueCurrentItemNode = new Node( { tagName: 'li' } );
     valueListNode.children = [ valueVoltageItemNode, valueResistanceItemNode, valueCurrentItemNode ];
 
-    var sliderParagraphNode = new Node( { tagName: 'p', accessibleLabel: summaryLookForSlidersString } );
-    var shortcutParagraphNode = new Node( { tagName: 'p', accessibleLabel: checkOutShortcutsString } );
+    var sliderParagraphNode = new Node( { tagName: 'p', innerContent: summaryLookForSlidersString } );
+    var shortcutParagraphNode = new Node( { tagName: 'p', innerContent: checkOutShortcutsString } );
 
     // add all children to this node, ordering the accessible content
     this.addChild( summaryNode );
@@ -86,7 +86,7 @@ define( function( require ) {
     // no need to dispose
     valueItemList.forEach( function( item ) {
       item.property.link( function( value ) {
-        item.node.accessibleLabelAsHTML = StringUtils.fillIn( item.patternString, {
+        item.node.innerContent = StringUtils.fillIn( item.patternString, {
           value: Util.toFixed( value, item.precision )
         } );
       } );

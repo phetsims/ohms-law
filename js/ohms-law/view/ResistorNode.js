@@ -73,6 +73,12 @@ define( function( require ) {
    */
   function ResistorNode( resistanceProperty, tandem, options ) {
 
+    options = _.extend( {
+
+      // a11y
+      tagName: 'li'
+    }, options );
+
     Node.call( this );
     var self = this;
 
@@ -141,7 +147,7 @@ define( function( require ) {
         dot.setVisible( index < numDotsToShow );
       } );
 
-      self.accessibleLabelAsHTML = self.getResistanceDescription( resistance );
+      self.innerContent = self.getResistanceDescription( resistance );
     } );
 
     this.mutate( options );

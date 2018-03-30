@@ -68,7 +68,7 @@ define( function( require ) {
       } );
 
       // update the description for the number of batteries
-      self.accessibleLabelAsHTML = StringUtils.fillIn( batteriesSupplyPatternString, {
+      self.innerContent = StringUtils.fillIn( batteriesSupplyPatternString, {
         voltage: Util.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS )
       } );
     } );

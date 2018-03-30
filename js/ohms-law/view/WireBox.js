@@ -70,10 +70,7 @@ define( function( require ) {
 
     var resistorNode = new ResistorNode( model.resistanceProperty, tandem.createTandem( 'resistorNode' ), {
       centerX: WIDTH / 2,
-      centerY: HEIGHT,
-
-      // a11y
-      tagName: 'li'
+      centerY: HEIGHT
     } );
     this.addChild( resistorNode );
 
@@ -115,7 +112,7 @@ define( function( require ) {
     model.currentProperty.link( function( current ) {
       var formattedCurrent = Util.toFixed( current, OhmsLawConstants.CURRENT_SIG_FIGS );
 
-      accessibleCurrentNode.accessibleLabelAsHTML = StringUtils.fillIn( currentDescriptionPatternString, {
+      accessibleCurrentNode.innerContent = StringUtils.fillIn( currentDescriptionPatternString, {
         arrowSize: self.getArrowSizeDescription(),
         value: formattedCurrent
       } );

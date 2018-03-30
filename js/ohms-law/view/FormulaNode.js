@@ -50,7 +50,7 @@ define( function( require ) {
     options = _.extend( {
 
       // a11y
-      accessibleLabelAsHTML: ohmsLawEquationString,
+      accessibleLabel: ohmsLawEquationString,
       accessibleDescriptionAsHTML: ohmsLawDefinitionString,
       tagName: 'div',
       labelTagName: 'h3',
@@ -141,7 +141,7 @@ define( function( require ) {
 
     // when any of the model Properties change, update the accessible description
     Property.multilink( [ model.currentProperty, model.resistanceProperty, model.voltageProperty ], function( current, resistance, voltage ) {
-      descriptionNode.accessibleLabelAsHTML = self.getComparativeSizeDescription();
+      descriptionNode.innerContent = self.getComparativeSizeDescription();
     } );
 
     this.mutate( options );
