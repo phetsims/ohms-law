@@ -64,7 +64,6 @@ define( function( require ) {
       shiftKeyboardStep: options.shiftKeyboardStep,
       accessibleDecimalPlaces: options.accessibleDecimalPlaces,
       accessibleValuePattern: options.accessibleValuePattern,
-      labelTagName: 'label',
       containerTagName: 'li',
       accessibleLabel: accessibleLabel,
       prependLabels: true
