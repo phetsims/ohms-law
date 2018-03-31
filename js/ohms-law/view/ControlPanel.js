@@ -173,7 +173,7 @@ define( function( require ) {
     } );
 
     content.setAriaLabelledByNode( content );
-    content.ariaLabelContent = AccessiblePeer.LABEL;
+    content.ariaLabelContent = AccessiblePeer.LABEL_SIBLING;
 
     Panel.call( this, content, options );
   }
