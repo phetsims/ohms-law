@@ -28,12 +28,12 @@ define( function( require ) {
    * @param {string} symbolString
    * @param {string} nameString
    * @param {string} unitString
-   * @param {string} accessibleLabel - label read by a screen reader on focus
+   * @param {string} labelContent - a11y, label read by a screen reader on focus
    * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function SliderUnit( property, range, symbolString, nameString, unitString, accessibleLabel, tandem, options ) {
+  function SliderUnit( property, range, symbolString, nameString, unitString, labelContent, tandem, options ) {
 
     options = _.extend( {
       tandem: tandem,
@@ -65,7 +65,7 @@ define( function( require ) {
       accessibleDecimalPlaces: options.accessibleDecimalPlaces,
       accessibleValuePattern: options.accessibleValuePattern,
       containerTagName: 'li',
-      labelContent: accessibleLabel,
+      labelContent: labelContent,
       prependLabels: true
     } );
 
