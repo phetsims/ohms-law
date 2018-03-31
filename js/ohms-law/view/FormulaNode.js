@@ -51,7 +51,7 @@ define( function( require ) {
 
       // a11y
       labelContent: ohmsLawEquationString,
-      accessibleDescriptionAsHTML: ohmsLawDefinitionString,
+      descriptionContent: ohmsLawDefinitionString,
       tagName: 'div',
       labelTagName: 'h3',
       prependLabels: true, // labels should come before other child content

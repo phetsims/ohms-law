@@ -49,7 +49,7 @@ define( function( require ) {
       tagName: 'ul',
       labelTagName: 'h3',
       labelContent: circuitLabelString,
-      accessibleDescriptionAsHTML: circuitDescriptionString,
+      descriptionContent: circuitDescriptionString,
       prependLabels: true
     } );
     var self = this;

@@ -169,7 +169,7 @@ define( function( require ) {
       prependLabels: true,
       tagName: 'ul',
       labelContent: sliderControlsString,
-      accessibleDescription: slidersDescriptionString
+      descriptionContent: slidersDescriptionString
     } );
 
     content.setAriaLabelledByNode( content );
