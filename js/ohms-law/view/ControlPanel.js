@@ -166,7 +166,6 @@ define( function( require ) {
 
       // a11y - contain the sliders in a list
       labelTagName: 'h3',
-      prependLabels: true,
       tagName: 'ul',
       labelContent: sliderControlsString,
       descriptionContent: slidersDescriptionString

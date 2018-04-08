@@ -53,8 +53,7 @@ define( function( require ) {
       labelContent: ohmsLawEquationString,
       descriptionContent: ohmsLawDefinitionString,
       tagName: 'div',
-      labelTagName: 'h3',
-      prependLabels: true, // labels should come before other child content
+      labelTagName: 'h3', // labels should come before other child content
       tandem: tandem
     }, options );
 
