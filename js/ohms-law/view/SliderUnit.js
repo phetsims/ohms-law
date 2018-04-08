@@ -65,7 +65,8 @@ define( function( require ) {
       accessibleDecimalPlaces: options.accessibleDecimalPlaces,
       accessibleValuePattern: options.accessibleValuePattern,
       containerTagName: 'li',
-      labelContent: labelContent
+      labelContent: labelContent,
+      labelTagName: 'label'
     } );
 
     var symbolText = new Text( symbolString, {
