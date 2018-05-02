@@ -11,6 +11,7 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
+  var MathSymbols = require( 'SCENERY_PHET/MathSymbols' );
   var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
@@ -61,7 +62,7 @@ define( function( require ) {
     Node.call( this );
 
     // Create the equals sign, which does not change size
-    var equalsSign = new Text( '=', { // We never internationalize the '=' sign
+    var equalsSign = new Text( MathSymbols.EQUAL_TO, { // We never internationalize the '=' sign
       font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
       fill: '#000',
       centerX: 300,
@@ -163,6 +164,7 @@ define( function( require ) {
     /**
      * Get the comparative size description for the letters, something like
      * "Letter V is much larger than letter I and comparable to letter R."
+     * Used for a11y.
      *
      * @public
      * @return {string}

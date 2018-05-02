@@ -10,17 +10,17 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var AccessibleSectionNode = require( 'SCENERY_PHET/accessibility/AccessibleSectionNode' );
   var BooleanProperty = require( 'AXON/BooleanProperty' );
   var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
+  var ControlPanelNode = require( 'SCENERY_PHET/accessibility/nodes/ControlPanelNode' );
   var FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var OhmsLawSceneSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawSceneSummaryNode' );
+  var PlayAreaNode = require( 'SCENERY_PHET/accessibility/nodes/PlayAreaNode' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var Sound = require( 'VIBE/Sound' );
@@ -34,8 +34,6 @@ define( function( require ) {
 
   // a11y strings
   var ohmsLawTitleString = OhmsLawA11yStrings.ohmsLawTitle.value;
-  var playAreaString = JoistA11yStrings.playArea.value;
-  var controlPanelString = JoistA11yStrings.controlPanel.value;
 
   /**
    * @param {OhmsLawModel} model
@@ -87,11 +85,11 @@ define( function( require ) {
     } );
 
     // formula and circuit are contained in a "Play Area", structure available to assistive technology
-    var playAreaNode = new AccessibleSectionNode( playAreaString );
+    var playAreaNode = new PlayAreaNode();
     this.addChild( playAreaNode );
 
     // sound and reset all buttons contained in a "Control Panel", structure available to assistive technology
-    var controlPanelSectionNode = new AccessibleSectionNode( controlPanelString );
+    var controlPanelSectionNode = new ControlPanelNode();
     this.addChild( controlPanelSectionNode );
 
     var buttons = new HBox( {
