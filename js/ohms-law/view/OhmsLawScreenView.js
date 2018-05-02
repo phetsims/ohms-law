@@ -84,11 +84,11 @@ define( function( require ) {
       tandem: tandem.createTandem( 'resetAllButton' )
     } );
 
-    // formula and circuit are contained in a "Play Area", structure available to assistive technology
+    // a11y - formula and circuit are contained in a "Play Area", structure available to assistive technology
     var playAreaNode = new PlayAreaNode();
     this.addChild( playAreaNode );
 
-    // sound and reset all buttons contained in a "Control Panel", structure available to assistive technology
+    // a11y - sound and reset all buttons contained in a "Control Panel", structure available to assistive technology
     var controlPanelSectionNode = new ControlPanelNode();
     this.addChild( controlPanelSectionNode );
 

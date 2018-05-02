@@ -17,12 +17,9 @@ define( function( require ) {
   var SliderControlsHelpContent = require( 'SCENERY_PHET/keyboard/help/SliderControlsHelpContent' );
 
   /**
-   * Constructor.
-   *
-   * @param {Tandem} tandem
    * @constructor
    */
-  function OhmsLawKeyboardHelpContent( tandem ) {
+  function OhmsLawKeyboardHelpContent() {
 
     var sliderControlsHelpContent = new SliderControlsHelpContent();
     var generalNavigationHelpContent = new GeneralNavigationHelpContent();
@@ -30,8 +27,7 @@ define( function( require ) {
     HBox.call( this, {
       children: [ sliderControlsHelpContent, generalNavigationHelpContent ],
       align: 'top',
-      spacing: 30,
-      tandem: tandem
+      spacing: 30
     } );
   }
 

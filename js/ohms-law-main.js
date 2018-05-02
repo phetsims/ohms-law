@@ -21,8 +21,8 @@ define( function( require ) {
   // constants
   var tandem = Tandem.rootTandem;
 
-  // help content to describe keyboard interactions
-  var keyboardHelpContent = new OhmsLawKeyboardHelpContent( Tandem.rootTandem.createTandem( 'keyboardHelpContet' ) );
+  // a11y - help content to describe keyboard interactions
+  var keyboardHelpContent = new OhmsLawKeyboardHelpContent();
 
   var simOptions = {
     credits: {
