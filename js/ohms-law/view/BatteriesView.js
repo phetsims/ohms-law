@@ -32,7 +32,7 @@ define( function( require ) {
       tandem: tandem,
 
       // a11y
-      tagName: 'li'
+      tagName: 'li' // this assumes that it is a child of a 'ul'
     } );
     var self = this;
 
@@ -67,7 +67,7 @@ define( function( require ) {
         }
       } );
 
-      // update the description for the number of batteries
+      // a11y - update the description for the number of batteries
       self.innerContent = StringUtils.fillIn( batteriesSupplyPatternString, {
         voltage: Util.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS )
       } );

@@ -39,8 +39,6 @@ define( function( require ) {
   var voltageSliderLabelString = OhmsLawA11yStrings.voltageSliderLabel.value;
   var sliderControlsString = OhmsLawA11yStrings.sliderControls.value;
   var slidersDescriptionString = OhmsLawA11yStrings.slidersDescription.value;
-
-  // a11y strings
   var sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPattern.value;
   var letterRString = OhmsLawA11yStrings.letterR.value;
   var letterVString = OhmsLawA11yStrings.letterV.value;
@@ -84,6 +82,7 @@ define( function( require ) {
       voltageSliderLabelString,
       tandem.createTandem( 'voltageSlider' ),
       {
+        // a11y
         keyboardStep: 0.5, // volts
         shiftKeyboardStep: 0.1, // volts
         accessibleDecimalPlaces: OhmsLawConstants.VOLTAGE_SIG_FIGS,
@@ -111,7 +110,7 @@ define( function( require ) {
     var newCurrent;
 
     // based on the number of sizes for the formula letters
-    var currentRangePerSize = (OhmsLawModel.getCurrentRange().max - OhmsLawModel.getCurrentRange().min) / NUMBER_OF_LETTER_SIZES;
+    var currentRangePerSize = ( OhmsLawModel.getCurrentRange().max - OhmsLawModel.getCurrentRange().min ) / NUMBER_OF_LETTER_SIZES;
     var twoSizeCurrentThreshhold = currentRangePerSize * 2; // amount of current that must change to adjust change the current 2 a11y sizes.
 
     // a11y - This function will create the string alert to notify the resistance slider has been changed.
@@ -148,6 +147,7 @@ define( function( require ) {
       resistanceSliderLabelString,
       tandem.createTandem( 'resistanceSlider' ),
       {
+        // a11y
         keyboardStep: 20, // ohms
         shiftKeyboardStep: 1, // ohms
         accessibleValuePattern: resistanceUnitsPatternString,
@@ -171,6 +171,7 @@ define( function( require ) {
       descriptionContent: slidersDescriptionString
     } );
 
+    // a11y - set aria-labelledby attribute
     content.setAriaLabelledByNode( content );
     content.ariaLabelContent = AccessiblePeer.LABEL_SIBLING;
 
@@ -184,6 +185,7 @@ define( function( require ) {
     /**
      * Generate an alert from strings and values that describes a change in the model. Something like
      * "As letter V grows, letter I grows. Current now 10.0 milliamps with voltage at 5.0 volts."
+     * Used for a11y.
      *
      * @param  {string} initLetter - letter representing the model property that was changed
      * @param  {string} initSizeChange - string describing change in size of letter representing changed model Property

@@ -56,7 +56,7 @@ define( function( require ) {
   var DOT_GRID_COLUMNS = Util.roundSymmetric( RESISTOR_WIDTH / Math.sqrt( AREA_PER_DOT ) );
   var MAX_DOTS = DOT_GRID_COLUMNS * DOT_GRID_ROWS;
 
-  // Function to map resistance to number of dots
+  // a11y - Function to map resistance to number of dots
   var RESISTANCE_TO_NUM_DOTS = new LinearFunction(
     OhmsLawConstants.RESISTANCE_RANGE.min,
     OhmsLawConstants.RESISTANCE_RANGE.max,
@@ -76,7 +76,7 @@ define( function( require ) {
     options = _.extend( {
 
       // a11y
-      tagName: 'li'
+      tagName: 'li' // this assumes that it is a child of a 'ul'
     }, options );
 
     Node.call( this );

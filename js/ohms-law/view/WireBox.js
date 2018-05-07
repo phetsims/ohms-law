@@ -89,7 +89,7 @@ define( function( require ) {
     this.addChild( bottomRightArrow );
 
     // a11y - accessible description for the current
-    var accessibleCurrentNode = new Node( { tagName: 'li' } );
+    var accessibleCurrentNode = new Node( { tagName: 'li' } ); // this assumes that it is a child of a 'ul'
     this.addChild( accessibleCurrentNode );
 
     var currentReadoutPanel = new ReadoutPanel( model, tandem.createTandem( 'currentReadoutPanel' ), {

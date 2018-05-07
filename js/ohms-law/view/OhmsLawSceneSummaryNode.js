@@ -3,26 +3,25 @@
 /**
  * The scene accessible summary content for Ohms Law.  This manages the strings available
  * to a screen reader, and generates the parallel DOM structure.
- * 
+ *
  * @author Jesse Greenberg
  */
 define( function( require ) {
   'use strict';
 
   // modules
-  var AccessibleSectionNode = require( 'SCENERY_PHET/accessibility/AccessibleSectionNode' );
   var inherit = require( 'PHET_CORE/inherit' );
   var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
   var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  var SceneSummaryNode = require( 'SCENERY_PHET/accessibility/nodes/SceneSummaryNode' );
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Util = require( 'DOT/Util' );
 
   // a11y strings
   var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSliders.value;
-  var sceneSummaryString = JoistA11yStrings.sceneSummary.value;
   var summarySimString = OhmsLawA11yStrings.summarySim.value;
   var rightNowString = OhmsLawA11yStrings.rightNow.value;
   var voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPattern.value;
@@ -32,7 +31,7 @@ define( function( require ) {
 
   function OhmsLawSceneSummaryNode( model ) {
 
-    AccessibleSectionNode.call( this, sceneSummaryString );
+    var content = new Node();
 
     // h2 and main summary for this sim
     var summaryNode = new Node( {
@@ -53,11 +52,17 @@ define( function( require ) {
     var shortcutParagraphNode = new Node( { tagName: 'p', innerContent: checkOutShortcutsString } );
 
     // add all children to this node, ordering the accessible content
-    this.addChild( summaryNode );
-    this.addChild( rightNowParagraphNode );
-    this.addChild( valueListNode );
-    this.addChild( sliderParagraphNode );
-    this.addChild( shortcutParagraphNode );
+    content.addChild( summaryNode );
+    content.addChild( rightNowParagraphNode );
+    content.addChild( valueListNode );
+    content.addChild( sliderParagraphNode );
+    content.addChild( shortcutParagraphNode );
+
+    SceneSummaryNode.call( this, '', { // don't add the scene summary as a string, but as the content instead
+      content: content,
+      multiscreen: false
+    } );
+
 
     // add all values to a list so we can easily iterate and add listeners to update descriptions
     // with each property
@@ -95,5 +100,5 @@ define( function( require ) {
 
   ohmsLaw.register( 'OhmsLawSceneSummaryNode', OhmsLawSceneSummaryNode );
 
-  return inherit( AccessibleSectionNode, OhmsLawSceneSummaryNode );
+  return inherit( SceneSummaryNode, OhmsLawSceneSummaryNode );
 } );
