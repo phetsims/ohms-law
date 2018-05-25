@@ -41,8 +41,9 @@ define( function( require ) {
    */
   function WireBox( model, tandem, options ) {
 
-    Node.call( this, {
+    options = _.extend( {
 
+      // phet-io
       tandem: tandem,
 
       // a11y
@@ -50,7 +51,9 @@ define( function( require ) {
       labelTagName: 'h3',
       labelContent: circuitLabelString,
       descriptionContent: circuitDescriptionString
-    } );
+    }, options );
+
+    Node.call( this, options );
     var self = this;
 
     // For positioning, the top left corner of the wireFrame is defined as 0,0
@@ -119,8 +122,6 @@ define( function( require ) {
 
     // a11y - the order of descriptions should be batteries, resistance, then current
     this.accessibleOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
-
-    this.mutate( options );
   }
 
   ohmsLaw.register( 'WireBox', WireBox );
