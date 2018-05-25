@@ -36,38 +36,50 @@ define( function( require ) {
   function SliderUnit( property, range, symbolString, nameString, unitString, labelContent, tandem, options ) {
 
     options = _.extend( {
-      tandem: tandem,
-      accessibleDecimalPlaces: 0,
-      keyboardStep: 1,
-      shiftKeyboardStep: 0.1,
-      accessibleValuePattern: '{{value}}', // string pattern used for formating the value read by the screen reader
-      endDrag: function() {}, // called at end of drag by HSlider
-      startDrag: function() {}
+      hsliderOptions: null, // filled in below
+
+      // phet-io
+      tandem: tandem, // to be passed to supertype
+
+      // a11y
+      accessibleDecimalPlaces: 0
     }, options );
 
-    Node.call( this );
 
-    var slider = new HSlider( property, range, {
+    assert && assert( !options.hsliderOptions.tandem, 'tandem is set by SliderUnit.' );
+    assert && assert( !options.hsliderOptions.labelTagName, 'labelTagName is set by SliderUnit.' );
+    assert && assert( !options.hsliderOptions.containerTagName, 'containerTagName is set by SliderUnit.' );
+    assert && assert( !options.hsliderOptions.labelContent, 'labelContent is set by SliderUnit.' );
+
+    // default options to be passed into SSlider
+    options.hsliderOptions = _.extend( {
       trackFillEnabled: 'black',
       thumbFillEnabled: '#c3c4c5',
       thumbFillHighlighted: '#dedede',
       rotation: -Math.PI / 2,
-
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
+
+      endDrag: function() {}, // called at end of drag by HSlider
+      startDrag: function() {},
+
+      // phet-io
       tandem: tandem.createTandem( 'slider' ),
 
-      startDrag: options.startDrag,
-      endDrag: options.endDrag,
-
       // a11y
-      keyboardStep: options.keyboardStep,
-      shiftKeyboardStep: options.shiftKeyboardStep,
-      accessibleDecimalPlaces: options.accessibleDecimalPlaces,
-      accessibleValuePattern: options.accessibleValuePattern,
       containerTagName: 'li',
       labelContent: labelContent,
-      labelTagName: 'label'
-    } );
+      labelTagName: 'label',
+
+      keyboardStep: 1,
+      shiftKeyboardStep: 0.1,
+      accessibleValuePattern: '{{value}}', // string pattern used for formating the value read by the screen reader
+      accessibleDecimalPlaces: options.accessibleDecimalPlaces // default to the same as the SliderUnit
+
+    }, options.hsliderOptions );
+
+    Node.call( this );
+
+    var slider = new HSlider( property, range, options.hsliderOptions );
 
     var symbolText = new Text( symbolString, {
       font: OhmsLawConstants.SYMBOL_FONT,

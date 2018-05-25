@@ -82,26 +82,31 @@ define( function( require ) {
       voltageSliderLabelString,
       tandem.createTandem( 'voltageSlider' ),
       {
-        // a11y
-        keyboardStep: 0.5, // volts
-        shiftKeyboardStep: 0.1, // volts
-        accessibleDecimalPlaces: OhmsLawConstants.VOLTAGE_SIG_FIGS,
-        accessibleValuePattern: voltageUnitsPatternString,
-        startDrag: function() {
-          oldVoltage = voltageProperty.get();
-        },
-        endDrag: function() {
-          newVoltage = voltageProperty.get();
+        hsliderOptions: {
 
-          if ( oldVoltage !== newVoltage ) {
-            // a11y - when V changes, announce an alert that describes the change
-            var sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
-            var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
+          // a11y
+          keyboardStep: 0.5, // volts
+          shiftKeyboardStep: 0.1, // volts
+          accessibleValuePattern: voltageUnitsPatternString,
+          startDrag: function() {
+            oldVoltage = voltageProperty.get();
+          },
+          endDrag: function() {
+            newVoltage = voltageProperty.get();
 
-            var alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
-            utteranceQueue.addToBack( new Utterance( alert, { typeId: 'voltageAlert' } ) );
+            if ( oldVoltage !== newVoltage ) {
+              // a11y - when V changes, announce an alert that describes the change
+              var sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
+              var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
+
+              var alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
+              utteranceQueue.addToBack( new Utterance( alert, { typeId: 'voltageAlert' } ) );
+            }
           }
-        }
+        },
+
+        // a11y
+        accessibleDecimalPlaces: OhmsLawConstants.VOLTAGE_SIG_FIGS
       } );
 
     var oldResistance; // stored on startDrag
@@ -147,16 +152,21 @@ define( function( require ) {
       resistanceSliderLabelString,
       tandem.createTandem( 'resistanceSlider' ),
       {
-        // a11y
-        keyboardStep: 20, // ohms
-        shiftKeyboardStep: 1, // ohms
-        accessibleValuePattern: resistanceUnitsPatternString,
-        accessibleDecimalPlaces: OhmsLawConstants.RESISTANCE_SIG_FIGS,
-        startDrag: function() {
-          oldResistance = resistanceProperty.get();
-          oldCurrent = currentProperty.get();
+        hsliderOptions: {
+
+          // a11y
+          keyboardStep: 20, // ohms
+          shiftKeyboardStep: 1, // ohms
+          accessibleValuePattern: resistanceUnitsPatternString,
+          startDrag: function() {
+            oldResistance = resistanceProperty.get();
+            oldCurrent = currentProperty.get();
+          },
+          endDrag: endResistanceDrag
         },
-        endDrag: endResistanceDrag
+
+        // a11y
+        accessibleDecimalPlaces: OhmsLawConstants.RESISTANCE_SIG_FIGS
       } );
 
     // Use a content node so that the Panel can surround it fully
