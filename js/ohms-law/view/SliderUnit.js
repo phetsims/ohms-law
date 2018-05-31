@@ -72,7 +72,7 @@ define( function( require ) {
 
       keyboardStep: 1,
       shiftKeyboardStep: 0.1,
-      accessibleValuePattern: '{{value}}', // string pattern used for formating the value read by the screen reader
+      accessibleValuePattern: '{{value}}', // string pattern used for formatting the value read by the screen reader
       accessibleDecimalPlaces: options.accessibleDecimalPlaces // default to the same as the SliderUnit
 
     }, options.hsliderOptions );
