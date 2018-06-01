@@ -154,7 +154,7 @@ define( function( require ) {
    * @returns {Rectangle}
    */
   function getAntiArtifactRectangle( node ) {
-    return Rectangle.bounds( node.bounds.dilatedX( 1 ) );
+    return Rectangle.bounds( node.bounds.dilated( 1 ) );
   }
 
   ohmsLaw.register( 'FormulaNode', FormulaNode );
