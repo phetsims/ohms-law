@@ -181,9 +181,12 @@ define( function( require ) {
       descriptionContent: slidersDescriptionString
     } );
 
-    // a11y - set aria-labelledby attribute
-    content.setAriaLabelledByNode( content );
-    content.ariaLabelContent = AccessiblePeer.LABEL_SIBLING;
+    // a11y - the content is aria-labelledby the content's label sibling
+    content.addAriaLabelledbyAssociation( {
+      thisElementName: AccessiblePeer.PRIMARY_SIBLING,
+      otherNode: content,
+      otherElementName: AccessiblePeer.LABEL_SIBLING
+    } );
 
     Panel.call( this, content, options );
   }
