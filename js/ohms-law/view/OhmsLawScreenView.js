@@ -32,9 +32,6 @@ define( function( require ) {
   var ADD_BATTERY_SOUND = new Sound( require( 'audio!OHMS_LAW/add-battery.mp3' ) );
   var REMOVE_BATTERY_SOUND = new Sound( require( 'audio!OHMS_LAW/remove-battery.mp3' ) );
 
-  // a11y strings
-  var ohmsLawTitleString = OhmsLawA11yStrings.ohmsLawTitle.value;
-
   /**
    * @param {OhmsLawModel} model
    * @param {Tandem} tandem
@@ -48,7 +45,6 @@ define( function( require ) {
     } );
 
     ScreenView.call( this, {
-      labelContent: ohmsLawTitleString,
       tandem: tandem
     } );
 

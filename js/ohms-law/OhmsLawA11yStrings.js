@@ -26,11 +26,6 @@ define( function( require ) {
       value: 'V, Voltage'
     },
 
-    // accessible title for Ohms Law
-    ohmsLawTitle: {
-      value: 'Ohm\'s Law'
-    },
-
     //--------------------------------------------------------------------------
     // Relative size strings
     //--------------------------------------------------------------------------
