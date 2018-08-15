@@ -29,7 +29,7 @@ define( function( require ) {
   var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPattern.value;
   var checkOutShortcutsString = JoistA11yStrings.checkOutShortcuts.value;
 
-  function OhmsLawScreenSummary( model ) {
+  function OhmsLawScreenSummaryNode( model ) {
 
     var content = new Node();
 
@@ -98,7 +98,7 @@ define( function( require ) {
     } );
   }
 
-  ohmsLaw.register( 'OhmsLawScreenSummary', OhmsLawScreenSummary );
+  ohmsLaw.register( 'OhmsLawScreenSummaryNode', OhmsLawScreenSummaryNode );
 
-  return inherit( SceneSummaryNode, OhmsLawScreenSummary );
+  return inherit( SceneSummaryNode, OhmsLawScreenSummaryNode );
 } );
