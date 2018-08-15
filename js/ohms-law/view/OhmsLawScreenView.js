@@ -44,7 +44,10 @@ define( function( require ) {
     } );
 
     ScreenView.call( this, {
-      tandem: tandem
+      tandem: tandem,
+
+      // a11y - temporary, should be removed on completion of https://github.com/phetsims/scenery-phet/issues/393
+      addScreenSummaryNode: true
     } );
 
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
@@ -58,7 +61,8 @@ define( function( require ) {
     } );
 
     // a11y - the scene summary to be read by assistive technology
-    this.addChild( new OhmsLawScreenSummaryNode( model ) );
+    // this.addChild( new OhmsLawScreenSummaryNode( model ) );
+    this.screenSummaryNode.addChild( new OhmsLawScreenSummaryNode( model ) );
 
     // Create the control panel with sliders.
     var controlPanel = new ControlPanel( model.voltageProperty, model.resistanceProperty, model.currentProperty, tandem.createTandem( 'controlPanel' ) );

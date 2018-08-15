@@ -11,12 +11,10 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
-  var JoistA11yStrings = require( 'JOIST/JoistA11yStrings' );
   var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var SceneSummaryNode = require( 'SCENERY_PHET/accessibility/nodes/SceneSummaryNode' );
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Util = require( 'DOT/Util' );
 
@@ -27,13 +25,10 @@ define( function( require ) {
   var voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPattern.value;
   var resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPattern.value;
   var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPattern.value;
-  var checkOutShortcutsString = JoistA11yStrings.checkOutShortcuts.value;
 
   function OhmsLawScreenSummaryNode( model ) {
+    Node.call( this );
 
-    var content = new Node();
-
-    // h2 and main summary for this sim
     var summaryNode = new Node( {
       tagName: 'p',
       innerContent: summarySimString
@@ -49,20 +44,12 @@ define( function( require ) {
     valueListNode.children = [ valueVoltageItemNode, valueResistanceItemNode, valueCurrentItemNode ];
 
     var sliderParagraphNode = new Node( { tagName: 'p', innerContent: summaryLookForSlidersString } );
-    var shortcutParagraphNode = new Node( { tagName: 'p', innerContent: checkOutShortcutsString } );
 
     // add all children to this node, ordering the accessible content
-    content.addChild( summaryNode );
-    content.addChild( rightNowParagraphNode );
-    content.addChild( valueListNode );
-    content.addChild( sliderParagraphNode );
-    content.addChild( shortcutParagraphNode );
-
-    SceneSummaryNode.call( this, '', { // don't add the scene summary as a string, but as the content instead
-      content: content,
-      multiscreen: false
-    } );
-
+    this.addChild( summaryNode );
+    this.addChild( rightNowParagraphNode );
+    this.addChild( valueListNode );
+    this.addChild( sliderParagraphNode );
 
     // add all values to a list so we can easily iterate and add listeners to update descriptions
     // with each property
@@ -100,5 +87,5 @@ define( function( require ) {
 
   ohmsLaw.register( 'OhmsLawScreenSummaryNode', OhmsLawScreenSummaryNode );
 
-  return inherit( SceneSummaryNode, OhmsLawScreenSummaryNode );
+  return inherit( Node, OhmsLawScreenSummaryNode );
 } );
