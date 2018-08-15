@@ -151,10 +151,10 @@ define( function( require ) {
     },
 
     //--------------------------------------------------------------------------
-    // Scene summary strings
+    // Screen summary strings
     //--------------------------------------------------------------------------
 
-    // pattern for the current arrow description in the scene summary
+    // pattern for the current arrow description in the screen summary
     summaryCurrentPattern: {
       value: '<em>{{size}}</em> arrows indicate amount of current flowing clockwise at {{current}} milliamps.'
     },
