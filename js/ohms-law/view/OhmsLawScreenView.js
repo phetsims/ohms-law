@@ -60,7 +60,7 @@ define( function( require ) {
       pickable: false
     } );
 
-    // a11y - the scene summary to be read by assistive technology
+    // a11y - the screen summary to be read by assistive technology
     // this.addChild( new OhmsLawScreenSummaryNode( model ) );
     this.screenSummaryNode.addChild( new OhmsLawScreenSummaryNode( model ) );
 

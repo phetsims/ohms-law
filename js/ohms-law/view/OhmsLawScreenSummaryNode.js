@@ -74,7 +74,7 @@ define( function( require ) {
       }
     ];
 
-    // register listeners that update the labels in the scene summary - this summary exists for life of sim,
+    // register listeners that update the labels in the screen summary - this summary exists for life of sim,
     // no need to dispose
     valueItemList.forEach( function( item ) {
       item.property.link( function( value ) {
