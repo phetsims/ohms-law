@@ -24,7 +24,7 @@ symbol from the formula, the word it represents, and the value of the variable (
 
 The `WireBox` is the graphical representation of Ohm's Law. It is a drawn circuit with illustrated current directional
 arrows (`RightAngleArrow`), with Batteries on one side of it for the voltage (`BatteriesView`), and a resistor on the other
-side (`ResistorNode`). In the center of the `WireBox`, a readout of the the value of current is displayed (`ReadoutNode`).
+side (`ResistorNode`). In the center of the `WireBox`, a readout of the value of current is displayed (`ReadoutNode`).
 Depending on the voltage, more or less AA batteries will show on the top of the wireBox (each represent 1.5 volts). 
 Depending on the resistance, more or less dots are drawn on the resistor.
 

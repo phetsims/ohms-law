@@ -66,7 +66,7 @@ define( function( require ) {
       yMargin: 10,
       lineWidth: 3,
       resize: false,
-      preventFit: true, // used to avoid jostling in the control panel when the the resistance changes quickly, see https://github.com/phetsims/ohms-law/issues/68
+      preventFit: true, // used to avoid jostling in the control panel when the resistance changes quickly, see https://github.com/phetsims/ohms-law/issues/68
       tandem: tandem
     }, options );
 
