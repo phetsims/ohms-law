@@ -12,7 +12,7 @@ define( function( require ) {
   // modules
   var BooleanProperty = require( 'AXON/BooleanProperty' );
   var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
-  var ControlPanelNode = require( 'SCENERY_PHET/accessibility/nodes/ControlPanelNode' );
+  var ControlAreaNode = require( 'SCENERY_PHET/accessibility/nodes/ControlAreaNode' );
   var FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -88,7 +88,7 @@ define( function( require ) {
     this.addChild( playAreaNode );
 
     // a11y - sound and reset all buttons contained in a "Control Panel", structure available to assistive technology
-    var controlPanelSectionNode = new ControlPanelNode();
+    var controlPanelSectionNode = new ControlAreaNode();
     this.addChild( controlPanelSectionNode );
 
     var buttons = new HBox( {
