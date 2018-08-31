@@ -1,4 +1,4 @@
-// Copyright 2017, University of Colorado Boulder
+// Copyright 2018, University of Colorado Boulder
 
 /**
  * Slider unit with a vertical slider, a label above the slider and a readout display below the slider.
@@ -9,7 +9,6 @@ define( function( require ) {
 
   // modules
   var Dimension2 = require( 'DOT/Dimension2' );
-  var HSlider = require( 'SUN/HSlider' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
@@ -18,6 +17,7 @@ define( function( require ) {
   var Text = require( 'SCENERY/nodes/Text' );
   var Util = require( 'DOT/Util' );
   var VBox = require( 'SCENERY/nodes/VBox' );
+  var VSlider = require( 'SUN/VSlider' );
 
   // constants
   var READOUT_SPACING = 6;
@@ -56,7 +56,6 @@ define( function( require ) {
       trackFillEnabled: 'black',
       thumbFillEnabled: '#c3c4c5',
       thumbFillHighlighted: '#dedede',
-      rotation: -Math.PI / 2,
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
 
       endDrag: function() {}, // called at end of drag by HSlider
@@ -79,7 +78,7 @@ define( function( require ) {
 
     Node.call( this );
 
-    var slider = new HSlider( property, range, options.hsliderOptions );
+    var slider = new VSlider( property, range, options.hsliderOptions );
 
     var symbolText = new Text( symbolString, {
       font: OhmsLawConstants.SYMBOL_FONT,
