@@ -28,8 +28,8 @@ define( function( require ) {
 
   // audio
   // The sounds themselves can be constants because there is only every one instance of OhmsLawScreenView.
-  var ADD_BATTERY_SOUND = new Sound( require( 'audio!OHMS_LAW/add-battery.mp3' ) );
-  var REMOVE_BATTERY_SOUND = new Sound( require( 'audio!OHMS_LAW/remove-battery.mp3' ) );
+  var ADD_BATTERY_SOUND = new Sound( require( 'sound!OHMS_LAW/add-battery.mp3' ) );
+  var REMOVE_BATTERY_SOUND = new Sound( require( 'sound!OHMS_LAW/remove-battery.mp3' ) );
 
   /**
    * @param {OhmsLawModel} model
