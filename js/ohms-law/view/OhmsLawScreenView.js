@@ -26,7 +26,7 @@ define( function( require ) {
   var SoundToggleButton = require( 'SCENERY_PHET/buttons/SoundToggleButton' );
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
 
-  // audio
+  // sounds
   // The sounds themselves can be constants because there is only every one instance of OhmsLawScreenView.
   var ADD_BATTERY_SOUND = new Sound( require( 'sound!OHMS_LAW/add-battery.mp3' ) );
   var REMOVE_BATTERY_SOUND = new Sound( require( 'sound!OHMS_LAW/remove-battery.mp3' ) );
