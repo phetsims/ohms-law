@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.3.11 Wed Aug 15 2018 14:16:40 GMT-0600 (MDT)",
+  "comment": "# ohms-law 1.3.11 Fri Sep 21 2018 17:36:12 GMT-0600 (MDT)",
   "assert": {
     "sha": "7d27130a4d27da15aa7f8a21bbfb9245288c1b44",
     "branch": "HEAD"
@@ -13,8 +13,8 @@
     "branch": "HEAD"
   },
   "chipper": {
-    "sha": "b293a94038b44f817f567ec421f396af8f812add",
-    "branch": "HEAD"
+    "sha": "0fd6f5a1e5733fa58a6cee32581dc38dc2228399",
+    "branch": "ohms-law-1.3"
   },
   "dot": {
     "sha": "da78031b6f080d20bc8346beaa1d37148188371e",
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "ccdc484f8fe27a0367b0d1c40bbcdfda8a6efdb5",
+    "sha": "a0d1d4e1aa111514a6065070cf66456f8c1d026f",
     "branch": "1.3"
   },
   "phet-core": {
