@@ -100,7 +100,7 @@ define( function( require ) {
               var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
               var alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
-              utteranceQueue.addToBack( new Utterance( alert, { uniqueGroupId: 'voltageAlert' } ) );
+              utteranceQueue.addToBack( new Utterance( { alert: alert, uniqueGroupId: 'voltageAlert' } ) );
             }
           }
         },
@@ -135,7 +135,8 @@ define( function( require ) {
         iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ' ' + aLotString : '';
 
         var alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
-        utteranceQueue.addToBack( new Utterance( alert, {
+        utteranceQueue.addToBack( new Utterance( {
+          alert: alert,
           uniqueGroupId: 'resistanceAlert'
         } ) );
       }
