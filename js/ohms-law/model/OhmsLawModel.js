@@ -18,7 +18,7 @@ define( function( require ) {
   var Range = require( 'DOT/Range' );
 
   // ifphetio
-  var NumberIO = require( 'ifphetio!PHET_IO/types/NumberIO' );
+  var NumberIO = require( 'TANDEM/types/NumberIO' );
 
   /**
    * @constructor
