@@ -11,8 +11,8 @@ define( function( require ) {
 
   // modules
   var BooleanProperty = require( 'AXON/BooleanProperty' );
-  var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
   var ControlAreaNode = require( 'SCENERY_PHET/accessibility/nodes/ControlAreaNode' );
+  var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
   var FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var inherit = require( 'PHET_CORE/inherit' );
