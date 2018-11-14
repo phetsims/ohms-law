@@ -68,6 +68,7 @@ define( function( require ) {
       containerTagName: 'li',
       labelContent: labelContent,
       labelTagName: 'label',
+      roundToStepSize: true, // so default keyboard step rounds to pedegogically useful values
 
       keyboardStep: 1,
       shiftKeyboardStep: 0.1,
