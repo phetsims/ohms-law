@@ -1,4 +1,4 @@
-// Copyright 2013-2017, University of Colorado Boulder
+// Copyright 2013-2018, University of Colorado Boulder
 
 /**
  * Primary model for the Ohm's Law simulation, see doc/model.md for more information.
