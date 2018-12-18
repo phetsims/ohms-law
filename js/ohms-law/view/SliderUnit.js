@@ -57,6 +57,7 @@ define( function( require ) {
       thumbFillEnabled: '#c3c4c5',
       thumbFillHighlighted: '#dedede',
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
+      thumbSize: new Dimension2( 22, 45 ),
 
       endDrag: function() {}, // called at end of drag by HSlider
       startDrag: function() {},
