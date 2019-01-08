@@ -159,7 +159,7 @@ define( function( require ) {
 
     /**
      * Get a description of the resistance based on the value of the resistance.
-     * @return {string} resistance
+     * @returns {string} resistance
      */
     getResistanceDescription: function( resistance ) {
       var range = OhmsLawConstants.RESISTANCE_RANGE;

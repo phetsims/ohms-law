@@ -72,7 +72,7 @@ define( function( require ) {
     /**
      * Get the normalized voltage over the range of allowed voltages in this sim.
      *
-     * @return {number}
+     * @returns {number}
      */
     getNormalizedVoltage: function() {
       var range = OhmsLawConstants.VOLTAGE_RANGE;
@@ -81,7 +81,7 @@ define( function( require ) {
 
     /**
      * Get the normalized current, based on the allowable values for current in this sim.
-     * @return {number}
+     * @returns {number}
      */
     getNormalizedCurrent: function() {
       var range = OhmsLawModel.getCurrentRange();
@@ -91,7 +91,7 @@ define( function( require ) {
     /**
      * Get the normalized resistance, based on the allowable values for resistance in this
      * sim.
-     * @return {number}
+     * @returns {number}
      */
     getNormalizedResistance: function() {
       var range = OhmsLawConstants.RESISTANCE_RANGE;
@@ -110,7 +110,7 @@ define( function( require ) {
 
     /**
      * Get the minimum current that can be computed by the model.
-     * @return {number} [description]
+     * @returns {number} [description]
      */
     getMinCurrent: function() {
       return computeCurrent( OhmsLawConstants.VOLTAGE_RANGE.min, OhmsLawConstants.RESISTANCE_RANGE.max );

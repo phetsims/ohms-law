@@ -133,7 +133,7 @@ define( function( require ) {
      * Get a description of the arrow size.  Returns omething like "small" or "huge" or "medium size".
      * @public
      *
-     * @return {string}
+     * @returns {string}
      */
     getArrowSizeDescription: function() {
 

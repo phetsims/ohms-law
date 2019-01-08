@@ -205,7 +205,7 @@ define( function( require ) {
      * @param  {string} initSizeChange - string describing change in size of letter representing changed model Property
      * @param  {string} iSizeChange - string describing size change of letter I
      * @param  {number} currentVal - value of model current Property
-     * @return {string} string
+     * @returns {string} string
      */
     getValueChangeAlertString: function( initLetter, initSizeChange, iSizeChange, currentVal ) {
       return StringUtils.fillIn( sliderChangeAlertPatternString, {

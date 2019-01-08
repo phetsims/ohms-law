@@ -167,7 +167,7 @@ define( function( require ) {
      * Used for a11y.
      *
      * @public
-     * @return {string}
+     * @returns {string}
      */
     getComparativeSizeDescription: function() {
 
