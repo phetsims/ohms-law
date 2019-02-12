@@ -28,5 +28,5 @@ side (`ResistorNode`). In the center of the `WireBox`, a readout of the value of
 Depending on the voltage, more or less AA batteries will show on the top of the wireBox (each represent 1.5 volts). 
 Depending on the resistance, more or less dots are drawn on the resistor.
 
-The sound is also controlled in the view. Each time a battery is added or taken away, a sound is played.There is also 
-a button that toggles muting.
+The sound is also controlled in the view. Sounds are played based on interactions with the sliders and on changes to the
+amount of current flowing in the circuit.

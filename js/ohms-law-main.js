@@ -33,7 +33,8 @@ define( function( require ) {
       thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team to convert this ' +
               'simulation to HTML5.'
     },
-    keyboardHelpNode: keyboardHelpContent
+    keyboardHelpNode: keyboardHelpContent,
+    supportsSound: true
   };
 
   SimLauncher.launch( function() {
