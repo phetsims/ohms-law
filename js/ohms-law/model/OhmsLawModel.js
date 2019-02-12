@@ -9,6 +9,7 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var BooleanProperty = require( 'AXON/BooleanProperty' );
   var DerivedProperty = require( 'AXON/DerivedProperty' );
   var DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -38,12 +39,18 @@ define( function( require ) {
     } );
 
     // @public {Property.<number>} create a derived property that tracks the current in milli amps
-    this.currentProperty = new DerivedProperty( [ this.voltageProperty, this.resistanceProperty ],
-      computeCurrent, {
+    this.currentProperty = new DerivedProperty(
+      [ this.voltageProperty, this.resistanceProperty ],
+      computeCurrent,
+      {
         tandem: tandem.createTandem( 'currentProperty' ),
         units: 'milliamperes',
         phetioType: DerivedPropertyIO( NumberIO )
-      } );
+      }
+    );
+
+    // @public (read-only) {BooleanProperty} - true when a reset is in progress, false otherwise
+    this.resetInProgressProperty = new BooleanProperty( false );
   }
 
   /**
@@ -65,8 +72,10 @@ define( function( require ) {
      * @public
      */
     reset: function() {
+      this.resetInProgressProperty.set( true );
       this.voltageProperty.reset();
       this.resistanceProperty.reset();
+      this.resetInProgressProperty.set( false );
     },
 
     /**

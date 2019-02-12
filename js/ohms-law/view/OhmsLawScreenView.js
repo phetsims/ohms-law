@@ -18,7 +18,9 @@ define( function( require ) {
   var OhmsLawScreenSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenSummaryNode' );
   var PlayAreaNode = require( 'SCENERY_PHET/accessibility/nodes/PlayAreaNode' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
+  var ResetAllSoundGenerator = require( 'TAMBO/sound-generators/ResetAllSoundGenerator' );
   var ScreenView = require( 'JOIST/ScreenView' );
+  var soundManager = require( 'TAMBO/soundManager' );
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
 
   // sounds
@@ -66,6 +68,10 @@ define( function( require ) {
       },
       tandem: tandem.createTandem( 'resetAllButton' )
     } );
+
+    soundManager.addSoundGenerator( new ResetAllSoundGenerator( model.resetInProgressProperty, {
+      initialOutputLevel: 0.7
+    } ) );
 
     // a11y - formula and circuit are contained in a "Play Area", structure available to assistive technology
     var playAreaNode = new PlayAreaNode();
