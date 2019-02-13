@@ -47,7 +47,7 @@ define( function( require ) {
     function updateSoundGeneration( current ) {
 
       // any change turns on the playback
-      if ( !self.playing ) {
+      if ( !self.isPlaying ) {
         self.play();
       }
       self.currentSoundCountdownTimer = PRE_FADE_TIME + FADE_OUT_TIME;
