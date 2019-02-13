@@ -39,7 +39,7 @@ define( function( require ) {
     var self = this;
 
     options = _.extend( {
-      hsliderOptions: null, // filled in below
+      sliderOptions: null, // filled in below
 
       // phet-io
       tandem: tandem, // to be passed to supertype
@@ -48,13 +48,13 @@ define( function( require ) {
       accessibleDecimalPlaces: 0
     }, options );
 
-    assert && assert( !options.hsliderOptions.tandem, 'tandem is set by SliderUnit.' );
-    assert && assert( !options.hsliderOptions.labelTagName, 'labelTagName is set by SliderUnit.' );
-    assert && assert( !options.hsliderOptions.containerTagName, 'containerTagName is set by SliderUnit.' );
-    assert && assert( !options.hsliderOptions.labelContent, 'labelContent is set by SliderUnit.' );
+    assert && assert( !options.sliderOptions.tandem, 'tandem is set by SliderUnit.' );
+    assert && assert( !options.sliderOptions.labelTagName, 'labelTagName is set by SliderUnit.' );
+    assert && assert( !options.sliderOptions.containerTagName, 'containerTagName is set by SliderUnit.' );
+    assert && assert( !options.sliderOptions.labelContent, 'labelContent is set by SliderUnit.' );
 
     // default options to be passed into Slider
-    options.hsliderOptions = _.extend( {
+    options.sliderOptions = _.extend( {
       trackFillEnabled: 'black',
       thumbFillEnabled: '#c3c4c5',
       thumbFillHighlighted: '#dedede',
@@ -74,18 +74,18 @@ define( function( require ) {
       accessibleValuePattern: '{{value}}', // string pattern used for formatting the value read by the screen reader
       accessibleDecimalPlaces: options.accessibleDecimalPlaces // default to the same as the SliderUnit
 
-    }, options.hsliderOptions );
+    }, options.sliderOptions );
 
     // override the start and end drag functions in the options
-    var providedStartDragFunction = options.hsliderOptions.startDrag;
-    options.hsliderOptions.startDrag = function( event ) {
+    var providedStartDragFunction = options.sliderOptions.startDrag;
+    options.sliderOptions.startDrag = function( event ) {
       if ( event.type === 'keydown' ) {
         self.sliderDraggingByKeyboard.set( true );
       }
       providedStartDragFunction && providedStartDragFunction();
     };
-    var providedEndDragFunction = options.hsliderOptions.endDrag;
-    options.hsliderOptions.endDrag = function() {
+    var providedEndDragFunction = options.sliderOptions.endDrag;
+    options.sliderOptions.endDrag = function() {
       self.sliderDraggingByKeyboard.set( false );
       providedEndDragFunction && providedEndDragFunction();
     };
@@ -95,7 +95,7 @@ define( function( require ) {
     // @public (read-only) {BooleanProperty} - a property that indicates if the slider is being dragged via the keyboard
     this.sliderDraggingByKeyboard = new BooleanProperty( false );
 
-    var slider = new VSlider( property, range, options.hsliderOptions );
+    var slider = new VSlider( property, range, options.sliderOptions );
 
     var symbolText = new Text( symbolString, {
       font: OhmsLawConstants.SYMBOL_FONT,

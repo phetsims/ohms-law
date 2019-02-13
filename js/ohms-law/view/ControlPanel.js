@@ -83,7 +83,7 @@ define( function( require ) {
       voltageSliderLabelString,
       tandem.createTandem( 'voltageSlider' ),
       {
-        hsliderOptions: {
+        sliderOptions: {
 
           // a11y
           keyboardStep: 0.5, // volts
@@ -154,7 +154,7 @@ define( function( require ) {
       resistanceSliderLabelString,
       tandem.createTandem( 'resistanceSlider' ),
       {
-        hsliderOptions: {
+        sliderOptions: {
 
           // a11y
           keyboardStep: 20, // ohms
