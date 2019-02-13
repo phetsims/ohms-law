@@ -10,6 +10,7 @@ define( function( require ) {
 
   // modules
   var AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
+  var DerivedProperty = require( 'AXON/DerivedProperty' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var inherit = require( 'PHET_CORE/inherit' );
   var MathSymbols = require( 'SCENERY_PHET/MathSymbols' );
@@ -107,7 +108,8 @@ define( function( require ) {
 
         // a11y
         accessibleDecimalPlaces: OhmsLawConstants.VOLTAGE_SIG_FIGS
-      } );
+      }
+    );
 
     var oldResistance; // stored on startDrag
     var newResistance; // stored on endDrag
@@ -141,7 +143,6 @@ define( function( require ) {
         } ) );
       }
     };
-
 
     // Create the resistance slider with readout and labels
     var resistanceSlider = new SliderUnit(
@@ -181,6 +182,15 @@ define( function( require ) {
       labelContent: sliderControlsString,
       descriptionContent: slidersDescriptionString
     } );
+
+    // @public (read-only) {BooleanProperty} - a property that indicates whether either slider is being dragged via
+    // keyboard interaction
+    this.sliderBeingDraggedByKeyboard = new DerivedProperty(
+      [ voltageSlider.sliderDraggingByKeyboard, resistanceSlider.sliderDraggingByKeyboard ],
+      function( voltageSliderDraggedByKeyboard, resisitanceSliderDraggedByKeyboard ) {
+        return voltageSliderDraggedByKeyboard || resisitanceSliderDraggedByKeyboard;
+      }
+    );
 
     // a11y - the content is aria-labelledby the content's label sibling
     content.addAriaLabelledbyAssociation( {

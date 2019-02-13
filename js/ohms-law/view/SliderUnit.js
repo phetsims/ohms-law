@@ -8,6 +8,7 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var BooleanProperty = require( 'AXON/BooleanProperty' );
   var Dimension2 = require( 'DOT/Dimension2' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
@@ -35,6 +36,8 @@ define( function( require ) {
    */
   function SliderUnit( property, range, symbolString, nameString, unitString, labelContent, tandem, options ) {
 
+    var self = this;
+
     options = _.extend( {
       hsliderOptions: null, // filled in below
 
@@ -45,22 +48,18 @@ define( function( require ) {
       accessibleDecimalPlaces: 0
     }, options );
 
-
     assert && assert( !options.hsliderOptions.tandem, 'tandem is set by SliderUnit.' );
     assert && assert( !options.hsliderOptions.labelTagName, 'labelTagName is set by SliderUnit.' );
     assert && assert( !options.hsliderOptions.containerTagName, 'containerTagName is set by SliderUnit.' );
     assert && assert( !options.hsliderOptions.labelContent, 'labelContent is set by SliderUnit.' );
 
-    // default options to be passed into SSlider
+    // default options to be passed into Slider
     options.hsliderOptions = _.extend( {
       trackFillEnabled: 'black',
       thumbFillEnabled: '#c3c4c5',
       thumbFillHighlighted: '#dedede',
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
       thumbSize: new Dimension2( 22, 45 ),
-
-      endDrag: function() {}, // called at end of drag by HSlider
-      startDrag: function() {},
 
       // phet-io
       tandem: tandem.createTandem( 'slider' ),
@@ -70,7 +69,6 @@ define( function( require ) {
       labelContent: labelContent,
       labelTagName: 'label',
       roundToStepSize: true, // so default keyboard step rounds to pedegogically useful values
-
       keyboardStep: 1,
       shiftKeyboardStep: 0.1,
       accessibleValuePattern: '{{value}}', // string pattern used for formatting the value read by the screen reader
@@ -78,7 +76,24 @@ define( function( require ) {
 
     }, options.hsliderOptions );
 
+    // override the start and end drag functions in the options
+    var providedStartDragFunction = options.hsliderOptions.startDrag;
+    options.hsliderOptions.startDrag = function( event ) {
+      if ( event.type === 'keydown' ) {
+        self.sliderDraggingByKeyboard.set( true );
+      }
+      providedStartDragFunction && providedStartDragFunction();
+    };
+    var providedEndDragFunction = options.hsliderOptions.endDrag;
+    options.hsliderOptions.endDrag = function() {
+      self.sliderDraggingByKeyboard.set( false );
+      providedEndDragFunction && providedEndDragFunction();
+    };
+
     Node.call( this );
+
+    // @public (read-only) {BooleanProperty} - a property that indicates if the slider is being dragged via the keyboard
+    this.sliderDraggingByKeyboard = new BooleanProperty( false );
 
     var slider = new VSlider( property, range, options.hsliderOptions );
 

@@ -38,7 +38,7 @@ define( function( require ) {
   function OhmsLawScreenView( model, tandem ) {
 
     var self = this;
-    
+
     ScreenView.call( this, {
       tandem: tandem,
 
@@ -56,6 +56,18 @@ define( function( require ) {
       pickable: false
     } );
 
+    // a11y - the screen summary to be read by assistive technology
+    // this.addChild( new OhmsLawScreenSummaryNode( model ) );
+    this.screenSummaryNode.addChild( new OhmsLawScreenSummaryNode( model ) );
+
+    // create the control panel with sliders
+    var controlPanel = new ControlPanel(
+      model.voltageProperty,
+      model.resistanceProperty,
+      model.currentProperty,
+      tandem.createTandem( 'controlPanel' )
+    );
+
     // sound generators for voltage and resistance
     var resetNotInProgress = new InvertedBooleanProperty( model.resetInProgressProperty );
     soundManager.addSoundGenerator( new DiscreteSoundGenerator(
@@ -65,7 +77,8 @@ define( function( require ) {
         sound: sliderClick,
         numBins: 6,
         enableControlProperties: [ resetNotInProgress ],
-        initialOutputLevel: 0.3
+        initialOutputLevel: 0.3,
+        alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboard
       }
     ) );
     soundManager.addSoundGenerator( new DiscreteSoundGenerator(
@@ -75,7 +88,8 @@ define( function( require ) {
         sound: sliderClick,
         numBins: 6,
         enableControlProperties: [ resetNotInProgress ],
-        initialOutputLevel: 0.3
+        initialOutputLevel: 0.3,
+        alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboard
       }
     ) );
 
@@ -84,18 +98,6 @@ define( function( require ) {
       initialOutputLevel: 0.5
     } );
     soundManager.addSoundGenerator( this.currentSoundGenerator );
-
-    // a11y - the screen summary to be read by assistive technology
-    // this.addChild( new OhmsLawScreenSummaryNode( model ) );
-    this.screenSummaryNode.addChild( new OhmsLawScreenSummaryNode( model ) );
-
-    // Create the control panel with sliders.
-    var controlPanel = new ControlPanel(
-      model.voltageProperty,
-      model.resistanceProperty,
-      model.currentProperty,
-      tandem.createTandem( 'controlPanel' )
-    );
 
     // add the reset button
     var resetAllButton = new ResetAllButton( {

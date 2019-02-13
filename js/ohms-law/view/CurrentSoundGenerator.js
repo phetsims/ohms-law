@@ -94,14 +94,16 @@ define( function( require ) {
         else if ( this.currentSoundCountdownTimer > 0 ) {
           this.setOutputLevel( this.maxOutputLevel * this.currentSoundCountdownTimer / FADE_OUT_TIME );
         }
-        if ( this.currentSoundCountdownTimer === 0 ) {
+        else if ( this.currentSoundCountdownTimer === 0 && this.isPlaying ) {
           this.stop();
         }
       }
     },
 
     reset: function() {
-      this.stop();
+      if ( this.isPlaying ) {
+        this.stop();
+      }
       this.currentSoundCountdownTimer = 0;
     },
 
