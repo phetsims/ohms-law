@@ -12,6 +12,7 @@ define( function( require ) {
   // modules
   var ControlAreaNode = require( 'SCENERY_PHET/accessibility/nodes/ControlAreaNode' );
   var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
+  var CurrentSoundGenerator = require( 'OHMS_LAW/ohms-law/view/CurrentSoundGenerator' );
   var DiscreteSoundGenerator = require( 'TAMBO/sound-generators/DiscreteSoundGenerator' );
   var FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -36,6 +37,8 @@ define( function( require ) {
    */
   function OhmsLawScreenView( model, tandem ) {
 
+    var self = this;
+    
     ScreenView.call( this, {
       tandem: tandem,
 
@@ -74,6 +77,12 @@ define( function( require ) {
       }
     ) );
 
+    // sound generator for current
+    this.currentSoundGenerator = new CurrentSoundGenerator( model.currentProperty, {
+      initialOutputLevel: 0.7
+    } );
+    soundManager.addSoundGenerator( this.currentSoundGenerator );
+
     // a11y - the screen summary to be read by assistive technology
     // this.addChild( new OhmsLawScreenSummaryNode( model ) );
     this.screenSummaryNode.addChild( new OhmsLawScreenSummaryNode( model ) );
@@ -91,10 +100,12 @@ define( function( require ) {
       radius: 28,
       listener: function() {
         model.reset();
+        self.currentSoundGenerator.reset();
       },
       tandem: tandem.createTandem( 'resetAllButton' )
     } );
 
+    // hook up the reset all sound generator
     soundManager.addSoundGenerator( new ResetAllSoundGenerator( model.resetInProgressProperty, {
       initialOutputLevel: 0.7
     } ) );
@@ -127,5 +138,10 @@ define( function( require ) {
 
   ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );
 
-  return inherit( ScreenView, OhmsLawScreenView );
+  return inherit( ScreenView, OhmsLawScreenView, {
+
+    step: function( dt ) {
+      this.currentSoundGenerator.step( dt );
+    }
+  } );
 } );

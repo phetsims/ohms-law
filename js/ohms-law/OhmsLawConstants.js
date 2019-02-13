@@ -83,6 +83,9 @@ define( function( require ) {
     RESISTANCE_RANGE: RESISTANCE_RANGE,
     VOLTAGE_RANGE: VOLTAGE_RANGE,
 
+    // range of current values that can occur
+    CURRENT_RANGE: new Range( VOLTAGE_RANGE.min / RESISTANCE_RANGE.max, VOLTAGE_RANGE.max / RESISTANCE_RANGE.min ),
+
     // formula
     FONT_FAMILY: 'Times New Roman',
 
