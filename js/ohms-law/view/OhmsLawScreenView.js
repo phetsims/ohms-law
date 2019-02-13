@@ -64,7 +64,8 @@ define( function( require ) {
       {
         sound: sliderClick,
         numBins: 6,
-        enableControlProperties: [ resetNotInProgress ]
+        enableControlProperties: [ resetNotInProgress ],
+        initialOutputLevel: 0.3
       }
     ) );
     soundManager.addSoundGenerator( new DiscreteSoundGenerator(
@@ -73,13 +74,14 @@ define( function( require ) {
       {
         sound: sliderClick,
         numBins: 6,
-        enableControlProperties: [ resetNotInProgress ]
+        enableControlProperties: [ resetNotInProgress ],
+        initialOutputLevel: 0.3
       }
     ) );
 
     // sound generator for current
     this.currentSoundGenerator = new CurrentSoundGenerator( model.currentProperty, {
-      initialOutputLevel: 0.7
+      initialOutputLevel: 0.5
     } );
     soundManager.addSoundGenerator( this.currentSoundGenerator );
 
