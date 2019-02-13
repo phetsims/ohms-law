@@ -12,9 +12,12 @@ define( function( require ) {
   // modules
   var ControlAreaNode = require( 'SCENERY_PHET/accessibility/nodes/ControlAreaNode' );
   var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
+  var DiscreteSoundGenerator = require( 'TAMBO/sound-generators/DiscreteSoundGenerator' );
   var FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var InvertedBooleanProperty = require( 'TAMBO/InvertedBooleanProperty' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var OhmsLawScreenSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenSummaryNode' );
   var PlayAreaNode = require( 'SCENERY_PHET/accessibility/nodes/PlayAreaNode' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
@@ -24,6 +27,7 @@ define( function( require ) {
   var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
 
   // sounds
+  var sliderClick = require( 'sound!OHMS_LAW/slider-click-001.mp3' );
 
   /**
    * @param {OhmsLawModel} model
@@ -49,6 +53,27 @@ define( function( require ) {
       pickable: false
     } );
 
+    // sound generators for voltage and resistance
+    var resetNotInProgress = new InvertedBooleanProperty( model.resetInProgressProperty );
+    soundManager.addSoundGenerator( new DiscreteSoundGenerator(
+      model.voltageProperty,
+      OhmsLawConstants.VOLTAGE_RANGE,
+      {
+        sound: sliderClick,
+        numBins: 6,
+        enableControlProperties: [ resetNotInProgress ]
+      }
+    ) );
+    soundManager.addSoundGenerator( new DiscreteSoundGenerator(
+      model.resistanceProperty,
+      OhmsLawConstants.RESISTANCE_RANGE,
+      {
+        sound: sliderClick,
+        numBins: 6,
+        enableControlProperties: [ resetNotInProgress ]
+      }
+    ) );
+
     // a11y - the screen summary to be read by assistive technology
     // this.addChild( new OhmsLawScreenSummaryNode( model ) );
     this.screenSummaryNode.addChild( new OhmsLawScreenSummaryNode( model ) );
@@ -61,6 +86,7 @@ define( function( require ) {
       tandem.createTandem( 'controlPanel' )
     );
 
+    // add the reset button
     var resetAllButton = new ResetAllButton( {
       radius: 28,
       listener: function() {
