@@ -50,6 +50,10 @@ define( function( require ) {
   // constants
   var NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes.value; // a11y - the number of sizes that letters can be described as.
 
+  // a11y - time between aria-valuetext is read and the alert, the extra time prevents alerts from reaching the
+  // assistive device too quickly in cases of rapid interaction
+  var ALERT_DELAY = 1000;
+
   /**
    * @param {Property.<number>} voltageProperty
    * @param {Property.<number>} resistanceProperty
@@ -101,7 +105,11 @@ define( function( require ) {
               var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
               var alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
-              utteranceQueue.addToBack( new Utterance( { alert: alert, uniqueGroupId: 'voltageAlert' } ) );
+              utteranceQueue.addToBack( new Utterance( {
+                alert: alert,
+                uniqueGroupId: 'voltageAlert',
+                delayTime: ALERT_DELAY
+              } ) );
             }
           }
         },
@@ -139,7 +147,8 @@ define( function( require ) {
         var alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
         utteranceQueue.addToBack( new Utterance( {
           alert: alert,
-          uniqueGroupId: 'resistanceAlert'
+          uniqueGroupId: 'resistanceAlert',
+          delayTime: ALERT_DELAY
         } ) );
       }
     };
