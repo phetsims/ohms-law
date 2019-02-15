@@ -33,6 +33,7 @@ define( function( require ) {
       thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team to convert this ' +
               'simulation to HTML5.'
     },
+    accessibility: true,
     keyboardHelpNode: keyboardHelpContent,
     supportsSound: true
   };
