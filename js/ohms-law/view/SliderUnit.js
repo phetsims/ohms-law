@@ -64,6 +64,11 @@ define( function( require ) {
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
       thumbSize: new Dimension2( 22, 45 ),
 
+      // don't allow any values that cannot be displayed by the precision allowed in this sim
+      constrainValue: function( value ) {
+        return Util.toFixedNumber( value, options.decimalPlaces );
+      },
+
       // phet-io
       tandem: tandem.createTandem( 'slider' ),
 
