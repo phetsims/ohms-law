@@ -114,8 +114,7 @@ define( function( require ) {
           }
         },
 
-        // a11y
-        accessibleDecimalPlaces: OhmsLawConstants.VOLTAGE_SIG_FIGS
+        decimalPlaces: OhmsLawConstants.VOLTAGE_SIG_FIGS
       }
     );
 
@@ -176,8 +175,7 @@ define( function( require ) {
           endDrag: endResistanceDrag
         },
 
-        // a11y
-        accessibleDecimalPlaces: OhmsLawConstants.RESISTANCE_SIG_FIGS
+        decimalPlaces: OhmsLawConstants.RESISTANCE_SIG_FIGS
       } );
 
     // Use a content node so that the Panel can surround it fully

@@ -39,19 +39,22 @@ define( function( require ) {
     var self = this;
 
     options = _.extend( {
-      sliderOptions: null, // filled in below
+
+      // {*|null} - passed directly to VSlider
+      sliderOptions: null,
+
+      // {number}
+      decimalPlaces: 0,
 
       // phet-io
-      tandem: tandem, // to be passed to supertype
-
-      // a11y
-      accessibleDecimalPlaces: 0
+      tandem: tandem // to be passed to supertype
     }, options );
 
     assert && assert( !options.sliderOptions.tandem, 'tandem is set by SliderUnit.' );
     assert && assert( !options.sliderOptions.labelTagName, 'labelTagName is set by SliderUnit.' );
     assert && assert( !options.sliderOptions.containerTagName, 'containerTagName is set by SliderUnit.' );
     assert && assert( !options.sliderOptions.labelContent, 'labelContent is set by SliderUnit.' );
+    assert && assert( !options.sliderOptions.accessibleDecimalPlaces, 'accessibleDecimalPlaces is set by SliderUnit.' );
 
     // default options to be passed into Slider
     options.sliderOptions = _.extend( {
@@ -72,7 +75,7 @@ define( function( require ) {
       keyboardStep: 1,
       shiftKeyboardStep: 0.1,
       accessibleValuePattern: '{{value}}', // string pattern used for formatting the value read by the screen reader
-      accessibleDecimalPlaces: options.accessibleDecimalPlaces // default to the same as the SliderUnit
+      accessibleDecimalPlaces: options.decimalPlaces
 
     }, options.sliderOptions );
 
@@ -117,7 +120,7 @@ define( function( require ) {
       children: [ symbolText, nameText ]
     } );
 
-    var valueText = new Text( Util.toFixed( range.max, options.accessibleDecimalPlaces ), {
+    var valueText = new Text( Util.toFixed( range.max, options.decimalPlaces ), {
       font: OhmsLawConstants.READOUT_FONT,
       fill: OhmsLawConstants.BLACK_COLOR,
       tandem: tandem.createTandem( 'valueText' )
@@ -156,7 +159,7 @@ define( function( require ) {
 
     // Update value of the readout. Present for the lifetime of the simulation; no need to unlink.
     property.link( function( value ) {
-      valueText.text = Util.toFixed( value, options.accessibleDecimalPlaces );
+      valueText.text = Util.toFixed( value, options.decimalPlaces );
       valueText.right = unitText.left - READOUT_SPACING;
       readout.centerX = readoutBackground.selfBounds.centerX;
     } );
