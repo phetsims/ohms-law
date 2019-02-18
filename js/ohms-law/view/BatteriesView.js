@@ -58,6 +58,7 @@ define( function( require ) {
 
         // Determine associated with a particular battery
         var voltageBattery = Math.min( OhmsLawConstants.AA_VOLTAGE, voltage - index * OhmsLawConstants.AA_VOLTAGE );
+        voltageBattery = Util.roundToInterval( voltageBattery, Math.pow( 10, -OhmsLawConstants.VOLTAGE_SIG_FIGS ) );
 
         // Battery is only visible if it has a voltage.
         battery.visible = ( voltageBattery > 0 );
