@@ -18,7 +18,8 @@ define( function( require ) {
 
   // constants
   var PRE_FADE_TIME = 0.2; // in seconds
-  var FADE_OUT_TIME = 0.4; // in seconds
+  var FADE_OUT_TIME_CONSTANT = 2.25; // in seconds, larger values indicate faster fade out, see usage for details
+  var FADE_COMPLETE_OUTPUT_LEVEL = 0.01; // level at which fade out is considered complete and level is set to zero
 
   // sounds
   var currentLoopSound = require( 'sound!OHMS_LAW/current-v3-loop.mp3' );
@@ -41,7 +42,7 @@ define( function( require ) {
     this.maxOutputLevel = options.initialOutputLevel;
 
     // countdown timer used to play the current sound for a while, then stop
-    this.currentSoundCountdownTimer = 0;
+    this.fadeCountdownTimer = Number.NEGATIVE_INFINITY;
 
     // function to turn loop on/off and update playback rate
     function updateSoundGeneration( current ) {
@@ -50,7 +51,7 @@ define( function( require ) {
       if ( !self.isPlaying ) {
         self.play();
       }
-      self.currentSoundCountdownTimer = PRE_FADE_TIME + FADE_OUT_TIME;
+      self.fadeCountdownTimer = PRE_FADE_TIME;
 
       // calculate the normalized current value using a logarithmic formula to better handle the large range
       var normalizedCurrent = Math.log( ( current / 1000 ) / OhmsLawConstants.CURRENT_RANGE.min ) /
@@ -82,20 +83,30 @@ define( function( require ) {
      * @public
      */
     step: function( dt ) {
-      if ( this.currentSoundCountdownTimer > 0 ) {
+      if ( this.fadeCountdownTimer > Number.NEGATIVE_INFINITY ) {
 
-        // decrement the countdown timer
-        this.currentSoundCountdownTimer = Math.max( this.currentSoundCountdownTimer - dt, 0 );
+        // decrement the fade countdown timer
+        this.fadeCountdownTimer -= dt;
 
         // if the countdown timer is greater than the pre-fade time, stay at max output level
-        if ( this.currentSoundCountdownTimer > FADE_OUT_TIME ) {
+        if ( this.fadeCountdownTimer > 0 ) {
+
+          // not fading out yet, keep the level at the max
           this.setOutputLevel( this.maxOutputLevel );
         }
-        else if ( this.currentSoundCountdownTimer > 0 ) {
-          this.setOutputLevel( this.maxOutputLevel * this.currentSoundCountdownTimer / FADE_OUT_TIME );
-        }
-        else if ( this.currentSoundCountdownTimer === 0 && this.isPlaying ) {
-          this.stop();
+        else if ( this.fadeCountdownTimer > Number.NEGATIVE_INFINITY ) {
+
+          // fading out, calculate the level using the exponential decay formula
+          var level = this.maxOutputLevel * Math.pow( Math.E, FADE_OUT_TIME_CONSTANT * this.fadeCountdownTimer );
+          if ( level > FADE_COMPLETE_OUTPUT_LEVEL ) {
+            this.setOutputLevel( level );
+          }
+          else {
+
+            // fade out complete
+            this.setOutputLevel( 0 );
+            this.fadeCountdownTimer = Number.NEGATIVE_INFINITY;
+          }
         }
       }
     },
@@ -104,7 +115,7 @@ define( function( require ) {
       if ( this.isPlaying ) {
         this.stop();
       }
-      this.currentSoundCountdownTimer = 0;
+      this.fadeCountdownTimer = Number.NEGATIVE_INFINITY;
     },
 
     /**
