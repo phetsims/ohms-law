@@ -77,7 +77,7 @@ define( function( require ) {
         sound: sliderClick,
         numBins: 6,
         enableControlProperties: [ resetNotInProgress ],
-        initialOutputLevel: 0.3,
+        initialOutputLevel: 0.25,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboard
       }
     ) );
@@ -88,14 +88,14 @@ define( function( require ) {
         sound: sliderClick,
         numBins: 6,
         enableControlProperties: [ resetNotInProgress ],
-        initialOutputLevel: 0.3,
+        initialOutputLevel: 0.2,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboard
       }
     ) );
 
     // sound generator for current
     this.currentSoundGenerator = new CurrentSoundGenerator( model.currentProperty, {
-      initialOutputLevel: 0.5
+      initialOutputLevel: 0.4
     } );
     soundManager.addSoundGenerator( this.currentSoundGenerator );
 
