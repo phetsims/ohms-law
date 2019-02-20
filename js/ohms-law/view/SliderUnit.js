@@ -119,9 +119,11 @@ define( function( require ) {
       tandem: tandem.createTandem( 'nameText' )
     } );
 
-    // We want these two close together, like one head unit
+    // We want these two close tVogether, like one head unit, but with a negative value they can overlap if the text
+    // is made smaller than the spacing value due to i18n, see https://github.com/phetsims/ohms-law/issues/134
+    var negativeSpacing = -5;
     var headerNode = new VBox( {
-      spacing: -5, // empirically determined
+      spacing: symbolText.height < Math.abs( negativeSpacing ) ? symbolText.height * 2 : negativeSpacing,
       children: [ symbolText, nameText ]
     } );
 
