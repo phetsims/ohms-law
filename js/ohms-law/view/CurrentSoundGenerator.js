@@ -17,9 +17,9 @@ define( function( require ) {
   var SoundClip = require( 'TAMBO/sound-generators/SoundClip' );
 
   // constants
-  var PRE_FADE_TIME = 0.2; // in seconds
-  var FADE_OUT_TIME_CONSTANT = 2.25; // in seconds, larger values indicate faster fade out, see usage for details
-  var FADE_COMPLETE_OUTPUT_LEVEL = 0.01; // level at which fade out is considered complete and level is set to zero
+  var PRE_FADE_TIME = 0.1; // in seconds
+  var FADE_OUT_TIME_CONSTANT = 3; // in seconds, larger values indicate faster fade out, see usage for details
+  var FADE_COMPLETE_OUTPUT_LEVEL = 0.001; // level at which fade out is considered complete and level is set to zero
 
   // sounds
   var currentLoopSound = require( 'sound!OHMS_LAW/current-v3-loop.mp3' );
