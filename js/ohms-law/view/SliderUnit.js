@@ -59,7 +59,7 @@ define( function( require ) {
     // default options to be passed into Slider
     options.sliderOptions = _.extend( {
       trackFillEnabled: 'black',
-      thumbFillEnabled: '#c3c4c5',
+      thumbFill: '#c3c4c5',
       thumbFillHighlighted: '#dedede',
       trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
       thumbSize: new Dimension2( 22, 45 ),
