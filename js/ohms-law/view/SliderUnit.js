@@ -54,7 +54,7 @@ define( function( require ) {
     assert && assert( !options.sliderOptions.labelTagName, 'labelTagName is set by SliderUnit.' );
     assert && assert( !options.sliderOptions.containerTagName, 'containerTagName is set by SliderUnit.' );
     assert && assert( !options.sliderOptions.labelContent, 'labelContent is set by SliderUnit.' );
-    assert && assert( !options.sliderOptions.accessibleDecimalPlaces, 'accessibleDecimalPlaces is set by SliderUnit.' );
+    assert && assert( !options.sliderOptions.a11yDecimalPlaces, 'a11yDecimalPlaces is set by SliderUnit.' );
 
     // default options to be passed into Slider
     options.sliderOptions = _.extend( {
@@ -79,8 +79,10 @@ define( function( require ) {
       roundToStepSize: true, // so default keyboard step rounds to pedegogically useful values
       keyboardStep: 1,
       shiftKeyboardStep: 0.1,
-      accessibleValuePattern: '{{value}}', // string pattern used for formatting the value read by the screen reader
-      accessibleDecimalPlaces: options.decimalPlaces
+
+      // TODO: this is redundant, https://github.com/phetsims/scenery/issues/951
+      a11yValuePattern: '{{value}}', // string pattern used for formatting the value read by the screen reader
+      a11yDecimalPlaces: options.decimalPlaces
 
     }, options.sliderOptions );
 

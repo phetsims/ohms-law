@@ -92,7 +92,7 @@ define( function( require ) {
           // a11y
           keyboardStep: 0.5, // volts
           shiftKeyboardStep: 0.1, // volts
-          accessibleValuePattern: voltageUnitsPatternString,
+          a11yValuePattern: voltageUnitsPatternString,
           startDrag: function() {
             oldVoltage = voltageProperty.get();
           },
@@ -167,7 +167,7 @@ define( function( require ) {
           // a11y
           keyboardStep: 20, // ohms
           shiftKeyboardStep: 1, // ohms
-          accessibleValuePattern: resistanceUnitsPatternString,
+          a11yValuePattern: resistanceUnitsPatternString,
           startDrag: function() {
             oldResistance = resistanceProperty.get();
             oldCurrent = currentProperty.get();
