@@ -79,9 +79,6 @@ define( function( require ) {
       roundToStepSize: true, // so default keyboard step rounds to pedegogically useful values
       keyboardStep: 1,
       shiftKeyboardStep: 0.1,
-
-      // TODO: this is redundant, https://github.com/phetsims/scenery/issues/951
-      a11yValuePattern: '{{value}}', // string pattern used for formatting the value read by the screen reader
       a11yDecimalPlaces: options.decimalPlaces
 
     }, options.sliderOptions );
