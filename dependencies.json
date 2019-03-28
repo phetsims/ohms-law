@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-dev.28 Tue Mar 26 2019 20:06:34 GMT-0400 (Eastern Daylight Time)",
+  "comment": "# ohms-law 1.4.0-dev.29 Thu Mar 28 2019 11:02:20 GMT-0400 (Eastern Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "master"
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "2d8cea78e8d3909a3b567f69f1318ba002100654",
+    "sha": "c20e0e8fb0b6f2260bd29e7976c44d08b6f24e67",
     "branch": "master"
   },
   "phet-core": {
@@ -37,7 +37,7 @@
     "branch": "master"
   },
   "phet-io": {
-    "sha": "cedf709dba1d92a7b3db8ba78980b41aa19bff68",
+    "sha": "ac87262a0c6dd4cba958b9496d7bd4a7f5d5d2d7",
     "branch": "master"
   },
   "phet-io-wrapper-classroom-activity": {
@@ -53,7 +53,7 @@
     "branch": "master"
   },
   "phet-io-wrappers": {
-    "sha": "dbdc16bb063fe8b07d47609296a172957fd5045b",
+    "sha": "4402649f88eb89894ad815426c55793fa0a81f9b",
     "branch": "master"
   },
   "phetcommon": {
@@ -69,11 +69,11 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "a22f4fc4fd2106fd70f2082894cff9f64eb4066c",
+    "sha": "b6cd9109836de27cce90b10cc3fa7d141d97577e",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "c416d8e67bafd9fc9534ca5950c914ef8098f247",
+    "sha": "2fe8e00fceed3fe83a114a0aea67841a01dcc00c",
     "branch": "master"
   },
   "sherpa": {
@@ -81,7 +81,7 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "fae62bd23a499bab48b60ebd53c61925e2388365",
+    "sha": "4bef216919a9abedea6651538e91ae4ee26c1b7c",
     "branch": "master"
   },
   "tambo": {
@@ -89,7 +89,7 @@
     "branch": "master"
   },
   "tandem": {
-    "sha": "dfe8532c660b78dc69e67ff85a41ec790efc4498",
+    "sha": "2bdea20771265fd326b6d82279a980865a1a4df5",
     "branch": "master"
   },
   "vibe": {
