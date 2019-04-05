@@ -10,7 +10,7 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var GeneralNavigationHelpContent = require( 'SCENERY_PHET/keyboard/help/GeneralNavigationHelpContent' );
+  var GeneralKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/GeneralKeyboardHelpSection' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
@@ -22,7 +22,7 @@ define( function( require ) {
   function OhmsLawKeyboardHelpContent() {
 
     var sliderControlsHelpContent = new SliderControlsHelpContent();
-    var generalNavigationHelpContent = new GeneralNavigationHelpContent();
+    var generalNavigationHelpContent = new GeneralKeyboardHelpSection();
 
     HBox.call( this, {
       children: [ sliderControlsHelpContent, generalNavigationHelpContent ],
