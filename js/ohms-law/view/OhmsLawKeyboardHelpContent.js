@@ -14,18 +14,18 @@ define( function( require ) {
   var HBox = require( 'SCENERY/nodes/HBox' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var SliderControlsHelpContent = require( 'SCENERY_PHET/keyboard/help/SliderControlsHelpContent' );
+  var SliderKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/SliderKeyboardHelpSection' );
 
   /**
    * @constructor
    */
   function OhmsLawKeyboardHelpContent() {
 
-    var sliderControlsHelpContent = new SliderControlsHelpContent();
+    var sliderKeyboardHelpSection = new SliderKeyboardHelpSection();
     var generalNavigationHelpContent = new GeneralKeyboardHelpSection();
 
     HBox.call( this, {
-      children: [ sliderControlsHelpContent, generalNavigationHelpContent ],
+      children: [ sliderKeyboardHelpSection, generalNavigationHelpContent ],
       align: 'top',
       spacing: 30
     } );
