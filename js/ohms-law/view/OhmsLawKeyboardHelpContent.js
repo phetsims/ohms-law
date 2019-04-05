@@ -22,10 +22,10 @@ define( function( require ) {
   function OhmsLawKeyboardHelpContent() {
 
     var sliderKeyboardHelpSection = new SliderKeyboardHelpSection();
-    var generalNavigationHelpContent = new GeneralKeyboardHelpSection();
+    var generalNavigationHelpSection = new GeneralKeyboardHelpSection();
 
     HBox.call( this, {
-      children: [ sliderKeyboardHelpSection, generalNavigationHelpContent ],
+      children: [ sliderKeyboardHelpSection, generalNavigationHelpSection ],
       align: 'top',
       spacing: 30
     } );
