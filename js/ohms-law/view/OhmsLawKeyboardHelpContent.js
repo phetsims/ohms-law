@@ -6,32 +6,23 @@
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var GeneralKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/GeneralKeyboardHelpSection' );
-  var HBox = require( 'SCENERY/nodes/HBox' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var SliderKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/SliderKeyboardHelpSection' );
+  const GeneralKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/GeneralKeyboardHelpSection' );
+  const TwoColumnKeyboardHelpContent = require( 'SCENERY_PHET/keyboard/help/TwoColumnKeyboardHelpContent' );
+  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  const SliderKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/SliderKeyboardHelpSection' );
 
-  /**
-   * @constructor
-   */
-  function OhmsLawKeyboardHelpContent() {
+  class OhmsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
+    constructor() {
+      const sliderKeyboardHelpSection = new SliderKeyboardHelpSection();
+      const generalNavigationHelpSection = new GeneralKeyboardHelpSection();
 
-    var sliderKeyboardHelpSection = new SliderKeyboardHelpSection();
-    var generalNavigationHelpSection = new GeneralKeyboardHelpSection();
-
-    HBox.call( this, {
-      children: [ sliderKeyboardHelpSection, generalNavigationHelpSection ],
-      align: 'top',
-      spacing: 30
-    } );
+      super( sliderKeyboardHelpSection, generalNavigationHelpSection );
+    }
   }
 
-  ohmsLaw.register( 'OhmsLawKeyboardHelpContent', OhmsLawKeyboardHelpContent );
-
-  return inherit( HBox, OhmsLawKeyboardHelpContent );
+  return ohmsLaw.register( 'OhmsLawKeyboardHelpContent', OhmsLawKeyboardHelpContent );
 } );
