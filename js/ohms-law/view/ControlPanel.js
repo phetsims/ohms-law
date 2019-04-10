@@ -75,6 +75,10 @@ define( function( require ) {
       tandem: tandem
     }, options );
 
+    // a11y - to alert changes to assistive devices
+    var resistanceUtterance = new Utterance( { alertStableDelay: ALERT_DELAY } );
+    var voltageUtterance = new Utterance( { alertStableDelay: ALERT_DELAY } );
+
     // Create the voltage slider with readout and labels
     var oldVoltage; // stored on startDrag;
     var newVoltage; // stored on endDrag;
@@ -104,12 +108,8 @@ define( function( require ) {
               var sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
               var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
-              var alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
-              utteranceQueue.addToBack( new Utterance( {
-                alert: alert,
-                uniqueGroupId: 'voltageAlert',
-                delayTime: ALERT_DELAY
-              } ) );
+              voltageUtterance.alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
+              utteranceQueue.addToBack( voltageUtterance );
             }
           }
         },
@@ -143,12 +143,8 @@ define( function( require ) {
         var iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
         iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ' ' + aLotString : '';
 
-        var alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
-        utteranceQueue.addToBack( new Utterance( {
-          alert: alert,
-          uniqueGroupId: 'resistanceAlert',
-          delayTime: ALERT_DELAY
-        } ) );
+        resistanceUtterance.alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
+        utteranceQueue.addToBack( resistanceUtterance );
       }
     };
 
