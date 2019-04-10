@@ -9,7 +9,7 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var OhmsLawKeyboardHelpContent = require( 'OHMS_LAW/ohms-law/view/OhmsLawKeyboardHelpContent' );
+  var SliderAndGeneralKeyboardHelpContent = require( 'SCENERY_PHET/keyboard/help/SliderAndGeneralKeyboardHelpContent' );
   var OhmsLawScreen = require( 'OHMS_LAW/ohms-law/OhmsLawScreen' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
@@ -22,7 +22,7 @@ define( function( require ) {
   var tandem = Tandem.rootTandem;
 
   // a11y - help content to describe keyboard interactions
-  var keyboardHelpContent = new OhmsLawKeyboardHelpContent();
+  var keyboardHelpContent = new SliderAndGeneralKeyboardHelpContent();
 
   var simOptions = {
     credits: {
