@@ -117,8 +117,19 @@ define( function( require ) {
     // Create the dots randomly on the resistor. Density is based on AREA_PER_DOT.
     for ( var i = 0; i < NUMBER_OF_DOTS; i++ ) {
 
-      var centerX = ( phet.joist.random.nextDouble() - .5 ) * MAX_WIDTH_INCLUDING_ROUNDED_ENDS;
-      var centerY = ( phet.joist.random.nextDouble() - .5 ) * RESISTOR_HEIGHT;
+      var centerY = ( phet.joist.random.nextDouble() - .5 ) * ( RESISTOR_HEIGHT - DOT_RADIUS * 2 );
+
+      // for the given y coordinate, calculate the x coordinate that will put the dot completely within the
+      // wire (including rounded wire ends) using the formula for an ellipse: (x^2 / a^2) + (y^2 / b^2) = 1
+      // NOTE: this sim used to use a clipArea for this but that is too slow on iPad Air 2,
+      // see https://github.com/phetsims/ohms-law/issues/132
+      var a = PERSPECTIVE_FACTOR * RESISTOR_HEIGHT / 2; // elliptical x radius
+      var b = RESISTOR_HEIGHT / 2; // elliptical y radius
+      var ellipticalX = Math.sqrt( ( 1 - ( centerY * centerY ) / ( b * b ) ) * ( a * a ) );
+
+      var maxWidthIncludingEndLimit = RESISTOR_WIDTH + ellipticalX;
+      var centerX = ( phet.joist.random.nextDouble() - .5 ) * maxWidthIncludingEndLimit;
+
       var dot = new Circle( DOT_RADIUS, {
         fill: 'black',
         centerX: centerX,
@@ -128,17 +139,6 @@ define( function( require ) {
       dotsNode.addChild( dot );
     }
     this.addChild( dotsNode );
-
-    // Clip the dots that are shown to only include those inside the wire (including the wireEnd)
-    dotsNode.clipArea = bodyPath.shape.ellipticalArc(
-      -RESISTOR_WIDTH / 2,
-      0,
-      PERSPECTIVE_FACTOR * RESISTOR_HEIGHT / 2,
-      RESISTOR_HEIGHT / 2,
-      0,
-      3 * Math.PI / 2,
-      Math.PI / 2,
-      true );
 
     // Set the number of visible dots based on the resistivity. Present for the lifetime of the simulation; no need to unlink.
     resistanceProperty.link( function( resistance ) {
