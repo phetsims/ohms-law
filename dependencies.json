@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-dev.33 Wed May 01 2019 11:34:28 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# ohms-law 1.4.0-rc.0 Wed May 01 2019 15:36:46 GMT-0400 (Eastern Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "master"
@@ -21,7 +21,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "24aa50a2fbd20ef1cb129b0329eb0ce7040e5127",
+    "sha": "ceb9cf417c55d21d1d6c970dac41672b241f7ba3",
     "branch": "master"
   },
   "kite": {
@@ -29,15 +29,15 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "31555ab8e474765fc1ddd161ed68cdb68f8e0893",
-    "branch": "master"
+    "sha": "8caec8894f5b2e9d50306a3fee725abd24a1d23d",
+    "branch": "1.4"
   },
   "phet-core": {
     "sha": "6c4c5459dd9c18e51b1fe0ac3268305af252d563",
     "branch": "master"
   },
   "phet-io": {
-    "sha": "fd4ab167d0c28137b6b98e146cb527d2c9c9d549",
+    "sha": "11bdd83456b879d3014ed22c41cb803d5ed5a9bd",
     "branch": "master"
   },
   "phet-io-wrapper-classroom-activity": {
@@ -53,7 +53,7 @@
     "branch": "master"
   },
   "phet-io-wrappers": {
-    "sha": "70dbfb9dca241ae04ac5bbf88a4ccda1463098ed",
+    "sha": "6ed4c095eb0a27bdbe917eda17cd2ec11f4dc517",
     "branch": "master"
   },
   "phetcommon": {
@@ -73,7 +73,7 @@
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "93da7c759aa27fc9d5f0c40d8f30d0d0f0588af7",
+    "sha": "e6ede0e282bb9e183d55e1a15dd447b2839042fd",
     "branch": "master"
   },
   "sherpa": {
@@ -85,11 +85,11 @@
     "branch": "master"
   },
   "tambo": {
-    "sha": "49c923d6844438b5d632d8ff044bc4d2dd4a3318",
+    "sha": "d90075a9fc7f901c80d929f813721033168dd37e",
     "branch": "master"
   },
   "tandem": {
-    "sha": "ad7b2bd7e2b5407035cc42e9042982499979a580",
+    "sha": "7d2f0cb0548ec283af8262de4215c03180ad000a",
     "branch": "master"
   },
   "vibe": {
