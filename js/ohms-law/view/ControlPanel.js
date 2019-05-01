@@ -22,7 +22,7 @@ define( function( require ) {
   var SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Util = require( 'DOT/Util' );
-  var Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
+  var ValueChangeUtterance = require( 'SCENERY_PHET/accessibility/ValueChangeUtterance' );
   var utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
 
   // strings
@@ -50,10 +50,6 @@ define( function( require ) {
   // constants
   var NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes.value; // a11y - the number of sizes that letters can be described as.
 
-  // a11y - time between aria-valuetext is read and the alert, the extra time prevents alerts from reaching the
-  // assistive device too quickly in cases of rapid interaction
-  var ALERT_DELAY = 1000;
-
   /**
    * @param {Property.<number>} voltageProperty
    * @param {Property.<number>} resistanceProperty
@@ -76,8 +72,8 @@ define( function( require ) {
     }, options );
 
     // a11y - to alert changes to assistive devices
-    var resistanceUtterance = new Utterance( { alertStableDelay: ALERT_DELAY } );
-    var voltageUtterance = new Utterance( { alertStableDelay: ALERT_DELAY } );
+    var resistanceUtterance = new ValueChangeUtterance();
+    var voltageUtterance = new ValueChangeUtterance();
 
     // Create the voltage slider with readout and labels
     var oldVoltage; // stored on startDrag;
