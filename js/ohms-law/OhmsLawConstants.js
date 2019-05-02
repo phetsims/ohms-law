@@ -98,6 +98,7 @@ define( function( require ) {
     NAME_FONT: new PhetFont( 16 ),
     READOUT_FONT: new PhetFont( 28 ),
     UNIT_FONT: new PhetFont( 28 ),
+    UNIT_MAX_WIDTH: 45, // i18n
 
     // precision for each of the physical quantities in this sim
     VOLTAGE_SIG_FIGS: 1,

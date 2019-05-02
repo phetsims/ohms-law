@@ -138,7 +138,7 @@ define( function( require ) {
       left: valueText.right / 2,
 
       // Size the unit to be as big as possible next to the value with spacing.
-      maxWidth: OhmsLawConstants.SLIDER_WIDTH - valueText.width - READOUT_SPACING,
+      maxWidth: OhmsLawConstants.UNIT_MAX_WIDTH,
       tandem: tandem.createTandem( 'unitText' )
     } );
 
@@ -153,8 +153,7 @@ define( function( require ) {
 
     // Background for centering
     var readoutBackground = Rectangle.bounds( readout.bounds, {
-      children: [ readout ],
-      maxWidth: OhmsLawConstants.SLIDER_WIDTH
+      children: [ readout ]
     } );
 
     // Add components in a vertically spaced stack
