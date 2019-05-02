@@ -18,6 +18,7 @@ define( function( require ) {
   var Text = require( 'SCENERY/nodes/Text' );
   var Util = require( 'DOT/Util' );
   var VBox = require( 'SCENERY/nodes/VBox' );
+  var Vector2 = require( 'DOT/Vector2' );
   var VSlider = require( 'SUN/VSlider' );
 
   // constants
@@ -118,13 +119,12 @@ define( function( require ) {
       tandem: tandem.createTandem( 'nameText' )
     } );
 
-    // We want these two close tVogether, like one head unit, but with a negative value they can overlap if the text
-    // is made smaller than the spacing value due to i18n, see https://github.com/phetsims/ohms-law/issues/134
-    var negativeSpacing = -5;
-    var headerNode = new VBox( {
-      spacing: symbolText.height < Math.abs( negativeSpacing ) ? symbolText.height * 2 : negativeSpacing,
+    // positioned with `y` rather than using other bounds methods so the text is aligned correctly because text
+    // is aligned at y = 0, see https://github.com/phetsims/ohms-law/issues/140
+    const headerNode = new Node( {
       children: [ symbolText, nameText ]
     } );
+    nameText.center = new Vector2( symbolText.centerX, symbolText.y + 18 );
 
     var valueText = new Text( Util.toFixed( range.max, options.decimalPlaces ), {
       font: OhmsLawConstants.READOUT_FONT,
