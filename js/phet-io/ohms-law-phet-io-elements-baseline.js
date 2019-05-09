@@ -2289,7 +2289,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.batteryText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.batteryText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2300,7 +2300,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.batteryText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.batteryText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2311,7 +2311,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.batteryText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.batteryText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2322,7 +2322,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.batteryText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.batteryText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2333,7 +2333,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.copperPortion": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.copperPortion": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2344,7 +2344,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.copperPortion.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.copperPortion.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2355,7 +2355,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.copperPortion.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.copperPortion.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2366,7 +2366,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.copperPortion.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.copperPortion.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2377,7 +2377,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.mainBody": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.mainBody": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2388,7 +2388,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.mainBody.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.mainBody.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2399,7 +2399,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.mainBody.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.mainBody.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2410,7 +2410,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.mainBody.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.mainBody.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2421,7 +2421,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.nub": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.nub": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2432,7 +2432,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.nub.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.nub.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2443,7 +2443,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.nub.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.nub.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2454,7 +2454,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.nub.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.nub.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2465,7 +2465,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageUnitsText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageUnitsText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2476,7 +2476,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageUnitsText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageUnitsText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2487,7 +2487,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageUnitsText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageUnitsText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2498,7 +2498,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageUnitsText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageUnitsText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2509,7 +2509,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageUnitsText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageUnitsText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2520,7 +2520,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageValueText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageValueText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2531,7 +2531,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageValueText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageValueText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2542,7 +2542,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageValueText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageValueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2553,7 +2553,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageValueText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageValueText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2564,7 +2564,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~0.voltageValueText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~0.voltageValueText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2575,7 +2575,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.batteryText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.batteryText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2586,7 +2586,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.batteryText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.batteryText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2597,7 +2597,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.batteryText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.batteryText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2608,7 +2608,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.batteryText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.batteryText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2619,7 +2619,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.copperPortion": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.copperPortion": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2630,7 +2630,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.copperPortion.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.copperPortion.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2641,7 +2641,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.copperPortion.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.copperPortion.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2652,7 +2652,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.copperPortion.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.copperPortion.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2663,7 +2663,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.mainBody": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.mainBody": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2674,7 +2674,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.mainBody.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.mainBody.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2685,7 +2685,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.mainBody.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.mainBody.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2696,7 +2696,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.mainBody.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.mainBody.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2707,7 +2707,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.nub": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.nub": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2718,7 +2718,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.nub.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.nub.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2729,7 +2729,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.nub.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.nub.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2740,7 +2740,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.nub.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.nub.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2751,7 +2751,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageUnitsText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageUnitsText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2762,7 +2762,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageUnitsText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageUnitsText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2773,7 +2773,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageUnitsText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageUnitsText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2784,7 +2784,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageUnitsText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageUnitsText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2795,7 +2795,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageUnitsText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageUnitsText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2806,7 +2806,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageValueText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageValueText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2817,7 +2817,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageValueText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageValueText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2828,7 +2828,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageValueText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageValueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2839,7 +2839,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageValueText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageValueText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2850,7 +2850,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~1.voltageValueText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~1.voltageValueText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2861,7 +2861,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.batteryText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.batteryText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2872,7 +2872,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.batteryText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.batteryText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2883,7 +2883,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.batteryText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.batteryText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2894,7 +2894,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.batteryText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.batteryText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2905,7 +2905,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.copperPortion": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.copperPortion": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2916,7 +2916,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.copperPortion.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.copperPortion.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2927,7 +2927,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.copperPortion.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.copperPortion.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2938,7 +2938,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.copperPortion.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.copperPortion.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2949,7 +2949,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.mainBody": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.mainBody": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2960,7 +2960,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.mainBody.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.mainBody.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2971,7 +2971,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.mainBody.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.mainBody.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2982,7 +2982,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.mainBody.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.mainBody.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -2993,7 +2993,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.nub": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.nub": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3004,7 +3004,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.nub.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.nub.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3015,7 +3015,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.nub.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.nub.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3026,7 +3026,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.nub.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.nub.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3037,7 +3037,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageUnitsText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageUnitsText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3048,7 +3048,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageUnitsText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageUnitsText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3059,7 +3059,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageUnitsText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageUnitsText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3070,7 +3070,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageUnitsText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageUnitsText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3081,7 +3081,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageUnitsText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageUnitsText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3092,7 +3092,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageValueText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageValueText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3103,7 +3103,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageValueText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageValueText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3114,7 +3114,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageValueText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageValueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3125,7 +3125,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageValueText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageValueText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3136,7 +3136,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~2.voltageValueText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~2.voltageValueText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3147,7 +3147,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.batteryText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.batteryText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3158,7 +3158,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.batteryText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.batteryText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3169,7 +3169,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.batteryText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.batteryText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3180,7 +3180,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.batteryText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.batteryText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3191,7 +3191,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.copperPortion": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.copperPortion": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3202,7 +3202,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.copperPortion.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.copperPortion.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3213,7 +3213,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.copperPortion.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.copperPortion.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3224,7 +3224,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.copperPortion.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.copperPortion.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3235,7 +3235,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.mainBody": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.mainBody": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3246,7 +3246,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.mainBody.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.mainBody.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3257,7 +3257,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.mainBody.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.mainBody.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3268,7 +3268,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.mainBody.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.mainBody.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3279,7 +3279,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.nub": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.nub": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3290,7 +3290,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.nub.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.nub.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3301,7 +3301,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.nub.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.nub.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3312,7 +3312,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.nub.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.nub.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3323,7 +3323,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageUnitsText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageUnitsText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3334,7 +3334,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageUnitsText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageUnitsText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3345,7 +3345,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageUnitsText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageUnitsText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3356,7 +3356,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageUnitsText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageUnitsText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3367,7 +3367,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageUnitsText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageUnitsText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3378,7 +3378,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageValueText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageValueText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3389,7 +3389,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageValueText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageValueText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3400,7 +3400,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageValueText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageValueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3411,7 +3411,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageValueText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageValueText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3422,7 +3422,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~3.voltageValueText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~3.voltageValueText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3433,7 +3433,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.batteryText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.batteryText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3444,7 +3444,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.batteryText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.batteryText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3455,7 +3455,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.batteryText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.batteryText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3466,7 +3466,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.batteryText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.batteryText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3477,7 +3477,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.copperPortion": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.copperPortion": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3488,7 +3488,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.copperPortion.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.copperPortion.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3499,7 +3499,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.copperPortion.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.copperPortion.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3510,7 +3510,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.copperPortion.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.copperPortion.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3521,7 +3521,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.mainBody": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.mainBody": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3532,7 +3532,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.mainBody.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.mainBody.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3543,7 +3543,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.mainBody.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.mainBody.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3554,7 +3554,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.mainBody.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.mainBody.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3565,7 +3565,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.nub": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.nub": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3576,7 +3576,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.nub.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.nub.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3587,7 +3587,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.nub.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.nub.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3598,7 +3598,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.nub.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.nub.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3609,7 +3609,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageUnitsText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageUnitsText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3620,7 +3620,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageUnitsText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageUnitsText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3631,7 +3631,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageUnitsText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageUnitsText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3642,7 +3642,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageUnitsText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageUnitsText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3653,7 +3653,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageUnitsText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageUnitsText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3664,7 +3664,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageValueText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageValueText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3675,7 +3675,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageValueText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageValueText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3686,7 +3686,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageValueText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageValueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3697,7 +3697,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageValueText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageValueText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3708,7 +3708,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~4.voltageValueText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~4.voltageValueText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3719,7 +3719,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.batteryText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.batteryText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3730,7 +3730,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.batteryText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.batteryText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3741,7 +3741,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.batteryText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.batteryText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3752,7 +3752,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.batteryText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.batteryText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3763,7 +3763,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.copperPortion": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.copperPortion": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3774,7 +3774,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.copperPortion.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.copperPortion.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3785,7 +3785,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.copperPortion.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.copperPortion.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3796,7 +3796,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.copperPortion.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.copperPortion.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3807,7 +3807,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.mainBody": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.mainBody": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3818,7 +3818,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.mainBody.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.mainBody.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3829,7 +3829,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.mainBody.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.mainBody.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3840,7 +3840,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.mainBody.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.mainBody.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3851,7 +3851,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.nub": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.nub": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3862,7 +3862,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.nub.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.nub.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3873,7 +3873,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.nub.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.nub.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3884,7 +3884,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.nub.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.nub.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3895,7 +3895,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageUnitsText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageUnitsText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3906,7 +3906,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageUnitsText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageUnitsText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3917,7 +3917,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageUnitsText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageUnitsText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3928,7 +3928,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageUnitsText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageUnitsText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3939,7 +3939,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageUnitsText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageUnitsText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3950,7 +3950,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageValueText": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageValueText": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3961,7 +3961,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageValueText.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageValueText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3972,7 +3972,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageValueText.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageValueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3983,7 +3983,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageValueText.textProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageValueText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3994,7 +3994,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery.element~5.voltageValueText.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.batteriesView.battery~5.voltageValueText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4467,7 +4467,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~0": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~0": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4478,7 +4478,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~0.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~0.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4489,7 +4489,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~0.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~0.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4500,7 +4500,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~0.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~0.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4511,7 +4511,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~1": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~1": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4522,7 +4522,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~1.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~1.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4533,7 +4533,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~1.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~1.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4544,7 +4544,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~1.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~1.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4555,7 +4555,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~10": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~10": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4566,7 +4566,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~10.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~10.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4577,7 +4577,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~10.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~10.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4588,7 +4588,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~10.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~10.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4599,7 +4599,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~100": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~100": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4610,7 +4610,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~100.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~100.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4621,7 +4621,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~100.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~100.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4632,7 +4632,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~100.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~100.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4643,7 +4643,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~101": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~101": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4654,7 +4654,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~101.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~101.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4665,7 +4665,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~101.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~101.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4676,7 +4676,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~101.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~101.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4687,7 +4687,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~102": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~102": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4698,7 +4698,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~102.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~102.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4709,7 +4709,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~102.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~102.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4720,7 +4720,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~102.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~102.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4731,7 +4731,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~103": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~103": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4742,7 +4742,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~103.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~103.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4753,7 +4753,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~103.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~103.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4764,7 +4764,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~103.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~103.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4775,7 +4775,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~104": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~104": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4786,7 +4786,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~104.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~104.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4797,7 +4797,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~104.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~104.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4808,7 +4808,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~104.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~104.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4819,7 +4819,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~105": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~105": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4830,7 +4830,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~105.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~105.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4841,7 +4841,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~105.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~105.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4852,7 +4852,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~105.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~105.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4863,7 +4863,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~106": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~106": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4874,7 +4874,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~106.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~106.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4885,7 +4885,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~106.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~106.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4896,7 +4896,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~106.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~106.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4907,7 +4907,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~107": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~107": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4918,7 +4918,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~107.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~107.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4929,7 +4929,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~107.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~107.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4940,7 +4940,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~107.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~107.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4951,7 +4951,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~108": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~108": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4962,7 +4962,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~108.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~108.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4973,7 +4973,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~108.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~108.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4984,7 +4984,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~108.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~108.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -4995,7 +4995,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~109": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~109": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5006,7 +5006,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~109.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~109.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5017,7 +5017,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~109.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~109.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5028,7 +5028,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~109.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~109.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5039,7 +5039,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~11": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~11": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5050,7 +5050,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~11.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~11.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5061,7 +5061,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~11.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~11.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5072,7 +5072,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~11.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~11.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5083,7 +5083,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~110": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~110": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5094,7 +5094,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~110.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~110.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5105,7 +5105,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~110.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~110.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5116,7 +5116,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~110.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~110.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5127,7 +5127,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~111": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~111": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5138,7 +5138,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~111.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~111.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5149,7 +5149,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~111.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~111.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5160,7 +5160,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~111.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~111.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5171,7 +5171,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~112": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~112": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5182,7 +5182,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~112.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~112.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5193,7 +5193,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~112.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~112.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5204,7 +5204,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~112.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~112.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5215,7 +5215,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~113": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~113": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5226,7 +5226,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~113.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~113.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5237,7 +5237,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~113.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~113.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5248,7 +5248,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~113.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~113.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5259,7 +5259,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~114": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~114": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5270,7 +5270,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~114.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~114.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5281,7 +5281,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~114.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~114.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5292,7 +5292,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~114.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~114.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5303,7 +5303,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~115": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~115": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5314,7 +5314,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~115.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~115.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5325,7 +5325,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~115.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~115.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5336,7 +5336,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~115.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~115.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5347,7 +5347,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~116": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~116": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5358,7 +5358,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~116.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~116.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5369,7 +5369,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~116.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~116.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5380,7 +5380,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~116.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~116.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5391,7 +5391,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~117": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~117": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5402,7 +5402,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~117.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~117.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5413,7 +5413,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~117.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~117.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5424,7 +5424,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~117.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~117.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5435,7 +5435,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~118": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~118": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5446,7 +5446,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~118.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~118.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5457,7 +5457,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~118.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~118.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5468,7 +5468,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~118.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~118.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5479,7 +5479,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~119": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~119": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5490,7 +5490,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~119.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~119.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5501,7 +5501,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~119.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~119.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5512,7 +5512,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~119.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~119.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5523,7 +5523,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~12": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~12": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5534,7 +5534,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~12.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~12.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5545,7 +5545,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~12.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~12.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5556,7 +5556,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~12.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~12.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5567,7 +5567,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~120": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~120": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5578,7 +5578,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~120.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~120.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5589,7 +5589,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~120.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~120.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5600,7 +5600,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~120.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~120.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5611,7 +5611,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~121": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~121": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5622,7 +5622,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~121.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~121.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5633,7 +5633,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~121.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~121.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5644,7 +5644,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~121.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~121.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5655,7 +5655,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~122": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~122": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5666,7 +5666,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~122.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~122.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5677,7 +5677,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~122.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~122.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5688,7 +5688,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~122.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~122.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5699,7 +5699,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~123": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~123": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5710,7 +5710,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~123.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~123.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5721,7 +5721,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~123.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~123.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5732,7 +5732,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~123.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~123.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5743,7 +5743,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~124": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~124": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5754,7 +5754,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~124.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~124.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5765,7 +5765,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~124.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~124.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5776,7 +5776,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~124.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~124.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5787,7 +5787,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~125": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~125": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5798,7 +5798,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~125.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~125.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5809,7 +5809,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~125.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~125.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5820,7 +5820,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~125.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~125.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5831,7 +5831,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~126": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~126": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5842,7 +5842,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~126.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~126.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5853,7 +5853,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~126.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~126.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5864,7 +5864,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~126.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~126.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5875,7 +5875,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~127": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~127": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5886,7 +5886,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~127.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~127.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5897,7 +5897,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~127.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~127.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5908,7 +5908,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~127.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~127.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5919,7 +5919,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~128": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~128": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5930,7 +5930,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~128.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~128.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5941,7 +5941,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~128.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~128.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5952,7 +5952,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~128.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~128.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5963,7 +5963,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~129": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~129": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5974,7 +5974,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~129.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~129.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5985,7 +5985,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~129.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~129.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -5996,7 +5996,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~129.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~129.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6007,7 +6007,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~13": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~13": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6018,7 +6018,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~13.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~13.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6029,7 +6029,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~13.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~13.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6040,7 +6040,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~13.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~13.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6051,7 +6051,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~130": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~130": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6062,7 +6062,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~130.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~130.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6073,7 +6073,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~130.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~130.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6084,7 +6084,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~130.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~130.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6095,7 +6095,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~131": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~131": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6106,7 +6106,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~131.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~131.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6117,7 +6117,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~131.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~131.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6128,7 +6128,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~131.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~131.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6139,7 +6139,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~132": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~132": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6150,7 +6150,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~132.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~132.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6161,7 +6161,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~132.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~132.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6172,7 +6172,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~132.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~132.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6183,7 +6183,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~133": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~133": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6194,7 +6194,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~133.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~133.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6205,7 +6205,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~133.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~133.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6216,7 +6216,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~133.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~133.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6227,7 +6227,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~134": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~134": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6238,7 +6238,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~134.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~134.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6249,7 +6249,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~134.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~134.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6260,7 +6260,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~134.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~134.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6271,7 +6271,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~135": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~135": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6282,7 +6282,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~135.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~135.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6293,7 +6293,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~135.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~135.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6304,7 +6304,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~135.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~135.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6315,7 +6315,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~136": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~136": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6326,7 +6326,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~136.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~136.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6337,7 +6337,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~136.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~136.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6348,7 +6348,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~136.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~136.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6359,7 +6359,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~137": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~137": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6370,7 +6370,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~137.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~137.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6381,7 +6381,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~137.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~137.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6392,7 +6392,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~137.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~137.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6403,7 +6403,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~138": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~138": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6414,7 +6414,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~138.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~138.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6425,7 +6425,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~138.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~138.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6436,7 +6436,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~138.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~138.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6447,7 +6447,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~139": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~139": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6458,7 +6458,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~139.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~139.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6469,7 +6469,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~139.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~139.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6480,7 +6480,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~139.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~139.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6491,7 +6491,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~14": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~14": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6502,7 +6502,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~14.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~14.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6513,7 +6513,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~14.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~14.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6524,7 +6524,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~14.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~14.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6535,7 +6535,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~140": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~140": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6546,7 +6546,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~140.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~140.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6557,7 +6557,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~140.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~140.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6568,7 +6568,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~140.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~140.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6579,7 +6579,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~141": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~141": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6590,7 +6590,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~141.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~141.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6601,7 +6601,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~141.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~141.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6612,7 +6612,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~141.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~141.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6623,7 +6623,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~142": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~142": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6634,7 +6634,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~142.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~142.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6645,7 +6645,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~142.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~142.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6656,7 +6656,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~142.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~142.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6667,7 +6667,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~143": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~143": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6678,7 +6678,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~143.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~143.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6689,7 +6689,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~143.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~143.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6700,7 +6700,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~143.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~143.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6711,7 +6711,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~144": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~144": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6722,7 +6722,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~144.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~144.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6733,7 +6733,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~144.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~144.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6744,7 +6744,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~144.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~144.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6755,7 +6755,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~145": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~145": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6766,7 +6766,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~145.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~145.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6777,7 +6777,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~145.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~145.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6788,7 +6788,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~145.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~145.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6799,7 +6799,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~146": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~146": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6810,7 +6810,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~146.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~146.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6821,7 +6821,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~146.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~146.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6832,7 +6832,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~146.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~146.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6843,7 +6843,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~147": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~147": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6854,7 +6854,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~147.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~147.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6865,7 +6865,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~147.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~147.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6876,7 +6876,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~147.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~147.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6887,7 +6887,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~148": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~148": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6898,7 +6898,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~148.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~148.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6909,7 +6909,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~148.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~148.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6920,7 +6920,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~148.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~148.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6931,7 +6931,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~149": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~149": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6942,7 +6942,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~149.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~149.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6953,7 +6953,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~149.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~149.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6964,7 +6964,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~149.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~149.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6975,7 +6975,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~15": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~15": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6986,7 +6986,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~15.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~15.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6997,7 +6997,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~15.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~15.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7008,7 +7008,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~15.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~15.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7019,7 +7019,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~150": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~150": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7030,7 +7030,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~150.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~150.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7041,7 +7041,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~150.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~150.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7052,7 +7052,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~150.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~150.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7063,7 +7063,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~151": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~151": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7074,7 +7074,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~151.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~151.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7085,7 +7085,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~151.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~151.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7096,7 +7096,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~151.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~151.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7107,7 +7107,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~152": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~152": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7118,7 +7118,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~152.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~152.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7129,7 +7129,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~152.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~152.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7140,7 +7140,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~152.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~152.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7151,7 +7151,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~153": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~153": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7162,7 +7162,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~153.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~153.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7173,7 +7173,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~153.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~153.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7184,7 +7184,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~153.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~153.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7195,7 +7195,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~154": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~154": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7206,7 +7206,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~154.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~154.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7217,7 +7217,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~154.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~154.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7228,7 +7228,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~154.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~154.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7239,7 +7239,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~155": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~155": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7250,7 +7250,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~155.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~155.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7261,7 +7261,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~155.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~155.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7272,7 +7272,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~155.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~155.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7283,7 +7283,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~156": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~156": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7294,7 +7294,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~156.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~156.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7305,7 +7305,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~156.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~156.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7316,7 +7316,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~156.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~156.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7327,7 +7327,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~157": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~157": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7338,7 +7338,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~157.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~157.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7349,7 +7349,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~157.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~157.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7360,7 +7360,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~157.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~157.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7371,7 +7371,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~158": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~158": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7382,7 +7382,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~158.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~158.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7393,7 +7393,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~158.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~158.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7404,7 +7404,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~158.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~158.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7415,7 +7415,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~159": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~159": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7426,7 +7426,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~159.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~159.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7437,7 +7437,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~159.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~159.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7448,7 +7448,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~159.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~159.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7459,7 +7459,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~16": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~16": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7470,7 +7470,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~16.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~16.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7481,7 +7481,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~16.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~16.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7492,7 +7492,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~16.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~16.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7503,7 +7503,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~160": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~160": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7514,7 +7514,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~160.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~160.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7525,7 +7525,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~160.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~160.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7536,7 +7536,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~160.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~160.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7547,7 +7547,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~161": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~161": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7558,7 +7558,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~161.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~161.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7569,7 +7569,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~161.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~161.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7580,7 +7580,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~161.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~161.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7591,7 +7591,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~162": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~162": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7602,7 +7602,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~162.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~162.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7613,7 +7613,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~162.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~162.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7624,7 +7624,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~162.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~162.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7635,7 +7635,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~163": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~163": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7646,7 +7646,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~163.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~163.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7657,7 +7657,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~163.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~163.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7668,7 +7668,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~163.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~163.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7679,7 +7679,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~164": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~164": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7690,7 +7690,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~164.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~164.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7701,7 +7701,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~164.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~164.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7712,7 +7712,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~164.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~164.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7723,7 +7723,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~165": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~165": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7734,7 +7734,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~165.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~165.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7745,7 +7745,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~165.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~165.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7756,7 +7756,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~165.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~165.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7767,7 +7767,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~166": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~166": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7778,7 +7778,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~166.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~166.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7789,7 +7789,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~166.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~166.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7800,7 +7800,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~166.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~166.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7811,7 +7811,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~167": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~167": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7822,7 +7822,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~167.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~167.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7833,7 +7833,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~167.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~167.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7844,7 +7844,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~167.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~167.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7855,7 +7855,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~168": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~168": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7866,7 +7866,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~168.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~168.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7877,7 +7877,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~168.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~168.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7888,7 +7888,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~168.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~168.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7899,7 +7899,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~169": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~169": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7910,7 +7910,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~169.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~169.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7921,7 +7921,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~169.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~169.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7932,7 +7932,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~169.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~169.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7943,7 +7943,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~17": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~17": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7954,7 +7954,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~17.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~17.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7965,7 +7965,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~17.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~17.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7976,7 +7976,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~17.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~17.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7987,7 +7987,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~170": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~170": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -7998,7 +7998,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~170.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~170.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8009,7 +8009,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~170.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~170.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8020,7 +8020,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~170.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~170.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8031,7 +8031,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~171": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~171": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8042,7 +8042,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~171.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~171.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8053,7 +8053,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~171.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~171.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8064,7 +8064,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~171.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~171.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8075,7 +8075,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~172": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~172": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8086,7 +8086,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~172.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~172.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8097,7 +8097,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~172.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~172.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8108,7 +8108,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~172.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~172.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8119,7 +8119,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~173": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~173": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8130,7 +8130,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~173.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~173.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8141,7 +8141,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~173.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~173.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8152,7 +8152,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~173.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~173.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8163,7 +8163,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~174": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~174": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8174,7 +8174,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~174.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~174.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8185,7 +8185,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~174.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~174.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8196,7 +8196,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~174.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~174.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8207,7 +8207,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~175": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~175": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8218,7 +8218,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~175.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~175.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8229,7 +8229,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~175.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~175.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8240,7 +8240,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~175.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~175.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8251,7 +8251,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~176": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~176": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8262,7 +8262,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~176.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~176.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8273,7 +8273,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~176.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~176.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8284,7 +8284,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~176.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~176.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8295,7 +8295,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~177": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~177": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8306,7 +8306,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~177.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~177.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8317,7 +8317,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~177.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~177.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8328,7 +8328,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~177.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~177.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8339,7 +8339,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~178": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~178": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8350,7 +8350,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~178.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~178.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8361,7 +8361,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~178.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~178.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8372,7 +8372,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~178.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~178.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8383,7 +8383,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~179": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~179": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8394,7 +8394,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~179.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~179.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8405,7 +8405,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~179.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~179.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8416,7 +8416,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~179.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~179.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8427,7 +8427,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~18": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~18": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8438,7 +8438,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~18.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~18.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8449,7 +8449,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~18.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~18.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8460,7 +8460,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~18.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~18.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8471,7 +8471,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~180": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~180": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8482,7 +8482,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~180.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~180.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8493,7 +8493,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~180.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~180.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8504,7 +8504,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~180.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~180.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8515,7 +8515,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~181": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~181": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8526,7 +8526,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~181.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~181.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8537,7 +8537,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~181.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~181.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8548,7 +8548,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~181.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~181.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8559,7 +8559,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~182": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~182": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8570,7 +8570,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~182.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~182.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8581,7 +8581,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~182.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~182.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8592,7 +8592,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~182.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~182.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8603,7 +8603,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~183": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~183": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8614,7 +8614,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~183.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~183.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8625,7 +8625,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~183.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~183.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8636,7 +8636,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~183.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~183.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8647,7 +8647,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~184": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~184": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8658,7 +8658,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~184.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~184.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8669,7 +8669,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~184.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~184.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8680,7 +8680,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~184.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~184.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8691,7 +8691,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~185": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~185": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8702,7 +8702,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~185.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~185.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8713,7 +8713,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~185.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~185.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8724,7 +8724,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~185.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~185.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8735,7 +8735,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~186": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~186": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8746,7 +8746,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~186.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~186.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8757,7 +8757,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~186.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~186.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8768,7 +8768,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~186.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~186.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8779,7 +8779,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~187": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~187": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8790,7 +8790,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~187.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~187.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8801,7 +8801,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~187.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~187.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8812,7 +8812,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~187.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~187.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8823,7 +8823,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~188": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~188": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8834,7 +8834,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~188.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~188.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8845,7 +8845,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~188.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~188.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8856,7 +8856,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~188.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~188.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8867,7 +8867,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~189": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~189": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8878,7 +8878,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~189.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~189.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8889,7 +8889,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~189.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~189.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8900,7 +8900,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~189.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~189.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8911,7 +8911,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~19": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~19": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8922,7 +8922,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~19.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~19.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8933,7 +8933,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~19.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~19.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8944,7 +8944,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~19.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~19.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8955,7 +8955,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~190": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~190": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8966,7 +8966,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~190.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~190.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8977,7 +8977,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~190.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~190.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8988,7 +8988,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~190.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~190.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8999,7 +8999,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~191": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~191": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9010,7 +9010,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~191.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~191.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9021,7 +9021,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~191.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~191.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9032,7 +9032,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~191.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~191.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9043,7 +9043,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~192": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~192": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9054,7 +9054,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~192.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~192.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9065,7 +9065,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~192.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~192.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9076,7 +9076,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~192.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~192.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9087,7 +9087,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~193": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~193": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9098,7 +9098,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~193.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~193.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9109,7 +9109,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~193.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~193.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9120,7 +9120,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~193.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~193.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9131,7 +9131,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~194": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~194": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9142,7 +9142,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~194.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~194.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9153,7 +9153,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~194.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~194.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9164,7 +9164,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~194.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~194.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9175,7 +9175,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~195": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~195": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9186,7 +9186,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~195.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~195.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9197,7 +9197,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~195.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~195.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9208,7 +9208,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~195.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~195.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9219,7 +9219,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~196": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~196": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9230,7 +9230,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~196.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~196.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9241,7 +9241,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~196.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~196.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9252,7 +9252,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~196.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~196.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9263,7 +9263,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~197": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~197": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9274,7 +9274,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~197.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~197.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9285,7 +9285,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~197.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~197.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9296,7 +9296,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~197.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~197.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9307,7 +9307,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~198": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~198": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9318,7 +9318,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~198.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~198.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9329,7 +9329,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~198.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~198.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9340,7 +9340,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~198.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~198.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9351,7 +9351,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~199": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~199": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9362,7 +9362,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~199.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~199.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9373,7 +9373,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~199.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~199.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9384,7 +9384,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~199.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~199.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9395,7 +9395,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~2": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~2": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9406,7 +9406,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~2.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~2.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9417,7 +9417,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~2.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~2.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9428,7 +9428,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~2.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~2.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9439,7 +9439,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~20": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~20": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9450,7 +9450,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~20.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~20.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9461,7 +9461,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~20.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~20.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9472,7 +9472,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~20.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~20.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9483,7 +9483,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~200": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~200": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9494,7 +9494,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~200.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~200.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9505,7 +9505,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~200.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~200.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9516,7 +9516,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~200.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~200.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9527,7 +9527,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~201": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~201": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9538,7 +9538,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~201.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~201.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9549,7 +9549,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~201.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~201.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9560,7 +9560,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~201.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~201.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9571,7 +9571,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~202": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~202": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9582,7 +9582,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~202.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~202.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9593,7 +9593,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~202.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~202.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9604,7 +9604,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~202.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~202.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9615,7 +9615,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~203": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~203": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9626,7 +9626,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~203.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~203.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9637,7 +9637,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~203.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~203.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9648,7 +9648,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~203.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~203.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9659,7 +9659,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~204": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~204": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9670,7 +9670,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~204.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~204.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9681,7 +9681,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~204.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~204.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9692,7 +9692,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~204.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~204.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9703,7 +9703,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~205": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~205": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9714,7 +9714,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~205.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~205.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9725,7 +9725,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~205.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~205.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9736,7 +9736,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~205.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~205.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9747,7 +9747,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~206": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~206": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9758,7 +9758,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~206.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~206.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9769,7 +9769,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~206.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~206.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9780,7 +9780,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~206.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~206.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9791,7 +9791,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~207": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~207": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9802,7 +9802,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~207.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~207.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9813,7 +9813,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~207.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~207.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9824,7 +9824,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~207.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~207.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9835,7 +9835,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~208": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~208": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9846,7 +9846,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~208.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~208.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9857,7 +9857,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~208.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~208.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9868,7 +9868,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~208.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~208.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9879,7 +9879,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~209": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~209": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9890,7 +9890,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~209.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~209.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9901,7 +9901,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~209.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~209.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9912,7 +9912,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~209.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~209.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9923,7 +9923,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~21": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~21": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9934,7 +9934,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~21.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~21.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9945,7 +9945,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~21.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~21.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9956,7 +9956,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~21.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~21.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9967,7 +9967,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~210": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~210": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9978,7 +9978,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~210.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~210.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9989,7 +9989,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~210.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~210.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10000,7 +10000,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~210.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~210.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10011,7 +10011,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~211": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~211": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10022,7 +10022,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~211.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~211.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10033,7 +10033,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~211.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~211.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10044,7 +10044,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~211.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~211.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10055,7 +10055,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~212": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~212": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10066,7 +10066,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~212.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~212.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10077,7 +10077,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~212.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~212.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10088,7 +10088,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~212.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~212.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10099,7 +10099,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~213": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~213": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10110,7 +10110,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~213.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~213.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10121,7 +10121,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~213.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~213.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10132,7 +10132,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~213.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~213.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10143,7 +10143,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~214": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~214": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10154,7 +10154,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~214.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~214.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10165,7 +10165,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~214.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~214.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10176,7 +10176,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~214.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~214.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10187,7 +10187,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~215": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~215": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10198,7 +10198,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~215.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~215.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10209,7 +10209,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~215.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~215.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10220,7 +10220,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~215.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~215.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10231,7 +10231,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~216": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~216": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10242,7 +10242,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~216.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~216.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10253,7 +10253,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~216.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~216.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10264,7 +10264,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~216.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~216.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10275,7 +10275,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~217": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~217": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10286,7 +10286,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~217.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~217.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10297,7 +10297,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~217.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~217.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10308,7 +10308,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~217.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~217.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10319,7 +10319,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~218": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~218": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10330,7 +10330,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~218.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~218.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10341,7 +10341,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~218.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~218.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10352,7 +10352,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~218.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~218.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10363,7 +10363,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~219": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~219": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10374,7 +10374,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~219.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~219.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10385,7 +10385,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~219.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~219.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10396,7 +10396,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~219.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~219.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10407,7 +10407,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~22": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~22": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10418,7 +10418,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~22.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~22.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10429,7 +10429,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~22.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~22.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10440,7 +10440,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~22.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~22.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10451,7 +10451,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~220": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~220": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10462,7 +10462,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~220.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~220.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10473,7 +10473,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~220.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~220.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10484,7 +10484,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~220.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~220.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10495,7 +10495,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~221": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~221": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10506,7 +10506,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~221.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~221.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10517,7 +10517,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~221.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~221.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10528,7 +10528,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~221.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~221.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10539,7 +10539,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~222": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~222": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10550,7 +10550,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~222.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~222.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10561,7 +10561,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~222.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~222.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10572,7 +10572,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~222.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~222.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10583,7 +10583,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~223": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~223": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10594,7 +10594,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~223.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~223.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10605,7 +10605,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~223.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~223.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10616,7 +10616,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~223.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~223.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10627,7 +10627,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~224": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~224": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10638,7 +10638,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~224.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~224.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10649,7 +10649,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~224.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~224.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10660,7 +10660,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~224.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~224.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10671,7 +10671,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~225": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~225": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10682,7 +10682,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~225.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~225.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10693,7 +10693,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~225.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~225.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10704,7 +10704,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~225.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~225.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10715,7 +10715,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~226": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~226": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10726,7 +10726,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~226.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~226.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10737,7 +10737,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~226.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~226.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10748,7 +10748,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~226.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~226.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10759,7 +10759,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~227": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~227": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10770,7 +10770,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~227.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~227.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10781,7 +10781,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~227.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~227.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10792,7 +10792,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~227.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~227.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10803,7 +10803,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~228": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~228": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10814,7 +10814,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~228.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~228.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10825,7 +10825,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~228.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~228.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10836,7 +10836,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~228.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~228.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10847,7 +10847,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~229": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~229": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10858,7 +10858,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~229.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~229.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10869,7 +10869,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~229.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~229.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10880,7 +10880,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~229.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~229.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10891,7 +10891,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~23": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~23": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10902,7 +10902,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~23.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~23.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10913,7 +10913,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~23.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~23.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10924,7 +10924,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~23.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~23.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10935,7 +10935,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~230": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~230": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10946,7 +10946,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~230.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~230.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10957,7 +10957,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~230.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~230.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10968,7 +10968,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~230.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~230.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10979,7 +10979,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~231": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~231": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -10990,7 +10990,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~231.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~231.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11001,7 +11001,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~231.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~231.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11012,7 +11012,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~231.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~231.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11023,7 +11023,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~232": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~232": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11034,7 +11034,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~232.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~232.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11045,7 +11045,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~232.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~232.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11056,7 +11056,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~232.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~232.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11067,7 +11067,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~233": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~233": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11078,7 +11078,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~233.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~233.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11089,7 +11089,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~233.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~233.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11100,7 +11100,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~233.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~233.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11111,7 +11111,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~234": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~234": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11122,7 +11122,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~234.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~234.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11133,7 +11133,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~234.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~234.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11144,7 +11144,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~234.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~234.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11155,7 +11155,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~235": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~235": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11166,7 +11166,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~235.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~235.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11177,7 +11177,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~235.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~235.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11188,7 +11188,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~235.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~235.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11199,7 +11199,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~236": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~236": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11210,7 +11210,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~236.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~236.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11221,7 +11221,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~236.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~236.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11232,7 +11232,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~236.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~236.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11243,7 +11243,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~237": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~237": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11254,7 +11254,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~237.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~237.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11265,7 +11265,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~237.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~237.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11276,7 +11276,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~237.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~237.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11287,7 +11287,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~238": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~238": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11298,7 +11298,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~238.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~238.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11309,7 +11309,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~238.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~238.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11320,7 +11320,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~238.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~238.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11331,7 +11331,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~239": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~239": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11342,7 +11342,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~239.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~239.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11353,7 +11353,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~239.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~239.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11364,7 +11364,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~239.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~239.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11375,7 +11375,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~24": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~24": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11386,7 +11386,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~24.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~24.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11397,7 +11397,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~24.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~24.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11408,7 +11408,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~24.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~24.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11419,7 +11419,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~240": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~240": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11430,7 +11430,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~240.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~240.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11441,7 +11441,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~240.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~240.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11452,7 +11452,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~240.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~240.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11463,7 +11463,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~241": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~241": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11474,7 +11474,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~241.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~241.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11485,7 +11485,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~241.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~241.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11496,7 +11496,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~241.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~241.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11507,7 +11507,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~242": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~242": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11518,7 +11518,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~242.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~242.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11529,7 +11529,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~242.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~242.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11540,7 +11540,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~242.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~242.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11551,7 +11551,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~243": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~243": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11562,7 +11562,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~243.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~243.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11573,7 +11573,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~243.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~243.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11584,7 +11584,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~243.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~243.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11595,7 +11595,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~244": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~244": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11606,7 +11606,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~244.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~244.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11617,7 +11617,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~244.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~244.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11628,7 +11628,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~244.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~244.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11639,7 +11639,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~245": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~245": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11650,7 +11650,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~245.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~245.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11661,7 +11661,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~245.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~245.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11672,7 +11672,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~245.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~245.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11683,7 +11683,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~246": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~246": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11694,7 +11694,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~246.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~246.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11705,7 +11705,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~246.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~246.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11716,7 +11716,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~246.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~246.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11727,7 +11727,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~247": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~247": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11738,7 +11738,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~247.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~247.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11749,7 +11749,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~247.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~247.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11760,7 +11760,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~247.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~247.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11771,7 +11771,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~248": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~248": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11782,7 +11782,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~248.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~248.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11793,7 +11793,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~248.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~248.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11804,7 +11804,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~248.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~248.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11815,7 +11815,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~249": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~249": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11826,7 +11826,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~249.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~249.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11837,7 +11837,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~249.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~249.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11848,7 +11848,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~249.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~249.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11859,7 +11859,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~25": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~25": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11870,7 +11870,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~25.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~25.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11881,7 +11881,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~25.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~25.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11892,7 +11892,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~25.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~25.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11903,7 +11903,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~250": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~250": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11914,7 +11914,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~250.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~250.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11925,7 +11925,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~250.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~250.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11936,7 +11936,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~250.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~250.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11947,7 +11947,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~251": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~251": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11958,7 +11958,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~251.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~251.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11969,7 +11969,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~251.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~251.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11980,7 +11980,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~251.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~251.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -11991,7 +11991,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~252": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~252": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12002,7 +12002,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~252.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~252.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12013,7 +12013,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~252.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~252.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12024,7 +12024,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~252.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~252.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12035,7 +12035,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~253": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~253": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12046,7 +12046,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~253.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~253.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12057,7 +12057,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~253.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~253.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12068,7 +12068,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~253.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~253.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12079,7 +12079,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~254": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~254": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12090,7 +12090,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~254.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~254.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12101,7 +12101,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~254.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~254.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12112,7 +12112,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~254.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~254.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12123,7 +12123,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~255": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~255": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12134,7 +12134,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~255.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~255.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12145,7 +12145,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~255.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~255.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12156,7 +12156,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~255.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~255.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12167,7 +12167,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~256": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~256": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12178,7 +12178,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~256.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~256.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12189,7 +12189,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~256.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~256.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12200,7 +12200,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~256.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~256.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12211,7 +12211,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~257": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~257": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12222,7 +12222,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~257.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~257.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12233,7 +12233,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~257.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~257.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12244,7 +12244,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~257.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~257.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12255,7 +12255,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~258": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~258": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12266,7 +12266,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~258.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~258.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12277,7 +12277,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~258.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~258.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12288,7 +12288,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~258.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~258.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12299,7 +12299,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~259": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~259": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12310,7 +12310,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~259.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~259.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12321,7 +12321,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~259.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~259.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12332,7 +12332,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~259.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~259.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12343,7 +12343,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~26": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~26": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12354,7 +12354,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~26.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~26.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12365,7 +12365,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~26.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~26.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12376,7 +12376,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~26.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~26.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12387,7 +12387,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~260": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~260": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12398,7 +12398,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~260.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~260.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12409,7 +12409,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~260.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~260.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12420,7 +12420,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~260.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~260.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12431,7 +12431,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~261": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~261": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12442,7 +12442,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~261.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~261.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12453,7 +12453,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~261.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~261.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12464,7 +12464,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~261.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~261.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12475,7 +12475,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~262": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~262": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12486,7 +12486,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~262.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~262.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12497,7 +12497,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~262.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~262.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12508,7 +12508,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~262.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~262.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12519,7 +12519,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~263": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~263": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12530,7 +12530,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~263.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~263.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12541,7 +12541,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~263.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~263.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12552,7 +12552,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~263.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~263.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12563,7 +12563,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~264": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~264": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12574,7 +12574,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~264.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~264.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12585,7 +12585,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~264.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~264.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12596,7 +12596,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~264.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~264.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12607,7 +12607,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~265": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~265": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12618,7 +12618,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~265.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~265.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12629,7 +12629,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~265.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~265.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12640,7 +12640,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~265.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~265.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12651,7 +12651,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~266": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~266": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12662,7 +12662,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~266.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~266.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12673,7 +12673,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~266.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~266.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12684,7 +12684,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~266.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~266.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12695,7 +12695,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~267": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~267": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12706,7 +12706,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~267.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~267.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12717,7 +12717,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~267.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~267.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12728,7 +12728,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~267.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~267.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12739,7 +12739,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~268": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~268": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12750,7 +12750,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~268.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~268.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12761,7 +12761,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~268.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~268.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12772,7 +12772,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~268.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~268.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12783,7 +12783,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~269": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~269": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12794,7 +12794,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~269.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~269.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12805,7 +12805,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~269.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~269.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12816,7 +12816,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~269.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~269.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12827,7 +12827,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~27": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~27": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12838,7 +12838,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~27.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~27.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12849,7 +12849,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~27.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~27.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12860,7 +12860,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~27.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~27.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12871,7 +12871,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~270": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~270": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12882,7 +12882,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~270.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~270.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12893,7 +12893,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~270.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~270.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12904,7 +12904,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~270.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~270.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12915,7 +12915,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~271": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~271": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12926,7 +12926,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~271.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~271.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12937,7 +12937,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~271.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~271.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12948,7 +12948,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~271.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~271.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12959,7 +12959,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~272": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~272": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12970,7 +12970,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~272.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~272.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12981,7 +12981,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~272.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~272.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -12992,7 +12992,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~272.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~272.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13003,7 +13003,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~273": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~273": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13014,7 +13014,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~273.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~273.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13025,7 +13025,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~273.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~273.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13036,7 +13036,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~273.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~273.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13047,7 +13047,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~274": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~274": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13058,7 +13058,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~274.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~274.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13069,7 +13069,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~274.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~274.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13080,7 +13080,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~274.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~274.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13091,7 +13091,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~275": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~275": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13102,7 +13102,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~275.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~275.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13113,7 +13113,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~275.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~275.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13124,7 +13124,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~275.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~275.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13135,7 +13135,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~276": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~276": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13146,7 +13146,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~276.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~276.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13157,7 +13157,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~276.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~276.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13168,7 +13168,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~276.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~276.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13179,7 +13179,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~277": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~277": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13190,7 +13190,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~277.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~277.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13201,7 +13201,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~277.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~277.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13212,7 +13212,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~277.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~277.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13223,7 +13223,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~278": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~278": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13234,7 +13234,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~278.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~278.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13245,7 +13245,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~278.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~278.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13256,7 +13256,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~278.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~278.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13267,7 +13267,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~279": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~279": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13278,7 +13278,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~279.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~279.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13289,7 +13289,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~279.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~279.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13300,7 +13300,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~279.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~279.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13311,7 +13311,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~28": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~28": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13322,7 +13322,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~28.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~28.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13333,7 +13333,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~28.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~28.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13344,7 +13344,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~28.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~28.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13355,7 +13355,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~280": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~280": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13366,7 +13366,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~280.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~280.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13377,7 +13377,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~280.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~280.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13388,7 +13388,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~280.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~280.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13399,7 +13399,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~281": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~281": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13410,7 +13410,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~281.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~281.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13421,7 +13421,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~281.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~281.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13432,7 +13432,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~281.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~281.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13443,7 +13443,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~282": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~282": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13454,7 +13454,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~282.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~282.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13465,7 +13465,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~282.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~282.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13476,7 +13476,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~282.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~282.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13487,7 +13487,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~283": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~283": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13498,7 +13498,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~283.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~283.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13509,7 +13509,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~283.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~283.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13520,7 +13520,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~283.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~283.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13531,7 +13531,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~284": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~284": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13542,7 +13542,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~284.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~284.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13553,7 +13553,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~284.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~284.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13564,7 +13564,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~284.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~284.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13575,7 +13575,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~285": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~285": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13586,7 +13586,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~285.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~285.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13597,7 +13597,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~285.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~285.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13608,7 +13608,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~285.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~285.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13619,7 +13619,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~286": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~286": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13630,7 +13630,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~286.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~286.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13641,7 +13641,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~286.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~286.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13652,7 +13652,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~286.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~286.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13663,7 +13663,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~287": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~287": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13674,7 +13674,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~287.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~287.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13685,7 +13685,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~287.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~287.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13696,7 +13696,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~287.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~287.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13707,7 +13707,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~288": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~288": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13718,7 +13718,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~288.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~288.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13729,7 +13729,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~288.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~288.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13740,7 +13740,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~288.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~288.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13751,7 +13751,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~289": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~289": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13762,7 +13762,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~289.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~289.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13773,7 +13773,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~289.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~289.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13784,7 +13784,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~289.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~289.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13795,7 +13795,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~29": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~29": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13806,7 +13806,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~29.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~29.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13817,7 +13817,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~29.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~29.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13828,7 +13828,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~29.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~29.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13839,7 +13839,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~290": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~290": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13850,7 +13850,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~290.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~290.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13861,7 +13861,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~290.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~290.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13872,7 +13872,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~290.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~290.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13883,7 +13883,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~291": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~291": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13894,7 +13894,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~291.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~291.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13905,7 +13905,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~291.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~291.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13916,7 +13916,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~291.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~291.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13927,7 +13927,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~292": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~292": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13938,7 +13938,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~292.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~292.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13949,7 +13949,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~292.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~292.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13960,7 +13960,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~292.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~292.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13971,7 +13971,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~293": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~293": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13982,7 +13982,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~293.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~293.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -13993,7 +13993,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~293.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~293.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14004,7 +14004,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~293.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~293.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14015,7 +14015,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~294": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~294": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14026,7 +14026,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~294.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~294.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14037,7 +14037,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~294.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~294.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14048,7 +14048,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~294.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~294.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14059,7 +14059,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~295": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~295": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14070,7 +14070,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~295.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~295.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14081,7 +14081,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~295.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~295.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14092,7 +14092,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~295.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~295.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14103,7 +14103,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~296": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~296": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14114,7 +14114,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~296.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~296.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14125,7 +14125,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~296.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~296.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14136,7 +14136,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~296.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~296.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14147,7 +14147,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~297": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~297": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14158,7 +14158,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~297.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~297.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14169,7 +14169,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~297.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~297.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14180,7 +14180,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~297.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~297.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14191,7 +14191,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~298": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~298": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14202,7 +14202,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~298.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~298.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14213,7 +14213,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~298.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~298.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14224,7 +14224,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~298.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~298.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14235,7 +14235,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~299": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~299": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14246,7 +14246,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~299.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~299.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14257,7 +14257,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~299.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~299.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14268,7 +14268,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~299.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~299.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14279,7 +14279,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~3": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~3": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14290,7 +14290,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~3.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~3.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14301,7 +14301,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~3.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~3.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14312,7 +14312,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~3.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~3.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14323,7 +14323,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~30": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~30": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14334,7 +14334,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~30.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~30.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14345,7 +14345,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~30.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~30.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14356,7 +14356,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~30.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~30.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14367,7 +14367,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~300": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~300": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14378,7 +14378,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~300.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~300.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14389,7 +14389,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~300.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~300.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14400,7 +14400,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~300.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~300.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14411,7 +14411,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~301": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~301": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14422,7 +14422,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~301.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~301.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14433,7 +14433,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~301.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~301.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14444,7 +14444,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~301.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~301.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14455,7 +14455,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~302": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~302": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14466,7 +14466,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~302.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~302.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14477,7 +14477,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~302.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~302.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14488,7 +14488,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~302.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~302.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14499,7 +14499,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~303": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~303": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14510,7 +14510,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~303.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~303.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14521,7 +14521,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~303.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~303.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14532,7 +14532,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~303.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~303.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14543,7 +14543,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~304": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~304": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14554,7 +14554,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~304.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~304.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14565,7 +14565,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~304.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~304.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14576,7 +14576,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~304.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~304.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14587,7 +14587,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~305": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~305": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14598,7 +14598,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~305.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~305.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14609,7 +14609,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~305.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~305.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14620,7 +14620,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~305.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~305.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14631,7 +14631,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~306": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~306": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14642,7 +14642,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~306.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~306.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14653,7 +14653,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~306.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~306.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14664,7 +14664,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~306.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~306.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14675,7 +14675,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~307": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~307": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14686,7 +14686,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~307.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~307.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14697,7 +14697,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~307.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~307.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14708,7 +14708,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~307.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~307.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14719,7 +14719,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~308": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~308": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14730,7 +14730,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~308.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~308.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14741,7 +14741,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~308.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~308.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14752,7 +14752,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~308.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~308.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14763,7 +14763,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~309": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~309": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14774,7 +14774,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~309.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~309.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14785,7 +14785,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~309.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~309.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14796,7 +14796,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~309.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~309.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14807,7 +14807,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~31": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~31": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14818,7 +14818,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~31.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~31.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14829,7 +14829,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~31.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~31.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14840,7 +14840,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~31.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~31.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14851,7 +14851,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~310": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~310": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14862,7 +14862,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~310.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~310.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14873,7 +14873,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~310.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~310.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14884,7 +14884,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~310.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~310.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14895,7 +14895,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~311": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~311": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14906,7 +14906,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~311.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~311.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14917,7 +14917,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~311.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~311.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14928,7 +14928,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~311.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~311.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14939,7 +14939,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~312": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~312": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14950,7 +14950,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~312.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~312.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14961,7 +14961,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~312.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~312.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14972,7 +14972,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~312.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~312.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14983,7 +14983,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~313": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~313": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -14994,7 +14994,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~313.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~313.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15005,7 +15005,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~313.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~313.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15016,7 +15016,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~313.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~313.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15027,7 +15027,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~314": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~314": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15038,7 +15038,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~314.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~314.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15049,7 +15049,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~314.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~314.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15060,7 +15060,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~314.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~314.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15071,7 +15071,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~315": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~315": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15082,7 +15082,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~315.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~315.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15093,7 +15093,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~315.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~315.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15104,7 +15104,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~315.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~315.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15115,7 +15115,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~316": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~316": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15126,7 +15126,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~316.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~316.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15137,7 +15137,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~316.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~316.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15148,7 +15148,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~316.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~316.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15159,7 +15159,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~317": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~317": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15170,7 +15170,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~317.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~317.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15181,7 +15181,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~317.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~317.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15192,7 +15192,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~317.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~317.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15203,7 +15203,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~318": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~318": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15214,7 +15214,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~318.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~318.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15225,7 +15225,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~318.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~318.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15236,7 +15236,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~318.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~318.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15247,7 +15247,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~319": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~319": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15258,7 +15258,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~319.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~319.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15269,7 +15269,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~319.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~319.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15280,7 +15280,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~319.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~319.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15291,7 +15291,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~32": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~32": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15302,7 +15302,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~32.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~32.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15313,7 +15313,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~32.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~32.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15324,7 +15324,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~32.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~32.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15335,7 +15335,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~320": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~320": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15346,7 +15346,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~320.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~320.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15357,7 +15357,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~320.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~320.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15368,7 +15368,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~320.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~320.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15379,7 +15379,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~321": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~321": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15390,7 +15390,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~321.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~321.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15401,7 +15401,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~321.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~321.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15412,7 +15412,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~321.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~321.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15423,7 +15423,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~322": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~322": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15434,7 +15434,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~322.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~322.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15445,7 +15445,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~322.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~322.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15456,7 +15456,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~322.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~322.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15467,7 +15467,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~323": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~323": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15478,7 +15478,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~323.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~323.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15489,7 +15489,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~323.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~323.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15500,7 +15500,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~323.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~323.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15511,7 +15511,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~324": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~324": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15522,7 +15522,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~324.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~324.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15533,7 +15533,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~324.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~324.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15544,7 +15544,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~324.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~324.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15555,7 +15555,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~325": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~325": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15566,7 +15566,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~325.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~325.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15577,7 +15577,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~325.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~325.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15588,7 +15588,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~325.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~325.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15599,7 +15599,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~326": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~326": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15610,7 +15610,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~326.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~326.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15621,7 +15621,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~326.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~326.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15632,7 +15632,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~326.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~326.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15643,7 +15643,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~327": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~327": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15654,7 +15654,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~327.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~327.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15665,7 +15665,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~327.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~327.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15676,7 +15676,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~327.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~327.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15687,7 +15687,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~328": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~328": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15698,7 +15698,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~328.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~328.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15709,7 +15709,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~328.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~328.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15720,7 +15720,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~328.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~328.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15731,7 +15731,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~329": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~329": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15742,7 +15742,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~329.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~329.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15753,7 +15753,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~329.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~329.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15764,7 +15764,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~329.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~329.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15775,7 +15775,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~33": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~33": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15786,7 +15786,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~33.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~33.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15797,7 +15797,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~33.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~33.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15808,7 +15808,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~33.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~33.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15819,7 +15819,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~330": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~330": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15830,7 +15830,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~330.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~330.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15841,7 +15841,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~330.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~330.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15852,7 +15852,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~330.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~330.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15863,7 +15863,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~331": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~331": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15874,7 +15874,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~331.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~331.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15885,7 +15885,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~331.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~331.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15896,7 +15896,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~331.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~331.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15907,7 +15907,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~332": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~332": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15918,7 +15918,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~332.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~332.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15929,7 +15929,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~332.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~332.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15940,7 +15940,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~332.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~332.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15951,7 +15951,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~333": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~333": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15962,7 +15962,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~333.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~333.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15973,7 +15973,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~333.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~333.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15984,7 +15984,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~333.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~333.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -15995,7 +15995,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~334": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~334": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16006,7 +16006,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~334.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~334.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16017,7 +16017,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~334.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~334.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16028,7 +16028,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~334.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~334.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16039,7 +16039,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~335": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~335": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16050,7 +16050,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~335.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~335.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16061,7 +16061,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~335.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~335.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16072,7 +16072,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~335.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~335.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16083,7 +16083,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~336": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~336": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16094,7 +16094,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~336.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~336.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16105,7 +16105,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~336.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~336.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16116,7 +16116,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~336.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~336.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16127,7 +16127,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~337": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~337": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16138,7 +16138,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~337.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~337.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16149,7 +16149,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~337.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~337.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16160,7 +16160,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~337.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~337.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16171,7 +16171,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~338": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~338": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16182,7 +16182,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~338.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~338.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16193,7 +16193,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~338.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~338.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16204,7 +16204,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~338.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~338.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16215,7 +16215,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~339": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~339": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16226,7 +16226,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~339.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~339.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16237,7 +16237,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~339.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~339.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16248,7 +16248,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~339.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~339.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16259,7 +16259,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~34": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~34": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16270,7 +16270,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~34.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~34.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16281,7 +16281,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~34.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~34.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16292,7 +16292,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~34.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~34.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16303,7 +16303,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~340": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~340": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16314,7 +16314,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~340.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~340.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16325,7 +16325,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~340.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~340.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16336,7 +16336,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~340.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~340.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16347,7 +16347,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~341": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~341": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16358,7 +16358,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~341.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~341.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16369,7 +16369,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~341.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~341.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16380,7 +16380,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~341.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~341.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16391,7 +16391,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~342": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~342": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16402,7 +16402,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~342.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~342.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16413,7 +16413,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~342.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~342.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16424,7 +16424,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~342.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~342.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16435,7 +16435,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~343": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~343": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16446,7 +16446,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~343.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~343.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16457,7 +16457,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~343.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~343.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16468,7 +16468,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~343.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~343.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16479,7 +16479,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~344": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~344": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16490,7 +16490,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~344.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~344.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16501,7 +16501,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~344.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~344.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16512,7 +16512,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~344.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~344.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16523,7 +16523,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~345": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~345": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16534,7 +16534,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~345.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~345.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16545,7 +16545,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~345.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~345.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16556,7 +16556,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~345.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~345.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16567,7 +16567,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~346": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~346": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16578,7 +16578,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~346.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~346.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16589,7 +16589,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~346.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~346.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16600,7 +16600,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~346.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~346.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16611,7 +16611,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~347": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~347": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16622,7 +16622,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~347.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~347.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16633,7 +16633,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~347.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~347.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16644,7 +16644,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~347.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~347.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16655,7 +16655,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~348": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~348": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16666,7 +16666,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~348.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~348.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16677,7 +16677,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~348.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~348.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16688,7 +16688,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~348.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~348.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16699,7 +16699,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~349": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~349": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16710,7 +16710,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~349.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~349.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16721,7 +16721,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~349.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~349.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16732,7 +16732,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~349.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~349.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16743,7 +16743,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~35": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~35": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16754,7 +16754,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~35.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~35.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16765,7 +16765,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~35.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~35.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16776,7 +16776,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~35.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~35.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16787,7 +16787,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~350": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~350": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16798,7 +16798,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~350.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~350.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16809,7 +16809,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~350.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~350.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16820,7 +16820,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~350.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~350.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16831,7 +16831,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~351": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~351": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16842,7 +16842,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~351.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~351.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16853,7 +16853,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~351.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~351.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16864,7 +16864,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~351.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~351.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16875,7 +16875,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~352": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~352": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16886,7 +16886,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~352.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~352.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16897,7 +16897,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~352.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~352.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16908,7 +16908,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~352.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~352.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16919,7 +16919,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~353": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~353": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16930,7 +16930,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~353.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~353.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16941,7 +16941,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~353.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~353.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16952,7 +16952,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~353.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~353.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16963,7 +16963,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~354": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~354": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16974,7 +16974,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~354.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~354.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16985,7 +16985,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~354.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~354.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -16996,7 +16996,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~354.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~354.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17007,7 +17007,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~355": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~355": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17018,7 +17018,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~355.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~355.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17029,7 +17029,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~355.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~355.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17040,7 +17040,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~355.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~355.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17051,7 +17051,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~356": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~356": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17062,7 +17062,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~356.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~356.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17073,7 +17073,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~356.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~356.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17084,7 +17084,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~356.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~356.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17095,7 +17095,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~357": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~357": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17106,7 +17106,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~357.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~357.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17117,7 +17117,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~357.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~357.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17128,7 +17128,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~357.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~357.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17139,7 +17139,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~358": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~358": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17150,7 +17150,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~358.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~358.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17161,7 +17161,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~358.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~358.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17172,7 +17172,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~358.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~358.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17183,7 +17183,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~359": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~359": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17194,7 +17194,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~359.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~359.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17205,7 +17205,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~359.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~359.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17216,7 +17216,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~359.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~359.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17227,7 +17227,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~36": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~36": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17238,7 +17238,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~36.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~36.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17249,7 +17249,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~36.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~36.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17260,7 +17260,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~36.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~36.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17271,7 +17271,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~360": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~360": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17282,7 +17282,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~360.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~360.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17293,7 +17293,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~360.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~360.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17304,7 +17304,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~360.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~360.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17315,7 +17315,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~361": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~361": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17326,7 +17326,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~361.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~361.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17337,7 +17337,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~361.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~361.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17348,7 +17348,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~361.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~361.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17359,7 +17359,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~362": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~362": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17370,7 +17370,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~362.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~362.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17381,7 +17381,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~362.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~362.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17392,7 +17392,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~362.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~362.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17403,7 +17403,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~363": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~363": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17414,7 +17414,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~363.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~363.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17425,7 +17425,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~363.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~363.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17436,7 +17436,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~363.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~363.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17447,7 +17447,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~364": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~364": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17458,7 +17458,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~364.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~364.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17469,7 +17469,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~364.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~364.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17480,7 +17480,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~364.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~364.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17491,7 +17491,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~365": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~365": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17502,7 +17502,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~365.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~365.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17513,7 +17513,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~365.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~365.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17524,7 +17524,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~365.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~365.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17535,7 +17535,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~366": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~366": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17546,7 +17546,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~366.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~366.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17557,7 +17557,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~366.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~366.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17568,7 +17568,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~366.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~366.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17579,7 +17579,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~367": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~367": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17590,7 +17590,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~367.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~367.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17601,7 +17601,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~367.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~367.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17612,7 +17612,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~367.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~367.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17623,7 +17623,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~368": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~368": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17634,7 +17634,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~368.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~368.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17645,7 +17645,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~368.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~368.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17656,7 +17656,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~368.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~368.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17667,7 +17667,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~369": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~369": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17678,7 +17678,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~369.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~369.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17689,7 +17689,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~369.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~369.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17700,7 +17700,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~369.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~369.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17711,7 +17711,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~37": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~37": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17722,7 +17722,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~37.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~37.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17733,7 +17733,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~37.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~37.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17744,7 +17744,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~37.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~37.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17755,7 +17755,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~370": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~370": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17766,7 +17766,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~370.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~370.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17777,7 +17777,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~370.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~370.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17788,7 +17788,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~370.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~370.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17799,7 +17799,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~371": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~371": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17810,7 +17810,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~371.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~371.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17821,7 +17821,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~371.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~371.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17832,7 +17832,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~371.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~371.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17843,7 +17843,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~372": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~372": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17854,7 +17854,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~372.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~372.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17865,7 +17865,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~372.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~372.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17876,7 +17876,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~372.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~372.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17887,7 +17887,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~373": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~373": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17898,7 +17898,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~373.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~373.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17909,7 +17909,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~373.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~373.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17920,7 +17920,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~373.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~373.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17931,7 +17931,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~374": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~374": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17942,7 +17942,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~374.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~374.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17953,7 +17953,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~374.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~374.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17964,7 +17964,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~374.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~374.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17975,7 +17975,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~375": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~375": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17986,7 +17986,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~375.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~375.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -17997,7 +17997,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~375.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~375.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18008,7 +18008,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~375.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~375.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18019,7 +18019,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~376": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~376": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18030,7 +18030,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~376.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~376.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18041,7 +18041,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~376.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~376.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18052,7 +18052,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~376.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~376.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18063,7 +18063,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~377": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~377": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18074,7 +18074,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~377.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~377.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18085,7 +18085,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~377.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~377.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18096,7 +18096,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~377.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~377.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18107,7 +18107,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~378": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~378": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18118,7 +18118,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~378.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~378.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18129,7 +18129,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~378.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~378.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18140,7 +18140,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~378.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~378.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18151,7 +18151,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~379": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~379": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18162,7 +18162,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~379.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~379.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18173,7 +18173,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~379.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~379.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18184,7 +18184,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~379.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~379.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18195,7 +18195,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~38": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~38": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18206,7 +18206,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~38.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~38.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18217,7 +18217,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~38.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~38.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18228,7 +18228,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~38.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~38.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18239,7 +18239,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~380": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~380": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18250,7 +18250,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~380.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~380.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18261,7 +18261,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~380.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~380.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18272,7 +18272,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~380.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~380.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18283,7 +18283,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~381": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~381": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18294,7 +18294,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~381.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~381.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18305,7 +18305,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~381.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~381.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18316,7 +18316,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~381.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~381.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18327,7 +18327,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~382": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~382": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18338,7 +18338,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~382.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~382.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18349,7 +18349,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~382.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~382.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18360,7 +18360,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~382.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~382.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18371,7 +18371,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~383": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~383": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18382,7 +18382,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~383.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~383.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18393,7 +18393,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~383.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~383.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18404,7 +18404,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~383.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~383.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18415,7 +18415,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~39": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~39": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18426,7 +18426,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~39.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~39.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18437,7 +18437,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~39.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~39.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18448,7 +18448,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~39.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~39.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18459,7 +18459,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~4": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~4": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18470,7 +18470,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~4.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~4.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18481,7 +18481,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~4.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~4.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18492,7 +18492,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~4.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~4.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18503,7 +18503,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~40": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~40": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18514,7 +18514,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~40.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~40.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18525,7 +18525,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~40.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~40.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18536,7 +18536,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~40.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~40.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18547,7 +18547,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~41": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~41": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18558,7 +18558,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~41.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~41.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18569,7 +18569,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~41.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~41.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18580,7 +18580,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~41.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~41.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18591,7 +18591,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~42": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~42": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18602,7 +18602,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~42.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~42.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18613,7 +18613,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~42.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~42.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18624,7 +18624,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~42.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~42.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18635,7 +18635,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~43": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~43": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18646,7 +18646,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~43.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~43.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18657,7 +18657,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~43.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~43.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18668,7 +18668,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~43.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~43.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18679,7 +18679,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~44": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~44": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18690,7 +18690,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~44.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~44.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18701,7 +18701,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~44.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~44.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18712,7 +18712,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~44.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~44.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18723,7 +18723,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~45": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~45": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18734,7 +18734,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~45.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~45.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18745,7 +18745,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~45.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~45.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18756,7 +18756,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~45.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~45.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18767,7 +18767,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~46": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~46": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18778,7 +18778,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~46.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~46.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18789,7 +18789,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~46.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~46.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18800,7 +18800,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~46.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~46.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18811,7 +18811,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~47": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~47": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18822,7 +18822,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~47.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~47.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18833,7 +18833,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~47.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~47.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18844,7 +18844,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~47.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~47.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18855,7 +18855,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~48": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~48": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18866,7 +18866,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~48.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~48.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18877,7 +18877,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~48.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~48.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18888,7 +18888,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~48.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~48.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18899,7 +18899,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~49": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~49": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18910,7 +18910,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~49.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~49.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18921,7 +18921,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~49.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~49.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18932,7 +18932,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~49.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~49.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18943,7 +18943,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~5": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~5": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18954,7 +18954,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~5.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~5.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18965,7 +18965,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~5.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~5.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18976,7 +18976,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~5.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~5.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18987,7 +18987,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~50": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~50": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -18998,7 +18998,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~50.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~50.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19009,7 +19009,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~50.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~50.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19020,7 +19020,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~50.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~50.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19031,7 +19031,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~51": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~51": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19042,7 +19042,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~51.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~51.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19053,7 +19053,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~51.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~51.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19064,7 +19064,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~51.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~51.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19075,7 +19075,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~52": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~52": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19086,7 +19086,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~52.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~52.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19097,7 +19097,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~52.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~52.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19108,7 +19108,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~52.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~52.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19119,7 +19119,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~53": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~53": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19130,7 +19130,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~53.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~53.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19141,7 +19141,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~53.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~53.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19152,7 +19152,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~53.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~53.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19163,7 +19163,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~54": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~54": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19174,7 +19174,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~54.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~54.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19185,7 +19185,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~54.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~54.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19196,7 +19196,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~54.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~54.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19207,7 +19207,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~55": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~55": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19218,7 +19218,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~55.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~55.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19229,7 +19229,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~55.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~55.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19240,7 +19240,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~55.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~55.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19251,7 +19251,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~56": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~56": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19262,7 +19262,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~56.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~56.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19273,7 +19273,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~56.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~56.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19284,7 +19284,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~56.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~56.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19295,7 +19295,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~57": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~57": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19306,7 +19306,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~57.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~57.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19317,7 +19317,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~57.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~57.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19328,7 +19328,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~57.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~57.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19339,7 +19339,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~58": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~58": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19350,7 +19350,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~58.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~58.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19361,7 +19361,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~58.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~58.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19372,7 +19372,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~58.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~58.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19383,7 +19383,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~59": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~59": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19394,7 +19394,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~59.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~59.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19405,7 +19405,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~59.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~59.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19416,7 +19416,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~59.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~59.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19427,7 +19427,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~6": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~6": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19438,7 +19438,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~6.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~6.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19449,7 +19449,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~6.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~6.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19460,7 +19460,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~6.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~6.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19471,7 +19471,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~60": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~60": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19482,7 +19482,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~60.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~60.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19493,7 +19493,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~60.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~60.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19504,7 +19504,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~60.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~60.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19515,7 +19515,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~61": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~61": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19526,7 +19526,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~61.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~61.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19537,7 +19537,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~61.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~61.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19548,7 +19548,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~61.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~61.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19559,7 +19559,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~62": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~62": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19570,7 +19570,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~62.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~62.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19581,7 +19581,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~62.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~62.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19592,7 +19592,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~62.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~62.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19603,7 +19603,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~63": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~63": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19614,7 +19614,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~63.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~63.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19625,7 +19625,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~63.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~63.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19636,7 +19636,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~63.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~63.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19647,7 +19647,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~64": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~64": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19658,7 +19658,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~64.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~64.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19669,7 +19669,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~64.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~64.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19680,7 +19680,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~64.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~64.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19691,7 +19691,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~65": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~65": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19702,7 +19702,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~65.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~65.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19713,7 +19713,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~65.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~65.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19724,7 +19724,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~65.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~65.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19735,7 +19735,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~66": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~66": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19746,7 +19746,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~66.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~66.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19757,7 +19757,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~66.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~66.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19768,7 +19768,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~66.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~66.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19779,7 +19779,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~67": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~67": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19790,7 +19790,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~67.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~67.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19801,7 +19801,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~67.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~67.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19812,7 +19812,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~67.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~67.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19823,7 +19823,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~68": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~68": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19834,7 +19834,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~68.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~68.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19845,7 +19845,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~68.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~68.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19856,7 +19856,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~68.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~68.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19867,7 +19867,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~69": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~69": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19878,7 +19878,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~69.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~69.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19889,7 +19889,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~69.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~69.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19900,7 +19900,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~69.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~69.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19911,7 +19911,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~7": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~7": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19922,7 +19922,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~7.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~7.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19933,7 +19933,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~7.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~7.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19944,7 +19944,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~7.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~7.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19955,7 +19955,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~70": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~70": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19966,7 +19966,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~70.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~70.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19977,7 +19977,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~70.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~70.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19988,7 +19988,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~70.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~70.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -19999,7 +19999,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~71": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~71": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20010,7 +20010,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~71.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~71.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20021,7 +20021,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~71.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~71.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20032,7 +20032,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~71.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~71.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20043,7 +20043,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~72": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~72": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20054,7 +20054,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~72.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~72.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20065,7 +20065,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~72.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~72.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20076,7 +20076,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~72.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~72.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20087,7 +20087,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~73": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~73": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20098,7 +20098,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~73.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~73.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20109,7 +20109,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~73.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~73.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20120,7 +20120,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~73.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~73.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20131,7 +20131,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~74": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~74": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20142,7 +20142,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~74.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~74.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20153,7 +20153,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~74.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~74.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20164,7 +20164,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~74.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~74.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20175,7 +20175,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~75": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~75": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20186,7 +20186,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~75.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~75.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20197,7 +20197,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~75.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~75.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20208,7 +20208,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~75.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~75.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20219,7 +20219,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~76": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~76": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20230,7 +20230,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~76.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~76.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20241,7 +20241,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~76.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~76.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20252,7 +20252,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~76.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~76.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20263,7 +20263,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~77": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~77": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20274,7 +20274,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~77.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~77.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20285,7 +20285,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~77.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~77.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20296,7 +20296,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~77.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~77.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20307,7 +20307,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~78": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~78": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20318,7 +20318,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~78.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~78.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20329,7 +20329,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~78.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~78.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20340,7 +20340,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~78.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~78.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20351,7 +20351,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~79": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~79": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20362,7 +20362,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~79.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~79.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20373,7 +20373,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~79.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~79.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20384,7 +20384,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~79.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~79.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20395,7 +20395,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~8": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~8": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20406,7 +20406,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~8.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~8.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20417,7 +20417,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~8.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~8.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20428,7 +20428,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~8.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~8.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20439,7 +20439,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~80": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~80": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20450,7 +20450,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~80.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~80.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20461,7 +20461,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~80.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~80.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20472,7 +20472,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~80.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~80.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20483,7 +20483,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~81": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~81": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20494,7 +20494,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~81.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~81.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20505,7 +20505,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~81.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~81.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20516,7 +20516,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~81.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~81.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20527,7 +20527,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~82": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~82": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20538,7 +20538,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~82.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~82.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20549,7 +20549,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~82.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~82.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20560,7 +20560,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~82.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~82.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20571,7 +20571,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~83": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~83": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20582,7 +20582,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~83.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~83.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20593,7 +20593,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~83.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~83.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20604,7 +20604,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~83.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~83.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20615,7 +20615,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~84": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~84": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20626,7 +20626,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~84.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~84.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20637,7 +20637,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~84.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~84.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20648,7 +20648,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~84.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~84.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20659,7 +20659,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~85": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~85": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20670,7 +20670,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~85.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~85.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20681,7 +20681,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~85.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~85.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20692,7 +20692,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~85.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~85.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20703,7 +20703,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~86": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~86": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20714,7 +20714,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~86.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~86.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20725,7 +20725,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~86.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~86.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20736,7 +20736,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~86.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~86.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20747,7 +20747,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~87": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~87": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20758,7 +20758,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~87.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~87.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20769,7 +20769,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~87.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~87.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20780,7 +20780,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~87.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~87.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20791,7 +20791,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~88": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~88": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20802,7 +20802,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~88.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~88.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20813,7 +20813,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~88.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~88.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20824,7 +20824,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~88.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~88.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20835,7 +20835,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~89": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~89": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20846,7 +20846,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~89.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~89.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20857,7 +20857,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~89.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~89.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20868,7 +20868,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~89.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~89.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20879,7 +20879,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~9": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~9": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20890,7 +20890,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~9.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~9.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20901,7 +20901,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~9.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~9.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20912,7 +20912,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~9.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~9.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20923,7 +20923,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~90": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~90": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20934,7 +20934,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~90.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~90.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20945,7 +20945,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~90.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~90.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20956,7 +20956,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~90.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~90.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20967,7 +20967,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~91": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~91": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20978,7 +20978,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~91.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~91.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -20989,7 +20989,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~91.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~91.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21000,7 +21000,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~91.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~91.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21011,7 +21011,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~92": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~92": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21022,7 +21022,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~92.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~92.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21033,7 +21033,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~92.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~92.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21044,7 +21044,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~92.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~92.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21055,7 +21055,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~93": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~93": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21066,7 +21066,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~93.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~93.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21077,7 +21077,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~93.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~93.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21088,7 +21088,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~93.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~93.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21099,7 +21099,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~94": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~94": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21110,7 +21110,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~94.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~94.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21121,7 +21121,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~94.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~94.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21132,7 +21132,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~94.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~94.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21143,7 +21143,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~95": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~95": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21154,7 +21154,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~95.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~95.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21165,7 +21165,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~95.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~95.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21176,7 +21176,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~95.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~95.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21187,7 +21187,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~96": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~96": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21198,7 +21198,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~96.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~96.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21209,7 +21209,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~96.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~96.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21220,7 +21220,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~96.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~96.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21231,7 +21231,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~97": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~97": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21242,7 +21242,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~97.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~97.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21253,7 +21253,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~97.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~97.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21264,7 +21264,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~97.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~97.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21275,7 +21275,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~98": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~98": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21286,7 +21286,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~98.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~98.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21297,7 +21297,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~98.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~98.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21308,7 +21308,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~98.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~98.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21319,7 +21319,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~99": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~99": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21330,7 +21330,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NodeIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~99.opacityProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~99.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21341,7 +21341,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~99.pickableProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~99.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -21352,7 +21352,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot.element~99.visibleProperty": {
+    "ohmsLaw.ohmsLawScreen.view.wireBox.resistorNode.dotsNode.dot~99.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
