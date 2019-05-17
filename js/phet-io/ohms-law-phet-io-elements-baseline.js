@@ -34,7 +34,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "EmitterIO.<>"
     },
-    "ohmsLaw.general.barrierRectangle.inputListener.pressedAction": {
+    "ohmsLaw.general.barrierRectangle.inputListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -45,7 +45,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
     },
-    "ohmsLaw.general.barrierRectangle.inputListener.releasedAction": {
+    "ohmsLaw.general.barrierRectangle.inputListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -232,7 +232,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<Vector2IO, DOMEventIO>"
     },
-    "ohmsLaw.general.controller.input.penCanceledAction": {
+    "ohmsLaw.general.controller.input.penCancelAction": {
       "phetioDocumentation": "Emits when a pen is canceled",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -243,7 +243,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
-    "ohmsLaw.general.controller.input.penEndedAction": {
+    "ohmsLaw.general.controller.input.penEndAction": {
       "phetioDocumentation": "Emits when a pen is lifted",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -254,7 +254,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
-    "ohmsLaw.general.controller.input.penMovedAction": {
+    "ohmsLaw.general.controller.input.penMoveAction": {
       "phetioDocumentation": "Emits when a pen is moved",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -265,7 +265,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
-    "ohmsLaw.general.controller.input.penStartedAction": {
+    "ohmsLaw.general.controller.input.penStartAction": {
       "phetioDocumentation": "Emits when a pen touches the screen",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -276,7 +276,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
-    "ohmsLaw.general.controller.input.touchCanceledAction": {
+    "ohmsLaw.general.controller.input.touchCancelAction": {
       "phetioDocumentation": "Emits when a touch is canceled",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -287,7 +287,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
-    "ohmsLaw.general.controller.input.touchEndedAction": {
+    "ohmsLaw.general.controller.input.touchEndAction": {
       "phetioDocumentation": "Emits when a touch ends",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -298,7 +298,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
-    "ohmsLaw.general.controller.input.touchMovedAction": {
+    "ohmsLaw.general.controller.input.touchMoveAction": {
       "phetioDocumentation": "Emits when a touch moves",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -309,7 +309,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
-    "ohmsLaw.general.controller.input.touchStartedAction": {
+    "ohmsLaw.general.controller.input.touchStartAction": {
       "phetioDocumentation": "Emits when a touch begins",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -331,7 +331,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<>"
     },
-    "ohmsLaw.general.controller.input.wheelScrolledAction": {
+    "ohmsLaw.general.controller.input.wheelScrollAction": {
       "phetioDocumentation": "Emits when the mouse wheel scrolls",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -364,7 +364,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PhetioCommandProcessorIO"
     },
-    "ohmsLaw.general.resizedAction": {
+    "ohmsLaw.general.resizeAction": {
       "phetioDocumentation": "Executes when the sim is resized",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -463,7 +463,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.navigationBar.a11yButtonsHBox.keyboardHelpButton.pressListener.pressedAction": {
+    "ohmsLaw.navigationBar.a11yButtonsHBox.keyboardHelpButton.pressListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -474,7 +474,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
     },
-    "ohmsLaw.navigationBar.a11yButtonsHBox.keyboardHelpButton.pressListener.releasedAction": {
+    "ohmsLaw.navigationBar.a11yButtonsHBox.keyboardHelpButton.pressListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -562,7 +562,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "EmitterIO.<>"
     },
-    "ohmsLaw.navigationBar.phetButton.phetMenu.aboutMenuItem.inputListener.pressedAction": {
+    "ohmsLaw.navigationBar.phetButton.phetMenu.aboutMenuItem.inputListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -573,7 +573,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
     },
-    "ohmsLaw.navigationBar.phetButton.phetMenu.aboutMenuItem.inputListener.releasedAction": {
+    "ohmsLaw.navigationBar.phetButton.phetMenu.aboutMenuItem.inputListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -639,7 +639,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "EmitterIO.<>"
     },
-    "ohmsLaw.navigationBar.phetButton.phetMenu.screenshotMenuItem.inputListener.pressedAction": {
+    "ohmsLaw.navigationBar.phetButton.phetMenu.screenshotMenuItem.inputListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -650,7 +650,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
     },
-    "ohmsLaw.navigationBar.phetButton.phetMenu.screenshotMenuItem.inputListener.releasedAction": {
+    "ohmsLaw.navigationBar.phetButton.phetMenu.screenshotMenuItem.inputListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -705,7 +705,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.navigationBar.phetButton.pressListener.pressedAction": {
+    "ohmsLaw.navigationBar.phetButton.pressListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -716,7 +716,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
     },
-    "ohmsLaw.navigationBar.phetButton.pressListener.releasedAction": {
+    "ohmsLaw.navigationBar.phetButton.pressListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -1079,33 +1079,33 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ObjectIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.thumbInputListener.dragEndedAction": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": false,
-      "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
-    },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.thumbInputListener.dragStartedAction": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": false,
-      "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
-    },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.thumbInputListener.draggedAction": {
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.thumbInputListener.dragAction": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": false,
+      "phetioStudioControl": true,
+      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+    },
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.thumbInputListener.dragEndAction": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": false,
+      "phetioStudioControl": true,
+      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+    },
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.thumbInputListener.dragStartAction": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
@@ -1134,33 +1134,33 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ObjectIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.track.trackInputListener.dragEndedAction": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": false,
-      "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
-    },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.track.trackInputListener.dragStartedAction": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": false,
-      "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
-    },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.track.trackInputListener.draggedAction": {
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.track.trackInputListener.dragAction": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": false,
+      "phetioStudioControl": true,
+      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+    },
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.track.trackInputListener.dragEndAction": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": false,
+      "phetioStudioControl": true,
+      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+    },
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.resistanceSlider.slider.track.trackInputListener.dragStartAction": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
@@ -1574,33 +1574,33 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ObjectIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.thumbInputListener.dragEndedAction": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": false,
-      "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
-    },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.thumbInputListener.dragStartedAction": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": false,
-      "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
-    },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.thumbInputListener.draggedAction": {
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.thumbInputListener.dragAction": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": false,
+      "phetioStudioControl": true,
+      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+    },
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.thumbInputListener.dragEndAction": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": false,
+      "phetioStudioControl": true,
+      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+    },
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.thumbInputListener.dragStartAction": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
@@ -1629,33 +1629,33 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ObjectIO"
     },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.track.trackInputListener.dragEndedAction": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": false,
-      "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
-    },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.track.trackInputListener.dragStartedAction": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": false,
-      "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
-    },
-    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.track.trackInputListener.draggedAction": {
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.track.trackInputListener.dragAction": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": false,
+      "phetioStudioControl": true,
+      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+    },
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.track.trackInputListener.dragEndAction": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": false,
+      "phetioStudioControl": true,
+      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+    },
+    "ohmsLaw.ohmsLawScreen.view.controlPanel.voltageSlider.slider.track.trackInputListener.dragStartAction": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
@@ -2212,7 +2212,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "ohmsLaw.ohmsLawScreen.view.resetAllButton.pressListener.pressedAction": {
+    "ohmsLaw.ohmsLawScreen.view.resetAllButton.pressListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
       "phetioEventType": "user",
       "phetioFeatured": false,
@@ -2223,7 +2223,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
     },
-    "ohmsLaw.ohmsLawScreen.view.resetAllButton.pressListener.releasedAction": {
+    "ohmsLaw.ohmsLawScreen.view.resetAllButton.pressListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs.",
       "phetioEventType": "user",
       "phetioFeatured": false,
