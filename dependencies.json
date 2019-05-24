@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-rc.1 Fri May 24 2019 15:03:45 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# ohms-law 1.4.0-rc.1 Fri May 24 2019 18:10:54 GMT-0400 (Eastern Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -14,7 +14,7 @@
   },
   "chipper": {
     "sha": "17e3df27ef32b334da303bbbc646541b2f04063d",
-    "branch": "ohms-law-1.4"
+    "branch": "HEAD"
   },
   "dot": {
     "sha": "70b260be725017e5bf0b658821c2b51003a2a882",
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "f06c8ed5e6fd5ef2e473b9d0d47b3574d8b08dc5",
+    "sha": "6c9c545a774624300a03c1be01654cd042d08346",
     "branch": "1.4"
   },
   "phet-core": {
@@ -57,8 +57,8 @@
     "branch": "HEAD"
   },
   "scenery": {
-    "sha": "6a6abce028f0bdbdb54a10a55bf2405a5521b36f",
-    "branch": "HEAD"
+    "sha": "842a16f2409a35c9134f5c1a98370e2fff460064",
+    "branch": "ohms-law-1.4"
   },
   "scenery-phet": {
     "sha": "e6ede0e282bb9e183d55e1a15dd447b2839042fd",
@@ -73,8 +73,8 @@
     "branch": "HEAD"
   },
   "tambo": {
-    "sha": "d90075a9fc7f901c80d929f813721033168dd37e",
-    "branch": "HEAD"
+    "sha": "fb23d8e1384dd3414521dca96757d382a5c1ea0a",
+    "branch": "ohms-law-1.4"
   },
   "tandem": {
     "sha": "7d2f0cb0548ec283af8262de4215c03180ad000a",
