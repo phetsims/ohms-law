@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.0-rc.1 Wed May 01 2019 15:39:35 GMT-0400 (Eastern Daylight Time)",
+  "comment": "# ohms-law 1.4.0-rc.1 Fri May 24 2019 15:03:45 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -13,8 +13,8 @@
     "branch": "HEAD"
   },
   "chipper": {
-    "sha": "8021353ae5292cd14af24a76e56adada8844b0ab",
-    "branch": "HEAD"
+    "sha": "17e3df27ef32b334da303bbbc646541b2f04063d",
+    "branch": "ohms-law-1.4"
   },
   "dot": {
     "sha": "70b260be725017e5bf0b658821c2b51003a2a882",
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "a6fded72cac0c37fc76348a9561454a5e6615061",
+    "sha": "f06c8ed5e6fd5ef2e473b9d0d47b3574d8b08dc5",
     "branch": "1.4"
   },
   "phet-core": {
@@ -38,18 +38,6 @@
   },
   "phet-io": {
     "sha": "11bdd83456b879d3014ed22c41cb803d5ed5a9bd",
-    "branch": "HEAD"
-  },
-  "phet-io-wrapper-classroom-activity": {
-    "sha": "248958109c8d3b73b5f9d6c31015b2c8b5016571",
-    "branch": "HEAD"
-  },
-  "phet-io-wrapper-hookes-law-energy": {
-    "sha": "3ea0d43712de26832a841086365544fa930fe458",
-    "branch": "HEAD"
-  },
-  "phet-io-wrapper-lab-book": {
-    "sha": "e5309c0d655079dede0616b5aa637e624e978242",
     "branch": "HEAD"
   },
   "phet-io-wrappers": {
