@@ -177,7 +177,7 @@ define( function( require ) {
 
       // a11y - contain the sliders in a list
       labelTagName: 'h3',
-      tagName: 'ul',
+      tagName: 'div',
       labelContent: sliderControlsString,
       descriptionContent: slidersDescriptionString
     } );

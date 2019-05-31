@@ -74,7 +74,6 @@ define( function( require ) {
       tandem: tandem.createTandem( 'slider' ),
 
       // a11y
-      containerTagName: 'li',
       labelContent: labelContent,
       labelTagName: 'label',
       roundToStepSize: true, // so default keyboard step rounds to pedegogically useful values
