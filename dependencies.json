@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.5.0-dev.2 Fri Jun 14 2019 16:14:29 GMT-0400 (Eastern Daylight Time)",
+  "comment": "# ohms-law 1.5.0-dev.3 Fri Jun 14 2019 16:24:10 GMT-0400 (Eastern Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "master"
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "ohms-law": {
-    "sha": "f129eccde4797c0330c716ceb11cdba5f67d49ce",
+    "sha": "bf654eb6d36590da2eb655c34755b629ebfecd13",
     "branch": "master"
   },
   "phet-core": {
@@ -57,7 +57,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "1239bd3f99580fab800644de4ff4b08de46db180",
+    "sha": "59746e713a5ed2d74fa5036c165afc38ce3d8c28",
     "branch": "master"
   },
   "scenery-phet": {
