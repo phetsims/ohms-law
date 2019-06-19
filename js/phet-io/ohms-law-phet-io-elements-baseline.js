@@ -1,5 +1,5 @@
 /* eslint-disable */
-window.phet.phetio.phetioElementsBaseline =
+window.phet.phetio.phetioElementsBaseline = assert &&
   {
     "ohmsLaw.general.activeProperty": {
       "phetioDocumentation": "Determines whether the entire simulation is running and processing user input. Setting this property to false pauses the simulation, and prevents user interaction.",
