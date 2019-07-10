@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.1-rc.1 Mon Jul 08 2019 14:54:41 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# ohms-law 1.4.1 Wed Jul 10 2019 17:05:42 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "84388355a5b40e2ef1f951f8f39eaa3ebe739b56",
+    "sha": "201929937fa68f71037d478b239bde3a450ec865",
     "branch": "1.4"
   },
   "phet-core": {
