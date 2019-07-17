@@ -782,6 +782,17 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO.<NumberIO>"
     },
+    "ohmsLaw.general.utteranceQueue": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": false,
+      "phetioStudioControl": true,
+      "phetioTypeName": "UtteranceQueueIO"
+    },
     "ohmsLaw.ohmsLawScreen.activeProperty": {
       "phetioDocumentation": "Indicates whether the screen is active.  For single-screen simulations, the screen is always active.",
       "phetioEventType": "model",
@@ -21549,17 +21560,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
-    },
-    "ohmsLaw.utteranceQueue": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": false,
-      "phetioStudioControl": true,
-      "phetioTypeName": "UtteranceQueueIO"
     },
     "phetioEngine": {
       "phetioDocumentation": "Central point for PhET-iO interoperability",
