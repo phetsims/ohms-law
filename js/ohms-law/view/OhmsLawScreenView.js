@@ -10,7 +10,6 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var ControlAreaNode = require( 'SCENERY_PHET/accessibility/nodes/ControlAreaNode' );
   var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
   var CurrentSoundGenerator = require( 'OHMS_LAW/ohms-law/view/CurrentSoundGenerator' );
   var DiscreteSoundGenerator = require( 'TAMBO/sound-generators/DiscreteSoundGenerator' );
@@ -20,7 +19,6 @@ define( function( require ) {
   var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   var OhmsLawScreenSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenSummaryNode' );
-  var PlayAreaNode = require( 'SCENERY_PHET/accessibility/nodes/PlayAreaNode' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ResetAllSoundGenerator = require( 'TAMBO/sound-generators/ResetAllSoundGenerator' );
   var ScreenView = require( 'JOIST/ScreenView' );
@@ -70,7 +68,7 @@ define( function( require ) {
       {
         sound: sliderClick,
         numBins: 6,
-        enableControlProperties: [ resetNotInProgress ],
+        enableControlProperties: [resetNotInProgress],
         initialOutputLevel: 0.25,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboard
       }
@@ -81,7 +79,7 @@ define( function( require ) {
       {
         sound: sliderClick,
         numBins: 6,
-        enableControlProperties: [ resetNotInProgress ],
+        enableControlProperties: [resetNotInProgress],
         initialOutputLevel: 0.2,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboard
       }
@@ -108,19 +106,11 @@ define( function( require ) {
       initialOutputLevel: 0.7
     } ) );
 
-    // a11y - formula and circuit are contained in a "Play Area", structure available to assistive technology
-    var playAreaNode = new PlayAreaNode();
-    this.addChild( playAreaNode );
-
-    // a11y - reset all button contained in a "Control Panel", structure available to assistive technology
-    var controlPanelSectionNode = new ControlAreaNode();
-    this.addChild( controlPanelSectionNode );
-
     // children
-    playAreaNode.addChild( formulaNode );
-    playAreaNode.addChild( wireBox );
-    playAreaNode.addChild( controlPanel );
-    controlPanelSectionNode.addChild( resetAllButton );
+    this.playAreaNode.addChild( formulaNode );
+    this.playAreaNode.addChild( wireBox );
+    this.playAreaNode.addChild( controlPanel );
+    this.controlAreaNode.addChild( resetAllButton );
 
     // layout for the screen
     formulaNode.centerY = this.layoutBounds.bottom / 4.75;
