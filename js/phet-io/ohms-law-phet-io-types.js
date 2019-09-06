@@ -15,8 +15,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [],
-      "supertype": "ParametricTypeImplIO.<>",
+      "supertype": "ObjectIO",
       "typeName": "ActionIO.<>"
     },
     "ActionIO.<DOMEventIO>": {
@@ -35,10 +34,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "DOMEventIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<DOMEventIO>",
+      "supertype": "ObjectIO",
       "typeName": "ActionIO.<DOMEventIO>"
     },
     "ActionIO.<EventIO>": {
@@ -57,10 +53,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "EventIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<EventIO>",
+      "supertype": "ObjectIO",
       "typeName": "ActionIO.<EventIO>"
     },
     "ActionIO.<NullableIO.<EventIO>>": {
@@ -79,10 +72,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "NullableIO.<EventIO>"
-      ],
-      "supertype": "ParametricTypeImplIO.<NullableIO.<EventIO>>",
+      "supertype": "ObjectIO",
       "typeName": "ActionIO.<NullableIO.<EventIO>>"
     },
     "ActionIO.<NumberIO, NumberIO>": {
@@ -102,11 +92,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "NumberIO",
-        "NumberIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NumberIO, NumberIO>",
+      "supertype": "ObjectIO",
       "typeName": "ActionIO.<NumberIO, NumberIO>"
     },
     "ActionIO.<NumberIO, Vector2IO, DOMEventIO>": {
@@ -127,12 +113,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "NumberIO",
-        "Vector2IO",
-        "DOMEventIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NumberIO, Vector2IO, DOMEventIO>",
+      "supertype": "ObjectIO",
       "typeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
     "ActionIO.<NumberIO>": {
@@ -151,10 +132,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "NumberIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NumberIO>",
+      "supertype": "ObjectIO",
       "typeName": "ActionIO.<NumberIO>"
     },
     "ActionIO.<Vector2IO, DOMEventIO>": {
@@ -174,11 +152,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "Vector2IO",
-        "DOMEventIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<Vector2IO, DOMEventIO>",
+      "supertype": "ObjectIO",
       "typeName": "ActionIO.<Vector2IO, DOMEventIO>"
     },
     "ActionIO.<Vector2IO>": {
@@ -197,10 +171,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "Vector2IO"
-      ],
-      "supertype": "ParametricTypeImplIO.<Vector2IO>",
+      "supertype": "ObjectIO",
       "typeName": "ActionIO.<Vector2IO>"
     },
     "ArrayIO.<StringIO>": {
@@ -208,10 +179,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "StringIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<StringIO>",
+      "supertype": "ObjectIO",
       "typeName": "ArrayIO.<StringIO>"
     },
     "BooleanIO": {
@@ -240,7 +208,9 @@ window.phet.phetio.phetioTypes = assert &&
     },
     "DerivedPropertyIO.<BooleanIO>": {
       "documentation": "Like PropertyIO, but not settable.  Instead it is derived from other DerivedPropertyIO or PropertyIO instances",
-      "events": [],
+      "events": [
+        "changed"
+      ],
       "methodOrder": [],
       "methods": {
         "setValue": {
@@ -252,15 +222,14 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "BooleanIO"
-      ],
       "supertype": "PropertyIO.<BooleanIO>",
       "typeName": "DerivedPropertyIO.<BooleanIO>"
     },
     "DerivedPropertyIO.<NumberIO>": {
       "documentation": "Like PropertyIO, but not settable.  Instead it is derived from other DerivedPropertyIO or PropertyIO instances",
-      "events": [],
+      "events": [
+        "changed"
+      ],
       "methodOrder": [],
       "methods": {
         "setValue": {
@@ -272,15 +241,14 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "NumberIO"
-      ],
       "supertype": "PropertyIO.<NumberIO>",
       "typeName": "DerivedPropertyIO.<NumberIO>"
     },
     "EmitterIO.<>": {
       "documentation": "Emits when an event occurs and calls added listeners.",
-      "events": [],
+      "events": [
+        "emitted"
+      ],
       "methodOrder": [],
       "methods": {
         "addListener": {
@@ -309,14 +277,6 @@ window.phet.phetio.phetioTypes = assert &&
       "supertype": "ObjectIO",
       "typeName": "EventIO"
     },
-    "FocusIO": {
-      "documentation": "A IO type for the instance in the simulation which currently has keyboard focus.",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "supertype": "ObjectIO",
-      "typeName": "FocusIO"
-    },
     "FontIO": {
       "documentation": "Font handling for text drawing. Options:<ul><li><strong>style:</strong> normal      &mdash; normal | italic | oblique </li><li><strong>variant:</strong> normal    &mdash; normal | small-caps </li><li><strong>weight:</strong> normal     &mdash; normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 </li><li><strong>stretch:</strong> normal    &mdash; normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded </li><li><strong>size:</strong> 10px         &mdash; absolute-size | relative-size | length | percentage -- unitless number interpreted as px. absolute suffixes: cm, mm, in, pt, pc, px. relative suffixes: em, ex, ch, rem, vw, vh, vmin, vmax. </li><li><strong>lineHeight:</strong> normal &mdash; normal | number | length | percentage -- NOTE: Canvas spec forces line-height to normal </li><li><strong>family:</strong> sans-serif &mdash; comma-separated list of families, including generic families (serif, sans-serif, cursive, fantasy, monospace). ideally escape with double-quotes</li></ul>",
       "events": [],
@@ -330,10 +290,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.()=>VoidIO"
     },
     "FunctionIO.(BooleanIO)=>VoidIO": {
@@ -341,11 +298,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "BooleanIO",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<BooleanIO, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(BooleanIO)=>VoidIO"
     },
     "FunctionIO.(BooleanIO,NullableIO.<BooleanIO>)=>VoidIO": {
@@ -353,12 +306,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "BooleanIO",
-        "NullableIO.<BooleanIO>",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<BooleanIO, NullableIO.<BooleanIO>, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(BooleanIO,NullableIO.<BooleanIO>)=>VoidIO"
     },
     "FunctionIO.(ColorIO)=>VoidIO": {
@@ -366,11 +314,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "ColorIO",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<ColorIO, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(ColorIO)=>VoidIO"
     },
     "FunctionIO.(ColorIO,NullableIO.<ColorIO>)=>VoidIO": {
@@ -378,12 +322,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "ColorIO",
-        "NullableIO.<ColorIO>",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<ColorIO, NullableIO.<ColorIO>, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(ColorIO,NullableIO.<ColorIO>)=>VoidIO"
     },
     "FunctionIO.(NullableIO.<BooleanIO>)=>VoidIO": {
@@ -391,11 +330,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "NullableIO.<BooleanIO>",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NullableIO.<BooleanIO>, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(NullableIO.<BooleanIO>)=>VoidIO"
     },
     "FunctionIO.(NullableIO.<BooleanIO>,NullableIO.<NullableIO.<BooleanIO>>)=>VoidIO": {
@@ -403,12 +338,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "NullableIO.<BooleanIO>",
-        "NullableIO.<NullableIO.<BooleanIO>>",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NullableIO.<BooleanIO>, NullableIO.<NullableIO.<BooleanIO>>, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(NullableIO.<BooleanIO>,NullableIO.<NullableIO.<BooleanIO>>)=>VoidIO"
     },
     "FunctionIO.(NullableIO.<FocusIO>)=>VoidIO": {
@@ -416,11 +346,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "NullableIO.<FocusIO>",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NullableIO.<FocusIO>, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(NullableIO.<FocusIO>)=>VoidIO"
     },
     "FunctionIO.(NullableIO.<FocusIO>,NullableIO.<NullableIO.<FocusIO>>)=>VoidIO": {
@@ -428,12 +354,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "NullableIO.<FocusIO>",
-        "NullableIO.<NullableIO.<FocusIO>>",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NullableIO.<FocusIO>, NullableIO.<NullableIO.<FocusIO>>, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(NullableIO.<FocusIO>,NullableIO.<NullableIO.<FocusIO>>)=>VoidIO"
     },
     "FunctionIO.(NumberIO)=>VoidIO": {
@@ -441,11 +362,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "NumberIO",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NumberIO, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(NumberIO)=>VoidIO"
     },
     "FunctionIO.(NumberIO,NullableIO.<NumberIO>)=>VoidIO": {
@@ -453,12 +370,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "NumberIO",
-        "NullableIO.<NumberIO>",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NumberIO, NullableIO.<NumberIO>, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(NumberIO,NullableIO.<NumberIO>)=>VoidIO"
     },
     "FunctionIO.(ObjectIO)=>VoidIO": {
@@ -466,11 +378,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "ObjectIO",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<ObjectIO, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(ObjectIO)=>VoidIO"
     },
     "FunctionIO.(RangeIO)=>VoidIO": {
@@ -478,11 +386,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "RangeIO",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<RangeIO, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(RangeIO)=>VoidIO"
     },
     "FunctionIO.(RangeIO,NullableIO.<RangeIO>)=>VoidIO": {
@@ -490,12 +394,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "RangeIO",
-        "NullableIO.<RangeIO>",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<RangeIO, NullableIO.<RangeIO>, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(RangeIO,NullableIO.<RangeIO>)=>VoidIO"
     },
     "FunctionIO.(StringIO)=>VoidIO": {
@@ -503,11 +402,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "StringIO",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<StringIO, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(StringIO)=>VoidIO"
     },
     "FunctionIO.(StringIO,NullableIO.<StringIO>)=>VoidIO": {
@@ -515,12 +410,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "StringIO",
-        "NullableIO.<StringIO>",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<StringIO, NullableIO.<StringIO>, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(StringIO,NullableIO.<StringIO>)=>VoidIO"
     },
     "FunctionIO.(StringIO,ObjectIO,ObjectIO)=>VoidIO": {
@@ -528,13 +418,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "StringIO",
-        "ObjectIO",
-        "ObjectIO",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<StringIO, ObjectIO, ObjectIO, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(StringIO,ObjectIO,ObjectIO)=>VoidIO"
     },
     "FunctionIO.(StringIO,StringIO)=>VoidIO": {
@@ -542,12 +426,7 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "StringIO",
-        "StringIO",
-        "VoidIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<StringIO, StringIO, VoidIO>",
+      "supertype": "ObjectIO",
       "typeName": "FunctionIO.(StringIO,StringIO)=>VoidIO"
     },
     "LinkedElementIO": {
@@ -571,32 +450,15 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "BooleanIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<BooleanIO>",
+      "supertype": "ObjectIO",
       "typeName": "NullableIO.<BooleanIO>"
-    },
-    "NullableIO.<ColorIO>": {
-      "documentation": "A wrapper to wrap another IOType, adding support for null.",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "ColorIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<ColorIO>",
-      "typeName": "NullableIO.<ColorIO>"
     },
     "NullableIO.<EventIO>": {
       "documentation": "A wrapper to wrap another IOType, adding support for null.",
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "EventIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<EventIO>",
+      "supertype": "ObjectIO",
       "typeName": "NullableIO.<EventIO>"
     },
     "NullableIO.<FocusIO>": {
@@ -604,65 +466,15 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "FocusIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<FocusIO>",
+      "supertype": "ObjectIO",
       "typeName": "NullableIO.<FocusIO>"
-    },
-    "NullableIO.<NullableIO.<BooleanIO>>": {
-      "documentation": "A wrapper to wrap another IOType, adding support for null.",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NullableIO.<BooleanIO>"
-      ],
-      "supertype": "ParametricTypeImplIO.<NullableIO.<BooleanIO>>",
-      "typeName": "NullableIO.<NullableIO.<BooleanIO>>"
-    },
-    "NullableIO.<NullableIO.<FocusIO>>": {
-      "documentation": "A wrapper to wrap another IOType, adding support for null.",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NullableIO.<FocusIO>"
-      ],
-      "supertype": "ParametricTypeImplIO.<NullableIO.<FocusIO>>",
-      "typeName": "NullableIO.<NullableIO.<FocusIO>>"
-    },
-    "NullableIO.<NumberIO>": {
-      "documentation": "A wrapper to wrap another IOType, adding support for null.",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NumberIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NumberIO>",
-      "typeName": "NullableIO.<NumberIO>"
-    },
-    "NullableIO.<RangeIO>": {
-      "documentation": "A wrapper to wrap another IOType, adding support for null.",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "RangeIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<RangeIO>",
-      "typeName": "NullableIO.<RangeIO>"
     },
     "NullableIO.<StringIO>": {
       "documentation": "A wrapper to wrap another IOType, adding support for null.",
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "parameterTypes": [
-        "StringIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<StringIO>",
+      "supertype": "ObjectIO",
       "typeName": "NullableIO.<StringIO>"
     },
     "NumberIO": {
@@ -675,12 +487,46 @@ window.phet.phetio.phetioTypes = assert &&
     },
     "NumberPropertyIO": {
       "documentation": "Extends PropertyIO to add values for the numeric range ( min, max ) and numberType ( 'FloatingPoint' | 'Integer' )",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NumberIO"
+      "events": [
+        "changed"
       ],
+      "methodOrder": [],
+      "methods": {
+        "getValue": {
+          "documentation": "Gets the current value.",
+          "parameterTypes": [],
+          "returnType": "NumberIO"
+        },
+        "lazyLink": {
+          "documentation": "Adds a listener which will be called when the value changes. This method is like \"link\", but without the current-value callback on registration. The listener takes two arguments, the new value and the previous value.",
+          "parameterTypes": [
+            "FunctionIO.(NumberIO,NullableIO.<NumberIO>)=>VoidIO"
+          ],
+          "returnType": "VoidIO"
+        },
+        "link": {
+          "documentation": "Adds a listener which will be called when the value changes. On registration, the listener is also called with the current value. The listener takes two arguments, the new value and the previous value.",
+          "parameterTypes": [
+            "FunctionIO.(NumberIO,NullableIO.<NumberIO>)=>VoidIO"
+          ],
+          "returnType": "VoidIO"
+        },
+        "setValue": {
+          "documentation": "Sets the value of the property. If the value differs from the previous value, listeners are notified with the new value.",
+          "invocableForReadOnlyElements": false,
+          "parameterTypes": [
+            "NumberIO"
+          ],
+          "returnType": "VoidIO"
+        },
+        "unlink": {
+          "documentation": "Removes a listener.",
+          "parameterTypes": [
+            "FunctionIO.(NumberIO)=>VoidIO"
+          ],
+          "returnType": "VoidIO"
+        }
+      },
       "supertype": "PropertyIO.<NumberIO>",
       "typeName": "NumberPropertyIO"
     },
@@ -689,411 +535,8 @@ window.phet.phetio.phetioTypes = assert &&
       "events": [],
       "methodOrder": [],
       "methods": {},
-      "supertype": null,
+      "supertype": "ObjectIO",
       "typeName": "ObjectIO"
-    },
-    "ParametricTypeImplIO.<>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<>"
-    },
-    "ParametricTypeImplIO.<BooleanIO, NullableIO.<BooleanIO>, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "BooleanIO",
-        "NullableIO.<BooleanIO>",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<BooleanIO, NullableIO.<BooleanIO>, VoidIO>"
-    },
-    "ParametricTypeImplIO.<BooleanIO, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "BooleanIO",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<BooleanIO, VoidIO>"
-    },
-    "ParametricTypeImplIO.<BooleanIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "BooleanIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<BooleanIO>"
-    },
-    "ParametricTypeImplIO.<ColorIO, NullableIO.<ColorIO>, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "ColorIO",
-        "NullableIO.<ColorIO>",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<ColorIO, NullableIO.<ColorIO>, VoidIO>"
-    },
-    "ParametricTypeImplIO.<ColorIO, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "ColorIO",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<ColorIO, VoidIO>"
-    },
-    "ParametricTypeImplIO.<ColorIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "ColorIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<ColorIO>"
-    },
-    "ParametricTypeImplIO.<DOMEventIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "DOMEventIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<DOMEventIO>"
-    },
-    "ParametricTypeImplIO.<EventIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "EventIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<EventIO>"
-    },
-    "ParametricTypeImplIO.<FocusIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "FocusIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<FocusIO>"
-    },
-    "ParametricTypeImplIO.<NullableIO.<BooleanIO>, NullableIO.<NullableIO.<BooleanIO>>, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NullableIO.<BooleanIO>",
-        "NullableIO.<NullableIO.<BooleanIO>>",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NullableIO.<BooleanIO>, NullableIO.<NullableIO.<BooleanIO>>, VoidIO>"
-    },
-    "ParametricTypeImplIO.<NullableIO.<BooleanIO>, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NullableIO.<BooleanIO>",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NullableIO.<BooleanIO>, VoidIO>"
-    },
-    "ParametricTypeImplIO.<NullableIO.<BooleanIO>>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NullableIO.<BooleanIO>"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NullableIO.<BooleanIO>>"
-    },
-    "ParametricTypeImplIO.<NullableIO.<EventIO>>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NullableIO.<EventIO>"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NullableIO.<EventIO>>"
-    },
-    "ParametricTypeImplIO.<NullableIO.<FocusIO>, NullableIO.<NullableIO.<FocusIO>>, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NullableIO.<FocusIO>",
-        "NullableIO.<NullableIO.<FocusIO>>",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NullableIO.<FocusIO>, NullableIO.<NullableIO.<FocusIO>>, VoidIO>"
-    },
-    "ParametricTypeImplIO.<NullableIO.<FocusIO>, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NullableIO.<FocusIO>",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NullableIO.<FocusIO>, VoidIO>"
-    },
-    "ParametricTypeImplIO.<NullableIO.<FocusIO>>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NullableIO.<FocusIO>"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NullableIO.<FocusIO>>"
-    },
-    "ParametricTypeImplIO.<NumberIO, NullableIO.<NumberIO>, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NumberIO",
-        "NullableIO.<NumberIO>",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NumberIO, NullableIO.<NumberIO>, VoidIO>"
-    },
-    "ParametricTypeImplIO.<NumberIO, NumberIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NumberIO",
-        "NumberIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NumberIO, NumberIO>"
-    },
-    "ParametricTypeImplIO.<NumberIO, Vector2IO, DOMEventIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NumberIO",
-        "Vector2IO",
-        "DOMEventIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NumberIO, Vector2IO, DOMEventIO>"
-    },
-    "ParametricTypeImplIO.<NumberIO, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NumberIO",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NumberIO, VoidIO>"
-    },
-    "ParametricTypeImplIO.<NumberIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "NumberIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<NumberIO>"
-    },
-    "ParametricTypeImplIO.<ObjectIO, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "ObjectIO",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<ObjectIO, VoidIO>"
-    },
-    "ParametricTypeImplIO.<RangeIO, NullableIO.<RangeIO>, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "RangeIO",
-        "NullableIO.<RangeIO>",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<RangeIO, NullableIO.<RangeIO>, VoidIO>"
-    },
-    "ParametricTypeImplIO.<RangeIO, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "RangeIO",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<RangeIO, VoidIO>"
-    },
-    "ParametricTypeImplIO.<RangeIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "RangeIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<RangeIO>"
-    },
-    "ParametricTypeImplIO.<StringIO, NullableIO.<StringIO>, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "StringIO",
-        "NullableIO.<StringIO>",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<StringIO, NullableIO.<StringIO>, VoidIO>"
-    },
-    "ParametricTypeImplIO.<StringIO, ObjectIO, ObjectIO, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "StringIO",
-        "ObjectIO",
-        "ObjectIO",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<StringIO, ObjectIO, ObjectIO, VoidIO>"
-    },
-    "ParametricTypeImplIO.<StringIO, StringIO, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "StringIO",
-        "StringIO",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<StringIO, StringIO, VoidIO>"
-    },
-    "ParametricTypeImplIO.<StringIO, VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "StringIO",
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<StringIO, VoidIO>"
-    },
-    "ParametricTypeImplIO.<StringIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "StringIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<StringIO>"
-    },
-    "ParametricTypeImplIO.<Vector2IO, DOMEventIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "Vector2IO",
-        "DOMEventIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<Vector2IO, DOMEventIO>"
-    },
-    "ParametricTypeImplIO.<Vector2IO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "Vector2IO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<Vector2IO>"
-    },
-    "ParametricTypeImplIO.<VoidIO>": {
-      "documentation": "A Type that has parameters",
-      "events": [],
-      "methodOrder": [],
-      "methods": {},
-      "parameterTypes": [
-        "VoidIO"
-      ],
-      "supertype": "ObjectIO",
-      "typeName": "ParametricTypeImplIO.<VoidIO>"
     },
     "PhetButtonIO": {
       "documentation": "The PhET Button in the bottom right of the screen",
@@ -1379,10 +822,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "BooleanIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<BooleanIO>",
+      "supertype": "ObjectIO",
       "typeName": "PropertyIO.<BooleanIO>"
     },
     "PropertyIO.<ColorIO>": {
@@ -1430,10 +870,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "ColorIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<ColorIO>",
+      "supertype": "ObjectIO",
       "typeName": "PropertyIO.<ColorIO>"
     },
     "PropertyIO.<NullableIO.<BooleanIO>>": {
@@ -1481,10 +918,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "NullableIO.<BooleanIO>"
-      ],
-      "supertype": "ParametricTypeImplIO.<NullableIO.<BooleanIO>>",
+      "supertype": "ObjectIO",
       "typeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
     "PropertyIO.<NullableIO.<FocusIO>>": {
@@ -1532,10 +966,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "NullableIO.<FocusIO>"
-      ],
-      "supertype": "ParametricTypeImplIO.<NullableIO.<FocusIO>>",
+      "supertype": "ObjectIO",
       "typeName": "PropertyIO.<NullableIO.<FocusIO>>"
     },
     "PropertyIO.<NumberIO>": {
@@ -1583,10 +1014,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "NumberIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<NumberIO>",
+      "supertype": "ObjectIO",
       "typeName": "PropertyIO.<NumberIO>"
     },
     "PropertyIO.<RangeIO>": {
@@ -1634,10 +1062,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "RangeIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<RangeIO>",
+      "supertype": "ObjectIO",
       "typeName": "PropertyIO.<RangeIO>"
     },
     "PropertyIO.<StringIO>": {
@@ -1685,10 +1110,7 @@ window.phet.phetio.phetioTypes = assert &&
           "returnType": "VoidIO"
         }
       },
-      "parameterTypes": [
-        "StringIO"
-      ],
-      "supertype": "ParametricTypeImplIO.<StringIO>",
+      "supertype": "ObjectIO",
       "typeName": "PropertyIO.<StringIO>"
     },
     "RangeIO": {
