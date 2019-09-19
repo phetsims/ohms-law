@@ -35,7 +35,7 @@ define( require => {
    */
   function OhmsLawScreenView( model, tandem ) {
 
-    var self = this;
+    const self = this;
 
     ScreenView.call( this, {
       tandem: tandem,
@@ -43,17 +43,17 @@ define( require => {
     } );
 
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
-    var formulaNode = new FormulaNode( model, tandem.createTandem( 'formulaNode' ), {
+    const formulaNode = new FormulaNode( model, tandem.createTandem( 'formulaNode' ), {
       pickable: false
     } );
 
     // Circuit node with readout node
-    var wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
+    const wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
       pickable: false
     } );
 
     // create the control panel with sliders
-    var controlPanel = new ControlPanel(
+    const controlPanel = new ControlPanel(
       model.voltageProperty,
       model.resistanceProperty,
       model.currentProperty,
@@ -61,7 +61,7 @@ define( require => {
     );
 
     // sound generators for voltage and resistance
-    var resetNotInProgress = new InvertedBooleanProperty( model.resetInProgressProperty );
+    const resetNotInProgress = new InvertedBooleanProperty( model.resetInProgressProperty );
     soundManager.addSoundGenerator( new DiscreteSoundGenerator(
       model.voltageProperty,
       OhmsLawConstants.VOLTAGE_RANGE,
@@ -92,7 +92,7 @@ define( require => {
     soundManager.addSoundGenerator( this.currentSoundGenerator );
 
     // add the reset button
-    var resetAllButton = new ResetAllButton( {
+    const resetAllButton = new ResetAllButton( {
       radius: 28,
       listener: function() {
         model.reset();

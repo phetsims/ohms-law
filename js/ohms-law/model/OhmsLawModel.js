@@ -84,7 +84,7 @@ define( require => {
      * @returns {number}
      */
     getNormalizedVoltage: function() {
-      var range = OhmsLawConstants.VOLTAGE_RANGE;
+      const range = OhmsLawConstants.VOLTAGE_RANGE;
       return ( this.voltageProperty.get() - range.min ) / range.getLength();
     },
 
@@ -93,7 +93,7 @@ define( require => {
      * @returns {number}
      */
     getNormalizedCurrent: function() {
-      var range = OhmsLawModel.getCurrentRange();
+      const range = OhmsLawModel.getCurrentRange();
       return ( this.currentProperty.get() - range.min ) / range.getLength();
     },
 
@@ -103,7 +103,7 @@ define( require => {
      * @returns {number}
      */
     getNormalizedResistance: function() {
-      var range = OhmsLawConstants.RESISTANCE_RANGE;
+      const range = OhmsLawConstants.RESISTANCE_RANGE;
       return ( this.resistanceProperty.get() - range.min ) / range.getLength();
     }
   }, {

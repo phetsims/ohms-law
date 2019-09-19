@@ -23,41 +23,41 @@ define( require => {
   const Util = require( 'DOT/Util' );
 
   // a11y strings
-  var tinyAmountOfImpuritiesString = OhmsLawA11yStrings.tinyAmountOfImpurities.value;
-  var verySmallAmountOfImpuritiesString = OhmsLawA11yStrings.verySmallAmountOfImpurities.value;
-  var smallAmountOfImpuritiesString = OhmsLawA11yStrings.smallAmountOfImpurities.value;
-  var mediumAmountOfImpuritiesString = OhmsLawA11yStrings.mediumAmountOfImpurities.value;
-  var largeAmountOfImpuritiesString = OhmsLawA11yStrings.largeAmountOfImpurities.value;
-  var veryLargeAmountOfImpuritiesString = OhmsLawA11yStrings.veryLargeAmountOfImpurities.value;
-  var hugeAmountOfImpuritiesString = OhmsLawA11yStrings.hugeAmountOfImpurities.value;
-  var resistanceDotsPatternString = OhmsLawA11yStrings.resistanceDotsPattern.value;
+  const tinyAmountOfImpuritiesString = OhmsLawA11yStrings.tinyAmountOfImpurities.value;
+  const verySmallAmountOfImpuritiesString = OhmsLawA11yStrings.verySmallAmountOfImpurities.value;
+  const smallAmountOfImpuritiesString = OhmsLawA11yStrings.smallAmountOfImpurities.value;
+  const mediumAmountOfImpuritiesString = OhmsLawA11yStrings.mediumAmountOfImpurities.value;
+  const largeAmountOfImpuritiesString = OhmsLawA11yStrings.largeAmountOfImpurities.value;
+  const veryLargeAmountOfImpuritiesString = OhmsLawA11yStrings.veryLargeAmountOfImpurities.value;
+  const hugeAmountOfImpuritiesString = OhmsLawA11yStrings.hugeAmountOfImpurities.value;
+  const resistanceDotsPatternString = OhmsLawA11yStrings.resistanceDotsPattern.value;
 
   // constants
-  var RESISTOR_WIDTH = OhmsLawConstants.WIRE_WIDTH / 2.123; // empirically determined
-  var RESISTOR_HEIGHT = OhmsLawConstants.WIRE_HEIGHT / 2.75; // empirically determined
-  var PERSPECTIVE_FACTOR = 0.3; // multiplier that controls the width of the ellipses on the ends of the wire
-  var MAX_WIDTH_INCLUDING_ROUNDED_ENDS = RESISTOR_WIDTH + RESISTOR_HEIGHT * PERSPECTIVE_FACTOR;
+  const RESISTOR_WIDTH = OhmsLawConstants.WIRE_WIDTH / 2.123; // empirically determined
+  const RESISTOR_HEIGHT = OhmsLawConstants.WIRE_HEIGHT / 2.75; // empirically determined
+  const PERSPECTIVE_FACTOR = 0.3; // multiplier that controls the width of the ellipses on the ends of the wire
+  const MAX_WIDTH_INCLUDING_ROUNDED_ENDS = RESISTOR_WIDTH + RESISTOR_HEIGHT * PERSPECTIVE_FACTOR;
 
   // dots
-  var DOT_RADIUS = 2;
-  var AREA_PER_DOT = 40; // adjust this to control the density of the dots
-  var NUMBER_OF_DOTS = MAX_WIDTH_INCLUDING_ROUNDED_ENDS * RESISTOR_HEIGHT / AREA_PER_DOT;
-  var IMPURITIES_STRINGS = [ tinyAmountOfImpuritiesString, verySmallAmountOfImpuritiesString, smallAmountOfImpuritiesString,
+  const DOT_RADIUS = 2;
+  const AREA_PER_DOT = 40; // adjust this to control the density of the dots
+  const NUMBER_OF_DOTS = MAX_WIDTH_INCLUDING_ROUNDED_ENDS * RESISTOR_HEIGHT / AREA_PER_DOT;
+  const IMPURITIES_STRINGS = [ tinyAmountOfImpuritiesString, verySmallAmountOfImpuritiesString, smallAmountOfImpuritiesString,
     mediumAmountOfImpuritiesString, largeAmountOfImpuritiesString, veryLargeAmountOfImpuritiesString,
     hugeAmountOfImpuritiesString ];
 
-  var BODY_FILL_GRADIENT = new LinearGradient( 0, -RESISTOR_HEIGHT / 2, 0, RESISTOR_HEIGHT / 2 ) // For 3D effect on the wire.
+  const BODY_FILL_GRADIENT = new LinearGradient( 0, -RESISTOR_HEIGHT / 2, 0, RESISTOR_HEIGHT / 2 ) // For 3D effect on the wire.
     .addColorStop( 0, '#F00' )
     .addColorStop( 0.266, '#FFF' )
     .addColorStop( 0.412, '#FCFCFC' )
     .addColorStop( 1, '#F00' );
 
-  var DOT_GRID_ROWS = Util.roundSymmetric( RESISTOR_HEIGHT / Math.sqrt( AREA_PER_DOT ) );
-  var DOT_GRID_COLUMNS = Util.roundSymmetric( RESISTOR_WIDTH / Math.sqrt( AREA_PER_DOT ) );
-  var MAX_DOTS = DOT_GRID_COLUMNS * DOT_GRID_ROWS;
+  const DOT_GRID_ROWS = Util.roundSymmetric( RESISTOR_HEIGHT / Math.sqrt( AREA_PER_DOT ) );
+  const DOT_GRID_COLUMNS = Util.roundSymmetric( RESISTOR_WIDTH / Math.sqrt( AREA_PER_DOT ) );
+  const MAX_DOTS = DOT_GRID_COLUMNS * DOT_GRID_ROWS;
 
   // a11y - Function to map resistance to number of dots
-  var RESISTANCE_TO_NUM_DOTS = new LinearFunction(
+  const RESISTANCE_TO_NUM_DOTS = new LinearFunction(
     OhmsLawConstants.RESISTANCE_RANGE.min,
     OhmsLawConstants.RESISTANCE_RANGE.max,
     MAX_DOTS * 0.05,
@@ -80,10 +80,10 @@ define( require => {
     }, options );
 
     Node.call( this );
-    var self = this;
+    const self = this;
 
     // Body of the wire
-    var bodyPath = new Path( new Shape().moveTo( -RESISTOR_WIDTH / 2, RESISTOR_HEIGHT / 2 )
+    const bodyPath = new Path( new Shape().moveTo( -RESISTOR_WIDTH / 2, RESISTOR_HEIGHT / 2 )
       .horizontalLineToRelative( RESISTOR_WIDTH )
       .ellipticalArc( RESISTOR_WIDTH / 2, 0, PERSPECTIVE_FACTOR * RESISTOR_HEIGHT / 2, RESISTOR_HEIGHT / 2, 0, Math.PI / 2, 3 * Math.PI / 2, true )
       .horizontalLineToRelative( -RESISTOR_WIDTH ), {
@@ -94,7 +94,7 @@ define( require => {
     this.addChild( bodyPath );
 
     // Cap/end of the wire
-    var endPath = new Path( Shape.ellipse( -RESISTOR_WIDTH / 2, 0, RESISTOR_HEIGHT * PERSPECTIVE_FACTOR / 2, RESISTOR_HEIGHT / 2 ), {
+    const endPath = new Path( Shape.ellipse( -RESISTOR_WIDTH / 2, 0, RESISTOR_HEIGHT * PERSPECTIVE_FACTOR / 2, RESISTOR_HEIGHT / 2 ), {
       stroke: 'black',
       fill: '#ff9f9f',
       tandem: tandem.createTandem( 'endPath' )
@@ -102,7 +102,7 @@ define( require => {
     this.addChild( endPath );
 
     // Short stub of wire near the cap of wire
-    var stubWirePath = new Path( new Shape().moveTo( 5 - RESISTOR_WIDTH / 2, 0 ).horizontalLineToRelative( -15 ), {
+    const stubWirePath = new Path( new Shape().moveTo( 5 - RESISTOR_WIDTH / 2, 0 ).horizontalLineToRelative( -15 ), {
       stroke: '#000',
       lineWidth: 10,
       tandem: tandem.createTandem( 'stubWirePath' )
@@ -110,27 +110,27 @@ define( require => {
     this.addChild( stubWirePath );
 
     // Dots representing charge scatterers.
-    var dotsNodeTandem = tandem.createTandem( 'dotsNode' );
-    var dotsNode = new Node( { tandem: dotsNodeTandem } );
-    var dotsGroupTandem = dotsNodeTandem.createGroupTandem( 'dot' );
+    const dotsNodeTandem = tandem.createTandem( 'dotsNode' );
+    const dotsNode = new Node( { tandem: dotsNodeTandem } );
+    const dotsGroupTandem = dotsNodeTandem.createGroupTandem( 'dot' );
 
     // Create the dots randomly on the resistor. Density is based on AREA_PER_DOT.
-    for ( var i = 0; i < NUMBER_OF_DOTS; i++ ) {
+    for ( let i = 0; i < NUMBER_OF_DOTS; i++ ) {
 
-      var centerY = ( phet.joist.random.nextDouble() - .5 ) * ( RESISTOR_HEIGHT - DOT_RADIUS * 2 );
+      const centerY = ( phet.joist.random.nextDouble() - .5 ) * ( RESISTOR_HEIGHT - DOT_RADIUS * 2 );
 
       // for the given y coordinate, calculate the x coordinate that will put the dot completely within the
       // wire (including rounded wire ends) using the formula for an ellipse: (x^2 / a^2) + (y^2 / b^2) = 1
       // NOTE: this sim used to use a clipArea for this but that is too slow on iPad Air 2,
       // see https://github.com/phetsims/ohms-law/issues/132
-      var a = PERSPECTIVE_FACTOR * RESISTOR_HEIGHT / 2; // elliptical x radius
-      var b = RESISTOR_HEIGHT / 2; // elliptical y radius
-      var ellipticalX = Math.sqrt( ( 1 - ( centerY * centerY ) / ( b * b ) ) * ( a * a ) );
+      const a = PERSPECTIVE_FACTOR * RESISTOR_HEIGHT / 2; // elliptical x radius
+      const b = RESISTOR_HEIGHT / 2; // elliptical y radius
+      const ellipticalX = Math.sqrt( ( 1 - ( centerY * centerY ) / ( b * b ) ) * ( a * a ) );
 
-      var maxWidthIncludingEndLimit = RESISTOR_WIDTH + ellipticalX;
-      var centerX = ( phet.joist.random.nextDouble() - .5 ) * maxWidthIncludingEndLimit;
+      const maxWidthIncludingEndLimit = RESISTOR_WIDTH + ellipticalX;
+      const centerX = ( phet.joist.random.nextDouble() - .5 ) * maxWidthIncludingEndLimit;
 
-      var dot = new Circle( DOT_RADIUS, {
+      const dot = new Circle( DOT_RADIUS, {
         fill: 'black',
         centerX: centerX,
         centerY: centerY,
@@ -142,7 +142,7 @@ define( require => {
 
     // Set the number of visible dots based on the resistivity. Present for the lifetime of the simulation; no need to unlink.
     resistanceProperty.link( function( resistance ) {
-      var numDotsToShow = RESISTANCE_TO_NUM_DOTS( resistance );
+      const numDotsToShow = RESISTANCE_TO_NUM_DOTS( resistance );
       dotsNode.children.forEach( function( dot, index ) {
         dot.setVisible( index < numDotsToShow );
       } );
@@ -162,11 +162,11 @@ define( require => {
      * @returns {string} resistance
      */
     getResistanceDescription: function( resistance ) {
-      var range = OhmsLawConstants.RESISTANCE_RANGE;
+      const range = OhmsLawConstants.RESISTANCE_RANGE;
 
       // map the normalied value to one of the resistance descriptions
-      var index = Util.roundSymmetric( Util.linear( range.min, range.max, 0, IMPURITIES_STRINGS.length - 1, resistance ) );
-      var numDotsDescription = IMPURITIES_STRINGS[ index ];
+      const index = Util.roundSymmetric( Util.linear( range.min, range.max, 0, IMPURITIES_STRINGS.length - 1, resistance ) );
+      const numDotsDescription = IMPURITIES_STRINGS[ index ];
 
       return StringUtils.fillIn( resistanceDotsPatternString, {
         impurities: numDotsDescription

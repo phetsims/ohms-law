@@ -29,16 +29,16 @@ define( require => {
   const voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
 
   // a11y strings
-  var relativeSizePatternString = OhmsLawA11yStrings.relativeSizePattern.value;
-  var ohmsLawEquationString = OhmsLawA11yStrings.ohmsLawEquation.value;
-  var ohmsLawDefinitionString = OhmsLawA11yStrings.ohmsLawDefinition.value;
+  const relativeSizePatternString = OhmsLawA11yStrings.relativeSizePattern.value;
+  const ohmsLawEquationString = OhmsLawA11yStrings.ohmsLawEquation.value;
+  const ohmsLawDefinitionString = OhmsLawA11yStrings.ohmsLawDefinition.value;
 
   // constants
-  var TEXT_FONT = new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } );
-  var CURRENT_SCALE_M = 150; // empirically determined
-  var CURRENT_SCALE_B = 1; // empirically determined
-  var OTHERS_SCALE_M = 16; // empirically determined
-  var OTHERS_SCALE_B = 4; // empirically determined
+  const TEXT_FONT = new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } );
+  const CURRENT_SCALE_M = 150; // empirically determined
+  const CURRENT_SCALE_B = 1; // empirically determined
+  const OTHERS_SCALE_M = 16; // empirically determined
+  const OTHERS_SCALE_B = 4; // empirically determined
 
   /**
    * @param {OhmsLawModel} model
@@ -58,11 +58,11 @@ define( require => {
       tandem: tandem
     }, options );
 
-    var self = this;
+    const self = this;
     Node.call( this );
 
     // Create the equals sign, which does not change size
-    var equalsSign = new Text( MathSymbols.EQUAL_TO, { // We never internationalize the '=' sign
+    const equalsSign = new Text( MathSymbols.EQUAL_TO, { // We never internationalize the '=' sign
       font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
       fill: '#000',
       centerX: 300,
@@ -71,7 +71,7 @@ define( require => {
     } );
 
     // Create the Current Letter
-    var currentText = new Text( currentSymbolString, {
+    const currentText = new Text( currentSymbolString, {
       font: TEXT_FONT,
       fill: PhetColorScheme.RED_COLORBLIND,
       centerX: 0,
@@ -81,7 +81,7 @@ define( require => {
 
     // Create the node that contains the text
     this.currentLetterNode = new Node( { children: [ getAntiArtifactRectangle( currentText ), currentText ] } );
-    var currentXPosition = equalsSign.centerX + 80;
+    const currentXPosition = equalsSign.centerX + 80;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
     model.currentProperty.link( function() {
@@ -90,7 +90,7 @@ define( require => {
     } );
 
     // Create the Voltage Letter
-    var voltageText = new Text( voltageSymbolString, {
+    const voltageText = new Text( voltageSymbolString, {
       font: TEXT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
@@ -100,7 +100,7 @@ define( require => {
 
     // Create the node that contains the text
     this.voltageLetterNode = new Node( { children: [ getAntiArtifactRectangle( voltageText ), voltageText ] } );
-    var voltageXPosition = equalsSign.centerX - 150;
+    const voltageXPosition = equalsSign.centerX - 150;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
     model.voltageProperty.link( function() {
@@ -109,7 +109,7 @@ define( require => {
     } );
 
     // Create the Resistance Letter
-    var resistanceText = new Text( resistanceSymbolString, {
+    const resistanceText = new Text( resistanceSymbolString, {
       font: TEXT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
@@ -119,7 +119,7 @@ define( require => {
 
     // Create the node that contains the text
     this.resistanceLetterNode = new Node( { children: [ getAntiArtifactRectangle( resistanceText ), resistanceText ] } );
-    var resistanceXPosition = equalsSign.centerX + 240;
+    const resistanceXPosition = equalsSign.centerX + 240;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
     model.resistanceProperty.link( function() {
@@ -136,7 +136,7 @@ define( require => {
     this.addChild( equalsSign );
 
     // add a node for accessibility that describes the relative sizes of the letters
-    var descriptionNode = new Node( { tagName: 'p' } );
+    const descriptionNode = new Node( { tagName: 'p' } );
     this.addChild( descriptionNode );
 
     // when any of the model Properties change, update the accessible description
@@ -171,24 +171,24 @@ define( require => {
      */
     getComparativeSizeDescription: function() {
 
-      var rHeight = this.resistanceLetterNode.height;
-      var iHeight = this.currentLetterNode.height;
-      var vHeight = this.voltageLetterNode.height;
+      const rHeight = this.resistanceLetterNode.height;
+      const iHeight = this.currentLetterNode.height;
+      const vHeight = this.voltageLetterNode.height;
 
-      var vToI = vHeight / iHeight;
-      var vToR = vHeight / rHeight;
+      const vToI = vHeight / iHeight;
+      const vToR = vHeight / rHeight;
 
       // for iteration
-      var i;
-      var describedRange;
+      let i;
+      let describedRange;
 
       // map the relations to the comparative descriptions
       // loop through array of keys to avoid closures every time this is called
-      var ranges = OhmsLawConstants.COMPARATIVE_DESCRIPTION_RANGES;
-      var keys = Object.keys( ranges );
+      const ranges = OhmsLawConstants.COMPARATIVE_DESCRIPTION_RANGES;
+      const keys = Object.keys( ranges );
 
       // get the relative size description comparing V to I
-      var vToIDescription;
+      let vToIDescription;
       for ( i = 0; i < keys.length; i++ ) {
         describedRange = ranges[ keys[ i ] ];
         if ( describedRange.range.contains( vToI ) ) {
@@ -198,7 +198,7 @@ define( require => {
       }
 
       // get the relative size description comparing V to R
-      var vToRDescription;
+      let vToRDescription;
       for ( i = 0; i < keys.length; i++ ) {
         describedRange = ranges[ keys[ i ] ];
         if ( describedRange.range.contains( vToR ) ) {

@@ -22,7 +22,7 @@ define( require => {
   const VSlider = require( 'SUN/VSlider' );
 
   // constants
-  var READOUT_SPACING = 6;
+  const READOUT_SPACING = 6;
 
   /**
    * @param {Property.<number>} property
@@ -37,7 +37,7 @@ define( require => {
    */
   function SliderUnit( property, range, symbolString, nameString, unitString, labelContent, tandem, options ) {
 
-    var self = this;
+    const self = this;
 
     options = _.extend( {
 
@@ -84,14 +84,14 @@ define( require => {
     }, options.sliderOptions );
 
     // override the start and end drag functions in the options
-    var providedStartDragFunction = options.sliderOptions.startDrag;
+    const providedStartDragFunction = options.sliderOptions.startDrag;
     options.sliderOptions.startDrag = function( event ) {
       if ( event.type === 'keydown' ) {
         self.sliderDraggingByKeyboard.set( true );
       }
       providedStartDragFunction && providedStartDragFunction();
     };
-    var providedEndDragFunction = options.sliderOptions.endDrag;
+    const providedEndDragFunction = options.sliderOptions.endDrag;
     options.sliderOptions.endDrag = function() {
       self.sliderDraggingByKeyboard.set( false );
       providedEndDragFunction && providedEndDragFunction();
@@ -102,16 +102,16 @@ define( require => {
     // @public (read-only) {BooleanProperty} - a property that indicates if the slider is being dragged via the keyboard
     this.sliderDraggingByKeyboard = new BooleanProperty( false );
 
-    var slider = new VSlider( property, range, options.sliderOptions );
+    const slider = new VSlider( property, range, options.sliderOptions );
 
-    var symbolText = new Text( symbolString, {
+    const symbolText = new Text( symbolString, {
       font: OhmsLawConstants.SYMBOL_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       maxWidth: OhmsLawConstants.SLIDER_WIDTH,
       tandem: tandem.createTandem( 'symbolText' )
     } );
 
-    var nameText = new Text( nameString, {
+    const nameText = new Text( nameString, {
       font: OhmsLawConstants.NAME_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       maxWidth: OhmsLawConstants.SLIDER_WIDTH,
@@ -125,13 +125,13 @@ define( require => {
     } );
     nameText.center = new Vector2( symbolText.centerX, symbolText.y + 18 );
 
-    var valueText = new Text( Util.toFixed( range.max, options.decimalPlaces ), {
+    const valueText = new Text( Util.toFixed( range.max, options.decimalPlaces ), {
       font: OhmsLawConstants.READOUT_FONT,
       fill: OhmsLawConstants.BLACK_COLOR,
       tandem: tandem.createTandem( 'valueText' )
     } );
 
-    var unitText = new Text( unitString, {
+    const unitText = new Text( unitString, {
       font: OhmsLawConstants.UNIT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       left: valueText.right / 2,
@@ -142,7 +142,7 @@ define( require => {
     } );
 
     // The readout should be horizontally aligned
-    var readout = new Node( {
+    const readout = new Node( {
       children: [ valueText, unitText ]
     } );
     valueText.right = unitText.left - READOUT_SPACING;
@@ -151,7 +151,7 @@ define( require => {
     valueText.y = unitText.y;
 
     // Background for centering
-    var readoutBackground = Rectangle.bounds( readout.bounds, {
+    const readoutBackground = Rectangle.bounds( readout.bounds, {
       children: [ readout ]
     } );
 

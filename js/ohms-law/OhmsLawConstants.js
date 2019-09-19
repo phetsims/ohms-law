@@ -16,33 +16,33 @@ define( require => {
   const RangeWithValue = require( 'DOT/RangeWithValue' );
 
   // a11y strings
-  var tinyString = OhmsLawA11yStrings.tiny.value;
-  var verySmallString = OhmsLawA11yStrings.verySmall.value;
-  var smallString = OhmsLawA11yStrings.small.value;
-  var mediumSizeString = OhmsLawA11yStrings.mediumSize.value;
-  var largeString = OhmsLawA11yStrings.large.value;
-  var veryLargeString = OhmsLawA11yStrings.veryLarge.value;
-  var hugeString = OhmsLawA11yStrings.huge.value;
-  var muchMuchSmallerThanString = OhmsLawA11yStrings.muchMuchSmallerThan.value;
-  var muchSmallerThanString = OhmsLawA11yStrings.muchSmallerThan.value;
-  var slightlySmallerThanString = OhmsLawA11yStrings.slightlySmallerThan.value;
-  var comparableToString = OhmsLawA11yStrings.comparableTo.value;
-  var slightlyLargerThanString = OhmsLawA11yStrings.slightlyLargerThan.value;
-  var muchLargerThanString = OhmsLawA11yStrings.muchLargerThan.value;
-  var muchMuchLargerThanString = OhmsLawA11yStrings.muchMuchLargerThan.value;
+  const tinyString = OhmsLawA11yStrings.tiny.value;
+  const verySmallString = OhmsLawA11yStrings.verySmall.value;
+  const smallString = OhmsLawA11yStrings.small.value;
+  const mediumSizeString = OhmsLawA11yStrings.mediumSize.value;
+  const largeString = OhmsLawA11yStrings.large.value;
+  const veryLargeString = OhmsLawA11yStrings.veryLarge.value;
+  const hugeString = OhmsLawA11yStrings.huge.value;
+  const muchMuchSmallerThanString = OhmsLawA11yStrings.muchMuchSmallerThan.value;
+  const muchSmallerThanString = OhmsLawA11yStrings.muchSmallerThan.value;
+  const slightlySmallerThanString = OhmsLawA11yStrings.slightlySmallerThan.value;
+  const comparableToString = OhmsLawA11yStrings.comparableTo.value;
+  const slightlyLargerThanString = OhmsLawA11yStrings.slightlyLargerThan.value;
+  const muchLargerThanString = OhmsLawA11yStrings.muchLargerThan.value;
+  const muchMuchLargerThanString = OhmsLawA11yStrings.muchMuchLargerThan.value;
 
   // constants used by other constants
-  var RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms
-  var VOLTAGE_RANGE = new RangeWithValue( 0.1, 9, 4.5 ); // in volts
+  const RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms
+  const VOLTAGE_RANGE = new RangeWithValue( 0.1, 9, 4.5 ); // in volts
 
-  var WIRE_WIDTH = 505;
-  var BATTERIES_OFFSET = 30;
-  var AA_VOLTAGE = 1.5; // in volts
-  var MAX_NUMBER_OF_BATTERIES = Math.ceil( VOLTAGE_RANGE.max / AA_VOLTAGE );
+  const WIRE_WIDTH = 505;
+  const BATTERIES_OFFSET = 30;
+  const AA_VOLTAGE = 1.5; // in volts
+  const MAX_NUMBER_OF_BATTERIES = Math.ceil( VOLTAGE_RANGE.max / AA_VOLTAGE );
 
   // map for relative size of variables to their accessible description - ranges values are the ratio of sizes
   // for instance, a value 0.25 means that the letter is 1/4 the size of the other
-  var COMPARATIVE_DESCRIPTION_RANGES = {
+  const COMPARATIVE_DESCRIPTION_RANGES = {
     MUCH_MUCH_SMALLER: {
       range: new Range( 0, 0.25 ),
       description: muchMuchSmallerThanString
@@ -73,7 +73,7 @@ define( require => {
     }
   };
 
-  var OhmsLawConstants = {
+  const OhmsLawConstants = {
 
     // colors
     BLUE_COLOR: '#0f0ffb',

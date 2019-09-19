@@ -19,7 +19,7 @@ define( require => {
   const Util = require( 'DOT/Util' );
 
   // a11y strings
-  var batteriesSupplyPatternString = OhmsLawA11yStrings.batteriesSupplyPattern.value;
+  const batteriesSupplyPatternString = OhmsLawA11yStrings.batteriesSupplyPattern.value;
 
   /**
    * @param {Property.<number>} voltageProperty
@@ -34,17 +34,17 @@ define( require => {
       // a11y
       tagName: 'li' // this assumes that it is a child of a 'ul'
     } );
-    var self = this;
+    const self = this;
 
     // Store battery nodes in an array
-    var batteries = [];
+    const batteries = [];
 
-    var batteriesGroupTandem = tandem.createGroupTandem( 'battery' );
+    const batteriesGroupTandem = tandem.createGroupTandem( 'battery' );
 
     // Create an array of batteries; enough to fill the entire wire.
-    for ( var i = 0; i < OhmsLawConstants.MAX_NUMBER_OF_BATTERIES; i++ ) {
-      var leftPosition = i * OhmsLawConstants.BATTERY_WIDTH;
-      var battery = new BatteryView( batteriesGroupTandem.createNextTandem(), { x: leftPosition, y: 0 } );
+    for ( let i = 0; i < OhmsLawConstants.MAX_NUMBER_OF_BATTERIES; i++ ) {
+      const leftPosition = i * OhmsLawConstants.BATTERY_WIDTH;
+      const battery = new BatteryView( batteriesGroupTandem.createNextTandem(), { x: leftPosition, y: 0 } );
 
       // Add them as children to this node, and to the array for manipulation
       this.addChild( battery );
@@ -57,7 +57,7 @@ define( require => {
       batteries.forEach( function( battery, index ) {
 
         // Determine associated with a particular battery
-        var voltageBattery = Math.min( OhmsLawConstants.AA_VOLTAGE, voltage - index * OhmsLawConstants.AA_VOLTAGE );
+        let voltageBattery = Math.min( OhmsLawConstants.AA_VOLTAGE, voltage - index * OhmsLawConstants.AA_VOLTAGE );
         voltageBattery = Util.roundToInterval( voltageBattery, Math.pow( 10, -OhmsLawConstants.VOLTAGE_SIG_FIGS ) );
 
         // Battery is only visible if it has a voltage.

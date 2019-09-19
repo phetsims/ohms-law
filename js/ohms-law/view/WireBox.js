@@ -23,15 +23,15 @@ define( require => {
   const Util = require( 'DOT/Util' );
 
   // a11y strings
-  var circuitLabelString = OhmsLawA11yStrings.circuitLabel.value;
-  var circuitDescriptionString = OhmsLawA11yStrings.circuitDescription.value;
-  var currentDescriptionPatternString = OhmsLawA11yStrings.currentDescriptionPattern.value;
+  const circuitLabelString = OhmsLawA11yStrings.circuitLabel.value;
+  const circuitDescriptionString = OhmsLawA11yStrings.circuitDescription.value;
+  const currentDescriptionPatternString = OhmsLawA11yStrings.currentDescriptionPattern.value;
 
   // constants
-  var WIDTH = OhmsLawConstants.WIRE_WIDTH;
-  var HEIGHT = OhmsLawConstants.WIRE_HEIGHT;
-  var WIRE_THICKNESS = 10;
-  var OFFSET = 10;  // position offset for the RightAngleArrow
+  const WIDTH = OhmsLawConstants.WIRE_WIDTH;
+  const HEIGHT = OhmsLawConstants.WIRE_HEIGHT;
+  const WIRE_THICKNESS = 10;
+  const OFFSET = 10;  // position offset for the RightAngleArrow
 
   /**
    * @param {OhmsLawModel} model
@@ -54,23 +54,23 @@ define( require => {
     }, options );
 
     Node.call( this, options );
-    var self = this;
+    const self = this;
 
     // For positioning, the top left corner of the wireFrame is defined as 0,0
-    var wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, {
+    const wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, {
       stroke: '#000',
       lineWidth: WIRE_THICKNESS,
       tandem: tandem.createTandem( 'wireFrame' )
     } );
     this.addChild( wireFrame );
 
-    var batteriesView = new BatteriesView( model.voltageProperty, tandem.createTandem( 'batteriesView' ), {
+    const batteriesView = new BatteriesView( model.voltageProperty, tandem.createTandem( 'batteriesView' ), {
       left: OhmsLawConstants.BATTERIES_OFFSET, // Slightly to the right of the wire
       centerY: 0
     } );
     this.addChild( batteriesView );
 
-    var resistorNode = new ResistorNode( model.resistanceProperty, tandem.createTandem( 'resistorNode' ), {
+    const resistorNode = new ResistorNode( model.resistanceProperty, tandem.createTandem( 'resistorNode' ), {
       centerX: WIDTH / 2,
       centerY: HEIGHT
     } );
@@ -84,7 +84,7 @@ define( require => {
     } );
     this.addChild( this.bottomLeftArrow );
 
-    var bottomRightArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomRightArrow' ), {
+    const bottomRightArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomRightArrow' ), {
       x: WIDTH + OFFSET,
       y: HEIGHT + OFFSET,
       rotation: 0
@@ -93,10 +93,10 @@ define( require => {
 
     // a11y - accessible description for the current
     assert && assert( this.tagName.toUpperCase() === 'UL', 'li children assume list parent' );
-    var accessibleCurrentNode = new Node( { tagName: 'li' } );
+    const accessibleCurrentNode = new Node( { tagName: 'li' } );
     this.addChild( accessibleCurrentNode );
 
-    var currentReadoutPanel = new ReadoutPanel( model, tandem.createTandem( 'currentReadoutPanel' ), {
+    const currentReadoutPanel = new ReadoutPanel( model, tandem.createTandem( 'currentReadoutPanel' ), {
       centerY: HEIGHT / 2,
       centerX: WIDTH / 2
     } );
@@ -113,7 +113,7 @@ define( require => {
 
     // a11y - when the current changes, update the accessible description
     model.currentProperty.link( function( current ) {
-      var formattedCurrent = Util.toFixed( current, OhmsLawConstants.CURRENT_SIG_FIGS );
+      const formattedCurrent = Util.toFixed( current, OhmsLawConstants.CURRENT_SIG_FIGS );
 
       accessibleCurrentNode.innerContent = StringUtils.fillIn( currentDescriptionPatternString, {
         arrowSize: self.getArrowSizeDescription(),
@@ -137,18 +137,18 @@ define( require => {
      */
     getArrowSizeDescription: function() {
 
-      var height = this.bottomLeftArrow.height;
+      const height = this.bottomLeftArrow.height;
 
       // Empirically determined, the idea is for the largest relative size string to map to when the 'I' in the formula
       // goes off the screen (or at least close to that), see https://github.com/phetsims/ohms-law/issues/97.
-      var maxArrowHeightThresholdCoefficient = 2;
+      const maxArrowHeightThresholdCoefficient = 2;
 
       // The max in the linear function, instead of the max height of the arrow, everything bigger will just be the
       // largest relative size.
-      var maxArrowHeightThreshold = HEIGHT * maxArrowHeightThresholdCoefficient;
+      const maxArrowHeightThreshold = HEIGHT * maxArrowHeightThresholdCoefficient;
 
       // map the normalized height to one of the size descriptions
-      var index = Util.roundSymmetric( Util.linear(
+      let index = Util.roundSymmetric( Util.linear(
         this.minArrowHeight, maxArrowHeightThreshold, // a1 b1
         0, OhmsLawConstants.RELATIVE_SIZE_STRINGS.length - 1, // a2 b2
         height ) ); // a3

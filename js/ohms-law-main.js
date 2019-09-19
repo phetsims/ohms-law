@@ -19,12 +19,12 @@ define( require => {
   const ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
 
   // constants
-  var tandem = Tandem.rootTandem;
+  const tandem = Tandem.rootTandem;
 
   // a11y - help content to describe keyboard interactions
-  var keyboardHelpContent = new SliderAndGeneralKeyboardHelpContent();
+  const keyboardHelpContent = new SliderAndGeneralKeyboardHelpContent();
 
-  var simOptions = {
+  const simOptions = {
     credits: {
       leadDesign: 'Michael Dubson',
       softwareDevelopment: 'Michael Dubson, John Blanco, Michael Kauzmann, Martin Veillette',
@@ -41,7 +41,7 @@ define( require => {
   SimLauncher.launch( function() {
 
     // Create and start the sim
-    var sim = new Sim( ohmsLawTitleString, [ new OhmsLawScreen( tandem.createTandem( 'ohmsLawScreen' ) ) ], simOptions );
+    const sim = new Sim( ohmsLawTitleString, [ new OhmsLawScreen( tandem.createTandem( 'ohmsLawScreen' ) ) ], simOptions );
     sim.start();
   } );
 

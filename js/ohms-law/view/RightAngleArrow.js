@@ -20,7 +20,7 @@ define( require => {
 
   // constants
   // points for the arrow
-  var POINTS = [
+  const POINTS = [
     new Vector2( 5, -30 ),  // inner tail of arrow
     new Vector2( 13, -30 ), // outer tail of arrow
     new Vector2( 13, 13 ),  // outer corner
@@ -39,10 +39,10 @@ define( require => {
    * @constructor
    */
   function RightAngleArrow( currentProperty, tandem, options ) {
-    var self = this;
+    const self = this;
 
     // create the shape of the arrow
-    var arrowShape = new Shape().polygon( POINTS );
+    const arrowShape = new Shape().polygon( POINTS );
 
     Path.call( this, arrowShape, {
       stroke: '#000',
@@ -60,7 +60,7 @@ define( require => {
 
       // Scale the arrows based on the value of the current.
       // Exponential scaling algorithm.  Linear makes the changes too big.
-      var scale = Math.pow( ( current * 0.1 ), 0.7 );
+      const scale = Math.pow( ( current * 0.1 ), 0.7 );
 
       self.setScaleMagnitude( scale );
     } );

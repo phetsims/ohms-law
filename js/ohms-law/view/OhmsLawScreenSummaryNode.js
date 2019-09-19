@@ -19,31 +19,31 @@ define( require => {
   const Util = require( 'DOT/Util' );
 
   // a11y strings
-  var summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSliders.value;
-  var summarySimString = OhmsLawA11yStrings.summarySim.value;
-  var rightNowString = OhmsLawA11yStrings.rightNow.value;
-  var voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPattern.value;
-  var resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPattern.value;
-  var currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPattern.value;
+  const summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSliders.value;
+  const summarySimString = OhmsLawA11yStrings.summarySim.value;
+  const rightNowString = OhmsLawA11yStrings.rightNow.value;
+  const voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPattern.value;
+  const resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPattern.value;
+  const currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPattern.value;
 
   function OhmsLawScreenSummaryNode( model ) {
     Node.call( this );
 
-    var summaryNode = new Node( {
+    const summaryNode = new Node( {
       tagName: 'p',
       innerContent: summarySimString
     } );
 
-    var rightNowParagraphNode = new Node( { tagName: 'p', innerContent: rightNowString } );
+    const rightNowParagraphNode = new Node( { tagName: 'p', innerContent: rightNowString } );
 
     // list outlining the values for this sim
-    var valueListNode = new Node( { tagName: 'ul' } );
-    var valueVoltageItemNode = new Node( { tagName: 'li' } );
-    var valueResistanceItemNode = new Node( { tagName: 'li' } );
-    var valueCurrentItemNode = new Node( { tagName: 'li' } );
+    const valueListNode = new Node( { tagName: 'ul' } );
+    const valueVoltageItemNode = new Node( { tagName: 'li' } );
+    const valueResistanceItemNode = new Node( { tagName: 'li' } );
+    const valueCurrentItemNode = new Node( { tagName: 'li' } );
     valueListNode.children = [ valueVoltageItemNode, valueResistanceItemNode, valueCurrentItemNode ];
 
-    var sliderParagraphNode = new Node( { tagName: 'p', innerContent: summaryLookForSlidersString } );
+    const sliderParagraphNode = new Node( { tagName: 'p', innerContent: summaryLookForSlidersString } );
 
     // add all children to this node, ordering the accessible content
     this.addChild( summaryNode );
@@ -53,7 +53,7 @@ define( require => {
 
     // add all values to a list so we can easily iterate and add listeners to update descriptions
     // with each property
-    var valueItemList = [
+    const valueItemList = [
       {
         property: model.voltageProperty,
         patternString: voltageSummaryPatternString,

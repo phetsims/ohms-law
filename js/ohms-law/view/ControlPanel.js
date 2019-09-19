@@ -34,21 +34,21 @@ define( require => {
 
   // a11y strings - these strings are not meant to be translatable until the translation utility
   // can provide translators with context
-  var resistanceUnitsPatternString = OhmsLawA11yStrings.resistanceUnitsPattern.value;
-  var voltageUnitsPatternString = OhmsLawA11yStrings.voltageUnitsPattern.value;
-  var resistanceSliderLabelString = OhmsLawA11yStrings.resistanceSliderLabel.value;
-  var voltageSliderLabelString = OhmsLawA11yStrings.voltageSliderLabel.value;
-  var sliderControlsString = OhmsLawA11yStrings.sliderControls.value;
-  var slidersDescriptionString = OhmsLawA11yStrings.slidersDescription.value;
-  var sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPattern.value;
-  var letterRString = OhmsLawA11yStrings.letterR.value;
-  var letterVString = OhmsLawA11yStrings.letterV.value;
-  var shrinksString = OhmsLawA11yStrings.shrinks.value;
-  var growsString = OhmsLawA11yStrings.grows.value;
-  var aLotString = OhmsLawA11yStrings.aLot.value;
+  const resistanceUnitsPatternString = OhmsLawA11yStrings.resistanceUnitsPattern.value;
+  const voltageUnitsPatternString = OhmsLawA11yStrings.voltageUnitsPattern.value;
+  const resistanceSliderLabelString = OhmsLawA11yStrings.resistanceSliderLabel.value;
+  const voltageSliderLabelString = OhmsLawA11yStrings.voltageSliderLabel.value;
+  const sliderControlsString = OhmsLawA11yStrings.sliderControls.value;
+  const slidersDescriptionString = OhmsLawA11yStrings.slidersDescription.value;
+  const sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPattern.value;
+  const letterRString = OhmsLawA11yStrings.letterR.value;
+  const letterVString = OhmsLawA11yStrings.letterV.value;
+  const shrinksString = OhmsLawA11yStrings.shrinks.value;
+  const growsString = OhmsLawA11yStrings.grows.value;
+  const aLotString = OhmsLawA11yStrings.aLot.value;
 
   // constants
-  var NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes.value; // a11y - the number of sizes that letters can be described as.
+  const NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes.value; // a11y - the number of sizes that letters can be described as.
 
   /**
    * @param {Property.<number>} voltageProperty
@@ -60,7 +60,7 @@ define( require => {
    */
   function ControlPanel( voltageProperty, resistanceProperty, currentProperty, tandem, options ) {
 
-    var self = this;
+    const self = this;
 
     options = _.extend( {
       xMargin: 30,
@@ -72,13 +72,13 @@ define( require => {
     }, options );
 
     // a11y - to alert changes to assistive devices
-    var resistanceUtterance = new ValueChangeUtterance();
-    var voltageUtterance = new ValueChangeUtterance();
+    const resistanceUtterance = new ValueChangeUtterance();
+    const voltageUtterance = new ValueChangeUtterance();
 
     // Create the voltage slider with readout and labels
-    var oldVoltage; // stored on startDrag;
-    var newVoltage; // stored on endDrag;
-    var voltageSlider = new SliderUnit(
+    let oldVoltage; // stored on startDrag;
+    let newVoltage; // stored on endDrag;
+    const voltageSlider = new SliderUnit(
       voltageProperty,
       OhmsLawConstants.VOLTAGE_RANGE,
       voltageSymbolString,
@@ -101,8 +101,8 @@ define( require => {
 
             if ( oldVoltage !== newVoltage ) {
               // a11y - when V changes, announce an alert that describes the change
-              var sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
-              var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
+              const sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
+              const fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
               voltageUtterance.alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
               utteranceQueue.addToBack( voltageUtterance );
@@ -114,29 +114,29 @@ define( require => {
       }
     );
 
-    var oldResistance; // stored on startDrag
-    var newResistance; // stored on endDrag
-    var oldCurrent;
-    var newCurrent;
+    let oldResistance; // stored on startDrag
+    let newResistance; // stored on endDrag
+    let oldCurrent;
+    let newCurrent;
 
     // based on the number of sizes for the formula letters
-    var currentRangePerSize = ( OhmsLawModel.getCurrentRange().max - OhmsLawModel.getCurrentRange().min ) / NUMBER_OF_LETTER_SIZES;
-    var twoSizeCurrentThreshhold = currentRangePerSize * 2; // amount of current that must change to adjust change the current 2 a11y sizes.
+    const currentRangePerSize = ( OhmsLawModel.getCurrentRange().max - OhmsLawModel.getCurrentRange().min ) / NUMBER_OF_LETTER_SIZES;
+    const twoSizeCurrentThreshhold = currentRangePerSize * 2; // amount of current that must change to adjust change the current 2 a11y sizes.
 
     // a11y - This function will create the string alert to notify the resistance slider has been changed.
-    var endResistanceDrag = function() {
+    const endResistanceDrag = function() {
       newResistance = resistanceProperty.get();
       newCurrent = currentProperty.get();
 
       if ( newResistance !== oldResistance ) {
-        var resistanceChange = newResistance - oldResistance;
-        var currentChange = newCurrent - oldCurrent;
+        const resistanceChange = newResistance - oldResistance;
+        const currentChange = newCurrent - oldCurrent;
 
         // Get display values for the alert
-        var fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
+        const fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
-        var rSizeChange = resistanceChange > 0 ? growsString : shrinksString;
-        var iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
+        const rSizeChange = resistanceChange > 0 ? growsString : shrinksString;
+        let iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
         iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ' ' + aLotString : '';
 
         resistanceUtterance.alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
@@ -145,7 +145,7 @@ define( require => {
     };
 
     // Create the resistance slider with readout and labels
-    var resistanceSlider = new SliderUnit(
+    const resistanceSlider = new SliderUnit(
       resistanceProperty,
       OhmsLawConstants.RESISTANCE_RANGE,
       resistanceSymbolString,
@@ -171,7 +171,7 @@ define( require => {
       } );
 
     // Use a content node so that the Panel can surround it fully
-    var content = new HBox( {
+    const content = new HBox( {
       spacing: 30, // empirically determined
       children: [ voltageSlider, resistanceSlider ],
 

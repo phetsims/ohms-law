@@ -26,8 +26,8 @@ define( require => {
   const currentUnitsString = require( 'string!OHMS_LAW/currentUnits' );
 
   // constants
-  var FONT = new PhetFont( 32 );
-  var MAX_READOUT_WIDTH = 0.63 * OhmsLawConstants.WIRE_WIDTH;
+  const FONT = new PhetFont( 32 );
+  const MAX_READOUT_WIDTH = 0.63 * OhmsLawConstants.WIRE_WIDTH;
 
   /**
    * @param {OhmsLawModel} model
@@ -46,36 +46,36 @@ define( require => {
       tandem: tandem
     }, options );
 
-    var currentStringText = new Text( currentString, {
+    const currentStringText = new Text( currentString, {
       font: FONT,
       fill: PhetColorScheme.RED_COLORBLIND,
       tandem: tandem.createTandem( 'currentStringText' )
     } );
 
-    var equalsSign = new Text( '=', {
+    const equalsSign = new Text( '=', {
       font: FONT,
       fill: 'black',
       tandem: tandem.createTandem( 'equalsSign' )
     } );
 
-    var currentValue = new Text( Util.toFixed( OhmsLawModel.getMaxCurrent(), 1 ), {
+    const currentValue = new Text( Util.toFixed( OhmsLawModel.getMaxCurrent(), 1 ), {
       font: FONT,
       fill: 'black',
       tandem: tandem.createTandem( 'currentValue' )
     } );
 
     // To keep the correct spacing as the current value changes
-    var currentValueBackground = new Rectangle.bounds( currentValue.bounds, {
+    const currentValueBackground = new Rectangle.bounds( currentValue.bounds, {
       children: [ currentValue ]
     } );
 
-    var currentUnit = new Text( currentUnitsString, {
+    const currentUnit = new Text( currentUnitsString, {
       font: FONT,
       fill: PhetColorScheme.RED_COLORBLIND,
       tandem: tandem.createTandem( 'currentUnit' )
     } );
 
-    var textContainer = new HBox( {
+    const textContainer = new HBox( {
       spacing: 11.3, // empirically determined
       children: [ currentStringText, equalsSign, currentValueBackground, currentUnit ]
     } );
@@ -87,7 +87,7 @@ define( require => {
 
     // Present for the lifetime of the simulation, no need to unlink.
     model.currentProperty.link( function( current ) {
-      var rightEdgePosition = currentValue.right;
+      const rightEdgePosition = currentValue.right;
       currentValue.text = Util.toFixed( current, 1 );
       currentValue.right = rightEdgePosition;
     } );

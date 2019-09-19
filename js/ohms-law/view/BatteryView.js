@@ -25,24 +25,24 @@ define( require => {
   const voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
 
   // constants
-  var FONT = new PhetFont( { size: 19, weight: 'bold' } );
-  var BATTERY_HEIGHT = OhmsLawConstants.BATTERY_HEIGHT;
-  var NUB_HEIGHT = OhmsLawConstants.BATTERY_HEIGHT * 0.30;
+  const FONT = new PhetFont( { size: 19, weight: 'bold' } );
+  const BATTERY_HEIGHT = OhmsLawConstants.BATTERY_HEIGHT;
+  const NUB_HEIGHT = OhmsLawConstants.BATTERY_HEIGHT * 0.30;
 
   // convert voltage to percentage (0 to 1)
-  var VOLTAGE_TO_SCALE = new LinearFunction( 0.1, OhmsLawConstants.AA_VOLTAGE, 0.0001, 1, true );
-  var VOLTAGE_STRING_MAX_WIDTH = new Text( Util.toFixed( OhmsLawConstants.VOLTAGE_RANGE.max, 1 ), { font: FONT } ).width;
+  const VOLTAGE_TO_SCALE = new LinearFunction( 0.1, OhmsLawConstants.AA_VOLTAGE, 0.0001, 1, true );
+  const VOLTAGE_STRING_MAX_WIDTH = new Text( Util.toFixed( OhmsLawConstants.VOLTAGE_RANGE.max, 1 ), { font: FONT } ).width;
 
   // Fills for the battery
-  var MAIN_BODY_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
+  const MAIN_BODY_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
     .addColorStop( 0, '#777777' )
     .addColorStop( 0.3, '#bdbdbd' )
     .addColorStop( 1, '#2b2b2b' );
-  var COPPER_PORTION_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
+  const COPPER_PORTION_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
     .addColorStop( 0, '#cc4e00' )
     .addColorStop( 0.3, '#dddad6' )
     .addColorStop( 1, '#cc4e00' );
-  var NUB_FILL = '#dddddd';
+  const NUB_FILL = '#dddddd';
 
   /**
    * @param {Tandem} tandem
@@ -55,11 +55,11 @@ define( require => {
 
     // @private - Determine the width of the batter pieces.
     this.mainBodyWidth = OhmsLawConstants.BATTERY_WIDTH * 0.87; // empirically determined
-    var nubWidth = OhmsLawConstants.BATTERY_WIDTH * 0.05; // empirically determined
-    var copperPortionWidth = OhmsLawConstants.BATTERY_WIDTH - this.mainBodyWidth - nubWidth;
+    const nubWidth = OhmsLawConstants.BATTERY_WIDTH * 0.05; // empirically determined
+    const copperPortionWidth = OhmsLawConstants.BATTERY_WIDTH - this.mainBodyWidth - nubWidth;
 
     // The origin (0,0) is defined as the leftmost and vertically centered position of the battery
-    var batteryNode = new Node();
+    const batteryNode = new Node();
 
     // @private
     this.mainBody = new Rectangle( 0, 0, this.mainBodyWidth, BATTERY_HEIGHT, {
@@ -102,7 +102,7 @@ define( require => {
     } );
     this.batteryText.addChild( this.voltageValueText );
 
-    var voltageUnitsText = new Text( voltageUnitsString, {
+    const voltageUnitsText = new Text( voltageUnitsString, {
       font: FONT,
       fill: 'blue',
       x: VOLTAGE_STRING_MAX_WIDTH * 1.1,
