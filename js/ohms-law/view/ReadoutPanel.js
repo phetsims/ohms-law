@@ -5,25 +5,25 @@
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var HBox = require( 'SCENERY/nodes/HBox' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
-  var Panel = require( 'SUN/Panel' );
-  var PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
-  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
-  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var Text = require( 'SCENERY/nodes/Text' );
-  var Util = require( 'DOT/Util' );
+  const HBox = require( 'SCENERY/nodes/HBox' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  const OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
+  const Panel = require( 'SUN/Panel' );
+  const PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
+  const PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  const Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  const Text = require( 'SCENERY/nodes/Text' );
+  const Util = require( 'DOT/Util' );
 
   // strings
-  var currentString = require( 'string!OHMS_LAW/current' );
-  var currentUnitsString = require( 'string!OHMS_LAW/currentUnits' );
+  const currentString = require( 'string!OHMS_LAW/current' );
+  const currentUnitsString = require( 'string!OHMS_LAW/currentUnits' );
 
   // constants
   var FONT = new PhetFont( 32 );

@@ -5,32 +5,32 @@
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
-  var DerivedProperty = require( 'AXON/DerivedProperty' );
-  var HBox = require( 'SCENERY/nodes/HBox' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var MathSymbols = require( 'SCENERY_PHET/MathSymbols' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
-  var Panel = require( 'SUN/Panel' );
-  var SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
-  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  var Util = require( 'DOT/Util' );
-  var ValueChangeUtterance = require( 'SCENERY_PHET/accessibility/ValueChangeUtterance' );
-  var utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
+  const AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
+  const DerivedProperty = require( 'AXON/DerivedProperty' );
+  const HBox = require( 'SCENERY/nodes/HBox' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const MathSymbols = require( 'SCENERY_PHET/MathSymbols' );
+  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  const OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
+  const Panel = require( 'SUN/Panel' );
+  const SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
+  const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  const Util = require( 'DOT/Util' );
+  const ValueChangeUtterance = require( 'SCENERY_PHET/accessibility/ValueChangeUtterance' );
+  const utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
 
   // strings
-  var resistanceString = require( 'string!OHMS_LAW/resistance' );
-  var resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
-  var voltageString = require( 'string!OHMS_LAW/voltage' );
-  var voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
-  var voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
+  const resistanceString = require( 'string!OHMS_LAW/resistance' );
+  const resistanceSymbolString = require( 'string!OHMS_LAW/resistanceSymbol' );
+  const voltageString = require( 'string!OHMS_LAW/voltage' );
+  const voltageSymbolString = require( 'string!OHMS_LAW/voltageSymbol' );
+  const voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
 
   // a11y strings - these strings are not meant to be translatable until the translation utility
   // can provide translators with context

@@ -6,27 +6,27 @@
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
-  var CurrentSoundGenerator = require( 'OHMS_LAW/ohms-law/view/CurrentSoundGenerator' );
-  var DiscreteSoundGenerator = require( 'TAMBO/sound-generators/DiscreteSoundGenerator' );
-  var FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var InvertedBooleanProperty = require( 'TAMBO/InvertedBooleanProperty' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var OhmsLawScreenSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenSummaryNode' );
-  var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
-  var ResetAllSoundGenerator = require( 'TAMBO/sound-generators/ResetAllSoundGenerator' );
-  var ScreenView = require( 'JOIST/ScreenView' );
-  var soundManager = require( 'TAMBO/soundManager' );
-  var WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
+  const ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
+  const CurrentSoundGenerator = require( 'OHMS_LAW/ohms-law/view/CurrentSoundGenerator' );
+  const DiscreteSoundGenerator = require( 'TAMBO/sound-generators/DiscreteSoundGenerator' );
+  const FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const InvertedBooleanProperty = require( 'TAMBO/InvertedBooleanProperty' );
+  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  const OhmsLawScreenSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenSummaryNode' );
+  const ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
+  const ResetAllSoundGenerator = require( 'TAMBO/sound-generators/ResetAllSoundGenerator' );
+  const ScreenView = require( 'JOIST/ScreenView' );
+  const soundManager = require( 'TAMBO/soundManager' );
+  const WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
 
   // sounds
-  var sliderClick = require( 'sound!OHMS_LAW/slider-click-001.mp3' );
+  const sliderClick = require( 'sound!OHMS_LAW/slider-click-001.mp3' );
 
   /**
    * @param {OhmsLawModel} model

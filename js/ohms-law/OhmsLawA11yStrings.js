@@ -7,10 +7,10 @@
  *
  * @author Jesse Greenberg
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
 
   var OhmsLawA11yStrings = {
     resistanceUnitsPattern: {

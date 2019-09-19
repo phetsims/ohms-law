@@ -5,22 +5,22 @@
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var Node = require( 'SCENERY/nodes/Node' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
-  var OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
-  var ReadoutPanel = require( 'OHMS_LAW/ohms-law/view/ReadoutPanel' );
-  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
-  var RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
-  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  var Util = require( 'DOT/Util' );
+  const BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const Node = require( 'SCENERY/nodes/Node' );
+  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
+  const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  const ReadoutPanel = require( 'OHMS_LAW/ohms-law/view/ReadoutPanel' );
+  const Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  const ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
+  const RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
+  const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  const Util = require( 'DOT/Util' );
 
   // a11y strings
   var circuitLabelString = OhmsLawA11yStrings.circuitLabel.value;

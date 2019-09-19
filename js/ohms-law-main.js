@@ -5,18 +5,18 @@
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var SliderAndGeneralKeyboardHelpContent = require( 'SCENERY_PHET/keyboard/help/SliderAndGeneralKeyboardHelpContent' );
-  var OhmsLawScreen = require( 'OHMS_LAW/ohms-law/OhmsLawScreen' );
-  var Sim = require( 'JOIST/Sim' );
-  var SimLauncher = require( 'JOIST/SimLauncher' );
-  var Tandem = require( 'TANDEM/Tandem' );
+  const SliderAndGeneralKeyboardHelpContent = require( 'SCENERY_PHET/keyboard/help/SliderAndGeneralKeyboardHelpContent' );
+  const OhmsLawScreen = require( 'OHMS_LAW/ohms-law/OhmsLawScreen' );
+  const Sim = require( 'JOIST/Sim' );
+  const SimLauncher = require( 'JOIST/SimLauncher' );
+  const Tandem = require( 'TANDEM/Tandem' );
 
   // strings
-  var ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
+  const ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
 
   // constants
   var tandem = Tandem.rootTandem;

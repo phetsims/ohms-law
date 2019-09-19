@@ -6,19 +6,19 @@
  *
  * @author Martin Veillette (Berea College)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var Color = require( 'SCENERY/util/Color' );
-  var ColorIO = require( 'SCENERY/util/ColorIO' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  var OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
-  var OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
-  var Property = require( 'AXON/Property' );
-  var PropertyIO = require( 'AXON/PropertyIO' );
-  var Screen = require( 'JOIST/Screen' );
+  const Color = require( 'SCENERY/util/Color' );
+  const ColorIO = require( 'SCENERY/util/ColorIO' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  const OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
+  const OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
+  const Property = require( 'AXON/Property' );
+  const PropertyIO = require( 'AXON/PropertyIO' );
+  const Screen = require( 'JOIST/Screen' );
 
   /**
    * @constructor
