@@ -48,11 +48,11 @@ define( require => {
       description: muchMuchSmallerThanString
     },
     MUCH_SMALLER: {
-      range: new Range( 0.25, 0.50 ), 
+      range: new Range( 0.25, 0.50 ),
       description: muchSmallerThanString
     },
     SLIGHTLY_SMALLER: {
-      range: new Range( 0.50, 0.9),
+      range: new Range( 0.50, 0.9 ),
       description: slightlySmallerThanString
     },
     COMPARABLE: {
@@ -67,7 +67,7 @@ define( require => {
       range: new Range( 2.0, 4.0 ),
       description: muchLargerThanString
     },
-    MUCH_MUCH_LARGER:{
+    MUCH_MUCH_LARGER: {
       range: new Range( 4.0, Number.MAX_VALUE ),
       description: muchMuchLargerThanString
     }
