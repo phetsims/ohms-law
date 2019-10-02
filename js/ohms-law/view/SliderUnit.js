@@ -55,7 +55,7 @@ define( require => {
     assert && assert( !options.sliderOptions.labelTagName, 'labelTagName is set by SliderUnit.' );
     assert && assert( !options.sliderOptions.containerTagName, 'containerTagName is set by SliderUnit.' );
     assert && assert( !options.sliderOptions.labelContent, 'labelContent is set by SliderUnit.' );
-    assert && assert( !options.sliderOptions.a11yDecimalPlaces, 'a11yDecimalPlaces is set by SliderUnit.' );
+    assert && assert( !options.sliderOptions.a11yMapValue, 'a11yMapValue is set by SliderUnit.' );
 
     // default options to be passed into Slider
     options.sliderOptions = _.extend( {
@@ -79,8 +79,7 @@ define( require => {
       roundToStepSize: true, // so default keyboard step rounds to pedegogically useful values
       keyboardStep: 1,
       shiftKeyboardStep: 0.1,
-      a11yDecimalPlaces: options.decimalPlaces
-
+      a11yMapValue: value => Util.toFixedNumber( value, options.decimalPlaces )
     }, options.sliderOptions );
 
     // override the start and end drag functions in the options
