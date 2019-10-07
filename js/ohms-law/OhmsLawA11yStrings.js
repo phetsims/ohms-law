@@ -102,7 +102,7 @@ define( require => {
       value: 'The Circuit'
     },
     circuitDescription: {
-      value: 'A pair of wires connect a resistor to a series of batteries. In circuit, '
+      value: 'A pair of wires connect a resistor to a series of batteries. In circuit,'
     },
 
     //--------------------------------------------------------------------------
