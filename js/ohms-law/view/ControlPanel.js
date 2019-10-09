@@ -166,7 +166,6 @@ define( require => {
           },
           endDrag: endResistanceDrag
         },
-
         decimalPlaces: OhmsLawConstants.RESISTANCE_SIG_FIGS
       } );
 

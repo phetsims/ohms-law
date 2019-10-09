@@ -11,6 +11,7 @@ define( require => {
   const BooleanProperty = require( 'AXON/BooleanProperty' );
   const Dimension2 = require( 'DOT/Dimension2' );
   const inherit = require( 'PHET_CORE/inherit' );
+  const merge = require( 'PHET_CORE/merge' );
   const Node = require( 'SCENERY/nodes/Node' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
@@ -39,48 +40,39 @@ define( require => {
 
     const self = this;
 
-    options = _.extend( {
+    options = merge( {
+      sliderOptions: {
+        trackFillEnabled: 'black',
+        thumbFill: '#c3c4c5',
+        thumbFillHighlighted: '#dedede',
+        trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
+        thumbSize: new Dimension2( 22, 45 ),
 
-      // {*|null} - passed directly to VSlider
-      sliderOptions: null,
+        // don't allow any values that cannot be displayed by the precision allowed in this sim
+        constrainValue: function( value ) {
+          return Util.toFixedNumber( value, options.decimalPlaces );
+        },
+
+        // a11y
+        keyboardStep: 1,  // delta for keyboard step
+        shiftKeyboardStep: 0.1, // delta when holding shift
+        roundToStepSize: true, // so default keyboard step rounds to pedagogically useful values
+        containerTagName: 'li',
+        labelContent: labelContent,
+        labelTagName: 'label',
+        a11yMapValue: value => Util.toFixedNumber( value, 2 ),
+
+        // phet-io
+        tandem: tandem.createTandem( 'slider' )
+      },
 
       // {number}
       decimalPlaces: 0,
 
       // phet-io
       tandem: tandem // to be passed to supertype
+
     }, options );
-
-    assert && assert( !options.sliderOptions.tandem, 'tandem is set by SliderUnit.' );
-    assert && assert( !options.sliderOptions.labelTagName, 'labelTagName is set by SliderUnit.' );
-    assert && assert( !options.sliderOptions.containerTagName, 'containerTagName is set by SliderUnit.' );
-    assert && assert( !options.sliderOptions.labelContent, 'labelContent is set by SliderUnit.' );
-    assert && assert( !options.sliderOptions.a11yMapValue, 'a11yMapValue is set by SliderUnit.' );
-
-    // default options to be passed into Slider
-    options.sliderOptions = _.extend( {
-      trackFillEnabled: 'black',
-      thumbFill: '#c3c4c5',
-      thumbFillHighlighted: '#dedede',
-      trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
-      thumbSize: new Dimension2( 22, 45 ),
-
-      // don't allow any values that cannot be displayed by the precision allowed in this sim
-      constrainValue: function( value ) {
-        return Util.toFixedNumber( value, options.decimalPlaces );
-      },
-
-      // phet-io
-      tandem: tandem.createTandem( 'slider' ),
-
-      // a11y
-      labelContent: labelContent,
-      labelTagName: 'label',
-      roundToStepSize: true, // so default keyboard step rounds to pedegogically useful values
-      keyboardStep: 1,
-      shiftKeyboardStep: 0.1,
-      a11yMapValue: value => Util.toFixedNumber( value, options.decimalPlaces )
-    }, options.sliderOptions );
 
     // override the start and end drag functions in the options
     const providedStartDragFunction = options.sliderOptions.startDrag;
