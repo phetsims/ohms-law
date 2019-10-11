@@ -11,6 +11,7 @@ define( require => {
   // modules
   const HBox = require( 'SCENERY/nodes/HBox' );
   const inherit = require( 'PHET_CORE/inherit' );
+  const merge = require( 'PHET_CORE/merge' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
@@ -38,7 +39,7 @@ define( require => {
   function ReadoutPanel( model, tandem, options ) {
 
     assert && assert( !options.tandem, 'Tandem should be supplied as a parameter' );
-    options = _.extend( {
+    options = merge( {
       xMargin: 30,
       yMargin: 8,
       lineWidth: 3,

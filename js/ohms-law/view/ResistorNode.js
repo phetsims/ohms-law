@@ -13,6 +13,7 @@ define( require => {
   const inherit = require( 'PHET_CORE/inherit' );
   const LinearFunction = require( 'DOT/LinearFunction' );
   const LinearGradient = require( 'SCENERY/util/LinearGradient' );
+  const merge = require( 'PHET_CORE/merge' );
   const Node = require( 'SCENERY/nodes/Node' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
@@ -73,7 +74,7 @@ define( require => {
    */
   function ResistorNode( resistanceProperty, tandem, options ) {
 
-    options = _.extend( {
+    options = merge( {
 
       // a11y
       tagName: 'li' // this assumes that it is a child of a 'ul'

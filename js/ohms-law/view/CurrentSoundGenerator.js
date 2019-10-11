@@ -11,6 +11,7 @@ define( require => {
   'use strict';
 
   // modules
+  const merge = require( 'PHET_CORE/merge' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const SoundClip = require( 'TAMBO/sound-generators/SoundClip' );
@@ -31,7 +32,7 @@ define( require => {
      */
     constructor( currentProperty, options ) {
 
-      options = _.extend( {
+      options = merge( {
         initialOutputLevel: 1
       }, options );
       options.loop = true; // must be a loop to work properly

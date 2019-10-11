@@ -14,6 +14,7 @@ define( require => {
   const HBox = require( 'SCENERY/nodes/HBox' );
   const inherit = require( 'PHET_CORE/inherit' );
   const MathSymbols = require( 'SCENERY_PHET/MathSymbols' );
+  const merge = require( 'PHET_CORE/merge' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
@@ -22,8 +23,8 @@ define( require => {
   const SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   const Util = require( 'DOT/Util' );
-  const ValueChangeUtterance = require( 'SCENERY_PHET/accessibility/ValueChangeUtterance' );
   const utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
+  const ValueChangeUtterance = require( 'SCENERY_PHET/accessibility/ValueChangeUtterance' );
 
   // strings
   const resistanceString = require( 'string!OHMS_LAW/resistance' );
@@ -62,7 +63,7 @@ define( require => {
 
     const self = this;
 
-    options = _.extend( {
+    options = merge( {
       xMargin: 30,
       yMargin: 10,
       lineWidth: 3,

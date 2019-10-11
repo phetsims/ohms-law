@@ -11,6 +11,7 @@ define( require => {
   // modules
   const BatteriesView = require( 'OHMS_LAW/ohms-law/view/BatteriesView' );
   const inherit = require( 'PHET_CORE/inherit' );
+  const merge = require( 'PHET_CORE/merge' );
   const Node = require( 'SCENERY/nodes/Node' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
@@ -41,7 +42,7 @@ define( require => {
    */
   function WireBox( model, tandem, options ) {
 
-    options = _.extend( {
+    options = merge( {
 
       // phet-io
       tandem: tandem,
