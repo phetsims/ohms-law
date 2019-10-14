@@ -92,7 +92,6 @@ define( require => {
 
           // a11y
           keyboardStep: 0.5, // volts
-          shiftKeyboardStep: 0.1, // volts
           a11yCreateAriaValueText: value => StringUtils.fillIn( voltageUnitsPatternString, { value: value } ),
           startDrag: function() {
             oldVoltage = voltageProperty.get();
