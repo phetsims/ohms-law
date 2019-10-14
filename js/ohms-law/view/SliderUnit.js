@@ -60,7 +60,7 @@ define( require => {
         containerTagName: 'li',
         labelContent: labelContent,
         labelTagName: 'label',
-        a11yMapValue: value => Util.toFixedNumber( value, 2 ),
+        a11yMapValue: value => Util.toFixedNumber( value, options.decimalPlaces ),
 
         // phet-io
         tandem: tandem.createTandem( 'slider' )
