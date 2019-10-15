@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.6 Mon Oct 14 2019 15:13:29 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# ohms-law 1.4.6 Tue Oct 15 2019 15:53:18 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -29,11 +29,11 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "ff3624957f94b675fd43656a6b3849dc0a7f1632",
+    "sha": "55d5350a45d41965646f781c41444cd4471ee591",
     "branch": "1.4"
   },
   "phet-core": {
-    "sha": "773f49a650c24cc0733e368069e8d2939ae1053e",
+    "sha": "364f2c3203e58c7d6c728184d1a182c10d64831d",
     "branch": "ohms-law-1.4"
   },
   "phet-io": {
@@ -82,6 +82,6 @@
   },
   "vibe": {
     "sha": "394ac123ff0b01b7f7b76f1c04b0f5b2b75ddbc2",
-    "branch": "ohms-law-1.4"
+    "branch": "HEAD"
   }
 }
