@@ -78,20 +78,20 @@ define( require => {
     const providedStartDragFunction = options.sliderOptions.startDrag;
     options.sliderOptions.startDrag = function( event ) {
       if ( event.type === 'keydown' ) {
-        self.sliderDraggingByKeyboard.set( true );
+        self.sliderDraggingByKeyboardProperty.set( true );
       }
       providedStartDragFunction && providedStartDragFunction();
     };
     const providedEndDragFunction = options.sliderOptions.endDrag;
     options.sliderOptions.endDrag = function() {
-      self.sliderDraggingByKeyboard.set( false );
+      self.sliderDraggingByKeyboardProperty.set( false );
       providedEndDragFunction && providedEndDragFunction();
     };
 
     Node.call( this );
 
     // @public (read-only) {BooleanProperty} - a property that indicates if the slider is being dragged via the keyboard
-    this.sliderDraggingByKeyboard = new BooleanProperty( false );
+    this.sliderDraggingByKeyboardProperty = new BooleanProperty( false );
 
     const slider = new VSlider( property, range, options.sliderOptions );
 
