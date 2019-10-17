@@ -90,7 +90,7 @@ define( require => {
 
     Node.call( this );
 
-    // @public (read-only) {BooleanProperty} - a property that indicates if the slider is being dragged via the keyboard
+    // @public (read-only) {BooleanProperty} indicates if the slider is being dragged via the keyboard
     this.sliderDraggingByKeyboardProperty = new BooleanProperty( false );
 
     const slider = new VSlider( property, range, options.sliderOptions );
