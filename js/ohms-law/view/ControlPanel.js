@@ -23,8 +23,8 @@ define( require => {
   const SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   const Util = require( 'DOT/Util' );
-  const utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
-  const ValueChangeUtterance = require( 'SCENERY_PHET/accessibility/ValueChangeUtterance' );
+  const utteranceQueue = require( 'UTTERANCE_QUEUE/utteranceQueue' );
+  const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
 
   // strings
   const resistanceString = require( 'string!OHMS_LAW/resistance' );
