@@ -28,6 +28,9 @@ define( require => {
   // sounds
   const sliderClick = require( 'sound!OHMS_LAW/slider-click-001.mp3' );
 
+  // constants
+  const SLIDER_CLICK_LEVEL = 0.25;
+
   /**
    * @param {OhmsLawModel} model
    * @param {Tandem} tandem
@@ -69,7 +72,7 @@ define( require => {
         sound: sliderClick,
         numBins: 6,
         enableControlProperties: [resetNotInProgress],
-        initialOutputLevel: 0.25,
+        initialOutputLevel: SLIDER_CLICK_LEVEL,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
       }
     ) );
@@ -80,7 +83,7 @@ define( require => {
         sound: sliderClick,
         numBins: 6,
         enableControlProperties: [resetNotInProgress],
-        initialOutputLevel: 0.2,
+        initialOutputLevel: SLIDER_CLICK_LEVEL,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
       }
     ) );
