@@ -70,7 +70,7 @@ define( require => {
         numBins: 6,
         enableControlProperties: [resetNotInProgress],
         initialOutputLevel: 0.25,
-        alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboard
+        alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
       }
     ) );
     soundManager.addSoundGenerator( new DiscreteSoundGenerator(
@@ -81,7 +81,7 @@ define( require => {
         numBins: 6,
         enableControlProperties: [resetNotInProgress],
         initialOutputLevel: 0.2,
-        alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboard
+        alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
       }
     ) );
 

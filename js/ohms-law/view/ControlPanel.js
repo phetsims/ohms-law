@@ -183,10 +183,10 @@ define( require => {
 
     // @public (read-only) {BooleanProperty} - a property that indicates whether either slider is being dragged via
     // keyboard interaction
-    this.sliderBeingDraggedByKeyboard = new DerivedProperty(
+    this.sliderBeingDraggedByKeyboardProperty = new DerivedProperty(
       [ voltageSlider.sliderDraggingByKeyboardProperty, resistanceSlider.sliderDraggingByKeyboardProperty ],
-      function( voltageSliderDraggedByKeyboard, resisitanceSliderDraggedByKeyboard ) {
-        return voltageSliderDraggedByKeyboard || resisitanceSliderDraggedByKeyboard;
+      function( voltageSliderDraggedByKeyboard, resistanceSliderDraggedByKeyboard ) {
+        return voltageSliderDraggedByKeyboard || resistanceSliderDraggedByKeyboard;
       }
     );
 
