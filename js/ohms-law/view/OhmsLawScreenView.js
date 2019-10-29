@@ -110,9 +110,9 @@ define( require => {
     } ) );
 
     // children
-    this.playAreaNode.addChild( formulaNode );
-    this.playAreaNode.addChild( wireBox );
-    this.playAreaNode.addChild( controlPanel );
+    this.pdomPlayAreaNode.addChild( formulaNode );
+    this.pdomPlayAreaNode.addChild( wireBox );
+    this.pdomPlayAreaNode.addChild( controlPanel );
     this.controlAreaNode.addChild( resetAllButton );
 
     // layout for the screen
