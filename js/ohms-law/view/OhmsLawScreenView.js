@@ -113,7 +113,7 @@ define( require => {
     this.pdomPlayAreaNode.addChild( formulaNode );
     this.pdomPlayAreaNode.addChild( wireBox );
     this.pdomPlayAreaNode.addChild( controlPanel );
-    this.controlAreaNode.addChild( resetAllButton );
+    this.pdomControlAreaNode.addChild( resetAllButton );
 
     // layout for the screen
     formulaNode.centerY = this.layoutBounds.bottom / 4.75;
