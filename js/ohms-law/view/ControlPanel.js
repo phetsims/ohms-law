@@ -23,8 +23,7 @@ define( require => {
   const SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   const Util = require( 'DOT/Util' );
-  const utteranceQueue = require( 'UTTERANCE_QUEUE/utteranceQueue' );
-  const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
+const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
 
   // strings
   const resistanceString = require( 'string!OHMS_LAW/resistance' );
@@ -105,7 +104,7 @@ define( require => {
               const fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
               voltageUtterance.alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
-              utteranceQueue.addToBack( voltageUtterance );
+              phet.joist.sim.display.utteranceQueue.addToBack( voltageUtterance );
             }
           }
         },
@@ -140,7 +139,7 @@ define( require => {
         iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ' ' + aLotString : '';
 
         resistanceUtterance.alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
-        utteranceQueue.addToBack( resistanceUtterance );
+        phet.joist.sim.display.utteranceQueue.addToBack( resistanceUtterance );
       }
     };
 
