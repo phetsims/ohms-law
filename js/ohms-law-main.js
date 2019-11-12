@@ -34,8 +34,7 @@ define( require => {
               'simulation to HTML5.'
     },
     accessibility: true,
-    keyboardHelpNode: keyboardHelpContent,
-    supportsSound: true
+    keyboardHelpNode: keyboardHelpContent
   };
 
   SimLauncher.launch( function() {
