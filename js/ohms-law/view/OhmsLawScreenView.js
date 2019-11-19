@@ -20,7 +20,6 @@ define( require => {
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const OhmsLawScreenSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenSummaryNode' );
   const ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
-  const ResetAllSoundGenerator = require( 'TAMBO/sound-generators/ResetAllSoundGenerator' );
   const ScreenView = require( 'JOIST/ScreenView' );
   const soundManager = require( 'TAMBO/soundManager' );
   const WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
@@ -103,11 +102,6 @@ define( require => {
       },
       tandem: tandem.createTandem( 'resetAllButton' )
     } );
-
-    // hook up the reset all sound generator
-    soundManager.addSoundGenerator( new ResetAllSoundGenerator( model.resetInProgressProperty, {
-      initialOutputLevel: 0.7
-    } ) );
 
     // children
     this.pdomPlayAreaNode.addChild( formulaNode );
