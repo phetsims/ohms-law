@@ -104,7 +104,7 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
               const fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
               voltageUtterance.alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
-              phet.joist.sim.display.utteranceQueue.addToBack( voltageUtterance );
+              phet.joist.sim.utteranceQueue.addToBack( voltageUtterance );
             }
           }
         },
@@ -139,7 +139,7 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
         iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ' ' + aLotString : '';
 
         resistanceUtterance.alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
-        phet.joist.sim.display.utteranceQueue.addToBack( resistanceUtterance );
+        phet.joist.sim.utteranceQueue.addToBack( resistanceUtterance );
       }
     };
 
