@@ -25,7 +25,7 @@ define( require => {
   const WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
 
   // sounds
-  const sliderClick = require( 'sound!OHMS_LAW/slider-click-001.mp3' );
+  const sliderClick = require( 'sound!TAMBO/click-001.mp3' );
 
   // constants
   const SLIDER_CLICK_LEVEL = 0.25;
