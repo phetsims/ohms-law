@@ -45,8 +45,8 @@ define( require => {
         trackFillEnabled: 'black',
         thumbFill: '#c3c4c5',
         thumbFillHighlighted: '#dedede',
-        trackSize: new Dimension2( OhmsLawConstants.SLIDER_HEIGHT, 4 ),
-        thumbSize: new Dimension2( 22, 45 ),
+        trackSize: new Dimension2( 4, OhmsLawConstants.SLIDER_HEIGHT ),
+        thumbSize: new Dimension2( 45, 22 ),
 
         // don't allow any values that cannot be displayed by the precision allowed in this sim
         constrainValue: function( value ) {
