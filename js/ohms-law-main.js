@@ -19,7 +19,7 @@ define( require => {
   const ohmsLawTitleString = require( 'string!OHMS_LAW/ohms-law.title' );
 
   // constants
-  const tandem = Tandem.rootTandem;
+  const tandem = Tandem.ROOT;
 
   // a11y - help content to describe keyboard interactions
   const keyboardHelpContent = new SliderAndGeneralKeyboardHelpContent();
