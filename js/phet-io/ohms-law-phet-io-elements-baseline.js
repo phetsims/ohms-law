@@ -119,7 +119,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO<BooleanIO>"
     },
     "ohmsLaw.general.controller.input.changeAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the change DOM event. The arguments are:<br/><ol><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the PDOM root gets the change DOM event. The arguments are:<br/><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -129,10 +129,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<DOMEventIO>"
+      "phetioTypeName": "ActionIO<EventIO>"
     },
     "ohmsLaw.general.controller.input.clickAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the click DOM event. The arguments are:<br/><ol><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the PDOM root gets the click DOM event. The arguments are:<br/><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -142,10 +142,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<DOMEventIO>"
+      "phetioTypeName": "ActionIO<EventIO>"
     },
     "ohmsLaw.general.controller.input.focusinAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the focusin DOM event. The arguments are:<br/><ol><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the PDOM root gets the focusin DOM event. The arguments are:<br/><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -155,10 +155,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<DOMEventIO>"
+      "phetioTypeName": "ActionIO<EventIO>"
     },
     "ohmsLaw.general.controller.input.focusoutAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the focusout DOM event. The arguments are:<br/><ol><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the PDOM root gets the focusout DOM event. The arguments are:<br/><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -168,10 +168,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<DOMEventIO>"
+      "phetioTypeName": "ActionIO<EventIO>"
     },
     "ohmsLaw.general.controller.input.inputAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the input DOM event. The arguments are:<br/><ol><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the PDOM root gets the input DOM event. The arguments are:<br/><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -181,10 +181,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<DOMEventIO>"
+      "phetioTypeName": "ActionIO<EventIO>"
     },
     "ohmsLaw.general.controller.input.keydownAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the keydown DOM event. The arguments are:<br/><ol><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the PDOM root gets the keydown DOM event. The arguments are:<br/><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -194,10 +194,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<DOMEventIO>"
+      "phetioTypeName": "ActionIO<EventIO>"
     },
     "ohmsLaw.general.controller.input.keyupAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the keyup DOM event. The arguments are:<br/><ol><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the PDOM root gets the keyup DOM event. The arguments are:<br/><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -207,10 +207,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<DOMEventIO>"
+      "phetioTypeName": "ActionIO<EventIO>"
     },
     "ohmsLaw.general.controller.input.mouseDownAction": {
-      "phetioDocumentation": "Emits when a mouse button is pressed The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a mouse button is pressed The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -220,10 +220,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.mouseMovedAction": {
-      "phetioDocumentation": "Emits when the mouse is moved The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the mouse is moved The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -233,10 +233,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.mouseOutAction": {
-      "phetioDocumentation": "Emits when the mouse moves out of the display The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the mouse moves out of the display The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -246,10 +246,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.mouseOverAction": {
-      "phetioDocumentation": "Emits when the mouse is moved over a Node The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the mouse is moved over a Node The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -259,10 +259,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.mouseUpAction": {
-      "phetioDocumentation": "Emits when a mouse button is released The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a mouse button is released The arguments are:<br/><ol><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -272,10 +272,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.penCancelAction": {
-      "phetioDocumentation": "Emits when a pen is canceled The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a pen is canceled The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -285,10 +285,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.penEndAction": {
-      "phetioDocumentation": "Emits when a pen is lifted The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a pen is lifted The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -298,10 +298,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.penMoveAction": {
-      "phetioDocumentation": "Emits when a pen is moved The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a pen is moved The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -311,10 +311,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.penStartAction": {
-      "phetioDocumentation": "Emits when a pen touches the screen The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a pen touches the screen The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -324,10 +324,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.touchCancelAction": {
-      "phetioDocumentation": "Emits when a touch is canceled The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a touch is canceled The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -337,10 +337,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.touchEndAction": {
-      "phetioDocumentation": "Emits when a touch ends The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a touch ends The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -350,10 +350,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.touchMoveAction": {
-      "phetioDocumentation": "Emits when a touch moves The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a touch moves The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -363,10 +363,10 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.touchStartAction": {
-      "phetioDocumentation": "Emits when a touch begins The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when a touch begins The arguments are:<br/><ol><li>id: NumberIO</li><br/><li>point: Vector2IO</li><br/><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -376,7 +376,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, DOMEventIO>"
+      "phetioTypeName": "ActionIO<NumberIO, Vector2IO, EventIO>"
     },
     "ohmsLaw.general.controller.input.validatePointersAction": {
       "phetioDocumentation": "A function that executes. No arguments.",
@@ -392,7 +392,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO<>"
     },
     "ohmsLaw.general.controller.input.wheelScrollAction": {
-      "phetioDocumentation": "Emits when the mouse wheel scrolls The arguments are:<br/><ol><li>event: DOMEventIO</li></ol>",
+      "phetioDocumentation": "Emits when the mouse wheel scrolls The arguments are:<br/><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioDynamicElementArchetype": false,
       "phetioEventType": "USER",
@@ -402,7 +402,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<DOMEventIO>"
+      "phetioTypeName": "ActionIO<EventIO>"
     },
     "ohmsLaw.general.focusProperty": {
       "phetioDocumentation": "Stores the current focus for the simulation, null if there is not focus. This is not updated based on mouse or touch input, only keyboard and other alternative inputs.",
