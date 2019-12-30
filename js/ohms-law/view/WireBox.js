@@ -21,7 +21,7 @@ define( require => {
   const ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
   const RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  const Util = require( 'DOT/Util' );
+  const Utils = require( 'DOT/Utils' );
 
   // a11y strings
   const circuitLabelString = OhmsLawA11yStrings.circuitLabel.value;
@@ -114,7 +114,7 @@ define( require => {
 
     // a11y - when the current changes, update the accessible description
     model.currentProperty.link( function( current ) {
-      const formattedCurrent = Util.toFixed( current, OhmsLawConstants.CURRENT_SIG_FIGS );
+      const formattedCurrent = Utils.toFixed( current, OhmsLawConstants.CURRENT_SIG_FIGS );
 
       accessibleCurrentNode.innerContent = StringUtils.fillIn( currentDescriptionPatternString, {
         arrowSize: self.getArrowSizeDescription(),
@@ -149,7 +149,7 @@ define( require => {
       const maxArrowHeightThreshold = HEIGHT * maxArrowHeightThresholdCoefficient;
 
       // map the normalized height to one of the size descriptions
-      let index = Util.roundSymmetric( Util.linear(
+      let index = Utils.roundSymmetric( Utils.linear(
         this.minArrowHeight, maxArrowHeightThreshold, // a1 b1
         0, OhmsLawConstants.RELATIVE_SIZE_STRINGS.length - 1, // a2 b2
         height ) ); // a3

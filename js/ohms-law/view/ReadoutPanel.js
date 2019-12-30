@@ -20,7 +20,7 @@ define( require => {
   const PhetFont = require( 'SCENERY_PHET/PhetFont' );
   const Rectangle = require( 'SCENERY/nodes/Rectangle' );
   const Text = require( 'SCENERY/nodes/Text' );
-  const Util = require( 'DOT/Util' );
+  const Utils = require( 'DOT/Utils' );
 
   // strings
   const currentString = require( 'string!OHMS_LAW/current' );
@@ -59,7 +59,7 @@ define( require => {
       tandem: tandem.createTandem( 'equalsSign' )
     } );
 
-    const currentValue = new Text( Util.toFixed( OhmsLawModel.getMaxCurrent(), 1 ), {
+    const currentValue = new Text( Utils.toFixed( OhmsLawModel.getMaxCurrent(), 1 ), {
       font: FONT,
       fill: 'black',
       tandem: tandem.createTandem( 'currentValue' )
@@ -89,7 +89,7 @@ define( require => {
     // Present for the lifetime of the simulation, no need to unlink.
     model.currentProperty.link( function( current ) {
       const rightEdgePosition = currentValue.right;
-      currentValue.text = Util.toFixed( current, 1 );
+      currentValue.text = Utils.toFixed( current, 1 );
       currentValue.right = rightEdgePosition;
     } );
 

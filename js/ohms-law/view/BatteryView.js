@@ -19,7 +19,7 @@ define( require => {
   const PhetFont = require( 'SCENERY_PHET/PhetFont' );
   const Rectangle = require( 'SCENERY/nodes/Rectangle' );
   const Text = require( 'SCENERY/nodes/Text' );
-  const Util = require( 'DOT/Util' );
+  const Utils = require( 'DOT/Utils' );
 
   // strings
   const voltageUnitsString = require( 'string!OHMS_LAW/voltageUnits' );
@@ -31,7 +31,7 @@ define( require => {
 
   // convert voltage to percentage (0 to 1)
   const VOLTAGE_TO_SCALE = new LinearFunction( 0.1, OhmsLawConstants.AA_VOLTAGE, 0.0001, 1, true );
-  const VOLTAGE_STRING_MAX_WIDTH = new Text( Util.toFixed( OhmsLawConstants.VOLTAGE_RANGE.max, 1 ), { font: FONT } ).width;
+  const VOLTAGE_STRING_MAX_WIDTH = new Text( Utils.toFixed( OhmsLawConstants.VOLTAGE_RANGE.max, 1 ), { font: FONT } ).width;
 
   // Fills for the battery
   const MAIN_BODY_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
@@ -127,7 +127,7 @@ define( require => {
     setVoltage: function( voltage ) {
 
       // update the voltage readout text
-      this.voltageValueText.text = Util.toFixed( voltage, 1 );
+      this.voltageValueText.text = Utils.toFixed( voltage, 1 );
 
       // adjust length of the battery
       this.mainBody.setRect( 0, 0, this.mainBodyWidth * VOLTAGE_TO_SCALE( voltage ), BATTERY_HEIGHT );

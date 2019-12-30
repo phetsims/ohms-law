@@ -16,7 +16,7 @@ define( require => {
   const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  const Util = require( 'DOT/Util' );
+  const Utils = require( 'DOT/Utils' );
 
   // a11y strings
   const batteriesSupplyPatternString = OhmsLawA11yStrings.batteriesSupplyPattern.value;
@@ -58,7 +58,7 @@ define( require => {
 
         // Determine associated with a particular battery
         let voltageBattery = Math.min( OhmsLawConstants.AA_VOLTAGE, voltage - index * OhmsLawConstants.AA_VOLTAGE );
-        voltageBattery = Util.roundToInterval( voltageBattery, Math.pow( 10, -OhmsLawConstants.VOLTAGE_SIG_FIGS ) );
+        voltageBattery = Utils.roundToInterval( voltageBattery, Math.pow( 10, -OhmsLawConstants.VOLTAGE_SIG_FIGS ) );
 
         // Battery is only visible if it has a voltage.
         battery.visible = ( voltageBattery > 0 );
@@ -70,7 +70,7 @@ define( require => {
 
       // a11y - update the description for the number of batteries
       self.innerContent = StringUtils.fillIn( batteriesSupplyPatternString, {
-        voltage: Util.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS )
+        voltage: Utils.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS )
       } );
     } );
     this.mutate( options );

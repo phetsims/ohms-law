@@ -21,7 +21,7 @@ define( require => {
   const Path = require( 'SCENERY/nodes/Path' );
   const Shape = require( 'KITE/Shape' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  const Util = require( 'DOT/Util' );
+  const Utils = require( 'DOT/Utils' );
 
   // a11y strings
   const tinyAmountOfImpuritiesString = OhmsLawA11yStrings.tinyAmountOfImpurities.value;
@@ -53,8 +53,8 @@ define( require => {
     .addColorStop( 0.412, '#FCFCFC' )
     .addColorStop( 1, '#F00' );
 
-  const DOT_GRID_ROWS = Util.roundSymmetric( RESISTOR_HEIGHT / Math.sqrt( AREA_PER_DOT ) );
-  const DOT_GRID_COLUMNS = Util.roundSymmetric( RESISTOR_WIDTH / Math.sqrt( AREA_PER_DOT ) );
+  const DOT_GRID_ROWS = Utils.roundSymmetric( RESISTOR_HEIGHT / Math.sqrt( AREA_PER_DOT ) );
+  const DOT_GRID_COLUMNS = Utils.roundSymmetric( RESISTOR_WIDTH / Math.sqrt( AREA_PER_DOT ) );
   const MAX_DOTS = DOT_GRID_COLUMNS * DOT_GRID_ROWS;
 
   // a11y - Function to map resistance to number of dots
@@ -166,7 +166,7 @@ define( require => {
       const range = OhmsLawConstants.RESISTANCE_RANGE;
 
       // map the normalied value to one of the resistance descriptions
-      const index = Util.roundSymmetric( Util.linear( range.min, range.max, 0, IMPURITIES_STRINGS.length - 1, resistance ) );
+      const index = Utils.roundSymmetric( Utils.linear( range.min, range.max, 0, IMPURITIES_STRINGS.length - 1, resistance ) );
       const numDotsDescription = IMPURITIES_STRINGS[ index ];
 
       return StringUtils.fillIn( resistanceDotsPatternString, {

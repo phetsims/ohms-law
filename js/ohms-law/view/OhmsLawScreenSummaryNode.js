@@ -16,7 +16,7 @@ define( require => {
   const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  const Util = require( 'DOT/Util' );
+  const Utils = require( 'DOT/Utils' );
 
   // a11y strings
   const summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSliders.value;
@@ -79,7 +79,7 @@ define( require => {
     valueItemList.forEach( function( item ) {
       item.property.link( function( value ) {
         item.node.innerContent = StringUtils.fillIn( item.patternString, {
-          value: Util.toFixed( value, item.precision )
+          value: Utils.toFixed( value, item.precision )
         } );
       } );
     } );

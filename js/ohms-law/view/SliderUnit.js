@@ -17,7 +17,7 @@ define( require => {
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const Rectangle = require( 'SCENERY/nodes/Rectangle' );
   const Text = require( 'SCENERY/nodes/Text' );
-  const Util = require( 'DOT/Util' );
+  const Utils = require( 'DOT/Utils' );
   const VBox = require( 'SCENERY/nodes/VBox' );
   const Vector2 = require( 'DOT/Vector2' );
   const VSlider = require( 'SUN/VSlider' );
@@ -50,7 +50,7 @@ define( require => {
 
         // don't allow any values that cannot be displayed by the precision allowed in this sim
         constrainValue: function( value ) {
-          return Util.toFixedNumber( value, options.decimalPlaces );
+          return Utils.toFixedNumber( value, options.decimalPlaces );
         },
 
         // a11y
@@ -60,7 +60,7 @@ define( require => {
         containerTagName: 'li',
         labelContent: labelContent,
         labelTagName: 'label',
-        a11yMapValue: value => Util.toFixedNumber( value, options.decimalPlaces ),
+        a11yMapValue: value => Utils.toFixedNumber( value, options.decimalPlaces ),
 
         // phet-io
         tandem: tandem.createTandem( 'slider' )
@@ -116,7 +116,7 @@ define( require => {
     } );
     nameText.center = new Vector2( symbolText.centerX, symbolText.y + 18 );
 
-    const valueText = new Text( Util.toFixed( range.max, options.decimalPlaces ), {
+    const valueText = new Text( Utils.toFixed( range.max, options.decimalPlaces ), {
       font: OhmsLawConstants.READOUT_FONT,
       fill: OhmsLawConstants.BLACK_COLOR,
       tandem: tandem.createTandem( 'valueText' )
@@ -154,7 +154,7 @@ define( require => {
 
     // Update value of the readout. Present for the lifetime of the simulation; no need to unlink.
     property.link( function( value ) {
-      valueText.text = Util.toFixed( value, options.decimalPlaces );
+      valueText.text = Utils.toFixed( value, options.decimalPlaces );
       valueText.right = unitText.left - READOUT_SPACING;
       readout.centerX = readoutBackground.selfBounds.centerX;
     } );

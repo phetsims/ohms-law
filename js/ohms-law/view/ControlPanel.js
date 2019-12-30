@@ -22,7 +22,7 @@ define( require => {
   const Panel = require( 'SUN/Panel' );
   const SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  const Util = require( 'DOT/Util' );
+  const Utils = require( 'DOT/Utils' );
 const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
 
   // strings
@@ -101,7 +101,7 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
             if ( oldVoltage !== newVoltage ) {
               // a11y - when V changes, announce an alert that describes the change
               const sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
-              const fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
+              const fixedCurrent = Utils.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
               voltageUtterance.alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
               phet.joist.sim.utteranceQueue.addToBack( voltageUtterance );
@@ -132,7 +132,7 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
         const currentChange = newCurrent - oldCurrent;
 
         // Get display values for the alert
-        const fixedCurrent = Util.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
+        const fixedCurrent = Utils.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
 
         const rSizeChange = resistanceChange > 0 ? growsString : shrinksString;
         let iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
