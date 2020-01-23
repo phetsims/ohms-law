@@ -87,7 +87,7 @@ define( require => {
     }
 
     // Present for the lifetime of the simulation, no need to unlink.
-    model.currentProperty.link( function( current ) {
+    model.currentProperty.link( current => {
       const rightEdgePosition = currentValue.right;
       currentValue.text = Utils.toFixed( current, 1 );
       currentValue.right = rightEdgePosition;
