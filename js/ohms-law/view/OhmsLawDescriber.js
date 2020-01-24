@@ -1,4 +1,4 @@
-// Copyright 2018-2019, University of Colorado Boulder
+// Copyright 2020, University of Colorado Boulder
 
 /**
  * Describer for the sim, responsible for formulating descriptions used throughout the sim.
