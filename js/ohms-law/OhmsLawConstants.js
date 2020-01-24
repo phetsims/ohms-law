@@ -103,7 +103,8 @@ define( require => {
     // precision for each of the physical quantities in this sim
     VOLTAGE_SIG_FIGS: 1,
     RESISTANCE_SIG_FIGS: 0,
-    CURRENT_SIG_FIGS: 1,
+    CURRENT_MILLIAMPS_SIG_FIGS: 1,
+    CURRENT_AMPS_SIG_FIGS: 3,
 
     // wire circuit
     WIRE_WIDTH: WIRE_WIDTH,

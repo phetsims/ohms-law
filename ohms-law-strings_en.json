@@ -25,5 +25,8 @@
   },
   "currentUnits": {
     "value": "mA"
+  },
+  "currentAmpUnits": {
+    "value": "A"
   }
 }

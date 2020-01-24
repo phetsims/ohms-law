@@ -9,6 +9,7 @@ define( require => {
   'use strict';
 
   // modules
+  const CurrentUnit = require( 'OHMS_LAW/ohms-law/model/CurrentUnit' );
   const HBox = require( 'SCENERY/nodes/HBox' );
   const inherit = require( 'PHET_CORE/inherit' );
   const merge = require( 'PHET_CORE/merge' );
@@ -18,11 +19,13 @@ define( require => {
   const Panel = require( 'SUN/Panel' );
   const PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   const PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  const Property = require( 'AXON/Property' );
   const Rectangle = require( 'SCENERY/nodes/Rectangle' );
   const Text = require( 'SCENERY/nodes/Text' );
   const Utils = require( 'DOT/Utils' );
 
   // strings
+  const currentAmpUnitsString = require( 'string!OHMS_LAW/currentAmpUnits' );
   const currentString = require( 'string!OHMS_LAW/current' );
   const currentUnitsString = require( 'string!OHMS_LAW/currentUnits' );
 
@@ -87,10 +90,13 @@ define( require => {
     }
 
     // Present for the lifetime of the simulation, no need to unlink.
-    model.currentProperty.link( current => {
+    Property.multilink( [ model.currentProperty,
+      model.currentUnitsProperty ], ( current, units ) => {
       const rightEdgePosition = currentValue.right;
-      currentValue.text = Utils.toFixed( current, 1 );
+      currentValue.text = model.getFixedCurrent();
       currentValue.right = rightEdgePosition;
+
+      currentUnit.text = units === CurrentUnit.AMPS ? currentAmpUnitsString : currentUnitsString;
     } );
 
     // Create the panel to surround the hBox.

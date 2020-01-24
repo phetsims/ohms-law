@@ -26,6 +26,13 @@ define( require => {
       value: 'V, Voltage'
     },
 
+    currentAmps: {
+      value: 'amps'
+    },
+    currentMilliamps: {
+      value: 'milliamps'
+    },
+
     //--------------------------------------------------------------------------
     // Relative size strings
     //--------------------------------------------------------------------------
@@ -117,7 +124,7 @@ define( require => {
     // Current strings
     //--------------------------------------------------------------------------
     currentDescriptionPattern: {
-      value: '<em>{{arrowSize}} arrows</em> indicate a current flowing clockwise at <em>{{value}} milliamps</em>'
+      value: '<em>{{arrowSize}} arrows</em> indicate a current flowing clockwise at <em>{{value}} {{unit}}</em>'
     },
 
     //--------------------------------------------------------------------------
@@ -155,9 +162,6 @@ define( require => {
     //--------------------------------------------------------------------------
 
     // pattern for the current arrow description in the screen summary
-    summaryCurrentPattern: {
-      value: '<em>{{size}}</em> arrows indicate amount of current flowing clockwise at {{current}} milliamps.'
-    },
     summaryLookForSliders: {
       value: 'Look for voltage and resistance sliders to play, or read on for details about equation and circuit.'
     },
@@ -181,7 +185,7 @@ define( require => {
       value: 'resistance, <strong>R</strong>, is <em>{{value}} ohms</em>'
     },
     currentSummaryPattern: {
-      value: 'current, <strong>I</strong>, is <em>{{value}} milliamps</em>'
+      value: 'current, <strong>I</strong>, is <em>{{value}} {{unit}}</em>'
     },
 
 
@@ -196,7 +200,7 @@ define( require => {
     },
 
     sliderChangeAlertPattern: {
-      value: 'As letter {{initLetter}} {{initSizeChange}}, letter I {{iSizeChange}}.  Current now {{currentVal}} milliamps.'
+      value: 'As letter {{initLetter}} {{initSizeChange}}, letter I {{iSizeChange}}.  Current now {{currentVal}} {{unit}}.'
     },
     letterR: {
       value: 'R'

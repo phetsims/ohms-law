@@ -10,11 +10,11 @@ define( require => {
   'use strict';
 
   // modules
-  const inherit = require( 'PHET_CORE/inherit' );
   const Node = require( 'SCENERY/nodes/Node' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  const Property = require( 'AXON/Property' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   const Utils = require( 'DOT/Utils' );
 
@@ -26,66 +26,73 @@ define( require => {
   const resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPattern.value;
   const currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPattern.value;
 
-  function OhmsLawScreenSummaryNode( model ) {
-    Node.call( this );
+  class OhmsLawScreenSummaryNode extends Node {
 
-    const summaryNode = new Node( {
-      tagName: 'p',
-      innerContent: summarySimString
-    } );
+    /**
+     * @param {OhmsLawModel} model
+     * @param {OhmsLawDescriber} ohmsLawDescriber
+     */
+    constructor( model, ohmsLawDescriber ) {
+      super();
 
-    const rightNowParagraphNode = new Node( { tagName: 'p', innerContent: rightNowString } );
+      const summaryNode = new Node( {
+        tagName: 'p',
+        innerContent: summarySimString
+      } );
 
-    // list outlining the values for this sim
-    const valueListNode = new Node( { tagName: 'ul' } );
-    const valueVoltageItemNode = new Node( { tagName: 'li' } );
-    const valueResistanceItemNode = new Node( { tagName: 'li' } );
-    const valueCurrentItemNode = new Node( { tagName: 'li' } );
-    valueListNode.children = [ valueVoltageItemNode, valueResistanceItemNode, valueCurrentItemNode ];
+      const rightNowParagraphNode = new Node( { tagName: 'p', innerContent: rightNowString } );
 
-    const sliderParagraphNode = new Node( { tagName: 'p', innerContent: summaryLookForSlidersString } );
+      // list outlining the values for this sim
+      const valueListNode = new Node( { tagName: 'ul' } );
+      const valueVoltageItemNode = new Node( { tagName: 'li' } );
+      const valueResistanceItemNode = new Node( { tagName: 'li' } );
+      const valueCurrentItemNode = new Node( { tagName: 'li' } );
+      valueListNode.children = [ valueVoltageItemNode, valueResistanceItemNode, valueCurrentItemNode ];
 
-    // add all children to this node, ordering the accessible content
-    this.addChild( summaryNode );
-    this.addChild( rightNowParagraphNode );
-    this.addChild( valueListNode );
-    this.addChild( sliderParagraphNode );
+      const sliderParagraphNode = new Node( { tagName: 'p', innerContent: summaryLookForSlidersString } );
 
-    // add all values to a list so we can easily iterate and add listeners to update descriptions
-    // with each property
-    const valueItemList = [
-      {
-        property: model.voltageProperty,
-        patternString: voltageSummaryPatternString,
-        node: valueVoltageItemNode,
-        precision: OhmsLawConstants.VOLTAGE_SIG_FIGS
-      },
-      {
-        property: model.resistanceProperty,
-        patternString: resistanceSummaryPatternString,
-        node: valueResistanceItemNode,
-        precision: OhmsLawConstants.RESISTANCE_SIG_FIGS
-      },
-      {
-        property: model.currentProperty,
-        patternString: currentSummaryPatternString,
-        node: valueCurrentItemNode,
-        precision: OhmsLawConstants.CURRENT_SIG_FIGS
-      }
-    ];
+      // add all children to this node, ordering the accessible content
+      this.addChild( summaryNode );
+      this.addChild( rightNowParagraphNode );
+      this.addChild( valueListNode );
+      this.addChild( sliderParagraphNode );
 
-    // register listeners that update the labels in the screen summary - this summary exists for life of sim,
-    // no need to dispose
-    valueItemList.forEach( function( item ) {
-      item.property.link( function( value ) {
-        item.node.innerContent = StringUtils.fillIn( item.patternString, {
-          value: Utils.toFixed( value, item.precision )
+      // add all values to a list so we can easily iterate and add listeners to update descriptions
+      // with each property
+      const valueItemList = [
+        {
+          property: model.voltageProperty,
+          patternString: voltageSummaryPatternString,
+          node: valueVoltageItemNode,
+          precision: OhmsLawConstants.VOLTAGE_SIG_FIGS
+        },
+        {
+          property: model.resistanceProperty,
+          patternString: resistanceSummaryPatternString,
+          node: valueResistanceItemNode,
+          precision: OhmsLawConstants.RESISTANCE_SIG_FIGS
+        }
+      ];
+
+      // register listeners that update the labels in the screen summary - this summary exists for life of sim,
+      // no need to dispose
+      valueItemList.forEach( item => {
+        item.property.link( value => {
+          item.node.innerContent = StringUtils.fillIn( item.patternString, {
+            value: Utils.toFixed( value, item.precision ),
+            unit: ohmsLawDescriber.getUnitForCurrent()
+          } );
         } );
       } );
-    } );
+
+      Property.multilink( [ model.currentProperty, model.currentUnitsProperty ], ( current, units ) => {
+        valueCurrentItemNode.innerContent = StringUtils.fillIn( currentSummaryPatternString, {
+          value: model.getFixedCurrent(),
+          unit: ohmsLawDescriber.getUnitForCurrent()
+        } );
+      } );
+    }
   }
 
-  ohmsLaw.register( 'OhmsLawScreenSummaryNode', OhmsLawScreenSummaryNode );
-
-  return inherit( Node, OhmsLawScreenSummaryNode );
+  return ohmsLaw.register( 'OhmsLawScreenSummaryNode', OhmsLawScreenSummaryNode );
 } );

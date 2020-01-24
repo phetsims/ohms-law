@@ -12,16 +12,21 @@ define( require => {
   // modules
   const ControlPanel = require( 'OHMS_LAW/ohms-law/view/ControlPanel' );
   const CurrentSoundGenerator = require( 'OHMS_LAW/ohms-law/view/CurrentSoundGenerator' );
+  const CurrentUnit = require( 'OHMS_LAW/ohms-law/model/CurrentUnit' );
   const DiscreteSoundGenerator = require( 'TAMBO/sound-generators/DiscreteSoundGenerator' );
   const FormulaNode = require( 'OHMS_LAW/ohms-law/view/FormulaNode' );
   const inherit = require( 'PHET_CORE/inherit' );
   const InvertedBooleanProperty = require( 'TAMBO/InvertedBooleanProperty' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  const OhmsLawDescriber = require( 'OHMS_LAW/ohms-law/view/OhmsLawDescriber' );
   const OhmsLawScreenSummaryNode = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenSummaryNode' );
+  const PhetFont = require( 'SCENERY_PHET/PhetFont' );
   const ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   const ScreenView = require( 'JOIST/ScreenView' );
   const soundManager = require( 'TAMBO/soundManager' );
+  const Text = require( 'SCENERY/nodes/Text' );
+  const VerticalAquaRadioButtonGroup = require( 'SUN/VerticalAquaRadioButtonGroup' );
   const WireBox = require( 'OHMS_LAW/ohms-law/view/WireBox' );
 
   // sounds
@@ -29,6 +34,7 @@ define( require => {
 
   // constants
   const SLIDER_CLICK_LEVEL = 0.25;
+  const RADIO_BUTTON_TEXT_OPTIONS = { font: new PhetFont( 25 ), maxWidth: 100 };
 
   /**
    * @param {OhmsLawModel} model
@@ -39,9 +45,11 @@ define( require => {
 
     const self = this;
 
+    const ohmsLawDescriber = new OhmsLawDescriber( model );
+
     ScreenView.call( this, {
       tandem: tandem,
-      screenSummaryContent: new OhmsLawScreenSummaryNode( model )
+      screenSummaryContent: new OhmsLawScreenSummaryNode( model, ohmsLawDescriber )
     } );
 
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
@@ -50,17 +58,12 @@ define( require => {
     } );
 
     // Circuit node with readout node
-    const wireBox = new WireBox( model, tandem.createTandem( 'wireBox' ), {
+    const wireBox = new WireBox( model, ohmsLawDescriber, tandem.createTandem( 'wireBox' ), {
       pickable: false
     } );
 
     // create the control panel with sliders
-    const controlPanel = new ControlPanel(
-      model.voltageProperty,
-      model.resistanceProperty,
-      model.currentProperty,
-      tandem.createTandem( 'controlPanel' )
-    );
+    const controlPanel = new ControlPanel( model, ohmsLawDescriber, tandem.createTandem( 'controlPanel' ) );
 
     // sound generators for voltage and resistance
     const resetNotInProgress = new InvertedBooleanProperty( model.resetInProgressProperty );
@@ -70,7 +73,7 @@ define( require => {
       {
         sound: sliderClick,
         numBins: 6,
-        enableControlProperties: [resetNotInProgress],
+        enableControlProperties: [ resetNotInProgress ],
         initialOutputLevel: SLIDER_CLICK_LEVEL,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
       }
@@ -81,7 +84,7 @@ define( require => {
       {
         sound: sliderClick,
         numBins: 6,
-        enableControlProperties: [resetNotInProgress],
+        enableControlProperties: [ resetNotInProgress ],
         initialOutputLevel: SLIDER_CLICK_LEVEL,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
       }
@@ -92,6 +95,24 @@ define( require => {
       initialOutputLevel: 0.4
     } );
     soundManager.addSoundGenerator( this.currentSoundGenerator );
+
+    const currentUnitRadioButtonGroup = new VerticalAquaRadioButtonGroup( model.currentUnitsProperty, [
+      {
+        node: new Text( 'Amps', RADIO_BUTTON_TEXT_OPTIONS ),
+        value: CurrentUnit.AMPS,
+        tandemName: 'ampsRadioButton',
+        labelContent: 'Amps'
+      }, {
+        node: new Text( 'Milliamps', RADIO_BUTTON_TEXT_OPTIONS ),
+        value: CurrentUnit.MILLIAMPS,
+        tandemName: 'ampsRadioButton',
+        labelContent: 'Milliamps'
+      }
+    ], {
+      labelTagName: 'h3',
+      labelContent: 'Current Units', // TODO: factor out string and maybe add description, https://github.com/phetsims/ohms-law/issues/153
+      tandem: tandem.createTandem( 'currentUnitRadioButtonGroup' )
+    } );
 
     // add the reset button
     const resetAllButton = new ResetAllButton( {
@@ -107,6 +128,7 @@ define( require => {
     this.pdomPlayAreaNode.addChild( formulaNode );
     this.pdomPlayAreaNode.addChild( wireBox );
     this.pdomPlayAreaNode.addChild( controlPanel );
+    this.pdomControlAreaNode.addChild( currentUnitRadioButtonGroup );
     this.pdomControlAreaNode.addChild( resetAllButton );
 
     // layout for the screen
@@ -119,6 +141,8 @@ define( require => {
     controlPanel.centerY = this.layoutBounds.centerY - resetAllButton.height / 2;
     resetAllButton.right = controlPanel.right;
     resetAllButton.bottom = this.layoutBounds.bottom - 20;
+    currentUnitRadioButtonGroup.centerY = resetAllButton.centerY;
+    currentUnitRadioButtonGroup.left = controlPanel.left;
   }
 
   ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );

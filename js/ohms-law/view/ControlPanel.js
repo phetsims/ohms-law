@@ -22,8 +22,7 @@ define( require => {
   const Panel = require( 'SUN/Panel' );
   const SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  const Utils = require( 'DOT/Utils' );
-const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
+  const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
 
   // strings
   const resistanceString = require( 'string!OHMS_LAW/resistance' );
@@ -40,7 +39,6 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
   const voltageSliderLabelString = OhmsLawA11yStrings.voltageSliderLabel.value;
   const sliderControlsString = OhmsLawA11yStrings.sliderControls.value;
   const slidersDescriptionString = OhmsLawA11yStrings.slidersDescription.value;
-  const sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPattern.value;
   const letterRString = OhmsLawA11yStrings.letterR.value;
   const letterVString = OhmsLawA11yStrings.letterV.value;
   const shrinksString = OhmsLawA11yStrings.shrinks.value;
@@ -51,16 +49,13 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
   const NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes.value; // a11y - the number of sizes that letters can be described as.
 
   /**
-   * @param {Property.<number>} voltageProperty
-   * @param {Property.<number>} resistanceProperty
-   * @param {Property.<number>} currentProperty
+   * @param {OhmsLawModel} model
+   * @param {OhmsLawDescriber} ohmsLawDescriber
    * @param {Tandem} tandem
    * @param options
    * @constructor
    */
-  function ControlPanel( voltageProperty, resistanceProperty, currentProperty, tandem, options ) {
-
-    const self = this;
+  function ControlPanel( model, ohmsLawDescriber, tandem, options ) {
 
     options = merge( {
       xMargin: 30,
@@ -70,6 +65,10 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
       preventFit: true, // used to avoid jostling in the control panel when the resistance changes quickly, see https://github.com/phetsims/ohms-law/issues/68
       tandem: tandem
     }, options );
+
+    const voltageProperty = model.voltageProperty;
+    const resistanceProperty = model.resistanceProperty;
+    const currentProperty = model.currentProperty;
 
     // a11y - to alert changes to assistive devices
     const resistanceUtterance = new ValueChangeUtterance();
@@ -101,9 +100,7 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
             if ( oldVoltage !== newVoltage ) {
               // a11y - when V changes, announce an alert that describes the change
               const sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
-              const fixedCurrent = Utils.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
-
-              voltageUtterance.alert = self.getValueChangeAlertString( letterVString, sizeChange, sizeChange, fixedCurrent );
+              voltageUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( letterVString, sizeChange, sizeChange );
               phet.joist.sim.utteranceQueue.addToBack( voltageUtterance );
             }
           }
@@ -131,14 +128,11 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
         const resistanceChange = newResistance - oldResistance;
         const currentChange = newCurrent - oldCurrent;
 
-        // Get display values for the alert
-        const fixedCurrent = Utils.toFixed( currentProperty.get(), OhmsLawConstants.CURRENT_SIG_FIGS );
-
         const rSizeChange = resistanceChange > 0 ? growsString : shrinksString;
         let iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
         iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ' ' + aLotString : '';
 
-        resistanceUtterance.alert = self.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange, fixedCurrent );
+        resistanceUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange );
         phet.joist.sim.utteranceQueue.addToBack( resistanceUtterance );
       }
     };
@@ -201,26 +195,5 @@ const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
 
   ohmsLaw.register( 'ControlPanel', ControlPanel );
 
-  return inherit( Panel, ControlPanel, {
-
-    /**
-     * Generate an alert from strings and values that describes a change in the model. Something like
-     * "As letter V grows, letter I grows. Current now 10.0 milliamps with voltage at 5.0 volts."
-     * Used for a11y.
-     *
-     * @param  {string} initLetter - letter representing the model property that was changed
-     * @param  {string} initSizeChange - string describing change in size of letter representing changed model Property
-     * @param  {string} iSizeChange - string describing size change of letter I
-     * @param  {number} currentVal - value of model current Property
-     * @returns {string} string
-     */
-    getValueChangeAlertString: function( initLetter, initSizeChange, iSizeChange, currentVal ) {
-      return StringUtils.fillIn( sliderChangeAlertPatternString, {
-        initLetter: initLetter,
-        initSizeChange: initSizeChange,
-        iSizeChange: iSizeChange,
-        currentVal: currentVal
-      } );
-    }
-  } );
+  return inherit( Panel, ControlPanel );
 } );

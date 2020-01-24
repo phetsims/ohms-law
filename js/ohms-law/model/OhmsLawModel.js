@@ -10,14 +10,17 @@ define( require => {
 
   // modules
   const BooleanProperty = require( 'AXON/BooleanProperty' );
+  const CurrentUnit = require( 'OHMS_LAW/ohms-law/model/CurrentUnit' );
   const DerivedProperty = require( 'AXON/DerivedProperty' );
   const DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
+  const EnumerationProperty = require( 'AXON/EnumerationProperty' );
   const inherit = require( 'PHET_CORE/inherit' );
   const NumberIO = require( 'TANDEM/types/NumberIO' );
   const NumberProperty = require( 'AXON/NumberProperty' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const Range = require( 'DOT/Range' );
+  const Utils = require( 'DOT/Utils' );
 
   /**
    * @constructor
@@ -48,6 +51,11 @@ define( require => {
         phetioType: DerivedPropertyIO( NumberIO )
       }
     );
+
+    // @public
+    this.currentUnitsProperty = new EnumerationProperty( CurrentUnit, CurrentUnit.MILLIAMPS, {
+      tandem: tandem.createTandem( 'currentUnitsProperty' )
+    } );
 
     // @public (read-only) {BooleanProperty} - true when a reset is in progress, false otherwise
     this.resetInProgressProperty = new BooleanProperty( false );
@@ -105,6 +113,19 @@ define( require => {
     getNormalizedResistance: function() {
       const range = OhmsLawConstants.RESISTANCE_RANGE;
       return ( this.resistanceProperty.get() - range.min ) / range.getLength();
+    },
+
+    /**
+     * Get the current as a number formatted based on the appropriate decimal places for the display unit.
+     * @returns {string}
+     */
+    getFixedCurrent: function() {
+      let current = this.currentProperty.value;
+      const units = this.currentUnitsProperty.value;
+      if ( units === CurrentUnit.AMPS ) {
+        current = current / 100;
+      }
+      return Utils.toFixed( current, CurrentUnit.getSigFigs( units ) );
     }
   }, {
 

@@ -16,6 +16,7 @@ define( require => {
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
+  const Property = require( 'AXON/Property' );
   const ReadoutPanel = require( 'OHMS_LAW/ohms-law/view/ReadoutPanel' );
   const Rectangle = require( 'SCENERY/nodes/Rectangle' );
   const ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
@@ -36,11 +37,12 @@ define( require => {
 
   /**
    * @param {OhmsLawModel} model
+   * @param {OhmsLawDescriber} ohmsLawDescriber
    * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
    */
-  function WireBox( model, tandem, options ) {
+  function WireBox( model, ohmsLawDescriber, tandem, options ) {
 
     options = merge( {
 
@@ -113,12 +115,11 @@ define( require => {
     model.reset();
 
     // a11y - when the current changes, update the accessible description
-    model.currentProperty.link( function( current ) {
-      const formattedCurrent = Utils.toFixed( current, OhmsLawConstants.CURRENT_SIG_FIGS );
-
+    Property.multilink( [ model.currentProperty, model.currentUnitsProperty ], () => {
       accessibleCurrentNode.innerContent = StringUtils.fillIn( currentDescriptionPatternString, {
         arrowSize: self.getArrowSizeDescription(),
-        value: formattedCurrent
+        value: model.getFixedCurrent(),
+        unit: ohmsLawDescriber.getUnitForCurrent()
       } );
     } );
 
