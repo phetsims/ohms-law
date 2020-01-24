@@ -105,7 +105,7 @@ define( require => {
       }, {
         node: new Text( 'Milliamps', RADIO_BUTTON_TEXT_OPTIONS ),
         value: CurrentUnit.MILLIAMPS,
-        tandemName: 'ampsRadioButton',
+        tandemName: 'milliampsRadioButton',
         labelContent: 'Milliamps'
       }
     ], {

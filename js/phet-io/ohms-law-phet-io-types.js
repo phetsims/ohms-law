@@ -333,6 +333,14 @@ window.phet.phetio.phetioTypes = assert &&
       "supertype": "ActionIO<NullableIO<SceneryEventIO>>",
       "typeName": "EmitterIO<NullableIO<SceneryEventIO>>"
     },
+    "EnumerationIO(MILLIAMPS|AMPS)": {
+      "documentation": "Possible values: MILLIAMPS,AMPS.",
+      "events": [],
+      "methodOrder": [],
+      "methods": {},
+      "supertype": "ObjectIO",
+      "typeName": "EnumerationIO(MILLIAMPS|AMPS)"
+    },
     "EventIO": {
       "documentation": "A DOM Event",
       "events": [],
@@ -393,6 +401,19 @@ window.phet.phetio.phetioTypes = assert &&
       ],
       "supertype": "ObjectIO",
       "typeName": "FunctionIO(ColorIO,NullableIO<ColorIO>)=>VoidIO"
+    },
+    "FunctionIO(EnumerationIO(MILLIAMPS|AMPS),NullableIO<EnumerationIO(MILLIAMPS|AMPS)>)=>VoidIO": {
+      "documentation": "Wrapper for the built-in JS function type.<br><strong>Arguments:</strong> EnumerationIO(MILLIAMPS|AMPS), NullableIO<EnumerationIO(MILLIAMPS|AMPS)><br><strong>Return Type:</strong> VoidIO",
+      "events": [],
+      "methodOrder": [],
+      "methods": {},
+      "parameterTypes": [
+        "EnumerationIO(MILLIAMPS|AMPS)",
+        "NullableIO<EnumerationIO(MILLIAMPS|AMPS)>",
+        "VoidIO"
+      ],
+      "supertype": "ObjectIO",
+      "typeName": "FunctionIO(EnumerationIO(MILLIAMPS|AMPS),NullableIO<EnumerationIO(MILLIAMPS|AMPS)>)=>VoidIO"
     },
     "FunctionIO(NullableIO<BooleanIO>,NullableIO<NullableIO<BooleanIO>>)=>VoidIO": {
       "documentation": "Wrapper for the built-in JS function type.<br><strong>Arguments:</strong> NullableIO<BooleanIO>, NullableIO<NullableIO<BooleanIO>><br><strong>Return Type:</strong> VoidIO",
@@ -560,6 +581,17 @@ window.phet.phetio.phetioTypes = assert &&
       ],
       "supertype": "ObjectIO",
       "typeName": "NullableIO<ColorIO>"
+    },
+    "NullableIO<EnumerationIO(MILLIAMPS|AMPS)>": {
+      "documentation": "A wrapper to wrap another IOType, adding support for null.",
+      "events": [],
+      "methodOrder": [],
+      "methods": {},
+      "parameterTypes": [
+        "EnumerationIO(MILLIAMPS|AMPS)"
+      ],
+      "supertype": "ObjectIO",
+      "typeName": "NullableIO<EnumerationIO(MILLIAMPS|AMPS)>"
     },
     "NullableIO<FocusIO>": {
       "documentation": "A wrapper to wrap another IOType, adding support for null.",
@@ -1043,6 +1075,50 @@ window.phet.phetio.phetioTypes = assert &&
       ],
       "supertype": "ObjectIO",
       "typeName": "PropertyIO<ColorIO>"
+    },
+    "PropertyIO<EnumerationIO(MILLIAMPS|AMPS)>": {
+      "documentation": "Observable values that send out notifications when the value changes. This differs from the traditional listener pattern in that added listeners also receive a callback with the current value when the listeners are registered. This is a widely-used pattern in PhET-iO simulations.",
+      "events": [
+        "changed"
+      ],
+      "methodOrder": [
+        "link",
+        "lazyLink"
+      ],
+      "methods": {
+        "getValue": {
+          "documentation": "Gets the current value.",
+          "parameterTypes": [],
+          "returnType": "EnumerationIO(MILLIAMPS|AMPS)"
+        },
+        "lazyLink": {
+          "documentation": "Adds a listener which will be called when the value changes. This method is like \"link\", but without the current-value callback on registration. The listener takes two arguments, the new value and the previous value.",
+          "parameterTypes": [
+            "FunctionIO(EnumerationIO(MILLIAMPS|AMPS),NullableIO<EnumerationIO(MILLIAMPS|AMPS)>)=>VoidIO"
+          ],
+          "returnType": "VoidIO"
+        },
+        "link": {
+          "documentation": "Adds a listener which will be called when the value changes. On registration, the listener is also called with the current value. The listener takes two arguments, the new value and the previous value.",
+          "parameterTypes": [
+            "FunctionIO(EnumerationIO(MILLIAMPS|AMPS),NullableIO<EnumerationIO(MILLIAMPS|AMPS)>)=>VoidIO"
+          ],
+          "returnType": "VoidIO"
+        },
+        "setValue": {
+          "documentation": "Sets the value of the Property. If the value differs from the previous value, listeners are notified with the new value.",
+          "invocableForReadOnlyElements": false,
+          "parameterTypes": [
+            "EnumerationIO(MILLIAMPS|AMPS)"
+          ],
+          "returnType": "VoidIO"
+        }
+      },
+      "parameterTypes": [
+        "EnumerationIO(MILLIAMPS|AMPS)"
+      ],
+      "supertype": "ObjectIO",
+      "typeName": "PropertyIO<EnumerationIO(MILLIAMPS|AMPS)>"
     },
     "PropertyIO<NullableIO<BooleanIO>>": {
       "documentation": "Observable values that send out notifications when the value changes. This differs from the traditional listener pattern in that added listeners also receive a callback with the current value when the listeners are registered. This is a widely-used pattern in PhET-iO simulations.",
