@@ -28,5 +28,14 @@
   },
   "currentAmpUnits": {
     "value": "A"
+  },
+  "units": {
+    "value": "Units"
+  },
+  "milliampsMA": {
+    "value": "Milliamps (mA)"
+  },
+  "ampsA": {
+    "value": "Amps (A)"
   }
 }
