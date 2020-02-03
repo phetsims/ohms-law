@@ -32,6 +32,9 @@ define( require => {
     currentMilliamps: {
       value: 'milliamps'
     },
+    chooseUnitForCurrent: {
+      value: 'Choose unit for current.'
+    },
 
     //--------------------------------------------------------------------------
     // Relative size strings
@@ -165,10 +168,13 @@ define( require => {
     summaryLookForSliders: {
       value: 'Look for voltage and resistance sliders to play, or read on for details about equation and circuit.'
     },
-    summarySim: {
+    summaryPlayArea: {
       value: 'In the Play Area you find the equation for Ohm\'s Law, <strong>V</strong> equals ' +
              '<strong>I</strong> times <strong>R</strong>, and a ' + 'circuit. Voltage and resistance sliders ' +
-             'allow changes to the equation and circuit. In the Control Area, a button allows users to reset the sim.'
+             'allow changes to the equation and circuit.'
+    },
+    summaryControlArea: {
+      value: 'The Control Area has radio buttons to switch between milliamps and amps, and a button to reset the sim.'
     },
 
     stateOfSim: {

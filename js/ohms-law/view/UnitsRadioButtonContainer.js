@@ -12,6 +12,7 @@ define( require => {
   const CurrentUnit = require( 'OHMS_LAW/ohms-law/model/CurrentUnit' );
   const merge = require( 'PHET_CORE/merge' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
+  const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   const PhetFont = require( 'SCENERY_PHET/PhetFont' );
   const RichText = require( 'SCENERY/nodes/RichText' );
   const Tandem = require( 'TANDEM/Tandem' );
@@ -20,9 +21,12 @@ define( require => {
   const VerticalAquaRadioButtonGroup = require( 'SUN/VerticalAquaRadioButtonGroup' );
 
   // strings
-  const unitsString = require( 'string!OHMS_LAW/units' );
-  const milliampsMAString = require( 'string!OHMS_LAW/milliampsMA' );
   const ampsAString = require( 'string!OHMS_LAW/ampsA' );
+  const milliampsMAString = require( 'string!OHMS_LAW/milliampsMA' );
+  const unitsString = require( 'string!OHMS_LAW/units' );
+
+  // a11y strings
+  const chooseUnitForCurrentString = OhmsLawA11yStrings.chooseUnitForCurrent.value;
 
   // constants
   const MAX_WIDTH = 250;
@@ -37,7 +41,8 @@ define( require => {
     constructor( currentUnitsProperty, options ) {
 
       merge( {
-        tandem: Tandem.REQUIRED
+        tandem: Tandem.REQUIRED,
+        tagName: 'div'
       }, options );
 
       const unitsHeading = new RichText( unitsString, {
@@ -61,7 +66,8 @@ define( require => {
           labelContent: ampsAString
         } ], {
         labelTagName: 'h3',
-        labelContent: 'Current Units', // TODO: factor out string and maybe add description, https://github.com/phetsims/ohms-law/issues/153
+        labelContent: unitsString,
+        descriptionContent: chooseUnitForCurrentString,
         tandem: options.tandem.createTandem( 'currentUnitRadioButtonGroup' )
       } );
 

@@ -20,7 +20,8 @@ define( require => {
 
   // a11y strings
   const summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSliders.value;
-  const summarySimString = OhmsLawA11yStrings.summarySim.value;
+  const summaryPlayAreaString = OhmsLawA11yStrings.summaryPlayArea.value;
+  const summaryControlAreaString = OhmsLawA11yStrings.summaryControlArea.value;
   const rightNowString = OhmsLawA11yStrings.rightNow.value;
   const voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPattern.value;
   const resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPattern.value;
@@ -35,9 +36,13 @@ define( require => {
     constructor( model, ohmsLawDescriber ) {
       super();
 
-      const summaryNode = new Node( {
+      const playAreaSummaryNode = new Node( {
         tagName: 'p',
-        innerContent: summarySimString
+        innerContent: summaryPlayAreaString
+      } );
+      const controlAreaSummaryNode = new Node( {
+        tagName: 'p',
+        innerContent: summaryControlAreaString
       } );
 
       const rightNowParagraphNode = new Node( { tagName: 'p', innerContent: rightNowString } );
@@ -52,7 +57,8 @@ define( require => {
       const sliderParagraphNode = new Node( { tagName: 'p', innerContent: summaryLookForSlidersString } );
 
       // add all children to this node, ordering the accessible content
-      this.addChild( summaryNode );
+      this.addChild( playAreaSummaryNode );
+      this.addChild( controlAreaSummaryNode );
       this.addChild( rightNowParagraphNode );
       this.addChild( valueListNode );
       this.addChild( sliderParagraphNode );
