@@ -124,7 +124,8 @@ define( require => {
     resetAllButton.right = controlPanel.right;
     resetAllButton.bottom = this.layoutBounds.bottom - 20;
 
-    unitsRadioButtonContainer.centerY = wireBox.centerY;
+    // 4 is empirically spacing to better align the top of the readout with the top of the radio button heading.
+    unitsRadioButtonContainer.centerY = wireBox.centerY + 4;
     unitsRadioButtonContainer.left = controlPanel.left;
   }
 
