@@ -35,7 +35,7 @@ define( require => {
   /**
    * @param {Property.<number>} currentProperty
    * @param {Tandem} tandem
-   * @param {Object} options
+   * @param {Object} [options]
    * @constructor
    */
   function RightAngleArrow( currentProperty, tandem, options ) {

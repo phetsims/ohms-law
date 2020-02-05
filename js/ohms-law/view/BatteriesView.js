@@ -24,7 +24,7 @@ define( require => {
   /**
    * @param {Property.<number>} voltageProperty
    * @param {Tandem} tandem
-   * @param {Object} options
+   * @param {Object} [options]
    * @constructor
    */
   function BatteriesView( voltageProperty, tandem, options ) {

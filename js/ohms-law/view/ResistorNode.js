@@ -69,7 +69,7 @@ define( require => {
   /**
    * @param {Property.<number>} resistanceProperty
    * @param {Tandem} tandem
-   * @param {Object} options
+   * @param {Object} [options]
    * @constructor
    */
   function ResistorNode( resistanceProperty, tandem, options ) {

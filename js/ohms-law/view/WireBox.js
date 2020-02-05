@@ -39,7 +39,7 @@ define( require => {
    * @param {OhmsLawModel} model
    * @param {OhmsLawDescriber} ohmsLawDescriber
    * @param {Tandem} tandem
-   * @param {Object} options
+   * @param {Object} [options]
    * @constructor
    */
   function WireBox( model, ohmsLawDescriber, tandem, options ) {

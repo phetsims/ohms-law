@@ -36,7 +36,7 @@ define( require => {
   /**
    * @param {OhmsLawModel} model
    * @param {Tandem} tandem
-   * @param {Object} options
+   * @param {Object} [options]
    * @constructor
    */
   function ReadoutPanel( model, tandem, options ) {

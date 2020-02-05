@@ -44,7 +44,7 @@ define( require => {
   /**
    * @param {OhmsLawModel} model
    * @param {Tandem} tandem
-   * @param {Object} options
+   * @param {Object} [options]
    * @constructor
    */
   function FormulaNode( model, tandem, options ) {
