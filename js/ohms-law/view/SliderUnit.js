@@ -53,6 +53,9 @@ define( require => {
           return Utils.toFixedNumber( value, options.decimalPlaces );
         },
 
+        startDrag: _.noop,
+        endDrag: _.noop,
+
         // a11y
         keyboardStep: 1,  // delta for keyboard step
         shiftKeyboardStep: 0.1, // delta when holding shift
