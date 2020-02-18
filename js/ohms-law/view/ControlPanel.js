@@ -9,7 +9,6 @@ define( require => {
   'use strict';
 
   // modules
-  const AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
   const DerivedProperty = require( 'AXON/DerivedProperty' );
   const HBox = require( 'SCENERY/nodes/HBox' );
   const inherit = require( 'PHET_CORE/inherit' );
