@@ -49,17 +49,19 @@ define( require => {
     } );
 
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
-    const formulaNode = new FormulaNode( model, tandem.createTandem( 'formulaNode' ), {
-      pickable: false
+    const formulaNode = new FormulaNode( model, {
+      pickable: false,
+      tandem: tandem.createTandem( 'formulaNode' )
     } );
 
     // Circuit node with readout node
-    const wireBox = new WireBox( model, ohmsLawDescriber, tandem.createTandem( 'wireBox' ), {
-      pickable: false
+    const wireBox = new WireBox( model, ohmsLawDescriber, {
+      pickable: false,
+      tandem: tandem.createTandem( 'wireBox' )
     } );
 
     // create the control panel with sliders
-    const controlPanel = new ControlPanel( model, ohmsLawDescriber, tandem.createTandem( 'controlPanel' ) );
+    const controlPanel = new ControlPanel( model, ohmsLawDescriber, { tandem: tandem.createTandem( 'controlPanel' ) } );
 
     // sound generators for voltage and resistance
     const resetNotInProgress = new InvertedBooleanProperty( model.resetInProgressProperty );

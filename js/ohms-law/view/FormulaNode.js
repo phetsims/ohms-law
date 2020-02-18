@@ -22,6 +22,7 @@ define( require => {
   const Property = require( 'AXON/Property' );
   const Rectangle = require( 'SCENERY/nodes/Rectangle' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const Text = require( 'SCENERY/nodes/Text' );
 
   // strings
@@ -43,20 +44,19 @@ define( require => {
 
   /**
    * @param {OhmsLawModel} model
-   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function FormulaNode( model, tandem, options ) {
+  function FormulaNode( model, options ) {
 
     options = merge( {
+      tandem: Tandem.required,
 
       // a11y
       labelContent: ohmsLawEquationString,
       descriptionContent: ohmsLawDefinitionString,
       tagName: 'div',
-      labelTagName: 'h3', // labels should come before other child content
-      tandem: tandem
+      labelTagName: 'h3' // labels should come before other child content
     }, options );
 
     const self = this;
@@ -68,7 +68,7 @@ define( require => {
       fill: '#000',
       centerX: 300,
       centerY: 0,
-      tandem: tandem.createTandem( 'equalsSign' )
+      tandem: options.tandem.createTandem( 'equalsSign' )
     } );
 
     // Create the Current Letter
@@ -77,7 +77,7 @@ define( require => {
       fill: PhetColorScheme.RED_COLORBLIND,
       centerX: 0,
       centerY: 0,
-      tandem: tandem.createTandem( 'currentLetter' )
+      tandem: options.tandem.createTandem( 'currentLetter' )
     } );
 
     // Create the node that contains the text
@@ -96,7 +96,7 @@ define( require => {
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
       centerY: 0,
-      tandem: tandem.createTandem( 'voltageLetter' )
+      tandem: options.tandem.createTandem( 'voltageLetter' )
     } );
 
     // Create the node that contains the text
@@ -115,7 +115,7 @@ define( require => {
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
       centerY: 0,
-      tandem: tandem.createTandem( 'resistanceLetter' )
+      tandem: options.tandem.createTandem( 'resistanceLetter' )
     } );
 
     // Create the node that contains the text

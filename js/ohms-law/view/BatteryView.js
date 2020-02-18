@@ -13,11 +13,13 @@ define( require => {
   const inherit = require( 'PHET_CORE/inherit' );
   const LinearFunction = require( 'DOT/LinearFunction' );
   const LinearGradient = require( 'SCENERY/util/LinearGradient' );
+  const merge = require( 'PHET_CORE/merge' );
   const Node = require( 'SCENERY/nodes/Node' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const PhetFont = require( 'SCENERY_PHET/PhetFont' );
   const Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const Text = require( 'SCENERY/nodes/Text' );
   const Utils = require( 'DOT/Utils' );
 
@@ -45,11 +47,14 @@ define( require => {
   const NUB_FILL = '#dddddd';
 
   /**
-   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function BatteryView( tandem, options ) {
+  function BatteryView( options ) {
+
+    options = merge( {
+      tandem: Tandem.REQUIRED
+    }, options );
 
     Node.call( this );
 
@@ -65,8 +70,7 @@ define( require => {
     this.mainBody = new Rectangle( 0, 0, this.mainBodyWidth, BATTERY_HEIGHT, {
       stroke: '#000',
       fill: MAIN_BODY_FILL,
-      y: -BATTERY_HEIGHT / 2,
-      tandem: tandem.createTandem( 'mainBody' )
+      y: -BATTERY_HEIGHT / 2
     } );
     batteryNode.addChild( this.mainBody );
 
@@ -75,8 +79,7 @@ define( require => {
       stroke: '#000',
       fill: COPPER_PORTION_FILL,
       y: -BATTERY_HEIGHT / 2,
-      x: this.mainBodyWidth,
-      tandem: tandem.createTandem( 'copperPortion' )
+      x: this.mainBodyWidth
     } );
     batteryNode.addChild( this.copperPortion );
 
@@ -85,20 +88,20 @@ define( require => {
       stroke: '#000',
       fill: NUB_FILL,
       y: -NUB_HEIGHT / 2,
-      x: this.mainBodyWidth,
-      tandem: tandem.createTandem( 'nub' )
+      x: this.mainBodyWidth
     } );
     batteryNode.addChild( this.nub );
 
     this.addChild( batteryNode );
 
     // @private - Voltage label associated with the battery
-    this.batteryText = new Node( { x: 3, tandem: tandem.createTandem( 'batteryText' ) } );
+    this.batteryText = new Node( { x: 3, tandem: options.tandem.createTandem( 'batteryText' ) } );
 
     // @private
     this.voltageValueText = new Text( OhmsLawConstants.AA_VOLTAGE, {
       font: FONT,
-      tandem: tandem.createTandem( 'voltageValueText' )
+      tandem: options.tandem.createTandem( 'voltageValueText' ),
+      phetioReadyOnly: true
     } );
     this.batteryText.addChild( this.voltageValueText );
 
@@ -107,7 +110,7 @@ define( require => {
       fill: 'blue',
       x: VOLTAGE_STRING_MAX_WIDTH * 1.1,
       maxWidth: ( this.mainBodyWidth - VOLTAGE_STRING_MAX_WIDTH ) * 0.9, // limit to 90% of remaining space
-      tandem: tandem.createTandem( 'voltageUnitsText' )
+      tandem: options.tandem.createTandem( 'voltageUnitsText' )
     } );
     this.batteryText.addChild( voltageUnitsText );
 

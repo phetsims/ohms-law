@@ -11,11 +11,13 @@ define( require => {
   // modules
   const BatteryView = require( 'OHMS_LAW/ohms-law/view/BatteryView' );
   const inherit = require( 'PHET_CORE/inherit' );
+  const merge = require( 'PHET_CORE/merge' );
   const Node = require( 'SCENERY/nodes/Node' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const Utils = require( 'DOT/Utils' );
 
   // a11y strings
@@ -23,28 +25,30 @@ define( require => {
 
   /**
    * @param {Property.<number>} voltageProperty
-   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function BatteriesView( voltageProperty, tandem, options ) {
-    Node.call( this, {
-      tandem: tandem,
+  function BatteriesView( voltageProperty, options ) {
+
+    options = merge( {
+      tandem: Tandem.REQUIRED,
 
       // a11y
       tagName: 'li' // this assumes that it is a child of a 'ul'
-    } );
+    }, options );
+
+    Node.call( this );
     const self = this;
 
     // Store battery nodes in an array
     const batteries = [];
 
-    const batteriesGroupTandem = tandem.createGroupTandem( 'battery' );
+    const batteriesGroupTandem = options.tandem.createGroupTandem( 'battery' );
 
     // Create an array of batteries; enough to fill the entire wire.
     for ( let i = 0; i < OhmsLawConstants.MAX_NUMBER_OF_BATTERIES; i++ ) {
       const leftPosition = i * OhmsLawConstants.BATTERY_WIDTH;
-      const battery = new BatteryView( batteriesGroupTandem.createNextTandem(), { x: leftPosition, y: 0 } );
+      const battery = new BatteryView( { x: leftPosition, y: 0, tandem: batteriesGroupTandem.createNextTandem() } );
 
       // Add them as children to this node, and to the array for manipulation
       this.addChild( battery );

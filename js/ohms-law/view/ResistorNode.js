@@ -21,6 +21,7 @@ define( require => {
   const Path = require( 'SCENERY/nodes/Path' );
   const Shape = require( 'KITE/Shape' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const Utils = require( 'DOT/Utils' );
 
   // a11y strings
@@ -68,13 +69,13 @@ define( require => {
 
   /**
    * @param {Property.<number>} resistanceProperty
-   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function ResistorNode( resistanceProperty, tandem, options ) {
+  function ResistorNode( resistanceProperty, options ) {
 
     options = merge( {
+      tandem: Tandem.required,
 
       // a11y
       tagName: 'li' // this assumes that it is a child of a 'ul'
@@ -89,29 +90,26 @@ define( require => {
       .ellipticalArc( RESISTOR_WIDTH / 2, 0, PERSPECTIVE_FACTOR * RESISTOR_HEIGHT / 2, RESISTOR_HEIGHT / 2, 0, Math.PI / 2, 3 * Math.PI / 2, true )
       .horizontalLineToRelative( -RESISTOR_WIDTH ), {
       stroke: 'black',
-      fill: BODY_FILL_GRADIENT,
-      tandem: tandem.createTandem( 'bodyPath' )
+      fill: BODY_FILL_GRADIENT
     } );
     this.addChild( bodyPath );
 
     // Cap/end of the wire
     const endPath = new Path( Shape.ellipse( -RESISTOR_WIDTH / 2, 0, RESISTOR_HEIGHT * PERSPECTIVE_FACTOR / 2, RESISTOR_HEIGHT / 2 ), {
       stroke: 'black',
-      fill: '#ff9f9f',
-      tandem: tandem.createTandem( 'endPath' )
+      fill: '#ff9f9f'
     } );
     this.addChild( endPath );
 
     // Short stub of wire near the cap of wire
     const stubWirePath = new Path( new Shape().moveTo( 5 - RESISTOR_WIDTH / 2, 0 ).horizontalLineToRelative( -15 ), {
       stroke: '#000',
-      lineWidth: 10,
-      tandem: tandem.createTandem( 'stubWirePath' )
+      lineWidth: 10
     } );
     this.addChild( stubWirePath );
 
     // Dots representing charge scatterers.
-    const dotsNodeTandem = tandem.createTandem( 'dotsNode' );
+    const dotsNodeTandem = options.tandem.createTandem( 'dotsNode' );
     const dotsNode = new Node( { tandem: dotsNodeTandem } );
     const dotsGroupTandem = dotsNodeTandem.createGroupTandem( 'dot' );
 

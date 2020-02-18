@@ -21,6 +21,7 @@ define( require => {
   const PhetFont = require( 'SCENERY_PHET/PhetFont' );
   const Property = require( 'AXON/Property' );
   const Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const Text = require( 'SCENERY/nodes/Text' );
   const Utils = require( 'DOT/Utils' );
 
@@ -39,33 +40,32 @@ define( require => {
    * @param {Object} [options]
    * @constructor
    */
-  function ReadoutPanel( model, tandem, options ) {
+  function ReadoutPanel( model, options ) {
 
-    assert && assert( !options.tandem, 'Tandem should be supplied as a parameter' );
     options = merge( {
       xMargin: 30,
       yMargin: 8,
       lineWidth: 3,
       resize: false,
-      tandem: tandem
+      tandem: Tandem.REQUIRED
     }, options );
 
     const currentStringText = new Text( currentString, {
       font: FONT,
       fill: PhetColorScheme.RED_COLORBLIND,
-      tandem: tandem.createTandem( 'currentStringText' )
+      tandem: options.tandem.createTandem( 'currentStringText' )
     } );
 
     const equalsSign = new Text( '=', {
       font: FONT,
       fill: 'black',
-      tandem: tandem.createTandem( 'equalsSign' )
+      tandem: options.tandem.createTandem( 'equalsSign' )
     } );
 
     const currentValue = new Text( Utils.toFixed( OhmsLawModel.getMaxCurrent(), 1 ), {
       font: FONT,
       fill: 'black',
-      tandem: tandem.createTandem( 'currentValue' )
+      tandem: options.tandem.createTandem( 'currentValue' )
     } );
 
     // To keep the correct spacing as the current value changes
@@ -76,7 +76,7 @@ define( require => {
     const currentUnit = new Text( currentUnitsString, {
       font: FONT,
       fill: PhetColorScheme.RED_COLORBLIND,
-      tandem: tandem.createTandem( 'currentUnit' )
+      tandem: options.tandem.createTandem( 'currentUnit' )
     } );
 
     const textContainer = new HBox( {

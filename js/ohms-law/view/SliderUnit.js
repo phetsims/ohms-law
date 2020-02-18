@@ -16,6 +16,7 @@ define( require => {
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const OhmsLawConstants = require( 'OHMS_LAW/ohms-law/OhmsLawConstants' );
   const Rectangle = require( 'SCENERY/nodes/Rectangle' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const Text = require( 'SCENERY/nodes/Text' );
   const Utils = require( 'DOT/Utils' );
   const VBox = require( 'SCENERY/nodes/VBox' );
@@ -32,13 +33,19 @@ define( require => {
    * @param {string} nameString
    * @param {string} unitString
    * @param {string} labelContent - a11y, label read by a screen reader on focus
-   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function SliderUnit( property, range, symbolString, nameString, unitString, labelContent, tandem, options ) {
+  function SliderUnit( property, range, symbolString, nameString, unitString, labelContent, options ) {
 
     const self = this;
+
+    // options used by options below
+    options = merge( {
+
+      // phet-io
+      tandem: Tandem.REQUIRED // to be passed to supertype
+    }, options );
 
     options = merge( {
       sliderOptions: {
@@ -66,15 +73,11 @@ define( require => {
         a11yMapValue: value => Utils.toFixedNumber( value, options.decimalPlaces ),
 
         // phet-io
-        tandem: tandem.createTandem( 'slider' )
+        tandem: options.tandem.createTandem( 'slider' )
       },
 
       // {number}
-      decimalPlaces: 0,
-
-      // phet-io
-      tandem: tandem // to be passed to supertype
-
+      decimalPlaces: 0
     }, options );
 
     // override the start and end drag functions in the options
@@ -102,14 +105,14 @@ define( require => {
       font: OhmsLawConstants.SYMBOL_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       maxWidth: OhmsLawConstants.SLIDER_WIDTH,
-      tandem: tandem.createTandem( 'symbolText' )
+      tandem: options.tandem.createTandem( 'symbolText' )
     } );
 
     const nameText = new Text( nameString, {
       font: OhmsLawConstants.NAME_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       maxWidth: OhmsLawConstants.SLIDER_WIDTH,
-      tandem: tandem.createTandem( 'nameText' )
+      tandem: options.tandem.createTandem( 'nameText' )
     } );
 
     // positioned with `y` rather than using other bounds methods so the text is aligned correctly because text
@@ -122,7 +125,7 @@ define( require => {
     const valueText = new Text( Utils.toFixed( range.max, options.decimalPlaces ), {
       font: OhmsLawConstants.READOUT_FONT,
       fill: OhmsLawConstants.BLACK_COLOR,
-      tandem: tandem.createTandem( 'valueText' )
+      tandem: options.tandem.createTandem( 'valueText' )
     } );
 
     const unitText = new Text( unitString, {
@@ -132,7 +135,7 @@ define( require => {
 
       // Size the unit to be as big as possible next to the value with spacing.
       maxWidth: OhmsLawConstants.UNIT_MAX_WIDTH,
-      tandem: tandem.createTandem( 'unitText' )
+      tandem: options.tandem.createTandem( 'unitText' )
     } );
 
     // The readout should be horizontally aligned

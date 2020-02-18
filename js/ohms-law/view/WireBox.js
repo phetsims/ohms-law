@@ -22,6 +22,7 @@ define( require => {
   const ResistorNode = require( 'OHMS_LAW/ohms-law/view/ResistorNode' );
   const RightAngleArrow = require( 'OHMS_LAW/ohms-law/view/RightAngleArrow' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const Utils = require( 'DOT/Utils' );
 
   // a11y strings
@@ -38,16 +39,15 @@ define( require => {
   /**
    * @param {OhmsLawModel} model
    * @param {OhmsLawDescriber} ohmsLawDescriber
-   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function WireBox( model, ohmsLawDescriber, tandem, options ) {
+  function WireBox( model, ohmsLawDescriber, options ) {
 
     options = merge( {
 
       // phet-io
-      tandem: tandem,
+      tandem: Tandem.REQUIRED,
 
       // a11y
       tagName: 'ul',
@@ -63,34 +63,38 @@ define( require => {
     const wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, {
       stroke: '#000',
       lineWidth: WIRE_THICKNESS,
-      tandem: tandem.createTandem( 'wireFrame' )
+      tandem: options.tandem.createTandem( 'wireFrame' )
     } );
     this.addChild( wireFrame );
 
-    const batteriesView = new BatteriesView( model.voltageProperty, tandem.createTandem( 'batteriesView' ), {
+    const batteriesView = new BatteriesView( model.voltageProperty, {
       left: OhmsLawConstants.BATTERIES_OFFSET, // Slightly to the right of the wire
-      centerY: 0
+      centerY: 0,
+      tandem: options.tandem.createTandem( 'batteriesView' )
     } );
     this.addChild( batteriesView );
 
-    const resistorNode = new ResistorNode( model.resistanceProperty, tandem.createTandem( 'resistorNode' ), {
+    const resistorNode = new ResistorNode( model.resistanceProperty, {
       centerX: WIDTH / 2,
-      centerY: HEIGHT
+      centerY: HEIGHT,
+      tandem: options.tandem.createTandem( 'resistorNode' )
     } );
     this.addChild( resistorNode );
 
     // @private
-    this.bottomLeftArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomLeftArrow' ), {
+    this.bottomLeftArrow = new RightAngleArrow( model.currentProperty, {
       x: -OFFSET,
       y: HEIGHT + OFFSET,
-      rotation: Math.PI / 2
+      rotation: Math.PI / 2,
+      tandem: options.tandem.createTandem( 'bottomLeftArrow' )
     } );
     this.addChild( this.bottomLeftArrow );
 
-    const bottomRightArrow = new RightAngleArrow( model.currentProperty, tandem.createTandem( 'bottomRightArrow' ), {
+    const bottomRightArrow = new RightAngleArrow( model.currentProperty, {
       x: WIDTH + OFFSET,
       y: HEIGHT + OFFSET,
-      rotation: 0
+      rotation: 0,
+      tandem: options.tandem.createTandem( 'bottomRightArrow' )
     } );
     this.addChild( bottomRightArrow );
 
@@ -99,9 +103,10 @@ define( require => {
     const accessibleCurrentNode = new Node( { tagName: 'li' } );
     this.addChild( accessibleCurrentNode );
 
-    const currentReadoutPanel = new ReadoutPanel( model, tandem.createTandem( 'currentReadoutPanel' ), {
+    const currentReadoutPanel = new ReadoutPanel( model, {
       centerY: HEIGHT / 2,
-      centerX: WIDTH / 2
+      centerX: WIDTH / 2,
+      tandem: options.tandem.createTandem( 'currentReadoutPanel' )
     } );
     this.addChild( currentReadoutPanel );
 
