@@ -12,10 +12,12 @@ define( require => {
 
   // modules
   const inherit = require( 'PHET_CORE/inherit' );
+  const merge = require( 'PHET_CORE/merge' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
   const Path = require( 'SCENERY/nodes/Path' );
   const PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
   const Shape = require( 'KITE/Shape' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const Vector2 = require( 'DOT/Vector2' );
 
   // constants
@@ -34,17 +36,13 @@ define( require => {
 
   /**
    * @param {Property.<number>} currentProperty
-   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function RightAngleArrow( currentProperty, tandem, options ) {
+  function RightAngleArrow( currentProperty, options ) {
     const self = this;
 
-    // create the shape of the arrow
-    const arrowShape = new Shape().polygon( POINTS );
-
-    Path.call( this, arrowShape, {
+    options = merge( {
       stroke: '#000',
       fill: PhetColorScheme.RED_COLORBLIND,
       lineWidth: 0.2,
@@ -52,8 +50,14 @@ define( require => {
       // The arrow increased in size when the layout bounds were increased. Rather than drawing a new shape, just
       // scale it back. Part of https://github.com/phetsims/ohms-law/issues/62.
       scale: .85,
-      tandem: tandem
-    } );
+
+      tandem: Tandem.REQUIRED
+    }, options );
+
+    // create the shape of the arrow
+    const arrowShape = new Shape().polygon( POINTS );
+
+    Path.call( this, arrowShape, options );
 
     // Present for the lifetime of the simulation
     currentProperty.lazyLink( function( current ) {
@@ -64,8 +68,6 @@ define( require => {
 
       self.setScaleMagnitude( scale );
     } );
-
-    this.mutate( options );
   }
 
   ohmsLaw.register( 'RightAngleArrow', RightAngleArrow );

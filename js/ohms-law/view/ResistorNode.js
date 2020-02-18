@@ -21,6 +21,7 @@ define( require => {
   const Path = require( 'SCENERY/nodes/Path' );
   const Shape = require( 'KITE/Shape' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const Utils = require( 'DOT/Utils' );
 
   // a11y strings
@@ -68,13 +69,13 @@ define( require => {
 
   /**
    * @param {Property.<number>} resistanceProperty
-   * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function ResistorNode( resistanceProperty, tandem, options ) {
+  function ResistorNode( resistanceProperty, options ) {
 
     options = merge( {
+      tandem: Tandem.required,
 
       // a11y
       tagName: 'li' // this assumes that it is a child of a 'ul'
@@ -90,7 +91,7 @@ define( require => {
       .horizontalLineToRelative( -RESISTOR_WIDTH ), {
       stroke: 'black',
       fill: BODY_FILL_GRADIENT,
-      tandem: tandem.createTandem( 'bodyPath' )
+      tandem: options.tandem.createTandem( 'bodyPath' )
     } );
     this.addChild( bodyPath );
 
@@ -98,7 +99,7 @@ define( require => {
     const endPath = new Path( Shape.ellipse( -RESISTOR_WIDTH / 2, 0, RESISTOR_HEIGHT * PERSPECTIVE_FACTOR / 2, RESISTOR_HEIGHT / 2 ), {
       stroke: 'black',
       fill: '#ff9f9f',
-      tandem: tandem.createTandem( 'endPath' )
+      tandem: options.tandem.createTandem( 'endPath' )
     } );
     this.addChild( endPath );
 
@@ -106,12 +107,12 @@ define( require => {
     const stubWirePath = new Path( new Shape().moveTo( 5 - RESISTOR_WIDTH / 2, 0 ).horizontalLineToRelative( -15 ), {
       stroke: '#000',
       lineWidth: 10,
-      tandem: tandem.createTandem( 'stubWirePath' )
+      tandem: options.tandem.createTandem( 'stubWirePath' )
     } );
     this.addChild( stubWirePath );
 
     // Dots representing charge scatterers.
-    const dotsNodeTandem = tandem.createTandem( 'dotsNode' );
+    const dotsNodeTandem = options.tandem.createTandem( 'dotsNode' );
     const dotsNode = new Node( { tandem: dotsNodeTandem } );
     const dotsGroupTandem = dotsNodeTandem.createGroupTandem( 'dot' );
 

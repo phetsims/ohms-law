@@ -21,6 +21,7 @@ define( require => {
   const Panel = require( 'SUN/Panel' );
   const SliderUnit = require( 'OHMS_LAW/ohms-law/view/SliderUnit' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  const Tandem = require( 'TANDEM/Tandem' );
   const ValueChangeUtterance = require( 'UTTERANCE_QUEUE/ValueChangeUtterance' );
 
   // strings
@@ -50,11 +51,10 @@ define( require => {
   /**
    * @param {OhmsLawModel} model
    * @param {OhmsLawDescriber} ohmsLawDescriber
-   * @param {Tandem} tandem
-   * @param options
+   * @param {Object} [options]
    * @constructor
    */
-  function ControlPanel( model, ohmsLawDescriber, tandem, options ) {
+  function ControlPanel( model, ohmsLawDescriber, options ) {
 
     options = merge( {
       xMargin: 30,
@@ -62,7 +62,7 @@ define( require => {
       lineWidth: 3,
       resize: false,
       preventFit: true, // used to avoid jostling in the control panel when the resistance changes quickly, see https://github.com/phetsims/ohms-law/issues/68
-      tandem: tandem
+      tandem: Tandem.REQUIRED
     }, options );
 
     const voltageProperty = model.voltageProperty;
@@ -83,7 +83,6 @@ define( require => {
       voltageString,
       voltageUnitsString,
       voltageSliderLabelString,
-      tandem.createTandem( 'voltageSlider' ),
       {
         sliderOptions: {
 
@@ -105,7 +104,8 @@ define( require => {
           }
         },
 
-        decimalPlaces: OhmsLawConstants.VOLTAGE_SIG_FIGS
+        decimalPlaces: OhmsLawConstants.VOLTAGE_SIG_FIGS,
+        tandem: options.tandem.createTandem( 'voltageSlider' )
       }
     );
 
@@ -144,7 +144,6 @@ define( require => {
       resistanceString,
       MathSymbols.OHMS,
       resistanceSliderLabelString,
-      tandem.createTandem( 'resistanceSlider' ),
       {
         sliderOptions: {
 
@@ -158,7 +157,8 @@ define( require => {
           },
           endDrag: endResistanceDrag
         },
-        decimalPlaces: OhmsLawConstants.RESISTANCE_SIG_FIGS
+        decimalPlaces: OhmsLawConstants.RESISTANCE_SIG_FIGS,
+        tandem: options.tandem.createTandem( 'resistanceSlider' )
       } );
 
     // Use a content node so that the Panel can surround it fully
