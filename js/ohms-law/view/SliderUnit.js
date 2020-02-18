@@ -60,7 +60,7 @@ define( require => {
         keyboardStep: 1,  // delta for keyboard step
         shiftKeyboardStep: 0.1, // delta when holding shift
         roundToStepSize: true, // so default keyboard step rounds to pedagogically useful values
-        containerTagName: 'li',
+        containerTagName: 'div', // this div helps the a11y view look a bit better
         labelContent: labelContent,
         labelTagName: 'label',
         a11yMapValue: value => Utils.toFixedNumber( value, options.decimalPlaces ),

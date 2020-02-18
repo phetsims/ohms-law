@@ -183,13 +183,6 @@ define( require => {
       }
     );
 
-    // a11y - the content is aria-labelledby the content's label sibling
-    content.addAriaLabelledbyAssociation( {
-      thisElementName: AccessiblePeer.PRIMARY_SIBLING,
-      otherNode: content,
-      otherElementName: AccessiblePeer.LABEL_SIBLING
-    } );
-
     Panel.call( this, content, options );
   }
 
