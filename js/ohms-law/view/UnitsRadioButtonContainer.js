@@ -9,6 +9,7 @@ define( require => {
   'use strict';
 
   // modules
+  const AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
   const CurrentUnit = require( 'OHMS_LAW/ohms-law/model/CurrentUnit' );
   const merge = require( 'PHET_CORE/merge' );
   const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
@@ -69,6 +70,13 @@ define( require => {
         labelContent: unitsString,
         descriptionContent: chooseUnitForCurrentString,
         tandem: options.tandem.createTandem( 'currentUnitRadioButtonGroup' )
+      } );
+
+      // a11y - the radio button group is aria-labelledby the heading
+      currentUnitRadioButtonGroup.addAriaLabelledbyAssociation( {
+        thisElementName: AccessiblePeer.PRIMARY_SIBLING,
+        otherNode: currentUnitRadioButtonGroup,
+        otherElementName: AccessiblePeer.LABEL_SIBLING
       } );
 
       super( {
