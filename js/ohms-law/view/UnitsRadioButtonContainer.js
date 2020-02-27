@@ -5,88 +5,84 @@
  *
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const AccessiblePeer = require( 'SCENERY/accessibility/AccessiblePeer' );
-  const CurrentUnit = require( 'OHMS_LAW/ohms-law/model/CurrentUnit' );
-  const merge = require( 'PHET_CORE/merge' );
-  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  const OhmsLawA11yStrings = require( 'OHMS_LAW/ohms-law/OhmsLawA11yStrings' );
-  const PhetFont = require( 'SCENERY_PHET/PhetFont' );
-  const RichText = require( 'SCENERY/nodes/RichText' );
-  const Tandem = require( 'TANDEM/Tandem' );
-  const Text = require( 'SCENERY/nodes/Text' );
-  const VBox = require( 'SCENERY/nodes/VBox' );
-  const VerticalAquaRadioButtonGroup = require( 'SUN/VerticalAquaRadioButtonGroup' );
+import merge from '../../../../phet-core/js/merge.js';
+import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
+import AccessiblePeer from '../../../../scenery/js/accessibility/AccessiblePeer.js';
+import RichText from '../../../../scenery/js/nodes/RichText.js';
+import Text from '../../../../scenery/js/nodes/Text.js';
+import VBox from '../../../../scenery/js/nodes/VBox.js';
+import VerticalAquaRadioButtonGroup from '../../../../sun/js/VerticalAquaRadioButtonGroup.js';
+import Tandem from '../../../../tandem/js/Tandem.js';
+import ohmsLawStrings from '../../ohms-law-strings.js';
+import ohmsLaw from '../../ohmsLaw.js';
+import CurrentUnit from '../model/CurrentUnit.js';
+import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 
-  // strings
-  const ampsAString = require( 'string!OHMS_LAW/ampsA' );
-  const milliampsMAString = require( 'string!OHMS_LAW/milliampsMA' );
-  const unitsString = require( 'string!OHMS_LAW/units' );
+const ampsAString = ohmsLawStrings.ampsA;
+const milliampsMAString = ohmsLawStrings.milliampsMA;
+const unitsString = ohmsLawStrings.units;
 
-  // a11y strings
-  const chooseUnitForCurrentString = OhmsLawA11yStrings.chooseUnitForCurrent.value;
+// a11y strings
+const chooseUnitForCurrentString = OhmsLawA11yStrings.chooseUnitForCurrent.value;
 
-  // constants
-  const MAX_WIDTH = 250;
-  const RADIO_BUTTON_TEXT_OPTIONS = { font: new PhetFont( 20 ), maxWidth: MAX_WIDTH };
+// constants
+const MAX_WIDTH = 250;
+const RADIO_BUTTON_TEXT_OPTIONS = { font: new PhetFont( 20 ), maxWidth: MAX_WIDTH };
 
-  class UnitsRadioButtonContainer extends VBox {
+class UnitsRadioButtonContainer extends VBox {
 
-    /**
-     * @param {Property.<CurrentUnit>}currentUnitsProperty
-     * @param {Object} [options] - not passed to supertype
-     */
-    constructor( currentUnitsProperty, options ) {
+  /**
+   * @param {Property.<CurrentUnit>}currentUnitsProperty
+   * @param {Object} [options] - not passed to supertype
+   */
+  constructor( currentUnitsProperty, options ) {
 
-      merge( {
-        tandem: Tandem.REQUIRED,
-        tagName: 'div'
-      }, options );
+    merge( {
+      tandem: Tandem.REQUIRED,
+      tagName: 'div'
+    }, options );
 
-      const unitsHeading = new RichText( unitsString, {
-        font: new PhetFont( {
-          size: 22,
-          weight: 'bold'
-        } ),
-        maxWidth: MAX_WIDTH
-      } );
+    const unitsHeading = new RichText( unitsString, {
+      font: new PhetFont( {
+        size: 22,
+        weight: 'bold'
+      } ),
+      maxWidth: MAX_WIDTH
+    } );
 
-      const currentUnitRadioButtonGroup = new VerticalAquaRadioButtonGroup( currentUnitsProperty, [
-        {
-          node: new Text( milliampsMAString, RADIO_BUTTON_TEXT_OPTIONS ),
-          value: CurrentUnit.MILLIAMPS,
-          tandemName: 'milliampsRadioButton',
-          labelContent: milliampsMAString
-        }, {
-          node: new Text( ampsAString, RADIO_BUTTON_TEXT_OPTIONS ),
-          value: CurrentUnit.AMPS,
-          tandemName: 'ampsRadioButton',
-          labelContent: ampsAString
-        } ], {
-        labelTagName: 'h3',
-        labelContent: unitsString,
-        descriptionContent: chooseUnitForCurrentString,
-        tandem: options.tandem.createTandem( 'currentUnitRadioButtonGroup' )
-      } );
+    const currentUnitRadioButtonGroup = new VerticalAquaRadioButtonGroup( currentUnitsProperty, [
+      {
+        node: new Text( milliampsMAString, RADIO_BUTTON_TEXT_OPTIONS ),
+        value: CurrentUnit.MILLIAMPS,
+        tandemName: 'milliampsRadioButton',
+        labelContent: milliampsMAString
+      }, {
+        node: new Text( ampsAString, RADIO_BUTTON_TEXT_OPTIONS ),
+        value: CurrentUnit.AMPS,
+        tandemName: 'ampsRadioButton',
+        labelContent: ampsAString
+      } ], {
+      labelTagName: 'h3',
+      labelContent: unitsString,
+      descriptionContent: chooseUnitForCurrentString,
+      tandem: options.tandem.createTandem( 'currentUnitRadioButtonGroup' )
+    } );
 
-      // a11y - the radio button group is aria-labelledby the heading
-      currentUnitRadioButtonGroup.addAriaLabelledbyAssociation( {
-        thisElementName: AccessiblePeer.PRIMARY_SIBLING,
-        otherNode: currentUnitRadioButtonGroup,
-        otherElementName: AccessiblePeer.LABEL_SIBLING
-      } );
+    // a11y - the radio button group is aria-labelledby the heading
+    currentUnitRadioButtonGroup.addAriaLabelledbyAssociation( {
+      thisElementName: AccessiblePeer.PRIMARY_SIBLING,
+      otherNode: currentUnitRadioButtonGroup,
+      otherElementName: AccessiblePeer.LABEL_SIBLING
+    } );
 
-      super( {
-        children: [ unitsHeading, currentUnitRadioButtonGroup ],
-        align: 'left',
-        spacing: 10
-      } );
-    }
+    super( {
+      children: [ unitsHeading, currentUnitRadioButtonGroup ],
+      align: 'left',
+      spacing: 10
+    } );
   }
+}
 
-  return ohmsLaw.register( 'UnitsRadioButtonContainer', UnitsRadioButtonContainer );
-
-} );
+ohmsLaw.register( 'UnitsRadioButtonContainer', UnitsRadioButtonContainer );
+export default UnitsRadioButtonContainer;

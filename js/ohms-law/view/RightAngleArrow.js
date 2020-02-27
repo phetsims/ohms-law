@@ -7,70 +7,67 @@
  * @author Vasily Shakhov (Mlearner)
  * @author Anton Ulyanov (Mlearner)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const inherit = require( 'PHET_CORE/inherit' );
-  const merge = require( 'PHET_CORE/merge' );
-  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  const Path = require( 'SCENERY/nodes/Path' );
-  const PhetColorScheme = require( 'SCENERY_PHET/PhetColorScheme' );
-  const Shape = require( 'KITE/Shape' );
-  const Tandem = require( 'TANDEM/Tandem' );
-  const Vector2 = require( 'DOT/Vector2' );
+import Vector2 from '../../../../dot/js/Vector2.js';
+import Shape from '../../../../kite/js/Shape.js';
+import inherit from '../../../../phet-core/js/inherit.js';
+import merge from '../../../../phet-core/js/merge.js';
+import PhetColorScheme from '../../../../scenery-phet/js/PhetColorScheme.js';
+import Path from '../../../../scenery/js/nodes/Path.js';
+import Tandem from '../../../../tandem/js/Tandem.js';
+import ohmsLaw from '../../ohmsLaw.js';
 
-  // constants
-  // points for the arrow
-  const POINTS = [
-    new Vector2( 5, -30 ),  // inner tail of arrow
-    new Vector2( 13, -30 ), // outer tail of arrow
-    new Vector2( 13, 13 ),  // outer corner
-    new Vector2( -25, 13 ),
-    new Vector2( -25, 17 ),
-    new Vector2( -40, 8.5 ), // tip of the arrow head
-    new Vector2( -25, 0 ),
-    new Vector2( -25, 5 ),
-    new Vector2( 5, 5 ) // inner corner
-  ];
+// constants
+// points for the arrow
+const POINTS = [
+  new Vector2( 5, -30 ),  // inner tail of arrow
+  new Vector2( 13, -30 ), // outer tail of arrow
+  new Vector2( 13, 13 ),  // outer corner
+  new Vector2( -25, 13 ),
+  new Vector2( -25, 17 ),
+  new Vector2( -40, 8.5 ), // tip of the arrow head
+  new Vector2( -25, 0 ),
+  new Vector2( -25, 5 ),
+  new Vector2( 5, 5 ) // inner corner
+];
 
-  /**
-   * @param {Property.<number>} currentProperty
-   * @param {Object} [options]
-   * @constructor
-   */
-  function RightAngleArrow( currentProperty, options ) {
-    const self = this;
+/**
+ * @param {Property.<number>} currentProperty
+ * @param {Object} [options]
+ * @constructor
+ */
+function RightAngleArrow( currentProperty, options ) {
+  const self = this;
 
-    options = merge( {
-      stroke: '#000',
-      fill: PhetColorScheme.RED_COLORBLIND,
-      lineWidth: 0.2,
+  options = merge( {
+    stroke: '#000',
+    fill: PhetColorScheme.RED_COLORBLIND,
+    lineWidth: 0.2,
 
-      // The arrow increased in size when the layout bounds were increased. Rather than drawing a new shape, just
-      // scale it back. Part of https://github.com/phetsims/ohms-law/issues/62.
-      scale: .85,
+    // The arrow increased in size when the layout bounds were increased. Rather than drawing a new shape, just
+    // scale it back. Part of https://github.com/phetsims/ohms-law/issues/62.
+    scale: .85,
 
-      tandem: Tandem.REQUIRED
-    }, options );
+    tandem: Tandem.REQUIRED
+  }, options );
 
-    // create the shape of the arrow
-    const arrowShape = new Shape().polygon( POINTS );
+  // create the shape of the arrow
+  const arrowShape = new Shape().polygon( POINTS );
 
-    Path.call( this, arrowShape, options );
+  Path.call( this, arrowShape, options );
 
-    // Present for the lifetime of the simulation
-    currentProperty.lazyLink( function( current ) {
+  // Present for the lifetime of the simulation
+  currentProperty.lazyLink( function( current ) {
 
-      // Scale the arrows based on the value of the current.
-      // Exponential scaling algorithm.  Linear makes the changes too big.
-      const scale = Math.pow( ( current * 0.1 ), 0.7 );
+    // Scale the arrows based on the value of the current.
+    // Exponential scaling algorithm.  Linear makes the changes too big.
+    const scale = Math.pow( ( current * 0.1 ), 0.7 );
 
-      self.setScaleMagnitude( scale );
-    } );
-  }
+    self.setScaleMagnitude( scale );
+  } );
+}
 
-  ohmsLaw.register( 'RightAngleArrow', RightAngleArrow );
+ohmsLaw.register( 'RightAngleArrow', RightAngleArrow );
 
-  return inherit( Path, RightAngleArrow );
-} );
+inherit( Path, RightAngleArrow );
+export default RightAngleArrow;

@@ -6,38 +6,35 @@
  *
  * @author Martin Veillette (Berea College)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const Color = require( 'SCENERY/util/Color' );
-  const ColorIO = require( 'SCENERY/util/ColorIO' );
-  const inherit = require( 'PHET_CORE/inherit' );
-  const ohmsLaw = require( 'OHMS_LAW/ohmsLaw' );
-  const OhmsLawModel = require( 'OHMS_LAW/ohms-law/model/OhmsLawModel' );
-  const OhmsLawScreenView = require( 'OHMS_LAW/ohms-law/view/OhmsLawScreenView' );
-  const Property = require( 'AXON/Property' );
-  const PropertyIO = require( 'AXON/PropertyIO' );
-  const Screen = require( 'JOIST/Screen' );
+import Property from '../../../axon/js/Property.js';
+import PropertyIO from '../../../axon/js/PropertyIO.js';
+import Screen from '../../../joist/js/Screen.js';
+import inherit from '../../../phet-core/js/inherit.js';
+import Color from '../../../scenery/js/util/Color.js';
+import ColorIO from '../../../scenery/js/util/ColorIO.js';
+import ohmsLaw from '../ohmsLaw.js';
+import OhmsLawModel from './model/OhmsLawModel.js';
+import OhmsLawScreenView from './view/OhmsLawScreenView.js';
 
-  /**
-   * @constructor
-   */
-  function OhmsLawScreen( tandem ) {
-    Screen.call( this,
-      function() { return new OhmsLawModel( tandem.createTandem( 'model' ) ); },
-      function( model ) { return new OhmsLawScreenView( model, tandem.createTandem( 'view' ) ); },
-      {
-        backgroundColorProperty: new Property( new Color( '#ffffdf' ), {
-          tandem: tandem.createTandem( 'backgroundColorProperty' ),
-          phetioType: PropertyIO( ColorIO )
-        } ),
-        tandem: tandem
-      }
-    );
-  }
+/**
+ * @constructor
+ */
+function OhmsLawScreen( tandem ) {
+  Screen.call( this,
+    function() { return new OhmsLawModel( tandem.createTandem( 'model' ) ); },
+    function( model ) { return new OhmsLawScreenView( model, tandem.createTandem( 'view' ) ); },
+    {
+      backgroundColorProperty: new Property( new Color( '#ffffdf' ), {
+        tandem: tandem.createTandem( 'backgroundColorProperty' ),
+        phetioType: PropertyIO( ColorIO )
+      } ),
+      tandem: tandem
+    }
+  );
+}
 
-  ohmsLaw.register( 'OhmsLawScreen', OhmsLawScreen );
+ohmsLaw.register( 'OhmsLawScreen', OhmsLawScreen );
 
-  return inherit( Screen, OhmsLawScreen );
-} );
+inherit( Screen, OhmsLawScreen );
+export default OhmsLawScreen;
