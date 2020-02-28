@@ -1,4 +1,4 @@
-// Copyright 2019, University of Colorado Boulder
+// Copyright 2019-2020, University of Colorado Boulder
 
 /**
  * A sound generator used to indicate the amount of current flowing in the Ohm's Law simulation.  This monitors the
