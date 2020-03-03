@@ -7,7 +7,7 @@
   <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1"/>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="phet-sim-level" content="development">
-  
+
   <title>ohms-law</title>
 </head>
 
@@ -19,8 +19,64 @@
 
   window.phet = window.phet || {};
   window.phet.chipper = window.phet.chipper || {};
-  window.phet.chipper.packageObject = {"name":"ohms-law","version":"1.5.0-dev.3","license":"GPL-3.0","repository":{"type":"git","url":"https://github.com/phetsims/ohms-law.git"},"devDependencies":{"grunt":"~1.0.0"},"phet":{"requirejsNamespace":"OHMS_LAW","phetLibs":["vibe"],"runnable":true,"supportedBrands":["phet","phet-io","adapted-from-phet"],"accessible":true,"supportsSound":true,"simulation":true},"eslintConfig":{"extends":"../chipper/eslint/sim_eslintrc.js"}};
-  window.phet.chipper.stringRepos = [{"repo":"joist","requirejsNamespace":"JOIST"},{"repo":"ohms-law","requirejsNamespace":"OHMS_LAW"},{"repo":"scenery-phet","requirejsNamespace":"SCENERY_PHET"},{"repo":"sun","requirejsNamespace":"SUN"},{"repo":"tambo","requirejsNamespace":"TAMBO"},{"repo":"vibe","requirejsNamespace":"VIBE"}];
+  window.phet.chipper.packageObject =
+    {
+      "name": "ohms-law",
+      "version": "1.5.0-dev.3",
+      "license": "GPL-3.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/phetsims/ohms-law.git"
+      },
+      "devDependencies": {
+        "grunt": "~1.0.0"
+      },
+      "phet": {
+        "requirejsNamespace": "OHMS_LAW",
+        "phetLibs": [
+          "vibe"
+        ],
+        "runnable": true,
+        "supportedBrands": [
+          "phet",
+          "phet-io",
+          "adapted-from-phet"
+        ],
+        "accessible": true,
+        "supportsSound": true,
+        "simulation": true
+      },
+      "eslintConfig": {
+        "extends": "../chipper/eslint/sim_eslintrc.js"
+      }
+    };
+  window.phet.chipper.stringRepos =
+    [
+      {
+        "repo": "joist",
+        "requirejsNamespace": "JOIST"
+      },
+      {
+        "repo": "ohms-law",
+        "requirejsNamespace": "OHMS_LAW"
+      },
+      {
+        "repo": "scenery-phet",
+        "requirejsNamespace": "SCENERY_PHET"
+      },
+      {
+        "repo": "sun",
+        "requirejsNamespace": "SUN"
+      },
+      {
+        "repo": "tambo",
+        "requirejsNamespace": "TAMBO"
+      },
+      {
+        "repo": "vibe",
+        "requirejsNamespace": "VIBE"
+      }
+    ];
 
   // Identify the brand (assume generated brand if not provided with query parameters)
   const brandMatch = location.search.match( /brand=([^&]+)/ );
