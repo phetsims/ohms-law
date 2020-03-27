@@ -28,30 +28,33 @@ function OhmsLawModel( tandem ) {
   this.voltageProperty = new NumberProperty( OhmsLawConstants.VOLTAGE_RANGE.getDefaultValue(), {
     tandem: tandem.createTandem( 'voltageProperty' ),
     units: 'volts',
-    range: OhmsLawConstants.VOLTAGE_RANGE
+    range: OhmsLawConstants.VOLTAGE_RANGE,
+    phetioDocumentation: 'The voltage in the circuit'
   } );
 
   // @public {Property.<number>} in Ohms
   this.resistanceProperty = new NumberProperty( OhmsLawConstants.RESISTANCE_RANGE.getDefaultValue(), {
     tandem: tandem.createTandem( 'resistanceProperty' ),
     units: 'ohms',
-    range: OhmsLawConstants.RESISTANCE_RANGE
+    range: OhmsLawConstants.RESISTANCE_RANGE,
+    phetioDocumentation: 'The resistance in the circuit'
   } );
 
   // @public {Property.<number>} create a derived property that tracks the current in milli amps
   this.currentProperty = new DerivedProperty(
     [ this.voltageProperty, this.resistanceProperty ],
-    computeCurrent,
-    {
+    computeCurrent, {
       tandem: tandem.createTandem( 'currentProperty' ),
       units: 'milliamperes',
-      phetioType: DerivedPropertyIO( NumberIO )
+      phetioType: DerivedPropertyIO( NumberIO ),
+      phetioDocumentation: 'The current flowing in the circuit'
     }
   );
 
   // @public
   this.currentUnitsProperty = new EnumerationProperty( CurrentUnit, CurrentUnit.MILLIAMPS, {
-    tandem: tandem.createTandem( 'currentUnitsProperty' )
+    tandem: tandem.createTandem( 'currentUnitsProperty' ),
+    phetioDocumentation: 'Determines the displayed unit for the current'
   } );
 
   // @public (read-only) {BooleanProperty} - true when a reset is in progress, false otherwise

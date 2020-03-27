@@ -1952,7 +1952,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO<ColorIO>"
     },
     "ohmsLaw.ohmsLawScreen.model.currentProperty": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "The current flowing in the circuit",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
       "phetioFeatured": false,
@@ -1965,7 +1965,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "DerivedPropertyIO<NumberIO>"
     },
     "ohmsLaw.ohmsLawScreen.model.currentUnitsProperty": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "Determines the displayed unit for the current",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
       "phetioFeatured": false,
@@ -1978,7 +1978,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO<EnumerationIO(MILLIAMPS|AMPS)>"
     },
     "ohmsLaw.ohmsLawScreen.model.resistanceProperty": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "The resistance in the circuit",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
       "phetioFeatured": false,
@@ -1991,7 +1991,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "NumberPropertyIO"
     },
     "ohmsLaw.ohmsLawScreen.model.voltageProperty": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "The voltage in the circuit",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
       "phetioFeatured": false,
@@ -2609,7 +2609,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioHighFrequency": false,
       "phetioIsArchetype": false,
       "phetioPlayback": false,
-      "phetioReadOnly": false,
+      "phetioReadOnly": true,
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<StringIO>"
@@ -3207,7 +3207,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioHighFrequency": false,
       "phetioIsArchetype": false,
       "phetioPlayback": false,
-      "phetioReadOnly": false,
+      "phetioReadOnly": true,
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<StringIO>"

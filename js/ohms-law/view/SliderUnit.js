@@ -122,7 +122,8 @@ function SliderUnit( property, range, symbolString, nameString, unitString, labe
   const valueText = new Text( Utils.toFixed( range.max, options.decimalPlaces ), {
     font: OhmsLawConstants.READOUT_FONT,
     fill: OhmsLawConstants.BLACK_COLOR,
-    tandem: options.tandem.createTandem( 'valueText' )
+    tandem: options.tandem.createTandem( 'valueText' ),
+    phetioComponentOptions: { textProperty: { phetioReadOnly: true } }
   } );
 
   const unitText = new Text( unitString, {
