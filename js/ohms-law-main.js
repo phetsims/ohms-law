@@ -20,7 +20,11 @@ const ohmsLawTitleString = ohmsLawStrings[ 'ohms-law' ].title;
 const tandem = Tandem.ROOT;
 
 // a11y - help content to describe keyboard interactions
-const keyboardHelpContent = new SliderAndGeneralKeyboardHelpContent();
+const keyboardHelpContent = new SliderAndGeneralKeyboardHelpContent( {
+  generalSectionOptions: {
+    withGroupContent: true
+  }
+} );
 
 const simOptions = {
   credits: {
