@@ -50,6 +50,7 @@ function ReadoutPanel( model, options ) {
   const currentStringText = new Text( currentString, {
     font: FONT,
     fill: PhetColorScheme.RED_COLORBLIND,
+    maxWidth: 110, // empirically determined
     tandem: options.tandem.createTandem( 'currentStringText' )
   } );
 
