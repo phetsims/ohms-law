@@ -57,13 +57,15 @@ function ReadoutPanel( model, options ) {
   const equalsSign = new Text( '=', {
     font: FONT,
     fill: 'black',
-    tandem: options.tandem.createTandem( 'equalsSign' )
+    tandem: options.tandem.createTandem( 'equalsSign' ),
+    phetioReadOnly: true
   } );
 
   const currentValue = new Text( Utils.toFixed( OhmsLawModel.getMaxCurrent(), 1 ), {
     font: FONT,
     fill: 'black',
-    tandem: options.tandem.createTandem( 'currentValue' )
+    tandem: options.tandem.createTandem( 'currentValue' ),
+    phetioReadOnly: true
   } );
 
   // To keep the correct spacing as the current value changes
@@ -74,7 +76,8 @@ function ReadoutPanel( model, options ) {
   const currentUnit = new Text( currentUnitsString, {
     font: FONT,
     fill: PhetColorScheme.RED_COLORBLIND,
-    tandem: options.tandem.createTandem( 'currentUnit' )
+    tandem: options.tandem.createTandem( 'currentUnit' ),
+    phetioReadOnly: true
   } );
 
   const textContainer = new HBox( {
