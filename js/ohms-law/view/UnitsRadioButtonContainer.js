@@ -8,7 +8,6 @@
 
 import merge from '../../../../phet-core/js/merge.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
-import AccessiblePeer from '../../../../scenery/js/accessibility/AccessiblePeer.js';
 import RichText from '../../../../scenery/js/nodes/RichText.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
 import VBox from '../../../../scenery/js/nodes/VBox.js';
@@ -67,13 +66,6 @@ class UnitsRadioButtonContainer extends VBox {
       labelContent: unitsString,
       descriptionContent: chooseUnitForCurrentString,
       tandem: options.tandem.createTandem( 'currentUnitRadioButtonGroup' )
-    } );
-
-    // a11y - the radio button group is aria-labelledby the heading
-    currentUnitRadioButtonGroup.addAriaLabelledbyAssociation( {
-      thisElementName: AccessiblePeer.PRIMARY_SIBLING,
-      otherNode: currentUnitRadioButtonGroup,
-      otherElementName: AccessiblePeer.LABEL_SIBLING
     } );
 
     super( {
