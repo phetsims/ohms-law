@@ -15,7 +15,7 @@ import HBox from '../../../../scenery/js/nodes/HBox.js';
 import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ValueChangeUtterance from '../../../../utterance-queue/js/ValueChangeUtterance.js';
-import ohmsLawStrings from '../../ohms-law-strings.js';
+import ohmsLawStrings from '../../ohmsLawStrings.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';

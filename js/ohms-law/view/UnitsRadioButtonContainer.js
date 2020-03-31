@@ -13,7 +13,7 @@ import Text from '../../../../scenery/js/nodes/Text.js';
 import VBox from '../../../../scenery/js/nodes/VBox.js';
 import VerticalAquaRadioButtonGroup from '../../../../sun/js/VerticalAquaRadioButtonGroup.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLawStrings from '../../ohms-law-strings.js';
+import ohmsLawStrings from '../../ohmsLawStrings.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import CurrentUnit from '../model/CurrentUnit.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';

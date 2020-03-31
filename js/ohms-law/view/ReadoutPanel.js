@@ -17,7 +17,7 @@ import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
 import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLawStrings from '../../ohms-law-strings.js';
+import ohmsLawStrings from '../../ohmsLawStrings.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import CurrentUnit from '../model/CurrentUnit.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
