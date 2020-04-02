@@ -1,5 +1,5 @@
 /* eslint-disable */
-window.phet.phetio.phetioElementsBaseline = assert &&
+window.phet.phetio.preload.phetioElementsBaseline = assert &&
   {
     "ohmsLaw.general.controller.input.changeAction": {
       "phetioDocumentation": "Emits when the PDOM root gets the change DOM event. The arguments are:<br/><ol><li>event: EventIO</li></ol>",
