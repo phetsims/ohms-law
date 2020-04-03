@@ -8,11 +8,10 @@
 
 import Sim from '../../joist/js/Sim.js';
 import SimLauncher from '../../joist/js/SimLauncher.js';
-import SliderAndGeneralKeyboardHelpContent
-  from '../../scenery-phet/js/keyboard/help/SliderAndGeneralKeyboardHelpContent.js';
+import SliderAndGeneralKeyboardHelpContent from '../../scenery-phet/js/keyboard/help/SliderAndGeneralKeyboardHelpContent.js';
 import Tandem from '../../tandem/js/Tandem.js';
-import ohmsLawStrings from './ohmsLawStrings.js';
 import OhmsLawScreen from './ohms-law/OhmsLawScreen.js';
+import ohmsLawStrings from './ohmsLawStrings.js';
 
 const ohmsLawTitleString = ohmsLawStrings[ 'ohms-law' ].title;
 
