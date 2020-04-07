@@ -42,7 +42,7 @@ const growsString = OhmsLawA11yStrings.grows.value;
 const aLotString = OhmsLawA11yStrings.aLot.value;
 
 // constants
-const NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes.value; // a11y - the number of sizes that letters can be described as.
+const NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes.value; // pdom - the number of sizes that letters can be described as.
 
 /**
  * @param {OhmsLawModel} model
@@ -65,7 +65,7 @@ function ControlPanel( model, ohmsLawDescriber, options ) {
   const resistanceProperty = model.resistanceProperty;
   const currentProperty = model.currentProperty;
 
-  // a11y - to alert changes to assistive devices
+  // pdom - to alert changes to assistive devices
   const resistanceUtterance = new ValueChangeUtterance();
   const voltageUtterance = new ValueChangeUtterance();
 
@@ -82,7 +82,7 @@ function ControlPanel( model, ohmsLawDescriber, options ) {
     {
       sliderOptions: {
 
-        // a11y
+        // pdom
         keyboardStep: 0.5, // volts
         a11yCreateAriaValueText: value => StringUtils.fillIn( voltageUnitsPatternString, { value: value } ),
         startDrag: function() {
@@ -92,7 +92,7 @@ function ControlPanel( model, ohmsLawDescriber, options ) {
           newVoltage = voltageProperty.get();
 
           if ( oldVoltage !== newVoltage ) {
-            // a11y - when V changes, announce an alert that describes the change
+            // pdom - when V changes, announce an alert that describes the change
             const sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
             voltageUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( letterVString, sizeChange, sizeChange );
             phet.joist.sim.utteranceQueue.addToBack( voltageUtterance );
@@ -114,7 +114,7 @@ function ControlPanel( model, ohmsLawDescriber, options ) {
   const currentRangePerSize = ( OhmsLawModel.getCurrentRange().max - OhmsLawModel.getCurrentRange().min ) / NUMBER_OF_LETTER_SIZES;
   const twoSizeCurrentThreshhold = currentRangePerSize * 2; // amount of current that must change to adjust change the current 2 a11y sizes.
 
-  // a11y - This function will create the string alert to notify the resistance slider has been changed.
+  // pdom - This function will create the string alert to notify the resistance slider has been changed.
   const endResistanceDrag = function() {
     newResistance = resistanceProperty.get();
     newCurrent = currentProperty.get();
@@ -143,7 +143,7 @@ function ControlPanel( model, ohmsLawDescriber, options ) {
     {
       sliderOptions: {
 
-        // a11y
+        // pdom
         keyboardStep: 20, // ohms
         shiftKeyboardStep: 1, // ohms
         a11yCreateAriaValueText: value => StringUtils.fillIn( resistanceUnitsPatternString, { value: value } ),
@@ -162,7 +162,7 @@ function ControlPanel( model, ohmsLawDescriber, options ) {
     spacing: 30, // empirically determined
     children: [ voltageSlider, resistanceSlider ],
 
-    // a11y - contain the sliders in a list
+    // pdom - contain the sliders in a list
     labelTagName: 'h3',
     tagName: 'div',
     labelContent: sliderControlsString,

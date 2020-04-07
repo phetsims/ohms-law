@@ -29,7 +29,7 @@ function BatteriesView( voltageProperty, options ) {
   options = merge( {
     tandem: Tandem.REQUIRED,
 
-    // a11y
+    // pdom
     tagName: 'li' // this assumes that it is a child of a 'ul'
   }, options );
 
@@ -68,7 +68,7 @@ function BatteriesView( voltageProperty, options ) {
       }
     } );
 
-    // a11y - update the description for the number of batteries
+    // pdom - update the description for the number of batteries
     self.innerContent = StringUtils.fillIn( batteriesSupplyPatternString, {
       voltage: Utils.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS )
     } );

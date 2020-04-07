@@ -60,7 +60,7 @@ function SliderUnit( property, range, symbolString, nameString, unitString, labe
       startDrag: _.noop,
       endDrag: _.noop,
 
-      // a11y
+      // pdom
       keyboardStep: 1,  // delta for keyboard step
       shiftKeyboardStep: 0.1, // delta when holding shift
       roundToStepSize: true, // so default keyboard step rounds to pedagogically useful values

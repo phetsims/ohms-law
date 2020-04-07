@@ -54,7 +54,7 @@ const DOT_GRID_ROWS = Utils.roundSymmetric( RESISTOR_HEIGHT / Math.sqrt( AREA_PE
 const DOT_GRID_COLUMNS = Utils.roundSymmetric( RESISTOR_WIDTH / Math.sqrt( AREA_PER_DOT ) );
 const MAX_DOTS = DOT_GRID_COLUMNS * DOT_GRID_ROWS;
 
-// a11y - Function to map resistance to number of dots
+// pdom - Function to map resistance to number of dots
 const RESISTANCE_TO_NUM_DOTS = new LinearFunction(
   OhmsLawConstants.RESISTANCE_RANGE.min,
   OhmsLawConstants.RESISTANCE_RANGE.max,
@@ -73,7 +73,7 @@ function ResistorNode( resistanceProperty, options ) {
   options = merge( {
     tandem: Tandem.required,
 
-    // a11y
+    // pdom
     tagName: 'li' // this assumes that it is a child of a 'ul'
   }, options );
 

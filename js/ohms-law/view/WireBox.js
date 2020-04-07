@@ -45,7 +45,7 @@ function WireBox( model, ohmsLawDescriber, options ) {
     // phet-io
     tandem: Tandem.REQUIRED,
 
-    // a11y
+    // pdom
     tagName: 'ul',
     labelTagName: 'h3',
     labelContent: circuitLabelString,
@@ -94,7 +94,7 @@ function WireBox( model, ohmsLawDescriber, options ) {
   } );
   this.addChild( bottomRightArrow );
 
-  // a11y - accessible description for the current
+  // pdom - accessible description for the current
   assert && assert( this.tagName.toUpperCase() === 'UL', 'li children assume list parent' );
   const accessibleCurrentNode = new Node( { tagName: 'li' } );
   this.addChild( accessibleCurrentNode );
@@ -115,7 +115,7 @@ function WireBox( model, ohmsLawDescriber, options ) {
   // reset the model after using to get height of arrows
   model.reset();
 
-  // a11y - when the current changes, update the accessible description
+  // pdom - when the current changes, update the accessible description
   Property.multilink( [ model.currentProperty, model.currentUnitsProperty ], () => {
     accessibleCurrentNode.innerContent = StringUtils.fillIn( currentDescriptionPatternString, {
       arrowSize: self.getArrowSizeDescription(),
@@ -124,7 +124,7 @@ function WireBox( model, ohmsLawDescriber, options ) {
     } );
   } );
 
-  // a11y - the order of descriptions should be batteries, resistance, then current
+  // pdom - the order of descriptions should be batteries, resistance, then current
   this.accessibleOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
 }
 

@@ -48,7 +48,7 @@ function FormulaNode( model, options ) {
   options = merge( {
     tandem: Tandem.required,
 
-    // a11y
+    // pdom
     labelContent: ohmsLawEquationString,
     descriptionContent: ohmsLawDefinitionString,
     tagName: 'div',

@@ -18,7 +18,7 @@ const ohmsLawTitleString = ohmsLawStrings[ 'ohms-law' ].title;
 // constants
 const tandem = Tandem.ROOT;
 
-// a11y - help content to describe keyboard interactions
+// pdom - help content to describe keyboard interactions
 const keyboardHelpContent = new SliderAndGeneralKeyboardHelpContent( {
   generalSectionOptions: {
     withGroupContent: true
