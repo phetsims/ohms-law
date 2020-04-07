@@ -28,7 +28,6 @@ const voltageString = ohmsLawStrings.voltage;
 const voltageSymbolString = ohmsLawStrings.voltageSymbol;
 const voltageUnitsString = ohmsLawStrings.voltageUnits;
 
-// a11y strings - these strings are not meant to be translatable until the translation utility
 // can provide translators with context
 const resistanceUnitsPatternString = OhmsLawA11yStrings.resistanceUnitsPattern.value;
 const voltageUnitsPatternString = OhmsLawA11yStrings.voltageUnitsPattern.value;

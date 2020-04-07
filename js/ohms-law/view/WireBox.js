@@ -22,7 +22,6 @@ import ReadoutPanel from './ReadoutPanel.js';
 import ResistorNode from './ResistorNode.js';
 import RightAngleArrow from './RightAngleArrow.js';
 
-// a11y strings
 const circuitLabelString = OhmsLawA11yStrings.circuitLabel.value;
 const circuitDescriptionString = OhmsLawA11yStrings.circuitDescription.value;
 const currentDescriptionPatternString = OhmsLawA11yStrings.currentDescriptionPattern.value;

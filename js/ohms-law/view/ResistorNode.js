@@ -21,7 +21,6 @@ import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
-// a11y strings
 const tinyAmountOfImpuritiesString = OhmsLawA11yStrings.tinyAmountOfImpurities.value;
 const verySmallAmountOfImpuritiesString = OhmsLawA11yStrings.verySmallAmountOfImpurities.value;
 const smallAmountOfImpuritiesString = OhmsLawA11yStrings.smallAmountOfImpurities.value;

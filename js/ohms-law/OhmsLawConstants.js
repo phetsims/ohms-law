@@ -12,7 +12,6 @@ import PhetFont from '../../../scenery-phet/js/PhetFont.js';
 import ohmsLaw from '../ohmsLaw.js';
 import OhmsLawA11yStrings from './OhmsLawA11yStrings.js';
 
-// a11y strings
 const tinyString = OhmsLawA11yStrings.tiny.value;
 const verySmallString = OhmsLawA11yStrings.verySmall.value;
 const smallString = OhmsLawA11yStrings.small.value;
@@ -114,8 +113,7 @@ const OhmsLawConstants = {
   AA_VOLTAGE: AA_VOLTAGE,
   BATTERY_WIDTH: ( WIRE_WIDTH - BATTERIES_OFFSET * 2 ) / MAX_NUMBER_OF_BATTERIES,
 
-  // a11y strings
-  RELATIVE_SIZE_STRINGS: [ tinyString, verySmallString, smallString, mediumSizeString,
+RELATIVE_SIZE_STRINGS: [ tinyString, verySmallString, smallString, mediumSizeString,
     largeString, veryLargeString, hugeString ],
 
   COMPARISON_SIZE_STRINGS: [ muchMuchSmallerThanString, muchSmallerThanString, slightlySmallerThanString,

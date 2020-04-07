@@ -22,7 +22,6 @@ const ampsAString = ohmsLawStrings.ampsA;
 const milliampsMAString = ohmsLawStrings.milliampsMA;
 const unitsString = ohmsLawStrings.units;
 
-// a11y strings
 const chooseUnitForCurrentString = OhmsLawA11yStrings.chooseUnitForCurrent.value;
 
 // constants

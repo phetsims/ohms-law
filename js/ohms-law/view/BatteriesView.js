@@ -17,7 +17,6 @@ import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import BatteryView from './BatteryView.js';
 
-// a11y strings
 const batteriesSupplyPatternString = OhmsLawA11yStrings.batteriesSupplyPattern.value;
 
 /**

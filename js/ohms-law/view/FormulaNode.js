@@ -27,7 +27,6 @@ const currentSymbolString = ohmsLawStrings.currentSymbol;
 const resistanceSymbolString = ohmsLawStrings.resistanceSymbol;
 const voltageSymbolString = ohmsLawStrings.voltageSymbol;
 
-// a11y strings
 const relativeSizePatternString = OhmsLawA11yStrings.relativeSizePattern.value;
 const ohmsLawEquationString = OhmsLawA11yStrings.ohmsLawEquation.value;
 const ohmsLawDefinitionString = OhmsLawA11yStrings.ohmsLawDefinition.value;

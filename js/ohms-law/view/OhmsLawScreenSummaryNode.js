@@ -15,7 +15,6 @@ import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
-// a11y strings
 const summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSliders.value;
 const summaryPlayAreaString = OhmsLawA11yStrings.summaryPlayArea.value;
 const summaryControlAreaString = OhmsLawA11yStrings.summaryControlArea.value;

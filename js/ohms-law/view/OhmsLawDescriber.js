@@ -11,7 +11,6 @@ import ohmsLaw from '../../ohmsLaw.js';
 import CurrentUnit from '../model/CurrentUnit.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 
-// a11y strings
 const currentMilliampsString = OhmsLawA11yStrings.currentMilliamps.value;
 const currentAmpsString = OhmsLawA11yStrings.currentAmps.value;
 const sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPattern.value;
