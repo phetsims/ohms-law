@@ -73,7 +73,7 @@ function computeCurrent( voltage, resistance ) {
 
 ohmsLaw.register( 'OhmsLawModel', OhmsLawModel );
 
-export default inherit( Object, OhmsLawModel, {
+inherit( Object, OhmsLawModel, {
 
   /**
    * resets the properties of the model
@@ -160,3 +160,5 @@ export default inherit( Object, OhmsLawModel, {
     return this.currentRange;
   }
 } );
+
+export default OhmsLawModel;

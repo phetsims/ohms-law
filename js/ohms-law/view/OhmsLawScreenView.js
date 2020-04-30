@@ -130,9 +130,11 @@ function OhmsLawScreenView( model, tandem ) {
 
 ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );
 
-export default inherit( ScreenView, OhmsLawScreenView, {
+inherit( ScreenView, OhmsLawScreenView, {
 
   step: function( dt ) {
     this.currentSoundGenerator.step( dt );
   }
 } );
+
+export default OhmsLawScreenView;

@@ -130,7 +130,7 @@ function WireBox( model, ohmsLawDescriber, options ) {
 
 ohmsLaw.register( 'WireBox', WireBox );
 
-export default inherit( Node, WireBox, {
+inherit( Node, WireBox, {
 
   /**
    * Get a description of the arrow size.  Returns omething like "small" or "huge" or "medium size".
@@ -165,3 +165,5 @@ export default inherit( Node, WireBox, {
     return OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ].toLowerCase();
   }
 } );
+
+export default WireBox;

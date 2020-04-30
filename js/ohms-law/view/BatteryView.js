@@ -117,7 +117,7 @@ function BatteryView( options ) {
 
 ohmsLaw.register( 'BatteryView', BatteryView );
 
-export default inherit( Node, BatteryView, {
+inherit( Node, BatteryView, {
 
   /**
    * Set the length of the battery as well as voltage text and position of the text associated with the battery
@@ -144,3 +144,5 @@ export default inherit( Node, BatteryView, {
     }
   }
 } );
+
+export default BatteryView;

@@ -156,7 +156,7 @@ function getAntiArtifactRectangle( node ) {
 
 ohmsLaw.register( 'FormulaNode', FormulaNode );
 
-export default inherit( Node, FormulaNode, {
+inherit( Node, FormulaNode, {
 
   /**
    * Get the comparative size description for the letters, something like
@@ -210,3 +210,5 @@ export default inherit( Node, FormulaNode, {
     } );
   }
 } );
+
+export default FormulaNode;

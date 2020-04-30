@@ -150,7 +150,7 @@ function ResistorNode( resistanceProperty, options ) {
 
 ohmsLaw.register( 'ResistorNode', ResistorNode );
 
-export default inherit( Node, ResistorNode, {
+inherit( Node, ResistorNode, {
 
   /**
    * Get a description of the resistance based on the value of the resistance.
@@ -168,3 +168,5 @@ export default inherit( Node, ResistorNode, {
     } );
   }
 } );
+
+export default ResistorNode;
