@@ -61,7 +61,6 @@ class UnitsRadioButtonContainer extends VBox {
         tandemName: 'ampsRadioButton',
         labelContent: ampsAString
       } ], {
-      labelTagName: 'h3',
       labelContent: unitsString,
       descriptionContent: chooseUnitForCurrentString,
       tandem: options.tandem.createTandem( 'currentUnitRadioButtonGroup' )
