@@ -7,7 +7,7 @@
  */
 
 import Sim from '../../joist/js/Sim.js';
-import SimLauncher from '../../joist/js/SimLauncher.js';
+import simLauncher from '../../joist/js/simLauncher.js';
 import SliderAndGeneralKeyboardHelpContent from '../../scenery-phet/js/keyboard/help/SliderAndGeneralKeyboardHelpContent.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import OhmsLawScreen from './ohms-law/OhmsLawScreen.js';
@@ -37,7 +37,7 @@ const simOptions = {
   keyboardHelpNode: keyboardHelpContent
 };
 
-SimLauncher.launch( function() {
+simLauncher.launch( function() {
 
   // Create and start the sim
   const sim = new Sim( ohmsLawTitleString, [ new OhmsLawScreen( tandem.createTandem( 'ohmsLawScreen' ) ) ], simOptions );
