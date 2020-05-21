@@ -102,6 +102,9 @@ class CurrentSoundGenerator extends SoundClip {
     }
   }
 
+  /**
+   * @public
+   */
   reset() {
     if ( this.isPlaying ) {
       this.stop();

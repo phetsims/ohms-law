@@ -36,6 +36,7 @@ class OhmsLawDescriber {
    * @param  {string} iSizeChange - string describing size change of letter I
    * @param  {number} currentVal - value of model current Property
    * @returns {string} string
+   * @public
    */
   getValueChangeAlertString( initLetter, initSizeChange, iSizeChange ) {
     const currentVal = this.model.getFixedCurrent();
@@ -52,6 +53,7 @@ class OhmsLawDescriber {
   /**
    * Get the current current unit
    * @returns {string}
+   * @public
    */
   getUnitForCurrent() {
     switch( this.model.currentUnitsProperty.value ) {
