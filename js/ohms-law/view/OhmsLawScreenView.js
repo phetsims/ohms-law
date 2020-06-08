@@ -7,10 +7,10 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import ScreenView from '../../../../joist/js/ScreenView.js';
 import inherit from '../../../../phet-core/js/inherit.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
-import InvertedBooleanProperty from '../../../../tambo/js/InvertedBooleanProperty.js';
 import DiscreteSoundGenerator from '../../../../tambo/js/sound-generators/DiscreteSoundGenerator.js';
 import soundManager from '../../../../tambo/js/soundManager.js';
 import sliderClick from '../../../../tambo/sounds/click-001_mp3.js';
@@ -61,7 +61,7 @@ function OhmsLawScreenView( model, tandem ) {
   const controlPanel = new ControlPanel( model, ohmsLawDescriber, { tandem: tandem.createTandem( 'controlPanel' ) } );
 
   // sound generators for voltage and resistance
-  const resetNotInProgress = new InvertedBooleanProperty( model.resetInProgressProperty );
+  const resetNotInProgress = DerivedProperty.not( model.resetInProgressProperty );
   soundManager.addSoundGenerator( new DiscreteSoundGenerator(
     model.voltageProperty,
     OhmsLawConstants.VOLTAGE_RANGE,
