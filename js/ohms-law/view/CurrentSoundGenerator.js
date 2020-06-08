@@ -19,8 +19,6 @@ const PRE_FADE_TIME = 0.1; // in seconds
 const FADE_OUT_TIME_CONSTANT = 3; // in seconds, larger values indicate faster fade out, see usage for details
 const FADE_COMPLETE_OUTPUT_LEVEL = 0.001; // level at which fade out is considered complete and level is set to zero
 
-// sounds
-
 class CurrentSoundGenerator extends SoundClip {
 
   /**

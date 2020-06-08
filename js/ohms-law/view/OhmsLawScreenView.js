@@ -24,8 +24,6 @@ import OhmsLawScreenSummaryNode from './OhmsLawScreenSummaryNode.js';
 import UnitsRadioButtonContainer from './UnitsRadioButtonContainer.js';
 import WireBox from './WireBox.js';
 
-// sounds
-
 // constants
 const SLIDER_CLICK_LEVEL = 0.25;
 
