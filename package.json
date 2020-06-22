@@ -11,9 +11,6 @@
   },
   "phet": {
     "requirejsNamespace": "OHMS_LAW",
-    "phetLibs": [
-      "vibe"
-    ],
     "runnable": true,
     "supportedBrands": [
       "phet",
