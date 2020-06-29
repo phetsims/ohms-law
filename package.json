@@ -19,6 +19,7 @@
     ],
     "supportsInteractiveDescriptions": true,
     "supportsSound": true,
+    "supportsZoom": true,
     "simulation": true
   },
   "eslintConfig": {
