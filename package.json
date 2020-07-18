@@ -20,7 +20,10 @@
     "supportsInteractiveDescriptions": true,
     "supportsSound": true,
     "supportsZoom": true,
-    "simulation": true
+    "simulation": true,
+    "phet-io": {
+      "validation": true
+    }
   },
   "eslintConfig": {
     "extends": "../chipper/eslint/sim_eslintrc.js"
