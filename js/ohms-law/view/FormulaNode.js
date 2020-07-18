@@ -46,7 +46,7 @@ const OTHERS_SCALE_B = 4; // empirically determined
 function FormulaNode( model, options ) {
 
   options = merge( {
-    tandem: Tandem.required,
+    tandem: Tandem.REQUIRED,
 
     // pdom
     labelContent: ohmsLawEquationString,

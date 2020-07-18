@@ -71,7 +71,7 @@ const RESISTANCE_TO_NUM_DOTS = new LinearFunction(
 function ResistorNode( resistanceProperty, options ) {
 
   options = merge( {
-    tandem: Tandem.required,
+    tandem: Tandem.REQUIRED,
 
     // pdom
     tagName: 'li' // this assumes that it is a child of a 'ul'
