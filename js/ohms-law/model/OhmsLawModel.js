@@ -8,7 +8,6 @@
 
 import BooleanProperty from '../../../../axon/js/BooleanProperty.js';
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
-import DerivedPropertyIO from '../../../../axon/js/DerivedPropertyIO.js';
 import EnumerationProperty from '../../../../axon/js/EnumerationProperty.js';
 import NumberProperty from '../../../../axon/js/NumberProperty.js';
 import Range from '../../../../dot/js/Range.js';
@@ -46,7 +45,7 @@ function OhmsLawModel( tandem ) {
     computeCurrent, {
       tandem: tandem.createTandem( 'currentProperty' ),
       units: 'milliamperes',
-      phetioType: DerivedPropertyIO( NumberIO ),
+      phetioType: DerivedProperty.DerivedPropertyIO( NumberIO ),
       phetioDocumentation: 'The current flowing in the circuit'
     }
   );
