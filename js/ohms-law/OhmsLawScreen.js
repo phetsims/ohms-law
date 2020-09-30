@@ -10,7 +10,6 @@
 import Property from '../../../axon/js/Property.js';
 import Screen from '../../../joist/js/Screen.js';
 import Color from '../../../scenery/js/util/Color.js';
-import ColorIO from '../../../scenery/js/util/ColorIO.js';
 import ohmsLaw from '../ohmsLaw.js';
 import OhmsLawModel from './model/OhmsLawModel.js';
 import OhmsLawScreenView from './view/OhmsLawScreenView.js';
@@ -23,7 +22,7 @@ class OhmsLawScreen extends Screen {
       {
         backgroundColorProperty: new Property( new Color( '#ffffdf' ), {
           tandem: tandem.createTandem( 'backgroundColorProperty' ),
-          phetioType: Property.PropertyIO( ColorIO )
+          phetioType: Property.PropertyIO( Color.ColorIO )
         } ),
         tandem: tandem
       }
