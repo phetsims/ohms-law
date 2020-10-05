@@ -9,6 +9,7 @@
 
 import Property from '../../../axon/js/Property.js';
 import Screen from '../../../joist/js/Screen.js';
+import SliderAndGeneralKeyboardHelpContent from '../../../scenery-phet/js/keyboard/help/SliderAndGeneralKeyboardHelpContent.js';
 import Color from '../../../scenery/js/util/Color.js';
 import ohmsLaw from '../ohmsLaw.js';
 import OhmsLawModel from './model/OhmsLawModel.js';
@@ -24,7 +25,13 @@ class OhmsLawScreen extends Screen {
           tandem: tandem.createTandem( 'backgroundColorProperty' ),
           phetioType: Property.PropertyIO( Color.ColorIO )
         } ),
-        tandem: tandem
+        tandem: tandem,
+
+        keyboardHelpNode: new SliderAndGeneralKeyboardHelpContent( {
+          generalSectionOptions: {
+            withGroupContent: true
+          }
+        } )
       }
     );
   }

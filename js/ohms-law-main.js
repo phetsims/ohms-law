@@ -8,7 +8,6 @@
 
 import Sim from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
-import SliderAndGeneralKeyboardHelpContent from '../../scenery-phet/js/keyboard/help/SliderAndGeneralKeyboardHelpContent.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import OhmsLawScreen from './ohms-law/OhmsLawScreen.js';
 import ohmsLawStrings from './ohmsLawStrings.js';
@@ -17,13 +16,6 @@ const ohmsLawTitleString = ohmsLawStrings[ 'ohms-law' ].title;
 
 // constants
 const tandem = Tandem.ROOT;
-
-// pdom - help content to describe keyboard interactions
-const keyboardHelpContent = new SliderAndGeneralKeyboardHelpContent( {
-  generalSectionOptions: {
-    withGroupContent: true
-  }
-} );
 
 const simOptions = {
   credits: {
@@ -34,7 +26,7 @@ const simOptions = {
     thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team to convert this ' +
             'simulation to HTML5.'
   },
-  keyboardHelpNode: keyboardHelpContent
+  hasKeyboardHelpContent: true
 };
 
 simLauncher.launch( function() {
