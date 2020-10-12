@@ -9,7 +9,6 @@
 
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import ScreenView from '../../../../joist/js/ScreenView.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
 import DiscreteSoundGenerator from '../../../../tambo/js/sound-generators/DiscreteSoundGenerator.js';
 import soundManager from '../../../../tambo/js/soundManager.js';
@@ -27,112 +26,111 @@ import WireBox from './WireBox.js';
 // constants
 const SLIDER_CLICK_LEVEL = 0.25;
 
-/**
- * @param {OhmsLawModel} model
- * @param {Tandem} tandem
- * @constructor
- */
-function OhmsLawScreenView( model, tandem ) {
+class OhmsLawScreenView extends ScreenView {
 
-  const self = this;
+  /**
+   * @param {OhmsLawModel} model
+   * @param {Tandem} tandem
+   */
+  constructor( model, tandem ) {
 
-  const ohmsLawDescriber = new OhmsLawDescriber( model );
+    const ohmsLawDescriber = new OhmsLawDescriber( model );
 
-  ScreenView.call( this, {
-    tandem: tandem,
-    screenSummaryContent: new OhmsLawScreenSummaryNode( model, ohmsLawDescriber )
-  } );
+    super( {
+      tandem: tandem,
+      screenSummaryContent: new OhmsLawScreenSummaryNode( model, ohmsLawDescriber )
+    } );
 
-  // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
-  const formulaNode = new FormulaNode( model, {
-    pickable: false,
-    tandem: tandem.createTandem( 'formulaNode' )
-  } );
+    const self = this;
 
-  // Circuit node with readout node
-  const wireBox = new WireBox( model, ohmsLawDescriber, {
-    pickable: false,
-    tandem: tandem.createTandem( 'wireBox' )
-  } );
+    // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
+    const formulaNode = new FormulaNode( model, {
+      pickable: false,
+      tandem: tandem.createTandem( 'formulaNode' )
+    } );
 
-  // create the control panel with sliders
-  const controlPanel = new ControlPanel( model, ohmsLawDescriber, { tandem: tandem.createTandem( 'controlPanel' ) } );
+    // Circuit node with readout node
+    const wireBox = new WireBox( model, ohmsLawDescriber, {
+      pickable: false,
+      tandem: tandem.createTandem( 'wireBox' )
+    } );
 
-  // sound generators for voltage and resistance
-  const resetNotInProgress = DerivedProperty.not( model.resetInProgressProperty );
-  soundManager.addSoundGenerator( new DiscreteSoundGenerator(
-    model.voltageProperty,
-    OhmsLawConstants.VOLTAGE_RANGE,
-    {
-      sound: sliderClick,
-      numBins: 6,
-      enableControlProperties: [ resetNotInProgress ],
-      initialOutputLevel: SLIDER_CLICK_LEVEL,
-      alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
-    }
-  ) );
-  soundManager.addSoundGenerator( new DiscreteSoundGenerator(
-    model.resistanceProperty,
-    OhmsLawConstants.RESISTANCE_RANGE,
-    {
-      sound: sliderClick,
-      numBins: 6,
-      enableControlProperties: [ resetNotInProgress ],
-      initialOutputLevel: SLIDER_CLICK_LEVEL,
-      alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
-    }
-  ) );
+    // create the control panel with sliders
+    const controlPanel = new ControlPanel( model, ohmsLawDescriber, { tandem: tandem.createTandem( 'controlPanel' ) } );
 
-  // sound generator for current
-  this.currentSoundGenerator = new CurrentSoundGenerator( model.currentProperty, {
-    initialOutputLevel: 0.4
-  } );
-  soundManager.addSoundGenerator( this.currentSoundGenerator );
-  const unitsRadioButtonContainer = new UnitsRadioButtonContainer( model.currentUnitsProperty, {
-    tandem: tandem
-  } );
+    // sound generators for voltage and resistance
+    const resetNotInProgress = DerivedProperty.not( model.resetInProgressProperty );
+    soundManager.addSoundGenerator( new DiscreteSoundGenerator(
+      model.voltageProperty,
+      OhmsLawConstants.VOLTAGE_RANGE,
+      {
+        sound: sliderClick,
+        numBins: 6,
+        enableControlProperties: [ resetNotInProgress ],
+        initialOutputLevel: SLIDER_CLICK_LEVEL,
+        alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
+      }
+    ) );
+    soundManager.addSoundGenerator( new DiscreteSoundGenerator(
+      model.resistanceProperty,
+      OhmsLawConstants.RESISTANCE_RANGE,
+      {
+        sound: sliderClick,
+        numBins: 6,
+        enableControlProperties: [ resetNotInProgress ],
+        initialOutputLevel: SLIDER_CLICK_LEVEL,
+        alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
+      }
+    ) );
 
-  // add the reset button
-  const resetAllButton = new ResetAllButton( {
-    radius: 28,
-    listener: function() {
-      model.reset();
-      self.currentSoundGenerator.reset();
-    },
-    tandem: tandem.createTandem( 'resetAllButton' )
-  } );
+    // sound generator for current
+    this.currentSoundGenerator = new CurrentSoundGenerator( model.currentProperty, {
+      initialOutputLevel: 0.4
+    } );
+    soundManager.addSoundGenerator( this.currentSoundGenerator );
+    const unitsRadioButtonContainer = new UnitsRadioButtonContainer( model.currentUnitsProperty, {
+      tandem: tandem
+    } );
 
-  // children
-  this.pdomPlayAreaNode.addChild( formulaNode );
-  this.pdomPlayAreaNode.addChild( wireBox );
-  this.pdomPlayAreaNode.addChild( controlPanel );
-  this.pdomControlAreaNode.addChild( unitsRadioButtonContainer );
-  this.pdomControlAreaNode.addChild( resetAllButton );
+    // add the reset button
+    const resetAllButton = new ResetAllButton( {
+      radius: 28,
+      listener: function() {
+        model.reset();
+        self.currentSoundGenerator.reset();
+      },
+      tandem: tandem.createTandem( 'resetAllButton' )
+    } );
 
-  // layout for the screen
-  formulaNode.centerY = this.layoutBounds.bottom / 4.75;
+    // children
+    this.pdomPlayAreaNode.addChild( formulaNode );
+    this.pdomPlayAreaNode.addChild( wireBox );
+    this.pdomPlayAreaNode.addChild( controlPanel );
+    this.pdomControlAreaNode.addChild( unitsRadioButtonContainer );
+    this.pdomControlAreaNode.addChild( resetAllButton );
 
-  wireBox.centerX = formulaNode.centerX;
-  wireBox.bottom = this.layoutBounds.bottom - 30; // empirically determined
+    // layout for the screen
+    formulaNode.centerY = this.layoutBounds.bottom / 4.75;
 
-  controlPanel.right = this.layoutBounds.width - 50; // empirically determined
-  controlPanel.top = this.layoutBounds.top + 20;
-  // controlPanel.centerY = this.layoutBounds.centerY - resetAllButton.height / 2;
-  resetAllButton.right = controlPanel.right;
-  resetAllButton.bottom = this.layoutBounds.bottom - 20;
+    wireBox.centerX = formulaNode.centerX;
+    wireBox.bottom = this.layoutBounds.bottom - 30; // empirically determined
 
-  // 4 is empirically spacing to better align the top of the readout with the top of the radio button heading.
-  unitsRadioButtonContainer.centerY = wireBox.centerY + 4;
-  unitsRadioButtonContainer.left = controlPanel.left;
+    controlPanel.right = this.layoutBounds.width - 50; // empirically determined
+    controlPanel.top = this.layoutBounds.top + 20;
+    // controlPanel.centerY = this.layoutBounds.centerY - resetAllButton.height / 2;
+    resetAllButton.right = controlPanel.right;
+    resetAllButton.bottom = this.layoutBounds.bottom - 20;
+
+    // 4 is empirically spacing to better align the top of the readout with the top of the radio button heading.
+    unitsRadioButtonContainer.centerY = wireBox.centerY + 4;
+    unitsRadioButtonContainer.left = controlPanel.left;
+  }
+
+  // @public
+  step( dt ) {
+    this.currentSoundGenerator.step( dt );
+  }
 }
 
 ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );
-
-inherit( ScreenView, OhmsLawScreenView, {
-
-  step: function( dt ) {
-    this.currentSoundGenerator.step( dt );
-  }
-} );
-
 export default OhmsLawScreenView;
