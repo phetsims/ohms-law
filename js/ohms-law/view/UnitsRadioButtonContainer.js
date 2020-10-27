@@ -1,7 +1,7 @@
 // Copyright 2020, University of Colorado Boulder
 
 /**
- * RadioButtonGroup with heading to control current units
+ * Radio button group with heading to control current units
  *
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
