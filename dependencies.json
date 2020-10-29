@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.8-rc.1 Thu Oct 29 2020 14:23:31 GMT-0800 (Alaska Daylight Time)",
+  "comment": "# ohms-law 1.4.8 Thu Oct 29 2020 14:32:26 GMT-0800 (Alaska Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "6d278bbe6c0169d58d88a2abffcd8de9f5bab391",
+    "sha": "e4ee7acd59d509c87811289787de19a8a3400076",
     "branch": "1.4"
   },
   "phet-core": {
