@@ -27,9 +27,10 @@ define( function( require ) {
   var simOptions = {
     credits: {
       leadDesign: 'Michael Dubson',
-      softwareDevelopment: 'Michael Dubson, John Blanco, Michael Kauzmann, Martin Veillette',
-      team: 'Mindy Gratny, Emily Moore, Ariel Paul, Kathy Perkins, Taliesin Smith, Brianna Tomlinson',
+      softwareDevelopment: 'John Blanco, Michael Dubson, Jesse Greenberg, Michael Kauzmann, Martin Veillette',
+      team: 'Mindy Gratny, Emily B. Moore, Ariel Paul, Kathy Perkins, Taliesin Smith, Brianna Tomlinson',
       qualityAssurance: 'Steele Dalton, Alex Dornan, Bryce Griebenow, Ethan Johnson, Elise Morgan, Liam Mulhall, Oliver Orejola, Benjamin Roberts, Ethan Ward, Kathryn Woessner, Bryan Yoelin',
+      soundDesign: 'Ashton Morris, Mike Winters',
       thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team to convert this ' +
               'simulation to HTML5.'
     },
