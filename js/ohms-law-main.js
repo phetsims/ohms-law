@@ -30,7 +30,7 @@ const simOptions = {
   hasKeyboardHelpContent: true
 };
 
-simLauncher.launch( function() {
+simLauncher.launch( () => {
 
   // Create and start the sim
   const sim = new Sim( ohmsLawTitleString, [ new OhmsLawScreen( tandem.createTandem( 'ohmsLawScreen' ) ) ], simOptions );

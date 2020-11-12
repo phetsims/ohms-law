@@ -8,7 +8,6 @@
  */
 
 import Property from '../../../../axon/js/Property.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import merge from '../../../../phet-core/js/merge.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import MathSymbols from '../../../../scenery-phet/js/MathSymbols.js';
@@ -18,8 +17,8 @@ import Node from '../../../../scenery/js/nodes/Node.js';
 import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLawStrings from '../../ohmsLawStrings.js';
 import ohmsLaw from '../../ohmsLaw.js';
+import ohmsLawStrings from '../../ohmsLawStrings.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
@@ -38,125 +37,111 @@ const CURRENT_SCALE_B = 1; // empirically determined
 const OTHERS_SCALE_M = 16; // empirically determined
 const OTHERS_SCALE_B = 4; // empirically determined
 
-/**
- * @param {OhmsLawModel} model
- * @param {Object} [options]
- * @constructor
- */
-function FormulaNode( model, options ) {
+class FormulaNode extends Node {
+  /**
+   * @param {OhmsLawModel} model
+   * @param {Object} [options]
+   */
+  constructor( model, options ) {
 
-  options = merge( {
-    tandem: Tandem.REQUIRED,
+    options = merge( {
+      tandem: Tandem.REQUIRED,
 
-    // pdom
-    labelContent: ohmsLawEquationString,
-    descriptionContent: ohmsLawDefinitionString,
-    tagName: 'div',
-    labelTagName: 'h3' // labels should come before other child content
-  }, options );
+      // pdom
+      labelContent: ohmsLawEquationString,
+      descriptionContent: ohmsLawDefinitionString,
+      tagName: 'div',
+      labelTagName: 'h3' // labels should come before other child content
+    }, options );
 
-  const self = this;
-  Node.call( this );
+    super();
 
-  // Create the equals sign, which does not change size
-  const equalsSign = new Text( MathSymbols.EQUAL_TO, { // We never internationalize the '=' sign
-    font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
-    fill: '#000',
-    centerX: 300,
-    centerY: 0,
-    tandem: options.tandem.createTandem( 'equalsSign' )
-  } );
+    // Create the equals sign, which does not change size
+    const equalsSign = new Text( MathSymbols.EQUAL_TO, { // We never internationalize the '=' sign
+      font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
+      fill: '#000',
+      centerX: 300,
+      centerY: 0,
+      tandem: options.tandem.createTandem( 'equalsSign' )
+    } );
 
-  // Create the Current Letter
-  const currentText = new Text( currentSymbolString, {
-    font: TEXT_FONT,
-    fill: PhetColorScheme.RED_COLORBLIND,
-    centerX: 0,
-    centerY: 0,
-    tandem: options.tandem.createTandem( 'currentLetter' )
-  } );
+    // Create the Current Letter
+    const currentText = new Text( currentSymbolString, {
+      font: TEXT_FONT,
+      fill: PhetColorScheme.RED_COLORBLIND,
+      centerX: 0,
+      centerY: 0,
+      tandem: options.tandem.createTandem( 'currentLetter' )
+    } );
 
-  // Create the node that contains the text
-  this.currentLetterNode = new Node( { children: [ getAntiArtifactRectangle( currentText ), currentText ] } );
-  const currentXPosition = equalsSign.centerX + 80;
+    // Create the node that contains the text
+    this.currentLetterNode = new Node( { children: [ getAntiArtifactRectangle( currentText ), currentText ] } );
+    const currentXPosition = equalsSign.centerX + 80;
 
-  // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
-  model.currentProperty.link( function() {
-    self.currentLetterNode.setTranslation( currentXPosition, 0 );
-    self.currentLetterNode.setScaleMagnitude( CURRENT_SCALE_M * model.getNormalizedCurrent() + CURRENT_SCALE_B );
-  } );
+    // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
+    model.currentProperty.link( () => {
+      this.currentLetterNode.setTranslation( currentXPosition, 0 );
+      this.currentLetterNode.setScaleMagnitude( CURRENT_SCALE_M * model.getNormalizedCurrent() + CURRENT_SCALE_B );
+    } );
 
-  // Create the Voltage Letter
-  const voltageText = new Text( voltageSymbolString, {
-    font: TEXT_FONT,
-    fill: OhmsLawConstants.BLUE_COLOR,
-    centerX: 0,
-    centerY: 0,
-    tandem: options.tandem.createTandem( 'voltageLetter' )
-  } );
+    // Create the Voltage Letter
+    const voltageText = new Text( voltageSymbolString, {
+      font: TEXT_FONT,
+      fill: OhmsLawConstants.BLUE_COLOR,
+      centerX: 0,
+      centerY: 0,
+      tandem: options.tandem.createTandem( 'voltageLetter' )
+    } );
 
-  // Create the node that contains the text
-  this.voltageLetterNode = new Node( { children: [ getAntiArtifactRectangle( voltageText ), voltageText ] } );
-  const voltageXPosition = equalsSign.centerX - 150;
+    // Create the node that contains the text
+    this.voltageLetterNode = new Node( { children: [ getAntiArtifactRectangle( voltageText ), voltageText ] } );
+    const voltageXPosition = equalsSign.centerX - 150;
 
-  // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
-  model.voltageProperty.link( function() {
-    self.voltageLetterNode.setTranslation( voltageXPosition, 0 );
-    self.voltageLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedVoltage() + OTHERS_SCALE_B );
-  } );
+    // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
+    model.voltageProperty.link( () => {
+      this.voltageLetterNode.setTranslation( voltageXPosition, 0 );
+      this.voltageLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedVoltage() + OTHERS_SCALE_B );
+    } );
 
-  // Create the Resistance Letter
-  const resistanceText = new Text( resistanceSymbolString, {
-    font: TEXT_FONT,
-    fill: OhmsLawConstants.BLUE_COLOR,
-    centerX: 0,
-    centerY: 0,
-    tandem: options.tandem.createTandem( 'resistanceLetter' )
-  } );
+    // Create the Resistance Letter
+    const resistanceText = new Text( resistanceSymbolString, {
+      font: TEXT_FONT,
+      fill: OhmsLawConstants.BLUE_COLOR,
+      centerX: 0,
+      centerY: 0,
+      tandem: options.tandem.createTandem( 'resistanceLetter' )
+    } );
 
-  // Create the node that contains the text
-  this.resistanceLetterNode = new Node( { children: [ getAntiArtifactRectangle( resistanceText ), resistanceText ] } );
-  const resistanceXPosition = equalsSign.centerX + 240;
+    // Create the node that contains the text
+    this.resistanceLetterNode = new Node( { children: [ getAntiArtifactRectangle( resistanceText ), resistanceText ] } );
+    const resistanceXPosition = equalsSign.centerX + 240;
 
-  // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
-  model.resistanceProperty.link( function() {
-    self.resistanceLetterNode.setTranslation( resistanceXPosition, 0 );
-    self.resistanceLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedResistance() + OTHERS_SCALE_B );
-  } );
+    // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
+    model.resistanceProperty.link( () => {
+      this.resistanceLetterNode.setTranslation( resistanceXPosition, 0 );
+      this.resistanceLetterNode.setScaleMagnitude( OTHERS_SCALE_M * model.getNormalizedResistance() + OTHERS_SCALE_B );
+    } );
 
-  // Current letter is added first so that when it gets huge, it doesn't cover anything up.
-  this.addChild( self.currentLetterNode );
-  this.addChild( self.resistanceLetterNode );
-  this.addChild( self.voltageLetterNode );
+    // Current letter is added first so that when it gets huge, it doesn't cover anything up.
+    this.addChild( this.currentLetterNode );
+    this.addChild( this.resistanceLetterNode );
+    this.addChild( this.voltageLetterNode );
 
-  // must come after letters to be on top
-  this.addChild( equalsSign );
+    // must come after letters to be on top
+    this.addChild( equalsSign );
 
-  // add a node for accessibility that describes the relative sizes of the letters
-  const descriptionNode = new Node( { tagName: 'p' } );
-  this.addChild( descriptionNode );
+    // add a node for accessibility that describes the relative sizes of the letters
+    const descriptionNode = new Node( { tagName: 'p' } );
+    this.addChild( descriptionNode );
 
-  // when any of the model Properties change, update the accessible description
-  Property.multilink( [ model.currentProperty, model.resistanceProperty, model.voltageProperty ], function( current, resistance, voltage ) {
-    descriptionNode.innerContent = self.getComparativeSizeDescription();
-  } );
+    // when any of the model Properties change, update the accessible description
+    Property.multilink( [ model.currentProperty, model.resistanceProperty, model.voltageProperty ], ( current, resistance, voltage ) => {
+      descriptionNode.innerContent = this.getComparativeSizeDescription();
+    } );
 
-  this.mutate( options );
-}
+    this.mutate( options );
+  }
 
-/**
- * Add an invisible rectangle with bounds slightly larger than the text so that artifacts aren't left on the
- * screen, see https://github.com/phetsims/ohms-law/issues/26.
- * @param {Node} node
- * @returns {Rectangle}
- */
-function getAntiArtifactRectangle( node ) {
-  return Rectangle.bounds( node.bounds.dilated( 1 ) );
-}
-
-ohmsLaw.register( 'FormulaNode', FormulaNode );
-
-inherit( Node, FormulaNode, {
 
   /**
    * Get the comparative size description for the letters, something like
@@ -166,7 +151,7 @@ inherit( Node, FormulaNode, {
    * @public
    * @returns {string}
    */
-  getComparativeSizeDescription: function() {
+  getComparativeSizeDescription() {
 
     const rHeight = this.resistanceLetterNode.height;
     const iHeight = this.currentLetterNode.height;
@@ -209,6 +194,18 @@ inherit( Node, FormulaNode, {
       rComparison: vToRDescription
     } );
   }
-} );
+}
+
+/**
+ * Add an invisible rectangle with bounds slightly larger than the text so that artifacts aren't left on the
+ * screen, see https://github.com/phetsims/ohms-law/issues/26.
+ * @param {Node} node
+ * @returns {Rectangle}
+ */
+function getAntiArtifactRectangle( node ) {
+  return Rectangle.bounds( node.bounds.dilated( 1 ) );
+}
+
+ohmsLaw.register( 'FormulaNode', FormulaNode );
 
 export default FormulaNode;

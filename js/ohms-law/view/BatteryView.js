@@ -9,7 +9,6 @@
 
 import LinearFunction from '../../../../dot/js/LinearFunction.js';
 import Utils from '../../../../dot/js/Utils.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import merge from '../../../../phet-core/js/merge.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import Node from '../../../../scenery/js/nodes/Node.js';
@@ -17,8 +16,8 @@ import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
 import LinearGradient from '../../../../scenery/js/util/LinearGradient.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLawStrings from '../../ohmsLawStrings.js';
 import ohmsLaw from '../../ohmsLaw.js';
+import ohmsLawStrings from '../../ohmsLawStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 const voltageUnitsString = ohmsLawStrings.voltageUnits;
@@ -43,88 +42,85 @@ const COPPER_PORTION_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
   .addColorStop( 1, '#cc4e00' );
 const NUB_FILL = '#dddddd';
 
-/**
- * @param {Object} [options]
- * @constructor
- */
-function BatteryView( options ) {
+class BatteryView extends Node {
+  /**
+   * @param {Object} [options]
+   */
+  constructor( options ) {
 
-  options = merge( {
-    tandem: Tandem.REQUIRED
-  }, options );
+    options = merge( {
+      tandem: Tandem.REQUIRED
+    }, options );
 
-  Node.call( this );
+    super();
 
-  // @private - Determine the width of the batter pieces.
-  this.mainBodyWidth = OhmsLawConstants.BATTERY_WIDTH * 0.87; // empirically determined
-  const nubWidth = OhmsLawConstants.BATTERY_WIDTH * 0.05; // empirically determined
-  const copperPortionWidth = OhmsLawConstants.BATTERY_WIDTH - this.mainBodyWidth - nubWidth;
+    // @private - Determine the width of the batter pieces.
+    this.mainBodyWidth = OhmsLawConstants.BATTERY_WIDTH * 0.87; // empirically determined
+    const nubWidth = OhmsLawConstants.BATTERY_WIDTH * 0.05; // empirically determined
+    const copperPortionWidth = OhmsLawConstants.BATTERY_WIDTH - this.mainBodyWidth - nubWidth;
 
-  // The origin (0,0) is defined as the leftmost and vertically centered position of the battery
-  const batteryNode = new Node();
+    // The origin (0,0) is defined as the leftmost and vertically centered position of the battery
+    const batteryNode = new Node();
 
-  // @private
-  this.mainBody = new Rectangle( 0, 0, this.mainBodyWidth, BATTERY_HEIGHT, {
-    stroke: '#000',
-    fill: MAIN_BODY_FILL,
-    y: -BATTERY_HEIGHT / 2
-  } );
-  batteryNode.addChild( this.mainBody );
+    // @private
+    this.mainBody = new Rectangle( 0, 0, this.mainBodyWidth, BATTERY_HEIGHT, {
+      stroke: '#000',
+      fill: MAIN_BODY_FILL,
+      y: -BATTERY_HEIGHT / 2
+    } );
+    batteryNode.addChild( this.mainBody );
 
-  // @private
-  this.copperPortion = new Rectangle( 0, 0, copperPortionWidth, BATTERY_HEIGHT, {
-    stroke: '#000',
-    fill: COPPER_PORTION_FILL,
-    y: -BATTERY_HEIGHT / 2,
-    x: this.mainBodyWidth
-  } );
-  batteryNode.addChild( this.copperPortion );
+    // @private
+    this.copperPortion = new Rectangle( 0, 0, copperPortionWidth, BATTERY_HEIGHT, {
+      stroke: '#000',
+      fill: COPPER_PORTION_FILL,
+      y: -BATTERY_HEIGHT / 2,
+      x: this.mainBodyWidth
+    } );
+    batteryNode.addChild( this.copperPortion );
 
-  // @private
-  this.nub = new Rectangle( copperPortionWidth, 0, nubWidth, NUB_HEIGHT, {
-    stroke: '#000',
-    fill: NUB_FILL,
-    y: -NUB_HEIGHT / 2,
-    x: this.mainBodyWidth
-  } );
-  batteryNode.addChild( this.nub );
+    // @private
+    this.nub = new Rectangle( copperPortionWidth, 0, nubWidth, NUB_HEIGHT, {
+      stroke: '#000',
+      fill: NUB_FILL,
+      y: -NUB_HEIGHT / 2,
+      x: this.mainBodyWidth
+    } );
+    batteryNode.addChild( this.nub );
 
-  this.addChild( batteryNode );
+    this.addChild( batteryNode );
 
-  // @private - Voltage label associated with the battery
-  this.batteryText = new Node( { x: 3, tandem: options.tandem.createTandem( 'batteryText' ) } );
+    // @private - Voltage label associated with the battery
+    this.batteryText = new Node( { x: 3, tandem: options.tandem.createTandem( 'batteryText' ) } );
 
-  // @private
-  this.voltageValueText = new Text( OhmsLawConstants.AA_VOLTAGE, {
-    font: FONT,
-    tandem: options.tandem.createTandem( 'voltageValueText' ),
-    phetioReadyOnly: true
-  } );
-  this.batteryText.addChild( this.voltageValueText );
+    // @private
+    this.voltageValueText = new Text( OhmsLawConstants.AA_VOLTAGE, {
+      font: FONT,
+      tandem: options.tandem.createTandem( 'voltageValueText' ),
+      phetioReadyOnly: true
+    } );
+    this.batteryText.addChild( this.voltageValueText );
 
-  const voltageUnitsText = new Text( voltageUnitsString, {
-    font: FONT,
-    fill: 'blue',
-    x: VOLTAGE_STRING_MAX_WIDTH * 1.1,
-    maxWidth: ( this.mainBodyWidth - VOLTAGE_STRING_MAX_WIDTH ) * 0.9, // limit to 90% of remaining space
-    tandem: options.tandem.createTandem( 'voltageUnitsText' )
-  } );
-  this.batteryText.addChild( voltageUnitsText );
+    const voltageUnitsText = new Text( voltageUnitsString, {
+      font: FONT,
+      fill: 'blue',
+      x: VOLTAGE_STRING_MAX_WIDTH * 1.1,
+      maxWidth: ( this.mainBodyWidth - VOLTAGE_STRING_MAX_WIDTH ) * 0.9, // limit to 90% of remaining space
+      tandem: options.tandem.createTandem( 'voltageUnitsText' )
+    } );
+    this.batteryText.addChild( voltageUnitsText );
 
-  this.addChild( this.batteryText );
-  this.mutate( options );
-}
+    this.addChild( this.batteryText );
+    this.mutate( options );
+  }
 
-ohmsLaw.register( 'BatteryView', BatteryView );
-
-inherit( Node, BatteryView, {
 
   /**
    * Set the length of the battery as well as voltage text and position of the text associated with the battery
    * @param {number} voltage
    * @public
    */
-  setVoltage: function( voltage ) {
+  setVoltage( voltage ) {
 
     // update the voltage readout text
     this.voltageValueText.text = Utils.toFixed( voltage, 1 );
@@ -143,6 +139,8 @@ inherit( Node, BatteryView, {
       this.batteryText.centerY = -BATTERY_HEIGHT / 2 - 12; // place it above the battery
     }
   }
-} );
+}
+
+ohmsLaw.register( 'BatteryView', BatteryView );
 
 export default BatteryView;

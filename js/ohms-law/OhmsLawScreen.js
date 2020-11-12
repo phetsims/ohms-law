@@ -18,8 +18,8 @@ import OhmsLawScreenView from './view/OhmsLawScreenView.js';
 class OhmsLawScreen extends Screen {
   constructor( tandem ) {
     super(
-      function() { return new OhmsLawModel( tandem.createTandem( 'model' ) ); },
-      function( model ) { return new OhmsLawScreenView( model, tandem.createTandem( 'view' ) ); },
+      () => new OhmsLawModel( tandem.createTandem( 'model' ) ),
+      model => new OhmsLawScreenView( model, tandem.createTandem( 'view' ) ),
       {
         backgroundColorProperty: new Property( new Color( '#ffffdf' ), {
           tandem: tandem.createTandem( 'backgroundColorProperty' ),
@@ -27,7 +27,7 @@ class OhmsLawScreen extends Screen {
         } ),
         tandem: tandem,
 
-        keyboardHelpNode: new SliderAndGeneralKeyboardHelpContent( )
+        keyboardHelpNode: new SliderAndGeneralKeyboardHelpContent()
       }
     );
   }

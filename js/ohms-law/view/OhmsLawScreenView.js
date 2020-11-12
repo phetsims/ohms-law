@@ -41,8 +41,6 @@ class OhmsLawScreenView extends ScreenView {
       screenSummaryContent: new OhmsLawScreenSummaryNode( model, ohmsLawDescriber )
     } );
 
-    const self = this;
-
     // Node of ohm's law equation. Layout is hardwired, see FormulaNode.
     const formulaNode = new FormulaNode( model, {
       pickable: false,
@@ -95,9 +93,9 @@ class OhmsLawScreenView extends ScreenView {
     // add the reset button
     const resetAllButton = new ResetAllButton( {
       radius: 28,
-      listener: function() {
+      listener: () => {
         model.reset();
-        self.currentSoundGenerator.reset();
+        this.currentSoundGenerator.reset();
       },
       tandem: tandem.createTandem( 'resetAllButton' )
     } );

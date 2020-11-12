@@ -85,10 +85,10 @@ class ControlPanel extends Panel {
           // pdom
           keyboardStep: 0.5, // volts
           a11yCreateAriaValueText: value => StringUtils.fillIn( voltageUnitsPatternString, { value: value } ),
-          startDrag: function() {
+          startDrag: () => {
             oldVoltage = voltageProperty.get();
           },
-          endDrag: function() {
+          endDrag: () => {
             newVoltage = voltageProperty.get();
 
             if ( oldVoltage !== newVoltage ) {
@@ -115,7 +115,7 @@ class ControlPanel extends Panel {
     const twoSizeCurrentThreshhold = currentRangePerSize * 2; // amount of current that must change to adjust change the current 2 a11y sizes.
 
     // pdom - This function will create the string alert to notify the resistance slider has been changed.
-    const endResistanceDrag = function() {
+    const endResistanceDrag = () => {
       newResistance = resistanceProperty.get();
       newCurrent = currentProperty.get();
 
@@ -147,7 +147,7 @@ class ControlPanel extends Panel {
           keyboardStep: 20, // ohms
           shiftKeyboardStep: 1, // ohms
           a11yCreateAriaValueText: value => StringUtils.fillIn( resistanceUnitsPatternString, { value: value } ),
-          startDrag: function() {
+          startDrag: () => {
             oldResistance = resistanceProperty.get();
             oldCurrent = currentProperty.get();
           },
@@ -175,9 +175,7 @@ class ControlPanel extends Panel {
     // dragged via keyboard interaction
     this.sliderBeingDraggedByKeyboardProperty = new DerivedProperty(
       [ voltageSlider.sliderDraggingByKeyboardProperty, resistanceSlider.sliderDraggingByKeyboardProperty ],
-      function( voltageSliderDraggedByKeyboard, resistanceSliderDraggedByKeyboard ) {
-        return voltageSliderDraggedByKeyboard || resistanceSliderDraggedByKeyboard;
-      }
+      ( voltageSliderDraggedByKeyboard, resistanceSliderDraggedByKeyboard ) => voltageSliderDraggedByKeyboard || resistanceSliderDraggedByKeyboard
     );
   }
 }

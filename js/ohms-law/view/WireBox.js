@@ -8,7 +8,6 @@
 
 import Property from '../../../../axon/js/Property.js';
 import Utils from '../../../../dot/js/Utils.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import merge from '../../../../phet-core/js/merge.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import Node from '../../../../scenery/js/nodes/Node.js';
@@ -32,105 +31,101 @@ const HEIGHT = OhmsLawConstants.WIRE_HEIGHT;
 const WIRE_THICKNESS = 10;
 const OFFSET = 10;  // position offset for the RightAngleArrow
 
-/**
- * @param {OhmsLawModel} model
- * @param {OhmsLawDescriber} ohmsLawDescriber
- * @param {Object} [options]
- * @constructor
- */
-function WireBox( model, ohmsLawDescriber, options ) {
+class WireBox extends Node {
+  /**
+   * @param {OhmsLawModel} model
+   * @param {OhmsLawDescriber} ohmsLawDescriber
+   * @param {Object} [options]
+   */
+  constructor( model, ohmsLawDescriber, options ) {
 
-  options = merge( {
+    options = merge( {
 
-    // phet-io
-    tandem: Tandem.REQUIRED,
+      // phet-io
+      tandem: Tandem.REQUIRED,
 
-    // pdom
-    tagName: 'ul',
-    labelTagName: 'h3',
-    labelContent: circuitLabelString,
-    descriptionContent: circuitDescriptionString
-  }, options );
+      // pdom
+      tagName: 'ul',
+      labelTagName: 'h3',
+      labelContent: circuitLabelString,
+      descriptionContent: circuitDescriptionString
+    }, options );
 
-  Node.call( this, options );
-  const self = this;
+    super( options );
 
-  // For positioning, the top left corner of the wireFrame is defined as 0,0
-  const wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, {
-    stroke: '#000',
-    lineWidth: WIRE_THICKNESS,
-    tandem: options.tandem.createTandem( 'wireFrame' )
-  } );
-  this.addChild( wireFrame );
-
-  const batteriesView = new BatteriesView( model.voltageProperty, {
-    left: OhmsLawConstants.BATTERIES_OFFSET, // Slightly to the right of the wire
-    centerY: 0,
-    tandem: options.tandem.createTandem( 'batteriesView' )
-  } );
-  this.addChild( batteriesView );
-
-  const resistorNode = new ResistorNode( model.resistanceProperty, {
-    centerX: WIDTH / 2,
-    centerY: HEIGHT,
-    tandem: options.tandem.createTandem( 'resistorNode' )
-  } );
-  this.addChild( resistorNode );
-
-  // @private
-  this.bottomLeftArrow = new RightAngleArrow( model.currentProperty, {
-    x: -OFFSET,
-    y: HEIGHT + OFFSET,
-    rotation: Math.PI / 2,
-    tandem: options.tandem.createTandem( 'bottomLeftArrow' )
-  } );
-  this.addChild( this.bottomLeftArrow );
-
-  const bottomRightArrow = new RightAngleArrow( model.currentProperty, {
-    x: WIDTH + OFFSET,
-    y: HEIGHT + OFFSET,
-    rotation: 0,
-    tandem: options.tandem.createTandem( 'bottomRightArrow' )
-  } );
-  this.addChild( bottomRightArrow );
-
-  // pdom - accessible description for the current
-  assert && assert( this.tagName.toUpperCase() === 'UL', 'li children assume list parent' );
-  const accessibleCurrentNode = new Node( { tagName: 'li' } );
-  this.addChild( accessibleCurrentNode );
-
-  const currentReadoutPanel = new ReadoutPanel( model, {
-    centerY: HEIGHT / 2,
-    centerX: WIDTH / 2,
-    tandem: options.tandem.createTandem( 'currentReadoutPanel' )
-  } );
-  this.addChild( currentReadoutPanel );
-
-  model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.min );
-  model.resistanceProperty.set( OhmsLawConstants.RESISTANCE_RANGE.max );
-
-  // @private - this is the min height of the arrows for this sim
-  this.minArrowHeight = this.bottomLeftArrow.height;
-
-  // reset the model after using to get height of arrows
-  model.reset();
-
-  // pdom - when the current changes, update the accessible description
-  Property.multilink( [ model.currentProperty, model.currentUnitsProperty ], () => {
-    accessibleCurrentNode.innerContent = StringUtils.fillIn( currentDescriptionPatternString, {
-      arrowSize: self.getArrowSizeDescription(),
-      value: model.getFixedCurrent(),
-      unit: ohmsLawDescriber.getUnitForCurrent()
+    // For positioning, the top left corner of the wireFrame is defined as 0,0
+    const wireFrame = new Rectangle( 0, 0, WIDTH, HEIGHT, 4, 4, {
+      stroke: '#000',
+      lineWidth: WIRE_THICKNESS,
+      tandem: options.tandem.createTandem( 'wireFrame' )
     } );
-  } );
+    this.addChild( wireFrame );
 
-  // pdom - the order of descriptions should be batteries, resistance, then current
-  this.accessibleOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
-}
+    const batteriesView = new BatteriesView( model.voltageProperty, {
+      left: OhmsLawConstants.BATTERIES_OFFSET, // Slightly to the right of the wire
+      centerY: 0,
+      tandem: options.tandem.createTandem( 'batteriesView' )
+    } );
+    this.addChild( batteriesView );
 
-ohmsLaw.register( 'WireBox', WireBox );
+    const resistorNode = new ResistorNode( model.resistanceProperty, {
+      centerX: WIDTH / 2,
+      centerY: HEIGHT,
+      tandem: options.tandem.createTandem( 'resistorNode' )
+    } );
+    this.addChild( resistorNode );
 
-inherit( Node, WireBox, {
+    // @private
+    this.bottomLeftArrow = new RightAngleArrow( model.currentProperty, {
+      x: -OFFSET,
+      y: HEIGHT + OFFSET,
+      rotation: Math.PI / 2,
+      tandem: options.tandem.createTandem( 'bottomLeftArrow' )
+    } );
+    this.addChild( this.bottomLeftArrow );
+
+    const bottomRightArrow = new RightAngleArrow( model.currentProperty, {
+      x: WIDTH + OFFSET,
+      y: HEIGHT + OFFSET,
+      rotation: 0,
+      tandem: options.tandem.createTandem( 'bottomRightArrow' )
+    } );
+    this.addChild( bottomRightArrow );
+
+    // pdom - accessible description for the current
+    assert && assert( this.tagName.toUpperCase() === 'UL', 'li children assume list parent' );
+    const accessibleCurrentNode = new Node( { tagName: 'li' } );
+    this.addChild( accessibleCurrentNode );
+
+    const currentReadoutPanel = new ReadoutPanel( model, {
+      centerY: HEIGHT / 2,
+      centerX: WIDTH / 2,
+      tandem: options.tandem.createTandem( 'currentReadoutPanel' )
+    } );
+    this.addChild( currentReadoutPanel );
+
+    model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.min );
+    model.resistanceProperty.set( OhmsLawConstants.RESISTANCE_RANGE.max );
+
+    // @private - this is the min height of the arrows for this sim
+    this.minArrowHeight = this.bottomLeftArrow.height;
+
+    // reset the model after using to get height of arrows
+    model.reset();
+
+    // pdom - when the current changes, update the accessible description
+    Property.multilink( [ model.currentProperty, model.currentUnitsProperty ], () => {
+      accessibleCurrentNode.innerContent = StringUtils.fillIn( currentDescriptionPatternString, {
+        arrowSize: this.getArrowSizeDescription(),
+        value: model.getFixedCurrent(),
+        unit: ohmsLawDescriber.getUnitForCurrent()
+      } );
+    } );
+
+    // pdom - the order of descriptions should be batteries, resistance, then current
+    this.accessibleOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
+  }
+
 
   /**
    * Get a description of the arrow size.  Returns omething like "small" or "huge" or "medium size".
@@ -138,7 +133,7 @@ inherit( Node, WireBox, {
    *
    * @returns {string}
    */
-  getArrowSizeDescription: function() {
+  getArrowSizeDescription() {
 
     const height = this.bottomLeftArrow.height;
 
@@ -164,6 +159,8 @@ inherit( Node, WireBox, {
       'mapping to relative size string incorrect' );
     return OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ].toLowerCase();
   }
-} );
+}
+
+ohmsLaw.register( 'WireBox', WireBox );
 
 export default WireBox;

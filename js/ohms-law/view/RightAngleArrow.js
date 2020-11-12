@@ -10,7 +10,6 @@
 
 import Vector2 from '../../../../dot/js/Vector2.js';
 import Shape from '../../../../kite/js/Shape.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import merge from '../../../../phet-core/js/merge.js';
 import PhetColorScheme from '../../../../scenery-phet/js/PhetColorScheme.js';
 import Path from '../../../../scenery/js/nodes/Path.js';
@@ -31,43 +30,42 @@ const POINTS = [
   new Vector2( 5, 5 ) // inner corner
 ];
 
-/**
- * @param {Property.<number>} currentProperty
- * @param {Object} [options]
- * @constructor
- */
-function RightAngleArrow( currentProperty, options ) {
-  const self = this;
+class RightAngleArrow extends Path {
+  /**
+   * @param {Property.<number>} currentProperty
+   * @param {Object} [options]
+   */
+  constructor( currentProperty, options ) {
 
-  options = merge( {
-    stroke: '#000',
-    fill: PhetColorScheme.RED_COLORBLIND,
-    lineWidth: 0.2,
+    options = merge( {
+      stroke: '#000',
+      fill: PhetColorScheme.RED_COLORBLIND,
+      lineWidth: 0.2,
 
-    // The arrow increased in size when the layout bounds were increased. Rather than drawing a new shape, just
-    // scale it back. Part of https://github.com/phetsims/ohms-law/issues/62.
-    scale: .85,
+      // The arrow increased in size when the layout bounds were increased. Rather than drawing a new shape, just
+      // scale it back. Part of https://github.com/phetsims/ohms-law/issues/62.
+      scale: .85,
 
-    tandem: Tandem.REQUIRED
-  }, options );
+      tandem: Tandem.REQUIRED
+    }, options );
 
-  // create the shape of the arrow
-  const arrowShape = new Shape().polygon( POINTS );
+    // create the shape of the arrow
+    const arrowShape = new Shape().polygon( POINTS );
 
-  Path.call( this, arrowShape, options );
+    super( arrowShape, options );
 
-  // Present for the lifetime of the simulation
-  currentProperty.lazyLink( function( current ) {
+    // Present for the lifetime of the simulation
+    currentProperty.lazyLink( current => {
 
-    // Scale the arrows based on the value of the current.
-    // Exponential scaling algorithm.  Linear makes the changes too big.
-    const scale = Math.pow( ( current * 0.1 ), 0.7 );
+      // Scale the arrows based on the value of the current.
+      // Exponential scaling algorithm.  Linear makes the changes too big.
+      const scale = Math.pow( ( current * 0.1 ), 0.7 );
 
-    self.setScaleMagnitude( scale );
-  } );
+      this.setScaleMagnitude( scale );
+    } );
+  }
 }
 
 ohmsLaw.register( 'RightAngleArrow', RightAngleArrow );
 
-inherit( Path, RightAngleArrow );
 export default RightAngleArrow;
