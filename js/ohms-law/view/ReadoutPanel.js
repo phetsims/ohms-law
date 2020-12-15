@@ -68,7 +68,7 @@ class ReadoutPanel extends Panel {
     } );
 
     // To keep the correct spacing as the current value changes
-    const currentValueBackground = new Rectangle.bounds( currentValue.bounds, {
+    const currentValueBackground = Rectangle.bounds( currentValue.bounds, {
       children: [ currentValue ]
     } );
 
