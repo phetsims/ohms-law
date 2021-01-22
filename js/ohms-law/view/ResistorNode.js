@@ -6,6 +6,7 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
+import dotRandom from '../../../../dot/js/dotRandom.js';
 import LinearFunction from '../../../../dot/js/LinearFunction.js';
 import Utils from '../../../../dot/js/Utils.js';
 import Shape from '../../../../kite/js/Shape.js';
@@ -110,7 +111,7 @@ class ResistorNode extends Node {
     // Create the dots randomly on the resistor. Density is based on AREA_PER_DOT.
     for ( let i = 0; i < NUMBER_OF_DOTS; i++ ) {
 
-      const centerY = ( phet.joist.random.nextDouble() - .5 ) * ( RESISTOR_HEIGHT - DOT_RADIUS * 2 );
+      const centerY = ( dotRandom.nextDouble() - .5 ) * ( RESISTOR_HEIGHT - DOT_RADIUS * 2 );
 
       // for the given y coordinate, calculate the x coordinate that will put the dot completely within the
       // wire (including rounded wire ends) using the formula for an ellipse: (x^2 / a^2) + (y^2 / b^2) = 1
@@ -121,7 +122,7 @@ class ResistorNode extends Node {
       const ellipticalX = Math.sqrt( ( 1 - ( centerY * centerY ) / ( b * b ) ) * ( a * a ) );
 
       const maxWidthIncludingEndLimit = RESISTOR_WIDTH + ellipticalX;
-      const centerX = ( phet.joist.random.nextDouble() - .5 ) * maxWidthIncludingEndLimit;
+      const centerX = ( dotRandom.nextDouble() - .5 ) * maxWidthIncludingEndLimit;
 
       const dot = new Circle( DOT_RADIUS, {
         fill: 'black',
