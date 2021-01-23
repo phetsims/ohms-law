@@ -106,7 +106,6 @@ class ResistorNode extends Node {
     // Dots representing charge scatterers.
     const dotsNodeTandem = options.tandem.createTandem( 'dotsNode' );
     const dotsNode = new Node( { tandem: dotsNodeTandem } );
-    const dotsGroupTandem = dotsNodeTandem.createGroupTandem( 'dot' );
 
     // Create the dots randomly on the resistor. Density is based on AREA_PER_DOT.
     for ( let i = 0; i < NUMBER_OF_DOTS; i++ ) {
@@ -127,8 +126,7 @@ class ResistorNode extends Node {
       const dot = new Circle( DOT_RADIUS, {
         fill: 'black',
         centerX: centerX,
-        centerY: centerY,
-        tandem: dotsGroupTandem.createNextTandem()
+        centerY: centerY
       } );
       dotsNode.addChild( dot );
     }
