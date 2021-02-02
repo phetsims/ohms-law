@@ -123,7 +123,7 @@ class WireBox extends Node {
     } );
 
     // pdom - the order of descriptions should be batteries, resistance, then current
-    this.accessibleOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
+    this.pdomOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
   }
 
 
