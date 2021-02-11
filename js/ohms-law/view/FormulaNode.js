@@ -203,7 +203,7 @@ class FormulaNode extends Node {
  * @returns {Rectangle}
  */
 function getAntiArtifactRectangle( node ) {
-  return Rectangle.bounds( node.bounds.dilated( 1 ) );
+  return Rectangle.bounds( node.bounds.dilated( 1 ), { fill: 'transparent' } );
 }
 
 ohmsLaw.register( 'FormulaNode', FormulaNode );
