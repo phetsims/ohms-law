@@ -113,7 +113,7 @@ const OhmsLawConstants = {
   AA_VOLTAGE: AA_VOLTAGE,
   BATTERY_WIDTH: ( WIRE_WIDTH - BATTERIES_OFFSET * 2 ) / MAX_NUMBER_OF_BATTERIES,
 
-RELATIVE_SIZE_STRINGS: [ tinyString, verySmallString, smallString, mediumSizeString,
+  RELATIVE_SIZE_STRINGS: [ tinyString, verySmallString, smallString, mediumSizeString,
     largeString, veryLargeString, hugeString ],
 
   COMPARISON_SIZE_STRINGS: [ muchMuchSmallerThanString, muchSmallerThanString, slightlySmallerThanString,
