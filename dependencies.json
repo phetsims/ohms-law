@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.9 Wed Feb 24 2021 13:01:27 GMT-0500 (Eastern Standard Time)",
+  "comment": "# ohms-law 1.4.9 Mon Mar 08 2021 15:23:12 GMT-0500 (Eastern Standard Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "79ed9b9c77b1e529f3b6bcbf82830a3fb0a55589",
+    "sha": "eeb6adf1ec147eb70223c6c331f94c0cb11c0f75",
     "branch": "1.4"
   },
   "phet-core": {
@@ -49,8 +49,8 @@
     "branch": "HEAD"
   },
   "phetmarks": {
-    "sha": "01cbbd71ad4ca7d29bf68de518e0d3215acf3528",
-    "branch": "HEAD"
+    "sha": "991f1a1fb9e68096d3f0c9c31017a8a953cd4ce5",
+    "branch": "ohms-law-1.4"
   },
   "query-string-machine": {
     "sha": "bf2518a10dbf57b240ff28b5b60a90abe070bc3c",
