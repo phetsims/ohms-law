@@ -168,7 +168,7 @@ const OhmsLawA11yStrings = {
   },
   summaryPlayArea: {
     value: 'In the Play Area you find the equation for Ohm\'s Law, <strong>V</strong> equals ' +
-           '<strong>I</strong> times <strong>R</strong>, and a ' + 'circuit. Voltage and resistance sliders ' +
+           '<strong>I</strong> times <strong>R</strong>, and a circuit. Voltage and resistance sliders ' +
            'allow changes to the equation and circuit.'
   },
   summaryControlArea: {
