@@ -25,7 +25,7 @@ class OhmsLawModel {
     // @public {Property.<number>} in volts
     this.voltageProperty = new NumberProperty( OhmsLawConstants.VOLTAGE_RANGE.getDefaultValue(), {
       tandem: tandem.createTandem( 'voltageProperty' ),
-      units: 'volts',
+      units: 'V',
       range: OhmsLawConstants.VOLTAGE_RANGE,
       phetioDocumentation: 'The voltage in the circuit'
     } );
@@ -33,7 +33,7 @@ class OhmsLawModel {
     // @public {Property.<number>} in Ohms
     this.resistanceProperty = new NumberProperty( OhmsLawConstants.RESISTANCE_RANGE.getDefaultValue(), {
       tandem: tandem.createTandem( 'resistanceProperty' ),
-      units: 'ohms',
+      units: '\u2126', // ohms
       range: OhmsLawConstants.RESISTANCE_RANGE,
       phetioDocumentation: 'The resistance in the circuit'
     } );
@@ -43,7 +43,7 @@ class OhmsLawModel {
       [ this.voltageProperty, this.resistanceProperty ],
       computeCurrent, {
         tandem: tandem.createTandem( 'currentProperty' ),
-        units: 'milliamperes',
+        units: 'mA',
         phetioType: DerivedProperty.DerivedPropertyIO( NumberIO ),
         phetioDocumentation: 'The current flowing in the circuit'
       }
