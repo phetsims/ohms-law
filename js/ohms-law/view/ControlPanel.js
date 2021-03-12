@@ -125,7 +125,7 @@ class ControlPanel extends Panel {
 
         const rSizeChange = resistanceChange > 0 ? growsString : shrinksString;
         let iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
-        iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ' ' + aLotString : '';
+        iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ` ${aLotString}` : '';
 
         resistanceUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange );
         phet.joist.sim.utteranceQueue.addToBack( resistanceUtterance );
