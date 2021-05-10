@@ -1,5 +1,5 @@
 {
-  "comment": "# ohms-law 1.4.10-rc.1 Mon May 10 2021 11:45:13 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# ohms-law 1.4.10-rc.1 Mon May 10 2021 16:13:01 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "f0d0ab3c888c1256bb1de9b79e940c643446c038",
+    "sha": "6c2ac505528a17577f8fabda83617b1a06be2968",
     "branch": "1.4"
   },
   "phet-core": {
@@ -50,15 +50,15 @@
   },
   "phetmarks": {
     "sha": "e325e9aa64ea01665ab8d8b68ac66f458984ac9f",
-    "branch": "ohms-law-1.4"
+    "branch": "HEAD"
   },
   "query-string-machine": {
     "sha": "bf2518a10dbf57b240ff28b5b60a90abe070bc3c",
     "branch": "HEAD"
   },
   "scenery": {
-    "sha": "a1318f756f17fdcb7bc4a19889ecf8d89f341268",
-    "branch": "HEAD"
+    "sha": "e0b9aef998c74c66c1d97441d80e8f6b3ba6b0b3",
+    "branch": "ohms-law-1.4"
   },
   "scenery-phet": {
     "sha": "425dbbd9e343d29136496ba40852107cea82d966",
