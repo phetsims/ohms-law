@@ -95,7 +95,7 @@ class ControlPanel extends Panel {
               // pdom - when V changes, announce an alert that describes the change
               const sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
               voltageUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( letterVString, sizeChange, sizeChange );
-              phet.joist.sim.utteranceQueue.addToBack( voltageUtterance );
+              voltageSlider.alertDescriptionUtterance( voltageUtterance );
             }
           }
         },
@@ -128,7 +128,7 @@ class ControlPanel extends Panel {
         iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ` ${aLotString}` : '';
 
         resistanceUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange );
-        phet.joist.sim.utteranceQueue.addToBack( resistanceUtterance );
+        resistanceSlider.alertDescriptionUtterance( resistanceUtterance );
       }
     };
 
