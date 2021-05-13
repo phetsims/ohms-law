@@ -21,7 +21,7 @@
     "branch": "HEAD"
   },
   "joist": {
-    "sha": "ffd97ffc71911be87bf1bbf64b1ff39c22e107fe",
+    "sha": "f93fbeae423777c67237478d0d20738ef53bd8c4",
     "branch": "HEAD"
   },
   "kite": {
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "bc62a94aaa1ac4c47fa84da89d68c6f88239e5b3",
+    "sha": "0e635ad73ea3256d50db6a9f32e16228dd00f748",
     "branch": "1.4"
   },
   "phet-core": {
