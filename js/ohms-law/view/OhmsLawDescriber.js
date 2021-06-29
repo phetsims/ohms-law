@@ -62,8 +62,9 @@ class OhmsLawDescriber {
       case CurrentUnit.MILLIAMPS:
         return currentMilliampsString;
       default:
-        assert && assert( false, 'unexpected value for currentUnitsProperty' );
+        break;
     }
+    throw new Error( 'unexpected value for currentUnitsProperty' );
   }
 }
 
