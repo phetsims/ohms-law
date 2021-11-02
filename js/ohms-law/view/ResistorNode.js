@@ -134,7 +134,7 @@ class ResistorNode extends Node {
 
     // Set the number of visible dots based on the resistivity. Present for the lifetime of the simulation; no need to unlink.
     resistanceProperty.link( resistance => {
-      const numDotsToShow = RESISTANCE_TO_NUM_DOTS( resistance );
+      const numDotsToShow = RESISTANCE_TO_NUM_DOTS.evaluate( resistance );
       dotsNode.children.forEach( ( dot, index ) => {
         dot.setVisible( index < numDotsToShow );
       } );

@@ -126,7 +126,7 @@ class BatteryView extends Node {
     this.voltageValueText.text = Utils.toFixed( voltage, 1 );
 
     // adjust length of the battery
-    this.mainBody.setRect( 0, 0, this.mainBodyWidth * VOLTAGE_TO_SCALE( voltage ), BATTERY_HEIGHT );
+    this.mainBody.setRect( 0, 0, this.mainBodyWidth * VOLTAGE_TO_SCALE.evaluate( voltage ), BATTERY_HEIGHT );
     this.copperPortion.x = this.mainBody.right;
     this.nub.x = this.mainBody.right;
 
