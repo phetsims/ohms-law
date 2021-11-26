@@ -9,7 +9,7 @@
 import Utils from '../../../../dot/js/Utils.js';
 import merge from '../../../../phet-core/js/merge.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
-import Node from '../../../../scenery/js/nodes/Node.js';
+import { Node } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
