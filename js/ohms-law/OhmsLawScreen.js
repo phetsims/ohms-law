@@ -9,7 +9,7 @@
 
 import Property from '../../../axon/js/Property.js';
 import Screen from '../../../joist/js/Screen.js';
-import SliderAndGeneralKeyboardHelpContent from '../../../scenery-phet/js/keyboard/help/SliderAndGeneralKeyboardHelpContent.js';
+import SliderControlsAndBasicActionsKeyboardHelpContent from '../../../scenery-phet/js/keyboard/help/SliderControlsAndBasicActionsKeyboardHelpContent.js';
 import { Color } from '../../../scenery/js/imports.js';
 import ohmsLaw from '../ohmsLaw.js';
 import OhmsLawModel from './model/OhmsLawModel.js';
@@ -27,7 +27,7 @@ class OhmsLawScreen extends Screen {
         } ),
         tandem: tandem,
 
-        keyboardHelpNode: new SliderAndGeneralKeyboardHelpContent()
+        keyboardHelpNode: new SliderControlsAndBasicActionsKeyboardHelpContent()
       }
     );
   }
