@@ -8,7 +8,7 @@
 
 import BooleanProperty from '../../../../axon/js/BooleanProperty.js';
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
-import EnumerationProperty from '../../../../axon/js/EnumerationProperty.js';
+import EnumerationDeprecatedProperty from '../../../../axon/js/EnumerationDeprecatedProperty.js';
 import NumberProperty from '../../../../axon/js/NumberProperty.js';
 import Range from '../../../../dot/js/Range.js';
 import Utils from '../../../../dot/js/Utils.js';
@@ -50,7 +50,7 @@ class OhmsLawModel {
     );
 
     // @public
-    this.currentUnitsProperty = new EnumerationProperty( CurrentUnit, CurrentUnit.MILLIAMPS, {
+    this.currentUnitsProperty = new EnumerationDeprecatedProperty( CurrentUnit, CurrentUnit.MILLIAMPS, {
       tandem: tandem.createTandem( 'currentUnitsProperty' ),
       phetioDocumentation: 'Determines the displayed unit for the current'
     } );
