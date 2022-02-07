@@ -10,7 +10,7 @@
 
 import merge from '../../../../phet-core/js/merge.js';
 import SoundClip from '../../../../tambo/js/sound-generators/SoundClip.js';
-import current_v3_loop_mp3 from '../../../sounds/current_v3_loop_mp3.js';
+import currentV3Loop_mp3 from '../../../sounds/currentV3Loop_mp3.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
@@ -32,7 +32,7 @@ class CurrentSoundGenerator extends SoundClip {
     }, options );
     options.loop = true; // must be a loop to work properly
 
-    super( current_v3_loop_mp3, options );
+    super( currentV3Loop_mp3, options );
 
     // @private {number} - max output level, used for fading
     this.maxOutputLevel = options.initialOutputLevel;
