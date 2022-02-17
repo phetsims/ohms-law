@@ -12,7 +12,7 @@ import ScreenView from '../../../../joist/js/ScreenView.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
 import DiscreteSoundGenerator from '../../../../tambo/js/sound-generators/DiscreteSoundGenerator.js';
 import soundManager from '../../../../tambo/js/soundManager.js';
-import click001_mp3 from '../../../../tambo/sounds/click001_mp3.js';
+import click_mp3 from '../../../../tambo/sounds/click_mp3.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import ControlPanel from './ControlPanel.js';
@@ -62,7 +62,7 @@ class OhmsLawScreenView extends ScreenView {
       model.voltageProperty,
       OhmsLawConstants.VOLTAGE_RANGE,
       {
-        sound: click001_mp3,
+        sound: click_mp3,
         numBins: 6,
         enableControlProperties: [ resetNotInProgress ],
         initialOutputLevel: SLIDER_CLICK_LEVEL,
@@ -73,7 +73,7 @@ class OhmsLawScreenView extends ScreenView {
       model.resistanceProperty,
       OhmsLawConstants.RESISTANCE_RANGE,
       {
-        sound: click001_mp3,
+        sound: click_mp3,
         numBins: 6,
         enableControlProperties: [ resetNotInProgress ],
         initialOutputLevel: SLIDER_CLICK_LEVEL,
