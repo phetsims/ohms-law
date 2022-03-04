@@ -10,11 +10,9 @@ import Dimension2 from '../../../../dot/js/Dimension2.js';
 import Utils from '../../../../dot/js/Utils.js';
 import Vector2 from '../../../../dot/js/Vector2.js';
 import merge from '../../../../phet-core/js/merge.js';
-import { Node } from '../../../../scenery/js/imports.js';
-import { Rectangle } from '../../../../scenery/js/imports.js';
-import { Text } from '../../../../scenery/js/imports.js';
-import { VBox } from '../../../../scenery/js/imports.js';
+import { Node, Rectangle, Text, VBox } from '../../../../scenery/js/imports.js';
 import VSlider from '../../../../sun/js/VSlider.js';
+import ValueChangeSoundGenerator from '../../../../tambo/js/sound-generators/ValueChangeSoundGenerator.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
@@ -50,11 +48,14 @@ class SliderUnit extends Node {
         trackSize: new Dimension2( 4, OhmsLawConstants.SLIDER_HEIGHT ),
         thumbSize: new Dimension2( 45, 22 ),
 
-        // don't allow any values that cannot be displayed by the precision allowed in this sim
+        // Don't allow any values that cannot be displayed by the precision allowed in this sim.
         constrainValue: value => Utils.toFixedNumber( value, options.decimalPlaces ),
 
         startDrag: _.noop,
         endDrag: _.noop,
+
+        // Turn off default sound generation, since this does its own in a highly customized way.
+        soundGenerator: ValueChangeSoundGenerator.NO_SOUND,
 
         // pdom
         keyboardStep: 1,  // delta for keyboard step
