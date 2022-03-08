@@ -12,7 +12,6 @@ import Vector2 from '../../../../dot/js/Vector2.js';
 import merge from '../../../../phet-core/js/merge.js';
 import { Node, Rectangle, Text, VBox } from '../../../../scenery/js/imports.js';
 import VSlider from '../../../../sun/js/VSlider.js';
-import ValueChangeSoundGenerator from '../../../../tambo/js/sound-generators/ValueChangeSoundGenerator.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
@@ -55,7 +54,7 @@ class SliderUnit extends Node {
         endDrag: _.noop,
 
         // Turn off default sound generation, since this does its own in a highly customized way.
-        soundGenerator: ValueChangeSoundGenerator.NO_SOUND,
+        soundGenerator: null,
 
         // pdom
         keyboardStep: 1,  // delta for keyboard step
