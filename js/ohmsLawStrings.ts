@@ -9,20 +9,20 @@ import ohmsLaw from './ohmsLaw.js';
 
 type StringsType = {
   'ohms-law': {
-    'title': string
-  },
-  'current': string,
-  'resistance': string,
-  'voltage': string,
-  'voltageSymbol': string,
-  'resistanceSymbol': string,
-  'currentSymbol': string,
-  'voltageUnits': string,
-  'currentUnits': string,
-  'currentAmpUnits': string,
-  'units': string,
-  'milliampsMA': string,
-  'ampsA': string
+    'title': string;
+  };
+  'current': string;
+  'resistance': string;
+  'voltage': string;
+  'voltageSymbol': string;
+  'resistanceSymbol': string;
+  'currentSymbol': string;
+  'voltageUnits': string;
+  'currentUnits': string;
+  'currentAmpUnits': string;
+  'units': string;
+  'milliampsMA': string;
+  'ampsA': string;
 };
 
 const ohmsLawStrings = getStringModule( 'OHMS_LAW' ) as StringsType;
