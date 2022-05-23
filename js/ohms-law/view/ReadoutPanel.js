@@ -6,7 +6,7 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
-import Property from '../../../../axon/js/Property.js';
+import Multilink from '../../../../axon/js/Multilink.js';
 import Utils from '../../../../dot/js/Utils.js';
 import merge from '../../../../phet-core/js/merge.js';
 import PhetColorScheme from '../../../../scenery-phet/js/PhetColorScheme.js';
@@ -90,7 +90,7 @@ class ReadoutPanel extends Panel {
     }
 
     // Present for the lifetime of the simulation, no need to unlink.
-    Property.multilink( [ model.currentProperty,
+    Multilink.multilink( [ model.currentProperty,
       model.currentUnitsProperty ], ( current, units ) => {
       const rightEdgePosition = currentValue.right;
       currentValue.text = model.getFixedCurrent();

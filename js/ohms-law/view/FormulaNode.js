@@ -7,7 +7,7 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
-import Property from '../../../../axon/js/Property.js';
+import Multilink from '../../../../axon/js/Multilink.js';
 import merge from '../../../../phet-core/js/merge.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import MathSymbols from '../../../../scenery-phet/js/MathSymbols.js';
@@ -135,7 +135,7 @@ class FormulaNode extends Node {
     this.addChild( descriptionNode );
 
     // when any of the model Properties change, update the accessible description
-    Property.multilink( [ model.currentProperty, model.resistanceProperty, model.voltageProperty ], ( current, resistance, voltage ) => {
+    Multilink.multilink( [ model.currentProperty, model.resistanceProperty, model.voltageProperty ], ( current, resistance, voltage ) => {
       descriptionNode.innerContent = this.getComparativeSizeDescription();
     } );
 

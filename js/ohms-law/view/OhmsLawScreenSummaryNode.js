@@ -7,7 +7,7 @@
  * @author Jesse Greenberg
  */
 
-import Property from '../../../../axon/js/Property.js';
+import Multilink from '../../../../axon/js/Multilink.js';
 import Utils from '../../../../dot/js/Utils.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import { Node } from '../../../../scenery/js/imports.js';
@@ -87,7 +87,7 @@ class OhmsLawScreenSummaryNode extends Node {
       } );
     } );
 
-    Property.multilink( [ model.currentProperty, model.currentUnitsProperty ], ( current, units ) => {
+    Multilink.multilink( [ model.currentProperty, model.currentUnitsProperty ], ( current, units ) => {
       valueCurrentItemNode.innerContent = StringUtils.fillIn( currentSummaryPatternString, {
         value: model.getFixedCurrent(),
         unit: ohmsLawDescriber.getUnitForCurrent()

@@ -6,7 +6,7 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
-import Property from '../../../../axon/js/Property.js';
+import Multilink from '../../../../axon/js/Multilink.js';
 import Utils from '../../../../dot/js/Utils.js';
 import merge from '../../../../phet-core/js/merge.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
@@ -114,7 +114,7 @@ class WireBox extends Node {
     model.reset();
 
     // pdom - when the current changes, update the accessible description
-    Property.multilink( [ model.currentProperty, model.currentUnitsProperty ], () => {
+    Multilink.multilink( [ model.currentProperty, model.currentUnitsProperty ], () => {
       accessibleCurrentNode.innerContent = StringUtils.fillIn( currentDescriptionPatternString, {
         arrowSize: this.getArrowSizeDescription(),
         value: model.getFixedCurrent(),
