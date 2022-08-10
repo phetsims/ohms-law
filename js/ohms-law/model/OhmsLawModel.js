@@ -44,7 +44,7 @@ class OhmsLawModel {
       computeCurrent, {
         tandem: tandem.createTandem( 'currentProperty' ),
         units: 'mA',
-        phetioType: DerivedProperty.DerivedPropertyIO( NumberIO ),
+        phetioValueType: NumberIO,
         phetioDocumentation: 'The current flowing in the circuit'
       }
     );

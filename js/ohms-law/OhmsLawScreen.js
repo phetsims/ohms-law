@@ -23,7 +23,7 @@ class OhmsLawScreen extends Screen {
       {
         backgroundColorProperty: new Property( new Color( '#ffffdf' ), {
           tandem: tandem.createTandem( 'backgroundColorProperty' ),
-          phetioType: Property.PropertyIO( Color.ColorIO )
+          phetioValueType: Color.ColorIO
         } ),
         tandem: tandem,
 
