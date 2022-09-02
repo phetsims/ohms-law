@@ -12,7 +12,7 @@ import Tandem from '../../tandem/js/Tandem.js';
 import OhmsLawScreen from './ohms-law/OhmsLawScreen.js';
 import ohmsLawStrings from './ohmsLawStrings.js';
 
-const ohmsLawTitleString = ohmsLawStrings[ 'ohms-law' ].title;
+const ohmsLawTitleStringProperty = ohmsLawStrings[ 'ohms-law' ].titleStringProperty;
 
 // constants
 const tandem = Tandem.ROOT;
@@ -33,6 +33,6 @@ const simOptions = {
 simLauncher.launch( () => {
 
   // Create and start the sim
-  const sim = new Sim( ohmsLawTitleString, [ new OhmsLawScreen( tandem.createTandem( 'ohmsLawScreen' ) ) ], simOptions );
+  const sim = new Sim( ohmsLawTitleStringProperty, [ new OhmsLawScreen( tandem.createTandem( 'ohmsLawScreen' ) ) ], simOptions );
   sim.start();
 } );
