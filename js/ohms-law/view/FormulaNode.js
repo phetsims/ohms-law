@@ -16,13 +16,13 @@ import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import { Node, Rectangle, Text } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import ohmsLawStrings from '../../ohmsLawStrings.js';
+import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
-const currentSymbolString = ohmsLawStrings.currentSymbol;
-const resistanceSymbolString = ohmsLawStrings.resistanceSymbol;
-const voltageSymbolString = ohmsLawStrings.voltageSymbol;
+const currentSymbolString = OhmsLawStrings.currentSymbol;
+const resistanceSymbolString = OhmsLawStrings.resistanceSymbol;
+const voltageSymbolString = OhmsLawStrings.voltageSymbol;
 
 const relativeSizePatternString = OhmsLawA11yStrings.relativeSizePattern.value;
 const ohmsLawEquationString = OhmsLawA11yStrings.ohmsLawEquation.value;

@@ -15,14 +15,14 @@ import { HBox, Rectangle, Text } from '../../../../scenery/js/imports.js';
 import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import ohmsLawStrings from '../../ohmsLawStrings.js';
+import OhmsLawStrings from '../../OhmsLawStrings.js';
 import CurrentUnit from '../model/CurrentUnit.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
-const currentAmpUnitsString = ohmsLawStrings.currentAmpUnits;
-const currentString = ohmsLawStrings.current;
-const currentUnitsString = ohmsLawStrings.currentUnits;
+const currentAmpUnitsString = OhmsLawStrings.currentAmpUnits;
+const currentString = OhmsLawStrings.current;
+const currentUnitsString = OhmsLawStrings.currentUnits;
 
 // constants
 const FONT = new PhetFont( 32 );

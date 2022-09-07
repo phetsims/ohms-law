@@ -10,9 +10,9 @@ import Sim from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import OhmsLawScreen from './ohms-law/OhmsLawScreen.js';
-import ohmsLawStrings from './ohmsLawStrings.js';
+import OhmsLawStrings from './OhmsLawStrings.js';
 
-const ohmsLawTitleStringProperty = ohmsLawStrings[ 'ohms-law' ].titleStringProperty;
+const ohmsLawTitleStringProperty = OhmsLawStrings[ 'ohms-law' ].titleStringProperty;
 
 // constants
 const tandem = Tandem.ROOT;

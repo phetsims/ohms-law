@@ -14,10 +14,10 @@ import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import { LinearGradient, Node, Rectangle, Text } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import ohmsLawStrings from '../../ohmsLawStrings.js';
+import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
-const voltageUnitsString = ohmsLawStrings.voltageUnits;
+const voltageUnitsString = OhmsLawStrings.voltageUnits;
 
 // constants
 const FONT = new PhetFont( { size: 19, weight: 'bold' } );

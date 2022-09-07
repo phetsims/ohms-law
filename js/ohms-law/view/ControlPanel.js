@@ -15,17 +15,17 @@ import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ValueChangeUtterance from '../../../../utterance-queue/js/ValueChangeUtterance.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import ohmsLawStrings from '../../ohmsLawStrings.js';
+import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import SliderUnit from './SliderUnit.js';
 
-const resistanceString = ohmsLawStrings.resistance;
-const resistanceSymbolString = ohmsLawStrings.resistanceSymbol;
-const voltageString = ohmsLawStrings.voltage;
-const voltageSymbolString = ohmsLawStrings.voltageSymbol;
-const voltageUnitsString = ohmsLawStrings.voltageUnits;
+const resistanceString = OhmsLawStrings.resistance;
+const resistanceSymbolString = OhmsLawStrings.resistanceSymbol;
+const voltageString = OhmsLawStrings.voltage;
+const voltageSymbolString = OhmsLawStrings.voltageSymbol;
+const voltageUnitsString = OhmsLawStrings.voltageUnits;
 
 // can provide translators with context
 const resistanceUnitsPatternString = OhmsLawA11yStrings.resistanceUnitsPattern.value;

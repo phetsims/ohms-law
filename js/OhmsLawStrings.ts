@@ -39,8 +39,8 @@ type StringsType = {
   'ampsAStringProperty': TReadOnlyProperty<string>;
 };
 
-const ohmsLawStrings = getStringModule( 'OHMS_LAW' ) as StringsType;
+const OhmsLawStrings = getStringModule( 'OHMS_LAW' ) as StringsType;
 
-ohmsLaw.register( 'ohmsLawStrings', ohmsLawStrings );
+ohmsLaw.register( 'OhmsLawStrings', OhmsLawStrings );
 
-export default ohmsLawStrings;
+export default OhmsLawStrings;

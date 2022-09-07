@@ -12,13 +12,13 @@ import { RichText, Text, VBox } from '../../../../scenery/js/imports.js';
 import VerticalAquaRadioButtonGroup from '../../../../sun/js/VerticalAquaRadioButtonGroup.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import ohmsLawStrings from '../../ohmsLawStrings.js';
+import OhmsLawStrings from '../../OhmsLawStrings.js';
 import CurrentUnit from '../model/CurrentUnit.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 
-const ampsAString = ohmsLawStrings.ampsA;
-const milliampsMAString = ohmsLawStrings.milliampsMA;
-const unitsString = ohmsLawStrings.units;
+const ampsAString = OhmsLawStrings.ampsA;
+const milliampsMAString = OhmsLawStrings.milliampsMA;
+const unitsString = OhmsLawStrings.units;
 
 const chooseUnitForCurrentString = OhmsLawA11yStrings.chooseUnitForCurrent.value;
 
