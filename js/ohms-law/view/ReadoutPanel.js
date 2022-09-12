@@ -51,35 +51,35 @@ class ReadoutPanel extends Panel {
       tandem: options.tandem.createTandem( 'currentStringText' )
     } );
 
-    const equalsSign = new Text( '=', {
+    const equalsSignText = new Text( '=', {
       font: FONT,
       fill: 'black',
-      tandem: options.tandem.createTandem( 'equalsSign' ),
+      tandem: options.tandem.createTandem( 'equalsSignText' ),
       phetioReadOnly: true
     } );
 
-    const currentValue = new Text( Utils.toFixed( OhmsLawModel.getMaxCurrent(), 1 ), {
+    const currentValueText = new Text( Utils.toFixed( OhmsLawModel.getMaxCurrent(), 1 ), {
       font: FONT,
       fill: 'black',
-      tandem: options.tandem.createTandem( 'currentValue' ),
+      tandem: options.tandem.createTandem( 'currentValueText' ),
       phetioReadOnly: true
     } );
 
     // To keep the correct spacing as the current value changes
-    const currentValueBackground = Rectangle.bounds( currentValue.bounds, {
-      children: [ currentValue ]
+    const currentValueBackground = Rectangle.bounds( currentValueText.bounds, {
+      children: [ currentValueText ]
     } );
 
-    const currentUnit = new Text( currentUnitsString, {
+    const currentUnitText = new Text( currentUnitsString, {
       font: FONT,
       fill: PhetColorScheme.RED_COLORBLIND,
-      tandem: options.tandem.createTandem( 'currentUnit' ),
+      tandem: options.tandem.createTandem( 'currentUnitText' ),
       phetioReadOnly: true
     } );
 
     const textContainer = new HBox( {
       spacing: 11.3, // empirically determined
-      children: [ currentStringText, equalsSign, currentValueBackground, currentUnit ]
+      children: [ currentStringText, equalsSignText, currentValueBackground, currentUnitText ]
     } );
 
     // Scale the text if greater than max allowed width.
@@ -90,11 +90,11 @@ class ReadoutPanel extends Panel {
     // Present for the lifetime of the simulation, no need to unlink.
     Multilink.multilink( [ model.currentProperty,
       model.currentUnitsProperty ], ( current, units ) => {
-      const rightEdgePosition = currentValue.right;
-      currentValue.text = model.getFixedCurrent();
-      currentValue.right = rightEdgePosition;
+      const rightEdgePosition = currentValueText.right;
+      currentValueText.text = model.getFixedCurrent();
+      currentValueText.right = rightEdgePosition;
 
-      currentUnit.text = units === CurrentUnit.AMPS ? currentAmpUnitsString : currentUnitsString;
+      currentUnitText.text = units === CurrentUnit.AMPS ? currentAmpUnitsString : currentUnitsString;
     } );
 
     super( textContainer, options );

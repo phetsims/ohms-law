@@ -55,12 +55,12 @@ class FormulaNode extends Node {
     super();
 
     // Create the equals sign, which does not change size
-    const equalsSign = new Text( MathSymbols.EQUAL_TO, { // We never internationalize the '=' sign
+    const equalsSignText = new Text( MathSymbols.EQUAL_TO, { // We never internationalize the '=' sign
       font: new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 140, weight: 'bold' } ),
       fill: '#000',
       centerX: 300,
       centerY: 0,
-      tandem: options.tandem.createTandem( 'equalsSign' )
+      tandem: options.tandem.createTandem( 'equalsSignText' )
     } );
 
     // Create the Current Letter
@@ -69,12 +69,12 @@ class FormulaNode extends Node {
       fill: PhetColorScheme.RED_COLORBLIND,
       centerX: 0,
       centerY: 0,
-      tandem: options.tandem.createTandem( 'currentLetter' )
+      tandem: options.tandem.createTandem( 'currentLetterText' )
     } );
 
     // Create the node that contains the text
     this.currentLetterNode = new Node( { children: [ getAntiArtifactRectangle( currentText ), currentText ] } );
-    const currentXPosition = equalsSign.centerX + 80;
+    const currentXPosition = equalsSignText.centerX + 80;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
     model.currentProperty.link( () => {
@@ -88,12 +88,12 @@ class FormulaNode extends Node {
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
       centerY: 0,
-      tandem: options.tandem.createTandem( 'voltageLetter' )
+      tandem: options.tandem.createTandem( 'voltageLetterText' )
     } );
 
     // Create the node that contains the text
     this.voltageLetterNode = new Node( { children: [ getAntiArtifactRectangle( voltageText ), voltageText ] } );
-    const voltageXPosition = equalsSign.centerX - 150;
+    const voltageXPosition = equalsSignText.centerX - 150;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
     model.voltageProperty.link( () => {
@@ -107,12 +107,12 @@ class FormulaNode extends Node {
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
       centerY: 0,
-      tandem: options.tandem.createTandem( 'resistanceLetter' )
+      tandem: options.tandem.createTandem( 'resistanceLetterText' )
     } );
 
     // Create the node that contains the text
     this.resistanceLetterNode = new Node( { children: [ getAntiArtifactRectangle( resistanceText ), resistanceText ] } );
-    const resistanceXPosition = equalsSign.centerX + 240;
+    const resistanceXPosition = equalsSignText.centerX + 240;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
     model.resistanceProperty.link( () => {
@@ -126,7 +126,7 @@ class FormulaNode extends Node {
     this.addChild( this.voltageLetterNode );
 
     // must come after letters to be on top
-    this.addChild( equalsSign );
+    this.addChild( equalsSignText );
 
     // add a node for accessibility that describes the relative sizes of the letters
     const descriptionNode = new Node( { tagName: 'p' } );
