@@ -119,7 +119,7 @@ class SliderUnit extends Node {
       font: OhmsLawConstants.READOUT_FONT,
       fill: OhmsLawConstants.BLACK_COLOR,
       tandem: options.tandem.createTandem( 'valueText' ),
-      textPropertyOptions: { phetioReadOnly: true }
+      stringPropertyOptions: { phetioReadOnly: true }
     } );
 
     const unitText = new Text( unitString, {
