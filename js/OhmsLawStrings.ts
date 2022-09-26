@@ -5,38 +5,38 @@
  */
 /* eslint-disable */
 import getStringModule from '../../chipper/js/getStringModule.js';
-import TReadOnlyProperty from '../../axon/js/TReadOnlyProperty.js';
+import LinkableProperty from '../../axon/js/LinkableProperty.js';
 import ohmsLaw from './ohmsLaw.js';
 
 type StringsType = {
   'ohms-law': {
     'title': string;
-    'titleStringProperty': TReadOnlyProperty<string>;
+    'titleStringProperty': LinkableProperty<string>;
   };
   'current': string;
-  'currentStringProperty': TReadOnlyProperty<string>;
+  'currentStringProperty': LinkableProperty<string>;
   'resistance': string;
-  'resistanceStringProperty': TReadOnlyProperty<string>;
+  'resistanceStringProperty': LinkableProperty<string>;
   'voltage': string;
-  'voltageStringProperty': TReadOnlyProperty<string>;
+  'voltageStringProperty': LinkableProperty<string>;
   'voltageSymbol': string;
-  'voltageSymbolStringProperty': TReadOnlyProperty<string>;
+  'voltageSymbolStringProperty': LinkableProperty<string>;
   'resistanceSymbol': string;
-  'resistanceSymbolStringProperty': TReadOnlyProperty<string>;
+  'resistanceSymbolStringProperty': LinkableProperty<string>;
   'currentSymbol': string;
-  'currentSymbolStringProperty': TReadOnlyProperty<string>;
+  'currentSymbolStringProperty': LinkableProperty<string>;
   'voltageUnits': string;
-  'voltageUnitsStringProperty': TReadOnlyProperty<string>;
+  'voltageUnitsStringProperty': LinkableProperty<string>;
   'currentUnits': string;
-  'currentUnitsStringProperty': TReadOnlyProperty<string>;
+  'currentUnitsStringProperty': LinkableProperty<string>;
   'currentAmpUnits': string;
-  'currentAmpUnitsStringProperty': TReadOnlyProperty<string>;
+  'currentAmpUnitsStringProperty': LinkableProperty<string>;
   'units': string;
-  'unitsStringProperty': TReadOnlyProperty<string>;
+  'unitsStringProperty': LinkableProperty<string>;
   'milliampsMA': string;
-  'milliampsMAStringProperty': TReadOnlyProperty<string>;
+  'milliampsMAStringProperty': LinkableProperty<string>;
   'ampsA': string;
-  'ampsAStringProperty': TReadOnlyProperty<string>;
+  'ampsAStringProperty': LinkableProperty<string>;
 };
 
 const OhmsLawStrings = getStringModule( 'OHMS_LAW' ) as StringsType;
