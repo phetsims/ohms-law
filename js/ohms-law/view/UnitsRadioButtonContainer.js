@@ -49,12 +49,12 @@ class UnitsRadioButtonContainer extends VBox {
 
     const currentUnitRadioButtonGroup = new VerticalAquaRadioButtonGroup( currentUnitsProperty, [
       {
-        node: new Text( milliampsMAString, RADIO_BUTTON_TEXT_OPTIONS ),
+        createNode: tandem => new Text( milliampsMAString, RADIO_BUTTON_TEXT_OPTIONS ),
         value: CurrentUnit.MILLIAMPS,
         tandemName: 'milliampsRadioButton',
         labelContent: milliampsMAString
       }, {
-        node: new Text( ampsAString, RADIO_BUTTON_TEXT_OPTIONS ),
+        createNode: tandem => new Text( ampsAString, RADIO_BUTTON_TEXT_OPTIONS ),
         value: CurrentUnit.AMPS,
         tandemName: 'ampsRadioButton',
         labelContent: ampsAString
