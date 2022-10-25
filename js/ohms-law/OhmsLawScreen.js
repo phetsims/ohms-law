@@ -27,7 +27,7 @@ class OhmsLawScreen extends Screen {
         } ),
         tandem: tandem,
 
-        keyboardHelpNode: new SliderControlsAndBasicActionsKeyboardHelpContent()
+        createKeyboardHelpNode: () => new SliderControlsAndBasicActionsKeyboardHelpContent()
       }
     );
   }
