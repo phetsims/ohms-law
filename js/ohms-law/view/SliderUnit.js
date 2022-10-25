@@ -25,11 +25,11 @@ class SliderUnit extends Node {
    * @param {RangeWithValue} range
    * @param {string} symbolString
    * @param {string} nameString
-   * @param {string} unitString
+   * @param {TReadOnlyProperty.<string>} unitStringProperty
    * @param {string} labelContent - a11y, label read by a screen reader on focus
    * @param {Object} [options]
    */
-  constructor( property, range, symbolString, nameString, unitString, labelContent, options ) {
+  constructor( property, range, symbolString, nameString, unitStringProperty, labelContent, options ) {
 
 
     // options used by options below
@@ -122,7 +122,7 @@ class SliderUnit extends Node {
       stringPropertyOptions: { phetioReadOnly: true }
     } );
 
-    const unitText = new Text( unitString, {
+    const unitText = new Text( unitStringProperty, {
       font: OhmsLawConstants.UNIT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       left: valueText.right / 2,
