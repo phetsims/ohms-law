@@ -4,8 +4,8 @@ This document contains notes that will be helpful to developers and future maint
 
 ## Model
 
-This sim uses axon.Property in the model for storage of properties to keep track of the Ohm's Law formula. Current is
-an axon.DerivedProperty that is dependent on the resistance and voltage properties.
+This sim uses phet.axon.Property in the model for storage of properties to keep track of the Ohm's Law formula. Current is
+a phet.axon.DerivedProperty that is dependent on the resistance and voltage properties.
 
 Start by reading the model description model.md
  
