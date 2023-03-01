@@ -154,7 +154,7 @@ class SliderUnit extends Node {
 
     // Update value of the readout. Present for the lifetime of the simulation; no need to unlink.
     property.link( value => {
-      valueText.text = Utils.toFixed( value, options.decimalPlaces );
+      valueText.string = Utils.toFixed( value, options.decimalPlaces );
       valueText.right = unitText.left - READOUT_SPACING;
       readout.centerX = readoutBackground.selfBounds.centerX;
     } );

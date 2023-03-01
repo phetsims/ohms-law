@@ -91,10 +91,10 @@ class ReadoutPanel extends Panel {
     Multilink.multilink( [ model.currentProperty,
       model.currentUnitsProperty ], ( current, units ) => {
       const rightEdgePosition = currentValueText.right;
-      currentValueText.text = model.getFixedCurrent();
+      currentValueText.string = model.getFixedCurrent();
       currentValueText.right = rightEdgePosition;
 
-      currentUnitText.text = units === CurrentUnit.AMPS ? currentAmpUnitsString : currentUnitsString;
+      currentUnitText.string = units === CurrentUnit.AMPS ? currentAmpUnitsString : currentUnitsString;
     } );
 
     super( textContainer, options );

@@ -120,7 +120,7 @@ class BatteryView extends Node {
   setVoltage( voltage ) {
 
     // update the voltage readout text
-    this.voltageValueText.text = Utils.toFixed( voltage, 1 );
+    this.voltageValueText.string = Utils.toFixed( voltage, 1 );
 
     // adjust length of the battery
     this.mainBody.setRect( 0, 0, this.mainBodyWidth * VOLTAGE_TO_SCALE.evaluate( voltage ), BATTERY_HEIGHT );
