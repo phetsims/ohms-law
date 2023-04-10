@@ -61,7 +61,7 @@ class OhmsLawScreenSummaryNode extends Node {
 
     // add all values to a list so we can easily iterate and add listeners to update descriptions
     // with each property
-    const valueItemList = [
+    [
       {
         property: model.voltageProperty,
         patternString: voltageSummaryPatternString,
@@ -74,11 +74,10 @@ class OhmsLawScreenSummaryNode extends Node {
         node: valueResistanceItemNode,
         precision: OhmsLawConstants.RESISTANCE_SIG_FIGS
       }
-    ];
+    ].forEach( item => {
 
-    // register listeners that update the labels in the screen summary - this summary exists for life of sim,
-    // no need to dispose
-    valueItemList.forEach( item => {
+      // register listeners that update the labels in the screen summary - this summary exists for life of sim,
+      // no need to dispose
       item.property.link( value => {
         item.node.innerContent = StringUtils.fillIn( item.patternString, {
           value: Utils.toFixed( value, item.precision ),
