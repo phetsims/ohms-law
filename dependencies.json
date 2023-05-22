@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "8c248b4931d98b09bd4a9087f4a1b615381fcfa2",
+    "sha": "1732a9b780e1eb9c98a7171eb31623619bf0a274",
     "branch": "1.4"
   },
   "phet-core": {
@@ -57,7 +57,7 @@
     "branch": "HEAD"
   },
   "scenery": {
-    "sha": "9f8ab11033f27b92f28dae138952e322b9f54a71",
+    "sha": "5108d50fec12d77b3d611034fdee71375d75e3a6",
     "branch": "HEAD"
   },
   "scenery-phet": {
