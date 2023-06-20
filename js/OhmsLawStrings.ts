@@ -5,38 +5,38 @@
  */
 /* eslint-disable */
 import getStringModule from '../../chipper/js/getStringModule.js';
-import LinkableProperty from '../../axon/js/LinkableProperty.js';
+import type LocalizedStringProperty from '../../chipper/js/LocalizedStringProperty.js';
 import ohmsLaw from './ohmsLaw.js';
 
 type StringsType = {
   'ohms-law': {
     'title': string;
-    'titleStringProperty': LinkableProperty<string>;
+    'titleStringProperty': LocalizedStringProperty;
   };
   'current': string;
-  'currentStringProperty': LinkableProperty<string>;
+  'currentStringProperty': LocalizedStringProperty;
   'resistance': string;
-  'resistanceStringProperty': LinkableProperty<string>;
+  'resistanceStringProperty': LocalizedStringProperty;
   'voltage': string;
-  'voltageStringProperty': LinkableProperty<string>;
+  'voltageStringProperty': LocalizedStringProperty;
   'voltageSymbol': string;
-  'voltageSymbolStringProperty': LinkableProperty<string>;
+  'voltageSymbolStringProperty': LocalizedStringProperty;
   'resistanceSymbol': string;
-  'resistanceSymbolStringProperty': LinkableProperty<string>;
+  'resistanceSymbolStringProperty': LocalizedStringProperty;
   'currentSymbol': string;
-  'currentSymbolStringProperty': LinkableProperty<string>;
+  'currentSymbolStringProperty': LocalizedStringProperty;
   'voltageUnits': string;
-  'voltageUnitsStringProperty': LinkableProperty<string>;
+  'voltageUnitsStringProperty': LocalizedStringProperty;
   'currentUnits': string;
-  'currentUnitsStringProperty': LinkableProperty<string>;
+  'currentUnitsStringProperty': LocalizedStringProperty;
   'currentAmpUnits': string;
-  'currentAmpUnitsStringProperty': LinkableProperty<string>;
+  'currentAmpUnitsStringProperty': LocalizedStringProperty;
   'units': string;
-  'unitsStringProperty': LinkableProperty<string>;
+  'unitsStringProperty': LocalizedStringProperty;
   'milliampsMA': string;
-  'milliampsMAStringProperty': LinkableProperty<string>;
+  'milliampsMAStringProperty': LocalizedStringProperty;
   'ampsA': string;
-  'ampsAStringProperty': LinkableProperty<string>;
+  'ampsAStringProperty': LocalizedStringProperty;
 };
 
 const OhmsLawStrings = getStringModule( 'OHMS_LAW' ) as StringsType;
