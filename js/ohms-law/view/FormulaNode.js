@@ -64,7 +64,7 @@ class FormulaNode extends Node {
     } );
 
     // Create the Current Letter
-    const currentText = new Text( currentSymbolString, {
+    const currentLetterText = new Text( currentSymbolString, {
       font: TEXT_FONT,
       fill: PhetColorScheme.RED_COLORBLIND,
       centerX: 0,
@@ -73,7 +73,7 @@ class FormulaNode extends Node {
     } );
 
     // Create the node that contains the text
-    this.currentLetterNode = new Node( { children: [ getAntiArtifactRectangle( currentText ), currentText ] } );
+    this.currentLetterNode = new Node( { children: [ getAntiArtifactRectangle( currentLetterText ), currentLetterText ] } );
     const currentXPosition = equalsSignText.centerX + 80;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
@@ -83,7 +83,7 @@ class FormulaNode extends Node {
     } );
 
     // Create the Voltage Letter
-    const voltageText = new Text( voltageSymbolString, {
+    const voltageLetterText = new Text( voltageSymbolString, {
       font: TEXT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
@@ -92,7 +92,7 @@ class FormulaNode extends Node {
     } );
 
     // Create the node that contains the text
-    this.voltageLetterNode = new Node( { children: [ getAntiArtifactRectangle( voltageText ), voltageText ] } );
+    this.voltageLetterNode = new Node( { children: [ getAntiArtifactRectangle( voltageLetterText ), voltageLetterText ] } );
     const voltageXPosition = equalsSignText.centerX - 150;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
@@ -102,7 +102,7 @@ class FormulaNode extends Node {
     } );
 
     // Create the Resistance Letter
-    const resistanceText = new Text( resistanceSymbolString, {
+    const resistanceLetterText = new Text( resistanceSymbolString, {
       font: TEXT_FONT,
       fill: OhmsLawConstants.BLUE_COLOR,
       centerX: 0,
@@ -111,7 +111,7 @@ class FormulaNode extends Node {
     } );
 
     // Create the node that contains the text
-    this.resistanceLetterNode = new Node( { children: [ getAntiArtifactRectangle( resistanceText ), resistanceText ] } );
+    this.resistanceLetterNode = new Node( { children: [ getAntiArtifactRectangle( resistanceLetterText ), resistanceLetterText ] } );
     const resistanceXPosition = equalsSignText.centerX + 240;
 
     // Scale the text as the associated value changes. Present for the lifetime of the sim; no need to dispose.
