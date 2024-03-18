@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "32dbf153ad6fc08f89f87ab52907caaed48532dc",
+    "sha": "6f8b7197296de318c5cfdde46646d224c16ca09a",
     "branch": "1.4"
   },
   "phet-core": {
@@ -45,7 +45,7 @@
     "branch": "HEAD"
   },
   "phetcommon": {
-    "sha": "ad24eb50c3199705a4f0a827a2c90ac6dd0c7a65",
+    "sha": "1d5383bee264f3f91307d4eb38f8b94196053b02",
     "branch": "HEAD"
   },
   "phetmarks": {
