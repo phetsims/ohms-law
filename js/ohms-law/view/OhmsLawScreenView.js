@@ -57,7 +57,7 @@ class OhmsLawScreenView extends ScreenView {
     const controlPanel = new ControlPanel( model, ohmsLawDescriber, { tandem: tandem.createTandem( 'controlPanel' ) } );
 
     // sound generators for voltage and resistance
-    const resetNotInProgress = DerivedProperty.not( model.resetInProgressProperty );
+    const resetNotInProgress = DerivedProperty.not( ResetAllButton.isResettingAllProperty );
     soundManager.addSoundGenerator( new DiscreteSoundGenerator(
       model.voltageProperty,
       OhmsLawConstants.VOLTAGE_RANGE,

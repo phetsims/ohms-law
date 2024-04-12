@@ -6,7 +6,6 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
-import BooleanProperty from '../../../../axon/js/BooleanProperty.js';
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import EnumerationDeprecatedProperty from '../../../../axon/js/EnumerationDeprecatedProperty.js';
 import NumberProperty from '../../../../axon/js/NumberProperty.js';
@@ -54,21 +53,15 @@ class OhmsLawModel {
       tandem: tandem.createTandem( 'currentUnitsProperty' ),
       phetioDocumentation: 'Determines the displayed unit for the current'
     } );
-
-    // @public (read-only) {BooleanProperty} - true when a reset is in progress, false otherwise
-    this.resetInProgressProperty = new BooleanProperty( false );
   }
-
 
   /**
    * resets the properties of the model
    * @public
    */
   reset() {
-    this.resetInProgressProperty.set( true );
     this.voltageProperty.reset();
     this.resistanceProperty.reset();
-    this.resetInProgressProperty.set( false );
   }
 
   /**
