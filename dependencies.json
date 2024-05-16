@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "chipper": {
-    "sha": "cd9e8a29ab48f6900e82cf3557cdcefa184ac180",
+    "sha": "fe9f7ec63503d40bccbfd349c2f59aee6bc91c04",
     "branch": "HEAD"
   },
   "dot": {
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "531fd1e58042735f357aa61450b20034fcf2b797",
+    "sha": "c2f403cc48c5985f3d5fc45834260d16f83f725e",
     "branch": "1.4"
   },
   "phet-core": {
