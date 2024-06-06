@@ -84,7 +84,7 @@ class ControlPanel extends Panel {
 
           // pdom
           keyboardStep: 0.5, // volts
-          a11yCreateAriaValueText: value => StringUtils.fillIn( voltageUnitsPatternString, { value: value } ),
+          pdomCreateAriaValueText: value => StringUtils.fillIn( voltageUnitsPatternString, { value: value } ),
           startDrag: () => {
             oldVoltage = voltageProperty.get();
           },
@@ -146,7 +146,7 @@ class ControlPanel extends Panel {
           // pdom
           keyboardStep: 20, // ohms
           shiftKeyboardStep: 1, // ohms
-          a11yCreateAriaValueText: value => StringUtils.fillIn( resistanceUnitsPatternString, { value: value } ),
+          pdomCreateAriaValueText: value => StringUtils.fillIn( resistanceUnitsPatternString, { value: value } ),
           startDrag: () => {
             oldResistance = resistanceProperty.get();
             oldCurrent = currentProperty.get();

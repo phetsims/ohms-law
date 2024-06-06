@@ -63,7 +63,7 @@ class SliderUnit extends Node {
         containerTagName: 'div', // this div helps the a11y view look a bit better
         labelContent: labelContent,
         labelTagName: 'label',
-        a11yMapPDOMValue: value => Utils.toFixedNumber( value, options.decimalPlaces ),
+        pdomMapPDOMValue: value => Utils.toFixedNumber( value, options.decimalPlaces ),
 
         // phet-io
         tandem: options.tandem.createTandem( 'slider' )
