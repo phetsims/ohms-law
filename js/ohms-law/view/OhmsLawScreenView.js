@@ -7,7 +7,6 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
-import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import ScreenView from '../../../../joist/js/ScreenView.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
 import DiscreteSoundGenerator from '../../../../tambo/js/sound-generators/DiscreteSoundGenerator.js';
@@ -57,14 +56,12 @@ class OhmsLawScreenView extends ScreenView {
     const controlPanel = new ControlPanel( model, ohmsLawDescriber, { tandem: tandem.createTandem( 'controlPanel' ) } );
 
     // sound generators for voltage and resistance
-    const resetNotInProgress = DerivedProperty.not( ResetAllButton.isResettingAllProperty );
     soundManager.addSoundGenerator( new DiscreteSoundGenerator(
       model.voltageProperty,
       OhmsLawConstants.VOLTAGE_RANGE,
       {
         sound: click_mp3,
         numBins: 6,
-        enableControlProperties: [ resetNotInProgress ],
         initialOutputLevel: SLIDER_CLICK_LEVEL,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
       }
@@ -75,7 +72,6 @@ class OhmsLawScreenView extends ScreenView {
       {
         sound: click_mp3,
         numBins: 6,
-        enableControlProperties: [ resetNotInProgress ],
         initialOutputLevel: SLIDER_CLICK_LEVEL,
         alwaysPlayOnChangesProperty: controlPanel.sliderBeingDraggedByKeyboardProperty
       }
