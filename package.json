@@ -34,7 +34,7 @@
         ],
         "parserOptions": {
           "project": [
-            "../ohms-law/tsconfig.json"
+            "../chipper/tsconfig/eslint-all/tsconfig.json"
           ]
         }
       }
