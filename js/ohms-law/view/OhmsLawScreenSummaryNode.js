@@ -9,6 +9,7 @@
 
 import Multilink from '../../../../axon/js/Multilink.js';
 import Utils from '../../../../dot/js/Utils.js';
+import ScreenSummaryContent from '../../../../joist/js/ScreenSummaryContent.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import { Node } from '../../../../scenery/js/imports.js';
 import ohmsLaw from '../../ohmsLaw.js';
@@ -23,25 +24,18 @@ const voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPattern.val
 const resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPattern.value;
 const currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPattern.value;
 
-class OhmsLawScreenSummaryNode extends Node {
+class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
 
   /**
    * @param {OhmsLawModel} model
    * @param {OhmsLawDescriber} ohmsLawDescriber
    */
   constructor( model, ohmsLawDescriber ) {
-    super();
-
-    const playAreaSummaryNode = new Node( {
-      tagName: 'p',
-      innerContent: summaryPlayAreaString
-    } );
-    const controlAreaSummaryNode = new Node( {
-      tagName: 'p',
-      innerContent: summaryControlAreaString
-    } );
-
-    const rightNowParagraphNode = new Node( { tagName: 'p', innerContent: rightNowString } );
+    super( [
+      summaryPlayAreaString,
+      summaryControlAreaString,
+      rightNowString
+    ] );
 
     // list outlining the values for this sim
     const valueListNode = new Node( { tagName: 'ul' } );
@@ -53,9 +47,6 @@ class OhmsLawScreenSummaryNode extends Node {
     const sliderParagraphNode = new Node( { tagName: 'p', innerContent: summaryLookForSlidersString } );
 
     // add all children to this node, ordering the accessible content
-    this.addChild( playAreaSummaryNode );
-    this.addChild( controlAreaSummaryNode );
-    this.addChild( rightNowParagraphNode );
     this.addChild( valueListNode );
     this.addChild( sliderParagraphNode );
 
