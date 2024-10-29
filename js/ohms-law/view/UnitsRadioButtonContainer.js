@@ -52,12 +52,16 @@ class UnitsRadioButtonContainer extends VBox {
         createNode: () => new Text( milliampsMAString, RADIO_BUTTON_TEXT_OPTIONS ),
         value: CurrentUnit.MILLIAMPS,
         tandemName: 'milliampsRadioButton',
-        labelContent: milliampsMAString
+        options: {
+          accessibleName: milliampsMAString
+        }
       }, {
         createNode: () => new Text( ampsAString, RADIO_BUTTON_TEXT_OPTIONS ),
         value: CurrentUnit.AMPS,
         tandemName: 'ampsRadioButton',
-        labelContent: ampsAString
+        options: {
+          accessibleName: ampsAString
+        }
       } ], {
       labelContent: unitsString,
       descriptionContent: chooseUnitForCurrentString,
