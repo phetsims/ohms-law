@@ -6,7 +6,12 @@
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
 
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
+import EnumerationValue from '../../../../phet-core/js/EnumerationValue.js';
+import Enumeration from '../../../../phet-core/js/Enumeration.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
+import Utils from '../../../../dot/js/Utils.js';
+import OhmsLawConstants from '../OhmsLawConstants.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import CurrentUnit from '../model/CurrentUnit.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
@@ -14,6 +19,18 @@ import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 const currentMilliampsString = OhmsLawA11yStrings.currentMilliamps.value;
 const currentAmpsString = OhmsLawA11yStrings.currentAmps.value;
 const sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPattern.value;
+
+// enum for describing resistance impurities
+export class ResistorImpurities extends EnumerationValue {
+  static TINY = new ResistorImpurities();
+  static VERY_SMALL = new ResistorImpurities();
+  static SMALL = new ResistorImpurities();
+  static MEDIUM = new ResistorImpurities();
+  static LARGE = new ResistorImpurities();
+  static VERY_LARGE = new ResistorImpurities();
+  static HUGE = new ResistorImpurities();
+  static enumeration = new Enumeration( ResistorImpurities );
+}
 
 class OhmsLawDescriber {
 
@@ -24,6 +41,16 @@ class OhmsLawDescriber {
 
     // @private
     this.model = model;
+
+    // @public - Enumeration value describing the impurities in the resistor
+    this.resistorImpuritiesProperty = new DerivedProperty( [ model.resistanceProperty ], resistance => {
+      const values = ResistorImpurities.enumeration.values;
+      const range = OhmsLawConstants.RESISTANCE_RANGE;
+
+      // map the normalied value to one of the resistance descriptions
+      const index = Utils.roundSymmetric( Utils.linear( range.min, range.max, 0, values.length - 1, resistance ) );
+      return values[ index ];
+    } );
   }
 
   /**

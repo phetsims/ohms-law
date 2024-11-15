@@ -7,22 +7,13 @@
  * @author Jesse Greenberg
  */
 
-import Multilink from '../../../../axon/js/Multilink.js';
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import Utils from '../../../../dot/js/Utils.js';
 import ScreenSummaryContent from '../../../../joist/js/ScreenSummaryContent.js';
-import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import { Node } from '../../../../scenery/js/imports.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
+import OhmsLawFluentMessages, { PatternMessageProperty } from '../../OhmsLawFluentMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
-
-const summaryLookForSlidersString = OhmsLawA11yStrings.summaryLookForSliders.value;
-const summaryPlayAreaString = OhmsLawA11yStrings.summaryPlayArea.value;
-const summaryControlAreaString = OhmsLawA11yStrings.summaryControlArea.value;
-const rightNowString = OhmsLawA11yStrings.rightNow.value;
-const voltageSummaryPatternString = OhmsLawA11yStrings.voltageSummaryPattern.value;
-const resistanceSummaryPatternString = OhmsLawA11yStrings.resistanceSummaryPattern.value;
-const currentSummaryPatternString = OhmsLawA11yStrings.currentSummaryPattern.value;
 
 class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
 
@@ -32,9 +23,9 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
    */
   constructor( model, ohmsLawDescriber ) {
     super( [
-      summaryPlayAreaString,
-      summaryControlAreaString,
-      rightNowString
+      OhmsLawFluentMessages.summaryPlayAreaMessageProperty,
+      OhmsLawFluentMessages.summaryControlAreaMessageProperty,
+      OhmsLawFluentMessages.rightNowMessageProperty
     ] );
 
     // list outlining the values for this sim
@@ -44,7 +35,7 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
     const valueCurrentItemNode = new Node( { tagName: 'li' } );
     valueListNode.children = [ valueVoltageItemNode, valueResistanceItemNode, valueCurrentItemNode ];
 
-    const sliderParagraphNode = new Node( { tagName: 'p', innerContent: summaryLookForSlidersString } );
+    const sliderParagraphNode = new Node( { tagName: 'p', innerContent: OhmsLawFluentMessages.summaryLookForSlidersMessageProperty } );
 
     // add all children to this node, ordering the accessible content
     this.addChild( valueListNode );
@@ -55,34 +46,31 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
     [
       {
         property: model.voltageProperty,
-        patternString: voltageSummaryPatternString,
+
+        patternStringProperty: OhmsLawFluentMessages.voltageSummaryPatternMessageProperty,
         node: valueVoltageItemNode,
         precision: OhmsLawConstants.VOLTAGE_SIG_FIGS
       },
       {
         property: model.resistanceProperty,
-        patternString: resistanceSummaryPatternString,
+        patternStringProperty: OhmsLawFluentMessages.resistanceSummaryPatternMessageProperty,
         node: valueResistanceItemNode,
         precision: OhmsLawConstants.RESISTANCE_SIG_FIGS
       }
     ].forEach( item => {
-
-      // register listeners that update the labels in the screen summary - this summary exists for life of sim,
-      // no need to dispose
-      item.property.link( value => {
-        item.node.innerContent = StringUtils.fillIn( item.patternString, {
-          value: Utils.toFixed( value, item.precision ),
-          unit: ohmsLawDescriber.getUnitForCurrent()
-        } );
-      } );
+      item.node.innerContent = new PatternMessageProperty(
+        item.patternStringProperty, {
+          value: new DerivedProperty( [ item.property ], value => Utils.toFixed( value, item.precision ) )
+        }
+      );
     } );
 
-    Multilink.multilink( [ model.currentProperty, model.currentUnitsProperty ], ( current, units ) => {
-      valueCurrentItemNode.innerContent = StringUtils.fillIn( currentSummaryPatternString, {
-        value: model.getFixedCurrent(),
-        unit: ohmsLawDescriber.getUnitForCurrent()
-      } );
-    } );
+    valueCurrentItemNode.innerContent = new PatternMessageProperty(
+      OhmsLawFluentMessages.currentSummaryPatternMessageProperty, {
+        value: new DerivedProperty( [ model.currentProperty ], value => model.getFixedCurrent() ),
+        unit: model.currentUnitsProperty
+      }
+    );
   }
 }
 

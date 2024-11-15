@@ -11,21 +11,11 @@ import LinearFunction from '../../../../dot/js/LinearFunction.js';
 import Utils from '../../../../dot/js/Utils.js';
 import { Shape } from '../../../../kite/js/imports.js';
 import merge from '../../../../phet-core/js/merge.js';
-import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import { Circle, LinearGradient, Node, Path } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
+import OhmsLawFluentMessages, { PatternMessageProperty } from '../../OhmsLawFluentMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
-
-const tinyAmountOfImpuritiesString = OhmsLawA11yStrings.tinyAmountOfImpurities.value;
-const verySmallAmountOfImpuritiesString = OhmsLawA11yStrings.verySmallAmountOfImpurities.value;
-const smallAmountOfImpuritiesString = OhmsLawA11yStrings.smallAmountOfImpurities.value;
-const mediumAmountOfImpuritiesString = OhmsLawA11yStrings.mediumAmountOfImpurities.value;
-const largeAmountOfImpuritiesString = OhmsLawA11yStrings.largeAmountOfImpurities.value;
-const veryLargeAmountOfImpuritiesString = OhmsLawA11yStrings.veryLargeAmountOfImpurities.value;
-const hugeAmountOfImpuritiesString = OhmsLawA11yStrings.hugeAmountOfImpurities.value;
-const resistanceDotsPatternString = OhmsLawA11yStrings.resistanceDotsPattern.value;
 
 // constants
 const RESISTOR_WIDTH = OhmsLawConstants.WIRE_WIDTH / 2.123; // empirically determined
@@ -37,9 +27,6 @@ const MAX_WIDTH_INCLUDING_ROUNDED_ENDS = RESISTOR_WIDTH + RESISTOR_HEIGHT * PERS
 const DOT_RADIUS = 2;
 const AREA_PER_DOT = 40; // adjust this to control the density of the dots
 const NUMBER_OF_DOTS = MAX_WIDTH_INCLUDING_ROUNDED_ENDS * RESISTOR_HEIGHT / AREA_PER_DOT;
-const IMPURITIES_STRINGS = [ tinyAmountOfImpuritiesString, verySmallAmountOfImpuritiesString, smallAmountOfImpuritiesString,
-  mediumAmountOfImpuritiesString, largeAmountOfImpuritiesString, veryLargeAmountOfImpuritiesString,
-  hugeAmountOfImpuritiesString ];
 
 const BODY_FILL_GRADIENT = new LinearGradient( 0, -RESISTOR_HEIGHT / 2, 0, RESISTOR_HEIGHT / 2 ) // For 3D effect on the wire.
   .addColorStop( 0, '#F00' )
@@ -63,9 +50,10 @@ const RESISTANCE_TO_NUM_DOTS = new LinearFunction(
 class ResistorNode extends Node {
   /**
    * @param {Property.<number>} resistanceProperty
+   * @param {TReadOnlyProperty<ResistorImpurities>}resistorImpuritiesProperty
    * @param {Object} [options]
    */
-  constructor( resistanceProperty, options ) {
+  constructor( resistanceProperty, resistorImpuritiesProperty, options ) {
 
     options = merge( {
       tandem: Tandem.REQUIRED,
@@ -135,29 +123,15 @@ class ResistorNode extends Node {
       dotsNode.children.forEach( ( dot, index ) => {
         dot.setVisible( index < numDotsToShow );
       } );
-
-      this.innerContent = this.getResistanceDescription( resistance );
     } );
+
+    this.innerContent = new PatternMessageProperty(
+      OhmsLawFluentMessages.resistanceDotsPatternMessageProperty, {
+        impurities: resistorImpuritiesProperty
+      }
+    );
 
     this.mutate( options );
-  }
-
-
-  /**
-   * Get a description of the resistance based on the value of the resistance.
-   * @returns {string} resistance
-   * @private
-   */
-  getResistanceDescription( resistance ) {
-    const range = OhmsLawConstants.RESISTANCE_RANGE;
-
-    // map the normalied value to one of the resistance descriptions
-    const index = Utils.roundSymmetric( Utils.linear( range.min, range.max, 0, IMPURITIES_STRINGS.length - 1, resistance ) );
-    const numDotsDescription = IMPURITIES_STRINGS[ index ];
-
-    return StringUtils.fillIn( resistanceDotsPatternString, {
-      impurities: numDotsDescription
-    } );
   }
 }
 

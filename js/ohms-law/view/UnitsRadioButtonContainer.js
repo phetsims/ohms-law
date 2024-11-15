@@ -14,13 +14,11 @@ import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import CurrentUnit from '../model/CurrentUnit.js';
-import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
+import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
 
 const ampsAString = OhmsLawStrings.ampsA;
 const milliampsMAString = OhmsLawStrings.milliampsMA;
 const unitsString = OhmsLawStrings.units;
-
-const chooseUnitForCurrentString = OhmsLawA11yStrings.chooseUnitForCurrent.value;
 
 // constants
 const MAX_WIDTH = 250;
@@ -64,7 +62,7 @@ class UnitsRadioButtonContainer extends VBox {
         }
       } ], {
       labelContent: unitsString,
-      descriptionContent: chooseUnitForCurrentString,
+      descriptionContent: OhmsLawFluentMessages.chooseUnitForCurrentMessageProperty,
       tandem: options.tandem.createTandem( 'currentUnitRadioButtonGroup' )
     } );
 

@@ -67,7 +67,7 @@ class WireBox extends Node {
     } );
     this.addChild( batteriesView );
 
-    const resistorNode = new ResistorNode( model.resistanceProperty, {
+    const resistorNode = new ResistorNode( model.resistanceProperty, ohmsLawDescriber.resistorImpuritiesProperty, {
       centerX: WIDTH / 2,
       centerY: HEIGHT,
       tandem: options.tandem.createTandem( 'resistorNode' )
