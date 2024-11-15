@@ -21,7 +21,7 @@ const currentAmpsString = OhmsLawA11yStrings.currentAmps.value;
 const sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPattern.value;
 
 // enum for describing resistance impurities
-export class ResistorImpurities extends EnumerationValue {
+class ResistorImpurities extends EnumerationValue {
   static TINY = new ResistorImpurities();
   static VERY_SMALL = new ResistorImpurities();
   static SMALL = new ResistorImpurities();
@@ -50,6 +50,10 @@ class OhmsLawDescriber {
       // map the normalied value to one of the resistance descriptions
       const index = Utils.roundSymmetric( Utils.linear( range.min, range.max, 0, values.length - 1, resistance ) );
       return values[ index ];
+    } );
+
+    this.formattedCurrentProperty = new DerivedProperty( [ model.currentUnitsProperty ], current => {
+      return model.getFixedCurrent();
     } );
   }
 

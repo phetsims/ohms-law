@@ -6,23 +6,17 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
-import Multilink from '../../../../axon/js/Multilink.js';
-import Utils from '../../../../dot/js/Utils.js';
 import merge from '../../../../phet-core/js/merge.js';
-import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import { Node, Rectangle } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
+import OhmsLawFluentMessages, { PatternMessageProperty } from '../../OhmsLawFluentMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import BatteriesView from './BatteriesView.js';
 import ReadoutPanel from './ReadoutPanel.js';
 import ResistorNode from './ResistorNode.js';
 import RightAngleArrow from './RightAngleArrow.js';
-
-const circuitLabelString = OhmsLawA11yStrings.circuitLabel.value;
-const circuitDescriptionString = OhmsLawA11yStrings.circuitDescription.value;
-const currentDescriptionPatternString = OhmsLawA11yStrings.currentDescriptionPattern.value;
+import WireBoxDescriber from './WireBoxDescriber.js';
 
 // constants
 const WIDTH = OhmsLawConstants.WIRE_WIDTH;
@@ -46,8 +40,8 @@ class WireBox extends Node {
       // pdom
       tagName: 'ul',
       labelTagName: 'h3',
-      labelContent: circuitLabelString,
-      descriptionContent: circuitDescriptionString
+      labelContent: OhmsLawFluentMessages.circuitLabelMessageProperty,
+      descriptionContent: OhmsLawFluentMessages.circuitDescriptionMessageProperty
     }, options );
 
     super( options );
@@ -103,60 +97,19 @@ class WireBox extends Node {
     } );
     this.addChild( currentReadoutPanel );
 
-    model.voltageProperty.set( OhmsLawConstants.VOLTAGE_RANGE.min );
-    model.resistanceProperty.set( OhmsLawConstants.RESISTANCE_RANGE.max );
+    const wireBoxDescriber = new WireBoxDescriber( model, this.bottomLeftArrow );
 
-    // @private - this is the min height of the arrows for this sim
-    this.minArrowHeight = this.bottomLeftArrow.height;
-
-    // reset the model after using to get height of arrows
-    model.reset();
-
-    // pdom - when the current changes, update the accessible description
-    Multilink.multilink( [ model.currentProperty, model.currentUnitsProperty ], () => {
-      accessibleCurrentNode.innerContent = StringUtils.fillIn( currentDescriptionPatternString, {
-        arrowSize: this.getArrowSizeDescription(),
-        value: model.getFixedCurrent(),
-        unit: ohmsLawDescriber.getUnitForCurrent()
-      } );
-    } );
+    accessibleCurrentNode.innerContent = new PatternMessageProperty(
+      OhmsLawFluentMessages.currentDescriptionPatternMessageProperty,
+      {
+        arrowSize: wireBoxDescriber.arrowSizeDescriptionProperty,
+        value: ohmsLawDescriber.formattedCurrentProperty,
+        unit: model.currentUnitsProperty
+      }
+    );
 
     // pdom - the order of descriptions should be batteries, resistance, then current
     this.pdomOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
-  }
-
-
-  /**
-   * Get a description of the arrow size.  Returns omething like "small" or "huge" or "medium size".
-   * @public
-   *
-   * @returns {string}
-   */
-  getArrowSizeDescription() {
-
-    const height = this.bottomLeftArrow.height;
-
-    // Empirically determined, the idea is for the largest relative size string to map to when the 'I' in the formula
-    // goes off the screen (or at least close to that), see https://github.com/phetsims/ohms-law/issues/97.
-    const maxArrowHeightThresholdCoefficient = 2;
-
-    // The max in the linear function, instead of the max height of the arrow, everything bigger will just be the
-    // largest relative size.
-    const maxArrowHeightThreshold = HEIGHT * maxArrowHeightThresholdCoefficient;
-
-    // map the normalized height to one of the size descriptions
-    let index = Utils.roundSymmetric( Utils.linear(
-      this.minArrowHeight, maxArrowHeightThreshold, // a1 b1
-      0, OhmsLawConstants.RELATIVE_SIZE_STRINGS.length - 1, // a2 b2
-      height ) ); // a3
-
-    // if beyond the threshold, clamp it back to the highest index
-    if ( height > maxArrowHeightThreshold ) {
-      index = OhmsLawConstants.RELATIVE_SIZE_STRINGS.length - 1;
-    }
-    assert && assert( index >= 0 && index < OhmsLawConstants.RELATIVE_SIZE_STRINGS.length,
-      'mapping to relative size string incorrect' );
-    return OhmsLawConstants.RELATIVE_SIZE_STRINGS[ index ].toLowerCase();
   }
 }
 

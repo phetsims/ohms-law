@@ -2,27 +2,29 @@ resistance-units-pattern = { $value } Ohms
 voltage-units-pattern = { $value } Volts
 resistance-slider-label = R, Resistance
 voltage-slider-label = V, Voltage
-current-amps = amps
-current-milliamps = milliamps
 choose-unit-for-current = Choose unit for current.
 
+-amps = amps
+-milliamps = milliamps
+
 # Relative size strings
-number-of-sizes = 6
-tiny = Tiny
-very-small = Very small
-small = Small
-medium-size = Medium size
-large = Large
-very-large = Very large
-huge = Huge
-much-much-smaller-than = much much smaller than
-much-smaller-than = much smaller than
-slightly-smaller-than = slightly smaller than
-comparable-to = comparable to
-slightly-larger-than = slightly larger than
-much-larger-than = much larger than
-much-much-larger-than = much much larger than
-relative-size-pattern = In equation, <strong>letter V</strong> is <em>{ $iComparison }</em> <strong>letter I</strong> and <em>{ $rComparison }</em> <strong>letter R</strong>.
+relative-size-pattern = In equation, <strong>letter V</strong> is <em>{ $iComparison ->
+  [ MUCH_MUCH_SMALLER ] much much smaller than
+  [ MUCH_SMALLER ] much smaller than
+  [ SLIGHTLY_SMALLER ] slightly smaller than
+  [ COMPARABLE ] comparable to
+  [ SLIGHTLY_LARGER ] slightly larger than
+  [ MUCH_LARGER ] much larger than
+  *[ MUCH_MUCH_LARGER ] much much larger than
+}</em> <strong>letter I</strong> and <em>{ $rComparison ->
+  [ MUCH_MUCH_SMALLER ] much much smaller than
+  [ MUCH_SMALLER ] much smaller than
+  [ SLIGHTLY_SMALLER ] slightly smaller than
+  [ COMPARABLE ] comparable to
+  [ SLIGHTLY_LARGER ] slightly larger than
+  [ MUCH_LARGER ] much larger than
+  *[ MUCH_MUCH_LARGER ] much much larger than
+}</em> <strong>letter R</strong>.
 
 # Equation strings
 ohms-law-equation = Ohm's Law Equation
@@ -36,7 +38,18 @@ circuit-description = A pair of wires connect a resistor to a series of batterie
 batteries-supply-pattern = batteries supply <em>{ $voltage } volts</em>
 
 # Current strings
-current-description-pattern = <em>{ $arrowSize } arrows</em> indicate a current flowing clockwise at <em>{ $value } { $unit }</em>
+current-description-pattern = <em>{ $arrowSize ->
+  [TINY] Tiny
+  [VERY_SMALL] Very small
+  [SMALL] Small
+  [MEDIUM] Medium size
+  [LARGE] Large
+  [VERY_LARGE] Very large
+  *[HUGE] Huge
+} arrows</em> indicate a current flowing clockwise at <em>{ $value } { $unit ->
+  [AMPS] { -amps }
+  *[MILLIAMPS] { -milliamps }
+}</em>
 
 # Resistance strings
 resistance-dots-pattern = resistor shows <em> a { $impurities ->
@@ -59,8 +72,8 @@ right-now = Right now,
 voltage-summary-pattern = voltage, <strong>V</strong>, is <em>{ $value } volts</em>
 resistance-summary-pattern = resistance, <strong>R</strong>, is <em>{ $value } ohms</em>
 current-summary-pattern = current, <strong>I</strong>, is <em>{ $value } { $unit ->
-  [AMPS] amps
-  *[MILLIAMPS] milliamps
+  [AMPS] { -amps }
+  *[MILLIAMPS] { -milliamps }
 }</em>
 
 # Slider strings

@@ -36,39 +36,6 @@ const BATTERIES_OFFSET = 30;
 const AA_VOLTAGE = 1.5; // in volts
 const MAX_NUMBER_OF_BATTERIES = Math.ceil( VOLTAGE_RANGE.max / AA_VOLTAGE );
 
-// map for relative size of variables to their accessible description - ranges values are the ratio of sizes
-// for instance, a value 0.25 means that the letter is 1/4 the size of the other
-const COMPARATIVE_DESCRIPTION_RANGES = {
-  MUCH_MUCH_SMALLER: {
-    range: new Range( 0, 0.25 ),
-    description: muchMuchSmallerThanString
-  },
-  MUCH_SMALLER: {
-    range: new Range( 0.25, 0.50 ),
-    description: muchSmallerThanString
-  },
-  SLIGHTLY_SMALLER: {
-    range: new Range( 0.50, 0.9 ),
-    description: slightlySmallerThanString
-  },
-  COMPARABLE: {
-    range: new Range( 0.9, 1.10 ),
-    description: comparableToString
-  },
-  SLIGHTLY_LARGER: {
-    range: new Range( 1.10, 2.0 ),
-    description: slightlyLargerThanString
-  },
-  MUCH_LARGER: {
-    range: new Range( 2.0, 4.0 ),
-    description: muchLargerThanString
-  },
-  MUCH_MUCH_LARGER: {
-    range: new Range( 4.0, Number.MAX_VALUE ),
-    description: muchMuchLargerThanString
-  }
-};
-
 const OhmsLawConstants = {
 
   // colors
@@ -117,9 +84,7 @@ const OhmsLawConstants = {
     largeString, veryLargeString, hugeString ],
 
   COMPARISON_SIZE_STRINGS: [ muchMuchSmallerThanString, muchSmallerThanString, slightlySmallerThanString,
-    comparableToString, slightlyLargerThanString, muchLargerThanString, muchMuchLargerThanString ],
-
-  COMPARATIVE_DESCRIPTION_RANGES: COMPARATIVE_DESCRIPTION_RANGES
+    comparableToString, slightlyLargerThanString, muchLargerThanString, muchMuchLargerThanString ]
 };
 
 ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );

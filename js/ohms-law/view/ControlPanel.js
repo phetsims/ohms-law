@@ -8,13 +8,13 @@
 
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import merge from '../../../../phet-core/js/merge.js';
-import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import SceneryPhetStrings from '../../../../scenery-phet/js/SceneryPhetStrings.js';
 import { HBox } from '../../../../scenery/js/imports.js';
 import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ValueChangeUtterance from '../../../../utterance-queue/js/ValueChangeUtterance.js';
 import ohmsLaw from '../../ohmsLaw.js';
+import OhmsLawFluentMessages, { PatternMessageProperty } from '../../OhmsLawFluentMessages.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
 import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
@@ -28,12 +28,6 @@ const voltageSymbolString = OhmsLawStrings.voltageSymbol;
 const voltageUnitsString = OhmsLawStrings.voltageUnits;
 
 // can provide translators with context
-const resistanceUnitsPatternString = OhmsLawA11yStrings.resistanceUnitsPattern.value;
-const voltageUnitsPatternString = OhmsLawA11yStrings.voltageUnitsPattern.value;
-const resistanceSliderLabelString = OhmsLawA11yStrings.resistanceSliderLabel.value;
-const voltageSliderLabelString = OhmsLawA11yStrings.voltageSliderLabel.value;
-const sliderControlsString = OhmsLawA11yStrings.sliderControls.value;
-const slidersDescriptionString = OhmsLawA11yStrings.slidersDescription.value;
 const letterRString = OhmsLawA11yStrings.letterR.value;
 const letterVString = OhmsLawA11yStrings.letterV.value;
 const shrinksString = OhmsLawA11yStrings.shrinks.value;
@@ -41,7 +35,7 @@ const growsString = OhmsLawA11yStrings.grows.value;
 const aLotString = OhmsLawA11yStrings.aLot.value;
 
 // constants
-const NUMBER_OF_LETTER_SIZES = OhmsLawA11yStrings.numberOfSizes.value; // pdom - the number of sizes that letters can be described as.
+const NUMBER_OF_LETTER_SIZES = 6; // pdom - the number of sizes that letters can be described as.
 
 class ControlPanel extends Panel {
 
@@ -69,6 +63,13 @@ class ControlPanel extends Panel {
     const resistanceUtterance = new ValueChangeUtterance();
     const voltageUtterance = new ValueChangeUtterance();
 
+    const voltageUnitsMessageProperty = new PatternMessageProperty(
+      OhmsLawFluentMessages.voltageUnitsPatternMessageProperty,
+      {
+        value: voltageProperty
+      }
+    );
+
     // Create the voltage slider with readout and labels
     let oldVoltage; // stored on startDrag;
     let newVoltage; // stored on endDrag;
@@ -78,13 +79,13 @@ class ControlPanel extends Panel {
       voltageSymbolString,
       voltageString,
       voltageUnitsString,
-      voltageSliderLabelString,
+      OhmsLawFluentMessages.voltageSliderLabelMessageProperty,
       {
         sliderOptions: {
 
           // pdom
           keyboardStep: 0.5, // volts
-          pdomCreateAriaValueText: value => StringUtils.fillIn( voltageUnitsPatternString, { value: value } ),
+          pdomCreateAriaValueText: value => voltageUnitsMessageProperty.value,
           startDrag: () => {
             oldVoltage = voltageProperty.get();
           },
@@ -133,20 +134,27 @@ class ControlPanel extends Panel {
     };
 
     // Create the resistance slider with readout and labels
+    const resistanceUnitsMessageProperty = new PatternMessageProperty(
+      OhmsLawFluentMessages.resistanceUnitsPatternMessageProperty,
+      {
+        value: resistanceProperty
+      }
+    );
+
     const resistanceSlider = new SliderUnit(
       resistanceProperty,
       OhmsLawConstants.RESISTANCE_RANGE,
       resistanceSymbolString,
       resistanceString,
       SceneryPhetStrings.symbol.ohmsStringProperty,
-      resistanceSliderLabelString,
+      OhmsLawFluentMessages.resistanceSliderLabelMessageProperty,
       {
         sliderOptions: {
 
           // pdom
           keyboardStep: 20, // ohms
           shiftKeyboardStep: 1, // ohms
-          pdomCreateAriaValueText: value => StringUtils.fillIn( resistanceUnitsPatternString, { value: value } ),
+          pdomCreateAriaValueText: value => resistanceUnitsMessageProperty.value,
           startDrag: () => {
             oldResistance = resistanceProperty.get();
             oldCurrent = currentProperty.get();
@@ -165,8 +173,8 @@ class ControlPanel extends Panel {
       // pdom - contain the sliders in a list
       labelTagName: 'h3',
       tagName: 'div',
-      labelContent: sliderControlsString,
-      descriptionContent: slidersDescriptionString
+      labelContent: OhmsLawFluentMessages.sliderControlsMessageProperty,
+      descriptionContent: OhmsLawFluentMessages.slidersDescriptionMessageProperty
     } );
 
     super( content, options );

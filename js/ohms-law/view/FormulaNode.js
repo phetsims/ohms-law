@@ -7,26 +7,21 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
-import Multilink from '../../../../axon/js/Multilink.js';
 import merge from '../../../../phet-core/js/merge.js';
-import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import MathSymbols from '../../../../scenery-phet/js/MathSymbols.js';
 import PhetColorScheme from '../../../../scenery-phet/js/PhetColorScheme.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import { Node, Rectangle, Text } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
+import OhmsLawFluentMessages, { PatternMessageProperty } from '../../OhmsLawFluentMessages.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
-import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
+import FormulaDescriber from './FormulaDescriber.js';
 
 const currentSymbolString = OhmsLawStrings.currentSymbol;
 const resistanceSymbolString = OhmsLawStrings.resistanceSymbol;
 const voltageSymbolString = OhmsLawStrings.voltageSymbol;
-
-const relativeSizePatternString = OhmsLawA11yStrings.relativeSizePattern.value;
-const ohmsLawEquationString = OhmsLawA11yStrings.ohmsLawEquation.value;
-const ohmsLawDefinitionString = OhmsLawA11yStrings.ohmsLawDefinition.value;
 
 // constants
 const TEXT_FONT = new PhetFont( { family: OhmsLawConstants.FONT_FAMILY, size: 20, weight: 'bold' } );
@@ -46,8 +41,8 @@ class FormulaNode extends Node {
       tandem: Tandem.REQUIRED,
 
       // pdom
-      labelContent: ohmsLawEquationString,
-      descriptionContent: ohmsLawDefinitionString,
+      labelContent: OhmsLawFluentMessages.ohmsLawEquationMessageProperty,
+      descriptionContent: OhmsLawFluentMessages.ohmsLawDefinitionMessageProperty,
       tagName: 'div',
       labelTagName: 'h3' // labels should come before other child content
     }, options );
@@ -132,65 +127,17 @@ class FormulaNode extends Node {
     const descriptionNode = new Node( { tagName: 'p' } );
     this.addChild( descriptionNode );
 
-    // when any of the model Properties change, update the accessible description
-    Multilink.multilink( [ model.currentProperty, model.resistanceProperty, model.voltageProperty ], ( current, resistance, voltage ) => {
-      descriptionNode.innerContent = this.getComparativeSizeDescription();
-    } );
+    const formulaDescriber = new FormulaDescriber( model, this.resistanceLetterNode, this.currentLetterNode, this.voltageLetterNode );
+
+    descriptionNode.innerContent = new PatternMessageProperty(
+      OhmsLawFluentMessages.relativeSizePatternMessageProperty,
+      {
+        iComparison: formulaDescriber.vToIComparisonProperty,
+        rComparison: formulaDescriber.vToRComparisonProperty
+      }
+    );
 
     this.mutate( options );
-  }
-
-
-  /**
-   * Get the comparative size description for the letters, something like
-   * "Letter V is much larger than letter I and comparable to letter R."
-   * Used for a11y.
-   *
-   * @public
-   * @returns {string}
-   */
-  getComparativeSizeDescription() {
-
-    const rHeight = this.resistanceLetterNode.height;
-    const iHeight = this.currentLetterNode.height;
-    const vHeight = this.voltageLetterNode.height;
-
-    const vToI = vHeight / iHeight;
-    const vToR = vHeight / rHeight;
-
-    // for iteration
-    let i;
-    let describedRange;
-
-    // map the relations to the comparative descriptions
-    // loop through array of keys to avoid closures every time this is called
-    const ranges = OhmsLawConstants.COMPARATIVE_DESCRIPTION_RANGES;
-    const keys = Object.keys( ranges );
-
-    // get the relative size description comparing V to I
-    let vToIDescription;
-    for ( i = 0; i < keys.length; i++ ) {
-      describedRange = ranges[ keys[ i ] ];
-      if ( describedRange.range.contains( vToI ) ) {
-        vToIDescription = describedRange.description;
-        break;
-      }
-    }
-
-    // get the relative size description comparing V to R
-    let vToRDescription;
-    for ( i = 0; i < keys.length; i++ ) {
-      describedRange = ranges[ keys[ i ] ];
-      if ( describedRange.range.contains( vToR ) ) {
-        vToRDescription = describedRange.description;
-        break;
-      }
-    }
-
-    return StringUtils.fillIn( relativeSizePatternString, {
-      iComparison: vToIDescription,
-      rComparison: vToRDescription
-    } );
   }
 }
 

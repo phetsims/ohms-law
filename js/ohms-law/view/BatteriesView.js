@@ -8,15 +8,13 @@
 
 import Utils from '../../../../dot/js/Utils.js';
 import merge from '../../../../phet-core/js/merge.js';
-import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import { Node } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
+import OhmsLawFluentMessages, { PatternMessageProperty } from '../../OhmsLawFluentMessages.js';
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import BatteryView from './BatteryView.js';
-
-const batteriesSupplyPatternString = OhmsLawA11yStrings.batteriesSupplyPattern.value;
 
 class BatteriesView extends Node {
   /**
@@ -66,10 +64,14 @@ class BatteriesView extends Node {
         }
       } );
 
-      // pdom - update the description for the number of batteries
-      this.innerContent = StringUtils.fillIn( batteriesSupplyPatternString, {
-        voltage: Utils.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS )
-      } );
+      this.innerContent = new PatternMessageProperty(
+        OhmsLawFluentMessages.batteriesSupplyPatternMessageProperty,
+        {
+          voltage: new DerivedProperty( [ voltageProperty ], voltage => {
+            return Utils.toFixed( voltage, OhmsLawConstants.VOLTAGE_SIG_FIGS );
+          } )
+        }
+      );
     } );
     this.mutate( options );
   }
