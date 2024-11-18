@@ -1,43 +1,69 @@
-resistance-units-pattern = { $value } Ohms
-voltage-units-pattern = { $value } Volts
-resistance-slider-label = R, Resistance
-voltage-slider-label = V, Voltage
-choose-unit-for-current = Choose unit for current.
-
+# Reusable strings for the units of current.
 -amps = amps
 -milliamps = milliamps
 
-# Relative size strings
-relative-size-pattern = In equation, <strong>letter V</strong> is <em>{ $iComparison ->
-  [ MUCH_MUCH_SMALLER ] much much smaller than
-  [ MUCH_SMALLER ] much smaller than
-  [ SLIGHTLY_SMALLER ] slightly smaller than
-  [ COMPARABLE ] comparable to
-  [ SLIGHTLY_LARGER ] slightly larger than
-  [ MUCH_LARGER ] much larger than
-  *[ MUCH_MUCH_LARGER ] much much larger than
-}</em> <strong>letter I</strong> and <em>{ $rComparison ->
-  [ MUCH_MUCH_SMALLER ] much much smaller than
-  [ MUCH_SMALLER ] much smaller than
-  [ SLIGHTLY_SMALLER ] slightly smaller than
-  [ COMPARABLE ] comparable to
-  [ SLIGHTLY_LARGER ] slightly larger than
-  [ MUCH_LARGER ] much larger than
-  *[ MUCH_MUCH_LARGER ] much much larger than
-}</em> <strong>letter R</strong>.
+# ..................................................................
+# Overall screen summary descriptions.
+# ..................................................................
+summary-look-for-sliders = Look for voltage and resistance sliders to play, or read on for details about equation and circuit.
+summary-play-area = In the Play Area you find the equation for Ohm's Law, <strong>V</strong> equals <strong>I</strong> times <strong>R</strong>, and a circuit. Voltage and resistance sliders allow changes to the equation and circuit.
+summary-control-area = The Control Area has radio buttons to switch between milliamps and amps, and a button to reset the sim.
+state-of-sim = State of Sim
+right-now = Right now,
 
+# Individual items describing the current values of voltage, resistance, and current.
+voltage-summary-pattern = voltage, <strong>V</strong>, is <em>{ $value } volts</em>
+resistance-summary-pattern = resistance, <strong>R</strong>, is <em>{ $value } ohms</em>
+current-summary-pattern = current, <strong>I</strong>, is <em>{ $value } { $unit ->
+  [AMPS] { -amps }
+  *[MILLIAMPS] { -milliamps }
+}</em>
+
+# ..................................................................
+# Description of the Ohm's Law equation.
+# ..................................................................
 # Equation strings
 ohms-law-equation = Ohm's Law Equation
 ohms-law-definition = Voltage, <strong>V</strong>, is equal to Current, <strong>I</strong>, times Resistance, <strong>R</strong>.
 
-# Circuit strings
+# Reusable strings for the relative sizes of letters in the equation
+-much-much-smaller = much much smaller than
+-much-smaller = much smaller than
+-slightly-smaller = slightly smaller than
+-comparable = comparable to
+-slightly-larger = slightly larger than
+-much-larger = much larger than
+-much-much-larger = much much larger than
+
+# Description for the relative sizes of the letters in the equation
+relative-size-pattern = In equation, <strong>letter V</strong> is <em>{ $iComparison ->
+  [ MUCH_MUCH_SMALLER ] { -much-much-smaller }
+  [ MUCH_SMALLER ] { -much-smaller }
+  [ SLIGHTLY_SMALLER ] { -slightly-smaller }
+  [ COMPARABLE ] { -comparable }
+  [ SLIGHTLY_LARGER ] { -slightly-larger }
+  [ MUCH_LARGER ] { -much-larger }
+  *[ MUCH_MUCH_LARGER ] { -much-much-larger }
+}</em> <strong>letter I</strong> and <em>{ $rComparison ->
+  [ MUCH_MUCH_SMALLER ] { -much-much-smaller }
+  [ MUCH_SMALLER ] { -much-smaller }
+  [ SLIGHTLY_SMALLER ] { -slightly-smaller }
+  [ COMPARABLE ] { -comparable }
+  [ SLIGHTLY_LARGER ] { -slightly-larger }
+  [ MUCH_LARGER ] { -much-larger }
+  *[ MUCH_MUCH_LARGER ] { -much-much-larger }
+}</em> <strong>letter R</strong>.
+
+# ..................................................................
+# Description of the circuit.
+# ..................................................................
 circuit-label = The Circuit
 circuit-description = A pair of wires connect a resistor to a series of batteries. In circuit,
 
-# Battery strings
+# Item describing the state of the batteries
 batteries-supply-pattern = batteries supply <em>{ $voltage } volts</em>
 
-# Current strings
+# Description of the arrows representing current.
 current-description-pattern = <em>{ $arrowSize ->
   [TINY] Tiny
   [VERY_SMALL] Very small
@@ -51,7 +77,7 @@ current-description-pattern = <em>{ $arrowSize ->
   *[MILLIAMPS] { -milliamps }
 }</em>
 
-# Resistance strings
+# Description for the state of the resistor.
 resistance-dots-pattern = resistor shows <em> a { $impurities ->
   [TINY] tiny
   [VERY_SMALL] very small
@@ -62,23 +88,21 @@ resistance-dots-pattern = resistor shows <em> a { $impurities ->
   *[HUGE] huge
 } amount of impurities</em>
 
-# Screen summary strings
-summary-look-for-sliders = Look for voltage and resistance sliders to play, or read on for details about equation and circuit.
-summary-play-area = In the Play Area you find the equation for Ohm's Law, <strong>V</strong> equals <strong>I</strong> times <strong>R</strong>, and a circuit. Voltage and resistance sliders allow changes to the equation and circuit.
-summary-control-area = The Control Area has radio buttons to switch between milliamps and amps, and a button to reset the sim.
-state-of-sim = State of Sim
-right-now = Right now,
+# ..................................................................
+# Descriptions for the voltage and resistance sliders.
+# ..................................................................
+resistance-units-pattern = { $value } Ohms
+voltage-units-pattern = { $value } Volts
 
-voltage-summary-pattern = voltage, <strong>V</strong>, is <em>{ $value } volts</em>
-resistance-summary-pattern = resistance, <strong>R</strong>, is <em>{ $value } ohms</em>
-current-summary-pattern = current, <strong>I</strong>, is <em>{ $value } { $unit ->
-  [AMPS] { -amps }
-  *[MILLIAMPS] { -milliamps }
-}</em>
+# Labels for the sliders.
+resistance-slider-label = R, Resistance
+voltage-slider-label = V, Voltage
 
-# Slider strings
+# Heading for the slider controls.
 slider-controls = Slider Controls
 sliders-description = Voltage and resistance sliders allow changes to equation and circuit.
+
+# Reusable strings for the context responses that occur when the sliders are changed.
 -letter-r = R
 -letter-v = V
 -shrinks = shrinks
@@ -102,3 +126,6 @@ slider-change-alert-pattern = As letter { $firstLetter ->
   [AMPS] { -amps }
   *[MILLIAMPS] { -milliamps }
 }.
+
+# Help text for the units radio buttons.
+choose-unit-for-current = Choose unit for current.
