@@ -9,16 +9,10 @@
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import EnumerationValue from '../../../../phet-core/js/EnumerationValue.js';
 import Enumeration from '../../../../phet-core/js/Enumeration.js';
-import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import Utils from '../../../../dot/js/Utils.js';
+import OhmsLawFluentMessages, { formatMessage } from '../../OhmsLawFluentMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import CurrentUnit from '../model/CurrentUnit.js';
-import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
-
-const currentMilliampsString = OhmsLawA11yStrings.currentMilliamps.value;
-const currentAmpsString = OhmsLawA11yStrings.currentAmps.value;
-const sliderChangeAlertPatternString = OhmsLawA11yStrings.sliderChangeAlertPattern.value;
 
 // enum for describing resistance impurities
 class ResistorImpurities extends EnumerationValue {
@@ -30,6 +24,23 @@ class ResistorImpurities extends EnumerationValue {
   static VERY_LARGE = new ResistorImpurities();
   static HUGE = new ResistorImpurities();
   static enumeration = new Enumeration( ResistorImpurities );
+}
+
+// enum for describing a letter in the ohms-law equation
+export class EquationLetter extends EnumerationValue {
+  static V = new EquationLetter();
+  static I = new EquationLetter();
+  static R = new EquationLetter();
+  static enumeration = new Enumeration( EquationLetter );
+}
+
+// enum for describing the size change of a letter in the ohms-law equation
+export class SizeChange extends EnumerationValue {
+  static GROWS = new SizeChange();
+  static SHRINKS = new SizeChange();
+  static GROWS_A_LOT = new SizeChange();
+  static SHRINKS_A_LOT = new SizeChange();
+  static enumeration = new Enumeration( SizeChange );
 }
 
 class OhmsLawDescriber {
@@ -62,40 +73,23 @@ class OhmsLawDescriber {
    * "As letter V grows, letter I grows. Current now 10.0 milliamps with voltage at 5.0 volts."
    * Used for a11y.
    *
-   * @param  {string} initLetter - letter representing the model property that was changed
-   * @param  {string} initSizeChange - string describing change in size of letter representing changed model Property
-   * @param  {string} iSizeChange - string describing size change of letter I
+   * @param  {EquationLetter} firstLetter - enum value representing the first letter of the phrase.
+   * @param  {SizeChange} firstSizeChange - enum value representing the size change of the first letter
+   * @param  {SizeChange} iSizeChange - enum value describing size change of letter I
    * @param  {number} currentVal - value of model current Property
    * @returns {string} string
    * @public
    */
-  getValueChangeAlertString( initLetter, initSizeChange, iSizeChange ) {
+  getValueChangeAlertString( firstLetter, firstSizeChange, iSizeChange ) {
     const currentVal = this.model.getFixedCurrent();
-    return StringUtils.fillIn( sliderChangeAlertPatternString, {
-      initLetter: initLetter,
-      initSizeChange: initSizeChange,
+
+    return formatMessage( OhmsLawFluentMessages.sliderChangeAlertPatternMessageProperty, {
+      firstLetter: firstLetter,
+      firstSizeChange: firstSizeChange,
       iSizeChange: iSizeChange,
       currentVal: currentVal,
-      unit: this.getUnitForCurrent()
+      unit: this.model.currentUnitsProperty
     } );
-  }
-
-
-  /**
-   * Get the current current unit
-   * @returns {string}
-   * @public
-   */
-  getUnitForCurrent() {
-    switch( this.model.currentUnitsProperty.value ) {
-      case CurrentUnit.AMPS:
-        return currentAmpsString;
-      case CurrentUnit.MILLIAMPS:
-        return currentMilliampsString;
-      default:
-        break;
-    }
-    throw new Error( 'unexpected value for currentUnitsProperty' );
   }
 }
 

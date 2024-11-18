@@ -105,6 +105,46 @@ class PatternMessageProperty extends DerivedProperty {
 }
 
 /**
+ * Changes a set of arguments for the message into a set of values that can easily be used to
+ * format the message. Does things like get Property values and converts enumeration values to strings.
+ */
+const handleArgs = args => {
+  const keys = Object.keys( args );
+
+  const newArgs = {};
+  keys.forEach( key => {
+    let value = args[ key ];
+
+    // If the value is a Property, get the value.
+    if ( isTReadOnlyProperty( value ) ) {
+      value = value.value;
+    }
+
+    // If the value is an EnumerationValue, automatically use the enum name.
+    if ( value && value.name ) {
+      value = value.name;
+    }
+
+    newArgs[ key ] = value;
+  } );
+
+  return newArgs;
+};
+
+/**
+ * Directly format a fluent message. Most of the time, you should use a PatternMessageProperty instead.
+ * This should only be used when the string does not need to be changed when the locale changes. Real-time
+ * alerts are a good exaple.
+ *
+ * TODO: Would live in another utility file, https://github.com/phetsims/joist/issues/992
+ */
+const formatMessage = ( localizedMessageProperty, args ) => {
+  const newArgs = handleArgs( args );
+  console.log( newArgs );
+  return localizedMessageProperty.bundleProperty.value.format( localizedMessageProperty.value, newArgs );
+};
+
+/**
  * Converts a camelCase id to a message key. For example, 'choose-unit-for-current' becomes
  * 'chooseUnitForCurrentMessageProperty'.
  */
@@ -122,4 +162,4 @@ for ( const [ id ] of englishBundle.messages ) {
 }
 
 export default OhmsLawFluentMessages;
-export { PatternMessageProperty };
+export { PatternMessageProperty, formatMessage };

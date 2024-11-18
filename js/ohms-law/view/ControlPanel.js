@@ -17,8 +17,8 @@ import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawFluentMessages, { PatternMessageProperty } from '../../OhmsLawFluentMessages.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
-import OhmsLawA11yStrings from '../OhmsLawA11yStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
+import { EquationLetter, SizeChange } from './OhmsLawDescriber.js';
 import SliderUnit from './SliderUnit.js';
 
 const resistanceString = OhmsLawStrings.resistance;
@@ -26,13 +26,6 @@ const resistanceSymbolString = OhmsLawStrings.resistanceSymbol;
 const voltageString = OhmsLawStrings.voltage;
 const voltageSymbolString = OhmsLawStrings.voltageSymbol;
 const voltageUnitsString = OhmsLawStrings.voltageUnits;
-
-// can provide translators with context
-const letterRString = OhmsLawA11yStrings.letterR.value;
-const letterVString = OhmsLawA11yStrings.letterV.value;
-const shrinksString = OhmsLawA11yStrings.shrinks.value;
-const growsString = OhmsLawA11yStrings.grows.value;
-const aLotString = OhmsLawA11yStrings.aLot.value;
 
 // constants
 const NUMBER_OF_LETTER_SIZES = 6; // pdom - the number of sizes that letters can be described as.
@@ -94,8 +87,8 @@ class ControlPanel extends Panel {
 
             if ( oldVoltage !== newVoltage ) {
               // pdom - when V changes, announce an alert that describes the change
-              const sizeChange = newVoltage - oldVoltage > 0 ? growsString : shrinksString;
-              voltageUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( letterVString, sizeChange, sizeChange );
+              const sizeChange = newVoltage - oldVoltage > 0 ? SizeChange.GROWS : SizeChange.SHRINKS;
+              voltageUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( EquationLetter.V, sizeChange, sizeChange );
               voltageSlider.alertDescriptionUtterance( voltageUtterance );
             }
           }
@@ -124,11 +117,16 @@ class ControlPanel extends Panel {
         const resistanceChange = newResistance - oldResistance;
         const currentChange = newCurrent - oldCurrent;
 
-        const rSizeChange = resistanceChange > 0 ? growsString : shrinksString;
-        let iSizeChange = resistanceChange < 0 ? growsString : shrinksString;
-        iSizeChange += Math.abs( currentChange ) > twoSizeCurrentThreshhold ? ` ${aLotString}` : '';
+        const rSizeChange = resistanceChange > 0 ? SizeChange.GROWS : SizeChange.SHRINKS;
+        let iSizeChange;
+        if ( resistanceChange < 0 ) {
+          iSizeChange = Math.abs( currentChange ) > twoSizeCurrentThreshhold ? SizeChange.GROWS_A_LOT : SizeChange.GROWS;
+        }
+        else {
+          iSizeChange = Math.abs( currentChange ) > twoSizeCurrentThreshhold ? SizeChange.SHRINKS_A_LOT : SizeChange.SHRINKS;
+        }
 
-        resistanceUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( letterRString, rSizeChange, iSizeChange );
+        resistanceUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( EquationLetter.R, rSizeChange, iSizeChange );
         resistanceSlider.alertDescriptionUtterance( resistanceUtterance );
       }
     };

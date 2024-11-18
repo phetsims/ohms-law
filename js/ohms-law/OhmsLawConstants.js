@@ -10,22 +10,6 @@ import Range from '../../../dot/js/Range.js';
 import RangeWithValue from '../../../dot/js/RangeWithValue.js';
 import PhetFont from '../../../scenery-phet/js/PhetFont.js';
 import ohmsLaw from '../ohmsLaw.js';
-import OhmsLawA11yStrings from './OhmsLawA11yStrings.js';
-
-const tinyString = OhmsLawA11yStrings.tiny.value;
-const verySmallString = OhmsLawA11yStrings.verySmall.value;
-const smallString = OhmsLawA11yStrings.small.value;
-const mediumSizeString = OhmsLawA11yStrings.mediumSize.value;
-const largeString = OhmsLawA11yStrings.large.value;
-const veryLargeString = OhmsLawA11yStrings.veryLarge.value;
-const hugeString = OhmsLawA11yStrings.huge.value;
-const muchMuchSmallerThanString = OhmsLawA11yStrings.muchMuchSmallerThan.value;
-const muchSmallerThanString = OhmsLawA11yStrings.muchSmallerThan.value;
-const slightlySmallerThanString = OhmsLawA11yStrings.slightlySmallerThan.value;
-const comparableToString = OhmsLawA11yStrings.comparableTo.value;
-const slightlyLargerThanString = OhmsLawA11yStrings.slightlyLargerThan.value;
-const muchLargerThanString = OhmsLawA11yStrings.muchLargerThan.value;
-const muchMuchLargerThanString = OhmsLawA11yStrings.muchMuchLargerThan.value;
 
 // constants used by other constants
 const RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms
@@ -78,13 +62,7 @@ const OhmsLawConstants = {
   BATTERIES_OFFSET: BATTERIES_OFFSET,
   BATTERY_HEIGHT: 38,
   AA_VOLTAGE: AA_VOLTAGE,
-  BATTERY_WIDTH: ( WIRE_WIDTH - BATTERIES_OFFSET * 2 ) / MAX_NUMBER_OF_BATTERIES,
-
-  RELATIVE_SIZE_STRINGS: [ tinyString, verySmallString, smallString, mediumSizeString,
-    largeString, veryLargeString, hugeString ],
-
-  COMPARISON_SIZE_STRINGS: [ muchMuchSmallerThanString, muchSmallerThanString, slightlySmallerThanString,
-    comparableToString, slightlyLargerThanString, muchLargerThanString, muchMuchLargerThanString ]
+  BATTERY_WIDTH: ( WIRE_WIDTH - BATTERIES_OFFSET * 2 ) / MAX_NUMBER_OF_BATTERIES
 };
 
 ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );

@@ -79,9 +79,26 @@ current-summary-pattern = current, <strong>I</strong>, is <em>{ $value } { $unit
 # Slider strings
 slider-controls = Slider Controls
 sliders-description = Voltage and resistance sliders allow changes to equation and circuit.
-slider-change-alert-pattern = As letter { $initLetter } { $initSizeChange }, letter I { $iSizeChange }.  Current now { $currentVal } { $unit }.
-letter-r = R
-letter-v = V
-shrinks = shrinks
-grows = grows
-a-lot = a lot
+-letter-r = R
+-letter-v = V
+-shrinks = shrinks
+-grows = grows
+-shrinks-a-lot = shrinks a lot
+-grows-a-lot = grows a lot
+slider-change-alert-pattern = As letter { $firstLetter ->
+  [R] { -letter-r }
+  *[V] { -letter-v }
+} { $firstSizeChange ->
+  [SHRINKS] { -shrinks }
+  [SHRINKS_A_LOT] { -shrinks-a-lot }
+  [GROWS] { -grows }
+  *[GROWS_A_LOT] { -grows-a-lot }
+}, letter I { $iSizeChange ->
+  [SHRINKS] { -shrinks }
+  [SHRINKS_A_LOT] { -shrinks-a-lot }
+  [GROWS] { -grows }
+  *[GROWS_A_LOT] { -grows-a-lot }
+}. Current now { $currentVal } { $unit ->
+  [AMPS] { -amps }
+  *[MILLIAMPS] { -milliamps }
+}.
