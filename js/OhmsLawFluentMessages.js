@@ -30,39 +30,25 @@ bundleMap.set( 'en', englishBundle );
 const resource = Fluent.FluentResource.fromString( phet.chipper.fluentStrings );
 englishBundle.addResource( resource );
 
-/**
- * A Property that provides the current bundle for the current locale.
- * TODO: We should only need one instance of this, right? Could be more efficient, https://github.com/phetsims/joist/issues/992
- */
-class LocalizedBundleProperty extends DerivedProperty {
-  constructor( id ) {
+const localizedBundleProperty = new DerivedProperty( [ localeProperty ], locale => {
 
-    // Just to get Property interface working, but this needs to be bi-directional
-    // and use LocalizedString/LocalizedStringProperty.
-    super( [ localeProperty ], locale => {
-
-      // fall back to the english bundle
-      const bundleToUse = bundleMap.has( locale ) ? bundleMap.get( locale ) : englishBundle;
-
-      // Fall back to the english bundle if the bundleToUse does not have the message.
-      return bundleToUse.hasMessage( id ) ? bundleToUse : englishBundle;
-    } );
-  }
-}
+  // fall back to the english bundle
+  return bundleMap.has( locale ) ? bundleMap.get( locale ) : englishBundle;
+} );
 
 /**
  * A Property whose value is a message from a bundle.
  */
 class LocalizedMessageProperty extends DerivedProperty {
-  constructor( bundleProperty, id ) {
+  constructor( id ) {
 
     // Just to get Property interface working, but this needs to be bi-directional
     // and use LocalizedString/LocalizedStringProperty stack.
-    super( [ bundleProperty ], locale => {
-      return bundleProperty.value.getMessage( id );
-    } );
+    super( [ localizedBundleProperty ], locale => {
 
-    this.bundleProperty = bundleProperty;
+      // If the bundle does not have the message, fall back to english.
+      return localizedBundleProperty.value.getMessage( id ) || englishBundle.getMessage( id );
+    } );
   }
 }
 
@@ -99,7 +85,7 @@ class PatternMessageProperty extends DerivedProperty {
       } );
 
       // Format the message with the arguments to resolve a string.
-      return messageProperty.bundleProperty.value.format( message, args );
+      return localizedBundleProperty.value.format( message, args );
     } );
   }
 }
@@ -140,8 +126,7 @@ const handleArgs = args => {
  */
 const formatMessage = ( localizedMessageProperty, args ) => {
   const newArgs = handleArgs( args );
-  console.log( newArgs );
-  return localizedMessageProperty.bundleProperty.value.format( localizedMessageProperty.value, newArgs );
+  return localizedBundleProperty.value.format( localizedMessageProperty.value, newArgs );
 };
 
 /**
@@ -156,9 +141,7 @@ const OhmsLawFluentMessages = {};
 for ( const [ id ] of englishBundle.messages ) {
 
   // So that you can look up fluent strings with camelCase.
-  OhmsLawFluentMessages[ fluentIdToMessageKey( id ) ] = new LocalizedMessageProperty(
-    new LocalizedBundleProperty( id ), id
-  );
+  OhmsLawFluentMessages[ fluentIdToMessageKey( id ) ] = new LocalizedMessageProperty( id );
 }
 
 export default OhmsLawFluentMessages;

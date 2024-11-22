@@ -19,7 +19,7 @@
     ],
     "preload": [
       "../sherpa/lib/fluent-0.13.0.min.js",
-      "../ohms-law/js/load-unbuilt-fluent-strings.js"
+      "../chipper/js/load-unbuilt-fluent-strings.js"
     ],
     "simFeatures": {
       "supportsSound": true,
