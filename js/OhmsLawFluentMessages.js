@@ -20,15 +20,34 @@ import DerivedProperty from '../../axon/js/DerivedProperty.js';
 import { isTReadOnlyProperty } from '../../axon/js/TReadOnlyProperty.js';
 import localeProperty from '../../joist/js/i18n/localeProperty.js';
 
-// TODO: Create a bundle for every supported locale, https://github.com/phetsims/joist/issues/992
-const englishBundle = new Fluent.FluentBundle( 'en' );
 const bundleMap = new Map();
 
-bundleMap.set( 'en', englishBundle );
+// TODO: Create a bundle for every supported locale, https://github.com/phetsims/joist/issues/992
+// const englishBundle = new Fluent.FluentBundle( 'en' );
+// bundleMap.set( 'en', englishBundle );
 
 // Currently, we pre-load english strings. Each bundle needs to load its own language.
-const resource = Fluent.FluentResource.fromString( phet.chipper.fluentStrings );
-englishBundle.addResource( resource );
+// const resource = Fluent.FluentResource.fromString( phet.chipper.fluentStrings );
+// englishBundle.addResource( resource );
+
+// Create the Fluent bundles for each locale, and save them to the map for use.
+localeProperty.availableRuntimeLocales.forEach( locale => {
+
+  // If strings are available for the locale, create a bundle. Graceful fallbacks
+  // happen in the Properties below.
+  if ( phet.chipper.fluentStrings[ locale ] ) {
+    const bundle = new Fluent.FluentBundle( locale );
+    const resource = Fluent.FluentResource.fromString( phet.chipper.fluentStrings[ locale ] );
+    bundle.addResource( resource );
+
+    bundleMap.set( locale, bundle );
+  }
+} );
+
+const englishBundle = bundleMap.get( 'en' );
+if ( !englishBundle ) {
+  throw new Error( 'English bundle is required' );
+}
 
 const localizedBundleProperty = new DerivedProperty( [ localeProperty ], locale => {
 
