@@ -12,7 +12,8 @@ import Utils from '../../../../dot/js/Utils.js';
 import ScreenSummaryContent from '../../../../joist/js/ScreenSummaryContent.js';
 import { Node } from '../../../../scenery/js/imports.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawFluentMessages, { PatternMessageProperty } from '../../OhmsLawFluentMessages.js';
+import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
+import PatternMessageProperty from '../../../../chipper/js/PatternMessageProperty.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 class OhmsLawScreenSummaryNode extends ScreenSummaryContent {

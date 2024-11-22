@@ -10,7 +10,8 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import EnumerationValue from '../../../../phet-core/js/EnumerationValue.js';
 import Enumeration from '../../../../phet-core/js/Enumeration.js';
 import Utils from '../../../../dot/js/Utils.js';
-import OhmsLawFluentMessages, { formatMessage } from '../../OhmsLawFluentMessages.js';
+import FluentUtils from '../../../../chipper/js/FluentUtils.js';
+import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import ohmsLaw from '../../ohmsLaw.js';
 
@@ -83,7 +84,7 @@ class OhmsLawDescriber {
   getValueChangeAlertString( firstLetter, firstSizeChange, iSizeChange ) {
     const currentVal = this.model.getFixedCurrent();
 
-    return formatMessage( OhmsLawFluentMessages.sliderChangeAlertPatternMessageProperty, {
+    return FluentUtils.formatMessage( OhmsLawFluentMessages.sliderChangeAlertPatternMessageProperty, {
       firstLetter: firstLetter,
       firstSizeChange: firstSizeChange,
       iSizeChange: iSizeChange,
