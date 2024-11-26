@@ -5,19 +5,21 @@
 # ..................................................................
 # Overall screen summary descriptions.
 # ..................................................................
-summary-look-for-sliders = Look for voltage and resistance sliders to play, or read on for details about equation and circuit.
 summary-play-area = In the Play Area you find the equation for Ohm's Law, <strong>V</strong> equals <strong>I</strong> times <strong>R</strong>, and a circuit. Voltage and resistance sliders allow changes to the equation and circuit.
 summary-control-area = The Control Area has radio buttons to switch between milliamps and amps, and a button to reset the sim.
-state-of-sim = State of Sim
+
+# ...
+# Individual items describing the current values of voltage, resistance, and current.
 right-now = Right now,
 
-# Individual items describing the current values of voltage, resistance, and current.
 voltage-summary-pattern = voltage, <strong>V</strong>, is <em>{ $value } volts</em>
 resistance-summary-pattern = resistance, <strong>R</strong>, is <em>{ $value } ohms</em>
 current-summary-pattern = current, <strong>I</strong>, is <em>{ $value } { $unit ->
   [AMPS] { -amps }
   *[MILLIAMPS] { -milliamps }
 }</em>
+
+summary-look-for-sliders = Look for voltage and resistance sliders to play, or read on for details about equation and circuit.
 
 # ..................................................................
 # Description of the Ohm's Law equation.
@@ -60,9 +62,23 @@ relative-size-pattern = In equation, <strong>letter V</strong> is <em>{ $iCompar
 circuit-label = The Circuit
 circuit-description = A pair of wires connect a resistor to a series of batteries. In circuit,
 
+# ...
 # Item describing the state of the batteries
 batteries-supply-pattern = batteries supply <em>{ $voltage } volts</em>
 
+# ...
+# Description for the state of the resistor.
+resistance-dots-pattern = resistor shows <em> a { $impurities ->
+  [TINY] tiny
+  [VERY_SMALL] very small
+  [SMALL] small
+  [MEDIUM] medium
+  [LARGE] large
+  [VERY_LARGE] very large
+  *[HUGE] huge
+} amount of impurities</em>
+
+# ...
 # Description of the arrows representing current.
 current-description-pattern = <em>{ $arrowSize ->
   [TINY] Tiny
@@ -77,30 +93,20 @@ current-description-pattern = <em>{ $arrowSize ->
   *[MILLIAMPS] { -milliamps }
 }</em>
 
-# Description for the state of the resistor.
-resistance-dots-pattern = resistor shows <em> a { $impurities ->
-  [TINY] tiny
-  [VERY_SMALL] very small
-  [SMALL] small
-  [MEDIUM] medium
-  [LARGE] large
-  [VERY_LARGE] very large
-  *[HUGE] huge
-} amount of impurities</em>
-
 # ..................................................................
 # Descriptions for the voltage and resistance sliders.
 # ..................................................................
+
+# Heading for the slider controls.
+slider-controls = Slider Controls
+sliders-description = Voltage and resistance sliders allow changes to equation and circuit.
+
 resistance-units-pattern = { $value } Ohms
 voltage-units-pattern = { $value } Volts
 
 # Labels for the sliders.
 resistance-slider-label = R, Resistance
 voltage-slider-label = V, Voltage
-
-# Heading for the slider controls.
-slider-controls = Slider Controls
-sliders-description = Voltage and resistance sliders allow changes to equation and circuit.
 
 # Reusable strings for the context responses that occur when the sliders are changed.
 -letter-r = R
