@@ -31,11 +31,13 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
    * @param {OhmsLawDescriber} ohmsLawDescriber
    */
   constructor( model, ohmsLawDescriber ) {
-    super( [
-      summaryPlayAreaString,
-      summaryControlAreaString,
-      rightNowString
-    ] );
+    super( {
+      additionalContent: [
+        summaryPlayAreaString,
+        summaryControlAreaString,
+        rightNowString
+      ]
+    } );
 
     // list outlining the values for this sim
     const valueListNode = new Node( { tagName: 'ul' } );
