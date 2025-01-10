@@ -51,6 +51,7 @@ class OhmsLawModel {
     // @public
     this.currentUnitsProperty = new EnumerationDeprecatedProperty( CurrentUnit, CurrentUnit.MILLIAMPS, {
       tandem: tandem.createTandem( 'currentUnitsProperty' ),
+      phetioFeatured: true,
       phetioDocumentation: 'Determines the displayed unit for the current'
     } );
   }

@@ -1,4 +1,4 @@
-// Copyright 2017-2024, University of Colorado Boulder
+// Copyright 2017-2025, University of Colorado Boulder
 
 /**
  * The scene accessible summary content for Ohms Law.  This manages the strings available
@@ -8,12 +8,12 @@
  */
 
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
+import PatternMessageProperty from '../../../../chipper/js/PatternMessageProperty.js';
 import Utils from '../../../../dot/js/Utils.js';
 import ScreenSummaryContent from '../../../../joist/js/ScreenSummaryContent.js';
 import { Node } from '../../../../scenery/js/imports.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
-import PatternMessageProperty from '../../../../chipper/js/PatternMessageProperty.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
@@ -23,11 +23,13 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
    * @param {OhmsLawDescriber} ohmsLawDescriber
    */
   constructor( model, ohmsLawDescriber ) {
-    super( [
-      OhmsLawFluentMessages.summaryPlayAreaMessageProperty,
-      OhmsLawFluentMessages.summaryControlAreaMessageProperty,
-      OhmsLawFluentMessages.rightNowMessageProperty
-    ] );
+    super( {
+      additionalContent: [
+        summaryPlayAreaString,
+        summaryControlAreaString,
+        rightNowString
+      ]
+    } );
 
     // list outlining the values for this sim
     const valueListNode = new Node( { tagName: 'ul' } );
