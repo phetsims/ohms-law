@@ -12,7 +12,7 @@ import { Node } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
-import PatternMessageProperty from '../../../../chipper/js/PatternMessageProperty.js';
+import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import BatteryView from './BatteryView.js';

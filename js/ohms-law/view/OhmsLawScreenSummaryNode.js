@@ -8,7 +8,7 @@
  */
 
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
-import PatternMessageProperty from '../../../../chipper/js/PatternMessageProperty.js';
+import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import Utils from '../../../../dot/js/Utils.js';
 import ScreenSummaryContent from '../../../../joist/js/ScreenSummaryContent.js';
 import { Node } from '../../../../scenery/js/imports.js';

@@ -15,7 +15,7 @@ import { Circle, LinearGradient, Node, Path } from '../../../../scenery/js/impor
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
-import PatternMessageProperty from '../../../../chipper/js/PatternMessageProperty.js';
+import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 // constants

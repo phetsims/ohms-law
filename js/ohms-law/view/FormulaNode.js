@@ -15,7 +15,7 @@ import { Node, Rectangle, Text } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
-import PatternMessageProperty from '../../../../chipper/js/PatternMessageProperty.js';
+import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import FormulaDescriber from './FormulaDescriber.js';

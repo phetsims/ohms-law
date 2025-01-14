@@ -10,7 +10,7 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import EnumerationValue from '../../../../phet-core/js/EnumerationValue.js';
 import Enumeration from '../../../../phet-core/js/Enumeration.js';
 import Utils from '../../../../dot/js/Utils.js';
-import FluentUtils from '../../../../chipper/js/FluentUtils.js';
+import FluentUtils from '../../../../chipper/js/browser/FluentUtils.js';
 import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import ohmsLaw from '../../ohmsLaw.js';

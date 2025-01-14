@@ -15,7 +15,7 @@ import Tandem from '../../../../tandem/js/Tandem.js';
 import ValueChangeUtterance from '../../../../utterance-queue/js/ValueChangeUtterance.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
-import PatternMessageProperty from '../../../../chipper/js/PatternMessageProperty.js';
+import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';

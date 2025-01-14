@@ -12,7 +12,7 @@
  */
 
 import { englishBundle } from '../../chipper/js/localizedFluentBundleProperty.js';
-import FluentUtils from '../../chipper/js/FluentUtils.js';
+import FluentUtils from '../../chipper/js/browser/FluentUtils.js';
 import LocalizedMessageProperty from '../../chipper/js/LocalizedMessageProperty.js';
 
 const OhmsLawFluentMessages = {};
