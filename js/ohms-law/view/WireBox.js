@@ -9,8 +9,8 @@
 import merge from '../../../../phet-core/js/merge.js';
 import { Node, Rectangle } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
+import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import BatteriesView from './BatteriesView.js';
@@ -41,8 +41,8 @@ class WireBox extends Node {
       // pdom
       tagName: 'ul',
       labelTagName: 'h3',
-      labelContent: OhmsLawFluentMessages.circuitLabelMessageProperty,
-      descriptionContent: OhmsLawFluentMessages.circuitDescriptionMessageProperty
+      labelContent: OhmsLawMessages.circuitLabelMessageProperty,
+      descriptionContent: OhmsLawMessages.circuitDescriptionMessageProperty
     }, options );
 
     super( options );
@@ -101,7 +101,7 @@ class WireBox extends Node {
     const wireBoxDescriber = new WireBoxDescriber( model, this.bottomLeftArrow );
 
     accessibleCurrentNode.innerContent = new PatternMessageProperty(
-      OhmsLawFluentMessages.currentDescriptionPatternMessageProperty,
+      OhmsLawMessages.currentDescriptionPatternMessageProperty,
       {
         arrowSize: wireBoxDescriber.arrowSizeDescriptionProperty,
         value: ohmsLawDescriber.formattedCurrentProperty,

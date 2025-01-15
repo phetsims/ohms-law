@@ -39,21 +39,21 @@ ohmsLawDefinition = Voltage, <strong>V</strong>, is equal to Current, <strong>I<
 
 # Description for the relative sizes of the letters in the equation
 relativeSizePattern = In equation, <strong>letter V</strong> is <em>{ $iComparison ->
-  [ MUCH_MUCH_SMALLER ] { -much-much-smaller }
-  [ MUCH_SMALLER ] { -much-smaller }
-  [ SLIGHTLY_SMALLER ] { -slightly-smaller }
+  [ MUCH_MUCH_SMALLER ] { -muchMuchSmaller }
+  [ MUCH_SMALLER ] { -muchSmaller }
+  [ SLIGHTLY_SMALLER ] { -slightlySmaller }
   [ COMPARABLE ] { -comparable }
-  [ SLIGHTLY_LARGER ] { -slightly-larger }
-  [ MUCH_LARGER ] { -much-larger }
-  *[ MUCH_MUCH_LARGER ] { -much-much-larger }
+  [ SLIGHTLY_LARGER ] { -slightlyLarger }
+  [ MUCH_LARGER ] { -muchLarger }
+  *[ MUCH_MUCH_LARGER ] { -muchMuchLarger }
 }</em> <strong>letter I</strong> and <em>{ $rComparison ->
-  [ MUCH_MUCH_SMALLER ] { -much-much-smaller }
-  [ MUCH_SMALLER ] { -much-smaller }
-  [ SLIGHTLY_SMALLER ] { -slightly-smaller }
+  [ MUCH_MUCH_SMALLER ] { -muchMuchSmaller }
+  [ MUCH_SMALLER ] { -muchSmaller }
+  [ SLIGHTLY_SMALLER ] { -slightlySmaller }
   [ COMPARABLE ] { -comparable }
-  [ SLIGHTLY_LARGER ] { -slightly-larger }
-  [ MUCH_LARGER ] { -much-larger }
-  *[ MUCH_MUCH_LARGER ] { -much-much-larger }
+  [ SLIGHTLY_LARGER ] { -slightlyLarger }
+  [ MUCH_LARGER ] { -muchLarger }
+  *[ MUCH_MUCH_LARGER ] { -muchMuchLarger }
 }</em> <strong>letter R</strong>.
 
 # ..................................................................
@@ -116,18 +116,18 @@ voltageSliderLabel = V, Voltage
 -shrinksALot = shrinks a lot
 -growsALot = grows a lot
 sliderChangeAlertPattern = As letter { $firstLetter ->
-  [R] { -letter-r }
-  *[V] { -letter-v }
+  [R] { -letterR }
+  *[V] { -letterV }
 } { $firstSizeChange ->
   [SHRINKS] { -shrinks }
-  [SHRINKS_A_LOT] { -shrinks-a-lot }
+  [SHRINKS_A_LOT] { -shrinksALot }
   [GROWS] { -grows }
-  *[GROWS_A_LOT] { -grows-a-lot }
+  *[GROWS_A_LOT] { -growsALot }
 }, letter I { $iSizeChange ->
   [SHRINKS] { -shrinks }
-  [SHRINKS_A_LOT] { -shrinks-a-lot }
+  [SHRINKS_A_LOT] { -shrinksALot }
   [GROWS] { -grows }
-  *[GROWS_A_LOT] { -grows-a-lot }
+  *[GROWS_A_LOT] { -growsALot }
 }. Current now { $currentVal } { $unit ->
   [AMPS] { -amps }
   *[MILLIAMPS] { -milliamps }

@@ -14,7 +14,7 @@ import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ValueChangeUtterance from '../../../../utterance-queue/js/ValueChangeUtterance.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
+import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
@@ -58,7 +58,7 @@ class ControlPanel extends Panel {
     const voltageUtterance = new ValueChangeUtterance();
 
     const voltageUnitsMessageProperty = new PatternMessageProperty(
-      OhmsLawFluentMessages.voltageUnitsPatternMessageProperty,
+      OhmsLawMessages.voltageUnitsPatternMessageProperty,
       {
         value: voltageProperty
       }
@@ -73,7 +73,7 @@ class ControlPanel extends Panel {
       voltageSymbolString,
       voltageString,
       voltageUnitsString,
-      OhmsLawFluentMessages.voltageSliderLabelMessageProperty,
+      OhmsLawMessages.voltageSliderLabelMessageProperty,
       {
         sliderOptions: {
 
@@ -134,7 +134,7 @@ class ControlPanel extends Panel {
 
     // Create the resistance slider with readout and labels
     const resistanceUnitsMessageProperty = new PatternMessageProperty(
-      OhmsLawFluentMessages.resistanceUnitsPatternMessageProperty,
+      OhmsLawMessages.resistanceUnitsPatternMessageProperty,
       {
         value: resistanceProperty
       }
@@ -146,7 +146,7 @@ class ControlPanel extends Panel {
       resistanceSymbolString,
       resistanceString,
       SceneryPhetStrings.symbol.ohmsStringProperty,
-      OhmsLawFluentMessages.resistanceSliderLabelMessageProperty,
+      OhmsLawMessages.resistanceSliderLabelMessageProperty,
       {
         sliderOptions: {
 
@@ -172,8 +172,8 @@ class ControlPanel extends Panel {
       // pdom - contain the sliders in a list
       labelTagName: 'h3',
       tagName: 'div',
-      labelContent: OhmsLawFluentMessages.sliderControlsMessageProperty,
-      descriptionContent: OhmsLawFluentMessages.slidersDescriptionMessageProperty
+      labelContent: OhmsLawMessages.sliderControlsMessageProperty,
+      descriptionContent: OhmsLawMessages.slidersDescriptionMessageProperty
     } );
 
     super( content, options );

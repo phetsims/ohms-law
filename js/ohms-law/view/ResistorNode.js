@@ -13,8 +13,8 @@ import { Shape } from '../../../../kite/js/imports.js';
 import merge from '../../../../phet-core/js/merge.js';
 import { Circle, LinearGradient, Node, Path } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
+import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
@@ -127,7 +127,7 @@ class ResistorNode extends Node {
     } );
 
     this.innerContent = new PatternMessageProperty(
-      OhmsLawFluentMessages.resistanceDotsPatternMessageProperty, {
+      OhmsLawMessages.resistanceDotsPatternMessageProperty, {
         impurities: resistorImpuritiesProperty
       }
     );

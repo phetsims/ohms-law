@@ -12,8 +12,8 @@ import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessag
 import Utils from '../../../../dot/js/Utils.js';
 import ScreenSummaryContent from '../../../../joist/js/ScreenSummaryContent.js';
 import { Node } from '../../../../scenery/js/imports.js';
+import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
@@ -25,9 +25,9 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
   constructor( model, ohmsLawDescriber ) {
     super( {
       additionalContent: [
-        summaryPlayAreaString,
-        summaryControlAreaString,
-        rightNowString
+        OhmsLawMessages.summaryPlayAreaMessageProperty,
+        OhmsLawMessages.summaryControlAreaMessageProperty,
+        OhmsLawMessages.rightNowMessageProperty
       ]
     } );
 
@@ -38,7 +38,7 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
     const valueCurrentItemNode = new Node( { tagName: 'li' } );
     valueListNode.children = [ valueVoltageItemNode, valueResistanceItemNode, valueCurrentItemNode ];
 
-    const sliderParagraphNode = new Node( { tagName: 'p', innerContent: OhmsLawFluentMessages.summaryLookForSlidersMessageProperty } );
+    const sliderParagraphNode = new Node( { tagName: 'p', innerContent: OhmsLawMessages.summaryLookForSlidersMessageProperty } );
 
     // add all children to this node, ordering the accessible content
     this.addChild( valueListNode );
@@ -50,13 +50,13 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
       {
         property: model.voltageProperty,
 
-        patternStringProperty: OhmsLawFluentMessages.voltageSummaryPatternMessageProperty,
+        patternStringProperty: OhmsLawMessages.voltageSummaryPatternMessageProperty,
         node: valueVoltageItemNode,
         precision: OhmsLawConstants.VOLTAGE_SIG_FIGS
       },
       {
         property: model.resistanceProperty,
-        patternStringProperty: OhmsLawFluentMessages.resistanceSummaryPatternMessageProperty,
+        patternStringProperty: OhmsLawMessages.resistanceSummaryPatternMessageProperty,
         node: valueResistanceItemNode,
         precision: OhmsLawConstants.RESISTANCE_SIG_FIGS
       }
@@ -69,7 +69,7 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
     } );
 
     valueCurrentItemNode.innerContent = new PatternMessageProperty(
-      OhmsLawFluentMessages.currentSummaryPatternMessageProperty, {
+      OhmsLawMessages.currentSummaryPatternMessageProperty, {
         value: new DerivedProperty( [ model.currentProperty ], value => model.getFixedCurrent() ),
         unit: model.currentUnitsProperty
       }

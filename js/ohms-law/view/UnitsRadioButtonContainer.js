@@ -11,10 +11,10 @@ import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import { RichText, Text, VBox } from '../../../../scenery/js/imports.js';
 import VerticalAquaRadioButtonGroup from '../../../../sun/js/VerticalAquaRadioButtonGroup.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
+import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import CurrentUnit from '../model/CurrentUnit.js';
-import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
 
 const ampsAString = OhmsLawStrings.ampsA;
 const milliampsMAString = OhmsLawStrings.milliampsMA;
@@ -62,7 +62,7 @@ class UnitsRadioButtonContainer extends VBox {
         }
       } ], {
       labelContent: unitsString,
-      descriptionContent: OhmsLawFluentMessages.chooseUnitForCurrentMessageProperty,
+      descriptionContent: OhmsLawMessages.chooseUnitForCurrentMessageProperty,
       tandem: options.tandem.createTandem( 'currentUnitRadioButtonGroup' )
     } );
 

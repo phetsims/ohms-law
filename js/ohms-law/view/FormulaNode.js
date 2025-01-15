@@ -14,7 +14,7 @@ import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import { Node, Rectangle, Text } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawFluentMessages from '../../OhmsLawFluentMessages.js';
+import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
@@ -42,8 +42,8 @@ class FormulaNode extends Node {
       tandem: Tandem.REQUIRED,
 
       // pdom
-      labelContent: OhmsLawFluentMessages.ohmsLawEquationMessageProperty,
-      descriptionContent: OhmsLawFluentMessages.ohmsLawDefinitionMessageProperty,
+      labelContent: OhmsLawMessages.ohmsLawEquationMessageProperty,
+      descriptionContent: OhmsLawMessages.ohmsLawDefinitionMessageProperty,
       tagName: 'div',
       labelTagName: 'h3' // labels should come before other child content
     }, options );
@@ -131,7 +131,7 @@ class FormulaNode extends Node {
     const formulaDescriber = new FormulaDescriber( model, this.resistanceLetterNode, this.currentLetterNode, this.voltageLetterNode );
 
     descriptionNode.innerContent = new PatternMessageProperty(
-      OhmsLawFluentMessages.relativeSizePatternMessageProperty,
+      OhmsLawMessages.relativeSizePatternMessageProperty,
       {
         iComparison: formulaDescriber.vToIComparisonProperty,
         rComparison: formulaDescriber.vToRComparisonProperty
