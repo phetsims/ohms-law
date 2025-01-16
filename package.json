@@ -18,7 +18,6 @@
       "adapted-from-phet"
     ],
     "preload": [
-      "../sherpa/lib/fluent-0.13.0.min.js"
     ],
     "simFeatures": {
       "supportsSound": true,
