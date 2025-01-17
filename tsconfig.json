@@ -4,8 +4,7 @@
     "js/**/*",
     "images/**/*",
     "mipmaps/**/*",
-    "sounds/**/*",
-    "strings/**/*"
+    "sounds/**/*"
   ],
   "references": [
     {

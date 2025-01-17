@@ -14,7 +14,7 @@ import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import { Node, Rectangle, Text } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
+import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';

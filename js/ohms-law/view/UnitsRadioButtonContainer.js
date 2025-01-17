@@ -11,7 +11,7 @@ import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import { RichText, Text, VBox } from '../../../../scenery/js/imports.js';
 import VerticalAquaRadioButtonGroup from '../../../../sun/js/VerticalAquaRadioButtonGroup.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
+import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import CurrentUnit from '../model/CurrentUnit.js';

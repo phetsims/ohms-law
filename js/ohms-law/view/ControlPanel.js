@@ -14,7 +14,7 @@ import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ValueChangeUtterance from '../../../../utterance-queue/js/ValueChangeUtterance.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
+import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';

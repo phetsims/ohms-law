@@ -10,7 +10,7 @@ import Utils from '../../../../dot/js/Utils.js';
 import merge from '../../../../phet-core/js/merge.js';
 import { Node } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import OhmsLawMessages from '../../../strings/OhmsLawMessages.js';
+import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import ohmsLaw from '../../ohmsLaw.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
