@@ -1,4 +1,4 @@
-// Copyright 2013-2023, University of Colorado Boulder
+// Copyright 2013-2025, University of Colorado Boulder
 
 /**
  * View formula ohms law. This was developed to be statically placed in the view. All components are laid
