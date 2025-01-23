@@ -12,34 +12,34 @@ import ohmsLaw from '../../js/ohmsLaw.js';
 import LocalizedMessageProperty from '../../../chipper/js/browser/LocalizedMessageProperty.js';
 
 type OhmsLawFluentType = {
-  'summaryPlayArea': LocalizedMessageProperty;
-  'summaryControlArea': LocalizedMessageProperty;
-  'rightNow': LocalizedMessageProperty;
-  'voltageSummaryPattern': LocalizedMessageProperty;
-  'resistanceSummaryPattern': LocalizedMessageProperty;
-  'currentSummaryPattern': LocalizedMessageProperty;
-  'summaryLookForSliders': LocalizedMessageProperty;
-  'ohmsLawEquation': LocalizedMessageProperty;
-  'ohmsLawDefinition': LocalizedMessageProperty;
-  'relativeSizePattern': LocalizedMessageProperty;
-  'circuitLabel': LocalizedMessageProperty;
-  'circuitDescription': LocalizedMessageProperty;
-  'batteriesSupplyPattern': LocalizedMessageProperty;
-  'resistanceDotsPattern': LocalizedMessageProperty;
-  'currentDescriptionPattern': LocalizedMessageProperty;
-  'sliderControls': LocalizedMessageProperty;
-  'slidersDescription': LocalizedMessageProperty;
-  'resistanceUnitsPattern': LocalizedMessageProperty;
-  'voltageUnitsPattern': LocalizedMessageProperty;
-  'resistanceSliderLabel': LocalizedMessageProperty;
-  'voltageSliderLabel': LocalizedMessageProperty;
-  'sliderChangeAlertPattern': LocalizedMessageProperty;
-  'chooseUnitForCurrent': LocalizedMessageProperty;
+  'summaryPlayAreaMessageProperty': LocalizedMessageProperty;
+  'summaryControlAreaMessageProperty': LocalizedMessageProperty;
+  'rightNowMessageProperty': LocalizedMessageProperty;
+  'voltageSummaryPatternMessageProperty': LocalizedMessageProperty;
+  'resistanceSummaryPatternMessageProperty': LocalizedMessageProperty;
+  'currentSummaryPatternMessageProperty': LocalizedMessageProperty;
+  'summaryLookForSlidersMessageProperty': LocalizedMessageProperty;
+  'ohmsLawEquationMessageProperty': LocalizedMessageProperty;
+  'ohmsLawDefinitionMessageProperty': LocalizedMessageProperty;
+  'relativeSizePatternMessageProperty': LocalizedMessageProperty;
+  'circuitLabelMessageProperty': LocalizedMessageProperty;
+  'circuitDescriptionMessageProperty': LocalizedMessageProperty;
+  'batteriesSupplyPatternMessageProperty': LocalizedMessageProperty;
+  'resistanceDotsPatternMessageProperty': LocalizedMessageProperty;
+  'currentDescriptionPatternMessageProperty': LocalizedMessageProperty;
+  'sliderControlsMessageProperty': LocalizedMessageProperty;
+  'slidersDescriptionMessageProperty': LocalizedMessageProperty;
+  'resistanceUnitsPatternMessageProperty': LocalizedMessageProperty;
+  'voltageUnitsPatternMessageProperty': LocalizedMessageProperty;
+  'resistanceSliderLabelMessageProperty': LocalizedMessageProperty;
+  'voltageSliderLabelMessageProperty': LocalizedMessageProperty;
+  'sliderChangeAlertPatternMessageProperty': LocalizedMessageProperty;
+  'chooseUnitForCurrentMessageProperty': LocalizedMessageProperty;
 };
 
 const OhmsLawMessages = getFluentModule( {
-  "en": "-amps = amps\n-milliamps = milliamps\n\nsummaryPlayArea = In the Play Area you find the equation for Ohm's Law, <strong>V</strong> equals <strong>I</strong> times <strong>R</strong>, and a circuit. Voltage and resistance sliders allow changes to the equation and circuit.\nsummaryControlArea = The Control Area has radio buttons to switch between milliamps and amps, and a button to reset the sim.\n\nrightNow = Right now,\n\nvoltageSummaryPattern = voltage, <strong>V</strong>, is <em>{ $value } volts</em>\nresistanceSummaryPattern = resistance, <strong>R</strong>, is <em>{ $value } ohms</em>\ncurrentSummaryPattern = current, <strong>I</strong>, is <em>{ $value } { $unit ->\n  [AMPS] { -amps }\n  *[MILLIAMPS] { -milliamps }\n}</em>\n\nsummaryLookForSliders = Look for voltage and resistance sliders to play, or read on for details about equation and circuit.\n\nohmsLawEquation = Ohm's Law Equation\nohmsLawDefinition = Voltage, <strong>V</strong>, is equal to Current, <strong>I</strong>, times Resistance, <strong>R</strong>.\n\n-muchMuchSmaller = much much smaller than\n-muchSmaller = much smaller than\n-slightlySmaller = slightly smaller than\n-comparable = comparable to\n-slightlyLarger = slightly larger than\n-muchLarger = much larger than\n-muchMuchLarger = much much larger than\n\nrelativeSizePattern = In equation, <strong>letter V</strong> is <em>{ $iComparison ->\n  [ MUCH_MUCH_SMALLER ] { -muchMuchSmaller }\n  [ MUCH_SMALLER ] { -muchSmaller }\n  [ SLIGHTLY_SMALLER ] { -slightlySmaller }\n  [ COMPARABLE ] { -comparable }\n  [ SLIGHTLY_LARGER ] { -slightlyLarger }\n  [ MUCH_LARGER ] { -muchLarger }\n  *[ MUCH_MUCH_LARGER ] { -muchMuchLarger }\n}</em> <strong>letter I</strong> and <em>{ $rComparison ->\n  [ MUCH_MUCH_SMALLER ] { -muchMuchSmaller }\n  [ MUCH_SMALLER ] { -muchSmaller }\n  [ SLIGHTLY_SMALLER ] { -slightlySmaller }\n  [ COMPARABLE ] { -comparable }\n  [ SLIGHTLY_LARGER ] { -slightlyLarger }\n  [ MUCH_LARGER ] { -muchLarger }\n  *[ MUCH_MUCH_LARGER ] { -muchMuchLarger }\n}</em> <strong>letter R</strong>.\n\ncircuitLabel = The Circuit\ncircuitDescription = A pair of wires connect a resistor to a series of batteries. In circuit,\n\nbatteriesSupplyPattern = batteries supply <em>{ $voltage } volts</em>\n\nresistanceDotsPattern = resistor shows <em> a { $impurities ->\n  [TINY] tiny\n  [VERY_SMALL] very small\n  [SMALL] small\n  [MEDIUM] medium\n  [LARGE] large\n  [VERY_LARGE] very large\n  *[HUGE] huge\n} amount of impurities</em>\n\ncurrentDescriptionPattern = <em>{ $arrowSize ->\n  [TINY] Tiny\n  [VERY_SMALL] Very small\n  [SMALL] Small\n  [MEDIUM] Medium size\n  [LARGE] Large\n  [VERY_LARGE] Very large\n  *[HUGE] Huge\n} arrows</em> indicate a current flowing clockwise at <em>{ $value } { $unit ->\n  [AMPS] { -amps }\n  *[MILLIAMPS] { -milliamps }\n}</em>\n\n\nsliderControls = Slider Controls\nslidersDescription = Voltage and resistance sliders allow changes to equation and circuit.\n\nresistanceUnitsPattern = { $value } Ohms\nvoltageUnitsPattern = { $value } Volts\n\nresistanceSliderLabel = R, Resistance\nvoltageSliderLabel = V, Voltage\n\n-letterR = R\n-letterV = V\n-shrinks = shrinks\n-grows = grows\n-shrinksALot = shrinks a lot\n-growsALot = grows a lot\nsliderChangeAlertPattern = As letter { $firstLetter ->\n  [R] { -letterR }\n  *[V] { -letterV }\n} { $firstSizeChange ->\n  [SHRINKS] { -shrinks }\n  [SHRINKS_A_LOT] { -shrinksALot }\n  [GROWS] { -grows }\n  *[GROWS_A_LOT] { -growsALot }\n}, letter I { $iSizeChange ->\n  [SHRINKS] { -shrinks }\n  [SHRINKS_A_LOT] { -shrinksALot }\n  [GROWS] { -grows }\n  *[GROWS_A_LOT] { -growsALot }\n}. Current now { $currentVal } { $unit ->\n  [AMPS] { -amps }\n  *[MILLIAMPS] { -milliamps }\n}.\n\nchooseUnitForCurrent = Choose unit for current.\n",
-  "fr": "-amps = ampères\n-milliamps = milliampères\n\nsummaryPlayArea = Dans la zone de jeu, vous trouverez l'équation de la loi d'Ohm, <strong>V</strong> égale <strong>I</strong> multiplié par <strong>R</strong>, et un circuit. Les curseurs de tension et de résistance permettent de modifier l'équation et le circuit.\nsummaryControlArea = La zone de contrôle possède des boutons radio pour basculer entre milliampères et ampères, ainsi qu'un bouton pour réinitialiser la simulation."
+  "en": "-amps = amps\r\n-milliamps = milliamps\r\n\r\nsummaryPlayArea = In the Play Area you find the equation for Ohm's Law, <strong>V</strong> equals <strong>I</strong> times <strong>R</strong>, and a circuit. Voltage and resistance sliders allow changes to the equation and circuit.\r\nsummaryControlArea = The Control Area has radio buttons to switch between milliamps and amps, and a button to reset the sim.\r\n\r\nrightNow = Right now,\r\n\r\nvoltageSummaryPattern = voltage, <strong>V</strong>, is <em>{ $value } volts</em>\r\nresistanceSummaryPattern = resistance, <strong>R</strong>, is <em>{ $value } ohms</em>\r\ncurrentSummaryPattern = current, <strong>I</strong>, is <em>{ $value } { $unit ->\r\n  [AMPS] { -amps }\r\n  *[MILLIAMPS] { -milliamps }\r\n}</em>\r\n\r\nsummaryLookForSliders = Look for voltage and resistance sliders to play, or read on for details about equation and circuit.\r\n\r\nohmsLawEquation = Ohm's Law Equation\r\nohmsLawDefinition = Voltage, <strong>V</strong>, is equal to Current, <strong>I</strong>, times Resistance, <strong>R</strong>.\r\n\r\n-muchMuchSmaller = much much smaller than\r\n-muchSmaller = much smaller than\r\n-slightlySmaller = slightly smaller than\r\n-comparable = comparable to\r\n-slightlyLarger = slightly larger than\r\n-muchLarger = much larger than\r\n-muchMuchLarger = much much larger than\r\n\r\nrelativeSizePattern = In equation, <strong>letter V</strong> is <em>{ $iComparison ->\r\n  [ MUCH_MUCH_SMALLER ] { -muchMuchSmaller }\r\n  [ MUCH_SMALLER ] { -muchSmaller }\r\n  [ SLIGHTLY_SMALLER ] { -slightlySmaller }\r\n  [ COMPARABLE ] { -comparable }\r\n  [ SLIGHTLY_LARGER ] { -slightlyLarger }\r\n  [ MUCH_LARGER ] { -muchLarger }\r\n  *[ MUCH_MUCH_LARGER ] { -muchMuchLarger }\r\n}</em> <strong>letter I</strong> and <em>{ $rComparison ->\r\n  [ MUCH_MUCH_SMALLER ] { -muchMuchSmaller }\r\n  [ MUCH_SMALLER ] { -muchSmaller }\r\n  [ SLIGHTLY_SMALLER ] { -slightlySmaller }\r\n  [ COMPARABLE ] { -comparable }\r\n  [ SLIGHTLY_LARGER ] { -slightlyLarger }\r\n  [ MUCH_LARGER ] { -muchLarger }\r\n  *[ MUCH_MUCH_LARGER ] { -muchMuchLarger }\r\n}</em> <strong>letter R</strong>.\r\n\r\ncircuitLabel = The Circuit\r\ncircuitDescription = A pair of wires connect a resistor to a series of batteries. In circuit,\r\n\r\nbatteriesSupplyPattern = batteries supply <em>{ $voltage } volts</em>\r\n\r\nresistanceDotsPattern = resistor shows <em> a { $impurities ->\r\n  [TINY] tiny\r\n  [VERY_SMALL] very small\r\n  [SMALL] small\r\n  [MEDIUM] medium\r\n  [LARGE] large\r\n  [VERY_LARGE] very large\r\n  *[HUGE] huge\r\n} amount of impurities</em>\r\n\r\ncurrentDescriptionPattern = <em>{ $arrowSize ->\r\n  [TINY] Tiny\r\n  [VERY_SMALL] Very small\r\n  [SMALL] Small\r\n  [MEDIUM] Medium size\r\n  [LARGE] Large\r\n  [VERY_LARGE] Very large\r\n  *[HUGE] Huge\r\n} arrows</em> indicate a current flowing clockwise at <em>{ $value } { $unit ->\r\n  [AMPS] { -amps }\r\n  *[MILLIAMPS] { -milliamps }\r\n}</em>\r\n\r\n\r\nsliderControls = Slider Controls\r\nslidersDescription = Voltage and resistance sliders allow changes to equation and circuit.\r\n\r\nresistanceUnitsPattern = { $value } Ohms\r\nvoltageUnitsPattern = { $value } Volts\r\n\r\nresistanceSliderLabel = R, Resistance\r\nvoltageSliderLabel = V, Voltage\r\n\r\n-letterR = R\r\n-letterV = V\r\n-shrinks = shrinks\r\n-grows = grows\r\n-shrinksALot = shrinks a lot\r\n-growsALot = grows a lot\r\nsliderChangeAlertPattern = As letter { $firstLetter ->\r\n  [R] { -letterR }\r\n  *[V] { -letterV }\r\n} { $firstSizeChange ->\r\n  [SHRINKS] { -shrinks }\r\n  [SHRINKS_A_LOT] { -shrinksALot }\r\n  [GROWS] { -grows }\r\n  *[GROWS_A_LOT] { -growsALot }\r\n}, letter I { $iSizeChange ->\r\n  [SHRINKS] { -shrinks }\r\n  [SHRINKS_A_LOT] { -shrinksALot }\r\n  [GROWS] { -grows }\r\n  *[GROWS_A_LOT] { -growsALot }\r\n}. Current now { $currentVal } { $unit ->\r\n  [AMPS] { -amps }\r\n  *[MILLIAMPS] { -milliamps }\r\n}.\r\n\r\nchooseUnitForCurrent = Choose unit for current.\r\n",
+  "fr": "-amps = ampères\r\n-milliamps = milliampères\r\n\r\nsummaryPlayArea = Dans la zone de jeu, vous trouverez l'équation de la loi d'Ohm, <strong>V</strong> égale <strong>I</strong> multiplié par <strong>R</strong>, et un circuit. Les curseurs de tension et de résistance permettent de modifier l'équation et le circuit.\r\nsummaryControlArea = La zone de contrôle possède des boutons radio pour basculer entre milliampères et ampères, ainsi qu'un bouton pour réinitialiser la simulation."
 } ) as OhmsLawFluentType;
 
 ohmsLaw.register( 'OhmsLawMessages', OhmsLawMessages );
