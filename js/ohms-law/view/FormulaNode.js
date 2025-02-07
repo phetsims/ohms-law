@@ -7,16 +7,18 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
+import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import merge from '../../../../phet-core/js/merge.js';
 import MathSymbols from '../../../../scenery-phet/js/MathSymbols.js';
 import PhetColorScheme from '../../../../scenery-phet/js/PhetColorScheme.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
-import { Node, Rectangle, Text } from '../../../../scenery/js/imports.js';
+import Node from '../../../../scenery/js/nodes/Node.js';
+import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
+import Text from '../../../../scenery/js/nodes/Text.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
-import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
+import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import FormulaDescriber from './FormulaDescriber.js';
 

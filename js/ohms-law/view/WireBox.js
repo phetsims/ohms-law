@@ -6,12 +6,13 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
-import merge from '../../../../phet-core/js/merge.js';
-import { Node, Rectangle } from '../../../../scenery/js/imports.js';
-import Tandem from '../../../../tandem/js/Tandem.js';
-import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
+import merge from '../../../../phet-core/js/merge.js';
+import Node from '../../../../scenery/js/nodes/Node.js';
+import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
+import Tandem from '../../../../tandem/js/Tandem.js';
+import ohmsLaw from '../../ohmsLaw.js';
+import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import BatteriesView from './BatteriesView.js';
 import ReadoutPanel from './ReadoutPanel.js';

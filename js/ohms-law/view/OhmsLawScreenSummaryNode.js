@@ -11,9 +11,9 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import Utils from '../../../../dot/js/Utils.js';
 import ScreenSummaryContent from '../../../../joist/js/ScreenSummaryContent.js';
-import { Node } from '../../../../scenery/js/imports.js';
-import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
+import Node from '../../../../scenery/js/nodes/Node.js';
 import ohmsLaw from '../../ohmsLaw.js';
+import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 class OhmsLawScreenSummaryNode extends ScreenSummaryContent {

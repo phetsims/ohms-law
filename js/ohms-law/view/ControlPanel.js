@@ -7,16 +7,16 @@
  */
 
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
+import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import merge from '../../../../phet-core/js/merge.js';
 import SceneryPhetStrings from '../../../../scenery-phet/js/SceneryPhetStrings.js';
-import { HBox } from '../../../../scenery/js/imports.js';
+import HBox from '../../../../scenery/js/layout/nodes/HBox.js';
 import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ValueChangeUtterance from '../../../../utterance-queue/js/ValueChangeUtterance.js';
 import ohmsLaw from '../../ohmsLaw.js';
-import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
-import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
+import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import { EquationLetter, SizeChange } from './OhmsLawDescriber.js';
