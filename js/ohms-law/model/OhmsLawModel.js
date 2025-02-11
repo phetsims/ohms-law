@@ -32,7 +32,7 @@ class OhmsLawModel {
     // @public {Property.<number>} in Ohms
     this.resistanceProperty = new NumberProperty( OhmsLawConstants.RESISTANCE_RANGE.getDefaultValue(), {
       tandem: tandem.createTandem( 'resistanceProperty' ),
-      units: '\u2126', // ohms
+      units: '\u03A9', // ohms
       range: OhmsLawConstants.RESISTANCE_RANGE,
       phetioDocumentation: 'The resistance in the circuit'
     } );
