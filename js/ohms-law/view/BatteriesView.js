@@ -36,7 +36,7 @@ class BatteriesView extends Node {
     // Store battery nodes in an array
     const batteries = [];
 
-    const batteriesGroupTandem = options.tandem.createGroupTandem( 'battery' );
+    const batteriesGroupTandem = options.tandem.createGroupTandem( 'battery', 0 );
 
     // Create an array of batteries; enough to fill the entire wire.
     for ( let i = 0; i < OhmsLawConstants.MAX_NUMBER_OF_BATTERIES; i++ ) {
