@@ -10,6 +10,7 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import merge from '../../../../phet-core/js/merge.js';
 import SceneryPhetStrings from '../../../../scenery-phet/js/SceneryPhetStrings.js';
+import ParallelDOM from '../../../../scenery/js/accessibility/pdom/ParallelDOM.js';
 import HBox from '../../../../scenery/js/layout/nodes/HBox.js';
 import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
@@ -170,10 +171,9 @@ class ControlPanel extends Panel {
       children: [ voltageSlider, resistanceSlider ],
 
       // pdom - contain the sliders in a list
-      labelTagName: 'h3',
-      tagName: 'div',
-      labelContent: OhmsLawMessages.sliderControlsMessageProperty,
-      descriptionContent: OhmsLawMessages.slidersDescriptionMessageProperty
+      accessibleHeading: OhmsLawMessages.sliderControlsMessageProperty,
+      accessibleHelpText: OhmsLawMessages.slidersDescriptionMessageProperty,
+      accessibleHelpTextBehavior: ParallelDOM.HELP_TEXT_BEFORE_CONTENT
     } );
 
     super( content, options );

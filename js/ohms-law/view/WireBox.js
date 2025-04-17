@@ -8,6 +8,7 @@
 
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import merge from '../../../../phet-core/js/merge.js';
+import ParallelDOM from '../../../../scenery/js/accessibility/pdom/ParallelDOM.js';
 import Node from '../../../../scenery/js/nodes/Node.js';
 import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
@@ -41,9 +42,9 @@ class WireBox extends Node {
 
       // pdom
       tagName: 'ul',
-      labelTagName: 'h3',
-      labelContent: OhmsLawMessages.circuitLabelMessageProperty,
-      descriptionContent: OhmsLawMessages.circuitDescriptionMessageProperty
+      accessibleHeading: OhmsLawMessages.circuitLabelMessageProperty,
+      accessibleHelpText: OhmsLawMessages.circuitDescriptionMessageProperty,
+      accessibleHelpTextBehavior: ParallelDOM.HELP_TEXT_BEFORE_CONTENT
     }, options );
 
     super( options );

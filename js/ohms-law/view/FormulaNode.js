@@ -12,6 +12,7 @@ import merge from '../../../../phet-core/js/merge.js';
 import MathSymbols from '../../../../scenery-phet/js/MathSymbols.js';
 import PhetColorScheme from '../../../../scenery-phet/js/PhetColorScheme.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
+import ParallelDOM from '../../../../scenery/js/accessibility/pdom/ParallelDOM.js';
 import Node from '../../../../scenery/js/nodes/Node.js';
 import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
@@ -44,10 +45,9 @@ class FormulaNode extends Node {
       tandem: Tandem.REQUIRED,
 
       // pdom
-      labelContent: OhmsLawMessages.ohmsLawEquationMessageProperty,
-      descriptionContent: OhmsLawMessages.ohmsLawDefinitionMessageProperty,
-      tagName: 'div',
-      labelTagName: 'h3' // labels should come before other child content
+      accessibleHeading: OhmsLawMessages.ohmsLawEquationMessageProperty,
+      accessibleHelpText: OhmsLawMessages.ohmsLawDefinitionMessageProperty,
+      accessibleHelpTextBehavior: ParallelDOM.HELP_TEXT_BEFORE_CONTENT
     }, options );
 
     super();
