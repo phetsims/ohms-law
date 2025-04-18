@@ -71,7 +71,7 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
     valueCurrentItemNode.innerContent = new PatternMessageProperty(
       OhmsLawMessages.currentSummaryPatternMessageProperty, {
         value: new DerivedProperty( [ model.currentProperty ], value => model.getFixedCurrent() ),
-        unit: model.currentUnitsProperty
+        unit: model.currentUnitsNameProperty
       }
     );
   }

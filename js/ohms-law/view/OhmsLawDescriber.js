@@ -89,7 +89,7 @@ class OhmsLawDescriber {
       firstSizeChange: firstSizeChange,
       iSizeChange: iSizeChange,
       currentVal: currentVal,
-      unit: this.model.currentUnitsProperty
+      unit: this.model.currentUnitsNameProperty
     } );
   }
 }

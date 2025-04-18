@@ -107,7 +107,7 @@ class WireBox extends Node {
       {
         arrowSize: wireBoxDescriber.arrowSizeDescriptionProperty,
         value: ohmsLawDescriber.formattedCurrentProperty,
-        unit: model.currentUnitsProperty
+        unit: model.currentUnitsNameProperty
       }
     );
 

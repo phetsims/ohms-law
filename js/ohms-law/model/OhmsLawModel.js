@@ -54,6 +54,12 @@ class OhmsLawModel {
       phetioFeatured: true,
       phetioDocumentation: 'Determines the displayed unit for the current'
     } );
+
+    // TODO: For fluent, we need a Property that returns the name. This would be unnecessary if we used a
+    //   phet-core's EnumerationValue instead of EnumerationDeprecatedProperty. See https://github.com/phetsims/ohms-law/issues/170.
+    this.currentUnitsNameProperty = new DerivedProperty( [ this.currentUnitsProperty ], currentUnit => {
+      return currentUnit.name;
+    } );
   }
 
   /**
