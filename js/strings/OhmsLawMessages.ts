@@ -10,7 +10,7 @@
 import getFluentModule from '../../../chipper/js/browser/getFluentModule.js';
 import ohmsLaw from '../../js/ohmsLaw.js';
 import LocalizedMessageProperty from '../../../chipper/js/browser/LocalizedMessageProperty.js';
-import type TReadOnlyProperty from '../../../axon/js/TReadOnlyProperty.js';
+import type { TReadOnlyProperty } from '../../../axon/js/TReadOnlyProperty.js';
 
 type OhmsLawFluentType = {
   'summaryPlayAreaMessageProperty': TReadOnlyProperty<string>;
