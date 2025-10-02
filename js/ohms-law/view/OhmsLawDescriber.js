@@ -7,13 +7,13 @@
  */
 
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
-import EnumerationValue from '../../../../phet-core/js/EnumerationValue.js';
-import Enumeration from '../../../../phet-core/js/Enumeration.js';
-import Utils from '../../../../dot/js/Utils.js';
 import FluentUtils from '../../../../chipper/js/browser/FluentUtils.js';
+import Utils from '../../../../dot/js/Utils.js';
+import Enumeration from '../../../../phet-core/js/Enumeration.js';
+import EnumerationValue from '../../../../phet-core/js/EnumerationValue.js';
+import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
-import ohmsLaw from '../../ohmsLaw.js';
 
 // enum for describing resistance impurities
 class ResistorImpurities extends EnumerationValue {
@@ -77,7 +77,6 @@ class OhmsLawDescriber {
    * @param  {EquationLetter} firstLetter - enum value representing the first letter of the phrase.
    * @param  {SizeChange} firstSizeChange - enum value representing the size change of the first letter
    * @param  {SizeChange} iSizeChange - enum value describing size change of letter I
-   * @param  {number} currentVal - value of model current Property
    * @returns {string} string
    * @public
    */
@@ -85,9 +84,9 @@ class OhmsLawDescriber {
     const currentVal = this.model.getFixedCurrent();
 
     return FluentUtils.formatMessage( OhmsLawMessages.sliderChangeAlertPatternMessageProperty, {
-      firstLetter: firstLetter,
-      firstSizeChange: firstSizeChange,
-      iSizeChange: iSizeChange,
+      firstLetter: firstLetter.name,
+      firstSizeChange: firstSizeChange.name,
+      iSizeChange: iSizeChange.name,
       currentVal: currentVal,
       unit: this.model.currentUnitsNameProperty
     } );

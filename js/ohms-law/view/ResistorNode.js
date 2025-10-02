@@ -6,6 +6,7 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import dotRandom from '../../../../dot/js/dotRandom.js';
 import LinearFunction from '../../../../dot/js/LinearFunction.js';
@@ -131,7 +132,7 @@ class ResistorNode extends Node {
 
     this.innerContent = new PatternMessageProperty(
       OhmsLawMessages.resistanceDotsPatternMessageProperty, {
-        impurities: resistorImpuritiesProperty
+        impurities: new DerivedProperty( [ resistorImpuritiesProperty ], resistorImpurities => resistorImpurities.name )
       }
     );
 

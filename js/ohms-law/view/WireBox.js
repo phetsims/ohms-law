@@ -6,6 +6,7 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import merge from '../../../../phet-core/js/merge.js';
 import ParallelDOM from '../../../../scenery/js/accessibility/pdom/ParallelDOM.js';
@@ -105,7 +106,7 @@ class WireBox extends Node {
     accessibleCurrentNode.innerContent = new PatternMessageProperty(
       OhmsLawMessages.currentDescriptionPatternMessageProperty,
       {
-        arrowSize: wireBoxDescriber.arrowSizeDescriptionProperty,
+        arrowSize: new DerivedProperty( [ wireBoxDescriber.arrowSizeDescriptionProperty ], size => size.name ),
         value: ohmsLawDescriber.formattedCurrentProperty,
         unit: model.currentUnitsNameProperty
       }

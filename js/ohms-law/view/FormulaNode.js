@@ -7,6 +7,7 @@
  * @author Anton Ulyanov (Mlearner)
  */
 
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import merge from '../../../../phet-core/js/merge.js';
 import MathSymbols from '../../../../scenery-phet/js/MathSymbols.js';
@@ -135,8 +136,8 @@ class FormulaNode extends Node {
     descriptionNode.innerContent = new PatternMessageProperty(
       OhmsLawMessages.relativeSizePatternMessageProperty,
       {
-        iComparison: formulaDescriber.vToIComparisonProperty,
-        rComparison: formulaDescriber.vToRComparisonProperty
+        iComparison: new DerivedProperty( [ formulaDescriber.vToIComparisonProperty ], vToIComparison => vToIComparison.name ),
+        rComparison: new DerivedProperty( [ formulaDescriber.vToRComparisonProperty ], vToRComparison => vToRComparison.name )
       }
     );
 
