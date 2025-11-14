@@ -80,7 +80,7 @@ class ControlPanel extends Panel {
 
           // pdom
           keyboardStep: 0.5, // volts
-          pdomCreateAriaValueText: value => voltageUnitsMessageProperty.value,
+          createAriaValueText: value => voltageUnitsMessageProperty.value,
           startDrag: () => {
             oldVoltage = voltageProperty.get();
           },
@@ -154,7 +154,7 @@ class ControlPanel extends Panel {
           // pdom
           keyboardStep: 20, // ohms
           shiftKeyboardStep: 1, // ohms
-          pdomCreateAriaValueText: value => resistanceUnitsMessageProperty.value,
+          createAriaValueText: value => resistanceUnitsMessageProperty.value,
           startDrag: () => {
             oldResistance = resistanceProperty.get();
             oldCurrent = currentProperty.get();
