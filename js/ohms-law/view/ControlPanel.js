@@ -91,7 +91,7 @@ class ControlPanel extends Panel {
               // pdom - when V changes, announce an alert that describes the change
               const sizeChange = newVoltage - oldVoltage > 0 ? SizeChange.GROWS : SizeChange.SHRINKS;
               voltageUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( EquationLetter.V, sizeChange, sizeChange );
-              voltageSlider.addAccessibleResponse( voltageUtterance );
+              voltageSlider.addAccessibleContextResponse( voltageUtterance );
             }
           }
         },
@@ -129,7 +129,7 @@ class ControlPanel extends Panel {
         }
 
         resistanceUtterance.alert = ohmsLawDescriber.getValueChangeAlertString( EquationLetter.R, rSizeChange, iSizeChange );
-        resistanceSlider.addAccessibleResponse( resistanceUtterance );
+        resistanceSlider.addAccessibleContextResponse( resistanceUtterance );
       }
     };
 
