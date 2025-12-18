@@ -9,7 +9,7 @@
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessageProperty.js';
 import merge from '../../../../phet-core/js/merge.js';
-import SceneryPhetStrings from '../../../../scenery-phet/js/SceneryPhetStrings.js';
+import SceneryPhetFluent from '../../../../scenery-phet/js/SceneryPhetFluent.js';
 import ParallelDOM from '../../../../scenery/js/accessibility/pdom/ParallelDOM.js';
 import HBox from '../../../../scenery/js/layout/nodes/HBox.js';
 import Panel from '../../../../sun/js/Panel.js';
@@ -146,7 +146,7 @@ class ControlPanel extends Panel {
       OhmsLawConstants.RESISTANCE_RANGE,
       resistanceSymbolString,
       resistanceString,
-      SceneryPhetStrings.symbol.ohmsStringProperty,
+      SceneryPhetFluent.symbol.ohmsStringProperty,
       OhmsLawMessages.resistanceSliderLabelMessageProperty,
       {
         sliderOptions: {
