@@ -9,7 +9,7 @@
     "branch": "HEAD"
   },
   "brand": {
-    "sha": "cdc980a40b2603bb0d1974036477553d833605b6",
+    "sha": "44ce3a7128b8f66b730fe6ae1847f2b4c150aaa2",
     "branch": "HEAD"
   },
   "chipper": {
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "ohms-law": {
-    "sha": "cda2948934ce21dc595aacaf1941f6d510a99a60",
+    "sha": "e5b65dd772aecee952ad826696c1d7fe45c48025",
     "branch": "1.4"
   },
   "phet-core": {
