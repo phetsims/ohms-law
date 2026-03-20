@@ -13,7 +13,6 @@ import ParallelDOM from '../../../../scenery/js/accessibility/pdom/ParallelDOM.j
 import Node from '../../../../scenery/js/nodes/Node.js';
 import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import BatteriesView from './BatteriesView.js';
@@ -116,7 +115,5 @@ class WireBox extends Node {
     this.pdomOrder = [ batteriesView, resistorNode, accessibleCurrentNode ];
   }
 }
-
-ohmsLaw.register( 'WireBox', WireBox );
 
 export default WireBox;

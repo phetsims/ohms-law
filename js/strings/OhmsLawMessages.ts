@@ -43,6 +43,4 @@ const OhmsLawMessages = getFluentModule( {
   "fr": "-amps = ampères\n-milliamps = milliampères\n\nsummaryPlayArea = Dans la zone de jeu, vous trouverez l'équation de la loi d'Ohm, <strong>V</strong> égale <strong>I</strong> multiplié par <strong>R</strong>, et un circuit. Les curseurs de tension et de résistance permettent de modifier l'équation et le circuit.\nsummaryControlArea = La zone de contrôle possède des boutons radio pour basculer entre milliampères et ampères, ainsi qu'un bouton pour réinitialiser la simulation."
 } ) as unknown as OhmsLawFluentType;
 
-ohmsLaw.register( 'OhmsLawMessages', OhmsLawMessages );
-
 export default OhmsLawMessages;

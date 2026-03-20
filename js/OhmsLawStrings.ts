@@ -44,6 +44,4 @@ type StringsType = {
 
 const OhmsLawStrings = getStringModule( 'OHMS_LAW' ) as StringsType;
 
-ohmsLaw.register( 'OhmsLawStrings', OhmsLawStrings );
-
 export default OhmsLawStrings;

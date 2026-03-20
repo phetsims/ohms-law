@@ -11,7 +11,6 @@ import FluentUtils from '../../../../chipper/js/browser/FluentUtils.js';
 import Utils from '../../../../dot/js/Utils.js';
 import Enumeration from '../../../../phet-core/js/Enumeration.js';
 import EnumerationValue from '../../../../phet-core/js/EnumerationValue.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
@@ -93,5 +92,4 @@ class OhmsLawDescriber {
   }
 }
 
-ohmsLaw.register( 'OhmsLawDescriber', OhmsLawDescriber );
 export default OhmsLawDescriber;

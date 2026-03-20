@@ -11,7 +11,6 @@ import Property from '../../../axon/js/Property.js';
 import Screen from '../../../joist/js/Screen.js';
 import SliderControlsAndBasicActionsKeyboardHelpContent from '../../../scenery-phet/js/keyboard/help/SliderControlsAndBasicActionsKeyboardHelpContent.js';
 import Color from '../../../scenery/js/util/Color.js';
-import ohmsLaw from '../ohmsLaw.js';
 import OhmsLawModel from './model/OhmsLawModel.js';
 import OhmsLawScreenView from './view/OhmsLawScreenView.js';
 
@@ -33,5 +32,4 @@ class OhmsLawScreen extends Screen {
   }
 }
 
-ohmsLaw.register( 'OhmsLawScreen', OhmsLawScreen );
 export default OhmsLawScreen;

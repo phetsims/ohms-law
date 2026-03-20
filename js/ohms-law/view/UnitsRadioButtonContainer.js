@@ -13,7 +13,6 @@ import RichText from '../../../../scenery/js/nodes/RichText.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
 import VerticalAquaRadioButtonGroup from '../../../../sun/js/VerticalAquaRadioButtonGroup.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import CurrentUnit from '../model/CurrentUnit.js';
@@ -76,5 +75,4 @@ class UnitsRadioButtonContainer extends VBox {
   }
 }
 
-ohmsLaw.register( 'UnitsRadioButtonContainer', UnitsRadioButtonContainer );
 export default UnitsRadioButtonContainer;

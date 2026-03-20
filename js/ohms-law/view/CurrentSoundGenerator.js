@@ -11,7 +11,6 @@
 import merge from '../../../../phet-core/js/merge.js';
 import SoundClip from '../../../../tambo/js/sound-generators/SoundClip.js';
 import currentV3Loop_mp3 from '../../../sounds/currentV3Loop_mp3.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 // constants
@@ -118,7 +117,5 @@ class CurrentSoundGenerator extends SoundClip {
   }
 
 }
-
-ohmsLaw.register( 'CurrentSoundGenerator', CurrentSoundGenerator );
 
 export default CurrentSoundGenerator;

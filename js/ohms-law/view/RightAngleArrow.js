@@ -14,7 +14,6 @@ import merge from '../../../../phet-core/js/merge.js';
 import PhetColorScheme from '../../../../scenery-phet/js/PhetColorScheme.js';
 import Path from '../../../../scenery/js/nodes/Path.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLaw from '../../ohmsLaw.js';
 
 // constants
 // points for the arrow
@@ -65,7 +64,5 @@ class RightAngleArrow extends Path {
     } );
   }
 }
-
-ohmsLaw.register( 'RightAngleArrow', RightAngleArrow );
 
 export default RightAngleArrow;

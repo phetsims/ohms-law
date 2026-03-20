@@ -12,7 +12,6 @@ import NumberProperty from '../../../../axon/js/NumberProperty.js';
 import Range from '../../../../dot/js/Range.js';
 import Utils from '../../../../dot/js/Utils.js';
 import NumberIO from '../../../../tandem/js/types/NumberIO.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import CurrentUnit from './CurrentUnit.js';
 
@@ -159,7 +158,5 @@ class OhmsLawModel {
 function computeCurrent( voltage, resistance ) {
   return 1000 * voltage / resistance;
 }
-
-ohmsLaw.register( 'OhmsLawModel', OhmsLawModel );
 
 export default OhmsLawModel;

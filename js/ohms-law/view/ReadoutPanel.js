@@ -16,7 +16,6 @@ import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
 import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import CurrentUnit from '../model/CurrentUnit.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
@@ -103,5 +102,4 @@ class ReadoutPanel extends Panel {
   }
 }
 
-ohmsLaw.register( 'ReadoutPanel', ReadoutPanel );
 export default ReadoutPanel;

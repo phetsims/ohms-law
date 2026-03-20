@@ -12,7 +12,6 @@ import Utils from '../../../../dot/js/Utils.js';
 import merge from '../../../../phet-core/js/merge.js';
 import Node from '../../../../scenery/js/nodes/Node.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import BatteryView from './BatteryView.js';
@@ -77,7 +76,5 @@ class BatteriesView extends Node {
     this.mutate( options );
   }
 }
-
-ohmsLaw.register( 'BatteriesView', BatteriesView );
 
 export default BatteriesView;

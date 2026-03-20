@@ -9,7 +9,6 @@
 import Range from '../../../dot/js/Range.js';
 import RangeWithValue from '../../../dot/js/RangeWithValue.js';
 import PhetFont from '../../../scenery-phet/js/PhetFont.js';
-import ohmsLaw from '../ohmsLaw.js';
 
 // constants used by other constants
 const RESISTANCE_RANGE = new RangeWithValue( 10, 1000, 500 ); // in ohms
@@ -64,7 +63,5 @@ const OhmsLawConstants = {
   AA_VOLTAGE: AA_VOLTAGE,
   BATTERY_WIDTH: ( WIRE_WIDTH - BATTERIES_OFFSET * 2 ) / MAX_NUMBER_OF_BATTERIES
 };
-
-ohmsLaw.register( 'OhmsLawConstants', OhmsLawConstants );
 
 export default OhmsLawConstants;

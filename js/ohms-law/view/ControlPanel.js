@@ -15,7 +15,6 @@ import HBox from '../../../../scenery/js/layout/nodes/HBox.js';
 import Panel from '../../../../sun/js/Panel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import ValueChangeUtterance from '../../../../utterance-queue/js/ValueChangeUtterance.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawStrings from '../../OhmsLawStrings.js';
 import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawModel from '../model/OhmsLawModel.js';
@@ -187,5 +186,4 @@ class ControlPanel extends Panel {
   }
 }
 
-ohmsLaw.register( 'ControlPanel', ControlPanel );
 export default ControlPanel;

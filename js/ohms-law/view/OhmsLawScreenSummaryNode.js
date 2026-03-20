@@ -12,7 +12,6 @@ import PatternMessageProperty from '../../../../chipper/js/browser/PatternMessag
 import Utils from '../../../../dot/js/Utils.js';
 import ScreenSummaryContent from '../../../../joist/js/ScreenSummaryContent.js';
 import Node from '../../../../scenery/js/nodes/Node.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
@@ -77,5 +76,4 @@ class OhmsLawScreenSummaryNode extends ScreenSummaryContent {
   }
 }
 
-ohmsLaw.register( 'OhmsLawScreenSummaryNode', OhmsLawScreenSummaryNode );
 export default OhmsLawScreenSummaryNode;

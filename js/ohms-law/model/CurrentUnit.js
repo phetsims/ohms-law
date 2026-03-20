@@ -6,7 +6,6 @@
  */
 
 import EnumerationDeprecated from '../../../../phet-core/js/EnumerationDeprecated.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 const CurrentUnit = EnumerationDeprecated.byKeys( [ 'MILLIAMPS', 'AMPS' ], {
@@ -23,5 +22,4 @@ const CurrentUnit = EnumerationDeprecated.byKeys( [ 'MILLIAMPS', 'AMPS' ], {
   }
 } );
 
-ohmsLaw.register( 'CurrentUnit', CurrentUnit );
 export default CurrentUnit;

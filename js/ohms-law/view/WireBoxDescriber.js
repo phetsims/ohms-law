@@ -10,7 +10,6 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import Utils from '../../../../dot/js/Utils.js';
 import Enumeration from '../../../../phet-core/js/Enumeration.js';
 import EnumerationValue from '../../../../phet-core/js/EnumerationValue.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 // enum for describing the relative sizes of letters
@@ -84,5 +83,3 @@ export default class WireBoxDescriber {
     return values[ index ];
   }
 }
-
-ohmsLaw.register( 'WireBoxDescriber', WireBoxDescriber );

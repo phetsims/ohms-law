@@ -16,7 +16,6 @@ import Rectangle from '../../../../scenery/js/nodes/Rectangle.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
 import VSlider from '../../../../sun/js/VSlider.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
 // constants
@@ -165,7 +164,5 @@ class SliderUnit extends Node {
     this.mutate( options );
   }
 }
-
-ohmsLaw.register( 'SliderUnit', SliderUnit );
 
 export default SliderUnit;

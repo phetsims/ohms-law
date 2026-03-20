@@ -10,7 +10,6 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import Range from '../../../../dot/js/Range.js';
 import Enumeration from '../../../../phet-core/js/Enumeration.js';
 import EnumerationValue from '../../../../phet-core/js/EnumerationValue.js';
-import ohmsLaw from '../../ohmsLaw.js';
 
 // enum for describing the relative sizes of letters
 class SizeComparison extends EnumerationValue {
@@ -77,5 +76,3 @@ export default class FormulaDescriber {
     return SizeComparison.MUCH_MUCH_SMALLER;
   }
 }
-
-ohmsLaw.register( 'FormulaDescriber', FormulaDescriber );

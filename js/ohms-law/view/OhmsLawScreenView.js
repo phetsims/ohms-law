@@ -12,7 +12,6 @@ import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.j
 import DiscreteSoundGenerator from '../../../../tambo/js/sound-generators/DiscreteSoundGenerator.js';
 import soundManager from '../../../../tambo/js/soundManager.js';
 import click_mp3 from '../../../../tambo/sounds/click_mp3.js';
-import ohmsLaw from '../../ohmsLaw.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 import ControlPanel from './ControlPanel.js';
 import CurrentSoundGenerator from './CurrentSoundGenerator.js';
@@ -126,5 +125,4 @@ class OhmsLawScreenView extends ScreenView {
   }
 }
 
-ohmsLaw.register( 'OhmsLawScreenView', OhmsLawScreenView );
 export default OhmsLawScreenView;
