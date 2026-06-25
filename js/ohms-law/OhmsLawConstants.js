@@ -22,7 +22,7 @@ const MAX_NUMBER_OF_BATTERIES = Math.ceil( VOLTAGE_RANGE.max / AA_VOLTAGE );
 const OhmsLawConstants = {
 
   // colors
-  BLUE_COLOR: '#0f0ffb',
+  BLUE_COLOR: 'rgb( 0, 0, 225 )',
   BLACK_COLOR: '#000',
 
   // range for sliders with default values

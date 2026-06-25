@@ -20,7 +20,7 @@ class OhmsLawScreen extends Screen {
       () => new OhmsLawModel( tandem.createTandem( 'model' ) ),
       model => new OhmsLawScreenView( model, tandem.createTandem( 'view' ) ),
       {
-        backgroundColorProperty: new Property( new Color( '#ffffdf' ), {
+        backgroundColorProperty: new Property( new Color( '#ffffe8' ), {
           tandem: tandem.createTandem( 'backgroundColorProperty' ),
           phetioValueType: Color.ColorIO
         } ),

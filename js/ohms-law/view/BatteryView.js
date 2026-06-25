@@ -32,9 +32,9 @@ const VOLTAGE_STRING_MAX_WIDTH = new Text( Utils.toFixed( OhmsLawConstants.VOLTA
 
 // Fills for the battery
 const MAIN_BODY_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
-  .addColorStop( 0, '#777777' )
+  .addColorStop( 0, '#888888' )
   .addColorStop( 0.3, '#bdbdbd' )
-  .addColorStop( 1, '#2b2b2b' );
+  .addColorStop( 1, '#444444' );
 const COPPER_PORTION_FILL = new LinearGradient( 0, 0, 0, BATTERY_HEIGHT )
   .addColorStop( 0, '#cc4e00' )
   .addColorStop( 0.3, '#dddad6' )

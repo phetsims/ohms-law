@@ -18,6 +18,7 @@ import Node from '../../../../scenery/js/nodes/Node.js';
 import Path from '../../../../scenery/js/nodes/Path.js';
 import LinearGradient from '../../../../scenery/js/util/LinearGradient.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
+import PhetColorScheme from '../../../../scenery-phet/js/PhetColorScheme.js';
 import OhmsLawMessages from '../../strings/OhmsLawMessages.js';
 import OhmsLawConstants from '../OhmsLawConstants.js';
 
@@ -33,10 +34,10 @@ const AREA_PER_DOT = 40; // adjust this to control the density of the dots
 const NUMBER_OF_DOTS = MAX_WIDTH_INCLUDING_ROUNDED_ENDS * RESISTOR_HEIGHT / AREA_PER_DOT;
 
 const BODY_FILL_GRADIENT = new LinearGradient( 0, -RESISTOR_HEIGHT / 2, 0, RESISTOR_HEIGHT / 2 ) // For 3D effect on the wire.
-  .addColorStop( 0, '#F00' )
+  .addColorStop( 0, PhetColorScheme.RED_COLORBLIND )
   .addColorStop( 0.266, '#FFF' )
   .addColorStop( 0.412, '#FCFCFC' )
-  .addColorStop( 1, '#F00' );
+  .addColorStop( 1, PhetColorScheme.RED_COLORBLIND );
 
 const DOT_GRID_ROWS = Utils.roundSymmetric( RESISTOR_HEIGHT / Math.sqrt( AREA_PER_DOT ) );
 const DOT_GRID_COLUMNS = Utils.roundSymmetric( RESISTOR_WIDTH / Math.sqrt( AREA_PER_DOT ) );
@@ -81,7 +82,7 @@ class ResistorNode extends Node {
     // Cap/end of the wire
     const endPath = new Path( Shape.ellipse( -RESISTOR_WIDTH / 2, 0, RESISTOR_HEIGHT * PERSPECTIVE_FACTOR / 2, RESISTOR_HEIGHT / 2 ), {
       stroke: 'black',
-      fill: '#ff9f9f'
+      fill: '#FFBF9F'
     } );
     this.addChild( endPath );
 
