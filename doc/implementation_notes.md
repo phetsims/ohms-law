@@ -22,10 +22,10 @@ exact values of the formula variables, and provides sliders to manipulate them. 
 vertically) controls the value of the property. In each `SliderUnit`, there is a `Text` for each of the following: the
 symbol from the formula, the word it represents, and the value of the variable (with the unit).
 
-The `WireBox` is the graphical representation of Ohm's Law. It is a drawn circuit with illustrated current directional
+The `CircuitNode` is the graphical representation of Ohm's Law. It is a drawn circuit with illustrated current directional
 arrows (`RightAngleArrow`), with Batteries on one side of it for the voltage (`BatteriesView`), and a resistor on the
-other side (`ResistorNode`). In the center of the `WireBox`, a readout of the value of current is
-displayed (`ReadoutNode`). Depending on the voltage, more or less AA batteries will show on the top of the wireBox (each
+other side (`ResistorNode`). In the center of the `CircuitNode`, a readout of the value of current is
+displayed (`ReadoutPanel`). Depending on the voltage, more or less AA batteries will show on the top of the CircuitNode (each
 represent 1.5 volts). Depending on the resistance, more or less dots are drawn on the resistor.
 
 The sound is also controlled in the view. Sounds are played based on interactions with the sliders and on changes to the
